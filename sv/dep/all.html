@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -239,10 +240,10 @@ in two places.</p>
 <p><a id="al-sv-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> is used for finite and non-finite clauses that modify a noun, including cases of secondary predication. 
-Note that in Swedish relative clauses get assigned a specific relation <a href="">acl:relcl</a>, a subtype of <code>acl</code>.</p>
+<p><code class="highlighter-rouge">acl</code> is used for finite and non-finite clauses that modify a noun, including cases of secondary predication. 
+Note that in Swedish relative clauses get assigned a specific relation <a href="">acl:relcl</a>, a subtype of <code class="highlighter-rouge">acl</code>.</p>
 
-<p>Non-relative clausal dependents of nouns are limited to complement clauses with a subset of nouns like <em>faktum (fact)</em>.  We analyze them as <code>acl</code> (parallel to the analysis of this class as “content clauses” in Huddleston and Pullum 2002). Such clausal complements are usually finite (though there are occasional remnant Swedish subjunctives).</p>
+<p>Non-relative clausal dependents of nouns are limited to complement clauses with a subset of nouns like <em>faktum (fact)</em>.  We analyze them as <code class="highlighter-rouge">acl</code> (parallel to the analysis of this class as “content clauses” in Huddleston and Pullum 2002). Such clausal complements are usually finite (though there are occasional remnant Swedish subjunctives).</p>
 
 <pre><code class="language-sdparse">Hur förenas detta med det faktum att många äktenskap upplöses ? \n How can that be reconciled with the fact that many marriages break up?
 acl(faktum, upplöses) 
@@ -258,7 +259,7 @@ acl(bild, händer)
 acl(ansvar, gör)
 </code></pre>
 
-<p>The <code>acl</code> relation is also used for secondary predicates modifying a nominal.</p>
+<p>The <code class="highlighter-rouge">acl</code> relation is also used for secondary predicates modifying a nominal.</p>
 
 <pre><code class="language-sdparse">Han lämnade rummet gråtande . \n He left the room crying .
 acl(Han, gråtande)
@@ -269,7 +270,7 @@ acl(Han, gråtande)
 <p><a id="al-sv-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: relative clause modifier</h2>
 
-<p>The <code>acl:relcl</code> relation is used for relative clauses modifying
+<p>The <code class="highlighter-rouge">acl:relcl</code> relation is used for relative clauses modifying
 a nominal. The relation points from the head of the nominal to the
 head of the relative clause. Relative clauses are always finite in Swedish
 and the relative pronoun can be omitted when it does not have the subject function.</p>
@@ -369,7 +370,7 @@ appos(AB, SKB)
 clause.</p>
 
 <p>Exception: An auxiliary verb used to construct the passive
-<a href="sv-feat/Voice">voice</a> is not labeled <code>aux</code> but <a href="">auxpass</a>.</p>
+<a href="sv-feat/Voice">voice</a> is not labeled <code class="highlighter-rouge">aux</code> but <a href="">auxpass</a>.</p>
 
 <pre><code class="language-sdparse">vilka funktioner den tidigare har haft \n which functions it previously has had
 aux(haft, har)
@@ -391,7 +392,7 @@ contains the passive information.</p>
 auxpass(mördad, blev)
 </code></pre>
 
-<p>Other auxiliaries associated with the same main verb are not labeled <code>auxpass</code> since they do not themselves indicate passive voice.</p>
+<p>Other auxiliaries associated with the same main verb are not labeled <code class="highlighter-rouge">auxpass</code> since they do not themselves indicate passive voice.</p>
 
 <pre><code class="language-sdparse">Kennedy har blivit mördad \n Kennedy has been murdered
 auxpass(mördad, blivit)
@@ -403,7 +404,7 @@ aux(mördad, har)
 <p><a id="al-sv-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
 
-<p>The <code>case</code> relation is used for any preposition in Swedish. Prepositions are treated as dependents of the noun they attach to or introduce in an “extended nominal projection”. Thus, UD does not treat a preposition as a mediator between a modified word and its object. The <code>case</code> relation aims at providing a uniform analysis of prepositions and case in morphologically rich languages.</p>
+<p>The <code class="highlighter-rouge">case</code> relation is used for any preposition in Swedish. Prepositions are treated as dependents of the noun they attach to or introduce in an “extended nominal projection”. Thus, UD does not treat a preposition as a mediator between a modified word and its object. The <code class="highlighter-rouge">case</code> relation aims at providing a uniform analysis of prepositions and case in morphologically rich languages.</p>
 
 <pre><code class="language-sdparse">Individuell beskattning av arbetsinkomster \n Individual taxation of employment income
 case(arbetsinkomster, av)
@@ -467,7 +468,7 @@ ccomp(säker, gjorde)
 <p><a id="al-sv-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p>The <code>compound</code> relation is used in Swedish only for compounds borrowed from other languages and therefore written as two (or more) separate words. Compounds in Swedish are normally written as a single word without space between the compound elements. A subtype, <a href="">compound:prt</a>, is used for verb particles in phrasal verbs.</p>
+<p>The <code class="highlighter-rouge">compound</code> relation is used in Swedish only for compounds borrowed from other languages and therefore written as two (or more) separate words. Compounds in Swedish are normally written as a single word without space between the compound elements. A subtype, <a href="">compound:prt</a>, is used for verb particles in phrasal verbs.</p>
 
 <pre><code class="language-sdparse">Hon gillar corn flakes \n She likes corn flakes
 dobj(gillar, flakes)
@@ -496,7 +497,7 @@ compound(vara, med)
 
 <p>The conjunct relation holds between coordinated elements. We treat
 coordination asymmetrically: The head of the relation is the first
-conjunct and other conjuncts depend on it via the <code>conj</code> relation.</p>
+conjunct and other conjuncts depend on it via the <code class="highlighter-rouge">conj</code> relation.</p>
 
 <pre><code class="language-sdparse">1500 kr per barn och år \n 1500 kr per child and year
 conj(barn, år)
@@ -588,7 +589,7 @@ csubjpass(misstänktes, ljög)
 <p><a id="al-sv-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
 
-<p>A dependency is labeled as <code>dep</code> when a system is unable to
+<p>A dependency is labeled as <code class="highlighter-rouge">dep</code> when a system is unable to
 determine a more precise dependency relation between two words. This
 may be because of a weird grammatical construction, a limitation in
 software, a parser error, or because of an unresolved long distance 
@@ -628,7 +629,7 @@ discourse(kul, Wow)
 <p><a id="al-sv-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The <code>dislocated</code> relation is used for fronted or postposed elements that do not fulfill the usual core grammatical 
+<p>The <code class="highlighter-rouge">dislocated</code> relation is used for fronted or postposed elements that do not fulfill the usual core grammatical 
 relations of a sentence. Dislocated elements are attached to the same governor as the dependent that they double 
 for.</p>
 
@@ -644,7 +645,7 @@ dislocated(drar, Släpper)
 advcl(drar, så)
 </code></pre>
 
-<p>In addition, the <code>dislocated</code> relation is used for the focus element in a cleft sentence. This is a slight
+<p>In addition, the <code class="highlighter-rouge">dislocated</code> relation is used for the focus element in a cleft sentence. This is a slight
 abuse of the relation, because the focus element is not a dislocated dependent of its syntactic head, but 
 rather of the predicate in the relative clause making up the second part of the cleft construction.</p>
 
@@ -694,7 +695,7 @@ expl(finns, Det)
 <p><a id="al-sv-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
 
-<p>The <code>foreign</code> relation can be used to label sequences of foreign words. These are given
+<p>The <code class="highlighter-rouge">foreign</code> relation can be used to label sequences of foreign words. These are given
 a linear analysis: the head is the first token in the foreign phrase.</p>
 
 <pre><code class="language-sdparse">I anslutning till satsen consensus facit nuptiam
@@ -738,9 +739,9 @@ case(mig, till)
 <p><a id="al-sv-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is used for chains of comparable items. It is not currently attested in the Swedish treebank.</p>
+<p>The <code class="highlighter-rouge">list</code> relation is used for chains of comparable items. It is not currently attested in the Swedish treebank.</p>
 
-<p>Web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures in particular contain these structures, in the form of contact information: the different contact information items are labeled as <code>list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
+<p>Web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures in particular contain these structures, in the form of contact information: the different contact information items are labeled as <code class="highlighter-rouge">list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
 
 <p>In lists with more than two items, all items of the list shoud modify the first one.</p>
 
@@ -767,7 +768,7 @@ mark(gillar, att-3)
 mark(regnar, Om)
 </code></pre>
 
-<p>The infinitive marker <em>att</em> is analyzed as a <code>mark</code>.</p>
+<p>The infinitive marker <em>att</em> is analyzed as a <code class="highlighter-rouge">mark</code>.</p>
 
 <pre><code class="language-sdparse">Det är svårt att tolka \n It is difficult to interpret
 mark(tolka, att)
@@ -779,7 +780,7 @@ mark(tolka, att)
 <h2><code>mwe</code>: multi-word expression</h2>
 
 <p>The multi-word expression (modifier) relation is one of the three
-relations (<a href="">compound</a>, <code>mwe</code>, <a href="">name</a>) for compounding.
+relations (<a href="">compound</a>, <code class="highlighter-rouge">mwe</code>, <a href="">name</a>) for compounding.
 It is used for certain fixed grammaticized expressions that behave
 like function words or short adverbials. The first word is always
 taken as the head, with all subsequent words as direct dependents.</p>
@@ -806,20 +807,20 @@ mwe(när, gäller)
 <p>The name relation is one of the three relations for compounding in UD (together
 with <a href="">compound</a> and <a href="">mwe</a>).
 It is used for proper nouns constituted of multiple nominal
-elements. For example, <code>name</code> would be used between the words of
+elements. For example, <code class="highlighter-rouge">name</code> would be used between the words of
 <em>Hillary Rodham Clinton, New York,</em> or <em>Carl XVI Gustaf</em> but not to
 replace the usual relations in a phrasal or clausal name like <em>The
 king of Sweden</em> or the novels <em>The Lord of the Rings</em> and <em>Captured By
 Aliens.</em></p>
 
-<p>Words joined by <code>name</code> should all be part of a minimal noun phrase;
+<p>Words joined by <code class="highlighter-rouge">name</code> should all be part of a minimal noun phrase;
 otherwise regular syntactic relations should be used.  This is
 basically similar to the treatment of noun compounds with
 <a href="">compound</a>, except that in many cases parts of the name may be
 another nominal element such as an adjective <em>(United Airlines).</em></p>
 
 <p>In general, names are annotated in a flat, head-initial structure, in
-which all words in the name modify the first one using the <code>name</code>
+which all words in the name modify the first one using the <code class="highlighter-rouge">name</code>
 label.</p>
 
 <pre><code class="language-sdparse">Carl XVI Gustaf
@@ -858,9 +859,9 @@ neg(jämförbara, icke)
 <p><a id="al-sv-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers of nouns or clausal
-predicates. <code>nmod</code> is a noun functioning as a non-core (oblique)
-argument or adjunct. In Swedish, <code>nmod</code> is used for prepositional complements:</p>
+<p>The <code class="highlighter-rouge">nmod</code> relation is used for nominal modifiers of nouns or clausal
+predicates. <code class="highlighter-rouge">nmod</code> is a noun functioning as a non-core (oblique)
+argument or adjunct. In Swedish, <code class="highlighter-rouge">nmod</code> is used for prepositional complements:</p>
 
 <pre><code class="language-sdparse">Ekonomiska bidrag till staten \n Financial contributions to the state
 nmod(bidrag, staten)
@@ -877,14 +878,14 @@ nmod(växte, miljö)
 case(miljö, i)
 </code></pre>
 
-<p>Two subtypes of <code>nmod</code> are introduced in Swedish: <a href="">nmod:poss</a> for for possessive/genitive modifiers and <a href="">nmod:agent</a> for agents of passive verbs.</p>
+<p>Two subtypes of <code class="highlighter-rouge">nmod</code> are introduced in Swedish: <a href="">nmod:poss</a> for for possessive/genitive modifiers and <a href="">nmod:agent</a> for agents of passive verbs.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-dep/nmod.md" target="#">edit nmod</a></p>
 
 <p><a id="al-sv-dep/nmod:agent" class="al-dest"></a></p>
 <h2><code>nmod:agent</code>: agent nominal modifier</h2>
 
-<p>The relation <code>nmod:agent</code> is used for agents of passive verbs</p>
+<p>The relation <code class="highlighter-rouge">nmod:agent</code> is used for agents of passive verbs</p>
 
 <pre><code class="language-sdparse">Börjar hennes jobb att delas av den moderne mannen ? \n Will her job start being shared by the modern man ?
 nmod:agent(delas, mannen)
@@ -901,7 +902,7 @@ case(revolution, av)
 <p><a id="al-sv-dep/nmod:poss" class="al-dest"></a></p>
 <h2><code>nmod:poss</code>: possessive nominal modifier</h2>
 
-<p>The relation <code>nmod:poss</code> is used for a genitive/possessive nominal modifier, expressed either by a nominal in the genitive or by a possessive determiner.</p>
+<p>The relation <code class="highlighter-rouge">nmod:poss</code> is used for a genitive/possessive nominal modifier, expressed either by a nominal in the genitive or by a possessive determiner.</p>
 
 <pre><code class="language-sdparse">Livets hårda sida \n The difficult side of life
 nmod:poss(sida, Livets)
@@ -916,7 +917,7 @@ nmod:poss(hem, våra)
 <p><a id="al-sv-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>The dependency type <code>nsubj</code> marks nominal subjects of a clause. Subjects are direct dependents of the main predicate of the clause, which may be a verb, noun or adjective.</p>
+<p>The dependency type <code class="highlighter-rouge">nsubj</code> marks nominal subjects of a clause. Subjects are direct dependents of the main predicate of the clause, which may be a verb, noun or adjective.</p>
 
 <pre><code class="language-sdparse">Pappa hjälper till med tvätten . \n Dad helps with the laundry .
 nsubj(hjälper, Pappa)
@@ -1020,7 +1021,7 @@ remnant(Paris-4, Prague-8)
 <p><a id="al-sv-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>The <code>reparandum</code> relation is used to indicate disfluencies overridden in a speech
+<p>The <code class="highlighter-rouge">reparandum</code> relation is used to indicate disfluencies overridden in a speech
 repair. The disfluency is the dependent of the repair. There are currently
 no attested uses of this relation in the Swedish treebank.</p>
 
@@ -1036,7 +1037,7 @@ case(vänster, till-4)
 <p><a id="al-sv-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indices of real words in the sentence start at 1.</p>
+<p>The <code class="highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indices of real words in the sentence start at 1.</p>
 
 <pre><code class="language-sdparse">ROOT Jag älskar pommes frites . \n ROOT I love French fries .
 root(ROOT, älskar)
@@ -1066,7 +1067,7 @@ vocative(hur, David)
 <p><a id="al-sv-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>An open clausal complement (<code>xcomp</code>) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp (normally by the object of the next higher clause, if there is one, or else by the subject of the next higher clause). These complements are always non-finite, and they are complements (arguments of the higher verb or adjective) rather than adjuncts/modifiers, such as a purpose clause. The name <code>xcomp</code> is borrowed from Lexical-Functional Grammar.</p>
+<p>An open clausal complement (<code class="highlighter-rouge">xcomp</code>) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp (normally by the object of the next higher clause, if there is one, or else by the subject of the next higher clause). These complements are always non-finite, and they are complements (arguments of the higher verb or adjective) rather than adjuncts/modifiers, such as a purpose clause. The name <code class="highlighter-rouge">xcomp</code> is borrowed from Lexical-Functional Grammar.</p>
 
 <pre><code class="language-sdparse">Han säger att du gillar att simma \n He says that you like to swim
 xcomp(gillar, simma)
@@ -1094,6 +1095,7 @@ xcomp(betraktar, vän)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1125,11 +1127,40 @@ xcomp(betraktar, vän)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1153,6 +1184,7 @@ xcomp(betraktar, vän)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sv-overview';
@@ -1178,7 +1210,7 @@ xcomp(betraktar, vän)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

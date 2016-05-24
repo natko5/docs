@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sl/feat">sl/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/feat">sl/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Definite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -40,7 +41,7 @@
 
 <p>Definiteness in Slovenian is an inflectional feature of masculine word forms in nominative and accusative singular that distinguishes whether we are talking about something known and concrete, or something general or unknown. It is currently marked on some <a href="ADJ">adjectives</a> and some <a href="DET">determiners</a>.</p>
 
-<h3 id="ind-indefinite"><code>Ind</code>: indefinite</h3>
+<h3 id="ind-indefinite"><code class="highlighter-rouge">Ind</code>: indefinite</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -51,7 +52,7 @@
   <li><em><b>sosedov</b> sin</em> “neighbour’s son”</li>
 </ul>
 
-<h3 id="def-definite"><code>Def</code>: definite</h3>
+<h3 id="def-definite"><code class="highlighter-rouge">Def</code>: definite</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -64,9 +65,9 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All adjectives and numerals with feature Definiteness=yes are converted to <code>Definite=Def</code> and all adjectives and numerals with feature Definiteness=no are converted to <code>Definite=Ind</code>.</p>
+<p>All adjectives and numerals with feature Definiteness=yes are converted to <code class="highlighter-rouge">Definite=Def</code> and all adjectives and numerals with feature Definiteness=no are converted to <code class="highlighter-rouge">Definite=Ind</code>.</p>
 
-<p>However, note that definiteness has not been sufficiently solved within JOS, as it could also be attributed to other POS categories or category types, such as ordinal written numerals (<em>prvi, drugi, tretji</em>) and pronouns (<em>neki</em>). Consequently, some inconsistencies occur, as different JOS categories are merged into one UD category. For example, JOS-adjective <em>slovenski</em> “Slovenian” has feature <code>Definite=Def</code>, whereas JOS-numeral <em>prvi</em> “the first” does not have any <code>Definite</code> feature, although they are both tagged as UD <code>ADJ</code> and display identical grammatical characteristics.</p>
+<p>However, note that definiteness has not been sufficiently solved within JOS, as it could also be attributed to other POS categories or category types, such as ordinal written numerals (<em>prvi, drugi, tretji</em>) and pronouns (<em>neki</em>). Consequently, some inconsistencies occur, as different JOS categories are merged into one UD category. For example, JOS-adjective <em>slovenski</em> “Slovenian” has feature <code class="highlighter-rouge">Definite=Def</code>, whereas JOS-numeral <em>prvi</em> “the first” does not have any <code class="highlighter-rouge">Definite</code> feature, although they are both tagged as UD <code class="highlighter-rouge">ADJ</code> and display identical grammatical characteristics.</p>
 
 
 <!-- "automatic stats" -->
@@ -81,25 +82,25 @@
 <h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Def</code>, <code>Ind</code>.</p>
+It occurs with 2 different values: <code class="highlighter-rouge">Def</code>, <code class="highlighter-rouge">Ind</code>.</p>
 
-<p>2068 tokens (1%) have a non-empty value of <code>Definite</code>.
-1288 types (4%) occur at least once with a non-empty value of <code>Definite</code>.
-1051 lemmas (6%) occur at least once with a non-empty value of <code>Definite</code>.
+<p>2068 tokens (1%) have a non-empty value of <code class="highlighter-rouge">Definite</code>.
+1288 types (4%) occur at least once with a non-empty value of <code class="highlighter-rouge">Definite</code>.
+1051 lemmas (6%) occur at least once with a non-empty value of <code class="highlighter-rouge">Definite</code>.
 The feature is used with 1 part-of-speech tags: <a href="">sl-pos/ADJ</a> (2068; 1% instances).</p>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>2068 <a href="">sl-pos/ADJ</a> tokens (14% of all <code>ADJ</code> tokens) have a non-empty value of <code>Definite</code>.</p>
+<p>2068 <a href="">sl-pos/ADJ</a> tokens (14% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Definite</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (2068; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (2068; 100%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (1940; 94%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (1704; 82%), <tt><a href="Case.html">Case</a>=Nom</tt> (1419; 69%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Definite</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (2068; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (2068; 100%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (1940; 94%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (1704; 82%), <tt><a href="Case.html">Case</a>=Nom</tt> (1419; 69%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Definite</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Definite</code>:</p>
 
 <ul>
-  <li><code>Def</code> (1130; 55% of non-empty <code>Definite</code>): <em>pravi, novi, državni, slovenski, drugi, veliki, glavni, največji, edini, prejšnji</em></li>
-  <li><code>Ind</code> (938; 45% of non-empty <code>Definite</code>): <em>sam, velik, nov, drug, pomemben, prepričan, dober, podoben, pripravljen, sprejet</em></li>
-  <li><code>EMPTY</code> (12959): <em>mogoče, prvi, druge, drugi, novo, drugih, nove, različnih, veliko, drugo</em></li>
+  <li><code class="highlighter-rouge">Def</code> (1130; 55% of non-empty <code class="highlighter-rouge">Definite</code>): <em>pravi, novi, državni, slovenski, drugi, veliki, glavni, največji, edini, prejšnji</em></li>
+  <li><code class="highlighter-rouge">Ind</code> (938; 45% of non-empty <code class="highlighter-rouge">Definite</code>): <em>sam, velik, nov, drug, pomemben, prepričan, dober, podoben, pripravljen, sprejet</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (12959): <em>mogoče, prvi, druge, drugi, novo, drugih, nove, različnih, veliko, drugo</em></li>
 </ul>
 
 <table>
@@ -108,14 +109,53 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/ADJ</a> (2068;
   <tr><td><tt><a href="Case.html">Case</a>=Nom</tt></td><td><em>drug</em></td><td><em>drugi</em></td></tr>
 </table>
 
-<p><code>Definite</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 91% lemmas (954) occur only with one value of <code>Definite</code>.</p>
+<p><code class="highlighter-rouge">Definite</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 91% lemmas (954) occur only with one value of <code class="highlighter-rouge">Definite</code>.</p>
 
-<h2 id="relations-with-agreement-in-definite">Relations with Agreement in <code>Definite</code></h2>
+<h2 id="relations-with-agreement-in-definite">Relations with Agreement in <code class="highlighter-rouge">Definite</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Definite</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Definite</code>:
 <tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (97; 88%),
-<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; ADJ</tt> (2; 100%),
-<tt>ADJ –[<a href="../dep/cop.html">cop</a>]–&gt; ADJ</tt> (1; 100%).</p>
+<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; ADJ</tt> (2; 100%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code class="highlighter-rouge">Def</code>, <code class="highlighter-rouge">Ind</code>.</p>
+
+<p>313 tokens (1%) have a non-empty value of <code class="highlighter-rouge">Definite</code>.
+207 types (3%) occur at least once with a non-empty value of <code class="highlighter-rouge">Definite</code>.
+193 lemmas (5%) occur at least once with a non-empty value of <code class="highlighter-rouge">Definite</code>.
+The feature is used with 1 part-of-speech tags: <a href="">sl-pos/ADJ</a> (313; 1% instances).</p>
+
+<h3 id="adj-1"><code class="highlighter-rouge">ADJ</code></h3>
+
+<p>313 <a href="">sl-pos/ADJ</a> tokens (19% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Definite</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Definite</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Masc</tt> (313; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (313; 100%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (285; 91%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (265; 85%), <tt><a href="Case.html">Case</a>=Nom</tt> (240; 77%).</p>
+
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Definite</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Def</code> (148; 47% of non-empty <code class="highlighter-rouge">Definite</code>): <em>drugi, mali, stari, pravi, zalivski, boljši, edini, morski, naslednji, celi</em></li>
+  <li><code class="highlighter-rouge">Ind</code> (165; 53% of non-empty <code class="highlighter-rouge">Definite</code>): <em>dober, lep, sam, cel, velik, vnet, slab, znan, drug, moder</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (1352): <em>dobro, drugo, prvi, zanimivo, druga, drugega, glavnem, lepa, rdeča, druge</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>drug</i></th><th><tt>Ind</tt></th><th><tt>Def</tt></th></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Acc</tt></td><td></td><td><em>drugi</em></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom</tt></td><td><em>drug</em></td><td><em>drugi</em></td></tr>
+</table>
+
+<p><code class="highlighter-rouge">Definite</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 93% lemmas (180) occur only with one value of <code class="highlighter-rouge">Definite</code>.</p>
+
+<h2 id="relations-with-agreement-in-definite-1">Relations with Agreement in <code class="highlighter-rouge">Definite</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Definite</code>:
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (6; 75%),
+<tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (1; 100%).</p>
 
 
 
@@ -172,6 +212,7 @@ Definite in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -203,11 +244,40 @@ Definite in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -231,6 +301,7 @@ Definite in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-feat';
@@ -256,7 +327,7 @@ Definite in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

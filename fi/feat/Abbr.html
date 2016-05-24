@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-fi">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/fi/feat">fi/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fi/feat">fi/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-feat/Abbr.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -42,12 +43,12 @@
 
 <p>Note that UD Finnish does not differentiate between different types of
 shortened forms. In particular, there is no separate feature
-identifying acronyms, which are also marked with <code>Abbr=Yes</code>.</p>
+identifying acronyms, which are also marked with <code class="highlighter-rouge">Abbr=Yes</code>.</p>
 
-<h3 id="yes-word-is-abbreviation"><code>Yes</code>: word is abbreviation</h3>
+<h3 id="yes-word-is-abbreviation"><code class="highlighter-rouge">Yes</code>: word is abbreviation</h3>
 
-<p>Note that there is no <code>No</code> value. If the word is not an abbreviation,
-the <code>Abbr</code> feature will not appear.</p>
+<p>Note that there is no <code class="highlighter-rouge">No</code> value. If the word is not an abbreviation,
+the <code class="highlighter-rouge">Abbr</code> feature will not appear.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -70,163 +71,175 @@ the <code>Abbr</code> feature will not appear.</p>
 <h2 id="treebank-statistics-udfinnish">Treebank Statistics (UD_Finnish)</h2>
 
 <p>This feature is language-specific.
-It occurs with 1 different values: <code>Yes</code>.</p>
+It occurs with 1 different values: <code class="highlighter-rouge">Yes</code>.</p>
 
-<p>906 tokens (1%) have a non-empty value of <code>Abbr</code>.
-251 types (1%) occur at least once with a non-empty value of <code>Abbr</code>.
-209 lemmas (1%) occur at least once with a non-empty value of <code>Abbr</code>.
+<p>906 tokens (1%) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.
+251 types (1%) occur at least once with a non-empty value of <code class="highlighter-rouge">Abbr</code>.
+209 lemmas (1%) occur at least once with a non-empty value of <code class="highlighter-rouge">Abbr</code>.
 The feature is used with 7 part-of-speech tags: <a href="">fi-pos/NOUN</a> (556; 0% instances), <a href="">fi-pos/PROPN</a> (256; 0% instances), <a href="">fi-pos/ADV</a> (55; 0% instances), <a href="">fi-pos/VERB</a> (25; 0% instances), <a href="">fi-pos/ADJ</a> (11; 0% instances), <a href="">fi-pos/NUM</a> (2; 0% instances), <a href="">fi-pos/INTJ</a> (1; 0% instances).</p>
 
-<h3 id="noun"><code>NOUN</code></h3>
+<h3 id="noun"><code class="highlighter-rouge">NOUN</code></h3>
 
-<p>556 <a href="">fi-pos/NOUN</a> tokens (1% of all <code>NOUN</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+<p>556 <a href="">fi-pos/NOUN</a> tokens (1% of all <code class="highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (518; 93%), <tt><a href="Case.html">Case</a>=Nom</tt> (346; 62%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NOUN</code> and <code class="highlighter-rouge">Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (518; 93%), <tt><a href="Case.html">Case</a>=Nom</tt> (346; 62%).</p>
 
-<p><code>NOUN</code> tokens may have the following values of <code>Abbr</code>:</p>
-
-<ul>
-  <li><code>Yes</code> (556; 100% of non-empty <code>Abbr</code>): <em>N:o, EY, eaa., a, b, kpl, ETY, g, cm, A:n</em></li>
-</ul>
-
-<p><code>Abbr</code> seems to be <strong>lexical feature</strong> of <code>NOUN</code>. 100% lemmas (152) occur only with one value of <code>Abbr</code>.</p>
-
-<h3 id="propn"><code>PROPN</code></h3>
-
-<p>256 <a href="">fi-pos/PROPN</a> tokens (2% of all <code>PROPN</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
-
-<p>The most frequent other feature values with which <code>PROPN</code> and <code>Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (246; 96%), <tt><a href="Case.html">Case</a>=Gen</tt> (164; 64%).</p>
-
-<p><code>PROPN</code> tokens may have the following values of <code>Abbr</code>:</p>
+<p><code class="highlighter-rouge">NOUN</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (256; 100% of non-empty <code>Abbr</code>): <em>EU:n, EKP:n, EKP, SDP:n, YK:n, MTV3, EU, SDP, SDP:tä, EU:ssa</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (556; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>N:o, EY, eaa., a, b, kpl, ETY, g, cm, A:n</em></li>
 </ul>
 
-<p><code>Abbr</code> seems to be <strong>lexical feature</strong> of <code>PROPN</code>. 100% lemmas (43) occur only with one value of <code>Abbr</code>.</p>
+<p><code class="highlighter-rouge">Abbr</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">NOUN</code>. 100% lemmas (152) occur only with one value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<h3 id="adv"><code>ADV</code></h3>
+<h3 id="propn"><code class="highlighter-rouge">PROPN</code></h3>
 
-<p>55 <a href="">fi-pos/ADV</a> tokens (0% of all <code>ADV</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+<p>256 <a href="">fi-pos/PROPN</a> tokens (2% of all <code class="highlighter-rouge">PROPN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>Abbr</code>:</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PROPN</code> and <code class="highlighter-rouge">Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (246; 96%), <tt><a href="Case.html">Case</a>=Gen</tt> (164; 64%).</p>
+
+<p><code class="highlighter-rouge">PROPN</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (55; 100% of non-empty <code>Abbr</code>): <em>mm., esim., n., jne, oik., ns., esim, ym</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (256; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>EU:n, EKP:n, EKP, SDP:n, YK:n, MTV3, EU, SDP, SDP:tä, EU:ssa</em></li>
 </ul>
 
-<p><code>Abbr</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (11) occur only with one value of <code>Abbr</code>.</p>
+<p><code class="highlighter-rouge">Abbr</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">PROPN</code>. 100% lemmas (43) occur only with one value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="adv"><code class="highlighter-rouge">ADV</code></h3>
 
-<p>25 <a href="">fi-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+<p>55 <a href="">fi-pos/ADV</a> tokens (0% of all <code class="highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Abbr</code> co-occurred: <tt><a href="Degree.html">Degree</a>=Pos</tt> (25; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (25; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (25; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (25; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (25; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (25; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (25; 100%), <tt><a href="PartForm.html">PartForm</a>=Past</tt> (25; 100%), <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (25; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (24; 96%).</p>
-
-<p><code>VERB</code> tokens may have the following values of <code>Abbr</code>:</p>
+<p><code class="highlighter-rouge">ADV</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (25; 100% of non-empty <code>Abbr</code>): <em>s., Em., k.</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (55; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>mm., esim., n., jne, oik., ns., esim, ym</em></li>
 </ul>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<p><code class="highlighter-rouge">Abbr</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADV</code>. 100% lemmas (11) occur only with one value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p>11 <a href="">fi-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Abbr</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (8; 73%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (8; 73%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (8; 73%).</p>
+<p>25 <a href="">fi-pos/VERB</a> tokens (0% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Abbr</code>:</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Abbr</code> co-occurred: <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (25; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (25; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (25; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (25; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (25; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (25; 100%), <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (25; 100%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (25; 100%), <tt><a href="PartForm.html">PartForm</a>=Past</tt> (25; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (24; 96%).</p>
+
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (11; 100% of non-empty <code>Abbr</code>): <em>ns., nk., ev.-lut.</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (25; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>s., Em., k.</em></li>
 </ul>
 
-<h3 id="num"><code>NUM</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>2 <a href="">fi-pos/NUM</a> tokens (0% of all <code>NUM</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+<p>11 <a href="">fi-pos/ADJ</a> tokens (0% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>Abbr</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (2; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Abbr</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (8; 73%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (8; 73%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (8; 73%).</p>
 
-<p><code>NUM</code> tokens may have the following values of <code>Abbr</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (2; 100% of non-empty <code>Abbr</code>): <em>milj., u18</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (11; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>ns., nk., ev.-lut.</em></li>
 </ul>
 
-<h3 id="intj"><code>INTJ</code></h3>
+<h3 id="num"><code class="highlighter-rouge">NUM</code></h3>
 
-<p>1 <a href="">fi-pos/INTJ</a> tokens (1% of all <code>INTJ</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+<p>2 <a href="">fi-pos/NUM</a> tokens (0% of all <code class="highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p><code>INTJ</code> tokens may have the following values of <code>Abbr</code>:</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NUM</code> and <code class="highlighter-rouge">Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%), <tt><a href="NumType.html">NumType</a>=Card</tt> (2; 100%).</p>
+
+<p><code class="highlighter-rouge">NUM</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (1; 100% of non-empty <code>Abbr</code>): <em>Huom</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (2; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>milj., u18</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-abbr">Relations with Agreement in <code>Abbr</code></h2>
+<h3 id="intj"><code class="highlighter-rouge">INTJ</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Abbr</code>:
+<p>1 <a href="">fi-pos/INTJ</a> tokens (1% of all <code class="highlighter-rouge">INTJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
+
+<p><code class="highlighter-rouge">INTJ</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Yes</code> (1; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>Huom</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-abbr">Relations with Agreement in <code class="highlighter-rouge">Abbr</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Abbr</code>:
 <tt>NOUN –[<a href="../dep/acl:relcl.html">acl:relcl</a>]–&gt; NOUN</tt> (1; 100%),
-<tt>NOUN –[<a href="../dep/name.html">name</a>]–&gt; NOUN</tt> (1; 100%),
-<tt>NOUN –[<a href="../dep/compound.html">compound</a>]–&gt; NOUN</tt> (1; 100%).</p>
+<tt>NOUN –[<a href="../dep/compound.html">compound</a>]–&gt; NOUN</tt> (1; 100%),
+<tt>NOUN –[<a href="../dep/name.html">name</a>]–&gt; NOUN</tt> (1; 100%).</p>
 
 <hr />
 
 <h2 id="treebank-statistics-udfinnish-ftb">Treebank Statistics (UD_Finnish-FTB)</h2>
 
 <p>This feature is language-specific.
-It occurs with 1 different values: <code>Yes</code>.</p>
+It occurs with 1 different values: <code class="highlighter-rouge">Yes</code>.</p>
 
-<p>503 tokens (0%) have a non-empty value of <code>Abbr</code>.
-261 types (1%) occur at least once with a non-empty value of <code>Abbr</code>.
-195 lemmas (1%) occur at least once with a non-empty value of <code>Abbr</code>.
-The feature is used with 3 part-of-speech tags: <a href="">fi-pos/NOUN</a> (406; 0% instances), <a href="">fi-pos/ADV</a> (96; 0% instances), <a href="">fi-pos/ADJ</a> (1; 0% instances).</p>
+<p>484 tokens (0%) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.
+256 types (1%) occur at least once with a non-empty value of <code class="highlighter-rouge">Abbr</code>.
+190 lemmas (1%) occur at least once with a non-empty value of <code class="highlighter-rouge">Abbr</code>.
+The feature is used with 4 part-of-speech tags: <a href="">fi-pos/PROPN</a> (201; 0% instances), <a href="">fi-pos/NOUN</a> (196; 0% instances), <a href="">fi-pos/PART</a> (86; 0% instances), <a href="">fi-pos/ADJ</a> (1; 0% instances).</p>
 
-<h3 id="noun-1"><code>NOUN</code></h3>
+<h3 id="propn-1"><code class="highlighter-rouge">PROPN</code></h3>
 
-<p>406 <a href="">fi-pos/NOUN</a> tokens (1% of all <code>NOUN</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+<p>201 <a href="">fi-pos/PROPN</a> tokens (3% of all <code class="highlighter-rouge">PROPN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (403; 99%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PROPN</code> and <code class="highlighter-rouge">Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (200; 100%).</p>
 
-<p><code>NOUN</code> tokens may have the following values of <code>Abbr</code>:</p>
-
-<ul>
-  <li><code>Yes</code> (406; 100% of non-empty <code>Abbr</code>): <em>x, x:n, EU:n, y, klo, %, A, NN:n, EU, mk</em></li>
-</ul>
-
-<p><code>Abbr</code> seems to be <strong>lexical feature</strong> of <code>NOUN</code>. 100% lemmas (158) occur only with one value of <code>Abbr</code>.</p>
-
-<h3 id="adv-1"><code>ADV</code></h3>
-
-<p>96 <a href="">fi-pos/ADV</a> tokens (1% of all <code>ADV</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADV</code> and <code>Abbr</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (96; 100%).</p>
-
-<p><code>ADV</code> tokens may have the following values of <code>Abbr</code>:</p>
+<p><code class="highlighter-rouge">PROPN</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (96; 100% of non-empty <code>Abbr</code>): <em>mm., ns., esim., n., &amp;, +, /, OK, jne, km/h</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (201; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>EU:n, NN:n, EU, EU:hun, SAK, YK:n, SAK:n, SDP:n, TBK, USA:n</em></li>
 </ul>
 
-<p><code>Abbr</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (37) occur only with one value of <code>Abbr</code>.</p>
+<p><code class="highlighter-rouge">Abbr</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">PROPN</code>. 100% lemmas (104) occur only with one value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<h3 id="adj-1"><code>ADJ</code></h3>
+<h3 id="noun-1"><code class="highlighter-rouge">NOUN</code></h3>
 
-<p>1 <a href="">fi-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>Abbr</code>.</p>
+<p>196 <a href="">fi-pos/NOUN</a> tokens (1% of all <code class="highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (1; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NOUN</code> and <code class="highlighter-rouge">Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (194; 99%), <tt><a href="Case.html">Case</a>=Nom</tt> (125; 64%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Abbr</code>:</p>
+<p><code class="highlighter-rouge">NOUN</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (1; 100% of non-empty <code>Abbr</code>): <em>huumorintaj.</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (196; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>x, x:n, y, klo, A, mk, A:n, Oy:n, B, B:n</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-abbr-1">Relations with Agreement in <code>Abbr</code></h2>
+<p><code class="highlighter-rouge">Abbr</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">NOUN</code>. 100% lemmas (53) occur only with one value of <code class="highlighter-rouge">Abbr</code>.</p>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Abbr</code>:
-<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (19; 70%),
-<tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (1; 100%).</p>
+<h3 id="part"><code class="highlighter-rouge">PART</code></h3>
+
+<p>86 <a href="">fi-pos/PART</a> tokens (2% of all <code class="highlighter-rouge">PART</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
+
+<p><code class="highlighter-rouge">PART</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Yes</code> (86; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>mm., ns., esim., n., OK, jne, km/h, 70,00%, em., mk/kg</em></li>
+</ul>
+
+<p><code class="highlighter-rouge">Abbr</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">PART</code>. 100% lemmas (34) occur only with one value of <code class="highlighter-rouge">Abbr</code>.</p>
+
+<h3 id="adj-1"><code class="highlighter-rouge">ADJ</code></h3>
+
+<p>1 <a href="">fi-pos/ADJ</a> tokens (0% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Abbr</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Abbr</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (1; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1; 100%).</p>
+
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Abbr</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Yes</code> (1; 100% of non-empty <code class="highlighter-rouge">Abbr</code>): <em>huumorintaj.</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-abbr-1">Relations with Agreement in <code class="highlighter-rouge">Abbr</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Abbr</code>:
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (14; 100%),
+<tt>PART –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (1; 100%).</p>
 
 
 
@@ -246,6 +259,7 @@ The feature is used with 3 part-of-speech tags: <a href="">fi-pos/NOUN</a> (406;
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -277,11 +291,40 @@ The feature is used with 3 part-of-speech tags: <a href="">fi-pos/NOUN</a> (406;
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -305,6 +348,7 @@ The feature is used with 3 part-of-speech tags: <a href="">fi-pos/NOUN</a> (406;
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'fi-feat';
@@ -330,7 +374,7 @@ The feature is used with 3 part-of-speech tags: <a href="">fi-pos/NOUN</a> (406;
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

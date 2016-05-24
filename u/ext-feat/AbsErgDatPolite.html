@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ext">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ext/feat">ext/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ext">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ext/feat">ext/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ext-feat/AbsErgDatPolite.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -55,24 +56,24 @@ Thus in <em>dakarkiogu</em> “we bring it to him/her”,
 <em>gu</em> stands for “we” (ergative argument is the subject of transitive verbs).</p>
 
 <ul>
-  <li><code>Polite[abs]</code> is the politeness of the absolutive argument of the verb. The corresponding feature in Interset 2.041 is called <code>abspoliteness</code>.</li>
-  <li><code>Polite[erg]</code> is the politeness of the ergative argument of the verb. The corresponding feature in Interset 2.041 is called <code>ergpoliteness</code>.</li>
-  <li><code>Polite[dat]</code> is the politeness of the dative argument of the verb. The corresponding feature in Interset 2.041 is called <code>datpoliteness</code>.</li>
+  <li><code class="highlighter-rouge">Polite[abs]</code> is the politeness of the absolutive argument of the verb. The corresponding feature in Interset 2.041 is called <code class="highlighter-rouge">abspoliteness</code>.</li>
+  <li><code class="highlighter-rouge">Polite[erg]</code> is the politeness of the ergative argument of the verb. The corresponding feature in Interset 2.041 is called <code class="highlighter-rouge">ergpoliteness</code>.</li>
+  <li><code class="highlighter-rouge">Polite[dat]</code> is the politeness of the dative argument of the verb. The corresponding feature in Interset 2.041 is called <code class="highlighter-rouge">datpoliteness</code>.</li>
 </ul>
 
-<p>One may want to use just <code>Polite</code> instead of <code>Polite[abs]</code>.
+<p>One may want to use just <code class="highlighter-rouge">Polite</code> instead of <code class="highlighter-rouge">Polite[abs]</code>.
 However, there are two issues with that (at least in Basque).
 First, the absolutive argument is not always the subject. For transitive verbs, it is the object, so the parallelism with nominative-accusative languages would be weak anyway.
-Second, we cannot avoid <code>Number[abs]</code> (both <code>Number</code> and <code>Number[abs]</code> can occur at one word)
-and thus we keep <code>Polite[abs]</code> to demonstrate that it is the same layer of agreement for both the features.</p>
+Second, we cannot avoid <code class="highlighter-rouge">Number[abs]</code> (both <code class="highlighter-rouge">Number</code> and <code class="highlighter-rouge">Number[abs]</code> can occur at one word)
+and thus we keep <code class="highlighter-rouge">Polite[abs]</code> to demonstrate that it is the same layer of agreement for both the features.</p>
 
 <h3 id="inf-informal">Inf: informal</h3>
 
-<p>Examples: [eu] <em>ezan, ezak</em> <code>Polite[erg]=Inf</code></p>
+<p>Examples: [eu] <em>ezan, ezak</em> <code class="highlighter-rouge">Polite[erg]=Inf</code></p>
 
 <h3 id="pol-polite-formal">Pol: polite, formal</h3>
 
-<p>Examples: [eu] <em>ezazu</em> <code>Polite[erg]=Pol</code> (politeness-neutral form is <em>ezazue</em>)</p>
+<p>Examples: [eu] <em>ezazu</em> <code class="highlighter-rouge">Polite[erg]=Pol</code> (politeness-neutral form is <em>ezazue</em>)</p>
 
 
 <!-- "automatic stats" -->
@@ -96,6 +97,7 @@ and thus we keep <code>Polite[abs]</code> to demonstrate that it is the same lay
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -127,11 +129,40 @@ and thus we keep <code>Polite[abs]</code> to demonstrate that it is the same lay
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -155,6 +186,7 @@ and thus we keep <code>Polite[abs]</code> to demonstrate that it is the same lay
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ext-feat';
@@ -180,7 +212,7 @@ and thus we keep <code>Polite[abs]</code> to demonstrate that it is the same lay
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-fa">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/fa/dep">fa/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fa">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fa/dep">fa/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fa-dep/dislocated.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,7 +40,7 @@
           <h2><code>dislocated</code>: dislocated elements</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dislocated</code>.</p>
+for <code class="highlighter-rouge">dislocated</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +57,12 @@ for <code>dislocated</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>70 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
+<p>70 nodes (0%) are attached to their parents as <code class="highlighter-rouge">dislocated</code>.</p>
 
-<p>68 instances of <code>dislocated</code> (97%) are right-to-left (child precedes parent).
+<p>68 instances of <code class="highlighter-rouge">dislocated</code> (97%) are right-to-left (child precedes parent).
 Average distance between parent and child is 10.4285714285714.</p>
 
-<p>The following 8 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">fa-pos/VERB</a>-<a href="">fa-pos/NOUN</a> (23; 33% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/NOUN</a> (11; 16% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/NOUN</a> (10; 14% instances), <a href="">fa-pos/VERB</a>-<a href="">fa-pos/PRON</a> (10; 14% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/PRON</a> (7; 10% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/PRON</a> (7; 10% instances), <a href="">fa-pos/ADV</a>-<a href="">fa-pos/PRON</a> (1; 1% instances), <a href="">fa-pos/PRON</a>-<a href="">fa-pos/PRON</a> (1; 1% instances).</p>
+<p>The following 8 pairs of parts of speech are connected with <code class="highlighter-rouge">dislocated</code>: <a href="">fa-pos/VERB</a>-<a href="">fa-pos/NOUN</a> (23; 33% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/NOUN</a> (11; 16% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/NOUN</a> (10; 14% instances), <a href="">fa-pos/VERB</a>-<a href="">fa-pos/PRON</a> (10; 14% instances), <a href="">fa-pos/ADJ</a>-<a href="">fa-pos/PRON</a> (7; 10% instances), <a href="">fa-pos/NOUN</a>-<a href="">fa-pos/PRON</a> (7; 10% instances), <a href="">fa-pos/ADV</a>-<a href="">fa-pos/PRON</a> (1; 1% instances), <a href="">fa-pos/PRON</a>-<a href="">fa-pos/PRON</a> (1; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
@@ -72,7 +73,7 @@ Average distance between parent and child is 10.4285714285714.</p>
 2	چه	_	ADV	ADV_I	PronType=Int	3	det	_	_
 3	جوری	_	NOUN	N_SING	Number=Sing	1	ccomp	_	_
 4	است	_	VERB	V_PRS	Number=Sing|Person=3|Tense=Pres	3	cop	_	_
-5	که	_	SCONJ	CON	_	11	mark	_	_
+5	که	که	SCONJ	CON	_	11	mark	_	_
 6	تهیه‌کننده	_	NOUN	N_SING	Number=Sing	11	dislocated	_	_
 7	خود	_	PRON	PRO	Number=Sing|Person=3|PronType=Prs|Reflex=Yes	11	nsubj	_	_
 8	ش	_	PRON	PRO	Number=Sing|Person=3|PronType=Prs	7	nmod:poss	_	_
@@ -114,7 +115,7 @@ Average distance between parent and child is 10.4285714285714.</p>
 2	همه	_	PRON	PRO	PronType=Tot	12	nsubj	_	_
 3	مورد	_	ADP	P	_	4	case	_	_
 4	توجه	_	NOUN	N_SING	Number=Sing	12	nmod	_	_
-5	و	_	CONJ	CON	_	4	cc	_	_
+5	و	و	CONJ	CON	_	4	cc	_	_
 6	التفات	_	NOUN	N_SING	Number=Sing	4	conj	_	_
 7	رهبر	_	NOUN	N_SING	Number=Sing	6	nmod:poss	_	_
 8	معظم	_	ADJ	ADJ	Degree=Pos	7	amod	_	_
@@ -183,6 +184,7 @@ dislocated in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -214,11 +216,40 @@ dislocated in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -242,6 +273,7 @@ dislocated in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'fa-dep';
@@ -267,7 +299,7 @@ dislocated in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-no">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-no">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-overview/specific-syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -38,8 +39,8 @@
 
           <h1 id="specific-constructions">Specific constructions</h1>
 
-<h3 id="passive">Passive</h3>
-<p>In Norwegian there are two ways of expressing passive voice: morphological passive and a periphrastic passive construction. The morphological passive is expressed by the passive <em>-s</em> suffix, e.g. <em>bygges</em> “to be built” and the periphrastic passive is constructed with the passive auxiliary <em>bli</em> “to become” and a participle form of the main verb, e.g. <em>opprettet</em> “established”.</p>
+<p>###Passive
+In Norwegian there are two ways of expressing passive voice: morphological passive and a periphrastic passive construction. The morphological passive is expressed by the passive <em>-s</em> suffix, e.g. <em>bygges</em> “to be built” and the periphrastic passive is constructed with the passive auxiliary <em>bli</em> “to become” and a participle form of the main verb, e.g. <em>opprettet</em> “established”.</p>
 
 <pre><code class="language-sdparse">freden bygges også dag for dag \n peace is being built day by day
 nsubjpass(bygges,freden)
@@ -50,8 +51,8 @@ nsubjpass(opprettet,FN)
 auxpass(opprettet,ble)
 </code></pre>
 
-<h3 id="verbal-particles">Verbal particles</h3>
-<p>Verbal particles are analyzed using the language-specific relation <a href="compund-prt">compound:prt</a>.
+<p>###Verbal particles
+Verbal particles are analyzed using the language-specific relation <a href="compund-prt">compound:prt</a>.
 Particles exhibit a number of syntactic properties which sets them apart from regular prepositions. For instance, a pronominal object may intercede the verb and the preposition in the particle case <em>satte den på</em> “put it on”, but not in the case of a regular preposition and its complement <em>*lette den etter</em> “*looked it for”,  and only complements of a preposition may occur in an impersonal passive <em>Det ble lett etter den nye boka</em> “It was looked for the new book”, but an object in a particle construction may not <em>*Det ble satt den på</em> “*It was put it on”.</p>
 
 <pre><code class="language-sdparse">Den gang ble alt samlet inn \n That time all was collected
@@ -66,26 +67,26 @@ compound:prt(lagt,frem)
 compound:prt(delte,ut)
 </code></pre>
 
-<h3 id="expletives">Expletives</h3>
-<p>In Norwegian, expletive arguments are expressed using the neuter pronoun <em>det</em> “it” and the <a href="expl">expl</a> relation is used for both expletive subjects and objects. Expletives occur in several syntactic constructions in Norwegian.</p>
+<p>###Expletives
+In Norwegian, expletive arguments are expressed using the neuter pronoun <em>det</em> “it” and the <a href="expl">expl</a> relation is used for both expletive subjects and objects. Expletives occur in several syntactic constructions in Norwegian.</p>
 
-<h4 id="presentational-construction">Presentational construction</h4>
-<p>In Norwegian expletives occur in the presentational construction, which involves an expletive subject, an active verb and an indefinite subject (<em>en debatt</em> “a debate” in the example below).</p>
+<p>####Presentational construction
+In Norwegian expletives occur in the presentational construction, which involves an expletive subject, an active verb and an indefinite subject (<em>en debatt</em> “a debate” in the example below).</p>
 
 <pre><code class="language-sdparse">Det eksisterer allerede en debatt \n There already exists a debate
 expl(eksisterer-2,Det-1)
 nsubj(eksisterer-2,debatt-5)
 </code></pre>
 
-<h4 id="impersonal-passive">Impersonal passive</h4>
-<p>Norwegian employs the impersonal passive construction, where there is an expletive subject and the underlying subject is unexpressed.</p>
+<p>####Impersonal passive
+Norwegian employs the impersonal passive construction, where there is an expletive subject and the underlying subject is unexpressed.</p>
 
 <pre><code class="language-sdparse">Senere har det blitt fremsatt flere forslag \n Later has there been proposed several suggestions
 expl(fremsatt,det)
 </code></pre>
 
-<h4 id="clause-anticipating-constructions">Clause-anticipating constructions</h4>
-<p>These constructions contain a finite or non-finite clause which semantically may be regarded as the subject, but where the subject position is occupied by an expletive.</p>
+<p>####Clause-anticipating constructions
+These constructions contain a finite or non-finite clause which semantically may be regarded as the subject, but where the subject position is occupied by an expletive.</p>
 
 <pre><code class="language-sdparse">Det er ønskelig at utvalget arbeider i dialog \n It is desirable that the committee works in dialogue
 expl(ønskelig-3,Det-1)
@@ -103,15 +104,15 @@ expl(finner-2,det-3)
 ccomp(finner-2,handlet-7)
 </code></pre>
 
-<h4 id="clefts">Clefts</h4>
-<p>Clefts are quite  common in Norwegian. They contain an expletive subject, a form of <em>være</em> “to be” and a relative clause. Note that in clefts we do not adopt a copula analysis of the verb <em>være</em> “er”.</p>
+<p>####Clefts
+Clefts are quite  common in Norwegian. They contain an expletive subject, a form of <em>være</em> “to be” and a relative clause. Note that in clefts we do not adopt a copula analysis of the verb <em>være</em> “er”.</p>
 
 <pre><code class="language-sdparse">Det er forholdsvis få arter som har klart å tilpasse seg \n There are quite few species that have managed to adapt 
 expl(er-2,Det-1)
 acl:relcl(arter-5,klart-8)
 </code></pre>
 
-<h3 id="references">References</h3>
+<p>###References</p>
 
 <p>Kari Kinn, Per Erik Solberg and Pål Kristian Eriksen. “<a href="http://www.nb.no/sbfil/dok/20140314_guidelines_ndt_english.pdf">NDT Guidelines for Morphological Annotation</a>”. National Library Tech Report.</p>
 
@@ -126,6 +127,7 @@ acl:relcl(arter-5,klart-8)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -157,11 +159,40 @@ acl:relcl(arter-5,klart-8)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -185,6 +216,7 @@ acl:relcl(arter-5,klart-8)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'no-overview';
@@ -210,7 +242,7 @@ acl:relcl(arter-5,klart-8)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

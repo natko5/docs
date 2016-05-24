@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/cs/pos">cs/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/pos">cs/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-pos/PUNCT.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -61,7 +62,7 @@ used to delimit linguistic units in printed text.</p>
 <p>The PDT texts are from the early 1990s and there are no e-mail addresses.
 If they were there, the PDT tokenization rules would break them up on all dots and at signs.
 The same holds for telephone numbers. For example,
-<em>tel.: (05) 4321 6014 </em> is analyzed as eight tokens (<code>NOUN PUNCT PUNCT PUNCT NUM PUNCT NUM NUM</code>).</p>
+<em>tel.: (05) 4321 6014 </em> is analyzed as eight tokens (<code class="highlighter-rouge">NOUN PUNCT PUNCT PUNCT NUM PUNCT NUM NUM</code>).</p>
 
 <h3 id="references">References</h3>
 
@@ -82,22 +83,28 @@ The same holds for telephone numbers. For example,
 
 <h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
 
-<p>There are 26 <code>PUNCT</code> lemmas (0%), 27 <code>PUNCT</code> types (0%) and 221049 <code>PUNCT</code> tokens (15%).
-Out of 17 observed tags, the rank of <code>PUNCT</code> is: 14 in number of lemmas, 15 in number of types and 2 in number of tokens.</p>
+<p>There are 26 <code class="highlighter-rouge">PUNCT</code> lemmas (0%), 27 <code class="highlighter-rouge">PUNCT</code> types (0%) and 221039 <code class="highlighter-rouge">PUNCT</code> tokens (15%).
+Out of 17 observed tags, the rank of <code class="highlighter-rouge">PUNCT</code> is: 14 in number of lemmas, 15 in number of types and 2 in number of tokens.</p>
 
-<p>The 10 most frequent <code>PUNCT</code> lemmas: <em>,, ., -, “, ), (, :, ?, /, *</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">PUNCT</code> lemmas: <em>,, ., -, “, ), (, :, ?, /, *</em></p>
 
-<p>The 10 most frequent <code>PUNCT</code> types:  <em>,, ., -, “, ), (, :, ?, /, *</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">PUNCT</code> types:  <em>,, ., -, “, ), (, :, ?, /, *</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>/</em> (<a href="">PUNCT</a> 700, <a href="">SYM</a> 18), <em>o</em> (<a href="">ADP</a> 10328, <a href="">PUNCT</a> 100, <a href="">NOUN</a> 10, <a href="">ADJ</a> 3, <a href="">INTJ</a> 2), <em>x</em> (<a href="">SYM</a> 120, <a href="">NOUN</a> 70, <a href="">PUNCT</a> 3)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>/</em> (<a href="">PUNCT</a> 700, <a href="">SYM</a> 18), <em>*</em> (<a href="">PUNCT</a> 655, <a href="">SYM</a> 10), <em>o</em> (<a href="">ADP</a> 10328, <a href="">PUNCT</a> 100, <a href="">NOUN</a> 10, <a href="">ADJ</a> 3, <a href="">INTJ</a> 2), <em>x</em> (<a href="">SYM</a> 120, <a href="">NOUN</a> 70, <a href="">PUNCT</a> 3)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>/</em> (<a href="">PUNCT</a> 700, <a href="">SYM</a> 18), <em>o</em> (<a href="">ADP</a> 9669, <a href="">ADJ</a> 110, <a href="">PUNCT</a> 99, <a href="">NOUN</a> 4), <em>x</em> (<a href="">SYM</a> 120, <a href="">NOUN</a> 41, <a href="">PUNCT</a> 3)</p>
+<p>The 10 most frequent ambiguous types:  <em>/</em> (<a href="">PUNCT</a> 700, <a href="">SYM</a> 18), <em>*</em> (<a href="">PUNCT</a> 655, <a href="">SYM</a> 10), <em>o</em> (<a href="">ADP</a> 9669, <a href="">ADJ</a> 110, <a href="">PUNCT</a> 99, <a href="">NOUN</a> 4), <em>x</em> (<a href="">SYM</a> 120, <a href="">NOUN</a> 41, <a href="">PUNCT</a> 3)</p>
 
 <ul>
   <li><em>/</em>
     <ul>
       <li><a href="">PUNCT</a> 700: <em>Přenosová rychlost : ( A 4 <b>/</b> sec ) 12</em></li>
       <li><a href="">SYM</a> 18: <em>Potřebujete jen 1 <b>/</b> 4 vody , takže sprcha vás stojí 0.46 Kč .</em></li>
+    </ul>
+  </li>
+  <li><em>*</em>
+    <ul>
+      <li><a href="">PUNCT</a> 655: <em>Při troše štěstí získáte za čtyři roky půl milionu z nájemného <b>*</b></em></li>
+      <li><a href="">SYM</a> 10: <em>Jaká je vzdělanost našeho národa <b>*</b></em></li>
     </ul>
   </li>
   <li><em>o</em>
@@ -119,35 +126,134 @@ Out of 17 observed tags, the rank of <code>PUNCT</code> is: 14 in number of lemm
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>PUNCT</code> is 1.038462 (the average of all parts of speech is 2.195970).</p>
+<p>The form / lemma ratio of <code class="highlighter-rouge">PUNCT</code> is 1.038462 (the average of all parts of speech is 2.195950).</p>
 
-<p>The 1st highest number of forms (2) was observed with the lemma “-”: <em>-, -103</em></p>
+<p>The 1st highest number of forms (2) was observed with the lemma “-”: <em>-, -103</em>.</p>
 
-<p>The 2nd highest number of forms (1) was observed with the lemma “!”: <em>!</em></p>
+<p>The 2nd highest number of forms (1) was observed with the lemma “!”: <em>!</em>.</p>
 
-<p>The 3rd highest number of forms (1) was observed with the lemma “””: <em>“</em></p>
+<p>The 3rd highest number of forms (1) was observed with the lemma “””: <em>”</em>.</p>
 
-<p><code>PUNCT</code> does not occur with any features.</p>
+<p><code class="highlighter-rouge">PUNCT</code> does not occur with any features.</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>PUNCT</code> nodes are attached to their parents using 3 different relations: <a href="">cs-dep/punct</a> (221012; 100% instances), <a href="">cs-dep/root</a> (33; 0% instances), <a href="">cs-dep/conj</a> (4; 0% instances)</p>
+<p><code class="highlighter-rouge">PUNCT</code> nodes are attached to their parents using 3 different relations: <a href="">cs-dep/punct</a> (220976; 100% instances), <a href="">cs-dep/root</a> (34; 0% instances), <a href="">cs-dep/conj</a> (29; 0% instances)</p>
 
-<p>Parents of <code>PUNCT</code> nodes belong to 18 different parts of speech: <a href="">VERB</a> (126034; 57% instances), <a href="">NOUN</a> (40351; 18% instances), <a href="">PROPN</a> (19453; 9% instances), <a href="">ADJ</a> (17759; 8% instances), <a href="">NUM</a> (11568; 5% instances), <a href="">ADV</a> (3039; 1% instances), <a href="">PRON</a> (1659; 1% instances), <a href="">PART</a> (535; 0% instances), <a href="">PUNCT</a> (157; 0% instances), <a href="">DET</a> (130; 0% instances), <a href="">CONJ</a> (90; 0% instances), <a href="">INTJ</a> (69; 0% instances), <a href="">SYM</a> (66; 0% instances), <a href="">ADP</a> (61; 0% instances), <a href="">ROOT</a> (33; 0% instances), <a href="">SCONJ</a> (32; 0% instances), <a href="">X</a> (11; 0% instances), <a href="">AUX</a> (2; 0% instances)</p>
+<p>Parents of <code class="highlighter-rouge">PUNCT</code> nodes belong to 18 different parts of speech: <a href="">VERB</a> (126091; 57% instances), <a href="">NOUN</a> (40366; 18% instances), <a href="">PROPN</a> (19520; 9% instances), <a href="">ADJ</a> (17744; 8% instances), <a href="">NUM</a> (11542; 5% instances), <a href="">ADV</a> (2977; 1% instances), <a href="">PRON</a> (1657; 1% instances), <a href="">PART</a> (515; 0% instances), <a href="">PUNCT</a> (161; 0% instances), <a href="">DET</a> (129; 0% instances), <a href="">CONJ</a> (79; 0% instances), <a href="">SYM</a> (72; 0% instances), <a href="">INTJ</a> (68; 0% instances), <a href="">ADP</a> (40; 0% instances), <a href="">ROOT</a> (34; 0% instances), <a href="">SCONJ</a> (31; 0% instances), <a href="">X</a> (11; 0% instances), <a href="">AUX</a> (2; 0% instances)</p>
 
-<p>220958 (100%) <code>PUNCT</code> nodes are leaves.</p>
+<p>220947 (100%) <code class="highlighter-rouge">PUNCT</code> nodes are leaves.</p>
 
-<p>36 (0%) <code>PUNCT</code> nodes have one child.</p>
+<p>36 (0%) <code class="highlighter-rouge">PUNCT</code> nodes have one child.</p>
 
-<p>34 (0%) <code>PUNCT</code> nodes have two children.</p>
+<p>33 (0%) <code class="highlighter-rouge">PUNCT</code> nodes have two children.</p>
 
-<p>21 (0%) <code>PUNCT</code> nodes have three or more children.</p>
+<p>23 (0%) <code class="highlighter-rouge">PUNCT</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>PUNCT</code> node is 23.</p>
+<p>The highest child degree of a <code class="highlighter-rouge">PUNCT</code> node is 23.</p>
 
-<p>Children of <code>PUNCT</code> nodes are attached using 11 different relations: <a href="">cs-dep/punct</a> (154; 63% instances), <a href="">cs-dep/dobj</a> (23; 9% instances), <a href="">cs-dep/nmod</a> (18; 7% instances), <a href="">cs-dep/conj</a> (13; 5% instances), <a href="">cs-dep/nsubj</a> (12; 5% instances), <a href="">cs-dep/nummod</a> (10; 4% instances), <a href="">cs-dep/advmod</a> (5; 2% instances), <a href="">cs-dep/dep</a> (4; 2% instances), <a href="">cs-dep/cc</a> (2; 1% instances), <a href="">cs-dep/ccomp</a> (1; 0% instances), <a href="">cs-dep/parataxis</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">PUNCT</code> nodes are attached using 11 different relations: <a href="">cs-dep/punct</a> (158; 62% instances), <a href="">cs-dep/dobj</a> (23; 9% instances), <a href="">cs-dep/conj</a> (20; 8% instances), <a href="">cs-dep/nmod</a> (18; 7% instances), <a href="">cs-dep/nsubj</a> (12; 5% instances), <a href="">cs-dep/nummod</a> (10; 4% instances), <a href="">cs-dep/advmod</a> (5; 2% instances), <a href="">cs-dep/dep</a> (4; 2% instances), <a href="">cs-dep/cc</a> (3; 1% instances), <a href="">cs-dep/ccomp</a> (1; 0% instances), <a href="">cs-dep/parataxis</a> (1; 0% instances)</p>
 
-<p>Children of <code>PUNCT</code> nodes belong to 8 different parts of speech: <a href="">PUNCT</a> (157; 65% instances), <a href="">NOUN</a> (47; 19% instances), <a href="">NUM</a> (24; 10% instances), <a href="">ADV</a> (5; 2% instances), <a href="">PROPN</a> (5; 2% instances), <a href="">CONJ</a> (2; 1% instances), <a href="">VERB</a> (2; 1% instances), <a href="">ADJ</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">PUNCT</code> nodes belong to 8 different parts of speech: <a href="">PUNCT</a> (161; 63% instances), <a href="">NOUN</a> (48; 19% instances), <a href="">NUM</a> (29; 11% instances), <a href="">ADV</a> (5; 2% instances), <a href="">PROPN</a> (5; 2% instances), <a href="">CONJ</a> (3; 1% instances), <a href="">ADJ</a> (2; 1% instances), <a href="">VERB</a> (2; 1% instances)</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+
+<p>There are 10 <code class="highlighter-rouge">PUNCT</code> lemmas (0%), 10 <code class="highlighter-rouge">PUNCT</code> types (0%) and 60127 <code class="highlighter-rouge">PUNCT</code> tokens (12%).
+Out of 16 observed tags, the rank of <code class="highlighter-rouge">PUNCT</code> is: 13 in number of lemmas, 14 in number of types and 3 in number of tokens.</p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">PUNCT</code> lemmas: <em>,, ., -, “, :, (, ), ?, ‘, /</em></p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">PUNCT</code> types:  <em>,, ., -, “, :, (, ), ?, ‘, /</em></p>
+
+<p>The 10 most frequent ambiguous lemmas:</p>
+
+<p>The 10 most frequent ambiguous types:</p>
+
+<h2 id="morphology-1">Morphology</h2>
+
+<p>The form / lemma ratio of <code class="highlighter-rouge">PUNCT</code> is 1.000000 (the average of all parts of speech is 2.206260).</p>
+
+<p>The 1st highest number of forms (1) was observed with the lemma “””: <em>”</em>.</p>
+
+<p>The 2nd highest number of forms (1) was observed with the lemma “’”: <em>’</em>.</p>
+
+<p>The 3rd highest number of forms (1) was observed with the lemma “(”: <em>(</em>.</p>
+
+<p><code class="highlighter-rouge">PUNCT</code> occurs with 1 features: <a href="">cs-feat/Abbr</a> (1; 0% instances)</p>
+
+<p><code class="highlighter-rouge">PUNCT</code> occurs with 1 feature-value pairs: <code class="highlighter-rouge">Abbr=Yes</code></p>
+
+<p><code class="highlighter-rouge">PUNCT</code> occurs with 2 feature combinations.
+The most frequent feature combination is <code class="highlighter-rouge">_</code> (60126 tokens).
+Examples: <em>,, ., -, “, :, (, ), ?, ‘, /</em></p>
+
+<h2 id="relations-1">Relations</h2>
+
+<p><code class="highlighter-rouge">PUNCT</code> nodes are attached to their parents using 2 different relations: <a href="">cs-dep/punct</a> (60119; 100% instances), <a href="">cs-dep/conj</a> (8; 0% instances)</p>
+
+<p>Parents of <code class="highlighter-rouge">PUNCT</code> nodes belong to 16 different parts of speech: <a href="">VERB</a> (37540; 62% instances), <a href="">NOUN</a> (13332; 22% instances), <a href="">ADJ</a> (5562; 9% instances), <a href="">PROPN</a> (1440; 2% instances), <a href="">ADV</a> (925; 2% instances), <a href="">PRON</a> (625; 1% instances), <a href="">NUM</a> (323; 1% instances), <a href="">SYM</a> (200; 0% instances), <a href="">PART</a> (68; 0% instances), <a href="">SCONJ</a> (50; 0% instances), <a href="">DET</a> (28; 0% instances), <a href="">CONJ</a> (11; 0% instances), <a href="">AUX</a> (10; 0% instances), <a href="">INTJ</a> (9; 0% instances), <a href="">ADP</a> (2; 0% instances), <a href="">PUNCT</a> (2; 0% instances)</p>
+
+<p>60123 (100%) <code class="highlighter-rouge">PUNCT</code> nodes are leaves.</p>
+
+<p>1 (0%) <code class="highlighter-rouge">PUNCT</code> nodes have one child.</p>
+
+<p>1 (0%) <code class="highlighter-rouge">PUNCT</code> nodes have two children.</p>
+
+<p>2 (0%) <code class="highlighter-rouge">PUNCT</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code class="highlighter-rouge">PUNCT</code> node is 4.</p>
+
+<p>Children of <code class="highlighter-rouge">PUNCT</code> nodes are attached using 7 different relations: <a href="">cs-dep/case</a> (2; 20% instances), <a href="">cs-dep/dep</a> (2; 20% instances), <a href="">cs-dep/punct</a> (2; 20% instances), <a href="">cs-dep/acl</a> (1; 10% instances), <a href="">cs-dep/advcl</a> (1; 10% instances), <a href="">cs-dep/mark</a> (1; 10% instances), <a href="">cs-dep/nmod</a> (1; 10% instances)</p>
+
+<p>Children of <code class="highlighter-rouge">PUNCT</code> nodes belong to 6 different parts of speech: <a href="">ADV</a> (2; 20% instances), <a href="">CONJ</a> (2; 20% instances), <a href="">PUNCT</a> (2; 20% instances), <a href="">VERB</a> (2; 20% instances), <a href="">SCONJ</a> (1; 10% instances), <a href="">SYM</a> (1; 10% instances)</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+
+<p>There are 26 <code class="highlighter-rouge">PUNCT</code> lemmas (1%), 26 <code class="highlighter-rouge">PUNCT</code> types (1%) and 3994 <code class="highlighter-rouge">PUNCT</code> tokens (11%).
+Out of 15 observed tags, the rank of <code class="highlighter-rouge">PUNCT</code> is: 8 in number of lemmas, 10 in number of types and 3 in number of tokens.</p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">PUNCT</code> lemmas: <em>,, ., ;, (, ), (1), (2), (3), (4), (5)</em></p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">PUNCT</code> types:  <em>,, ., ;, (, ), (1), (2), (3), (4), (5)</em></p>
+
+<p>The 10 most frequent ambiguous lemmas: <em>/</em> (<a href="">SYM</a> 2, <a href="">PUNCT</a> 2)</p>
+
+<p>The 10 most frequent ambiguous types:  <em>/</em> (<a href="">SYM</a> 2, <a href="">PUNCT</a> 2)</p>
+
+<ul>
+  <li><em>/</em>
+    <ul>
+      <li><a href="">SYM</a> 2: <em>Odpisová sazba na jednotku těženého množství ( Kč <b>/</b> t , Kč <b>/</b> m je podílem pořizovací ceny ložiska na jednotlivém pozemku a zásob nevyhrazeného nerostu ( t , m prokázaných geologickým průzkumem na tomto pozemku .</em></li>
+      <li><a href="">PUNCT</a> 2: <em>(4) Rozdíl mezi součtem počátečních zůstatků nově otevřených účtů aktiv a mezi součtem počátečních zůstatků nově otevřených účtů pasiv se uvede na účet v účtové skupině 49 , a to v závislosti na povaze zjištěného rozdílu ( + <b>/</b> - ) jako zůstatek aktivní nebo pasivní .</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="morphology-2">Morphology</h2>
+
+<p>The form / lemma ratio of <code class="highlighter-rouge">PUNCT</code> is 1.000000 (the average of all parts of speech is 1.764161).</p>
+
+<p>The 1st highest number of forms (1) was observed with the lemma “”*“”: <em>“*”</em>.</p>
+
+<p>The 2nd highest number of forms (1) was observed with the lemma “(”: <em>(</em>.</p>
+
+<p>The 3rd highest number of forms (1) was observed with the lemma “(1)”: <em>(1)</em>.</p>
+
+<p><code class="highlighter-rouge">PUNCT</code> does not occur with any features.</p>
+
+<h2 id="relations-2">Relations</h2>
+
+<p><code class="highlighter-rouge">PUNCT</code> nodes are attached to their parents using 2 different relations: <a href="">cs-dep/punct</a> (3991; 100% instances), <a href="">cs-dep/conj</a> (3; 0% instances)</p>
+
+<p>Parents of <code class="highlighter-rouge">PUNCT</code> nodes belong to 11 different parts of speech: <a href="">VERB</a> (2157; 54% instances), <a href="">NOUN</a> (1273; 32% instances), <a href="">ADJ</a> (314; 8% instances), <a href="">X</a> (126; 3% instances), <a href="">NUM</a> (86; 2% instances), <a href="">ADV</a> (16; 0% instances), <a href="">PART</a> (8; 0% instances), <a href="">PRON</a> (8; 0% instances), <a href="">SYM</a> (4; 0% instances), <a href="">DET</a> (1; 0% instances), <a href="">SCONJ</a> (1; 0% instances)</p>
+
+<p>3994 (100%) <code class="highlighter-rouge">PUNCT</code> nodes are leaves.</p>
+
+<p>The highest child degree of a <code class="highlighter-rouge">PUNCT</code> node is 0.</p>
 
 
 
@@ -206,6 +312,7 @@ PUNCT in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -237,11 +344,40 @@ PUNCT in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -265,6 +401,7 @@ PUNCT in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-pos';
@@ -290,7 +427,7 @@ PUNCT in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

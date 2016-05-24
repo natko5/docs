@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sl/feat">sl/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/feat">sl/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Variant.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,9 +39,9 @@
 
           <h2><code>Variant</code>: alternative form of word</h2>
 
-<p>In Slovenian, the <code>Variant</code> feature is either a lexical or inflectional features of some <a href="PRON">pronouns</a>.</p>
+<p>In Slovenian, the <code class="highlighter-rouge">Variant</code> feature is either a lexical or inflectional features of some <a href="PRON">pronouns</a>.</p>
 
-<h3 id="bound-bound-form"><code>Bound</code>: bound form</h3>
+<h3 id="bound-bound-form"><code class="highlighter-rouge">Bound</code>: bound form</h3>
 
 <p>This value is assigned as a lexical feature of fused combinations of prepositions and personal pronouns that are currently tokenized as one word form and annotated as <a href="PronType">personal</a> pronouns.</p>
 
@@ -52,7 +53,7 @@
   <li><em><b>Prednjo</b> so postavili kozarec vina.</em> “A glass of wine was put <em>in front of her.</em>”</li>
 </ul>
 
-<h3 id="short-clitic-form"><code>Short</code>: clitic form</h3>
+<h3 id="short-clitic-form"><code class="highlighter-rouge">Short</code>: clitic form</h3>
 
 <p>This value is assigned as an inflectional feature to clitic personal pronouns in genitive, dative and accusative to distinguish them from their longer counterparts with the same lemma and set of features.</p>
 
@@ -78,27 +79,52 @@
 <h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
 
 <p>This feature is language-specific.
-It occurs with 2 different values: <code>Bound</code>, <code>Short</code>.</p>
+It occurs with 2 different values: <code class="highlighter-rouge">Bound</code>, <code class="highlighter-rouge">Short</code>.</p>
 
-<p>3917 tokens (3%) have a non-empty value of <code>Variant</code>.
-57 types (0%) occur at least once with a non-empty value of <code>Variant</code>.
-15 lemmas (0%) occur at least once with a non-empty value of <code>Variant</code>.
+<p>3917 tokens (3%) have a non-empty value of <code class="highlighter-rouge">Variant</code>.
+57 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Variant</code>.
+15 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Variant</code>.
 The feature is used with 1 part-of-speech tags: <a href="">sl-pos/PRON</a> (3917; 3% instances).</p>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="pron"><code class="highlighter-rouge">PRON</code></h3>
 
-<p>3917 <a href="">sl-pos/PRON</a> tokens (57% of all <code>PRON</code> tokens) have a non-empty value of <code>Variant</code>.</p>
+<p>3917 <a href="">sl-pos/PRON</a> tokens (56% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Variant</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Variant</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (3917; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (2575; 66%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (2328; 59%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (2328; 59%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (2062; 53%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Variant</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (3917; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (2575; 66%), <tt><a href="Reflex.html">Reflex</a>=Yes</tt> (2328; 59%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (2328; 59%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (2328; 59%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (2062; 53%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Variant</code>:</p>
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Variant</code>:</p>
 
 <ul>
-  <li><code>Bound</code> (118; 3% of non-empty <code>Variant</code>): <em>zanj, zame, zase, nanjo, zanjo, nanj, vanjo, vanj, zanje, name</em></li>
-  <li><code>Short</code> (3799; 97% of non-empty <code>Variant</code>): <em>se, ga, jih, si, jo, mu, mi, ji, me, jim</em></li>
+  <li><code class="highlighter-rouge">Bound</code> (118; 3% of non-empty <code class="highlighter-rouge">Variant</code>): <em>zanj, zame, zase, nanjo, zanjo, nanj, vanjo, vanj, zanje, name</em></li>
+  <li><code class="highlighter-rouge">Short</code> (3799; 97% of non-empty <code class="highlighter-rouge">Variant</code>): <em>se, ga, jih, si, jo, mu, mi, ji, me, jim</em></li>
 </ul>
 
-<p><code>Variant</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (15) occur only with one value of <code>Variant</code>.</p>
+<p><code class="highlighter-rouge">Variant</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">PRON</code>. 100% lemmas (15) occur only with one value of <code class="highlighter-rouge">Variant</code>.</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>This feature is language-specific.
+It occurs with 2 different values: <code class="highlighter-rouge">Bound</code>, <code class="highlighter-rouge">Short</code>.</p>
+
+<p>806 tokens (3%) have a non-empty value of <code class="highlighter-rouge">Variant</code>.
+19 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Variant</code>.
+7 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Variant</code>.
+The feature is used with 1 part-of-speech tags: <a href="">sl-pos/PRON</a> (806; 3% instances).</p>
+
+<h3 id="pron-1"><code class="highlighter-rouge">PRON</code></h3>
+
+<p>806 <a href="">sl-pos/PRON</a> tokens (31% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Variant</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Variant</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (806; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (596; 74%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (447; 55%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (447; 55%).</p>
+
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Variant</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Bound</code> (7; 1% of non-empty <code class="highlighter-rouge">Variant</code>): <em>zanjo, vanj, zame, zanj, zase, zate</em></li>
+  <li><code class="highlighter-rouge">Short</code> (799; 99% of non-empty <code class="highlighter-rouge">Variant</code>): <em>se, mi, ga, jih, si, ti, jo, me, jim, mu</em></li>
+</ul>
 
 
 
@@ -118,6 +144,7 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/PRON</a> (3917
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -149,11 +176,40 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/PRON</a> (3917
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -177,6 +233,7 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/PRON</a> (3917
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-feat';
@@ -202,7 +259,7 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/PRON</a> (3917
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

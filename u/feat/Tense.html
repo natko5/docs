@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Tense.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -59,13 +60,13 @@ features will probably not directly reveal the tense. For instance,
 [en] <em>I <b>had been</b> there</em> is past perfect (pluperfect) tense,
 formed periphrastically by the simple past tense of the auxiliary <em>to
 have</em> and the past participle of the main verb <em>to be</em>. The auxiliary
-will be tagged <code>VerbForm=Fin|Mood=Ind|Tense=Past</code> and the participle
-will have <code>VerbForm=Part|Tense=Past</code>; none of the two will have
-<code>Tense=Pqp</code>. On the other hand, Portuguese can form the pluperfect
+will be tagged <code class="highlighter-rouge">VerbForm=Fin|Mood=Ind|Tense=Past</code> and the participle
+will have <code class="highlighter-rouge">VerbForm=Part|Tense=Past</code>; none of the two will have
+<code class="highlighter-rouge">Tense=Pqp</code>. On the other hand, Portuguese can form the pluperfect
 morphologically as just one word, such as <em>estivera</em>, which will thus be tagged
-<code>VerbForm=Fin|Mood=Ind|Tense=Pqp</code>.</p>
+<code class="highlighter-rouge">VerbForm=Fin|Mood=Ind|Tense=Pqp</code>.</p>
 
-<h3 id="past-past-tense--preterite--aorist"><code>Past</code>: past tense / preterite / aorist</h3>
+<h3 id="past-past-tense--preterite--aorist"><code class="highlighter-rouge">Past</code>: past tense / preterite / aorist</h3>
 
 <p>The past tense denotes actions that happened before the current
 moment. In English, this is the simple past form. In German, this is
@@ -80,7 +81,7 @@ imperfect).</p>
   <li>[en] <em>he <b>went</b> home</em></li>
 </ul>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that
 usually happen.</p>
@@ -91,7 +92,7 @@ usually happen.</p>
   <li>[en] <em>he <b>goes</b> home</em></li>
 </ul>
 
-<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+<h3 id="fut-future-tense"><code class="highlighter-rouge">Fut</code>: future tense</h3>
 
 <p>The future tense denotes actions that will happen after the current
 moment.</p>
@@ -102,7 +103,7 @@ moment.</p>
   <li>[es] <em><b>irá</b> a la casa</em> “he/she/it will go home”</li>
 </ul>
 
-<h3 id="imp-imperfect"><code>Imp</code>: imperfect</h3>
+<h3 id="imp-imperfect"><code class="highlighter-rouge">Imp</code>: imperfect</h3>
 
 <p>Used in e.g. Bulgarian and Croatian, imperfect is a special case of
 the past tense. Note that, unfortunately, imperfect tense is not
@@ -113,13 +114,13 @@ lexical one. In main clauses, imperfective verbs can have imperfect
 tense and perfective verbs have perfect tense. However, both rules can
 be violated in embedded clauses.</p>
 
-<h3 id="nar-narrative"><code>Nar</code>: narrative</h3>
+<h3 id="nar-narrative"><code class="highlighter-rouge">Nar</code>: narrative</h3>
 
 <p>Special case of the past tense, this is the Turkish <em>miş</em>-past. The
 difference is whether the speaker personally witnessed the action he
 is describing, or not.</p>
 
-<h3 id="pqp-pluperfect"><code>Pqp</code>: pluperfect</h3>
+<h3 id="pqp-pluperfect"><code class="highlighter-rouge">Pqp</code>: pluperfect</h3>
 
 <p>The pluperfect denotes action that happened before another action in
 past. This value does not apply to English where the pluperfect (past
@@ -186,6 +187,7 @@ Tense in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -217,11 +219,40 @@ Tense in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -245,6 +276,7 @@ Tense in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-feat';
@@ -270,7 +302,7 @@ Tense in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

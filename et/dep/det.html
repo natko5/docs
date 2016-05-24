@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-et">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/et/dep">et/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-et">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/et/dep">et/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_et-dep/det.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,12 +40,83 @@
           <h2><code>det</code>: determiner</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>det</code>.</p>
+for <code class="highlighter-rouge">det</code>.</p>
 
 
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udestonian">Treebank Statistics (UD_Estonian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>3211 nodes (1%) are attached to their parents as <code class="highlighter-rouge">det</code>.</p>
+
+<p>2952 instances of <code class="highlighter-rouge">det</code> (92%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.34755527872937.</p>
+
+<p>The following 7 pairs of parts of speech are connected with <code class="highlighter-rouge">det</code>: <a href="">et-pos/NOUN</a>-<a href="">et-pos/PRON</a> (2889; 90% instances), <a href="">et-pos/PRON</a>-<a href="">et-pos/PRON</a> (175; 5% instances), <a href="">et-pos/NUM</a>-<a href="">et-pos/PRON</a> (53; 2% instances), <a href="">et-pos/PROPN</a>-<a href="">et-pos/PRON</a> (52; 2% instances), <a href="">et-pos/ADJ</a>-<a href="">et-pos/PRON</a> (38; 1% instances), <a href="">et-pos/ADV</a>-<a href="">et-pos/PRON</a> (2; 0% instances), <a href="">et-pos/SYM</a>-<a href="">et-pos/PRON</a> (2; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 2 det	color:blue
+1	"	"	PUNCT	Z	_	5	punct	_	_
+2	See	see	PRON	P	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+3	üllas	üllas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	rüütel	rüütel	NOUN	S	Case=Nom|Number=Sing	5	nsubj	_	_
+5	elas	elama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	ilusa	ilus	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	7	amod	_	_
+7	elu	elu	NOUN	S	Case=Gen|Number=Sing	5	dobj	_	_
+8	!	!	PUNCT	Z	_	5	punct	_	_
+9	"	"	PUNCT	Z	_	5	punct	_	_
+10	ütles	ütlema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+11	viimaks	viimaks	ADV	D	_	10	advmod	_	_
+12	sir	sir	NOUN	S	Case=Nom|Number=Sing	13	appos	_	_
+13	Galahad	Galahad	PROPN	S	Case=Nom|Number=Sing	10	nsubj	_	_
+14	.	.	PUNCT	Z	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 2 det	color:blue
+1	Seda	see	PRON	P	Case=Par|Number=Sing|PronType=Dem	5	dobj	_	_
+2	kõike	kõik	PRON	P	Case=Par|Number=Sing|PronType=Tot	1	det	_	_
+3	Indrikson	Indrikson	PROPN	S	Case=Nom|Number=Sing	7	nsubj	_	_
+4	enam	enam	ADV	D	_	7	advmod	_	_
+5	näha	nägema	VERB	V	VerbForm=Inf	7	xcomp	_	_
+6	ei	ei	AUX	V	Mood=Ind|Negative=Neg|VerbForm=Fin	7	neg	_	_
+7	jõudnud	jõudma	VERB	V	Connegative=Yes|Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	.	.	PUNCT	Z	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 2 det	color:blue
+1	Pooled	pool	NUM	N	Case=Nom|Number=Plur|NumForm=Letter|NumType=Card	7	nsubj:cop	_	_
+2	neist	see	PRON	P	Case=Ela|Number=Plur|PronType=Dem	1	det	_	_
+3	on	olema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+4	tipp-	tipp	NOUN	S	Case=Nom|Hyph=Yes|Number=Sing	7	appos	_	_
+5	või	või	CONJ	J	_	4	cc	_	_
+6	keskastme	kesk_aste	NOUN	S	Case=Gen|Number=Sing	4	conj	_	_
+7	juhid	juht	NOUN	S	Case=Nom|Number=Plur	0	root	_	_
+8	.	.	PUNCT	Z	_	7	punct	_	_
+
+</code></pre>
 
 
 
@@ -103,6 +175,7 @@ det in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +207,40 @@ det in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +264,7 @@ det in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'et-dep';
@@ -187,7 +290,7 @@ det in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

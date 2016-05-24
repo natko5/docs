@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-es">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-es">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -233,11 +234,18 @@ in two places.</p>
 <p><a id="al-es-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>acl</code>.</p>
+<p><code class="highlighter-rouge">acl</code> is used for finite and non-finite clauses that modify a
+noun. Note that in Spanish relative clauses get assigned a specific
+relation <a href="">acl:relcl</a>, a subtype of <code class="highlighter-rouge">acl</code>.</p>
 
-<pre><code class="language-sdparse">comeremos cuando llegue Pedro . \n We will eat when Pedro arrives .
-advcl(comeremos, llegue)
+<pre><code class="language-sdparse">una buena opción a tener en cuenta \n a good option to take into account
+acl(opción, tener)
+acl(option, take)
+</code></pre>
+
+<pre><code class="language-sdparse">una localidad situada en la región de Alta Normandía \n a location situated in the region of Upper Normandy
+acl(localidad, situada)
+acl(location, situated)
 </code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/acl.md" target="#">edit acl</a></p>
@@ -246,7 +254,7 @@ advcl(comeremos, llegue)
 <h2><code>advcl</code>: adverbial clause modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>advcl</code>.</p>
+for <code class="highlighter-rouge">advcl</code>.</p>
 
 <p>An adverbial clause modifier is a clause which modifies a verb or other predicate (adjective, etc.), as a modifier not as a core complement. This includes things such as a temporal clause, consequence, conditional clause, purpose clause, etc. The dependent must be clausal (or else it is an advmod) and the dependent is the main predicate of the clause.</p>
 
@@ -266,7 +274,7 @@ advcl(cansado, vi)
 <h2><code>advmod</code>: adverbial modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>advmod</code>.</p>
+for <code class="highlighter-rouge">advmod</code>.</p>
 
 <p>An adverbial modifier of a word is a (non-clausal) adverb or adverbial phrase (ADVP) that serves to modify the meaning of the word.</p>
 
@@ -281,7 +289,7 @@ advmod(rápido, demasiado)
 <h2><code>amod</code>: adjectival modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>amod</code>.</p>
+for <code class="highlighter-rouge">amod</code>.</p>
 
 <p>An adjectival modifier of an NP is any adjectival phrase that serves to modify the meaning of the NP.</p>
 
@@ -295,7 +303,7 @@ amod(materiales, peligrosos)
 <h2><code>appos</code>: appositional modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>appos</code>.</p>
+for <code class="highlighter-rouge">appos</code>.</p>
 
 <p>An appositional modifier of an NP is an NP immediately to the right of the first NP that serves to define or modify that NP. It includes parenthesized examples, as well as defining abbreviations in one of these structures.</p>
 
@@ -309,7 +317,7 @@ appos(amigo, Pedro)
 <h2><code>aux</code>: auxiliary</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>aux</code>.</p>
+for <code class="highlighter-rouge">aux</code>.</p>
 
 <p>An auxiliary of a clause is a non-main verb of the clause, e.g., a modal auxiliary, or a form of “estar”, “ser” or “haber” in a periphrastic tense.</p>
 
@@ -334,7 +342,7 @@ aux(muerto, ha)
 <h2><code>auxpass</code>: passive auxiliary</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>auxpass</code>.</p>
+for <code class="highlighter-rouge">auxpass</code>.</p>
 
 <pre><code class="language-sdparse">Kennedy fue asesinado . \n Kennedy was murdered .
 auxpass(asesinado, fue)
@@ -346,7 +354,7 @@ auxpass(asesinado, fue)
 <h2><code>case</code>: case marking</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>case</code>.</p>
+for <code class="highlighter-rouge">case</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/case.md" target="#">edit case</a></p>
 
@@ -354,7 +362,7 @@ for <code>case</code>.</p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>cc</code>.</p>
+for <code class="highlighter-rouge">cc</code>.</p>
 
 <p>A coordination is the relation between an element of a conjunct and the coordinating conjunction word of the conjunct. (Note: different dependency grammars have different treatments of coordination. We take one conjunct of a conjunction as the head of the conjunction.) A conjunction may also appear at the beginning of a sentence. This is also called a cc, and it depends on the root predicate of the sentence.</p>
 
@@ -368,7 +376,7 @@ cc(guapa, y)
 <h2><code>ccomp</code>: clausal complement</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>ccomp</code>.</p>
+for <code class="highlighter-rouge">ccomp</code>.</p>
 
 <p>A clausal complement of a verb or adjective is a dependent clause with an internal subject (perhaps implicit) which functions like an object of the verb, or adjective.</p>
 
@@ -382,7 +390,7 @@ ccomp(Explícame, haciendo)
 <h2><code>compound</code>: compound</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>compound</code>.</p>
+for <code class="highlighter-rouge">compound</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/compound.md" target="#">edit compound</a></p>
 
@@ -390,7 +398,7 @@ for <code>compound</code>.</p>
 <h2><code>conj</code>: conjunct</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>conj</code>.</p>
+for <code class="highlighter-rouge">conj</code>.</p>
 
 <p>A conjunct is the relation between two elements connected by a coordinating conjunction, such as “y”, “o”, etc. We treat conjunctions asymmetrically: The head of the relation is the first conjunct and other conjunctions depend on it via the conj relation.</p>
 
@@ -404,7 +412,7 @@ conj(guapa, simpática)
 <h2><code>cop</code>: copula</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>cop</code>.</p>
+for <code class="highlighter-rouge">cop</code>.</p>
 
 <pre><code class="language-sdparse">Juan es una buena persona . \n Juan is a good person .
 cop(es, persona)
@@ -420,7 +428,7 @@ cop(es, alto)
 <h2><code>csubj</code>: clausal subject</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>csubj</code>.</p>
+for <code class="highlighter-rouge">csubj</code>.</p>
 
 <p>A clausal subject is a clausal syntactic subject of a clause, i.e., the subject is itself a clause. The governor of this relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb.</p>
 
@@ -434,7 +442,7 @@ csubj(gusta, comer)
 <h2><code>csubjpass</code>: clausal passive subject</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>csubjpass</code>.</p>
+for <code class="highlighter-rouge">csubjpass</code>.</p>
 
 <pre><code class="language-sdparse">Es sabido que Maria llega siempre tarde . \n It is known that Maria arrives always late .
 csubjpass(sabido, llega)
@@ -446,7 +454,7 @@ csubjpass(sabido, llega)
 <h2><code>dep</code>: unspecified dependency</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dep</code>.</p>
+for <code class="highlighter-rouge">dep</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/dep.md" target="#">edit dep</a></p>
 
@@ -454,7 +462,7 @@ for <code>dep</code>.</p>
 <h2><code>det</code>: determiner</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>det</code>.</p>
+for <code class="highlighter-rouge">det</code>.</p>
 
 <pre><code class="language-sdparse">Esta moneda está sucia . \n This coin is dirty .
 dep(moneda, está)
@@ -466,7 +474,7 @@ dep(moneda, está)
 <h2><code>discourse</code>: discourse element</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>discourse</code>.</p>
+for <code class="highlighter-rouge">discourse</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/discourse.md" target="#">edit discourse</a></p>
 
@@ -474,7 +482,7 @@ for <code>discourse</code>.</p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dislocated</code>.</p>
+for <code class="highlighter-rouge">dislocated</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/dislocated.md" target="#">edit dislocated</a></p>
 
@@ -482,7 +490,7 @@ for <code>dislocated</code>.</p>
 <h2><code>dobj</code>: direct object</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dobj</code>.</p>
+for <code class="highlighter-rouge">dobj</code>.</p>
 
 <pre><code class="language-sdparse">Hoy comeremos pescado . \n We will eat fish today .
 dobj(comeremos, pescado)
@@ -494,7 +502,7 @@ dobj(comeremos, pescado)
 <h2><code>expl</code>: expletive</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>expl</code>.</p>
+for <code class="highlighter-rouge">expl</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/expl.md" target="#">edit expl</a></p>
 
@@ -502,7 +510,7 @@ for <code>expl</code>.</p>
 <h2><code>foreign</code>: foreign words</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>foreign</code>.</p>
+for <code class="highlighter-rouge">foreign</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/foreign.md" target="#">edit foreign</a></p>
 
@@ -510,7 +518,7 @@ for <code>foreign</code>.</p>
 <h2><code>goeswith</code>: goes with</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>goeswith</code>.</p>
+for <code class="highlighter-rouge">goeswith</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/goeswith.md" target="#">edit goeswith</a></p>
 
@@ -518,7 +526,7 @@ for <code>goeswith</code>.</p>
 <h2><code>iobj</code>: indirect object</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>iobj</code>.</p>
+for <code class="highlighter-rouge">iobj</code>.</p>
 
 <pre><code class="language-sdparse">te voy a contar un cuento . \n I'm going to tell you a story .
 iobj(contar, te)
@@ -530,7 +538,7 @@ iobj(contar, te)
 <h2><code>list</code>: list</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>list</code>.</p>
+for <code class="highlighter-rouge">list</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/list.md" target="#">edit list</a></p>
 
@@ -538,7 +546,7 @@ for <code>list</code>.</p>
 <h2><code>mark</code>: marker</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>mark</code>.</p>
+for <code class="highlighter-rouge">mark</code>.</p>
 
 <p>A marker is the word introducing a finite clause subordinate to another clause. For a complement clause, this will typically be “que” or “si”. For an adverbial clause, the marker is typically a preposition like “mientras” or “aunque”. The mark is a dependent of the subordinate clause head.</p>
 
@@ -552,7 +560,7 @@ mark(comen, mientras)
 <h2><code>mwe</code>: multi-word expression</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>mwe</code>.</p>
+for <code class="highlighter-rouge">mwe</code>.</p>
 
 <pre><code class="language-sdparse">Tengo que estudiar . \n I have to study .
 mwe(Tengo, que)
@@ -564,7 +572,7 @@ mwe(Tengo, que)
 <h2><code>name</code>: name</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>name</code>.</p>
+for <code class="highlighter-rouge">name</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/name.md" target="#">edit name</a></p>
 
@@ -572,7 +580,7 @@ for <code>name</code>.</p>
 <h2><code>neg</code>: negation modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>neg</code>.</p>
+for <code class="highlighter-rouge">neg</code>.</p>
 
 <pre><code class="language-sdparse">María no canta . \n María does not sing .
 neg(canta, no)
@@ -588,7 +596,7 @@ neg(llueve, Nunca)
 <h2><code>nmod</code>: nominal modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>nmod</code>.</p>
+for <code class="highlighter-rouge">nmod</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/nmod.md" target="#">edit nmod</a></p>
 
@@ -596,7 +604,7 @@ for <code>nmod</code>.</p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>nsubj</code>.</p>
+for <code class="highlighter-rouge">nsubj</code>.</p>
 
 <p>A nominal subject is a noun phrase which is the syntactic subject of a clause. The governor of this relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun.</p>
 
@@ -610,7 +618,7 @@ nsubj(invitado, Juan)
 <h2><code>nsubjpass</code>: passive nominal subject</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>nsubjpass</code>.</p>
+for <code class="highlighter-rouge">nsubjpass</code>.</p>
 
 <pre><code class="language-sdparse">Pedro ha sido invitado por Juan . \n Pedro has been invited by Juan .
 nsubjpass(invitado, Pedro)
@@ -622,7 +630,7 @@ nsubjpass(invitado, Pedro)
 <h2><code>nummod</code>: numeric modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>nummod</code>.</p>
+for <code class="highlighter-rouge">nummod</code>.</p>
 
 <p>A numeric modifier of a noun is any number phrase that serves to modify the meaning of the noun with a quantity.</p>
 
@@ -639,7 +647,7 @@ nummod(años, 15)
 <h2><code>parataxis</code>: parataxis</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>parataxis</code>.</p>
+for <code class="highlighter-rouge">parataxis</code>.</p>
 
 <pre><code class="language-sdparse">Ya sé lo que llevaré a la fiesta: fruta y vino . \n I already know what I will bring to the party : fruit and wine .
 parataxis(llevaré, fruta)
@@ -651,7 +659,7 @@ parataxis(llevaré, fruta)
 <h2><code>punct</code>: punctuation</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>punct</code>.</p>
+for <code class="highlighter-rouge">punct</code>.</p>
 
 <pre><code class="language-sdparse">Cierra la puerta ! \n Close the door !
 punct(Cierra, !)
@@ -663,7 +671,7 @@ punct(Cierra, !)
 <h2><code>remnant</code>: remnant in ellipsis</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>remnant</code>.</p>
+for <code class="highlighter-rouge">remnant</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/remnant.md" target="#">edit remnant</a></p>
 
@@ -671,7 +679,7 @@ for <code>remnant</code>.</p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>reparandum</code>.</p>
+for <code class="highlighter-rouge">reparandum</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/reparandum.md" target="#">edit reparandum</a></p>
 
@@ -679,7 +687,7 @@ for <code>reparandum</code>.</p>
 <h2><code>root</code>: root</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>root</code>.</p>
+for <code class="highlighter-rouge">root</code>.</p>
 
 <p>The root grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indexation of real words in the sentence starts at 1.</p>
 
@@ -697,7 +705,7 @@ root(ROOT, es)
 <h2><code>vocative</code>: vocative</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>vocative</code>.</p>
+for <code class="highlighter-rouge">vocative</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_es-dep/vocative.md" target="#">edit vocative</a></p>
 
@@ -705,7 +713,7 @@ for <code>vocative</code>.</p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>xcomp</code>.</p>
+for <code class="highlighter-rouge">xcomp</code>.</p>
 
 <pre><code class="language-sdparse">Quiero comprar un ordenador . \n I want to buy a computer  .
 xcomp(Quiero, comprar)
@@ -725,6 +733,7 @@ xcomp(Quiero, comprar)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -756,11 +765,40 @@ xcomp(Quiero, comprar)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -784,6 +822,7 @@ xcomp(Quiero, comprar)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'es-overview';
@@ -809,7 +848,7 @@ xcomp(Quiero, comprar)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

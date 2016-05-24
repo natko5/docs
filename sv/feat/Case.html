@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sv">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sv/feat">sv/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sv/feat">sv/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-feat/Case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -42,7 +43,7 @@
 pronouns (PRON), while the nominative/genitive distinction occurs with nouns (NOUN), proper nouns (PROPN) 
 and adjectives (ADJ).</p>
 
-<h3 id="nom-nominative"><code>Nom</code>: nominative</h3>
+<h3 id="nom-nominative"><code class="highlighter-rouge">Nom</code>: nominative</h3>
 
 <p>The base form, typically used as a citation form (lemma).</p>
 
@@ -53,7 +54,7 @@ and adjectives (ADJ).</p>
   <li>[sv] <em><b>riskerna</b> är stora</em> “the <b>risks</b> are large”</li>
 </ul>
 
-<h3 id="acc-accusative"><code>Acc</code>: accusative</h3>
+<h3 id="acc-accusative"><code class="highlighter-rouge">Acc</code>: accusative</h3>
 
 <p>In many languages used for direct objects of verbs. In Swedish this form is only used for personal pronouns.</p>
 
@@ -64,7 +65,7 @@ and adjectives (ADJ).</p>
   <li>[sv] <em>ta med <b>dig</b></em> “take with <b>you</b>”</li>
 </ul>
 
-<h3 id="gen-genitive"><code>Gen</code>: genitive</h3>
+<h3 id="gen-genitive"><code class="highlighter-rouge">Gen</code>: genitive</h3>
 
 <p>Prototypical meaning of genitive is that the noun phrase somehow belongs to its governor; it would often be translated by the English preposition <em>of</em>. The genitive in Swedish does not however always imply possession, for example <em><b>Stillhetens</b> hav</em> “Sea of <b>Tranquility</b>”</p>
 
@@ -89,25 +90,26 @@ and adjectives (ADJ).</p>
 <h2 id="treebank-statistics-udswedish">Treebank Statistics (UD_Swedish)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Acc</code>, <code>Gen</code>, <code>Nom</code>.</p>
+It occurs with 3 different values: <code class="highlighter-rouge">Acc</code>, <code class="highlighter-rouge">Gen</code>, <code class="highlighter-rouge">Nom</code>.</p>
 
-<p>36618 tokens (38%) have a non-empty value of <code>Case</code>.
-12625 types (84%) occur at least once with a non-empty value of <code>Case</code>.
-8622 lemmas (84%) occur at least once with a non-empty value of <code>Case</code>.
-The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (22427; 23% instances), <a href="">sv-pos/ADJ</a> (8466; 9% instances), <a href="">sv-pos/PRON</a> (2613; 3% instances), <a href="">sv-pos/NUM</a> (1725; 2% instances), <a href="">sv-pos/PROPN</a> (1338; 1% instances), <a href="">sv-pos/VERB</a> (49; 0% instances).</p>
+<p>36627 tokens (38%) have a non-empty value of <code class="highlighter-rouge">Case</code>.
+12626 types (84%) occur at least once with a non-empty value of <code class="highlighter-rouge">Case</code>.
+8623 lemmas (84%) occur at least once with a non-empty value of <code class="highlighter-rouge">Case</code>.
+The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (22429; 23% instances), <a href="">sv-pos/ADJ</a> (8466; 9% instances), <a href="">sv-pos/PRON</a> (2613; 3% instances), <a href="">sv-pos/NUM</a> (1733; 2% instances), <a href="">sv-pos/PROPN</a> (1337; 1% instances), <a href="">sv-pos/VERB</a> (49; 0% instances).</p>
 
-<h3 id="noun"><code>NOUN</code></h3>
+<h3 id="noun"><code class="highlighter-rouge">NOUN</code></h3>
 
-<p>22427 <a href="">sv-pos/NOUN</a> tokens (98% of all <code>NOUN</code> tokens) have a non-empty value of <code>Case</code>.</p>
+<p>22429 <a href="">sv-pos/NOUN</a> tokens (98% of all <code class="highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Case</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Case</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Com</tt> (15646; 70%), <tt><a href="Number.html">Number</a>=Sing</tt> (15355; 68%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (14737; 66%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NOUN</code> and <code class="highlighter-rouge">Case</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Com</tt> (15646; 70%), <tt><a href="Number.html">Number</a>=Sing</tt> (15357; 68%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (14737; 66%).</p>
 
-<p><code>NOUN</code> tokens may have the following values of <code>Case</code>:</p>
+<p><code class="highlighter-rouge">NOUN</code> tokens may have the following values of <code class="highlighter-rouge">Case</code>:</p>
 
 <ul>
-  <li><code>Gen</code> (984; 4% of non-empty <code>Case</code>): <em>äktenskapets, kvinnans, världens, barnens, familjens, års, dagens, samhällets, jordens, slags</em></li>
-  <li><code>Nom</code> (21443; 96% of non-empty <code>Case</code>): <em>år, barn, del, äktenskapet, procent, barnen, människor, tid, sätt, samhället</em></li>
-  <li><code>EMPTY</code> (557): <em>kr, %, dr, s., kap., proc, KPI, milj, mån, sid</em></li>
+  <li><code class="highlighter-rouge">Acc</code> (1; 0% of non-empty <code class="highlighter-rouge">Case</code>): <em>nuptiam</em></li>
+  <li><code class="highlighter-rouge">Gen</code> (984; 4% of non-empty <code class="highlighter-rouge">Case</code>): <em>äktenskapets, kvinnans, världens, barnens, familjens, års, dagens, samhällets, jordens, slags</em></li>
+  <li><code class="highlighter-rouge">Nom</code> (21444; 96% of non-empty <code class="highlighter-rouge">Case</code>): <em>år, barn, del, äktenskapet, procent, barnen, människor, tid, sätt, samhället</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (556): <em>kr, %, dr, s., kap., proc, KPI, milj, mån, sid</em></li>
 </ul>
 
 <table>
@@ -118,20 +120,20 @@ The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (2242
   <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur</tt></td><td><em>barn</em></td><td><em>barns</em></td></tr>
 </table>
 
-<p><code>Case</code> seems to be <strong>lexical feature</strong> of <code>NOUN</code>. 95% lemmas (5533) occur only with one value of <code>Case</code>.</p>
+<p><code class="highlighter-rouge">Case</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">NOUN</code>. 95% lemmas (5535) occur only with one value of <code class="highlighter-rouge">Case</code>.</p>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>8466 <a href="">sv-pos/ADJ</a> tokens (100% of all <code>ADJ</code> tokens) have a non-empty value of <code>Case</code>.</p>
+<p>8466 <a href="">sv-pos/ADJ</a> tokens (100% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Case</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Case</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (6902; 82%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (6902; 82%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (5934; 70%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (5330; 63%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Case</code> co-occurred: <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (6902; 82%), <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (6902; 82%), <tt><a href="Degree.html">Degree</a>=Pos</tt> (5934; 70%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (5330; 63%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Case</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Case</code>:</p>
 
 <ul>
-  <li><code>Gen</code> (20; 0% of non-empty <code>Case</code>): <em>anställdas, enskildes, försäkrades, äldres, andres, avlidnes, dubbelarbetandes, efterkommandes, enskilds, frånskildas</em></li>
-  <li><code>Nom</code> (8446; 100% of non-empty <code>Case</code>): <em>olika, andra, första, nya, många, stora, stor, större, vissa, hela</em></li>
-  <li><code>EMPTY</code> (32): <em>European, New, S:t, ev, fri-, låg-, American, Boiling, Economic, Free</em></li>
+  <li><code class="highlighter-rouge">Gen</code> (20; 0% of non-empty <code class="highlighter-rouge">Case</code>): <em>anställdas, enskildes, försäkrades, äldres, andres, avlidnes, dubbelarbetandes, efterkommandes, enskilds, frånskildas</em></li>
+  <li><code class="highlighter-rouge">Nom</code> (8446; 100% of non-empty <code class="highlighter-rouge">Case</code>): <em>olika, andra, första, nya, många, stora, stor, större, vissa, hela</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (32): <em>European, New, S:t, ev, fri-, låg-, American, Boiling, Economic, Free</em></li>
 </ul>
 
 <table>
@@ -144,50 +146,55 @@ The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (2242
   <tr><td><tt><a href="Degree.html">Degree</a>=Pos|<a href="Number.html">Number</a>=Plur</tt></td><td><em>andra</em></td><td></td></tr>
 </table>
 
-<p><code>Case</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 99% lemmas (1824) occur only with one value of <code>Case</code>.</p>
+<p><code class="highlighter-rouge">Case</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 99% lemmas (1824) occur only with one value of <code class="highlighter-rouge">Case</code>.</p>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="pron"><code class="highlighter-rouge">PRON</code></h3>
 
-<p>2613 <a href="">sv-pos/PRON</a> tokens (44% of all <code>PRON</code> tokens) have a non-empty value of <code>Case</code>.</p>
+<p>2613 <a href="">sv-pos/PRON</a> tokens (44% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Case</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Case</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (2613; 100%), <tt><a href="Definite.html">Definite</a>=Def</tt> (1934; 74%), <tt><a href="Gender.html">Gender</a>=Com</tt> (1680; 64%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Case</code> co-occurred: <tt><a href="Definite.html">Definite</a>=Def</tt> (1934; 74%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (1889; 72%), <tt><a href="Gender.html">Gender</a>=Com</tt> (1680; 64%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Case</code>:</p>
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Case</code>:</p>
 
 <ul>
-  <li><code>Acc</code> (726; 28% of non-empty <code>Case</code>): <em>sig, dem, oss, dig, varandra, mig, henne, honom, sej, varann</em></li>
-  <li><code>Nom</code> (1887; 72% of non-empty <code>Case</code>): <em>man, de, vi, du, han, jag, hon, ni, bägge, en</em></li>
-  <li><code>EMPTY</code> (3362): <em>det, som, den, detta, vad, en, andra, något, många, alla</em></li>
+  <li><code class="highlighter-rouge">Acc</code> (726; 28% of non-empty <code class="highlighter-rouge">Case</code>): <em>sig, dem, oss, dig, varandra, mig, henne, honom, sej, varann</em></li>
+  <li><code class="highlighter-rouge">Nom</code> (1887; 72% of non-empty <code class="highlighter-rouge">Case</code>): <em>man, de, vi, du, han, jag, hon, ni, bägge, en</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (3355): <em>det, som, den, detta, vad, en, andra, något, många, alla</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>de</i></th><th><tt>Nom</tt></th><th><tt>Acc</tt></th></tr>
-  <tr><td><tt></tt></td><td><em>de</em></td><td><em>dem</em></td></tr>
+  <tr><td><tt><a href="PronType.html">PronType</a>=Ind</tt></td><td><em>de</em></td><td></td></tr>
+  <tr><td><tt><a href="PronType.html">PronType</a>=Prs</tt></td><td><em>de</em></td><td><em>dem</em></td></tr>
+  <tr><td><tt><a href="PronType.html">PronType</a>=Rel</tt></td><td><em>de</em></td><td></td></tr>
+  <tr><td><tt><a href="PronType.html">PronType</a>=Tot</tt></td><td></td><td><em>dem</em></td></tr>
 </table>
 
-<h3 id="num"><code>NUM</code></h3>
+<h3 id="num"><code class="highlighter-rouge">NUM</code></h3>
 
-<p>1725 <a href="">sv-pos/NUM</a> tokens (99% of all <code>NUM</code> tokens) have a non-empty value of <code>Case</code>.</p>
+<p>1733 <a href="">sv-pos/NUM</a> tokens (100% of all <code class="highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="highlighter-rouge">Case</code>.</p>
 
-<p><code>NUM</code> tokens may have the following values of <code>Case</code>:</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NUM</code> and <code class="highlighter-rouge">Case</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (1733; 100%).</p>
+
+<p><code class="highlighter-rouge">NUM</code> tokens may have the following values of <code class="highlighter-rouge">Case</code>:</p>
 
 <ul>
-  <li><code>Nom</code> (1725; 100% of non-empty <code>Case</code>): <em>två, tre, 1, 20, 2, en, 1970, 3, 10, 1971</em></li>
-  <li><code>EMPTY</code> (16): <em>ett-, 1, 17, 1700-, 18, 19, 1950-, 2, 20, 50232</em></li>
+  <li><code class="highlighter-rouge">Nom</code> (1733; 100% of non-empty <code class="highlighter-rouge">Case</code>): <em>två, tre, en, 1, 20, 2, ett, 1970, 3, 10</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (8): <em>ett-, 1700-, 1950-, tre-, två-</em></li>
 </ul>
 
-<p><code>Case</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (479) occur only with one value of <code>Case</code>.</p>
+<p><code class="highlighter-rouge">Case</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">NUM</code>. 100% lemmas (479) occur only with one value of <code class="highlighter-rouge">Case</code>.</p>
 
-<h3 id="propn"><code>PROPN</code></h3>
+<h3 id="propn"><code class="highlighter-rouge">PROPN</code></h3>
 
-<p>1338 <a href="">sv-pos/PROPN</a> tokens (98% of all <code>PROPN</code> tokens) have a non-empty value of <code>Case</code>.</p>
+<p>1337 <a href="">sv-pos/PROPN</a> tokens (98% of all <code class="highlighter-rouge">PROPN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Case</code>.</p>
 
-<p><code>PROPN</code> tokens may have the following values of <code>Case</code>:</p>
+<p><code class="highlighter-rouge">PROPN</code> tokens may have the following values of <code class="highlighter-rouge">Case</code>:</p>
 
 <ul>
-  <li><code>Gen</code> (153; 11% of non-empty <code>Case</code>): <em>Sveriges, EEC:s, Guds, Stockholms, FN:s, Kristi, KF:s, Parsons, Europas, Jesu</em></li>
-  <li><code>Nom</code> (1185; 89% of non-empty <code>Case</code>): <em>Sverige, EEC, Stockholm, USA, ATP, Gud, Göteborg, Horn, Danmark, Indien</em></li>
-  <li><code>EMPTY</code> (24): <em>A, AF, B, Belgien, CH, D, DK, Danmark, F, FL</em></li>
+  <li><code class="highlighter-rouge">Gen</code> (153; 11% of non-empty <code class="highlighter-rouge">Case</code>): <em>Sveriges, EEC:s, Guds, Stockholms, FN:s, Kristi, KF:s, Parsons, Europas, Jesu</em></li>
+  <li><code class="highlighter-rouge">Nom</code> (1184; 89% of non-empty <code class="highlighter-rouge">Case</code>): <em>Sverige, EEC, Stockholm, USA, ATP, Gud, Göteborg, Horn, Danmark, Indien</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (24): <em>A, AF, B, Belgien, CH, D, DK, Danmark, F, FL</em></li>
 </ul>
 
 <table>
@@ -195,36 +202,36 @@ The feature is used with 6 part-of-speech tags: <a href="">sv-pos/NOUN</a> (2242
   <tr><td><tt></tt></td><td><em>Sverige</em></td><td><em>Sveriges</em></td></tr>
 </table>
 
-<p><code>Case</code> seems to be <strong>lexical feature</strong> of <code>PROPN</code>. 92% lemmas (477) occur only with one value of <code>Case</code>.</p>
+<p><code class="highlighter-rouge">Case</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">PROPN</code>. 92% lemmas (476) occur only with one value of <code class="highlighter-rouge">Case</code>.</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>49 <a href="">sv-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Case</code>.</p>
+<p>49 <a href="">sv-pos/VERB</a> tokens (0% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Case</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Case</code> co-occurred: <tt><a href="Tense.html">Tense</a>=Past</tt> (49; 100%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (49; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (49; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (49; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Case</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (49; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (49; 100%), <tt><a href="Voice.html">Voice</a>=EMPTY</tt> (49; 100%), <tt><a href="Tense.html">Tense</a>=Past</tt> (49; 100%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Case</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Case</code>:</p>
 
 <ul>
-  <li><code>Nom</code> (49; 100% of non-empty <code>Case</code>): <em>påverkade, vald, vänd, hörselskadad, tvungna, accepterad, anpassade, bedövade, diciplinerade, emanciperade</em></li>
-  <li><code>EMPTY</code> (9920): <em>har, finns, är, blir, få, får, ha, gäller, ger, går</em></li>
+  <li><code class="highlighter-rouge">Nom</code> (49; 100% of non-empty <code class="highlighter-rouge">Case</code>): <em>påverkade, vald, vänd, hörselskadad, tvungna, accepterad, anpassade, bedövade, diciplinerade, emanciperade</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (11537): <em>är, har, finns, vara, blir, få, får, var, ha, gäller</em></li>
 </ul>
 
-<p><code>Case</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (40) occur only with one value of <code>Case</code>.</p>
+<p><code class="highlighter-rouge">Case</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (40) occur only with one value of <code class="highlighter-rouge">Case</code>.</p>
 
-<h2 id="relations-with-agreement-in-case">Relations with Agreement in <code>Case</code></h2>
+<h2 id="relations-with-agreement-in-case">Relations with Agreement in <code class="highlighter-rouge">Case</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Case</code>:
-<tt>NOUN –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (4372; 98%),
-<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (3003; 95%),
-<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (1792; 92%),
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Case</code>:
+<tt>NOUN –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (4375; 98%),
+<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (3006; 95%),
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (1912; 92%),
 <tt>NOUN –[<a href="../dep/det.html">det</a>]–&gt; ADJ</tt> (1271; 97%),
-<tt>NOUN –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (937; 80%),
+<tt>NOUN –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (939; 81%),
 <tt>ADJ –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (501; 98%),
-<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (485; 100%),
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (379; 100%),
-<tt>NOUN –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (276; 94%),
-<tt>NOUN –[<a href="../dep/appos.html">appos</a>]–&gt; NOUN</tt> (259; 90%).</p>
+<tt>ADJ –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (483; 100%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (380; 100%),
+<tt>NOUN –[<a href="../dep/appos.html">appos</a>]–&gt; NOUN</tt> (258; 90%),
+<tt>NOUN –[<a href="../dep/nsubj.html">nsubj</a>]–&gt; NOUN</tt> (251; 93%).</p>
 
 
 
@@ -283,6 +290,7 @@ Case in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -314,11 +322,40 @@ Case in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -342,6 +379,7 @@ Case in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sv-feat';
@@ -367,7 +405,7 @@ Case in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

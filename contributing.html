@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="css/hint.css"/>
     <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/contributing.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -109,12 +110,12 @@ To maintain the consistency of the documentation, please follow these guidelines
 
 <ul>
   <li>All types / labels (POS tags, feature names/values, relation labels) are in
-<code>constant width font</code>. To achieve this, use either a documentation link (see
-below), or backticks in Markdown (e.g. `nsubj`) or <code>&lt;code&gt;</code> in HTML
-(e.g. <code>&lt;code&gt;nsubj&lt;/code&gt;</code>).</li>
+<code class="highlighter-rouge">constant width font</code>. To achieve this, use either a documentation link (see
+below), or backticks in Markdown (e.g. `nsubj`) or <code class="highlighter-rouge">&lt;code&gt;</code> in HTML
+(e.g. <code class="highlighter-rouge">&lt;code&gt;nsubj&lt;/code&gt;</code>).</li>
   <li>The first mention of any type other than the one that is the focus of the page
 (the titular one) is linked to the relevant page of documentation. For example,
-on the page for <code>nsubj</code>, write “`nsubj`” and “[case]()”. Repeated mentions of
+on the page for <code class="highlighter-rouge">nsubj</code>, write “`nsubj`” and “[case]()”. Repeated mentions of
 the same type may be optionally be linked (if they are too far apart, it makes
 sense to hyperlink again, but it does not make sense to highlight several
 occurrences in the same paragraph)</li>
@@ -129,9 +130,9 @@ occurrences in the same paragraph)</li>
       <li>राम इवान से भी बेहतर है / <em>rāma ivāna se bhī behatara hai</em> “Ram is even better than Ivan”</li>
     </ul>
   </li>
-  <li>To emphasize part of an example, use the <code>&lt;b&gt;</code> tag. For example, <code>_&lt;b&gt;Which&lt;/b&gt; car_</code> renders as follows: <em><b>Which</b> car</em>.
+  <li>To emphasize part of an example, use the <code class="highlighter-rouge">&lt;b&gt;</code> tag. For example, <code class="highlighter-rouge">_&lt;b&gt;Which&lt;/b&gt; car_</code> renders as follows: <em><b>Which</b> car</em>.
     <ul>
-      <li>To emphasize text that is not part of an example, use <code>_light emphasis_</code> (rendering as <em>light emphasis</em>) or <code>**heavy emphasis**</code> (<strong>heavy emphasis</strong>), but <em>not</em> the <code>&lt;b&gt;</code> tag.</li>
+      <li>To emphasize text that is not part of an example, use <code class="highlighter-rouge">_light emphasis_</code> (rendering as <em>light emphasis</em>) or <code class="highlighter-rouge">**heavy emphasis**</code> (<strong>heavy emphasis</strong>), but <em>not</em> the <code class="highlighter-rouge">&lt;b&gt;</code> tag.</li>
     </ul>
   </li>
   <li>If an in-line example shall contain a verbose translation, it is also italics and without quotes, separated by the non-italics abbreviation “lit.” Multi-word expressions that correspond to one token in the original language are joined by a hyphen. The verbose translation is followed by a fluent English translation in its usual format.
@@ -176,7 +177,7 @@ head of a clause, but rather the dependent of a lexical predicate, as exemplifie
 
 <p>is generated from this input:</p>
 
-<pre><code>A copula is the relation between the complement of a copular verb and
+<div class="highlighter-rouge"><pre class="highlight"><code>A copula is the relation between the complement of a copular verb and
 the copular verb *to be* (only).  (We normally take a copula as a dependent of its
 complement.)
 
@@ -196,6 +197,7 @@ amod(dancer-5, best-4)
 The copula *be* is not treated as the
 head of a clause, but rather the dependent of a lexical predicate, as exemplified above.
 </code></pre>
+</div>
 
 <p>The input is primarily in the
 <a href="http://daringfireball.net/projects/markdown/">Markdown</a> format
@@ -205,12 +207,12 @@ can be mostly written like plain text and mixed freely with inline
 HTML. The only exception is the format used for embedding
 visualizations, which is supported as an extension specific to this
 project. To embed a visualization represented in the Stanford
-Dependency format, simply wrap it in lines with <code>~~~ sdparse</code> and
-<code>~~~</code>, as in the example above. (Or, correspondingly, wrap in HTML
-tags <code>&lt;div class="sd-parse"&gt;</code> and <code>&lt;/div&gt;</code>)</p>
+Dependency format, simply wrap it in lines with <code class="highlighter-rouge">~~~ sdparse</code> and
+<code class="highlighter-rouge">~~~</code>, as in the example above. (Or, correspondingly, wrap in HTML
+tags <code class="highlighter-rouge">&lt;div class="sd-parse"&gt;</code> and <code class="highlighter-rouge">&lt;/div&gt;</code>)</p>
 
 <p>The documentation system also supports linking of pages in collections
-using a compact syntax: for example, <code>[u-dep/aux]()</code> expands into
+using a compact syntax: for example, <code class="highlighter-rouge">[u-dep/aux]()</code> expands into
 the following link: <a href="">u-dep/aux</a></p>
 
 <p>For more detail, you can see the documentation for the <a href="http://daringfireball.net/projects/markdown/syntax">Markdown
@@ -233,7 +235,7 @@ and the “Cancel” and “Commit changes” buttons at the bottom.</p>
 in a new tab. After testing it out, feel free to either cancel without
 saving your changes, or save them into the version control system
 using the “Commit changes” button. You can see the resulting document
-<a href="http://universaldependencies.github.io/docs/sandbox.html">here</a>
+<a href="http://universaldependencies.org/sandbox.html">here</a>
 (reload to see changes, and please note it may take some time for the
 changes to show up.)</p>
 
@@ -242,12 +244,12 @@ document instead of the “real” documents.</p>
 
 <p>To edit the actual documentation, first find the page you’re
 interested in. For example, to navigate to the documentation for the
-English language <code>dobj</code> (direct object) dependency:</p>
+English language <code class="highlighter-rouge">dobj</code> (direct object) dependency:</p>
 
 <ul>
-  <li>Start from the homepage (<a href="http://universaldependencies.github.io/docs/">http://universaldependencies.github.io/docs/</a>)</li>
-  <li>Click on the “English relations index” link (go to <a href="http://universaldependencies.github.io/docs/en/dep/index.html">http://universaldependencies.github.io/docs/en/dep/index.html</a>)</li>
-  <li>Click on the “dobj” link (go to <a href="http://universaldependencies.github.io/docs/en/dep/dobj.html">http://universaldependencies.github.io/docs/en/dep/dobj.html</a>)</li>
+  <li>Start from the homepage (<a href="http://universaldependencies.org/">http://universaldependencies.org/</a>)</li>
+  <li>Click on the “English relations index” link (go to <a href="http://universaldependencies.org/en/dep/index.html">http://universaldependencies.org/en/dep/index.html</a>)</li>
+  <li>Click on the “dobj” link (go to <a href="http://universaldependencies.org/en/dep/dobj.html">http://universaldependencies.org/en/dep/dobj.html</a>)</li>
 </ul>
 
 <p>Then, edit and save your changes:</p>
@@ -283,35 +285,39 @@ use cases, please see GitHub documentation.</p>
 <a href="https://github.com/universaldependencies/docs">https://github.com/universaldependencies/docs</a>.
 To check out these materials from GitHub, run the following command:</p>
 
-<pre><code>git clone git@github.com:UniversalDependencies/docs.git
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:UniversalDependencies/docs.git
 </code></pre>
+</div>
 
-<p>If successful, this will create the subdirectory <code>docs/</code> containing
+<p>If successful, this will create the subdirectory <code class="highlighter-rouge">docs/</code> containing
 the data of the repository in your current directory. You can then
 edit the files in the repository normally, using your favorite text
 editor. After completing a set of changes, you can commit the changes
 with the command</p>
 
-<pre><code>git commit -a
+<div class="highlighter-rouge"><pre class="highlight"><code>git commit -a
 </code></pre>
+</div>
 
 <p>and push them to the shared online repository with</p>
 
-<pre><code>git push
+<div class="highlighter-rouge"><pre class="highlight"><code>git push
 </code></pre>
+</div>
 
-<p>if you see the error <code>error: failed to push some refs</code>, it’s likely
+<p>if you see the error <code class="highlighter-rouge">error: failed to push some refs</code>, it’s likely
 that others pushed changes to the shared online repository while you
 were working. You can retrieve these changes and merge them with
 yours with the command</p>
 
-<pre><code>git pull
+<div class="highlighter-rouge"><pre class="highlight"><code>git pull
 </code></pre>
+</div>
 
 <p>This covers the very basics only. Please see the extensive materials
 available online at GitHub and elsewhere for details.</p>
 
-<p>Technical note: please <strong>do not</strong> commit anything into the <code>gh-pages</code>
+<p>Technical note: please <strong>do not</strong> commit anything into the <code class="highlighter-rouge">gh-pages</code>
 branch of the repository. The files in this branch are autogenerated
 and will be overwritten on any changes to the repository. (If this
 note makes no sense to you, don’t worry – you cannot do this by
@@ -339,7 +345,7 @@ requests</a>.</p>
 <h2 id="links">Links</h2>
 
 <ul>
-  <li><a href="http://universaldependencies.github.io/docs/">Home page</a></li>
+  <li><a href="http://universaldependencies.org/">Home page</a></li>
   <li><a href="https://github.com/universaldependencies/docs">GitHub repository</a></li>
   <li><a href="https://github.com/universaldependencies/docs/issues">Issue tracker</a></li>
 </ul>
@@ -347,20 +353,20 @@ requests</a>.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 <p>Issue: when running locally, the system gives the error message
-<em>cannot load such file – <code>jekyll-redirect-from</code></em>.</p>
+<em>cannot load such file – <code class="highlighter-rouge">jekyll-redirect-from</code></em>.</p>
 
 <ul>
   <li>Solution: install the ruby gem
-<a href="https://github.com/jekyll/jekyll-redirect-from"><code>jekyll-redirect-from</code></a>,
-for example with <code>gem install jekyll-redirect-from</code>.</li>
+<a href="https://github.com/jekyll/jekyll-redirect-from"><code class="highlighter-rouge">jekyll-redirect-from</code></a>,
+for example with <code class="highlighter-rouge">gem install jekyll-redirect-from</code>.</li>
 </ul>
 
 <p>Issue: when running locally, the system gives the error message
 <em>CodeRay::Scanners could not load plugin</em>.</p>
 
 <ul>
-  <li>Solution: check that CodeRay is not running. The <code>_config.yml</code>
-option <code>kramdown: enable_coderay: false</code> should disable coderay.</li>
+  <li>Solution: check that CodeRay is not running. The <code class="highlighter-rouge">_config.yml</code>
+option <code class="highlighter-rouge">kramdown: enable_coderay: false</code> should disable coderay.</li>
 </ul>
 
 <p>If you have any trouble with the system, just ask Sampo
@@ -378,6 +384,7 @@ at <a href="http://github.com/universaldependencies/docs/issues">http://github.c
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -409,11 +416,40 @@ at <a href="http://github.com/universaldependencies/docs/issues">http://github.c
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -437,6 +473,7 @@ at <a href="http://github.com/universaldependencies/docs/issues">http://github.c
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = '';
@@ -462,7 +499,7 @@ at <a href="http://github.com/universaldependencies/docs/issues">http://github.c
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

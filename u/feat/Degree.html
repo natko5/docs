@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -41,7 +42,7 @@
 <p>Degree of comparison is typically an inflectional feature of some
 <a href="u-pos/ADJ">adjectives</a> and <a href="u-pos/ADV">adverbs</a>.</p>
 
-<h3 id="pos-positive-first-degree"><code>Pos</code>: positive, first degree</h3>
+<h3 id="pos-positive-first-degree"><code class="highlighter-rouge">Pos</code>: positive, first degree</h3>
 
 <p>This is the base form that merely states a quality of something,
 without comparing it to qualities of others. Note that although this
@@ -55,7 +56,7 @@ compared, too.</p>
   <li>[cs] <em><b>mladý</b> muž</em></li>
 </ul>
 
-<h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
+<h3 id="cmp-comparative-second-degree"><code class="highlighter-rouge">Cmp</code>: comparative, second degree</h3>
 
 <p>The quality of one object is compared to the same quality of another
 object.</p>
@@ -67,7 +68,7 @@ object.</p>
   <li>[cs] <em>ten muž je <b>mladší</b> než já</em></li>
 </ul>
 
-<h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
+<h3 id="sup-superlative-third-degree"><code class="highlighter-rouge">Sup</code>: superlative, third degree</h3>
 
 <p>The quality of one object is compared to the same quality of all other
 objects within a set.</p>
@@ -79,7 +80,7 @@ objects within a set.</p>
   <li>[cs] <em>toto je <b>nejmladší</b> muž v našem týmu</em></li>
 </ul>
 
-<h3 id="abs-absolute-superlative"><code>Abs</code>: absolute superlative</h3>
+<h3 id="abs-absolute-superlative"><code class="highlighter-rouge">Abs</code>: absolute superlative</h3>
 
 <p>Some languages can express morphologically that the studied quality of
 the given object is so strong that there is hardly any other object
@@ -154,6 +155,7 @@ Degree in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -185,11 +187,40 @@ Degree in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -213,6 +244,7 @@ Degree in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-feat';
@@ -238,7 +270,7 @@ Degree in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

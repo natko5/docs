@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ga">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ga">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -244,10 +245,10 @@ in two places.</p>
 <p><a id="al-ga-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> is used for finite and non-finite clauses that modify a noun.</p>
+<p><code class="highlighter-rouge">acl</code> is used for finite and non-finite clauses that modify a noun.</p>
 
-<p>Note that in Irish, relative clauses get assigned a specific relation <a href="">acl:relcl</a>, a subtype of <code>acl</code>.
-The super type <code>acl</code> is not used in version 1.0 or 1.1 of the Irish treebank.</p>
+<p>Note that in Irish, relative clauses get assigned a specific relation <a href="">acl:relcl</a>, a subtype of <code class="highlighter-rouge">acl</code>.
+The super type <code class="highlighter-rouge">acl</code> is not used in version 1.0 or 1.1 of the Irish treebank.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ga-dep/acl.md" target="#">edit acl</a></p>
 
@@ -422,7 +423,7 @@ case(gcuairteoir, ar)
 
 <h4 id="obliques">obliques</h4>
 
-<p>Oblique arguments are also labelled <code>case</code>.</p>
+<p>Oblique arguments are also labelled <code class="highlighter-rouge">case</code>.</p>
 
 <p><em>Tá muintir Chorcaí an-mhíshásta <b>le</b> Fianna Fáil</em> ‘The people of Cork are very unhappy with Fianna Fáil’</p>
 
@@ -454,7 +455,7 @@ case:voc(chara, a)
 <p><a id="al-ga-dep/ccomp" class="al-dest"></a></p>
 <h2><code>ccomp</code>: clausal complement</h2>
 
-<p>The <code>ccomp</code> relation marks a clausal complement of a verb or adjective, that has its own internal subject. In Irish, clausal complements are usually introduced by complementizers <em>go</em>, <em>nach</em>, and <em>gur</em>.</p>
+<p>The <code class="highlighter-rouge">ccomp</code> relation marks a clausal complement of a verb or adjective, that has its own internal subject. In Irish, clausal complements are usually introduced by complementizers <em>go</em>, <em>nach</em>, and <em>gur</em>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -474,7 +475,7 @@ ccomp(Creidimidne, bhforbraíonn)
 <p><a id="al-ga-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p>UD Irish uses the <code>compound</code> relation for noun compounding. In Irish, when two nouns are compounded, the second is in the genitive case. Compounds can denote ownership or  an attribute.</p>
+<p>UD Irish uses the <code class="highlighter-rouge">compound</code> relation for noun compounding. In Irish, when two nouns are compounded, the second is in the genitive case. Compounds can denote ownership or  an attribute.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -524,7 +525,7 @@ compound(bean, Choilm)
 <p><a id="al-ga-dep/compound:prt" class="al-dest"></a></p>
 <h2><code>compound:prt</code>: phrasal particles</h2>
 
-<p>In UD Irish, the subtype <code>compound:prt</code> (phrasal particle) is used in connection with phrasal verbs, where the particle is considered an integral part of the verb expression. The governor of the dependency is the verb, and the dependent is the phrasal particle.</p>
+<p>In UD Irish, the subtype <code class="highlighter-rouge">compound:prt</code> (phrasal particle) is used in connection with phrasal verbs, where the particle is considered an integral part of the verb expression. The governor of the dependency is the verb, and the dependent is the phrasal particle.</p>
 
 <h3 id="example">Example</h3>
 
@@ -539,7 +540,7 @@ compound:prt(leagtha, amach)
 <p><a id="al-ga-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
 
-<p>UD coordination has a right-adjunct structure (note that this differs from the structure of the Irish Dependency Treebank). The first conjunct (conjoined element) is the head of the conjoined phrase and all other conjuncts are dependents, labelled with the <code>conj</code> relation.</p>
+<p>UD coordination has a right-adjunct structure (note that this differs from the structure of the Irish Dependency Treebank). The first conjunct (conjoined element) is the head of the conjoined phrase and all other conjuncts are dependents, labelled with the <code class="highlighter-rouge">conj</code> relation.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -578,7 +579,7 @@ only has two tensed forms - present/future and past/conditional.</p>
 <p>The order of elements in a copula construction is in general: 
 <b>copula</b>, <b>predicate</b> (new or focussed information), and <b>subject</b></p>
 
-<p><code>cop</code> is used to link the copula verb <em>is</em> and its predicate. See <a href="">xcomp:pred</a> to see how the verb <em>bí</em> is linked to a predicate.</p>
+<p><code class="highlighter-rouge">cop</code> is used to link the copula verb <em>is</em> and its predicate. See <a href="">xcomp:pred</a> to see how the verb <em>bí</em> is linked to a predicate.</p>
 
 <h3 id="examples">Examples</h3>
 <p>#### equative construction</p>
@@ -664,7 +665,7 @@ cop(pháirc, Is)
 <p><a id="al-ga-dep/csubj:cop" class="al-dest"></a></p>
 <h2><code>csubj:cop</code>: relative clause modifier</h2>
 
-<p>A <em>clausal copular subject</em> (<code>csubj:cop</code>) is a UD Irish subtype, used to label a clause that acts as the
+<p>A <em>clausal copular subject</em> (<code class="highlighter-rouge">csubj:cop</code>) is a UD Irish subtype, used to label a clause that acts as the
 subject of another (copular) clause. As in all copular clauses, the
 predicate acts as the head of the clause and hence it is also the
 governor of the copular subject.</p>
@@ -682,14 +683,14 @@ csubj:cop(dócha, raibh)
 <p><a id="al-ga-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
 
-<p>The UD Irish treebank does not contain any instances of <code>dep</code>.</p>
+<p>The UD Irish treebank does not contain any instances of <code class="highlighter-rouge">dep</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ga-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-ga-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The <code>det</code>label marks the relationship between a noun and its determiner.</p>
+<p>The <code class="highlighter-rouge">det</code>label marks the relationship between a noun and its determiner.</p>
 
 <p>In Irish there is no indefinite article, only a definite article. The definite article can be singular (<em>an</em>) or plural (<em>na</em>).</p>
 
@@ -754,7 +755,7 @@ quant(cheannaire, chéad)
 <p><a id="al-ga-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
 
-<p>The <code>discourse</code> label is used to connect interjections and other discourse particles to a clause.</p>
+<p>The <code class="highlighter-rouge">discourse</code> label is used to connect interjections and other discourse particles to a clause.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -775,7 +776,7 @@ discourse(tá, Leoga)
 <p><a id="al-ga-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The <code>dislocated</code> label has not been applied to Irish in this release of the treebank. No examples have been observed yet,
+<p>The <code class="highlighter-rouge">dislocated</code> label has not been applied to Irish in this release of the treebank. No examples have been observed yet,
 but should any be identified, they will be marked in subsequent versions of the treebank.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ga-dep/dislocated.md" target="#">edit dislocated</a></p>
@@ -783,7 +784,7 @@ but should any be identified, they will be marked in subsequent versions of the 
 <p><a id="al-ga-dep/dobj" class="al-dest"></a></p>
 <h2><code>dobj</code>: direct object</h2>
 
-<p>The <code>dobj</code> label is used to mark the relationship between a verb and its direct object.</p>
+<p>The <code class="highlighter-rouge">dobj</code> label is used to mark the relationship between a verb and its direct object.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -801,7 +802,7 @@ dobj(Bhailigh, eolas)
 dobj(chur, eolas)
 </code></pre>
 
-<p>Impersonal/autonomous verbs are used to create phrases similar to the English passive. However, unlike English, the object does not become the subject of this verb form, and remains labelled as <code>dobj</code>.</p>
+<p>Impersonal/autonomous verbs are used to create phrases similar to the English passive. However, unlike English, the object does not become the subject of this verb form, and remains labelled as <code class="highlighter-rouge">dobj</code>.</p>
 
 <p><em>An lá a cuireadh <b>é</b></em> ‘The day <b>he</b> was buried’</p>
 
@@ -814,8 +815,8 @@ dobj(cuireadh, é)
 <p><a id="al-ga-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
 
-<p>There are a handful of instances of intra-sentential Irish/English code-mixing in the treebank. Where possible we analyse the sentential structure using the appropriate labels for the English words. We only use the <code>foreign</code> relation
-when we want to explicitly mark the English words as foreign, e.g. the title of an English film in quotation marks, an example of an Irish-English dictionary entry within a sentence, or an Irish-English sign (see example below). When the <code>foreign</code> label is used, the sequence of words is given a linear analysis with the first word as the head.</p>
+<p>There are a handful of instances of intra-sentential Irish/English code-mixing in the treebank. Where possible we analyse the sentential structure using the appropriate labels for the English words. We only use the <code class="highlighter-rouge">foreign</code> relation
+when we want to explicitly mark the English words as foreign, e.g. the title of an English film in quotation marks, an example of an Irish-English dictionary entry within a sentence, or an Irish-English sign (see example below). When the <code class="highlighter-rouge">foreign</code> label is used, the sequence of words is given a linear analysis with the first word as the head.</p>
 
 <h3 id="example">Example</h3>
 
@@ -833,7 +834,7 @@ foreign(May,September)
 <p><a id="al-ga-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is used for chains of comparable items.</p>
+<p>The <code class="highlighter-rouge">list</code> relation is used for chains of comparable items.</p>
 
 <h3 id="example">Example</h3>
 
@@ -850,7 +851,7 @@ list(príomhchineálacha,3))
 <p><a id="al-ga-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
 
-<p>In Irish the <code>mark</code> label is used for infinitive markers and for subordinate conjunctions. 
+<p>In Irish the <code class="highlighter-rouge">mark</code> label is used for infinitive markers and for subordinate conjunctions. 
 Note that subordinate conjunctions are attached to the head of the complement clause (not the matrix clause as is the case in the Irish Dependency Treebank).</p>
 
 <h3 id="examples">Examples</h3>
@@ -961,7 +962,7 @@ mark:prt(suntasaí, is)
 <p><a id="al-ga-dep/name" class="al-dest"></a></p>
 <h2><code>name</code>: name</h2>
 
-<p>The <code>name</code> relation is used with compounding proper nouns, typically for
+<p>The <code class="highlighter-rouge">name</code> relation is used with compounding proper nouns, typically for
 names of people, places, organisations and so on.</p>
 
 <p>In UD Irish, this not only includes surnames, but also surname particles such as <em>Mac</em>, <em>Mc</em>, <em>Ó</em>, <em>de</em>, <em>Uí</em> and <em>Ní</em>.</p>
@@ -980,7 +981,7 @@ name(Sheán,Gallchóir)
 <p><a id="al-ga-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
 
-<p>The <code>neg</code> label is used for Irish negative verb particles. These particles take the form of:</p>
+<p>The <code class="highlighter-rouge">neg</code> label is used for Irish negative verb particles. These particles take the form of:</p>
 
 <ul>
   <li><em>ní</em> (present/future/conditional/habitual past and irregular past),</li>
@@ -1009,7 +1010,7 @@ neg(déan,Ná)
 <p><a id="al-ga-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers of nouns or clausal predicates. <code>nmod</code> is typically a noun functioning as a non-core (oblique) argument or adjunct, and often marked by a preposition using <a href="">case</a>.</p>
+<p>The <code class="highlighter-rouge">nmod</code> relation is used for nominal modifiers of nouns or clausal predicates. <code class="highlighter-rouge">nmod</code> is typically a noun functioning as a non-core (oblique) argument or adjunct, and often marked by a preposition using <a href="">case</a>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -1072,9 +1073,9 @@ nmod:poss(mhúinteoir, mo)
 <p><a id="al-ga-dep/nmod:prep" class="al-dest"></a></p>
 <h2><code>nmod:prep</code>: prepositional pronouns</h2>
 
-<p><code>nmod:prep</code>, used for prepositional pronouns, is a UD Irish subtype of the <a href="">nmod</a> relation:</p>
+<p><code class="highlighter-rouge">nmod:prep</code>, used for prepositional pronouns, is a UD Irish subtype of the <a href="">nmod</a> relation:</p>
 
-<p>16 of the most common Irish simple prepositions can be inflected to mark pronominal objects. These are referred to as pronominal prepositions or prepositional pronouns. We regard these as playing nominal modifier roles instead of prepositional modifier roles. We introduce the language-specific label <code>nmod:prep</code> so as not to lose information regarding the presence of the preposition.</p>
+<p>16 of the most common Irish simple prepositions can be inflected to mark pronominal objects. These are referred to as pronominal prepositions or prepositional pronouns. We regard these as playing nominal modifier roles instead of prepositional modifier roles. We introduce the language-specific label <code class="highlighter-rouge">nmod:prep</code> so as not to lose information regarding the presence of the preposition.</p>
 
 <h3 id="examples">Examples</h3>
 <p><em>agam</em> “at me”; <em>leis</em> “with him”, <em>uainn</em> “from us”</p>
@@ -1103,7 +1104,7 @@ nmod:prep(Níl,agam)
 <p><a id="al-ga-dep/nmod:tmod" class="al-dest"></a></p>
 <h2><code>nmod:tmod</code>: temporal modifier</h2>
 
-<p>A temporal modifier is a subtype of the <a href="">nmod</a> relation: if the modifier is specifying a time, it is labeled as <code>tmod</code>.</p>
+<p>A temporal modifier is a subtype of the <a href="">nmod</a> relation: if the modifier is specifying a time, it is labeled as <code class="highlighter-rouge">tmod</code>.</p>
 
 <h3 id="example">Example</h3>
 
@@ -1128,7 +1129,7 @@ nmod:tmod(mhair, bliain)
 nsubj(Rachaidh, sí)
 </code></pre>
 
-<p>In a copula construction, the <code>nsubj</code> is dependent on the predicate (in this case the noun <em>réitigh</em> ‘solution’).</p>
+<p>In a copula construction, the <code class="highlighter-rouge">nsubj</code> is dependent on the predicate (in this case the noun <em>réitigh</em> ‘solution’).</p>
 
 <p><em>Is réitigh sealadach <b>iad</b></em> `<b>They</b> are temporary solutions’</p>
 
@@ -1137,7 +1138,7 @@ nsubj(réitigh, iad)
 cop(réitigh, Is)
 </code></pre>
 
-<p>The head of an infinitival phrase can also be <code>nsubj</code> in a copula construction – in Irish, the infinitive verb form is a verbal noun.</p>
+<p>The head of an infinitival phrase can also be <code class="highlighter-rouge">nsubj</code> in a copula construction – in Irish, the infinitive verb form is a verbal noun.</p>
 
 <p><em>Ar mhaith leat teach a <b>cheannach</b> ?</em> ‘Would you like to buy a house?’</p>
 
@@ -1151,7 +1152,7 @@ nsubj(mhaith, cheannach)
 <h2><code>nummod</code>: numeric modifier</h2>
 
 <p><em>Numeric modifiers</em> of a noun or NP, including both cardinal and
-ordinal numbers, are marked with the <code>nummod</code> dependency type. Quantifiers are also included.</p>
+ordinal numbers, are marked with the <code class="highlighter-rouge">nummod</code> dependency type. Quantifiers are also included.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -1178,7 +1179,7 @@ nummod(fo-alt, (1))
 <p><a id="al-ga-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
 
-<p>The <code>parataxis</code> relation is a relation between the main verb of a clause and other sentential elements, such as a sentential parenthetical, a clause after a “:” or a “;”, or two sentences placed side by side without any explicit coordination or subordination. More information can be found on the universal dependency page (<a href="">u-dep/parataxis</a>)</p>
+<p>The <code class="highlighter-rouge">parataxis</code> relation is a relation between the main verb of a clause and other sentential elements, such as a sentential parenthetical, a clause after a “:” or a “;”, or two sentences placed side by side without any explicit coordination or subordination. More information can be found on the universal dependency page (<a href="">u-dep/parataxis</a>)</p>
 
 <h3 id="example">Example</h3>
 
@@ -1197,7 +1198,7 @@ parataxis(Fuaireamar,féach)
 
 <h3 id="example">Example</h3>
 
-<p>_<b><code>&lt;/b&gt; Tá an méid sin suimiúil a d' inis tú dom &lt;b&gt;,&lt;/b&gt; &lt;b&gt;'&lt;/b&gt; a dúirt sé &lt;b&gt;.&lt;/b&gt;_ </code><b>`</b> What you have told me is interesting <b>,</b><b>’</b> he said to me<b>.</b>’</b></p>
+<p>_<b><code class="highlighter-rouge">&lt;/b&gt; Tá an méid sin suimiúil a d' inis tú dom &lt;b&gt;,&lt;/b&gt; &lt;b&gt;'&lt;/b&gt; a dúirt sé &lt;b&gt;.&lt;/b&gt;_ </code><b>`</b> What you have told me is interesting <b>,</b><b>’</b> he said to me<b>.</b>’</b></p>
 
 <pre><code class="language-sdparse">` Tá an méid sin suimiúil a d' inis tú dom , ' a dúirt sé . \n ' Is the amount DEM interesting [] [] told you to_me , ' [] said he .
 punct(dúirt, `)
@@ -1211,14 +1212,14 @@ punct(dúirt, .)
 <p><a id="al-ga-dep/remnant" class="al-dest"></a></p>
 <h2><code>remnant</code>: remnant in ellipsis</h2>
 
-<p>The <code>remnant</code> label has not been applied to the Irish in this release. No examples have been observed yet, but should any be identified, they will be marked in subsequent versions of the treebank.</p>
+<p>The <code class="highlighter-rouge">remnant</code> label has not been applied to the Irish in this release. No examples have been observed yet, but should any be identified, they will be marked in subsequent versions of the treebank.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ga-dep/remnant.md" target="#">edit remnant</a></p>
 
 <p><a id="al-ga-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A dummy node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indices of real words in the sentence start at 1.</p>
+<p>The <code class="highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A dummy node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indices of real words in the sentence start at 1.</p>
 
 <h3 id="example">Example</h3>
 
@@ -1233,7 +1234,7 @@ root(ROOT, thugtar)
 <p><a id="al-ga-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>The <code>vocative</code> relation is used to mark a dialogue participant addressed in text (common in conversations, emails and newsgroup postings). The relation links the addressee’s name to its host sentence.</p>
+<p>The <code class="highlighter-rouge">vocative</code> relation is used to mark a dialogue participant addressed in text (common in conversations, emails and newsgroup postings). The relation links the addressee’s name to its host sentence.</p>
 
 <h3 id="examples">Examples:</h3>
 
@@ -1254,7 +1255,7 @@ vocative(dóigh, Mháiréad)
 <p><a id="al-ga-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>The name <code>xcomp</code> is borrowed from Lexical-Functional Grammar. 
+<p>The name <code class="highlighter-rouge">xcomp</code> is borrowed from Lexical-Functional Grammar. 
 An open clausal complement (xcomp) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp.
 These complements are always non-finite, and they are complements (arguments of the higher verb or adjective) rather than adjuncts/modifiers.</p>
 
@@ -1272,9 +1273,9 @@ xcomp(leor, fheiceáil)
 xcomp(Caithfidh, dhul)
 </code></pre>
 
-<p>The UD Irish scheme uses <code>xcomp</code> to denote progressive aspectual phrases, the structure of which follows:
+<p>The UD Irish scheme uses <code class="highlighter-rouge">xcomp</code> to denote progressive aspectual phrases, the structure of which follows:
 Be + SUBJ + at (ag) + Verbal Noun
-In these cases, and in keeping with the analysis of prepositional phrases, we attach the verbal noun to the higher verb (“be”) (using the <code>xcomp</code> label instead of the <code>nmod</code> used in standard PPs). The preposition is then a dependent of the verbal noun, with that relationship labelled as <code>case</code>.</p>
+In these cases, and in keeping with the analysis of prepositional phrases, we attach the verbal noun to the higher verb (“be”) (using the <code class="highlighter-rouge">xcomp</code> label instead of the <code class="highlighter-rouge">nmod</code> used in standard PPs). The preposition is then a dependent of the verbal noun, with that relationship labelled as <code class="highlighter-rouge">case</code>.</p>
 
 <p><em>Tá sé ag <b>rith</b></em> `He is <b>running</b>’</p>
 
@@ -1298,7 +1299,7 @@ case(fáil, ar)
 <p><a id="al-ga-dep/xcomp:pred" class="al-dest"></a></p>
 <h2><code>xcomp:pred</code>: predicate</h2>
 
-<p>We extend the label <code>xcomp</code> as a UD Irish subtype <code>xcomp:pred</code> to mark predicates of the substantive verb <em>bí</em> (be), which can have predicate arguments in the form of adverbial, adjectival and prepositional phrases.
+<p>We extend the label <code class="highlighter-rouge">xcomp</code> as a UD Irish subtype <code class="highlighter-rouge">xcomp:pred</code> to mark predicates of the substantive verb <em>bí</em> (be), which can have predicate arguments in the form of adverbial, adjectival and prepositional phrases.
 Note that this differs from Irish (<a href="">cop</a>) constructions.</p>
 
 <h3 id="examples">Examples</h3>
@@ -1342,6 +1343,7 @@ xcomp:pred(Tá, hiontach)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1373,11 +1375,40 @@ xcomp:pred(Tá, hiontach)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1401,6 +1432,7 @@ xcomp:pred(Tá, hiontach)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ga-overview';
@@ -1426,7 +1458,7 @@ xcomp:pred(Tá, hiontach)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

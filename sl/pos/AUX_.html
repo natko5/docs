@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sl/pos">sl/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/pos">sl/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-pos/AUX_.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -40,14 +41,14 @@
 
 <h3 id="definition">Definition</h3>
 
-<p>An auxiliary verb is a verb that accompanies the lexical verb of a verb phrase and expresses grammatical distinctions not carried by the lexical verb, such as person, number, tense, mood, aspect, and voice. In Slovenian, only instances of the verb <em>biti</em> “to be” that accompany lexical <a href="VERB">verbs</a> are marked as <code>AUX</code>.</p>
+<p>An auxiliary verb is a verb that accompanies the lexical verb of a verb phrase and expresses grammatical distinctions not carried by the lexical verb, such as person, number, tense, mood, aspect, and voice. In Slovenian, only instances of the verb <em>biti</em> “to be” that accompany lexical <a href="VERB">verbs</a> are marked as <code class="highlighter-rouge">AUX</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
 <ul>
-  <li><em>Tistega večera <b>sem</b>.<code>AUX</code> preveč popil.<code>VERB</code>.</em> “I drank too much that evening.”</li>
-  <li><em>V bolnišnici <b>bodo</b>.<code>AUX</code> uvedli.<code>VERB</code> šolo za starše.</em> “A parenting school will be introduced in the hospital.”</li>
-  <li><em>Kam <b>bi</b>.<code>AUX</code> se lahko zatekla.<code>VERB</code>?</em> “Where could she have hidden?”</li>
+  <li><em>Tistega večera <b>sem</b>.<code class="highlighter-rouge">AUX</code> preveč popil.<code class="highlighter-rouge">VERB</code>.</em> “I drank too much that evening.”</li>
+  <li><em>V bolnišnici <b>bodo</b>.<code class="highlighter-rouge">AUX</code> uvedli.<code class="highlighter-rouge">VERB</code> šolo za starše.</em> “A parenting school will be introduced in the hospital.”</li>
+  <li><em>Kam <b>bi</b>.<code class="highlighter-rouge">AUX</code> se lahko zatekla.<code class="highlighter-rouge">VERB</code>?</em> “Where could she have hidden?”</li>
 </ul>
 
 <h4 id="delimitation">Delimitation</h4>
@@ -55,9 +56,9 @@
 <p>Note that in cases, where <em>biti</em> is used independently as a copula or a content verb, it is marked as <a href="VERB">verb</a>:</p>
 
 <ul>
-  <li><em>To <b>je</b>.<code>VERB</code> grozno.</em> “This is horrible.”</li>
-  <li><em>Za nami <b>je</b>.<code>VERB</code> dolga vrsta.</em> “There is a long queue behind us.”</li>
-  <li><em>Vsi smo.<code>AUX</code> <b>bili</b>.<code>VERB</code> zadovoljni.</em> “We were all content.”</li>
+  <li><em>To <b>je</b>.<code class="highlighter-rouge">VERB</code> grozno.</em> “This is horrible.”</li>
+  <li><em>Za nami <b>je</b>.<code class="highlighter-rouge">VERB</code> dolga vrsta.</em> “There is a long queue behind us.”</li>
+  <li><em>Vsi smo.<code class="highlighter-rouge">AUX</code> <b>bili</b>.<code class="highlighter-rouge">VERB</code> zadovoljni.</em> “We were all content.”</li>
 </ul>
 
 <h4 id="conversion-from-jos">Conversion from JOS</h4>
@@ -77,12 +78,12 @@
 
 <h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
 
-<p>There are 1 <code>AUX</code> lemmas (0%), 30 <code>AUX</code> types (0%) and 7147 <code>AUX</code> tokens (5%).
-Out of 16 observed tags, the rank of <code>AUX</code> is: 16 in number of lemmas, 12 in number of types and 6 in number of tokens.</p>
+<p>There are 1 <code class="highlighter-rouge">AUX</code> lemmas (0%), 30 <code class="highlighter-rouge">AUX</code> types (0%) and 7147 <code class="highlighter-rouge">AUX</code> tokens (5%).
+Out of 16 observed tags, the rank of <code class="highlighter-rouge">AUX</code> is: 16 in number of lemmas, 12 in number of types and 6 in number of tokens.</p>
 
-<p>The 10 most frequent <code>AUX</code> lemmas: <em>biti</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">AUX</code> lemmas: <em>biti</em></p>
 
-<p>The 10 most frequent <code>AUX</code> types:  <em>je, so, bi, bo, sem, ni, bodo, sta, smo, niso</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">AUX</code> types:  <em>je, so, bi, bo, sem, ni, bodo, sta, smo, niso</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>biti</em> (<a href="">AUX</a> 7147, <a href="">VERB</a> 3788)</p>
 
@@ -157,35 +158,155 @@ Out of 16 observed tags, the rank of <code>AUX</code> is: 16 in number of lemmas
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>AUX</code> is 30.000000 (the average of all parts of speech is 1.894262).</p>
+<p>The form / lemma ratio of <code class="highlighter-rouge">AUX</code> is 30.000000 (the average of all parts of speech is 1.894262).</p>
 
 <p>The 1st highest number of forms (30) was observed with the lemma “biti”: <em>as, b, bi, bil, bila, bili, bo, bodo, bojo, bom, bomo, bosta, boste, bova, je, ni, nisem, nisi, nismo, niso, nista, niste, nisva, sem, si, smo, so, sta, ste, sva</em>.</p>
 
-<p><code>AUX</code> occurs with 7 features: <a href="">sl-feat/VerbForm</a> (7147; 100% instances), <a href="">sl-feat/Mood</a> (7126; 100% instances), <a href="">sl-feat/Number</a> (6261; 88% instances), <a href="">sl-feat/Negative</a> (6240; 87% instances), <a href="">sl-feat/Person</a> (6240; 87% instances), <a href="">sl-feat/Tense</a> (6240; 87% instances), <a href="">sl-feat/Gender</a> (21; 0% instances)</p>
+<p><code class="highlighter-rouge">AUX</code> occurs with 7 features: <a href="">sl-feat/VerbForm</a> (7147; 100% instances), <a href="">sl-feat/Mood</a> (7126; 100% instances), <a href="">sl-feat/Number</a> (6261; 88% instances), <a href="">sl-feat/Negative</a> (6240; 87% instances), <a href="">sl-feat/Person</a> (6240; 87% instances), <a href="">sl-feat/Tense</a> (6240; 87% instances), <a href="">sl-feat/Gender</a> (21; 0% instances)</p>
 
-<p><code>AUX</code> occurs with 16 feature-value pairs: <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Mood=Cnd</code>, <code>Mood=Ind</code>, <code>Negative=Neg</code>, <code>Negative=Pos</code>, <code>Number=Dual</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>Tense=Fut</code>, <code>Tense=Pres</code>, <code>VerbForm=Fin</code>, <code>VerbForm=Part</code></p>
+<p><code class="highlighter-rouge">AUX</code> occurs with 16 feature-value pairs: <code class="highlighter-rouge">Gender=Fem</code>, <code class="highlighter-rouge">Gender=Masc</code>, <code class="highlighter-rouge">Mood=Cnd</code>, <code class="highlighter-rouge">Mood=Ind</code>, <code class="highlighter-rouge">Negative=Neg</code>, <code class="highlighter-rouge">Negative=Pos</code>, <code class="highlighter-rouge">Number=Dual</code>, <code class="highlighter-rouge">Number=Plur</code>, <code class="highlighter-rouge">Number=Sing</code>, <code class="highlighter-rouge">Person=1</code>, <code class="highlighter-rouge">Person=2</code>, <code class="highlighter-rouge">Person=3</code>, <code class="highlighter-rouge">Tense=Fut</code>, <code class="highlighter-rouge">Tense=Pres</code>, <code class="highlighter-rouge">VerbForm=Fin</code>, <code class="highlighter-rouge">VerbForm=Part</code></p>
 
-<p><code>AUX</code> occurs with 29 feature combinations.
-The most frequent feature combination is <code>Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin</code> (3099 tokens).
+<p><code class="highlighter-rouge">AUX</code> occurs with 29 feature combinations.
+The most frequent feature combination is <code class="highlighter-rouge">Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin</code> (3099 tokens).
 Examples: <em>je</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>AUX</code> nodes are attached to their parents using 1 different relations: <a href="">sl-dep/aux</a> (7147; 100% instances)</p>
+<p><code class="highlighter-rouge">AUX</code> nodes are attached to their parents using 1 different relations: <a href="">sl-dep/aux</a> (7147; 100% instances)</p>
 
-<p>Parents of <code>AUX</code> nodes belong to 6 different parts of speech: <a href="">VERB</a> (6436; 90% instances), <a href="">ADJ</a> (532; 7% instances), <a href="">NOUN</a> (165; 2% instances), <a href="">PRON</a> (7; 0% instances), <a href="">PROPN</a> (6; 0% instances), <a href="">NUM</a> (1; 0% instances)</p>
+<p>Parents of <code class="highlighter-rouge">AUX</code> nodes belong to 6 different parts of speech: <a href="">VERB</a> (6429; 90% instances), <a href="">ADJ</a> (532; 7% instances), <a href="">NOUN</a> (166; 2% instances), <a href="">PRON</a> (13; 0% instances), <a href="">PROPN</a> (6; 0% instances), <a href="">NUM</a> (1; 0% instances)</p>
 
-<p>7146 (100%) <code>AUX</code> nodes are leaves.</p>
+<p>7146 (100%) <code class="highlighter-rouge">AUX</code> nodes are leaves.</p>
 
-<p>0 (0%) <code>AUX</code> nodes have one child.</p>
+<p>0 (0%) <code class="highlighter-rouge">AUX</code> nodes have one child.</p>
 
-<p>1 (0%) <code>AUX</code> nodes have two children.</p>
+<p>1 (0%) <code class="highlighter-rouge">AUX</code> nodes have two children.</p>
 
-<p>The highest child degree of a <code>AUX</code> node is 2.</p>
+<p>The highest child degree of a <code class="highlighter-rouge">AUX</code> node is 2.</p>
 
-<p>Children of <code>AUX</code> nodes are attached using 2 different relations: <a href="">sl-dep/cc</a> (1; 50% instances), <a href="">sl-dep/conj</a> (1; 50% instances)</p>
+<p>Children of <code class="highlighter-rouge">AUX</code> nodes are attached using 2 different relations: <a href="">sl-dep/cc</a> (1; 50% instances), <a href="">sl-dep/conj</a> (1; 50% instances)</p>
 
-<p>Children of <code>AUX</code> nodes belong to 2 different parts of speech: <a href="">CONJ</a> (1; 50% instances), <a href="">VERB</a> (1; 50% instances)</p>
+<p>Children of <code class="highlighter-rouge">AUX</code> nodes belong to 2 different parts of speech: <a href="">CONJ</a> (1; 50% instances), <a href="">VERB</a> (1; 50% instances)</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>There are 1 <code class="highlighter-rouge">AUX</code> lemmas (0%), 26 <code class="highlighter-rouge">AUX</code> types (0%) and 1256 <code class="highlighter-rouge">AUX</code> tokens (4%).
+Out of 16 observed tags, the rank of <code class="highlighter-rouge">AUX</code> is: 16 in number of lemmas, 13 in number of types and 11 in number of tokens.</p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">AUX</code> lemmas: <em>biti</em></p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">AUX</code> types:  <em>je, sem, bi, so, smo, bo, bomo, ni, si, ste</em></p>
+
+<p>The 10 most frequent ambiguous lemmas: <em>biti</em> (<a href="">VERB</a> 1348, <a href="">AUX</a> 1256)</p>
+
+<p>The 10 most frequent ambiguous types:  <em>je</em> (<a href="">VERB</a> 639, <a href="">AUX</a> 358, <a href="">PRON</a> 6, <a href="">INTJ</a> 3), <em>sem</em> (<a href="">AUX</a> 174, <a href="">VERB</a> 33, <a href="">ADV</a> 4), <em>bi</em> (<a href="">AUX</a> 134, <a href="">VERB</a> 15, <a href="">X</a> 1), <em>so</em> (<a href="">VERB</a> 125, <a href="">AUX</a> 117, <a href="">X</a> 2), <em>smo</em> (<a href="">AUX</a> 88, <a href="">VERB</a> 20), <em>bo</em> (<a href="">AUX</a> 79, <a href="">VERB</a> 54), <em>bomo</em> (<a href="">AUX</a> 46, <a href="">VERB</a> 5), <em>ni</em> (<a href="">VERB</a> 86, <a href="">AUX</a> 43, <a href="">X</a> 1), <em>si</em> (<a href="">PRON</a> 48, <a href="">AUX</a> 39, <a href="">VERB</a> 32, <a href="">X</a> 1), <em>ste</em> (<a href="">AUX</a> 32, <a href="">VERB</a> 7)</p>
+
+<ul>
+  <li><em>je</em>
+    <ul>
+      <li><a href="">VERB</a> 639: <em>tako življenje je bilo prej in in sedaj <b>je</b></em></li>
+      <li><a href="">AUX</a> 358: <em>tako življenje <b>je</b> bilo prej in in sedaj je</em></li>
+      <li><a href="">PRON</a> 6: <em>sploh če <b>je</b> ne prebereš mislim tako da jo prebereš</em></li>
+      <li><a href="">INTJ</a> 3: <em><b>je</b> ene štir [gap] ene š [gap] štirideset</em></li>
+    </ul>
+  </li>
+  <li><em>sem</em>
+    <ul>
+      <li><a href="">AUX</a> 174: <em>pazim zdaj s [gap] zdaj pa spomladi pa <b>sem</b> rekel [gap]</em></li>
+      <li><a href="">VERB</a> 33: <em>ja klinc zdaj <b>sem</b> pa v tam v [gap]</em></li>
+      <li><a href="">ADV</a> 4: <em>a veš in <b>sem</b> pozabila enostavno … tisti</em></li>
+    </ul>
+  </li>
+  <li><em>bi</em>
+    <ul>
+      <li><a href="">AUX</a> 134: <em>pol <b>bi</b> pa koga v rit špiknil</em></li>
+      <li><a href="">VERB</a> 15: <em>mmm hm te pa ne <b>bi</b> jaz v sredo</em></li>
+      <li><a href="">X</a> 1: <em>in se smejem kot matasta tipo ki že costi ti ga <b>bi</b> bujeri ser [all:laughter]</em></li>
+    </ul>
+  </li>
+  <li><em>so</em>
+    <ul>
+      <li><a href="">VERB</a> 125: <em>[all:laughter] džingli <b>so</b> res za popizditi hudi</em></li>
+      <li><a href="">AUX</a> 117: <em>ja pa <b>so</b> vam pol tudi gnoj dali za te njive pa ?</em></li>
+      <li><a href="">X</a> 2: <em>genau wo ist den das ? ach <b>so</b> da</em></li>
+    </ul>
+  </li>
+  <li><em>smo</em>
+    <ul>
+      <li><a href="">AUX</a> 88: <em>saj <b>smo</b> mulci od desetega leta naprej pasli</em></li>
+      <li><a href="">VERB</a> 20: <em>ker vemo da <b>smo</b> skoraj vsi no pod eee pod stresom eni bolj drugi manj</em></li>
+    </ul>
+  </li>
+  <li><em>bo</em>
+    <ul>
+      <li><a href="">AUX</a> 79: <em>edino to da se nisi bal da te <b>bo</b> kdo počil kje</em></li>
+      <li><a href="">VERB</a> 54: <em><b>bo</b> že <b>bo</b> že počasi</em></li>
+    </ul>
+  </li>
+  <li><em>bomo</em>
+    <ul>
+      <li><a href="">AUX</a> 46: <em>eee ja no tako se <b>bomo</b> zmenile drugače veš ne tako</em></li>
+      <li><a href="">VERB</a> 5: <em>ne <b>bomo</b> ja</em></li>
+    </ul>
+  </li>
+  <li><em>ni</em>
+    <ul>
+      <li><a href="">VERB</a> 86: <em>aha … ja ja … aha <b>ni</b> kaj ja ja</em></li>
+      <li><a href="">AUX</a> 43: <em>od maja meseca pa dokler <b>ni</b> bila slana smo pasli [:voice]</em></li>
+      <li><a href="">X</a> 1: <em>in seveda vlekel sem vprašanja noter in sem gledal samo da izvlečem da popravljam jaz da je tekst pa da jaz popravim kje je treba vejica kje je treba dvopičje ne pa da da jaz delam kaj je eee osebek povedek te pa sem ni mi nekako nisem <b>ni</b> [gap] nisem tu jaz bil cel ne</em></li>
+    </ul>
+  </li>
+  <li><em>si</em>
+    <ul>
+      <li><a href="">PRON</a> 48: <em>kdaj <b>si</b> s [gap]</em></li>
+      <li><a href="">AUX</a> 39: <em>pa <b>si</b> bil že kaj doma nisi bil še nič tako</em></li>
+      <li><a href="">VERB</a> 32: <em>ako ako imaš imaš ako nimaš pa <b>si</b> revež</em></li>
+      <li><a href="">X</a> 1: <em>najmanj kar bi <b>si</b> [gap] glejte najmanj kar bi se … poglejte dovoli [gap] … ja</em></li>
+    </ul>
+  </li>
+  <li><em>ste</em>
+    <ul>
+      <li><a href="">AUX</a> 32: <em>[gap] ker kaj a <b>ste</b> delali kake nove vaje ?</em></li>
+      <li><a href="">VERB</a> 7: <em>[speaker:laughter] [name:personal] kako pa vi kaj ste v redu spali <b>ste</b> v redu ?</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="morphology-1">Morphology</h2>
+
+<p>The form / lemma ratio of <code class="highlighter-rouge">AUX</code> is 26.000000 (the average of all parts of speech is 1.575031).</p>
+
+<p>The 1st highest number of forms (26) was observed with the lemma “biti”: <em>bi, biti, bo, bodo, bojo, bom, bomo, bosta, boste, bova, boš, je, ni, nisem, nisi, nismo, niso, niste, nisva, sem, si, smo, so, sta, ste, sva</em>.</p>
+
+<p><code class="highlighter-rouge">AUX</code> occurs with 6 features: <a href="">sl-feat/Mood</a> (1256; 100% instances), <a href="">sl-feat/VerbForm</a> (1256; 100% instances), <a href="">sl-feat/Negative</a> (1122; 89% instances), <a href="">sl-feat/Number</a> (1122; 89% instances), <a href="">sl-feat/Person</a> (1122; 89% instances), <a href="">sl-feat/Tense</a> (1122; 89% instances)</p>
+
+<p><code class="highlighter-rouge">AUX</code> occurs with 13 feature-value pairs: <code class="highlighter-rouge">Mood=Cnd</code>, <code class="highlighter-rouge">Mood=Ind</code>, <code class="highlighter-rouge">Negative=Neg</code>, <code class="highlighter-rouge">Negative=Pos</code>, <code class="highlighter-rouge">Number=Dual</code>, <code class="highlighter-rouge">Number=Plur</code>, <code class="highlighter-rouge">Number=Sing</code>, <code class="highlighter-rouge">Person=1</code>, <code class="highlighter-rouge">Person=2</code>, <code class="highlighter-rouge">Person=3</code>, <code class="highlighter-rouge">Tense=Fut</code>, <code class="highlighter-rouge">Tense=Pres</code>, <code class="highlighter-rouge">VerbForm=Fin</code></p>
+
+<p><code class="highlighter-rouge">AUX</code> occurs with 24 feature combinations.
+The most frequent feature combination is <code class="highlighter-rouge">Mood=Ind|Negative=Pos|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin</code> (359 tokens).
+Examples: <em>je, biti</em></p>
+
+<h2 id="relations-1">Relations</h2>
+
+<p><code class="highlighter-rouge">AUX</code> nodes are attached to their parents using 2 different relations: <a href="">sl-dep/aux</a> (1217; 97% instances), <a href="">sl-dep/reparandum</a> (39; 3% instances)</p>
+
+<p>Parents of <code class="highlighter-rouge">AUX</code> nodes belong to 9 different parts of speech: <a href="">VERB</a> (1116; 89% instances), <a href="">ADJ</a> (72; 6% instances), <a href="">NOUN</a> (47; 4% instances), <a href="">X</a> (10; 1% instances), <a href="">PROPN</a> (4; 0% instances), <a href="">PRON</a> (3; 0% instances), <a href="">ADV</a> (2; 0% instances), <a href="">AUX</a> (1; 0% instances), <a href="">NUM</a> (1; 0% instances)</p>
+
+<p>1215 (97%) <code class="highlighter-rouge">AUX</code> nodes are leaves.</p>
+
+<p>32 (3%) <code class="highlighter-rouge">AUX</code> nodes have one child.</p>
+
+<p>4 (0%) <code class="highlighter-rouge">AUX</code> nodes have two children.</p>
+
+<p>5 (0%) <code class="highlighter-rouge">AUX</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code class="highlighter-rouge">AUX</code> node is 4.</p>
+
+<p>Children of <code class="highlighter-rouge">AUX</code> nodes are attached using 10 different relations: <a href="">sl-dep/advmod</a> (16; 29% instances), <a href="">sl-dep/mark</a> (10; 18% instances), <a href="">sl-dep/reparandum</a> (8; 14% instances), <a href="">sl-dep/nsubj</a> (7; 13% instances), <a href="">sl-dep/dobj</a> (6; 11% instances), <a href="">sl-dep/expl</a> (4; 7% instances), <a href="">sl-dep/iobj</a> (2; 4% instances), <a href="">sl-dep/advcl</a> (1; 2% instances), <a href="">sl-dep/dislocated</a> (1; 2% instances), <a href="">sl-dep/neg</a> (1; 2% instances)</p>
+
+<p>Children of <code class="highlighter-rouge">AUX</code> nodes belong to 10 different parts of speech: <a href="">PRON</a> (15; 27% instances), <a href="">ADV</a> (11; 20% instances), <a href="">SCONJ</a> (10; 18% instances), <a href="">X</a> (6; 11% instances), <a href="">CONJ</a> (5; 9% instances), <a href="">NOUN</a> (4; 7% instances), <a href="">NUM</a> (2; 4% instances), <a href="">AUX</a> (1; 2% instances), <a href="">PART</a> (1; 2% instances), <a href="">VERB</a> (1; 2% instances)</p>
 
 
 
@@ -244,6 +365,7 @@ AUX in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -275,11 +397,40 @@ AUX in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -303,6 +454,7 @@ AUX in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-pos';
@@ -328,7 +480,7 @@ AUX in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

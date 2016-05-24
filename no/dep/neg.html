@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-no">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/no/dep">no/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-no">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/no/dep">no/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -64,12 +65,12 @@ neg(betyr,ikke)
 
 <p>This relation is universal.</p>
 
-<p>2864 nodes (1%) are attached to their parents as <code>neg</code>.</p>
+<p>2864 nodes (1%) are attached to their parents as <code class="highlighter-rouge">neg</code>.</p>
 
-<p>2092 instances of <code>neg</code> (73%) are right-to-left (child precedes parent).
+<p>2092 instances of <code class="highlighter-rouge">neg</code> (73%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.60125698324022.</p>
 
-<p>The following 16 pairs of parts of speech are connected with <code>neg</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/ADV</a> (1842; 64% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/ADV</a> (409; 14% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/ADV</a> (243; 8% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/DET</a> (173; 6% instances), <a href="">no-pos/ADV</a>-<a href="">no-pos/ADV</a> (96; 3% instances), <a href="">no-pos/PRON</a>-<a href="">no-pos/ADV</a> (44; 2% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/ADV</a> (15; 1% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/ADV</a> (11; 0% instances), <a href="">no-pos/SCONJ</a>-<a href="">no-pos/ADV</a> (10; 0% instances), <a href="">no-pos/ADP</a>-<a href="">no-pos/ADV</a> (8; 0% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/DET</a> (4; 0% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/DET</a> (3; 0% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/DET</a> (2; 0% instances), <a href="">no-pos/INTJ</a>-<a href="">no-pos/ADV</a> (2; 0% instances), <a href="">no-pos/AUX</a>-<a href="">no-pos/ADV</a> (1; 0% instances), <a href="">no-pos/NUM</a>-<a href="">no-pos/ADV</a> (1; 0% instances).</p>
+<p>The following 16 pairs of parts of speech are connected with <code class="highlighter-rouge">neg</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/ADV</a> (1842; 64% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/ADV</a> (409; 14% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/ADV</a> (243; 8% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/DET</a> (173; 6% instances), <a href="">no-pos/ADV</a>-<a href="">no-pos/ADV</a> (96; 3% instances), <a href="">no-pos/PRON</a>-<a href="">no-pos/ADV</a> (44; 2% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/ADV</a> (15; 1% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/ADV</a> (11; 0% instances), <a href="">no-pos/SCONJ</a>-<a href="">no-pos/ADV</a> (10; 0% instances), <a href="">no-pos/ADP</a>-<a href="">no-pos/ADV</a> (8; 0% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/DET</a> (4; 0% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/DET</a> (3; 0% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/DET</a> (2; 0% instances), <a href="">no-pos/INTJ</a>-<a href="">no-pos/ADV</a> (2; 0% instances), <a href="">no-pos/AUX</a>-<a href="">no-pos/ADV</a> (1; 0% instances), <a href="">no-pos/NUM</a>-<a href="">no-pos/ADV</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
@@ -82,7 +83,7 @@ Average distance between parent and child is 1.60125698324022.</p>
 4	å	å	PART	_	_	5	mark	_	_
 5	så	så	VERB	_	VerbForm=Inf	2	xcomp	_	_
 6	tvil	tvil	NOUN	_	Definite=Ind|Gender=Masc|Number=Sing	5	dobj	_	_
-7	om	om	ADP	_	_	10	case	_	_
+7	om	om	ADP	_	_	10	mark	_	_
 8	at	at	SCONJ	_	_	10	mark	_	_
 9	de	de	PRON	_	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
 10	tror	tro	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin	6	acl	_	_
@@ -119,7 +120,7 @@ Average distance between parent and child is 1.60125698324022.</p>
 5	de	de	DET	_	Number=Plur|PronType=Dem	7	det	_	_
 6	slemme	slem	ADJ	_	Degree=Pos|Number=Plur	7	amod	_	_
 7	naturkreftene	naturkraft	NOUN	_	Definite=Def|Gender=Fem|Number=Plur	0	root	_	_
-8	som	som	PRON	_	_	9	nsubj	_	_
+8	som	som	PRON	_	PronType=Rel	9	nsubj	_	_
 9	truer	true	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
 10	Venezia	Venezia	PROPN	_	_	9	dobj	_	_
 11	.	$.	PUNCT	_	_	7	punct	_	_
@@ -183,6 +184,7 @@ neg in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -214,11 +216,40 @@ neg in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -242,6 +273,7 @@ neg in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'no-dep';
@@ -267,7 +299,7 @@ neg in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

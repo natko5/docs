@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sl/feat">sl/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/feat">sl/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Foreign.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>Foreign</code>: This is this a foreign word</h2>
 
-<p><code>Foreign</code> is a lexical feature of some words belonging to class <a href="X">X: other</a>. It is assigned to intervening foreign words that have not been analyzed grammatically. These can appear as a string or in combination with other Slovenian words. If a word is commonly used in Slovenian and displays Slovenian grammatical behavior, such as inflection, it is considered to be a Slovenian (loan) word, not a foreign word.</p>
+<p><code class="highlighter-rouge">Foreign</code> is a lexical feature of some words belonging to class <a href="X">X: other</a>. It is assigned to intervening foreign words that have not been analyzed grammatically. These can appear as a string or in combination with other Slovenian words. If a word is commonly used in Slovenian and displays Slovenian grammatical behavior, such as inflection, it is considered to be a Slovenian (loan) word, not a foreign word.</p>
 
 <h3 id="foreign-it-is-foreign">Foreign: it is foreign</h3>
 
@@ -52,7 +53,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All tokens with tag Residual and Type=foreign are converted to <code>X</code> and Foreign=Yes.</p>
+<p>All tokens with tag Residual and Type=foreign are converted to <code class="highlighter-rouge">X</code> and Foreign=Yes.</p>
 
 
 <!-- "automatic stats" -->
@@ -67,30 +68,61 @@
 <h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
 
 <p>This feature is language-specific.
-It occurs with 1 different values: <code>Foreign</code>.</p>
+It occurs with 1 different values: <code class="highlighter-rouge">Foreign</code>.</p>
 
-<p>110 tokens (0%) have a non-empty value of <code>Foreign</code>.
-83 types (0%) occur at least once with a non-empty value of <code>Foreign</code>.
-77 lemmas (0%) occur at least once with a non-empty value of <code>Foreign</code>.
+<p>110 tokens (0%) have a non-empty value of <code class="highlighter-rouge">Foreign</code>.
+83 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Foreign</code>.
+77 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Foreign</code>.
 The feature is used with 1 part-of-speech tags: <a href="">sl-pos/X</a> (110; 0% instances).</p>
 
-<h3 id="x"><code>X</code></h3>
+<h3 id="x"><code class="highlighter-rouge">X</code></h3>
 
-<p>110 <a href="">sl-pos/X</a> tokens (32% of all <code>X</code> tokens) have a non-empty value of <code>Foreign</code>.</p>
+<p>110 <a href="">sl-pos/X</a> tokens (32% of all <code class="highlighter-rouge">X</code> tokens) have a non-empty value of <code class="highlighter-rouge">Foreign</code>.</p>
 
-<p><code>X</code> tokens may have the following values of <code>Foreign</code>:</p>
+<p><code class="highlighter-rouge">X</code> tokens may have the following values of <code class="highlighter-rouge">Foreign</code>:</p>
 
 <ul>
-  <li><code>Foreign</code> (110; 100% of non-empty <code>Foreign</code>): <em>of, the, de, bin, La, Les, Party, TO, TRAVEL, WRITING</em></li>
+  <li><code class="highlighter-rouge">Foreign</code> (110; 100% of non-empty <code class="highlighter-rouge">Foreign</code>): <em>of, the, de, bin, La, Les, Party, TO, TRAVEL, WRITING</em></li>
 </ul>
 
-<p><code>Foreign</code> seems to be <strong>lexical feature</strong> of <code>X</code>. 100% lemmas (77) occur only with one value of <code>Foreign</code>.</p>
+<p><code class="highlighter-rouge">Foreign</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">X</code>. 100% lemmas (77) occur only with one value of <code class="highlighter-rouge">Foreign</code>.</p>
 
-<h2 id="relations-with-agreement-in-foreign">Relations with Agreement in <code>Foreign</code></h2>
+<h2 id="relations-with-agreement-in-foreign">Relations with Agreement in <code class="highlighter-rouge">Foreign</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Foreign</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Foreign</code>:
 <tt>X –[<a href="../dep/foreign.html">foreign</a>]–&gt; X</tt> (57; 100%),
 <tt>X –[<a href="../dep/appos.html">appos</a>]–&gt; X</tt> (1; 100%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>This feature is language-specific.
+It occurs with 1 different values: <code class="highlighter-rouge">Foreign</code>.</p>
+
+<p>96 tokens (0%) have a non-empty value of <code class="highlighter-rouge">Foreign</code>.
+72 types (1%) occur at least once with a non-empty value of <code class="highlighter-rouge">Foreign</code>.
+72 lemmas (2%) occur at least once with a non-empty value of <code class="highlighter-rouge">Foreign</code>.
+The feature is used with 1 part-of-speech tags: <a href="">sl-pos/X</a> (96; 0% instances).</p>
+
+<h3 id="x-1"><code class="highlighter-rouge">X</code></h3>
+
+<p>96 <a href="">sl-pos/X</a> tokens (6% of all <code class="highlighter-rouge">X</code> tokens) have a non-empty value of <code class="highlighter-rouge">Foreign</code>.</p>
+
+<p><code class="highlighter-rouge">X</code> tokens may have the following values of <code class="highlighter-rouge">Foreign</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Foreign</code> (96; 100% of non-empty <code class="highlighter-rouge">Foreign</code>): <em>green, of, grass, home, non, stop, beautiful, day, fa, gung</em></li>
+</ul>
+
+<p><code class="highlighter-rouge">Foreign</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">X</code>. 100% lemmas (72) occur only with one value of <code class="highlighter-rouge">Foreign</code>.</p>
+
+<h2 id="relations-with-agreement-in-foreign-1">Relations with Agreement in <code class="highlighter-rouge">Foreign</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Foreign</code>:
+<tt>X –[<a href="../dep/foreign.html">foreign</a>]–&gt; X</tt> (56; 100%),
+<tt>X –[<a href="../dep/mwe.html">mwe</a>]–&gt; X</tt> (3; 100%),
+<tt>X –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; X</tt> (1; 100%).</p>
 
 
 
@@ -110,6 +142,7 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/X</a> (110; 0%
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -141,11 +174,40 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/X</a> (110; 0%
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -169,6 +231,7 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/X</a> (110; 0%
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-feat';
@@ -194,7 +257,7 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/X</a> (110; 0%
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

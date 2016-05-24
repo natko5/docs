@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-zh">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/zh/feat">zh/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-zh">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/zh/feat">zh/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_zh-feat/Aspect.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,11 +40,52 @@
           <h2><code>Aspect</code>: aspect</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>Aspect</code>.</p>
+for <code class="highlighter-rouge">Aspect</code>.</p>
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udchinese">Treebank Statistics (UD_Chinese)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code class="highlighter-rouge">Perf</code>, <code class="highlighter-rouge">Prog</code>.</p>
+
+<p>957 tokens (1%) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+3 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+1 lemmas (0) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+The feature is used with 2 part-of-speech tags: <a href="">zh-pos/PART</a> (956; 1% instances), <a href="">zh-pos/X</a> (1; 0% instances).</p>
+
+<h3 id="part"><code class="highlighter-rouge">PART</code></h3>
+
+<p>956 <a href="">zh-pos/PART</a> tokens (7% of all <code class="highlighter-rouge">PART</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PART</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Case.html">Case</a>=EMPTY</tt> (956; 100%).</p>
+
+<p><code class="highlighter-rouge">PART</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Perf</code> (825; 86% of non-empty <code class="highlighter-rouge">Aspect</code>): 了、 過</li>
+  <li><code class="highlighter-rouge">Prog</code> (131; 14% of non-empty <code class="highlighter-rouge">Aspect</code>): 著</li>
+  <li><code class="highlighter-rouge">EMPTY</code> (12216): 的、 之、 人、 大、 者、 市、 區、 會、 軍、 省</li>
+</ul>
+
+<h3 id="x"><code class="highlighter-rouge">X</code></h3>
+
+<p>1 <a href="">zh-pos/X</a> tokens (0% of all <code class="highlighter-rouge">X</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p><code class="highlighter-rouge">X</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Perf</code> (1; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): 了</li>
+  <li><code class="highlighter-rouge">EMPTY</code> (1208): 的、 了、 the、 A、 的話、 NBA、 JR、 of、 B、 Google</li>
+</ul>
 
 
 
@@ -102,6 +144,7 @@ Aspect in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +176,40 @@ Aspect in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +233,7 @@ Aspect in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'zh-feat';
@@ -186,7 +259,7 @@ Aspect in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

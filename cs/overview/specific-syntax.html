@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-overview/specific-syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -58,10 +59,10 @@ Such instances are attached to the verb as <a href="">cs-dep/dobj</a> or <a href
 
 <ul>
   <li><em>Jan <b>se</b> bude bránit.</em> “Jan will defend himself.”
-(<code>dobj</code>; substitution is grammatical:
+(<code class="highlighter-rouge">dobj</code>; substitution is grammatical:
 <em>Jan <b>ho</b> bude bránit.</em> “Jan will defend him.”)</li>
   <li><em>Barbora <b>si</b> přidělí osobního strážce.</em> “Barbora will assign herself a bodyguard.”
-(<code>iobj</code>; substitution is grammatical:
+(<code class="highlighter-rouge">iobj</code>; substitution is grammatical:
 <em>Barbora <b>jí</b> přidělí osobního strážce.</em> “Barbora will assign her a bodyguard.”)</li>
 </ul>
 
@@ -76,7 +77,7 @@ iobj(will-assign, herself)
 </code></pre>
 
 <p>The Czech reflexive pronoun is also used in reciprocal actions where other languages use
-a special reciprocal pronoun. These instances are still attached as <code>dobj</code> or <code>iobj</code>,
+a special reciprocal pronoun. These instances are still attached as <code class="highlighter-rouge">dobj</code> or <code class="highlighter-rouge">iobj</code>,
 respectively:</p>
 
 <ul>
@@ -277,7 +278,7 @@ punct(expected, ,-15)
 punct(came, .-19)
 </code></pre>
 
-<p>As with qualitative comparisons, we use <code>nmod</code> instead of <code>advcl</code> and <code>case</code> instead of <code>mark</code>
+<p>As with qualitative comparisons, we use <code class="highlighter-rouge">nmod</code> instead of <code class="highlighter-rouge">advcl</code> and <code class="highlighter-rouge">case</code> instead of <code class="highlighter-rouge">mark</code>
 when the comparative complement is reduced to just a nominal:</p>
 
 <pre><code class="language-sdparse">Petr má více peněz než Pavel . \n Petr has more money than Pavel .
@@ -336,7 +337,7 @@ the most important and difficult are those where the missing word has dependents
 Where do we attach these <em>orphans</em> to?</p>
 
 <p>Several different solutions can be found in treebanks.
-One of them is to include an <strong>empty node</strong> (labeled <code>NULL</code>, <code>#Fantom</code> etc.) that represents the missing word.
+One of them is to include an <strong>empty node</strong> (labeled <code class="highlighter-rouge">NULL</code>, <code class="highlighter-rouge">#Fantom</code> etc.) that represents the missing word.
 Orphans are then attached to the empty node with their real dependency relation labels.
 Such analysis would be linguistically adequate but it would violate our principle that dependencies exist
 between real syntactic words. (It would also make parsing more difficult.)
@@ -347,7 +348,7 @@ i.e. to the parent of the missing parent node. Then they may</p>
 
 <ul>
   <li>keep the labels they would have if attached to the missing parent (but that would yield strange combinations of parts of speech and dependency relations)</li>
-  <li>get a special label such as the <code>ExD</code> in Prague-style treebanks (it does not say much but at least it warns the user that this relation is not a normal dependency)</li>
+  <li>get a special label such as the <code class="highlighter-rouge">ExD</code> in Prague-style treebanks (it does not say much but at least it warns the user that this relation is not a normal dependency)</li>
   <li>combine both (in the Danish treebank, the original labels are surrounded by angle brackets to indicate that this is not the real parent; in the Ancient Greek and Latin treebanks, the labels on the path via missing node(s) are chained into one long label)</li>
 </ul>
 
@@ -395,13 +396,13 @@ remnant(beef, pork)
 </code></pre>
 
 <p>Sometimes a verb is missing but there is no coordination and no overt copy of the verb,
-hence we cannot use the <code>remnant</code> analysis.
+hence we cannot use the <code class="highlighter-rouge">remnant</code> analysis.
 In particular, there are sentence-like segments that lack the main verb:
 <em>A co na to [říká] MF?</em>
 “And what [does] MF [say] to it?”</p>
 
 <p>Since release 1.2 of the Czech UD treebank,
-there is just one node with the <code>root</code> dependency relation in every
+there is just one node with the <code class="highlighter-rouge">root</code> dependency relation in every
 tree; when there are
 multiple orphaned dependents at the top level of the tree,
 the leftmost dependent is promoted to
@@ -433,6 +434,7 @@ punct(And, ?-15)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -464,11 +466,40 @@ punct(And, ?-15)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -492,6 +523,7 @@ punct(And, ?-15)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-overview';
@@ -517,7 +549,7 @@ punct(And, ?-15)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/cs/dep">cs/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/dep">cs/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/vocative.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>vocative</code>: vocative</h2>
 
-<p>The <code>vocative</code> relation is used to mark dialogue participant addressed in text.
+<p>The <code class="highlighter-rouge">vocative</code> relation is used to mark dialogue participant addressed in text.
 The relation links the addressee’s name to its host sentence.
 In Czech, the addressee’s name must also appear in the vocative <a href="">cs-feat/Case</a> form.</p>
 
@@ -62,12 +63,12 @@ vocative(you-are, Sir)
 
 <p>This relation is universal.</p>
 
-<p>81 nodes (0%) are attached to their parents as <code>vocative</code>.</p>
+<p>81 nodes (0%) are attached to their parents as <code class="highlighter-rouge">vocative</code>.</p>
 
-<p>45 instances of <code>vocative</code> (56%) are right-to-left (child precedes parent).
-Average distance between parent and child is 4.32098765432099.</p>
+<p>45 instances of <code class="highlighter-rouge">vocative</code> (56%) are right-to-left (child precedes parent).
+Average distance between parent and child is 4.34567901234568.</p>
 
-<p>The following 11 pairs of parts of speech are connected with <code>vocative</code>: <a href="">cs-pos/VERB</a>-<a href="">cs-pos/NOUN</a> (49; 60% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/PROPN</a> (15; 19% instances), <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NOUN</a> (6; 7% instances), <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/PROPN</a> (3; 4% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/NOUN</a> (2; 2% instances), <a href="">cs-pos/CONJ</a>-<a href="">cs-pos/NOUN</a> (1; 1% instances), <a href="">cs-pos/INTJ</a>-<a href="">cs-pos/PROPN</a> (1; 1% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/PROPN</a> (1; 1% instances), <a href="">cs-pos/PART</a>-<a href="">cs-pos/PROPN</a> (1; 1% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/NOUN</a> (1; 1% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/ADJ</a> (1; 1% instances).</p>
+<p>The following 11 pairs of parts of speech are connected with <code class="highlighter-rouge">vocative</code>: <a href="">cs-pos/VERB</a>-<a href="">cs-pos/NOUN</a> (49; 60% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/PROPN</a> (15; 19% instances), <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NOUN</a> (6; 7% instances), <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/PROPN</a> (3; 4% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/NOUN</a> (2; 2% instances), <a href="">cs-pos/CONJ</a>-<a href="">cs-pos/NOUN</a> (1; 1% instances), <a href="">cs-pos/INTJ</a>-<a href="">cs-pos/PROPN</a> (1; 1% instances), <a href="">cs-pos/NUM</a>-<a href="">cs-pos/PROPN</a> (1; 1% instances), <a href="">cs-pos/PART</a>-<a href="">cs-pos/PROPN</a> (1; 1% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/NOUN</a> (1; 1% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/ADJ</a> (1; 1% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
@@ -110,21 +111,87 @@ Average distance between parent and child is 4.32098765432099.</p>
 
 <pre><code class="language-conllu"># visual-style 7	bgColor:blue
 # visual-style 7	fgColor:white
-# visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 4 7 vocative	color:blue
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 7 vocative	color:blue
 1	Skleněná	skleněný	ADJ	AAFS1----1A----	Case=Nom|Degree=Pos|Gender=Fem|Negative=Pos|Number=Sing	2	amod	_	_
 2	louka	louka	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Negative=Pos|Number=Sing	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	Z:-------------	_	4	punct	_	_
 4	Máj	máj	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Negative=Pos|Number=Sing	2	appos	_	_
 5	(	(	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
 6	Ó	ó	INTJ	II-------------	_	7	dep	_	LId=ó-1
-7	králi	král	NOUN	NNMS5-----A----	Animacy=Anim|Case=Voc|Gender=Masc|Negative=Pos|Number=Sing	4	vocative	_	SpaceAfter=No
+7	králi	král	NOUN	NNMS5-----A----	Animacy=Anim|Case=Voc|Gender=Masc|Negative=Pos|Number=Sing	2	vocative	_	SpaceAfter=No
 8	,	,	PUNCT	Z:-------------	_	7	punct	_	_
 9	dobrou	dobrý	ADJ	AAFS4----1A----	Case=Acc|Degree=Pos|Gender=Fem|Negative=Pos|Number=Sing	10	amod	_	_
 10	noc	noc	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Negative=Pos|Number=Sing	7	conj	_	SpaceAfter=No
 11	!	!	PUNCT	Z:-------------	_	7	punct	_	SpaceAfter=No
 12	)	)	PUNCT	Z:-------------	_	7	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+
+<p>This relation is universal.</p>
+
+<p>58 nodes (0%) are attached to their parents as <code class="highlighter-rouge">vocative</code>.</p>
+
+<p>32 instances of <code class="highlighter-rouge">vocative</code> (55%) are right-to-left (child precedes parent).
+Average distance between parent and child is 4.53448275862069.</p>
+
+<p>The following 7 pairs of parts of speech are connected with <code class="highlighter-rouge">vocative</code>: <a href="">cs-pos/VERB</a>-<a href="">cs-pos/NOUN</a> (42; 72% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/PROPN</a> (8; 14% instances), <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/NOUN</a> (3; 5% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/NOUN</a> (2; 3% instances), <a href="">cs-pos/ADV</a>-<a href="">cs-pos/NOUN</a> (1; 2% instances), <a href="">cs-pos/PRON</a>-<a href="">cs-pos/PROPN</a> (1; 2% instances), <a href="">cs-pos/VERB</a>-<a href="">cs-pos/PRON</a> (1; 2% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 10 2 vocative	color:blue
+1	Soudruhu	soudruh	NOUN	NNMS5-----A----	Animacy=Anim|Case=Voc|Gender=Masc|Negative=Pos|Number=Sing	2	nmod	_	_
+2	doktore	doktor	NOUN	NNMS5-----A----	Animacy=Anim|Case=Voc|Gender=Masc|Negative=Pos|Number=Sing	10	vocative	_	SpaceAfter=No
+3	,	,	PUNCT	Z:-------------	_	10	punct	_	_
+4	o	o	ADP	RR--6----------	AdpType=Prep|Case=Loc	5	case	_	LId=o-1
+5	čem	co	PRON	PQ--6----------	Animacy=Inan|Case=Loc|PronType=Int,Rel	10	dobj	_	LId=co-1
+6	se	se	PRON	P7-X4----------	Case=Acc|PronType=Prs|Reflex=Yes|Variant=Short	10	auxpass:reflex	_	LGloss=(zvr._zájmeno/částice)
+7	na	na	ADP	RR--6----------	AdpType=Prep|Case=Loc	8	case	_	LId=na-1
+8	besedě	beseda	NOUN	NNFS6-----A----	Case=Loc|Gender=Fem|Negative=Pos|Number=Sing	10	nmod	_	_
+9	hlavně	hlavně	ADV	Dg-------1A----	Degree=Pos|Negative=Pos	10	advmod	_	LDeriv=hlavní
+10	hovořilo	hovořit	VERB	VpNS---XR-AA---	Aspect=Imp|Gender=Neut|Negative=Pos|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Z:-------------	_	10	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 2 vocative	color:blue
+1	"	"	PUNCT	Z:-------------	_	7	punct	_	_
+2	Ladislave	Ladislav	PROPN	NNMS5-----A----	Animacy=Anim|Case=Voc|Gender=Masc|NameType=Giv|Negative=Pos|Number=Sing	7	vocative	_	_
+3	Falto	Falta	PROPN	NNMS5-----A----	Animacy=Anim|Case=Voc|Gender=Masc|NameType=Sur|Negative=Pos|Number=Sing	2	name	_	SpaceAfter=No
+4	,	,	PUNCT	Z:-------------	_	7	punct	_	_
+5	už	už	ADV	Db-------------	_	7	advmod	_	_
+6	jste	být	AUX	VB-P---2P-AA---	Mood=Ind|Negative=Pos|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	sbalil	sbalit	VERB	VpYS---XR-AA---	Aspect=Perf|Gender=Masc|Negative=Pos|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+8	kufr	kufr	NOUN	NNIS4-----A----	Animacy=Inan|Case=Acc|Gender=Masc|Negative=Pos|Number=Sing	7	dobj	_	SpaceAfter=No
+9	?	?	PUNCT	Z:-------------	_	7	punct	_	_
+10	"	"	PUNCT	Z:-------------	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 6 vocative	color:blue
+1	"	"	PUNCT	Z:-------------	_	3	punct	_	_
+2	Váš	tvůj	DET	PSYS1-P2-------	Case=Nom|Gender=Masc|Number=Sing|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs	3	det	_	LGloss=(přivlast.)
+3	závěr	závěr	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Negative=Pos|Number=Sing	0	root	_	SpaceAfter=No|LGloss=(př._z_jednání,_úvah)
+4	,	,	PUNCT	Z:-------------	_	3	punct	_	_
+5	soudruhu	soudruh	NOUN	NNMS5-----A----	Animacy=Anim|Case=Voc|Gender=Masc|Negative=Pos|Number=Sing	6	nmod	_	_
+6	náměstku	náměstek	NOUN	NNMS5-----A----	Animacy=Anim|Case=Voc|Gender=Masc|Negative=Pos|Number=Sing	3	vocative	_	SpaceAfter=No
+7	.	.	PUNCT	Z:-------------	_	3	punct	_	_
+8	"	"	PUNCT	Z:-------------	_	3	punct	_	_
 
 </code></pre>
 
@@ -185,6 +252,7 @@ vocative in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -216,11 +284,40 @@ vocative in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -244,6 +341,7 @@ vocative in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-dep';
@@ -269,7 +367,7 @@ vocative in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

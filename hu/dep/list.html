@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-hu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/hu/dep">hu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hu/dep">hu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hu-dep/list.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,7 +40,7 @@
           <h2><code>list</code>: list</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>list</code>.</p>
+for <code class="highlighter-rouge">list</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +57,53 @@ for <code>list</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>9 nodes (0%) are attached to their parents as <code>list</code>.</p>
+<p>20 nodes (0%) are attached to their parents as <code class="highlighter-rouge">list</code>.</p>
 
-<p>9 instances of <code>list</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 9.11111111111111.</p>
+<p>20 instances of <code class="highlighter-rouge">list</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 6.25.</p>
 
-<p>The following 5 pairs of parts of speech are connected with <code>list</code>: <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/PROPN</a> (4; 44% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/NOUN</a> (2; 22% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/PROPN</a> (1; 11% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/ADJ</a> (1; 11% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/NOUN</a> (1; 11% instances).</p>
+<p>The following 5 pairs of parts of speech are connected with <code class="highlighter-rouge">list</code>: <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/NOUN</a> (11; 55% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/PROPN</a> (4; 20% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/NOUN</a> (3; 15% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/PROPN</a> (1; 5% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/ADJ</a> (1; 5% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 16	bgColor:blue
+# visual-style 16	fgColor:white
+# visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 13 16 list	color:blue
+1	A	a	DET	_	Definite=Def|PronType=Art	2	det	_	_
+2	tárgyak	tárgy	NOUN	_	Case=Nom|Number=Plur|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	nsubj	_	_
+3	még	még	ADV	_	_	5	advmod:tlocy	_	_
+4	ma	ma	ADV	_	_	5	advmod:tlocy	_	_
+5	megtekinthetők	megtekinthető	ADJ	_	Case=Nom|Number=Plur|Number[psed]=None|Number[psor]=None|Person[psor]=None|VerbForm=PartPres	0	root	_	_
+6	a	a	DET	_	Definite=Def|PronType=Art	9	det	_	_
+7	Biblical	Biblical	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	8	name	_	_
+8	World	World	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	9	name	_	_
+9	Galleryben	Gallery	PROPN	_	Case=Ine|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	nmod:obl	_	_
+10	,	,	PUNCT	_	_	5	punct	_	_
+11	a	a	DET	_	Definite=Def|PronType=Art	13	det	_	_
+12	Wesselényi	Wesselényi	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	13	name	_	_
+13	u	u	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	5	nmod	_	_
+14	.	.	PUNCT	_	_	13	punct	_	_
+15	13.	13.	ADJ	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|NumType=Ord|Person[psor]=None	16	amod:att	_	_
+16	szám	szám	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	13	list	_	_
+17	alatt	alatt	ADP	_	_	13	case	_	_
+18	,	,	PUNCT	_	_	5	punct	_	_
+19	az	az	DET	_	Definite=Def|PronType=Art	20	det	_	_
+20	árverés	árverés	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	26	nsubj	_	_
+21	pedig	pedig	CONJ	_	_	5	cc	_	_
+22	vasárnap	vasárnap	ADV	_	_	23	advmod:tlocy	_	_
+23	délelőtt	délelőtt	ADV	_	_	26	advmod:tlocy	_	_
+24	10	10	NUM	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|NumType=Card|Person[psor]=None	25	nummod	_	_
+25	órakor	óra	NOUN	_	Case=Tem|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	26	nmod:obl	_	_
+26	kezdődik	kezdődik	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+27	a	a	DET	_	Definite=Def|PronType=Art	30	det	_	_
+28	Hotel	Hotel	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	29	name	_	_
+29	Atrium	Atrium	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	30	name	_	_
+30	Hyatt	Hyatt	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	32	nmod:att	_	_
+31	Kármán	Kármán	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	32	nmod:att	_	_
+32	termében	terem	NOUN	_	Case=Ine|Number=Sing|Number[psed]=None|Number[psor]=Sing|Person[psor]=3	26	nmod:obl	_	_
+33	.	.	PUNCT	_	_	5	punct	_	_
+
+</code></pre>
 
 <pre><code class="language-conllu"># visual-style 14	bgColor:blue
 # visual-style 14	fgColor:white
@@ -101,25 +143,6 @@ Average distance between parent and child is 9.11111111111111.</p>
 # visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
 # visual-style 1 7 list	color:blue
-1	Eredmények	eredmény	NOUN	_	Case=Nom|Number=Plur|Number[psed]=None|Number[psor]=None|Person[psor]=None	0	root	_	_
-2	,	,	PUNCT	_	_	1	punct	_	_
-3	Bajnokok	Bajnokok	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	4	name	_	_
-4	Ligája	Ligája	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	1	list	_	_
-5	,	,	PUNCT	_	_	1	punct	_	_
-6	2.	2.	ADJ	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|NumType=Ord|Person[psor]=None	7	amod:att	_	_
-7	kör	kör	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	1	list	_	_
-8	,	,	PUNCT	_	_	1	punct	_	_
-9	1.	1.	ADJ	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|NumType=Ord|Person[psor]=None	10	amod:att	_	_
-10	forduló	forduló	NOUN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	1	list	_	_
-11	.	.	PUNCT	_	_	1	punct	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu"># visual-style 4	bgColor:blue
-# visual-style 4	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 4 list	color:blue
 1	Eredmények	eredmény	NOUN	_	Case=Nom|Number=Plur|Number[psed]=None|Number[psor]=None|Person[psor]=None	0	root	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	Bajnokok	Bajnokok	PROPN	_	Case=Nom|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	4	name	_	_
@@ -191,6 +214,7 @@ list in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -222,11 +246,40 @@ list in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -250,6 +303,7 @@ list in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'hu-dep';
@@ -275,7 +329,7 @@ list in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

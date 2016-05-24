@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ca">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ca/dep">ca/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ca">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ca/dep">ca/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ca-dep/punct.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,12 +40,90 @@
           <h2><code>punct</code>: punctuation</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>punct</code>.</p>
+for <code class="highlighter-rouge">punct</code>.</p>
 
 
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udcatalan">Treebank Statistics (UD_Catalan)</h2>
+
+<p>This relation is universal.</p>
+
+<p>53377 nodes (10%) are attached to their parents as <code class="highlighter-rouge">punct</code>.</p>
+
+<p>36803 instances of <code class="highlighter-rouge">punct</code> (69%) are left-to-right (parent precedes child).
+Average distance between parent and child is 10.6515727747906.</p>
+
+<p>The following 17 pairs of parts of speech are connected with <code class="highlighter-rouge">punct</code>: <a href="">ca-pos/VERB</a>-<a href="">ca-pos/PUNCT</a> (23702; 44% instances), <a href="">ca-pos/NOUN</a>-<a href="">ca-pos/PUNCT</a> (13356; 25% instances), <a href="">ca-pos/PROPN</a>-<a href="">ca-pos/PUNCT</a> (7356; 14% instances), <a href="">ca-pos/ADJ</a>-<a href="">ca-pos/PUNCT</a> (3610; 7% instances), <a href="">ca-pos/ADV</a>-<a href="">ca-pos/PUNCT</a> (1891; 4% instances), <a href="">ca-pos/ADP</a>-<a href="">ca-pos/PUNCT</a> (814; 2% instances), <a href="">ca-pos/NUM</a>-<a href="">ca-pos/PUNCT</a> (753; 1% instances), <a href="">ca-pos/PRON</a>-<a href="">ca-pos/PUNCT</a> (635; 1% instances), <a href="">ca-pos/CONJ</a>-<a href="">ca-pos/PUNCT</a> (373; 1% instances), <a href="">ca-pos/DET</a>-<a href="">ca-pos/PUNCT</a> (278; 1% instances), <a href="">ca-pos/SYM</a>-<a href="">ca-pos/PUNCT</a> (216; 0% instances), <a href="">ca-pos/AUX</a>-<a href="">ca-pos/PUNCT</a> (180; 0% instances), <a href="">ca-pos/PART</a>-<a href="">ca-pos/PUNCT</a> (90; 0% instances), <a href="">ca-pos/SCONJ</a>-<a href="">ca-pos/PUNCT</a> (65; 0% instances), <a href="">ca-pos/PUNCT</a>-<a href="">ca-pos/PUNCT</a> (44; 0% instances), <a href="">ca-pos/INTJ</a>-<a href="">ca-pos/PUNCT</a> (12; 0% instances), <a href="">ca-pos/X</a>-<a href="">ca-pos/PUNCT</a> (2; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 13 punct	color:blue
+1	D'	de	ADP	ADP	AdpType=Prep	3	case	_	_
+2	aquestes	aquest	DET	DET	Gender=Fem|Number=Plur|PronType=Dem	3	det	_	_
+3	activitats	activitat	NOUN	NOUN	Gender=Fem|Number=Plur	9	nmod	_	_
+4	,	,	PUNCT	PUNCT	PunctType=Comm	3	punct	_	_
+5	algunes	algun	PRON	PRON	Gender=Fem|Number=Plur|PronType=Ind	9	nsubj	_	_
+6	no	no	ADV	ADV	Negative=Neg	9	neg	_	_
+7	s'	es	PRON	PRON	_	9	dobj	_	_
+8	han	haver	AUX	AUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	obert	obrir	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+10	a	a	ADP	ADP	AdpType=Prep	12	case	_	_
+11	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	públic	públic	NOUN	NOUN	Gender=Masc|Number=Sing	9	dobj	_	_
+13	.	.	PUNCT	PUNCT	PunctType=Peri	9	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 4 punct	color:blue
+1	D'	de	ADP	ADP	AdpType=Prep	3	case	_	_
+2	aquestes	aquest	DET	DET	Gender=Fem|Number=Plur|PronType=Dem	3	det	_	_
+3	activitats	activitat	NOUN	NOUN	Gender=Fem|Number=Plur	9	nmod	_	_
+4	,	,	PUNCT	PUNCT	PunctType=Comm	3	punct	_	_
+5	algunes	algun	PRON	PRON	Gender=Fem|Number=Plur|PronType=Ind	9	nsubj	_	_
+6	no	no	ADV	ADV	Negative=Neg	9	neg	_	_
+7	s'	es	PRON	PRON	_	9	dobj	_	_
+8	han	haver	AUX	AUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	obert	obrir	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+10	a	a	ADP	ADP	AdpType=Prep	12	case	_	_
+11	el	el	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	públic	públic	NOUN	NOUN	Gender=Masc|Number=Sing	9	dobj	_	_
+13	.	.	PUNCT	PUNCT	PunctType=Peri	9	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 11 punct	color:blue
+1	Ramon	Ramon	PROPN	PROPN	_	0	root	_	MWE=Ramon_Barnils|MWEPOS=PROPN
+2	Barnils	Barnils	PROPN	PROPN	_	1	name	_	_
+3	El	El	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	MWE=El_Temps|MWEPOS=PROPN
+4	Temps	Temps	PROPN	PROPN	_	1	name	_	_
+5	,	,	PUNCT	PUNCT	PunctType=Comm	6	punct	_	_
+6	7	7	NUM	NUM	NumForm=Digit|NumType=Card	1	appos	_	MWE=7_de_juliol_de_1986|MWEPOS=NOUN
+7	de	de	ADP	ADP	AdpType=Prep	8	case	_	_
+8	juliol	juliol	NOUN	NOUN	_	6	compound	_	_
+9	de	de	ADP	ADP	AdpType=Prep	10	case	_	_
+10	1986	1986	NUM	NUM	NumForm=Digit|NumType=Card	6	compound	_	_
+11	.	.	PUNCT	PUNCT	PunctType=Peri	1	punct	_	_
+
+</code></pre>
 
 
 
@@ -103,6 +182,7 @@ punct in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -134,11 +214,40 @@ punct in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -162,6 +271,7 @@ punct in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ca-dep';
@@ -187,7 +297,7 @@ punct in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

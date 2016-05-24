@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ca">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ca/feat">ca/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ca">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ca/feat">ca/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ca-feat/Case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,11 +40,51 @@
           <h2><code>Case</code>: case</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>Case</code>.</p>
+for <code class="highlighter-rouge">Case</code>.</p>
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udcatalan">Treebank Statistics (UD_Catalan)</h2>
+
+<p>This feature is universal.
+It occurs with 3 different values: <code class="highlighter-rouge">Acc</code>, <code class="highlighter-rouge">Dat</code>, <code class="highlighter-rouge">Nom</code>.</p>
+
+<p>1506 tokens (0%) have a non-empty value of <code class="highlighter-rouge">Case</code>.
+21 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Case</code>.
+6 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Case</code>.
+The feature is used with 1 part-of-speech tags: <a href="">ca-pos/PRON</a> (1506; 0% instances).</p>
+
+<h3 id="pron"><code class="highlighter-rouge">PRON</code></h3>
+
+<p>1506 <a href="">ca-pos/PRON</a> tokens (6% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Case</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Case</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (1506; 100%), <tt><a href="Person.html">Person</a>=3</tt> (1428; 95%), <tt><a href="Number.html">Number</a>=Sing</tt> (1386; 92%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (805; 53%).</p>
+
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Case</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Acc</code> (877; 58% of non-empty <code class="highlighter-rouge">Case</code>): <em>el, l’, la, -lo, -la, les, -les, ‘l, els, li</em></li>
+  <li><code class="highlighter-rouge">Dat</code> (551; 37% of non-empty <code class="highlighter-rouge">Case</code>): <em>li, -li, -lo</em></li>
+  <li><code class="highlighter-rouge">Nom</code> (78; 5% of non-empty <code class="highlighter-rouge">Case</code>): <em>jo, mi</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (21863): <em>que, es, s’, hi, un, -se, tot, on, què, se</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>ell</i></th><th><tt>Acc</tt></th><th><tt>Dat</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td><em>el, -lo, 'l, li</em></td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td><em>els, 'ls</em></td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td><em>la, -la</em></td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td><em>les, -les</em></td><td></td></tr>
+  <tr><td><tt><a href="Number.html">Number</a>=Sing</tt></td><td><em>l'</em></td><td><em>li, -li</em></td></tr>
+</table>
 
 
 
@@ -102,6 +143,7 @@ Case in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +175,40 @@ Case in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +232,7 @@ Case in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ca-feat';
@@ -186,7 +258,7 @@ Case in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

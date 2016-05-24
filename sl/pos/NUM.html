@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sl/pos">sl/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/pos">sl/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-pos/NUM.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -42,7 +43,7 @@
 
 <p>A numeral is a word, functioning most typically as a determiner, adjective or pronoun, that expresses a number and a relation to the number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>The <code>NUM</code> tag is used for digit numerals (<em>3 / 3.</em>), roman numerals (<em>III / III.</em>), cardinal word numerals (<em>tri</em> “three”) and generic numerals (<em>troje</em> “three sets of”).</p>
+<p>The <code class="highlighter-rouge">NUM</code> tag is used for digit numerals (<em>3 / 3.</em>), roman numerals (<em>III / III.</em>), cardinal word numerals (<em>tri</em> “three”) and generic numerals (<em>troje</em> “three sets of”).</p>
 
 <p>Other word types expressing a number or a relation to a number in Slovenian are marked as <a href="ADJ">adjectives</a> (<em>tretji</em> “the third”, <em>trojen</em> “triple”, <em>trikraten</em> “threefold”), <a href="ADV">adverbs</a> (<em>trikrat</em> “three times”, <em>tretjič</em> “the third time”) or <a href="NOUN">nouns</a> (<em>tretjina</em> “a third”, <em>trojica</em> “triplet”, <em>trojka</em> “number three”).</p>
 
@@ -59,7 +60,7 @@
 
 <h4 id="conversion-from-jos">Conversion from JOS</h4>
 
-<p>The following numerals are converted to <code>NUM</code>: numerals with Form=digit; numerals with Form=roman; numerals with Form=letter and Type=cardinal; numeral with Form=letter, Type=pronominal and lemma <em>en</em> or <em>eden</em>; and numerals with Form=letter, Type=special and lemma not ending in <em>-en</em>.</p>
+<p>The following numerals are converted to <code class="highlighter-rouge">NUM</code>: numerals with Form=digit; numerals with Form=roman; numerals with Form=letter and Type=cardinal; numeral with Form=letter, Type=pronominal and lemma <em>en</em> or <em>eden</em>; and numerals with Form=letter, Type=special and lemma not ending in <em>-en</em>.</p>
 
 
 
@@ -75,16 +76,16 @@
 
 <h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
 
-<p>There are 485 <code>NUM</code> lemmas (3%), 524 <code>NUM</code> types (2%) and 1927 <code>NUM</code> tokens (1%).
-Out of 16 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas, 6 in number of types and 14 in number of tokens.</p>
+<p>There are 485 <code class="highlighter-rouge">NUM</code> lemmas (3%), 524 <code class="highlighter-rouge">NUM</code> types (2%) and 1927 <code class="highlighter-rouge">NUM</code> tokens (1%).
+Out of 16 observed tags, the rank of <code class="highlighter-rouge">NUM</code> is: 6 in number of lemmas, 6 in number of types and 14 in number of tokens.</p>
 
-<p>The 10 most frequent <code>NUM</code> lemmas: <em>en, dva, trije, štirje, pet, deset, eden, tisoč, šest, sto</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">NUM</code> lemmas: <em>en, dva, trije, štirje, pet, deset, eden, tisoč, šest, sto</em></p>
 
-<p>The 10 most frequent <code>NUM</code> types:  <em>eno, tri, dveh, dva, ena, eden, tisoč, štiri, štirih, dve</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">NUM</code> types:  <em>eno, tri, dveh, dva, ena, eden, tisoč, štiri, štirih, dve</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>V</em> (<a href="">NOUN</a> 2, <a href="">NUM</a> 1), <em>V.</em> (<a href="">X</a> 3, <a href="">NUM</a> 1), <em>X</em> (<a href="">NOUN</a> 1, <a href="">NUM</a> 1)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>V</em> (<a href="">NOUN</a> 2, <a href="">NUM</a> 1), <em>V.</em> (<a href="">X</a> 3, <a href="">NUM</a> 1), <em>X</em> (<a href="">NUM</a> 1, <a href="">NOUN</a> 1)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>V</em> (<a href="">ADP</a> 423, <a href="">NOUN</a> 2, <a href="">NUM</a> 1), <em>V.</em> (<a href="">X</a> 3, <a href="">NUM</a> 1), <em>X</em> (<a href="">NOUN</a> 1, <a href="">NUM</a> 1), <em>dvajsetih</em> (<a href="">NUM</a> 1, <a href="">ADJ</a> 1)</p>
+<p>The 10 most frequent ambiguous types:  <em>V</em> (<a href="">ADP</a> 423, <a href="">NOUN</a> 2, <a href="">NUM</a> 1), <em>V.</em> (<a href="">X</a> 3, <a href="">NUM</a> 1), <em>X</em> (<a href="">NUM</a> 1, <a href="">NOUN</a> 1), <em>dvajsetih</em> (<a href="">NUM</a> 1, <a href="">ADJ</a> 1)</p>
 
 <ul>
   <li><em>V</em>
@@ -102,8 +103,8 @@ Out of 16 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
   </li>
   <li><em>X</em>
     <ul>
-      <li><a href="">NOUN</a> 1: <em>A Za podaljšanje meta od točke <b>X</b> do točke Y sprostimo toliko vrvice ( 1 ) , da z njo dosežemo cilj .</em></li>
       <li><a href="">NUM</a> 1: <em>Morfologija : Ima majhen , krepek , sploščen trup , nekoliko daljšo spodnjo čeljust , hrbtno plavut z <b>X</b> , 11 plavutnicami in predrepno s III , 7 plavutnicami .</em></li>
+      <li><a href="">NOUN</a> 1: <em>A Za podaljšanje meta od točke <b>X</b> do točke Y sprostimo toliko vrvice ( 1 ) , da z njo dosežemo cilj .</em></li>
     </ul>
   </li>
   <li><em>dvajsetih</em>
@@ -116,7 +117,7 @@ Out of 16 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>NUM</code> is 1.080412 (the average of all parts of speech is 1.894262).</p>
+<p>The form / lemma ratio of <code class="highlighter-rouge">NUM</code> is 1.080412 (the average of all parts of speech is 1.894262).</p>
 
 <p>The 1st highest number of forms (10) was observed with the lemma “en”: <em>en, ena, ene, enega, enem, enemu, eni, enih, enim, eno</em>.</p>
 
@@ -124,33 +125,107 @@ Out of 16 observed tags, the rank of <code>NUM</code> is: 6 in number of lemmas,
 
 <p>The 3rd highest number of forms (5) was observed with the lemma “štirje”: <em>štiri, štirih, štirim, štirimi, štirje</em>.</p>
 
-<p><code>NUM</code> occurs with 5 features: <a href="">sl-feat/NumForm</a> (1927; 100% instances), <a href="">sl-feat/NumType</a> (1927; 100% instances), <a href="">sl-feat/Case</a> (740; 38% instances), <a href="">sl-feat/Number</a> (740; 38% instances), <a href="">sl-feat/Gender</a> (486; 25% instances)</p>
+<p><code class="highlighter-rouge">NUM</code> occurs with 5 features: <a href="">sl-feat/NumForm</a> (1927; 100% instances), <a href="">sl-feat/NumType</a> (1927; 100% instances), <a href="">sl-feat/Case</a> (740; 38% instances), <a href="">sl-feat/Number</a> (740; 38% instances), <a href="">sl-feat/Gender</a> (486; 25% instances)</p>
 
-<p><code>NUM</code> occurs with 18 feature-value pairs: <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>NumForm=Digit</code>, <code>NumForm=Roman</code>, <code>NumForm=Word</code>, <code>NumType=Card</code>, <code>NumType=Ord</code>, <code>NumType=Sets</code>, <code>Number=Dual</code>, <code>Number=Plur</code>, <code>Number=Sing</code></p>
+<p><code class="highlighter-rouge">NUM</code> occurs with 18 feature-value pairs: <code class="highlighter-rouge">Case=Acc</code>, <code class="highlighter-rouge">Case=Dat</code>, <code class="highlighter-rouge">Case=Gen</code>, <code class="highlighter-rouge">Case=Ins</code>, <code class="highlighter-rouge">Case=Loc</code>, <code class="highlighter-rouge">Case=Nom</code>, <code class="highlighter-rouge">Gender=Fem</code>, <code class="highlighter-rouge">Gender=Masc</code>, <code class="highlighter-rouge">Gender=Neut</code>, <code class="highlighter-rouge">NumForm=Digit</code>, <code class="highlighter-rouge">NumForm=Roman</code>, <code class="highlighter-rouge">NumForm=Word</code>, <code class="highlighter-rouge">NumType=Card</code>, <code class="highlighter-rouge">NumType=Ord</code>, <code class="highlighter-rouge">NumType=Sets</code>, <code class="highlighter-rouge">Number=Dual</code>, <code class="highlighter-rouge">Number=Plur</code>, <code class="highlighter-rouge">Number=Sing</code></p>
 
-<p><code>NUM</code> occurs with 61 feature combinations.
-The most frequent feature combination is <code>NumForm=Digit|NumType=Card</code> (921 tokens).
+<p><code class="highlighter-rouge">NUM</code> occurs with 61 feature combinations.
+The most frequent feature combination is <code class="highlighter-rouge">NumForm=Digit|NumType=Card</code> (921 tokens).
 Examples: <em>10, 15, 2000, 50, 30, 3, 20, 6, 40, 2</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>NUM</code> nodes are attached to their parents using 12 different relations: <a href="">sl-dep/nummod</a> (1586; 82% instances), <a href="">sl-dep/compound</a> (114; 6% instances), <a href="">sl-dep/conj</a> (101; 5% instances), <a href="">sl-dep/advmod</a> (66; 3% instances), <a href="">sl-dep/parataxis</a> (24; 1% instances), <a href="">sl-dep/nsubj</a> (13; 1% instances), <a href="">sl-dep/dobj</a> (9; 0% instances), <a href="">sl-dep/dep</a> (8; 0% instances), <a href="">sl-dep/root</a> (3; 0% instances), <a href="">sl-dep/acl</a> (1; 0% instances), <a href="">sl-dep/iobj</a> (1; 0% instances), <a href="">sl-dep/nmod</a> (1; 0% instances)</p>
+<p><code class="highlighter-rouge">NUM</code> nodes are attached to their parents using 12 different relations: <a href="">sl-dep/nummod</a> (1586; 82% instances), <a href="">sl-dep/compound</a> (114; 6% instances), <a href="">sl-dep/conj</a> (101; 5% instances), <a href="">sl-dep/advmod</a> (66; 3% instances), <a href="">sl-dep/parataxis</a> (24; 1% instances), <a href="">sl-dep/nsubj</a> (13; 1% instances), <a href="">sl-dep/dobj</a> (9; 0% instances), <a href="">sl-dep/dep</a> (8; 0% instances), <a href="">sl-dep/root</a> (3; 0% instances), <a href="">sl-dep/acl</a> (1; 0% instances), <a href="">sl-dep/iobj</a> (1; 0% instances), <a href="">sl-dep/nmod</a> (1; 0% instances)</p>
 
-<p>Parents of <code>NUM</code> nodes belong to 9 different parts of speech: <a href="">NOUN</a> (1558; 81% instances), <a href="">NUM</a> (128; 7% instances), <a href="">VERB</a> (109; 6% instances), <a href="">ADJ</a> (68; 4% instances), <a href="">PROPN</a> (47; 2% instances), <a href="">PRON</a> (8; 0% instances), <a href="">ADV</a> (5; 0% instances), <a href="">ROOT</a> (3; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Parents of <code class="highlighter-rouge">NUM</code> nodes belong to 9 different parts of speech: <a href="">NOUN</a> (1558; 81% instances), <a href="">NUM</a> (128; 7% instances), <a href="">VERB</a> (109; 6% instances), <a href="">ADJ</a> (68; 4% instances), <a href="">PROPN</a> (47; 2% instances), <a href="">PRON</a> (8; 0% instances), <a href="">ADV</a> (5; 0% instances), <a href="">ROOT</a> (3; 0% instances), <a href="">X</a> (1; 0% instances)</p>
 
-<p>1471 (76%) <code>NUM</code> nodes are leaves.</p>
+<p>1471 (76%) <code class="highlighter-rouge">NUM</code> nodes are leaves.</p>
 
-<p>319 (17%) <code>NUM</code> nodes have one child.</p>
+<p>319 (17%) <code class="highlighter-rouge">NUM</code> nodes have one child.</p>
 
-<p>107 (6%) <code>NUM</code> nodes have two children.</p>
+<p>107 (6%) <code class="highlighter-rouge">NUM</code> nodes have two children.</p>
 
-<p>30 (2%) <code>NUM</code> nodes have three or more children.</p>
+<p>30 (2%) <code class="highlighter-rouge">NUM</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>NUM</code> node is 7.</p>
+<p>The highest child degree of a <code class="highlighter-rouge">NUM</code> node is 7.</p>
 
-<p>Children of <code>NUM</code> nodes are attached using 14 different relations: <a href="">sl-dep/punct</a> (178; 28% instances), <a href="">sl-dep/case</a> (124; 19% instances), <a href="">sl-dep/advmod</a> (116; 18% instances), <a href="">sl-dep/conj</a> (108; 17% instances), <a href="">sl-dep/cc</a> (38; 6% instances), <a href="">sl-dep/compound</a> (34; 5% instances), <a href="">sl-dep/nmod</a> (18; 3% instances), <a href="">sl-dep/acl</a> (10; 2% instances), <a href="">sl-dep/amod</a> (6; 1% instances), <a href="">sl-dep/cop</a> (2; 0% instances), <a href="">sl-dep/advcl</a> (1; 0% instances), <a href="">sl-dep/aux</a> (1; 0% instances), <a href="">sl-dep/mark</a> (1; 0% instances), <a href="">sl-dep/nsubj</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">NUM</code> nodes are attached using 14 different relations: <a href="">sl-dep/punct</a> (178; 28% instances), <a href="">sl-dep/case</a> (124; 19% instances), <a href="">sl-dep/advmod</a> (116; 18% instances), <a href="">sl-dep/conj</a> (108; 17% instances), <a href="">sl-dep/cc</a> (38; 6% instances), <a href="">sl-dep/compound</a> (34; 5% instances), <a href="">sl-dep/nmod</a> (18; 3% instances), <a href="">sl-dep/acl</a> (10; 2% instances), <a href="">sl-dep/amod</a> (6; 1% instances), <a href="">sl-dep/cop</a> (2; 0% instances), <a href="">sl-dep/advcl</a> (1; 0% instances), <a href="">sl-dep/aux</a> (1; 0% instances), <a href="">sl-dep/mark</a> (1; 0% instances), <a href="">sl-dep/nsubj</a> (1; 0% instances)</p>
 
-<p>Children of <code>NUM</code> nodes belong to 14 different parts of speech: <a href="">PUNCT</a> (178; 28% instances), <a href="">NUM</a> (128; 20% instances), <a href="">ADP</a> (124; 19% instances), <a href="">ADV</a> (91; 14% instances), <a href="">CONJ</a> (38; 6% instances), <a href="">PART</a> (27; 4% instances), <a href="">VERB</a> (13; 2% instances), <a href="">ADJ</a> (12; 2% instances), <a href="">NOUN</a> (12; 2% instances), <a href="">PRON</a> (10; 2% instances), <a href="">PROPN</a> (2; 0% instances), <a href="">AUX</a> (1; 0% instances), <a href="">SCONJ</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">NUM</code> nodes belong to 14 different parts of speech: <a href="">PUNCT</a> (178; 28% instances), <a href="">NUM</a> (128; 20% instances), <a href="">ADP</a> (124; 19% instances), <a href="">ADV</a> (91; 14% instances), <a href="">CONJ</a> (38; 6% instances), <a href="">PART</a> (27; 4% instances), <a href="">VERB</a> (13; 2% instances), <a href="">ADJ</a> (12; 2% instances), <a href="">NOUN</a> (12; 2% instances), <a href="">PRON</a> (10; 2% instances), <a href="">PROPN</a> (2; 0% instances), <a href="">AUX</a> (1; 0% instances), <a href="">SCONJ</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>There are 53 <code class="highlighter-rouge">NUM</code> lemmas (1%), 83 <code class="highlighter-rouge">NUM</code> types (1%) and 499 <code class="highlighter-rouge">NUM</code> tokens (2%).
+Out of 16 observed tags, the rank of <code class="highlighter-rouge">NUM</code> is: 8 in number of lemmas, 9 in number of types and 16 in number of tokens.</p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">NUM</code> lemmas: <em>en, dva, trije, štirje, tisoč, dvajset, pet, petnajst, deset, sto</em></p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">NUM</code> types:  <em>eno, dva, en, ena, tri, tisoč, dvajset, dve, pet, enega</em></p>
+
+<p>The 10 most frequent ambiguous lemmas: <em>pet</em> (<a href="">NUM</a> 17, <a href="">ADJ</a> 2)</p>
+
+<p>The 10 most frequent ambiguous types:  <em>pet</em> (<a href="">NUM</a> 14, <a href="">X</a> 1), <em>ene</em> (<a href="">NUM</a> 10, <a href="">ADV</a> 6), <em>osemdesetih</em> (<a href="">ADJ</a> 2, <a href="">NUM</a> 1)</p>
+
+<ul>
+  <li><em>pet</em>
+    <ul>
+      <li><a href="">NUM</a> 14: <em>pol sem jaz pol kar naenkrat imel ne vem <b>pet</b> jurjev naročnine</em></li>
+      <li><a href="">X</a> 1: <em>aha <b>pet</b> [gap] [gap] [all:laughter] … resno ?</em></li>
+    </ul>
+  </li>
+  <li><em>ene</em>
+    <ul>
+      <li><a href="">NUM</a> 10: <em>in to so mešali kar eno olje pa <b>ene</b> take č [gap] stare barve</em></li>
+      <li><a href="">ADV</a> 6: <em>in mi je vsako jutro že za zajtrk skuhala po <b>ene</b> pet jajc pa masonek</em></li>
+    </ul>
+  </li>
+  <li><em>osemdesetih</em>
+    <ul>
+      <li><a href="">ADJ</a> 2: <em>tole so mister mister broken wings bili so to časi <b>osemdesetih</b> let ko se je pač tale pesem držala pa še vedno se</em></li>
+      <li><a href="">NUM</a> 1: <em>v nadaljevanju pesem iz <b>osemdesetih</b> belinda karlyle heaven is a place on earth pa star čebelji pregovor tudi sledi</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="morphology-1">Morphology</h2>
+
+<p>The form / lemma ratio of <code class="highlighter-rouge">NUM</code> is 1.566038 (the average of all parts of speech is 1.575031).</p>
+
+<p>The 1st highest number of forms (9) was observed with the lemma “en”: <em>en, ena, ene, enega, enemu, eni, enih, enim, eno</em>.</p>
+
+<p>The 2nd highest number of forms (4) was observed with the lemma “trije”: <em>treh, tremi, tri, trije</em>.</p>
+
+<p>The 3rd highest number of forms (4) was observed with the lemma “štirje”: <em>štiri, štirih, štirim, štirje</em>.</p>
+
+<p><code class="highlighter-rouge">NUM</code> occurs with 5 features: <a href="">sl-feat/Case</a> (499; 100% instances), <a href="">sl-feat/NumForm</a> (499; 100% instances), <a href="">sl-feat/NumType</a> (499; 100% instances), <a href="">sl-feat/Number</a> (499; 100% instances), <a href="">sl-feat/Gender</a> (270; 54% instances)</p>
+
+<p><code class="highlighter-rouge">NUM</code> occurs with 15 feature-value pairs: <code class="highlighter-rouge">Case=Acc</code>, <code class="highlighter-rouge">Case=Dat</code>, <code class="highlighter-rouge">Case=Gen</code>, <code class="highlighter-rouge">Case=Ins</code>, <code class="highlighter-rouge">Case=Loc</code>, <code class="highlighter-rouge">Case=Nom</code>, <code class="highlighter-rouge">Gender=Fem</code>, <code class="highlighter-rouge">Gender=Masc</code>, <code class="highlighter-rouge">Gender=Neut</code>, <code class="highlighter-rouge">NumForm=Word</code>, <code class="highlighter-rouge">NumType=Card</code>, <code class="highlighter-rouge">NumType=Sets</code>, <code class="highlighter-rouge">Number=Dual</code>, <code class="highlighter-rouge">Number=Plur</code>, <code class="highlighter-rouge">Number=Sing</code></p>
+
+<p><code class="highlighter-rouge">NUM</code> occurs with 39 feature combinations.
+The most frequent feature combination is <code class="highlighter-rouge">Case=Acc|Number=Plur|NumForm=Word|NumType=Card</code> (122 tokens).
+Examples: <em>dvajset, sto, tisoč, petnajst, deset, pet, šestdeset, osemdeset, petdeset, petsto</em></p>
+
+<h2 id="relations-1">Relations</h2>
+
+<p><code class="highlighter-rouge">NUM</code> nodes are attached to their parents using 15 different relations: <a href="">sl-dep/nummod</a> (284; 57% instances), <a href="">sl-dep/compound</a> (53; 11% instances), <a href="">sl-dep/conj</a> (30; 6% instances), <a href="">sl-dep/nmod</a> (29; 6% instances), <a href="">sl-dep/root</a> (26; 5% instances), <a href="">sl-dep/nsubj</a> (25; 5% instances), <a href="">sl-dep/dobj</a> (20; 4% instances), <a href="">sl-dep/parataxis</a> (9; 2% instances), <a href="">sl-dep/reparandum</a> (8; 2% instances), <a href="">sl-dep/advmod</a> (4; 1% instances), <a href="">sl-dep/mwe</a> (4; 1% instances), <a href="">sl-dep/appos</a> (2; 0% instances), <a href="">sl-dep/ccomp</a> (2; 0% instances), <a href="">sl-dep/dislocated</a> (2; 0% instances), <a href="">sl-dep/acl</a> (1; 0% instances)</p>
+
+<p>Parents of <code class="highlighter-rouge">NUM</code> nodes belong to 11 different parts of speech: <a href="">NOUN</a> (271; 54% instances), <a href="">NUM</a> (87; 17% instances), <a href="">VERB</a> (81; 16% instances), <a href="">ROOT</a> (26; 5% instances), <a href="">ADJ</a> (12; 2% instances), <a href="">PRON</a> (12; 2% instances), <a href="">PROPN</a> (4; 1% instances), <a href="">ADV</a> (2; 0% instances), <a href="">AUX</a> (2; 0% instances), <a href="">INTJ</a> (1; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+
+<p>358 (72%) <code class="highlighter-rouge">NUM</code> nodes are leaves.</p>
+
+<p>71 (14%) <code class="highlighter-rouge">NUM</code> nodes have one child.</p>
+
+<p>33 (7%) <code class="highlighter-rouge">NUM</code> nodes have two children.</p>
+
+<p>37 (7%) <code class="highlighter-rouge">NUM</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code class="highlighter-rouge">NUM</code> node is 8.</p>
+
+<p>Children of <code class="highlighter-rouge">NUM</code> nodes are attached using 23 different relations: <a href="">sl-dep/compound</a> (54; 19% instances), <a href="">sl-dep/advmod</a> (42; 15% instances), <a href="">sl-dep/conj</a> (40; 14% instances), <a href="">sl-dep/case</a> (32; 11% instances), <a href="">sl-dep/cc</a> (17; 6% instances), <a href="">sl-dep/cop</a> (11; 4% instances), <a href="">sl-dep/discourse</a> (11; 4% instances), <a href="">sl-dep/reparandum</a> (10; 4% instances), <a href="">sl-dep/nsubj</a> (9; 3% instances), <a href="">sl-dep/discourse:filler</a> (7; 3% instances), <a href="">sl-dep/nmod</a> (7; 3% instances), <a href="">sl-dep/parataxis</a> (7; 3% instances), <a href="">sl-dep/punct</a> (7; 3% instances), <a href="">sl-dep/acl</a> (4; 1% instances), <a href="">sl-dep/amod</a> (4; 1% instances), <a href="">sl-dep/det</a> (4; 1% instances), <a href="">sl-dep/mwe</a> (4; 1% instances), <a href="">sl-dep/mark</a> (3; 1% instances), <a href="">sl-dep/parataxis:discourse</a> (2; 1% instances), <a href="">sl-dep/aux</a> (1; 0% instances), <a href="">sl-dep/cc:preconj</a> (1; 0% instances), <a href="">sl-dep/expl</a> (1; 0% instances), <a href="">sl-dep/nummod</a> (1; 0% instances)</p>
+
+<p>Children of <code class="highlighter-rouge">NUM</code> nodes belong to 16 different parts of speech: <a href="">NUM</a> (87; 31% instances), <a href="">ADP</a> (37; 13% instances), <a href="">ADV</a> (28; 10% instances), <a href="">VERB</a> (22; 8% instances), <a href="">PART</a> (20; 7% instances), <a href="">NOUN</a> (16; 6% instances), <a href="">PRON</a> (15; 5% instances), <a href="">CONJ</a> (12; 4% instances), <a href="">INTJ</a> (10; 4% instances), <a href="">X</a> (10; 4% instances), <a href="">ADJ</a> (9; 3% instances), <a href="">DET</a> (4; 1% instances), <a href="">PROPN</a> (3; 1% instances), <a href="">SCONJ</a> (3; 1% instances), <a href="">PUNCT</a> (2; 1% instances), <a href="">AUX</a> (1; 0% instances)</p>
 
 
 
@@ -209,6 +284,7 @@ NUM in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -240,11 +316,40 @@ NUM in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -268,6 +373,7 @@ NUM in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-pos';
@@ -293,7 +399,7 @@ NUM in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

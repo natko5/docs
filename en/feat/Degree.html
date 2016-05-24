@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-en">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/en/feat">en/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/en/feat">en/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,14 +39,14 @@
 
           <h2><code>Degree</code>: degree of comparison</h2>
 
-<p>In English,  <code>Degree</code> is a feature of (adjectives)[en-pos/ADJ] and some (adverbs)[en-pos/ADV].</p>
+<p>In English,  <code class="highlighter-rouge">Degree</code> is a feature of (adjectives)[en-pos/ADJ] and some (adverbs)[en-pos/ADV].</p>
 
-<h3 id="pos-positive-first-degree"><code>Pos</code>: positive, first degree</h3>
+<h3 id="pos-positive-first-degree"><code class="highlighter-rouge">Pos</code>: positive, first degree</h3>
 
 <p>This is the base form that merely states a quality of something,
 without comparing it to qualities of others. Note that although this
 degree is traditionally called “positive”, negative properties can be
-compared, too. All words with PTB tags <code>JJ</code> have this feature.</p>
+compared, too. All words with PTB tags <code class="highlighter-rouge">JJ</code> have this feature.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -53,16 +54,16 @@ compared, too. All words with PTB tags <code>JJ</code> have this feature.</p>
   <li><em><b>young</b> woman</em></li>
 </ul>
 
-<p>Additionally, the following adverbs with PTB tag <code>RB</code> also have this feature:</p>
+<p>Additionally, the following adverbs with PTB tag <code class="highlighter-rouge">RB</code> also have this feature:</p>
 
 <ul>
   <li><em>hard, fast, late, long, high, easy, early, far, soon, low, close, well, badly, little</em></li>
 </ul>
 
-<h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
+<h3 id="cmp-comparative-second-degree"><code class="highlighter-rouge">Cmp</code>: comparative, second degree</h3>
 
 <p>The quality of one object is compared to the same quality of another
-object. All words with PTB tags <code>JJR</code> are marked with this
+object. All words with PTB tags <code class="highlighter-rouge">JJR</code> are marked with this
 feature.</p>
 
 <h4 id="examples-1">Examples</h4>
@@ -71,16 +72,16 @@ feature.</p>
   <li><em>The man is <b>younger</b> than me.</em></li>
 </ul>
 
-<p>The following adverbs with PTB tag <code>RBR</code> also have this feature:</p>
+<p>The following adverbs with PTB tag <code class="highlighter-rouge">RBR</code> also have this feature:</p>
 
 <ul>
   <li><em>harder, faster, later, longer, higher, easier, earlier, further, farther, sooner, lower, closer, better, worse, less, quicker, slower</em></li>
 </ul>
 
-<h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
+<h3 id="sup-superlative-third-degree"><code class="highlighter-rouge">Sup</code>: superlative, third degree</h3>
 
 <p>The quality of one object is compared to the same quality of all other
-objects within a set. All words with PTB tags <code>JJS</code> are marked with this
+objects within a set. All words with PTB tags <code class="highlighter-rouge">JJS</code> are marked with this
 feature.</p>
 
 <h4 id="examples-2">Examples</h4>
@@ -89,13 +90,13 @@ feature.</p>
   <li><em>This is the <b>youngest</b> woman in our team.</em></li>
 </ul>
 
-<p>The following adverbs with PTB tag <code>RBS</code> also have this feature:</p>
+<p>The following adverbs with PTB tag <code class="highlighter-rouge">RBS</code> also have this feature:</p>
 
 <ul>
   <li><em>hardest, fastest, latest, longest, highest, easiest, earliest, furthest, farthest, soonest, lowest, closest, best, worst, least, quickest, slowest</em></li>
 </ul>
 
-<p>Note that most adverbs in English don’t have a <code>Degree</code> feature because their sencond and third degree are constructed periphrastically using the adverbs <em>more</em> and <em>most</em>, e.g. <em>more quietly</em>, <em>most seriously</em>.</p>
+<p>Note that most adverbs in English don’t have a <code class="highlighter-rouge">Degree</code> feature because their sencond and third degree are constructed periphrastically using the adverbs <em>more</em> and <em>most</em>, e.g. <em>more quietly</em>, <em>most seriously</em>.</p>
 
 
 <!-- "automatic stats" -->
@@ -110,24 +111,24 @@ feature.</p>
 <h2 id="treebank-statistics-udenglish">Treebank Statistics (UD_English)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
+It occurs with 3 different values: <code class="highlighter-rouge">Cmp</code>, <code class="highlighter-rouge">Pos</code>, <code class="highlighter-rouge">Sup</code>.</p>
 
-<p>16693 tokens (7%) have a non-empty value of <code>Degree</code>.
-2907 types (15%) occur at least once with a non-empty value of <code>Degree</code>.
-2442 lemmas (15%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 5 part-of-speech tags: <a href="">en-pos/ADJ</a> (15944; 6% instances), <a href="">en-pos/ADV</a> (744; 0% instances), <a href="">en-pos/PROPN</a> (3; 0% instances), <a href="">en-pos/INTJ</a> (1; 0% instances), <a href="">en-pos/NOUN</a> (1; 0% instances).</p>
+<p>16696 tokens (7%) have a non-empty value of <code class="highlighter-rouge">Degree</code>.
+2907 types (15%) occur at least once with a non-empty value of <code class="highlighter-rouge">Degree</code>.
+2442 lemmas (15%) occur at least once with a non-empty value of <code class="highlighter-rouge">Degree</code>.
+The feature is used with 5 part-of-speech tags: <a href="">en-pos/ADJ</a> (15947; 6% instances), <a href="">en-pos/ADV</a> (744; 0% instances), <a href="">en-pos/PROPN</a> (3; 0% instances), <a href="">en-pos/INTJ</a> (1; 0% instances), <a href="">en-pos/NOUN</a> (1; 0% instances).</p>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>15944 <a href="">en-pos/ADJ</a> tokens (100% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>15947 <a href="">en-pos/ADJ</a> tokens (100% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (596; 4% of non-empty <code>Degree</code>): <em>more, better, less, larger, bigger, earlier, older, smaller, higher, worse</em></li>
-  <li><code>Pos</code> (14799; 93% of non-empty <code>Degree</code>): <em>good, great, other, new, many, last, same, few, sure, little</em></li>
-  <li><code>Sup</code> (549; 3% of non-empty <code>Degree</code>): <em>best, most, worst, cheapest, largest, latest, easiest, highest, oldest, biggest</em></li>
-  <li><code>EMPTY</code> (13): <em>fake, such, Every, Global, Pakistani, criminal, enough, female, middle, real</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (596; 4% of non-empty <code class="highlighter-rouge">Degree</code>): <em>more, better, less, larger, bigger, earlier, older, smaller, higher, worse</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (14802; 93% of non-empty <code class="highlighter-rouge">Degree</code>): <em>good, great, other, new, many, last, same, few, sure, little</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (549; 3% of non-empty <code class="highlighter-rouge">Degree</code>): <em>best, most, worst, cheapest, largest, latest, easiest, highest, oldest, biggest</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (12): <em>fake, such, Every, Global, Pakistani, criminal, enough, female, middle, real</em></li>
 </ul>
 
 <table>
@@ -135,65 +136,65 @@ The feature is used with 5 part-of-speech tags: <a href="">en-pos/ADJ</a> (15944
   <tr><td><tt></tt></td><td><em>less</em></td><td><em>less</em></td><td><em>less</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (2425) occur only with one value of <code>Degree</code>.</p>
+<p><code class="highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 100% lemmas (2425) occur only with one value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<h3 id="adv"><code>ADV</code></h3>
+<h3 id="adv"><code class="highlighter-rouge">ADV</code></h3>
 
-<p>744 <a href="">en-pos/ADV</a> tokens (6% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>744 <a href="">en-pos/ADV</a> tokens (6% of all <code class="highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (744; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADV</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (744; 100%).</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
-
-<ul>
-  <li><code>Cmp</code> (156; 21% of non-empty <code>Degree</code>): <em>later, better, longer, less, earlier, sooner, further, closer, higher, faster</em></li>
-  <li><code>Pos</code> (490; 66% of non-empty <code>Degree</code>): <em>well, far, soon, long, hard, early, late, close, little, high</em></li>
-  <li><code>Sup</code> (98; 13% of non-empty <code>Degree</code>): <em>least, best, worst, highest, longest</em></li>
-  <li><code>EMPTY</code> (12298): <em>so, just, when, very, also, how, now, even, there, then</em></li>
-</ul>
-
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 100% lemmas (37) occur only with one value of <code>Degree</code>.</p>
-
-<h3 id="propn"><code>PROPN</code></h3>
-
-<p>3 <a href="">en-pos/PROPN</a> tokens (0% of all <code>PROPN</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>PROPN</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (3; 100%).</p>
-
-<p><code>PROPN</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">ADV</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Pos</code> (3; 100% of non-empty <code>Degree</code>): <em>Central, Modern, english</em></li>
-  <li><code>EMPTY</code> (16896): <em>bush, US, al, Iraq, enron, united, Iran, New, China, states</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (156; 21% of non-empty <code class="highlighter-rouge">Degree</code>): <em>later, better, longer, less, earlier, sooner, further, closer, higher, faster</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (490; 66% of non-empty <code class="highlighter-rouge">Degree</code>): <em>well, far, soon, long, hard, early, late, close, little, high</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (98; 13% of non-empty <code class="highlighter-rouge">Degree</code>): <em>least, best, worst, highest, longest</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (12295): <em>so, just, when, very, also, how, now, even, there, then</em></li>
 </ul>
 
-<h3 id="noun"><code>NOUN</code></h3>
+<p><code class="highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADV</code>. 100% lemmas (37) occur only with one value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>1 <a href="">en-pos/NOUN</a> tokens (0% of all <code>NOUN</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<h3 id="propn"><code class="highlighter-rouge">PROPN</code></h3>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (1; 100%).</p>
+<p>3 <a href="">en-pos/PROPN</a> tokens (0% of all <code class="highlighter-rouge">PROPN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p><code>NOUN</code> tokens may have the following values of <code>Degree</code>:</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PROPN</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (3; 100%).</p>
+
+<p><code class="highlighter-rouge">PROPN</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Pos</code> (1; 100% of non-empty <code>Degree</code>): <em>equivalant</em></li>
-  <li><code>EMPTY</code> (43789): <em>time, people, service, place, thanks, food, way, year, day, number</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (3; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>Central, Modern, english</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (16897): <em>bush, US, al, Iraq, enron, united, Iran, New, China, states</em></li>
 </ul>
 
-<h3 id="intj"><code>INTJ</code></h3>
+<h3 id="noun"><code class="highlighter-rouge">NOUN</code></h3>
 
-<p>1 <a href="">en-pos/INTJ</a> tokens (0% of all <code>INTJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>1 <a href="">en-pos/NOUN</a> tokens (0% of all <code class="highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p><code>INTJ</code> tokens may have the following values of <code>Degree</code>:</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NOUN</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=EMPTY</tt> (1; 100%).</p>
+
+<p><code class="highlighter-rouge">NOUN</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Pos</code> (1; 100% of non-empty <code>Degree</code>): <em>Bon</em></li>
-  <li><code>EMPTY</code> (922): <em>please, yes, well, no, hi, like, ok, lol, hey, oh</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (1; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>equivalant</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (43787): <em>time, people, service, place, thanks, food, way, year, day, number</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
+<h3 id="intj"><code class="highlighter-rouge">INTJ</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
+<p>1 <a href="">en-pos/INTJ</a> tokens (0% of all <code class="highlighter-rouge">INTJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
+
+<p><code class="highlighter-rouge">INTJ</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Pos</code> (1; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>Bon</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (922): <em>please, yes, well, no, hi, like, ok, lol, hey, oh</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code class="highlighter-rouge">Degree</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Degree</code>:
 <tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (609; 97%),
 <tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (105; 95%),
 <tt>ADJ –[<a href="../dep/advcl.html">advcl</a>]–&gt; ADJ</tt> (41; 87%),
@@ -262,6 +263,7 @@ Degree in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -293,11 +295,40 @@ Degree in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -321,6 +352,7 @@ Degree in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'en-feat';
@@ -346,7 +378,7 @@ Degree in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

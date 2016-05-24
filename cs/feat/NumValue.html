@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/NumValue.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -54,19 +55,19 @@ together behaves as neuter singular (this is important for subject-verb agreemen
 <p>Specific behavior of low-value numerals is the reason why there is a separate feature
 to mark these numerals.</p>
 
-<h3 id="numeric-value-1"><code>1</code>: numeric value 1</h3>
+<h3 id="numeric-value-1"><code class="highlighter-rouge">1</code>: numeric value 1</h3>
 
 <ul>
   <li><em>jeden, jedna, jedno</em> “one”</li>
 </ul>
 
-<h3 id="numeric-value-2"><code>2</code>: numeric value 2</h3>
+<h3 id="numeric-value-2"><code class="highlighter-rouge">2</code>: numeric value 2</h3>
 
 <ul>
   <li><em>dva, dvě</em> “two”</li>
 </ul>
 
-<h3 id="numeric-value-3-or-4"><code>3</code>: numeric value 3 or 4</h3>
+<h3 id="numeric-value-3-or-4"><code class="highlighter-rouge">3</code>: numeric value 3 or 4</h3>
 
 <ul>
   <li><em>tři</em> “three”, <em>čtyři</em> “four”</li>
@@ -85,44 +86,111 @@ to mark these numerals.</p>
 <h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
 
 <p>This feature is language-specific.
-It occurs with 3 different values: <code>1</code>, <code>2</code>, <code>3</code>.
-Some words have combined values of the feature; 1 combinations have been observed: <code>1|2|3</code>.</p>
+It occurs with 3 different values: <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">2</code>, <code class="highlighter-rouge">3</code>.
+Some words have combined values of the feature; 1 combinations have been observed: <code class="highlighter-rouge">1|2|3</code>.</p>
 
-<p>8080 tokens (1%) have a non-empty value of <code>NumValue</code>.
-90 types (0%) occur at least once with a non-empty value of <code>NumValue</code>.
-18 lemmas (0%) occur at least once with a non-empty value of <code>NumValue</code>.
+<p>8080 tokens (1%) have a non-empty value of <code class="highlighter-rouge">NumValue</code>.
+90 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumValue</code>.
+18 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumValue</code>.
 The feature is used with 2 part-of-speech tags: <a href="">cs-pos/NUM</a> (8050; 1% instances), <a href="">cs-pos/ADJ</a> (30; 0% instances).</p>
 
-<h3 id="num"><code>NUM</code></h3>
+<h3 id="num"><code class="highlighter-rouge">NUM</code></h3>
 
-<p>8050 <a href="">cs-pos/NUM</a> tokens (19% of all <code>NUM</code> tokens) have a non-empty value of <code>NumValue</code>.</p>
+<p>8050 <a href="">cs-pos/NUM</a> tokens (19% of all <code class="highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumValue</code>.</p>
 
-<p>The most frequent other feature values with which <code>NUM</code> and <code>NumValue</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (8050; 100%), <tt><a href="NumForm.html">NumForm</a>=Word</tt> (8050; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (4885; 61%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NUM</code> and <code class="highlighter-rouge">NumValue</code> co-occurred: <tt><a href="NumType.html">NumType</a>=Card</tt> (8050; 100%), <tt><a href="NumForm.html">NumForm</a>=Word</tt> (8050; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (4885; 61%).</p>
 
-<p><code>NUM</code> tokens may have the following values of <code>NumValue</code>:</p>
-
-<ul>
-  <li><code>1,2,3</code> (8050; 100% of non-empty <code>NumValue</code>): <em>dva, tři, jeden, dvě, tisíc, dvou, čtyři, obou, jednoho, jedné</em></li>
-</ul>
-
-<p><code>NumValue</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (18) occur only with one value of <code>NumValue</code>.</p>
-
-<h3 id="adj"><code>ADJ</code></h3>
-
-<p>30 <a href="">cs-pos/ADJ</a> tokens (0% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumValue</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumValue</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (30; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (30; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (30; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (19; 63%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>NumValue</code>:</p>
+<p><code class="highlighter-rouge">NUM</code> tokens may have the following values of <code class="highlighter-rouge">NumValue</code>:</p>
 
 <ul>
-  <li><code>1</code> (30; 100% of non-empty <code>NumValue</code>): <em>jedny, jedni, jedněch, jedněm, jedněmi</em></li>
+  <li><code class="highlighter-rouge">1,2,3</code> (8050; 100% of non-empty <code class="highlighter-rouge">NumValue</code>): <em>dva, tři, jeden, dvě, tisíc, dvou, čtyři, obou, jednoho, jedné</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-numvalue">Relations with Agreement in <code>NumValue</code></h2>
+<p><code class="highlighter-rouge">NumValue</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">NUM</code>. 100% lemmas (18) occur only with one value of <code class="highlighter-rouge">NumValue</code>.</p>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>NumValue</code>:
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
+
+<p>30 <a href="">cs-pos/ADJ</a> tokens (0% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumValue</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">NumValue</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (30; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (30; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (30; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (19; 63%).</p>
+
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">NumValue</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">1</code> (30; 100% of non-empty <code class="highlighter-rouge">NumValue</code>): <em>jedny, jedni, jedněch, jedněm, jedněmi</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-numvalue">Relations with Agreement in <code class="highlighter-rouge">NumValue</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">NumValue</code>:
 <tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (99; 69%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+
+<p>This feature is language-specific.
+It occurs with 3 different values: <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">2</code>, <code class="highlighter-rouge">3</code>.
+Some words have combined values of the feature; 1 combinations have been observed: <code class="highlighter-rouge">1|2|3</code>.</p>
+
+<p>1972 tokens (0%) have a non-empty value of <code class="highlighter-rouge">NumValue</code>.
+55 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumValue</code>.
+9 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumValue</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/NUM</a> (1962; 0% instances), <a href="">cs-pos/ADJ</a> (10; 0% instances).</p>
+
+<h3 id="num-1"><code class="highlighter-rouge">NUM</code></h3>
+
+<p>1962 <a href="">cs-pos/NUM</a> tokens (27% of all <code class="highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumValue</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NUM</code> and <code class="highlighter-rouge">NumValue</code> co-occurred: <tt><a href="NumForm.html">NumForm</a>=Word</tt> (1962; 100%), <tt><a href="NumType.html">NumType</a>=Card</tt> (1962; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (1120; 57%).</p>
+
+<p><code class="highlighter-rouge">NUM</code> tokens may have the following values of <code class="highlighter-rouge">NumValue</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">1,2,3</code> (1962; 100% of non-empty <code class="highlighter-rouge">NumValue</code>): <em>dvou, jeden, dvě, tři, dva, obou, jedné, jednoho, jedním, dvěma</em></li>
+</ul>
+
+<h3 id="adj-1"><code class="highlighter-rouge">ADJ</code></h3>
+
+<p>10 <a href="">cs-pos/ADJ</a> tokens (0% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumValue</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">NumValue</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (10; 100%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (10; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (10; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (7; 70%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (6; 60%).</p>
+
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">NumValue</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">1</code> (10; 100% of non-empty <code class="highlighter-rouge">NumValue</code>): <em>jedněch, jedni, jedny</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-numvalue-1">Relations with Agreement in <code class="highlighter-rouge">NumValue</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">NumValue</code>:
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (22; 81%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+
+<p>This feature is language-specific.
+It occurs with 3 different values: <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">2</code>, <code class="highlighter-rouge">3</code>.
+Some words have combined values of the feature; 1 combinations have been observed: <code class="highlighter-rouge">1|2|3</code>.</p>
+
+<p>58 tokens (0%) have a non-empty value of <code class="highlighter-rouge">NumValue</code>.
+17 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumValue</code>.
+5 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumValue</code>.
+The feature is used with 1 part-of-speech tags: <a href="">cs-pos/NUM</a> (58; 0% instances).</p>
+
+<h3 id="num-2"><code class="highlighter-rouge">NUM</code></h3>
+
+<p>58 <a href="">cs-pos/NUM</a> tokens (13% of all <code class="highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumValue</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NUM</code> and <code class="highlighter-rouge">NumValue</code> co-occurred: <tt><a href="NumForm.html">NumForm</a>=Word</tt> (58; 100%), <tt><a href="NumType.html">NumType</a>=Card</tt> (58; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (38; 66%).</p>
+
+<p><code class="highlighter-rouge">NUM</code> tokens may have the following values of <code class="highlighter-rouge">NumValue</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">1,2,3</code> (58; 100% of non-empty <code class="highlighter-rouge">NumValue</code>): <em>jeden, jedné, tří, dvě, jedno, jednoho, jednou, obě, dvou, dvěma</em></li>
+</ul>
 
 
 
@@ -142,6 +210,7 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/NUM</a> (8050;
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -173,11 +242,40 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/NUM</a> (8050;
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -201,6 +299,7 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/NUM</a> (8050;
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-feat';
@@ -226,7 +325,7 @@ The feature is used with 2 part-of-speech tags: <a href="">cs-pos/NUM</a> (8050;
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

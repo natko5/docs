@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -113,7 +114,7 @@ be used adverbially (i.e. as an <a href="">ADV</a>) without adding further suffi
 <p><a id="al-kk-pos/ADP" class="al-dest"></a></p>
 <h2><code>ADP</code>: adposition</h2>
 
-<p>Postpositions in Kazakh receive the tag <code>ADP</code>. We only consider
+<p>Postpositions in Kazakh receive the tag <code class="highlighter-rouge">ADP</code>. We only consider
 postpositions to be those which govern a case and are not in 
 izafet construction with their complement.</p>
 
@@ -149,7 +150,7 @@ direction or manner.</p>
 <h2><code>AUX</code>: auxiliary verb</h2>
 
 <p>In Kazakh, only a closed list of verbs can act as auxiliaries. These are words
-take part in participle constructions. They are tagged <code>AUX</code>.</p>
+take part in participle constructions. They are tagged <code class="highlighter-rouge">AUX</code>.</p>
 
 <p>The full list of auxiliaries is as follows:</p>
 
@@ -182,7 +183,7 @@ take part in participle constructions. They are tagged <code>AUX</code>.</p>
 <h2><code>CONJ</code>: coordinating conjunction</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>CONJ</code>.</p>
+for <code class="highlighter-rouge">CONJ</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-pos/CONJ.md" target="#">edit CONJ</a></p>
 
@@ -228,7 +229,7 @@ part of an exclamation.</p>
 Nouns receive nominal morphology. Other parts of speech may be derived into
 nouns, such as adjectives.</p>
 
-<p>Proper nouns are not annotated as <code>NOUN</code> but rather <a href="">PROPN</a>.</p>
+<p>Proper nouns are not annotated as <code class="highlighter-rouge">NOUN</code> but rather <a href="">PROPN</a>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -262,7 +263,7 @@ number, such as quantity, sequence, frequency or fraction.</p>
 <h2><code>PART</code>: particle</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>PART</code>.</p>
+for <code class="highlighter-rouge">PART</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-pos/PART.md" target="#">edit PART</a></p>
 
@@ -295,7 +296,7 @@ extralinguistic context.</p>
 <p>A proper noun is a noun (or nominal content word) that is the name (or
 part of the name) of a specific individual, place, or object.</p>
 
-<p>Acronyms of proper nouns, such as <em>ӨФ</em> and <em>БҰҰ</em>, should be tagged <code>PROPN</code>.</p>
+<p>Acronyms of proper nouns, such as <em>ӨФ</em> and <em>БҰҰ</em>, should be tagged <code class="highlighter-rouge">PROPN</code>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -327,7 +328,7 @@ used to delimit linguistic units in printed text.</p>
 <h2><code>SCONJ</code>: subordinating conjunction</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>SCONJ</code>.</p>
+for <code class="highlighter-rouge">SCONJ</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-pos/SCONJ.md" target="#">edit SCONJ</a></p>
 
@@ -343,7 +344,7 @@ form, function, or both.</p>
   <li><em>$, %, §, ©</em></li>
   <li><em>+, −, ×, ÷, =, &lt;, &gt;</em></li>
   <li>:), ♥‿♥, 😝</li>
-  <li><em>john.doe@universal.org, http://universaldependencies.github.io/docs/, 1-800-COMPANY</em></li>
+  <li><em>john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY</em></li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-pos/SYM.md" target="#">edit SYM</a></p>
@@ -356,7 +357,7 @@ form, function, or both.</p>
 minimal predicate in a clause, and govern the number and types of
 other constituents which may occur in the clause.</p>
 
-<p>Auxiliary and modal verbs are not annotated as <code>VERB</code> but rather
+<p>Auxiliary and modal verbs are not annotated as <code class="highlighter-rouge">VERB</code> but rather
 <a href="">AUX</a>.</p>
 
 <h4 id="examples">Examples</h4>
@@ -371,7 +372,7 @@ other constituents which may occur in the clause.</p>
 <h2><code>X</code>: other</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>X</code>.</p>
+for <code class="highlighter-rouge">X</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-pos/X.md" target="#">edit X</a></p>
 
@@ -387,6 +388,7 @@ for <code>X</code>.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -418,11 +420,40 @@ for <code>X</code>.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -446,6 +477,7 @@ for <code>X</code>.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-overview';
@@ -471,7 +503,7 @@ for <code>X</code>.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -102,7 +103,7 @@ properties or attributes. They may also function as predicates, as in</p>
 
 <p><em>To auto je zelené. </em> “The car is green.”</p>
 
-<p>The <code>ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
+<p>The <code class="highlighter-rouge">ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
 for determiners and <a href="">NUM</a> for cardinal numerals.</p>
 
 <p>In accord with the UD approach,
@@ -137,8 +138,8 @@ negated.</p>
 <h3 id="border-cases">Border cases</h3>
 
 <p>Passive participles lie on the border between verbs and adjectives.
-Core participial forms (ending in consonant or short vowel) are tagged <code>VERB</code>.
-Long forms are participial adjectives and they are tagged <code>ADJ</code>.
+Core participial forms (ending in consonant or short vowel) are tagged <code class="highlighter-rouge">VERB</code>.
+Long forms are participial adjectives and they are tagged <code class="highlighter-rouge">ADJ</code>.
 For example:</p>
 
 <ul>
@@ -161,7 +162,7 @@ And these adjectives are not derived from verbs. Example:</p>
   <li>Normal (pronominal) forms: <em>starý, stará, staré</em>  “old”</li>
 </ul>
 
-<p>Here both groups are <code>ADJ</code>. The nominal forms are used in predication,
+<p>Here both groups are <code class="highlighter-rouge">ADJ</code>. The nominal forms are used in predication,
 the standard forms both in predication and to modify nouns.</p>
 
 <h3 id="references">References</h3>
@@ -188,7 +189,7 @@ grammatical and semantic relation to another unit within a clause.</p>
 <em>na rozdíl od </em> “in contrast to”, <em>v souvislosti s </em>
 “in connection with”. The
 component words are then still tagged according to their basic use
-(<em>na </em> is <code>ADP</code>, <em>rozdíl </em> is <a href="">NOUN</a>, etc.) and their status as
+(<em>na </em> is <code class="highlighter-rouge">ADP</code>, <em>rozdíl </em> is <a href="">NOUN</a>, etc.) and their status as
 multiword expressions are accounted for in the syntactic annotation.</p>
 
 <h3 id="examples">Examples</h3>
@@ -221,18 +222,18 @@ categories as time, place, direction or manner. They may also modify
 <p>There is a closed subclass of <em>pronominal adverbs</em> that refer to
 circumstances in context, rather than naming them directly; similarly
 to pronouns, these can be categorized as interrogative, relative,
-demonstrative etc. Pronominal adverbs also get the <code>ADV</code>
+demonstrative etc. Pronominal adverbs also get the <code class="highlighter-rouge">ADV</code>
 part-of-speech tag but they are differentiated by additional features.</p>
 
 <p>In accord with the UD approach,
 adverbial ordinal numerals <em>(poprvé, posedmé, postopadesáté) </em>
-are tagged <code>ADV</code>, although the traditional grammar classifies
+are tagged <code class="highlighter-rouge">ADV</code>, although the traditional grammar classifies
 them as numerals.
 The same holds for multiplicative numerals
 <em>(jednou, sedmkrát, stopadesátkrát). </em></p>
 
 <p>Note that Czech transgressives (also called adverbial participles)
-are tagged <a href="">VERB</a>, not <code>ADV</code>.</p>
+are tagged <a href="">VERB</a>, not <code class="highlighter-rouge">ADV</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -287,20 +288,20 @@ the auxiliary.</p>
 Finite present form of <em>být</em> is combined with past participle
 of the lexical verb. The auxiliary expresses person and number,
 the participle expresses gender and number:
-<em>dělal <b>jsem</b></em> “I did.<code>Masc</code>”,
-<em>dělala <b>jsem</b></em> “I did.<code>Fem</code>”,
-<em>dělal <b>jsi</b></em> “you did.<code>Masc</code>”,
-<em>dělali <b>jsme</b></em> “we did.<code>Masc</code>”.</p>
+<em>dělal <b>jsem</b></em> “I did.<code class="highlighter-rouge">Masc</code>”,
+<em>dělala <b>jsem</b></em> “I did.<code class="highlighter-rouge">Fem</code>”,
+<em>dělal <b>jsi</b></em> “you did.<code class="highlighter-rouge">Masc</code>”,
+<em>dělali <b>jsme</b></em> “we did.<code class="highlighter-rouge">Masc</code>”.</p>
   </li>
   <li>
     <p>Conditional mood.
 Conditional form (historically aorist) of <em>být</em> is combined with past participle
 of the lexical verb. The auxiliary expresses person and number,
 the participle expresses gender and number:
-<em>dělal <b>bych</b></em> “I would do.<code>Masc</code>”,
-<em>dělala <b>bych</b></em> “I would do.<code>Fem</code>”,
-<em>dělal <b>bys</b></em> “you would do.<code>Masc</code>”,
-<em>dělali <b>bychom</b></em> “we would do.<code>Masc</code>”.</p>
+<em>dělal <b>bych</b></em> “I would do.<code class="highlighter-rouge">Masc</code>”,
+<em>dělala <b>bych</b></em> “I would do.<code class="highlighter-rouge">Fem</code>”,
+<em>dělal <b>bys</b></em> “you would do.<code class="highlighter-rouge">Masc</code>”,
+<em>dělali <b>bychom</b></em> “we would do.<code class="highlighter-rouge">Masc</code>”.</p>
   </li>
   <li>
     <p>Passive voice.
@@ -317,7 +318,7 @@ the participle expresses gender, number and voice:
   </li>
 </ul>
 
-<p>Note that the verb <em>být</em> will not be tagged <code>AUX</code> if it is used as
+<p>Note that the verb <em>být</em> will not be tagged <code class="highlighter-rouge">AUX</code> if it is used as
 <a href="cs-dep/cop">copula</a> (<em>Moje auto <b>je</b> nové.</em> “My car <b>is</b> new.”)
 or as a content verb (<em>V Praze <b>je</b> nové divadlo.</em> “There <b>is</b> a new theatre in Prague.”)
 It will be tagged <a href="">VERB</a> in these cases.
@@ -329,15 +330,25 @@ Hence it may be difficult to distinguish a passive construction from a copula co
 The former focuses on the process while the latter emphasizes the result.</p>
 
 <ul>
-  <li>Passive: <em>Smlouva <b>byla</b>.<code>AUX</code> podepsána v Bílém domě.</em>   “The contract was signed in the White House.”</li>
-  <li>Copula: <em>Smlouva <b>byla</b>.<code>VERB</code> podepsána červeným inkoustem.</em>   “The contract was signed in red ink.”</li>
+  <li>Passive: <em>Smlouva <b>byla</b>.<code class="highlighter-rouge">AUX</code> podepsána v Bílém domě.</em>   “The contract was signed in the White House.”</li>
+  <li>Copula: <em>Smlouva <b>byla</b>.<code class="highlighter-rouge">VERB</code> podepsána červeným inkoustem.</em>   “The contract was signed in red ink.”</li>
 </ul>
 
 <h3 id="modal-verbs-are-not-auxiliaries">Modal verbs are not auxiliaries</h3>
 
-<p>Czech modal verbs are not considered auxiliary and they are tagged <code>VERB</code>,
+<p>Czech modal verbs are not considered auxiliary and they are tagged <code class="highlighter-rouge">VERB</code>,
 in accord with the annotation in the Prague Dependency Treebank.
-Their behavior is only slightly different from content verbs.</p>
+Their behavior is only slightly different from other content verbs.</p>
+
+<h3 id="constructions-with-mt-and-passive-participle">Constructions with <em>mít</em> and passive participle</h3>
+
+<p>There is a construction parallel to the perfect tenses of Germanic and Romance languages:
+<em>mít</em> “to have” + neuter singular passive participle, e.g. <em>mít (něco) uděláno</em> “to have (something) done”.
+They can also apply to intransitive verbs: <em>mít vyhráno</em> “to have won”.
+Sometimes the verb <em>mít</em> shares the subject (actor) with the participle,
+but in other contexts such relation is not guaranteed: <em>mít (někde něco) napsáno</em> “to have (something) written (somewhere)”.
+None of these constructions is considered a separate tense in the Czech grammar and the verb <em>mít</em>
+is not analyzed as auxiliary.</p>
 
 <h3 id="references">References</h3>
 
@@ -393,13 +404,13 @@ number or quantity, etc.</p>
 define determiners as a separate word class. Czech does not have articles.
 Most determiners are traditionally called pronouns; that is, an UD-conformant
 annotation of Czech must distinguish between substantive pronouns (UD tag <a href="">PRON</a>)
-and attributive pronouns (UD tag <code>DET</code>).</p>
+and attributive pronouns (UD tag <code class="highlighter-rouge">DET</code>).</p>
 
-<p>Also note that the <code>DET</code> tag includes (pronominal) <em>quantifiers</em> (words
+<p>Also note that the <code class="highlighter-rouge">DET</code> tag includes (pronominal) <em>quantifiers</em> (words
 like <em>mnoho, málo </em> “many, few”), which the traditional grammar classifies
 as a special subclass of numerals. However,
 <em>cardinal numerals</em> in the narrow sense <em>(jeden, pět, sto)</em> are not
-tagged <code>DET</code> even though some authors would include them in
+tagged <code class="highlighter-rouge">DET</code> even though some authors would include them in
 quantifiers. Cardinal numbers have their own tag <a href="">NUM</a>.</p>
 
 <h3 id="conversion-from-the-prague-dependency-treebank">Conversion from the Prague Dependency Treebank</h3>
@@ -411,10 +422,10 @@ Morphological rules could help, as the inflection patterns of some pronouns
 bear similarities to adjectival inflection; nevertheless, there will be other
 cases that cannot be solved this way.
 We have to examine the dependency tree.
-If a pronoun modifies a noun, it should be tagged <code>DET</code>.
-Otherwise it is <code>PRON</code>.
-As a result, all words that can be tagged <code>DET</code> can also be tagged <code>PRON</code>,
-but some words can only be tagged <code>PRON</code>.
+If a pronoun modifies a noun, it should be tagged <code class="highlighter-rouge">DET</code>.
+Otherwise it is <code class="highlighter-rouge">PRON</code>.
+As a result, all words that can be tagged <code class="highlighter-rouge">DET</code> can also be tagged <code class="highlighter-rouge">PRON</code>,
+but some words can only be tagged <code class="highlighter-rouge">PRON</code>.
 (We cannot recognize cases where the pronoun is in fact attributive, but the
 modified noun has been elided and is not represented in the tree.)</p>
 
@@ -505,7 +516,7 @@ converted to interjection.</p>
 <p>Nouns are a part of speech typically denoting a person, place, thing,
 animal or idea.</p>
 
-<p>The <code>NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
+<p>The <code class="highlighter-rouge">NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
 proper nouns and <a href="">PRON</a> for pronouns.</p>
 
 <p>Czech nouns have the lexical feature <a href="">cs-feat/Gender</a>.
@@ -514,7 +525,7 @@ Furthermore, the nouns inflect for <a href="">cs-feat/Number</a> and <a href="">
 <p>A verbal noun can be derived productively from almost every verb
 (e.g. <em>dělat</em>  “to do” → <em>dělání</em>  “doing”).
 While in other languages a corresponding form may be called gerund and tagged <a href="">VERB</a>,
-in Czech it is tagged <code>NOUN</code>. It has always the neuter gender and the full
+in Czech it is tagged <code class="highlighter-rouge">NOUN</code>. It has always the neuter gender and the full
 number-case inflectional paradigm.</p>
 
 <h3 id="examples">Examples</h3>
@@ -546,7 +557,7 @@ number-case inflectional paradigm.</p>
 adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Note that cardinal numerals are covered by <code>NUM</code> whether they are used
+<p>Note that cardinal numerals are covered by <code class="highlighter-rouge">NUM</code> whether they are used
 as determiners or not (as in <em>Windows <b>7</b></em>) and whether they
 are expressed as words <em>(čtyři)</em>, digits <em>(4)</em> or Roman numerals
 <em>(IV)</em>.</p>
@@ -558,7 +569,7 @@ indefinite <em>(několik, mnoho, málo </em> “several, many, few”).
 These words behave similarly to (most) cardinal numbers,
 e.g. they require that the counted noun phrase be in genitive.
 They are not similar to adjectives (unlike their English counterparts).
-However, in accord with the UD standard, they should be tagged <a href="">DET</a>, not <code>NUM</code>.</p>
+However, in accord with the UD standard, they should be tagged <a href="">DET</a>, not <code class="highlighter-rouge">NUM</code>.</p>
 
 <p>In addition, several types of (non-pronominal) numerals, such as ordinal
 numerals and multiplicative numerals, are tagged <a href="">ADJ</a> or <a href="">ADV</a>, based on
@@ -584,7 +595,7 @@ their syntactic and morphological behavior.</p>
   <li><em>dvojí, trojí, čtverý, paterý, sedmdesáterý </em> “twofold, three kinds of, four kinds of, five kinds of, seventy kinds of”: generic numerals. They are tagged <a href="">ADJ</a>.</li>
   <li><em>dvojice, trojice, čtveřice </em> “pair, triplet, foursome”: n-tuples <em>(n-tice) </em> are not considered numerals in the Czech grammar. They are tagged <a href="">NOUN</a>.</li>
   <li><em>jednička, dvojka, trojka, čtyřka, pětka </em> “number one, number two, number three, number four, number five”: names of numbers, or of objects identified by the number (e.g. of a bus route). They are not considered numerals and they are tagged <a href="">NOUN</a>.</li>
-  <li><em>tisíc, milión, miliarda, bilión </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code>NUM</code>) and nouns.
+  <li><em>tisíc, milión, miliarda, bilión </em> “thousand, million, billion, trillion”: words for large quantities are ambiguous between cardinal numerals (tagged <code class="highlighter-rouge">NUM</code>) and nouns.
 If they inflect as nouns, they are tagged <a href="">NOUN</a>; but the borderline is fuzzy.
 For instance, in phrases like <em><b>tisíce</b> lidí demonstrovaly v ulicích </em> (“<b>thousands</b> of people demonstrated in the streets”),
 <em>tisíce </em> is a noun.
@@ -641,7 +652,7 @@ For example: <em>Nebude-<b>li</b> pršet, nezmoknem. </em>
 lit. <em>Will-not-<b>if</b> rain, we-will-not-get-wet. </em>
 “We will not get wet if it does not rain.”
 PDT tags the <em>li </em> morpheme as particle and it is currently kept so in the UD conversion
-but it might be changed to <code>SCONJ</code> in the future releases.</p>
+but it might be changed to <code class="highlighter-rouge">SCONJ</code> in the future releases.</p>
   </li>
   <li>
     <p>At present the UD-conversion of PDT keeps the PDT convention on tagging
@@ -674,15 +685,15 @@ context.</p>
 
 <p>Pronouns under this definition function like nouns. Note that
 Czech grammar traditionally extends the term <em>pronoun</em> to words that
-substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code>PRON</code>
+substitute for <a href="ADJ">adjectives</a>. Such words are not tagged <code class="highlighter-rouge">PRON</code>
 under our universal scheme. They are tagged as <a href="DET">determiners</a> in
 order to annotate the same thing same way across languages.</p>
 
 <p>For instance, <em>tohle </em> “this” is traditionally called pronoun in
 Czech grammar, regardless of context (the notion of determiners does
 not exist in Czech grammar). To make the annotation parallel across
-languages, it should be now tagged <code>PRON</code> in <em><b>Tohle</b> jsem viděl
-včera. </em> “I saw <b>this</b> yesterday.” and <code>DET</code> in
+languages, it should be now tagged <code class="highlighter-rouge">PRON</code> in <em><b>Tohle</b> jsem viděl
+včera. </em> “I saw <b>this</b> yesterday.” and <code class="highlighter-rouge">DET</code> in
 <em><b>Tohle</b> auto jsem viděl včera. </em> “I saw <b>this</b> car yesterday.”</p>
 
 <h3 id="examples">Examples</h3>
@@ -722,7 +733,7 @@ and names of months
 are not written capitalized (unlike in English)
 and are not considered proper nouns.</p>
 
-<p>Single-word named entities should be tagged <code>PROPN</code> even if they originate
+<p>Single-word named entities should be tagged <code class="highlighter-rouge">PROPN</code> even if they originate
 from a common noun <em>(Zajíc, Huť) </em> or an adjective <em>(Veselý, Teplá). </em>
 Even if they were originally adjectives and inflect according to adjectival
 paradigms, they behave syntactically as nouns. For instance, <em>Teplá </em>
@@ -734,21 +745,21 @@ genders).</p>
 
 <p>Note that names of languages <em>(čeština, angličtina)</em>
 and adjectives derived from geographical names <em>(český, anglický </em> “Czech, English”)
-are written in lowercase and are not tagged <code>PROPN</code>.</p>
+are written in lowercase and are not tagged <code class="highlighter-rouge">PROPN</code>.</p>
 
 <p>Personal names are typically treated as a sequence of proper nouns
 (one or more given names and one or more surnames).
 If the name contains prepositions, conjunctions or articles (foreign names
-and old Czech names), these are tagged as <code>ADP</code>, <code>CONJ</code> and <code>DET</code>,
+and old Czech names), these are tagged as <code class="highlighter-rouge">ADP</code>, <code class="highlighter-rouge">CONJ</code> and <code class="highlighter-rouge">DET</code>,
 respectively.</p>
 
 <p>Czech (and other Slavic) multi-word named entities have internal syntactic
 structure, which is preserved in the annotation. The headword is always noun
-and there may be other nouns involved. They will be tagged either <code>PROPN</code> or
-<code>NOUN</code> and possible ambiguities must be resolved individually.
-Modifying adjectives are never tagged <code>PROPN</code>. Even if an adjective is the
+and there may be other nouns involved. They will be tagged either <code class="highlighter-rouge">PROPN</code> or
+<code class="highlighter-rouge">NOUN</code> and possible ambiguities must be resolved individually.
+Modifying adjectives are never tagged <code class="highlighter-rouge">PROPN</code>. Even if an adjective is the
 first word of a multi-word name, and thus it starts with an uppercase letter,
-it is still tagged <code>ADJ</code>.
+it is still tagged <code class="highlighter-rouge">ADJ</code>.
 Similarly, function words in named entities retain their normal tags.
 These rules are less strict for foreign named entities where the original
 part of speech is hidden for a Czech speaker.</p>
@@ -756,20 +767,20 @@ part of speech is hidden for a Czech speaker.</p>
 <h3 id="examples">Examples</h3>
 
 <ul>
-  <li><em><b>Bečov</b></em>.<code>PROPN</code> <em>nad</em>.<code>ADP</code> <em><b>Teplou</b></em>.<code>PROPN</code> is a city. <em>Bečov </em> is the head
+  <li><em><b>Bečov</b></em>.<code class="highlighter-rouge">PROPN</code> <em>nad</em>.<code class="highlighter-rouge">ADP</code> <em><b>Teplou</b></em>.<code class="highlighter-rouge">PROPN</code> is a city. <em>Bečov </em> is the head
 and the <em>nad Teplou </em> part refers to the river flowing through the city,
 to distinguish it from other Bečovs.</li>
-  <li><em>Červený</em>.<code>ADJ</code> <em><b>Újezd</b></em>.<code>PROPN</code> is a village. <em>Újezd </em> is the head and it is
-tagged <code>PROPN</code> although it originates in the common noun <em>újezd </em> “district, riding”.
+  <li><em>Červený</em>.<code class="highlighter-rouge">ADJ</code> <em><b>Újezd</b></em>.<code class="highlighter-rouge">PROPN</code> is a village. <em>Újezd </em> is the head and it is
+tagged <code class="highlighter-rouge">PROPN</code> although it originates in the common noun <em>újezd </em> “district, riding”.
 There are many locations named <em>Újezd </em> and the noun is perceived as a proper
 noun in current Czech. <em>Červený </em> is an adjective meaning “red” and it is
-tagged <code>ADJ</code>.</li>
-  <li><em>Červená</em>.<code>ADJ</code> <em>řeka</em>.<code>NOUN</code> “Red River”. Even though the two words
+tagged <code class="highlighter-rouge">ADJ</code>.</li>
+  <li><em>Červená</em>.<code class="highlighter-rouge">ADJ</code> <em>řeka</em>.<code class="highlighter-rouge">NOUN</code> “Red River”. Even though the two words
 together are a name of a particular river, <em>řeka</em> is a common noun and is
 tagged as such.</li>
-  <li><em>Organizace</em>.<code>NOUN</code> <em>spojených</em>.<code>ADJ</code> <em>národů</em>.<code>NOUN</code> “United Nations Organization”
+  <li><em>Organizace</em>.<code class="highlighter-rouge">NOUN</code> <em>spojených</em>.<code class="highlighter-rouge">ADJ</code> <em>národů</em>.<code class="highlighter-rouge">NOUN</code> “United Nations Organization”
 consists of three words, none of which is proper noun. However, the acronym
-<em><b>OSN</b> </em> “UNO” is a single-token name and is tagged <code>PROPN</code>.</li>
+<em><b>OSN</b> </em> “UNO” is a single-token name and is tagged <code class="highlighter-rouge">PROPN</code>.</li>
 </ul>
 
 <h3 id="conversion-from-the-prague-dependency-treebank">Conversion from the Prague Dependency Treebank</h3>
@@ -777,10 +788,10 @@ consists of three words, none of which is proper noun. However, the acronym
 <p>The PDT set of morphological (part-of-speech) tags does not distinguish
 common and proper nouns. However, lemmas in PDT contain additional features
 that also encode types of named entities. When converting the PDT annotation
-to UD, these lemma features are removed, the <code>PROPN</code> tag is used and the feature
+to UD, these lemma features are removed, the <code class="highlighter-rouge">PROPN</code> tag is used and the feature
 <a href="">cs-feat/NameType</a> is added to the universal features to preserve the type.
 Only nouns are treated this way.
-Foreign adjectives are not converted to <code>PROPN</code> despite the fact
+Foreign adjectives are not converted to <code class="highlighter-rouge">PROPN</code> despite the fact
 that they entered Czech as parts of foreign names and their lemmas contain
 the name type feature.</p>
 
@@ -840,7 +851,7 @@ used to delimit linguistic units in printed text.</p>
 <p>The PDT texts are from the early 1990s and there are no e-mail addresses.
 If they were there, the PDT tokenization rules would break them up on all dots and at signs.
 The same holds for telephone numbers. For example,
-<em>tel.: (05) 4321 6014 </em> is analyzed as eight tokens (<code>NOUN PUNCT PUNCT PUNCT NUM PUNCT NUM NUM</code>).</p>
+<em>tel.: (05) 4321 6014 </em> is analyzed as eight tokens (<code class="highlighter-rouge">NOUN PUNCT PUNCT PUNCT NUM PUNCT NUM NUM</code>).</p>
 
 <h3 id="references">References</h3>
 
@@ -901,7 +912,7 @@ involves all currency symbols, e.g. <em>$ 75</em> is identical to
 
 <p>Strings that consists entirely of alphanumeric characters are not
 symbols but they may be <a href="PROPN">proper nouns</a>: <em>130XE</em>, <em>DC10</em>; others
-may be tagged <code>PROPN</code> (rather than <code>SYM</code>) even if they contain special
+may be tagged <code class="highlighter-rouge">PROPN</code> (rather than <code class="highlighter-rouge">SYM</code>) even if they contain special
 characters: <em>DC-10</em>.
 Similarly, abbreviations for single words are not symbols but are assigned the part of speech
 of the full form. For example, <em>Mr.</em> (mister), <em>kg</em> (kilogram), <em>km</em> (kilometr), <em>dr</em> (doktor)
@@ -917,7 +928,7 @@ they are punctuation.</p>
   <li><em>$, %, §, ©</em></li>
   <li><em>+, −, ×, ÷, =, &lt;, &gt;</em></li>
   <li>:), ♥‿♥, 😝</li>
-  <li><em>john.doe@universal.org, http://universaldependencies.github.io/docs/, 1-800-COMPANY</em></li>
+  <li><em>john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY</em></li>
 </ul>
 
 <h2 id="diffs">Diffs</h2>
@@ -930,7 +941,7 @@ non-alphanumeric characters in the converted data are currently tagged <a href="
 <p>The PDT texts are from the early 1990s and there are no e-mail addresses.
 If they were there, the PDT tokenization rules would break them up on all dots and at signs.
 The same holds for telephone numbers. For example,
-<em>tel.: (05) 4321 6014 </em> is analyzed as eight tokens (<code>NOUN PUNCT PUNCT PUNCT NUM PUNCT NUM NUM</code>).</p>
+<em>tel.: (05) 4321 6014 </em> is analyzed as eight tokens (<code class="highlighter-rouge">NOUN PUNCT PUNCT PUNCT NUM PUNCT NUM NUM</code>).</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-pos/SYM.md" target="#">edit SYM</a></p>
 
@@ -944,12 +955,12 @@ signal events and actions, can constitute a minimal predicate in a
 clause, and govern the number and types of other constituents which
 may occur in the clause.</p>
 
-<p>Note that the <code>VERB</code> tag covers main verbs <em>(content verbs),</em>
+<p>Note that the <code class="highlighter-rouge">VERB</code> tag covers main verbs <em>(content verbs),</em>
 <em>modal verbs</em> and
 <em>copulas</em> but it does not cover <em>auxiliary verbs,</em> for which there is
 the <a href="">AUX</a> tag. (Czech modal verbs are not considered auxiliary.)
-See the description of <code>AUX</code> for more information on the borderline
-between <code>VERB</code> and <code>AUX</code>.</p>
+See the description of <code class="highlighter-rouge">AUX</code> for more information on the borderline
+between <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">AUX</code>.</p>
 
 <p>Czech verbs can take the following morphological forms:</p>
 
@@ -966,7 +977,7 @@ See below for examples.</p>
 
 <p>A verbal noun can be derived productively from almost every verb
 (e.g. <em>dělat</em>  “to do” → <em>dělání</em>  “doing”).
-While in other languages a corresponding form may be called gerund and tagged <code>VERB</code>,
+While in other languages a corresponding form may be called gerund and tagged <code class="highlighter-rouge">VERB</code>,
 in Czech it is tagged <a href="">NOUN</a>. It has always the neuter <a href="">cs-feat/Gender</a>
 and it inflects for <a href="">cs-feat/Number</a> and <a href="">cs-feat/Case</a>.</p>
 
@@ -983,8 +994,8 @@ and it inflects for <a href="">cs-feat/Number</a> and <a href="">cs-feat/Case</a
 
 <h3 id="border-cases">Border cases</h3>
 
-<p>There are passive participles as verb forms (<code>VERB</code>)
-and participial adjectives (<code>ADJ</code>). For example:</p>
+<p>There are passive participles as verb forms (<code class="highlighter-rouge">VERB</code>)
+and participial adjectives (<code class="highlighter-rouge">ADJ</code>). For example:</p>
 
 <ul>
   <li>Verb: <em>nesen, nesena, neseno, neseni, neseny</em>  “carried”</li>
@@ -1006,7 +1017,7 @@ And these adjectives are not derived from verbs. Example:</p>
   <li>Normal (pronominal) forms: <em>starý, stará, staré</em>  “old”</li>
 </ul>
 
-<p>Here both groups are <code>ADJ</code>. The nominal forms are used in predication,
+<p>Here both groups are <code class="highlighter-rouge">ADJ</code>. The nominal forms are used in predication,
 the standard forms both in predication and to modify nouns.</p>
 
 <h3 id="references">References</h3>
@@ -1023,17 +1034,17 @@ the standard forms both in predication and to modify nouns.</p>
 
 <h3 id="definition">Definition</h3>
 
-<p>The tag <code>X</code> is used for words that for some reason cannot be assigned
+<p>The tag <code class="highlighter-rouge">X</code> is used for words that for some reason cannot be assigned
 a real part-of-speech category.</p>
 
-<p>A special usage of <code>X</code> is for cases of code-switching where it is not
+<p>A special usage of <code class="highlighter-rouge">X</code> is for cases of code-switching where it is not
 possible (or meaningful) to analyze the intervening language
 grammatically (and where the dependency relation <em>foreign</em> is
 typically used in the syntactic analysis).
 This rarely applies to the PDT data where many foreign words are tagged with their original
 part of speech.</p>
 
-<p>Even if foreign words are tagged <code>X</code>, this usage does not extend
+<p>Even if foreign words are tagged <code class="highlighter-rouge">X</code>, this usage does not extend
 to ordinary loan words which should be assigned a normal
 part-of-speech. For example, in <em>Skotové nosí kilt </em> “Scots wear kilts”,
 <em>kilt</em> is an ordinary <a href="">NOUN</a>.</p>
@@ -1058,6 +1069,7 @@ part-of-speech. For example, in <em>Skotové nosí kilt </em> “Scots wear kil
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1089,11 +1101,40 @@ part-of-speech. For example, in <em>Skotové nosí kilt </em> “Scots wear kil
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1117,6 +1158,7 @@ part-of-speech. For example, in <em>Skotové nosí kilt </em> “Scots wear kil
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-overview';
@@ -1142,7 +1184,7 @@ part-of-speech. For example, in <em>Skotové nosí kilt </em> “Scots wear kil
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

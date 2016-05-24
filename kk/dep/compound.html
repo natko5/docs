@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/compound.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>compound</code>: compound</h2>
 
-<p><code>compound</code> is one of the three UD relations UD for compounding,
+<p><code class="highlighter-rouge">compound</code> is one of the three UD relations UD for compounding,
 together with <a href="">mwe</a> and <a href="">name</a>.</p>
 
 <p>Nouns should modify appropriate noun in the compound in order to respect the branching structure.</p>
@@ -53,7 +54,7 @@ punct(бола-5, .-7)
 </code></pre>
 
 <p>Nouns in the izafet construction (e.g. possessive on the final noun) should not get the compound relation,
-they should instead be labelled <code>nmod:poss</code>, e.g.</p>
+they should instead be labelled <code class="highlighter-rouge">nmod:poss</code>, e.g.</p>
 
 <pre><code class="language-sdparse">Дүниежүзілік экономикалық дағдарыс Иран экономикасын тұралатып тастады . \n Global economic depression Iran-of economy declining threw .
 nmod:poss(экономикасын-5, Иран-4)
@@ -61,7 +62,7 @@ obj(тастады-7, экономикасын-5)
 </code></pre>
 
 <p>Numerical expressions consisting of multiple tokens are annotated
-using the <code>compound</code> dependency type. The last word of the numerical
+using the <code class="highlighter-rouge">compound</code> dependency type. The last word of the numerical
 expression is the governor, and the number dependencies are chained.</p>
 
 <pre><code class="language-sdparse">Мұнай экспортынан жыл сайын 16,3 миллиард АҚШ доллары түседі . \n Oil exports-from year per 16,3 milliard USA dollar falls
@@ -76,6 +77,79 @@ punct(түседі-9, .-10)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>63 nodes (1%) are attached to their parents as <code class="highlighter-rouge">compound</code>.</p>
+
+<p>61 instances of <code class="highlighter-rouge">compound</code> (97%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.49206349206349.</p>
+
+<p>The following 9 pairs of parts of speech are connected with <code class="highlighter-rouge">compound</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (41; 65% instances), <a href="">kk-pos/NUM</a>-<a href="">kk-pos/NUM</a> (7; 11% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (6; 10% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/PROPN</a> (2; 3% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NOUN</a> (2; 3% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/PROPN</a> (2; 3% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NOUN</a> (1; 2% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NUM</a> (1; 2% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/VERB</a> (1; 2% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 2 compound	color:blue
+1	Мені	мен	PRON	prn	_	3	dobj	_	_
+2	бұзақы	бұзақы	NOUN	n	_	3	compound	_	_
+3	_	адам	NOUN	n	_	5	ccomp	_	_
+4	_	е	VERB	cop	_	3	cop	_	_
+5	деп	де	VERB	v	_	9	advcl	_	_
+6	,	,	PUNCT	cm	_	5	punct	_	_
+7	сөйтіп	сөйт	VERB	v	_	9	advcl	_	_
+8	болыстыққа	болыстық	NOUN	n	_	9	iobj	_	_
+9	сайламай	сайла	VERB	v	_	0	root	_	_
+10	қойғаны	қой	AUX	aux	_	9	aux	_	_
+11	.	.	PUNCT	sent	_	9	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 1 compound	color:blue
+1	1905	1905	NUM	num	_	3	compound	_	_
+2	—	—	PUNCT	guio	_	3	punct	_	_
+3	11	11	NUM	num	_	4	amod	_	_
+4	ж.	ж.	NOUN	abbr	_	10	nmod	_	_
+5	елде	ел	NOUN	n	_	10	nmod	_	loc
+6	шетелдіктерге	шетелдік	NOUN	n	_	10	nmod	_	pl|dat
+7	қарсы	қарсы	ADP	post	_	6	case	_	_
+8	ұлт-азаттық	ұлт-азаттық	ADJ	adj	_	9	amod	_	_
+9	қозғалысы	қозғалыс	NOUN	n	_	10	nsubj	_	px3sp|nom
+10	болып	бол	VERB	v	_	11	advcl	_	iv|gna_perf
+11	өтті	өт	VERB	v	_	0	root	_	tv|ifi|p3|sg
+12	.	.	PUNCT	sent	_	11	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 4 compound	color:blue
+1	Мұнай	мұнай	NOUN	n	_	2	nmod:poss	_	nom
+2	экспортынан	экспорт	NOUN	n	_	8	nmod	_	px3sp|abl
+3	жыл__сайын	жыл__сайын	ADV	adv	_	8	advmod	_	_
+4	16,3	16,3	NUM	num	_	5	compound	_	_
+5	млрд.	млрд.	NOUN	abbr	_	6	nummod	_	_
+6	АҚШ	АҚШ	PROPN	np	_	7	nmod:poss	_	top|nom
+7	доллары	доллар	NOUN	n	_	8	nsubj	_	px3sp|nom
+8	түседі	түс	VERB	v	_	0	root	_	iv|aor|p3|pl
+9	.	.	PUNCT	sent	_	8	punct	_	_
+
+</code></pre>
 
 
 
@@ -134,6 +208,7 @@ compound in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -165,11 +240,40 @@ compound in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -193,6 +297,7 @@ compound in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -218,7 +323,7 @@ compound in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

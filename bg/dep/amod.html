@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/bg/dep">bg/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/dep">bg/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-dep/amod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,7 +40,7 @@
           <h2><code>amod</code>: adjectival modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>amod</code>.</p>
+for <code class="highlighter-rouge">amod</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +57,12 @@ for <code>amod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>11872 nodes (8%) are attached to their parents as <code>amod</code>.</p>
+<p>11872 nodes (8%) are attached to their parents as <code class="highlighter-rouge">amod</code>.</p>
 
-<p>11441 instances of <code>amod</code> (96%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.3018025606469.</p>
+<p>11441 instances of <code class="highlighter-rouge">amod</code> (96%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.30188679245283.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>amod</code>: <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/ADJ</a> (11524; 97% instances), <a href="">bg-pos/PROPN</a>-<a href="">bg-pos/ADJ</a> (314; 3% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/ADJ</a> (16; 0% instances), <a href="">bg-pos/NUM</a>-<a href="">bg-pos/ADJ</a> (9; 0% instances), <a href="">bg-pos/PRON</a>-<a href="">bg-pos/ADJ</a> (3; 0% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/PROPN</a> (2; 0% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/DET</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/PART</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/PROPN</a>-<a href="">bg-pos/PROPN</a> (1; 0% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code class="highlighter-rouge">amod</code>: <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/ADJ</a> (11525; 97% instances), <a href="">bg-pos/PROPN</a>-<a href="">bg-pos/ADJ</a> (314; 3% instances), <a href="">bg-pos/VERB</a>-<a href="">bg-pos/ADJ</a> (15; 0% instances), <a href="">bg-pos/NUM</a>-<a href="">bg-pos/ADJ</a> (9; 0% instances), <a href="">bg-pos/PRON</a>-<a href="">bg-pos/ADJ</a> (3; 0% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/PROPN</a> (2; 0% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/DET</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/PART</a>-<a href="">bg-pos/ADJ</a> (1; 0% instances), <a href="">bg-pos/PROPN</a>-<a href="">bg-pos/PROPN</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
@@ -105,7 +106,7 @@ Average distance between parent and child is 1.3018025606469.</p>
 9	че	че	SCONJ	Cs	_	12	mark	_	_
 10	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	12	expl	_	_
 11	е	съм	AUX	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
-12	свършило	свърша-(се)	VERB	Vpptcao-sni	Aspect=Perf|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	7	ccomp	_	_
+12	свършило	свърша-(се)	VERB	Vpptcao-sni	Aspect=Perf|Definite=Ind|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	7	ccomp	_	_
 13	.	.	PUNCT	punct	_	7	punct	_	_
 
 </code></pre>
@@ -167,6 +168,7 @@ amod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -198,11 +200,40 @@ amod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -226,6 +257,7 @@ amod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'bg-dep';
@@ -251,7 +283,7 @@ amod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

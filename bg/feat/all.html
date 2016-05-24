@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -108,7 +109,7 @@ other parts of speech that mark agreement with nouns. It is
 independent of gender, therefore it is encoded separately in some
 tagsets (e.g. all the Multext-East tagsets).</p>
 
-<p>In the BulTreeBank tagset <code>Animacy</code> is not encoded as a special feature.
+<p>In the BulTreeBank tagset <code class="highlighter-rouge">Animacy</code> is not encoded as a special feature.
 The dichotomy that plays a role here is rather: Human - Non-human.
 With very few exceptions, these features are not encoded grammatically.</p>
 
@@ -126,7 +127,7 @@ With very few exceptions, these features are not encoded grammatically.</p>
 
 <h3 id="nhum-animate-but-non-human">Nhum: animate but non-human</h3>
 
-<p>It has the so-called <code>count form</code> in contrast to the humans, but only for masculine nouns. The <code>count form</code> is a kind of plural, which comes after numerals.</p>
+<p>It has the so-called <code class="highlighter-rouge">count form</code> in contrast to the humans, but only for masculine nouns. The <code class="highlighter-rouge">count form</code> is a kind of plural, which comes after numerals.</p>
 
 <ul>
   <li><em>два лъва</em> / <em>dva lava</em> “two lions”</li>
@@ -134,7 +135,7 @@ With very few exceptions, these features are not encoded grammatically.</p>
 
 <h3 id="inan-inanimate">Inan: inanimate</h3>
 
-<p>It has also the so-called <code>count form</code> in contrast to the humans, but only for masculine nouns. The <code>count form</code> is a kind of plural, which comes after numerals.</p>
+<p>It has also the so-called <code class="highlighter-rouge">count form</code> in contrast to the humans, but only for masculine nouns. The <code class="highlighter-rouge">count form</code> is a kind of plural, which comes after numerals.</p>
 
 <ul>
   <li><em>три стола</em> / <em>tri stola</em> “three chairs”</li>
@@ -155,7 +156,7 @@ whether the action has been completed etc.</p>
 <p>In Bulgarian aspect is a lexical feature, as in other Slavic languages.
 It comprises two grammemes: <em>perfective</em> and <em>imperfective</em>.</p>
 
-<h3 id="imp-imperfect-aspect"><code>Imp</code>: imperfect aspect</h3>
+<h3 id="imp-imperfect-aspect"><code class="highlighter-rouge">Imp</code>: imperfect aspect</h3>
 
 <p>The action took / takes / will take some time span and there is no
 information whether and when it was / will be completed.</p>
@@ -168,7 +169,7 @@ information whether and when it was / will be completed.</p>
   <li>разбирам / <em>razbiram</em> “understand”</li>
 </ul>
 
-<h3 id="perf-perfect-aspect"><code>Perf</code>: perfect aspect</h3>
+<h3 id="perf-perfect-aspect"><code class="highlighter-rouge">Perf</code>: perfect aspect</h3>
 
 <p>The action has been / will have been completed. Since there is
 emphasis on one point on the time scale (the point of completion),
@@ -234,11 +235,11 @@ be marked on definite and indefinite <a href="u-pos/DET">articles</a>, or
 directly on <a href="u-pos/NOUN">nouns</a>, <a href="u-pos/ADJ">adjectives</a> etc.</p>
 
 <p>In Bulgarian there are definite and indefinite articles. The definite article is part of the word,
-in postposition (жена<b>та</b> / <em>zhena&lt;/b&gt;ta&lt;/b&gt;</em> ‘woman-the’ (the woman))). The indefinite articles can be: the form един / <em>edin</em> (one) or the zero marker.</p>
+in postposition (жена<b>та</b> / <em>zhena<b>ta</b></em> ‘woman-the’ (the woman))). The indefinite articles can be: the form един / <em>edin</em> (one) or the zero marker.</p>
 
 <p>However, when added to a nominal phrase, the articles become phrasal affixes, i.e. Bulgarian does not have agreement is definiteness. For example, хубава<b>та</b> висока руса жена / <em>hubavata visoka rusa zhena</em> ‘pretty-the tall blond woman’ (the pretty tall blond woman).</p>
 
-<h3 id="ind-indefinite"><code>Ind</code>: indefinite</h3>
+<h3 id="ind-indefinite"><code class="highlighter-rouge">Ind</code>: indefinite</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -247,7 +248,7 @@ in postposition (жена<b>та</b> / <em>zhena&lt;/b&gt;ta&lt;/b&gt;</em> ‘w
   <li>Видях <b>жена</b> да минава по улицата / <em>Vidyah <b>zhena</b> da minava po ulitsata</em> “I saw a woman walking on the street”</li>
 </ul>
 
-<h3 id="def-definite"><code>Def</code>: definite</h3>
+<h3 id="def-definite"><code class="highlighter-rouge">Def</code>: definite</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -264,10 +265,10 @@ in postposition (жена<b>та</b> / <em>zhena&lt;/b&gt;ta&lt;/b&gt;</em> ‘w
 <a href="u-pos/ADJ">adjectives</a> and <a href="u-pos/ADV">adverbs</a>.</p>
 
 <p>In Bulgarian the comparative and superlative forms are created with the help of
-the particles <code>по</code> / <em>po</em> “more” and <code>най</code> / <em>nay</em> “most”, which are part of the word and come in preposition,
+the particles <code class="highlighter-rouge">по</code> / <em>po</em> “more” and <code class="highlighter-rouge">най</code> / <em>nay</em> “most”, which are part of the word and come in preposition,
 separated by a defice.</p>
 
-<h3 id="pos-positive-first-degree"><code>Pos</code>: positive, first degree</h3>
+<h3 id="pos-positive-first-degree"><code class="highlighter-rouge">Pos</code>: positive, first degree</h3>
 
 <p>This is the base form that merely states a quality of something,
 without comparing it to qualities of others. Note that although this
@@ -281,7 +282,7 @@ compared, too.</p>
   <li>млад човек / <em>mlad chovek</em> “a young man”</li>
 </ul>
 
-<h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
+<h3 id="cmp-comparative-second-degree"><code class="highlighter-rouge">Cmp</code>: comparative, second degree</h3>
 
 <p>The quality of one object is compared to the same quality of another
 object.</p>
@@ -293,7 +294,7 @@ object.</p>
   <li>Брат ми е <b>по-млад</b> от мен / <em>Brat mi e <b>po-mlad</b> ot men</em> “My brother is younger than me”</li>
 </ul>
 
-<h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
+<h3 id="sup-superlative-third-degree"><code class="highlighter-rouge">Sup</code>: superlative, third degree</h3>
 
 <p>The quality of one object is compared to the same quality of all other
 objects within a set.</p>
@@ -348,7 +349,7 @@ feminine, without any relation to sex.</p>
 verb forms.
 In Bulgarian there are three moods: <em>Indicative</em>, <em>Imperative</em> and <em>Conditional</em>.</p>
 
-<h3 id="ind-indicative"><code>Ind</code>: indicative</h3>
+<h3 id="ind-indicative"><code class="highlighter-rouge">Ind</code>: indicative</h3>
 
 <p>The indicative can be considered the default mood. A verb in
 indicative merely states that something happens, has happened or will
@@ -362,7 +363,7 @@ and their passive forms in Bulgarian. It also covers the evidential forms.</p>
   <li>Той <b>беше ходил</b> в САЩ много пъти. / <em>Toy beshe hodil v SASHT mnogo pati</em> “He had been to the USA many times”.</li>
 </ul>
 
-<h3 id="imp-imperative"><code>Imp</code>: imperative</h3>
+<h3 id="imp-imperative"><code class="highlighter-rouge">Imp</code>: imperative</h3>
 
 <p>The speaker uses imperative to order or ask the addressee to do the
 action of the verb. The forms in Bulgarian are synthetic.</p>
@@ -374,7 +375,7 @@ action of the verb. The forms in Bulgarian are synthetic.</p>
   <li><b>Подай</b> ми солта, моля! / <em>Poday mi solta, molya</em> “Pass me the salt, please!”</li>
 </ul>
 
-<h3 id="cnd-conditional"><code>Cnd</code>: conditional</h3>
+<h3 id="cnd-conditional"><code class="highlighter-rouge">Cnd</code>: conditional</h3>
 
 <p>The conditional mood is used to express actions that might happen under certain
 circumstances or that would have taken place but they actually did not / do not
@@ -407,7 +408,7 @@ Verbs and transgressives, however, use the clitic <em>не</em> for negation.</p
 <p>The negativeness feature is used to distinguish response
 <a href="u-pos/INTJ">interjections</a> <em>yes</em> and <em>no</em>.</p>
 
-<h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
+<h3 id="pos-positive-affirmative"><code class="highlighter-rouge">Pos</code>: positive, affirmative</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -453,7 +454,7 @@ quantifiers and they are considered a subgroup of
 
 <p>From the syntactic point of view, some numtypes behave like adjectives
 and some behave like adverbs. We tag them <a href="">u-pos/ADJ</a> and
-<a href="">u-pos/ADV</a> respectively. Thus the <code>NumType</code> feature applies to
+<a href="">u-pos/ADV</a> respectively. Thus the <code class="highlighter-rouge">NumType</code> feature applies to
 several different parts of speech:</p>
 
 <ul>
@@ -463,7 +464,7 @@ several different parts of speech:</p>
   <li><a href="">u-pos/ADV</a>: adverbial (e.g. ordinal and multiplicative) numerals, both definite and pronominal</li>
 </ul>
 
-<h3 id="card-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Card</code>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="card-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Card</code>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>Note that in some Indo-European languages there is a fuzzy borderline
 between numerals and nouns for <em>thousand, million</em> and <em>billion.</em></p>
@@ -475,7 +476,7 @@ between numerals and nouns for <em>thousand, million</em> and <em>billion.</em><
 няколко / <em>nyakolko</em> “some”; толкова / <em>tolkova</em> “so many”; много / <em>mnogo</em> “many”; малко / <em>malko</em> “few”</li>
 </ul>
 
-<h3 id="ord-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Ord</code>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="ord-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Ord</code>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is a subtype of adjective.</p>
 
@@ -485,7 +486,7 @@ between numerals and nouns for <em>thousand, million</em> and <em>billion.</em><
   <li>[bg] adjectival: първи / <em>parvi</em> “first”; втори / <em>vtori</em> “second”, трети / <em>treti</em> “third”, etc.</li>
 </ul>
 
-<h3 id="mult-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Mult</code>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="mult-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Mult</code>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is subtype of adverb.</p>
 
@@ -495,7 +496,7 @@ between numerals and nouns for <em>thousand, million</em> and <em>billion.</em><
   <li>[bg] веднъж / <em>vednazh</em> “once”; дваж / <em>dvazh</em> “twice”</li>
 </ul>
 
-<h3 id="frac-fraction"><code>Frac</code>: fraction</h3>
+<h3 id="frac-fraction"><code class="highlighter-rouge">Frac</code>: fraction</h3>
 
 <p>This is a subtype of cardinal numbers, occasionally distinguished in
 corpora. It may denote a fraction or just the denominator of the
@@ -560,7 +561,7 @@ languages).</p>
 
 <p>Bulgarian is a pro-drop language, as other Slavic languages.</p>
 
-<h3 id="first-person"><code>1</code>: first person</h3>
+<h3 id="first-person"><code class="highlighter-rouge">1</code>: first person</h3>
 
 <p>In singular, the first person refers just to the speaker / author. In
 plural, it must include the speaker and one or more additional
@@ -573,7 +574,7 @@ persons.</p>
   <li>идвам / <em>idvam</em> “I am coming”</li>
 </ul>
 
-<h3 id="second-person"><code>2</code>: second person</h3>
+<h3 id="second-person"><code class="highlighter-rouge">2</code>: second person</h3>
 
 <p>In singular, the second person refers to the addressee of the
 utterance / text. In plural, it may mean several addressees and
@@ -586,7 +587,7 @@ optionally some third persons too.</p>
   <li>идваш / <em>idvash</em> “You are coming”</li>
 </ul>
 
-<h3 id="third-person"><code>3</code>: third person</h3>
+<h3 id="third-person"><code class="highlighter-rouge">3</code>: third person</h3>
 
 <p>The third person refers to one or more persons that are neither
 speakers nor addressees.</p>
@@ -616,11 +617,11 @@ pronominal types can be optionally possessive, and adjectives can too.</p>
 <p>In BulTreeBank tagset “possessive” is one of the various
 pronoun types.</p>
 
-<h3 id="yes-it-is-possessive"><code>Yes</code>: it is possessive</h3>
+<h3 id="yes-it-is-possessive"><code class="highlighter-rouge">Yes</code>: it is possessive</h3>
 
-<p>Note that there is no <code>No</code> value. If the word is not possessive, the
-<code>Poss</code> feature will just not be mentioned in the <code>FEAT</code> column. (Which
-means that empty value has the <code>No</code> meaning.)</p>
+<p>Note that there is no <code class="highlighter-rouge">No</code> value. If the word is not possessive, the
+<code class="highlighter-rouge">Poss</code> feature will just not be mentioned in the <code class="highlighter-rouge">FEAT</code> column. (Which
+means that empty value has the <code class="highlighter-rouge">No</code> meaning.)</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -639,10 +640,10 @@ means that empty value has the <code>No</code> meaning.)</p>
 <a href="u-pos/DET">determiners</a>, pronominal <a href="u-pos/NUM">numerals</a>
 (quantifiers) and pronominal <a href="u-pos/ADV">adverbs</a>.</p>
 
-<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><code>Prs</code>: personal or possessive personal pronoun or determiner</h3>
+<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><code class="highlighter-rouge">Prs</code>: personal or possessive personal pronoun or determiner</h3>
 
 <p>See also the <a href="">Poss</a> feature that distinguishes normal personal
-pronouns from possessives. Note that <code>Prs</code> also includes reflexive
+pronouns from possessives. Note that <code class="highlighter-rouge">Prs</code> also includes reflexive
 personal/possessive pronouns (e.g. [cs] <em>se / svůj;</em> see the
 <a href="">Reflex</a> feature).</p>
 
@@ -652,7 +653,7 @@ personal/possessive pronouns (e.g. [cs] <em>se / svůj;</em> see the
   <li>аз, ти, той, тя, то, ние, вие, те, себе си, мой, твой, негов, неин, негов, наш, ваш, техен, свой / <em>az, ti, toy, tya, to, nie, vie, te, sebe si, moy, tvoy, negov, nein, negov, nash, vash, tehen, svoy</em> “I, you, he, she, it, we, they, oneself, my, your, his, her, its, our, their, mine, yours, hers, ours, theirs, oneself’s”</li>
 </ul>
 
-<h3 id="rcp-reciprocal-pronoun"><code>Rcp</code>: reciprocal pronoun</h3>
+<h3 id="rcp-reciprocal-pronoun"><code class="highlighter-rouge">Rcp</code>: reciprocal pronoun</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -661,7 +662,7 @@ personal/possessive pronouns (e.g. [cs] <em>se / svůj;</em> see the
   <li>един на друг / <em>edin na drug</em> “each other”</li>
 </ul>
 
-<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><code>Int</code>: interrogative pronoun, determiner, numeral or adverb</h3>
+<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Int</code>: interrogative pronoun, determiner, numeral or adverb</h3>
 
 <p>Note that possessive interrogative determiners (<em>whose</em>) can be
 distinguished by the <a href="">Poss</a> feature.</p>
@@ -673,7 +674,7 @@ distinguished by the <a href="">Poss</a> feature.</p>
 как / <em>kak</em> “how”, защо / <em>zashto</em> “why”</li>
 </ul>
 
-<h3 id="rel-relative-pronoun-determiner-numeral-or-adverb"><code>Rel</code>: relative pronoun, determiner, numeral or adverb</h3>
+<h3 id="rel-relative-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Rel</code>: relative pronoun, determiner, numeral or adverb</h3>
 
 <p>In Bulgarian this class is distinct from the class of interrogatives.</p>
 
@@ -684,7 +685,7 @@ distinguished by the <a href="">Poss</a> feature.</p>
 pronouns); чийто / <em>chiyto</em> “whose” (possessive relative pronoun)</li>
 </ul>
 
-<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><code>Dem</code>: demonstrative pronoun, determiner, numeral or adverb</h3>
+<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Dem</code>: demonstrative pronoun, determiner, numeral or adverb</h3>
 
 <p>BulTreeBank tagset does not differenciate between pronouns for narness/distance,
 although in Bulgarian there is such distinction.</p>
@@ -696,7 +697,7 @@ although in Bulgarian there is such distinction.</p>
 тук / <em>tuk</em> “here”, там / <em>tam</em> “there”, etc.</li>
 </ul>
 
-<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><code>Tot</code>: total (collective) pronoun, determiner or adverb</h3>
+<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><code class="highlighter-rouge">Tot</code>: total (collective) pronoun, determiner or adverb</h3>
 
 <h4 id="examples-5">Examples</h4>
 
@@ -705,7 +706,7 @@ although in Bulgarian there is such distinction.</p>
 “everything” “all”, etc.</li>
 </ul>
 
-<h3 id="neg-negative-pronoun-determiner-or-adverb"><code>Neg</code>: negative pronoun, determiner or adverb</h3>
+<h3 id="neg-negative-pronoun-determiner-or-adverb"><code class="highlighter-rouge">Neg</code>: negative pronoun, determiner or adverb</h3>
 
 <p>Examples:</p>
 
@@ -714,7 +715,7 @@ although in Bulgarian there is such distinction.</p>
 one’s” (possessive negative pronoun), etc.</li>
 </ul>
 
-<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code>Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
+<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
 
 <h4 id="examples-6">Examples</h4>
 
@@ -741,11 +742,11 @@ but as a reference type (similarly to entity, attribute, possession, etc.)</p>
 <p>In Bulgarian there are reflexive verbs - both as form and as meaning. They are written
 separately: събуждам се / <em>sabuzhdam se</em> “to wake up”.</p>
 
-<h3 id="yes-it-is-reflexive"><code>Yes</code>: it is reflexive</h3>
+<h3 id="yes-it-is-reflexive"><code class="highlighter-rouge">Yes</code>: it is reflexive</h3>
 
-<p>Note that there is no <code>No</code> value. If the word is not reflexive, the
-<code>Reflex</code> feature will just not be mentioned in the <code>FEAT</code>
-column. (Which means that empty value has the <code>No</code> meaning.)</p>
+<p>Note that there is no <code class="highlighter-rouge">No</code> value. If the word is not reflexive, the
+<code class="highlighter-rouge">Reflex</code> feature will just not be mentioned in the <code class="highlighter-rouge">FEAT</code>
+column. (Which means that empty value has the <code class="highlighter-rouge">No</code> meaning.)</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -771,7 +772,7 @@ In Bulgarian aspect and tense are separate, although not completely independent 
 <p>Since the feature <em>Tense</em> is assigned to a single word, i.e. it relates to 
 synthetic forms, in Bulgarian it is applicable to only 3 tenses: <em>Present</em>, <em>Aorist</em> and <em>Imperfect</em>.</p>
 
-<h3 id="past-past-tense--preterite--aorist"><code>Past</code>: past tense / preterite / aorist</h3>
+<h3 id="past-past-tense--preterite--aorist"><code class="highlighter-rouge">Past</code>: past tense / preterite / aorist</h3>
 
 <p>The past tense denotes actions that happened before the current
 moment. In Bulgarian, this is aorist. It can be used with both imperfective and perfective verbs.</p>
@@ -783,7 +784,7 @@ moment. In Bulgarian, this is aorist. It can be used with both imperfective and 
   <li><b>Взе</b> ли си изпита? / <em><b>Vze</b> li si izpita?</em> “Did you take the exam?”</li>
 </ul>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now, that are crossing the moment of speaking or that
 usually happen. In Bulgarian present tense has a lot of usages: for actual activities (where the perfective verbs are blocked);
@@ -796,7 +797,7 @@ for historical events, for habitual activities, etc.</p>
   <li>Всеки ден <b>чета</b>. / <em>Vseki den cheta</em> “I read every day”.</li>
 </ul>
 
-<h3 id="imp-imperfect"><code>Imp</code>: imperfect</h3>
+<h3 id="imp-imperfect"><code class="highlighter-rouge">Imp</code>: imperfect</h3>
 
 <p>Imperfect is a special case of the past tense. It denotes actions that are happening during
 some past moment. These actions might continue after the moment of speaking, but also might not, i.e.
@@ -819,16 +820,16 @@ forms in some languages actually form a gray zone between verbs and
 other parts of speech (<a href="u-pos/NOUN">nouns</a>, <a href="u-pos/ADJ">adjectives</a>
 and <a href="u-pos/ADV">adverbs</a>). For instance, participles may be either
 classified as verbs or as adjectives, depending on language and
-context. In both cases <code>VerbForm=Part</code> may be used to separate them
+context. In both cases <code class="highlighter-rouge">VerbForm=Part</code> may be used to separate them
 from other verb forms or other types of adjectives.</p>
 
 <p>Bulgarian does not have an infinitive. It distinguishes: finite verbs and non-finite verbs (participles
 and transgressives).</p>
 
-<h3 id="fin-finite-verb"><code>Fin</code>: finite verb</h3>
+<h3 id="fin-finite-verb"><code class="highlighter-rouge">Fin</code>: finite verb</h3>
 
 <p>Rule of thumb: if it has non-empty <a href="">Mood</a>, it is finite.
-This features is encoded in the following values as second position in verbal tags: <code>Vp#</code> (personal verb); <code>Vn#</code> (impersonal verb); <code>Vx#</code>, <code>Vy#</code> and <code>Vi#</code> (auxiliary verbs).</p>
+This features is encoded in the following values as second position in verbal tags: <code class="highlighter-rouge">Vp#</code> (personal verb); <code class="highlighter-rouge">Vn#</code> (impersonal verb); <code class="highlighter-rouge">Vx#</code>, <code class="highlighter-rouge">Vy#</code> and <code class="highlighter-rouge">Vi#</code> (auxiliary verbs).</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -838,23 +839,23 @@ This features is encoded in the following values as second position in verbal ta
   <li>Прочетох книгата / <em>Prochetoh knigata</em> “I read the book”</li>
 </ul>
 
-<h3 id="part-participle"><code>Part</code>: participle</h3>
+<h3 id="part-participle"><code class="highlighter-rouge">Part</code>: participle</h3>
 
 <p>Participle is a non-finite verb form that shares properties of verbs
-and adjectives. The participle in Bulgarian is encoded as <code>c</code> in fifth position of the tag: <code>V#c#</code>.</p>
+and adjectives. The participle in Bulgarian is encoded as <code class="highlighter-rouge">c</code> in fifth position of the tag: <code class="highlighter-rouge">V#c#</code>.</p>
 
 <p>In Bulgarian there are four types of participles: <em>present active, past perfective active, past imperfective active, past passive</em>. The present active one can be used only adjectively; the past imperfective one can be used only in evidential verb forms; the other have the two usages. The <em>present active</em> can be derived only from imperfective verbs.</p>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li>виждащ / <em>vizhdasht</em> “seeing” (present active). BulTreeBank tag: <code>V#car#</code></li>
-  <li>видял / <em>vidyal</em> “seen” (past perfective active). BulTreeBank tag: <code>V#cao#</code></li>
-  <li>видел / <em>videl</em> “seen” (past imperfective active). BulTreeBank tag: <code>V#cam#</code></li>
-  <li>видян / <em>vidyan</em> “seen” (past passive). BulTreeBank tag: <code>V#cv#</code></li>
+  <li>виждащ / <em>vizhdasht</em> “seeing” (present active). BulTreeBank tag: <code class="highlighter-rouge">V#car#</code></li>
+  <li>видял / <em>vidyal</em> “seen” (past perfective active). BulTreeBank tag: <code class="highlighter-rouge">V#cao#</code></li>
+  <li>видел / <em>videl</em> “seen” (past imperfective active). BulTreeBank tag: <code class="highlighter-rouge">V#cam#</code></li>
+  <li>видян / <em>vidyan</em> “seen” (past passive). BulTreeBank tag: <code class="highlighter-rouge">V#cv#</code></li>
 </ul>
 
-<h3 id="trans-transgressive"><code>Trans</code>: transgressive</h3>
+<h3 id="trans-transgressive"><code class="highlighter-rouge">Trans</code>: transgressive</h3>
 
 <p>The transgressive, also called adverbial participle, is a non-finite
 verb form that shares properties of verbs and adverbs. It appears
@@ -865,7 +866,7 @@ e.g. in Slavic and Indo-Aryan languages.</p>
 <h4 id="examples-2">Examples</h4>
 
 <ul>
-  <li>Виждайки това, той се разстрои / <em>Vizhdayki tova, toy se razstroi</em> “Having seen this, he became upset”. BulTreebang tag: <code>V#g</code></li>
+  <li>Виждайки това, той се разстрои / <em>Vizhdayki tova, toy se razstroi</em> “Having seen this, he became upset”. BulTreebang tag: <code class="highlighter-rouge">V#g</code></li>
 </ul>
 
 <p>Note that the symbol `#’, used in the Universal POS section indicates a holder for arbitrary number of features, suppressed in the respective tag as irrelevant in the BulTreeBank tagset, when mapped to the Universal one.</p>
@@ -886,7 +887,7 @@ categorized as voice.</p>
 
 <p>Here the 2-voice theory is adopted.</p>
 
-<h3 id="act-active-voice"><code>Act</code>: active voice</h3>
+<h3 id="act-active-voice"><code class="highlighter-rouge">Act</code>: active voice</h3>
 
 <p>The subject of the verb is the doer of the action (agent), the object
 is affected by the action (pacient).</p>
@@ -899,7 +900,7 @@ is affected by the action (pacient).</p>
   <li>Децата <b>се измиха</b>. / <em>Detsata se izmiha</em> “The children washed themselves”.</li>
 </ul>
 
-<h3 id="pass-passive-voice"><code>Pass</code>: passive voice</h3>
+<h3 id="pass-passive-voice"><code class="highlighter-rouge">Pass</code>: passive voice</h3>
 
 <p>The subject of the verb is affected by the action (patient). The doer
 (agent) is either unexpressed or it appears as an object of the verb.
@@ -931,6 +932,7 @@ In Bulgarian there are two ways of forming passive:</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -962,11 +964,40 @@ In Bulgarian there are two ways of forming passive:</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -990,6 +1021,7 @@ In Bulgarian there are two ways of forming passive:</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'bg-overview';
@@ -1015,7 +1047,7 @@ In Bulgarian there are two ways of forming passive:</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

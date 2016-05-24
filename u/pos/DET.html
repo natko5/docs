@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/u/pos">u/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/pos">u/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-pos/DET.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -47,11 +48,11 @@ indefinite element of a class, to a closer or more distant element, to
 an element belonging to a specified person or thing, to a particular
 number or quantity, etc.</p>
 
-<p>Note that the <code>DET</code> tag includes (pronominal) <em>quantifiers</em> (words
+<p>Note that the <code class="highlighter-rouge">DET</code> tag includes (pronominal) <em>quantifiers</em> (words
 like <em>many, few, several),</em> which are included among determiners in
 some languages but may belong to numerals in others. However,
 <em>cardinal numerals</em> in the narrow sense <em>(one, five, hundred)</em> are not
-tagged <code>DET</code> even though some authors would include them in
+tagged <code class="highlighter-rouge">DET</code> even though some authors would include them in
 quantifiers. Cardinal numbers have their own tag <a href="">NUM</a>.</p>
 
 <p>Also note that the notion of determiners is unknown in grammars of
@@ -59,16 +60,16 @@ some languages (e.g. Czech); words equivalent to English determiners
 may be traditionally classified as <a href="PRON">pronouns</a> and/or
 <a href="NUM">numerals</a> in these languages. In order to annotate the same
 thing the same way across languages, the words satisfying our definition
-of determiners should be tagged <code>DET</code> in these languages as well.</p>
+of determiners should be tagged <code class="highlighter-rouge">DET</code> in these languages as well.</p>
 
 <p>For instance, [en] <em>this</em> is either pronoun <em>(I saw <b>this</b>
 yesterday.)</em> or determiner <em>(I saw <b>this</b> car yesterday.)</em> Its
 Czech translation, [cs] <em>tohle</em>, is traditionally called pronoun in
 Czech grammar, regardless of context. To make the annotation parallel
 across languages, it should be now tagged <a href="">PRON</a> in <em><b>Tohle</b>
-jsem viděl včera.</em> and <code>DET</code> in <em><b>Tohle</b> auto jsem viděl včera.</em></p>
+jsem viděl včera.</em> and <code class="highlighter-rouge">DET</code> in <em><b>Tohle</b> auto jsem viděl včera.</em></p>
 
-<p>Usually a nominal allows only one <code>DET</code> modifier, but there are occasional cases of <em>addeterminers</em>, which appear outside the usual determiner, such as [en] <em>all</em> in <em><b>all</b> the children survived</em>.  In such cases, both <em>all</em> and <em>the</em> are given the POS <code>DET</code>.</p>
+<p>Usually a nominal allows only one <code class="highlighter-rouge">DET</code> modifier, but there are occasional cases of <em>addeterminers</em>, which appear outside the usual determiner, such as [en] <em>all</em> in <em><b>all</b> the children survived</em>.  In such cases, both <em>all</em> and <em>the</em> are given the POS <code class="highlighter-rouge">DET</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -150,6 +151,7 @@ DET in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -181,11 +183,40 @@ DET in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -209,6 +240,7 @@ DET in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-pos';
@@ -234,7 +266,7 @@ DET in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

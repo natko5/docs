@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-overview/specific-syntax.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -139,7 +140,7 @@ verbs (like “seem”, “look”, “appear” in English), the nominal predic
   <li><em>He painted the house <strong>blue</strong>.</em> [optional, resultative, transitive host]</li>
 </ul>
 
-<p>In UD, obligatory predicatives are always treated as an <code>xcomp</code>: The secondary predicate is attached as an <code>xcomp</code> of the main predicate. In most cases, as well as an adjective depictive, you can use a verbal or nominal predicate in the same position (e.g., <em>He looked [an idiot]</em>; <em>This made me [seethe with anger]</em>).</p>
+<p>In UD, obligatory predicatives are always treated as an <code class="highlighter-rouge">xcomp</code>: The secondary predicate is attached as an <code class="highlighter-rouge">xcomp</code> of the main predicate. In most cases, as well as an adjective depictive, you can use a verbal or nominal predicate in the same position (e.g., <em>He looked [an idiot]</em>; <em>This made me [seethe with anger]</em>).</p>
 
 <pre><code class="language-sdparse">She declared the cake beautiful .
 nsubj(declared, She)
@@ -163,7 +164,7 @@ dobj(jmenovat, někoho)
 xcomp(jmenovat, generálem)
 </code></pre>
 
-<p>The relation <code>xcomp</code> is used for core arguments of clausal predicates,
+<p>The relation <code class="highlighter-rouge">xcomp</code> is used for core arguments of clausal predicates,
 so it will not be used for some other instances of secondary predication.
 Optional depictives are analyzed as adjuncts, and made the <a href="">acl</a> of the nominal that they semantically modify (if one is present).</p>
 
@@ -175,7 +176,7 @@ On the other hand, leaving out <em>beautiful</em> in <em>She declared the cake b
 will either render the sentence ungrammatical or lead to a different interpretation of <em>declared.</em></p>
 
 <p>The result is that in <em>She entered the room sad,</em> <em>sad</em> will depend on <em>She</em>
-and the relation will be <a href="">acl</a> instead of <code>xcomp</code>:</p>
+and the relation will be <a href="">acl</a> instead of <code class="highlighter-rouge">xcomp</code>:</p>
 
 <pre><code class="language-sdparse">She entered the room sad .
 dobj(entered, room)
@@ -197,7 +198,7 @@ advcl(She-entered, sad)
 </code></pre>
 
 <p>The remaining, most subtle case is optional resultatives. For these, 
-we uniformly use <code>xcomp</code>:</p>
+we uniformly use <code class="highlighter-rouge">xcomp</code>:</p>
 
 <pre><code class="language-sdparse">He painted the house blue .
 dobj(painted, house)
@@ -207,7 +208,7 @@ xcomp(painted, blue)
 <p>Even though the resultative is optional here, one may argue that it is still a complement (an argument) of the higher verb
 (he is painting something blue), in a way that is not true of depictives. Such an analysis of optional resultatives as core arguments is adopted for English by Huddleston and Pullum (p. 262). In LFG terms, we would say that the verb has acquired a new
 subcategorization frame by application of a lexical rule, and that this frame
-includes an additional <code>xcomp</code> argument. Such an analysis is buttressed by the fact that normally intransitive verbs like <em>to bark</em> can also form similar resultatives by gaining a new subcategorization which adds both a <code>dobj</code> and an <code>xcomp</code>, as in the example below.</p>
+includes an additional <code class="highlighter-rouge">xcomp</code> argument. Such an analysis is buttressed by the fact that normally intransitive verbs like <em>to bark</em> can also form similar resultatives by gaining a new subcategorization which adds both a <code class="highlighter-rouge">dobj</code> and an <code class="highlighter-rouge">xcomp</code>, as in the example below.</p>
 
 <pre><code class="language-sdparse">The dog barked the neighbors awake .
 dobj(barked, neighbors)
@@ -465,7 +466,7 @@ the most important and difficult are those where the missing word has dependents
 Where do we attach these orphans to?</p>
 
 <p>Several different solutions can be found in treebanks.
-One of them is to include an empty node (labeled <code>NULL</code>, <code>#Fantom</code> etc.) that represents the missing word.
+One of them is to include an empty node (labeled <code class="highlighter-rouge">NULL</code>, <code class="highlighter-rouge">#Fantom</code> etc.) that represents the missing word.
 Orphans are then attached to the empty node with their real dependency relation labels.
 Such analysis would be linguistically adequate but it would violate our principle that dependencies exist
 between real syntactic words. (It would also make parsing more difficult.)
@@ -476,7 +477,7 @@ i.e. parent of the missing parent node. Then they may</p>
 
 <ul>
   <li>keep the labels they would have if attached to the missing parent</li>
-  <li>get a special label such as the <code>ExD</code> in Prague-style treebanks</li>
+  <li>get a special label such as the <code class="highlighter-rouge">ExD</code> in Prague-style treebanks</li>
   <li>combine both (in the Danish treebank, the original labels are surrounded by angle brackets to indicate that this is not the real parent)</li>
 </ul>
 
@@ -502,6 +503,7 @@ Universal Dependencies annnotate such cases using the <a href="">u-dep/remnant</
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -533,11 +535,40 @@ Universal Dependencies annnotate such cases using the <a href="">u-dep/remnant</
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -561,6 +592,7 @@ Universal Dependencies annnotate such cases using the <a href="">u-dep/remnant</
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-overview';
@@ -586,7 +618,7 @@ Universal Dependencies annnotate such cases using the <a href="">u-dep/remnant</
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

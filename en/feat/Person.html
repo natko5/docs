@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-en">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/en/feat">en/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/en/feat">en/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-feat/Person.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,9 +39,9 @@
 
           <h2><code>Person</code>: person</h2>
 
-<p>In English, <code>Person</code> is a feature of personal and possessive <a href="en-pos/PRON">pronouns</a>, and of some <a href="en-pos/VERB">verbs</a> to mark agreement with its subject.</p>
+<p>In English, <code class="highlighter-rouge">Person</code> is a feature of personal and possessive <a href="en-pos/PRON">pronouns</a>, and of some <a href="en-pos/VERB">verbs</a> to mark agreement with its subject.</p>
 
-<h3 id="first-person"><code>1</code>: first person</h3>
+<h3 id="first-person"><code class="highlighter-rouge">1</code>: first person</h3>
 
 <p>In singular, the first person refers just to the speaker / author. In plural, it must include the speaker and one or more additional persons.</p>
 
@@ -50,7 +51,7 @@
   <li><em>am, was</em> (if <em>I</em> is its subject)<em>, I, we, me, us, my, mine, our, ours, myself, ourselves</em></li>
 </ul>
 
-<h3 id="second-person"><code>2</code>: second person</h3>
+<h3 id="second-person"><code class="highlighter-rouge">2</code>: second person</h3>
 
 <p>In singular, the second person refers to the addressee of the utterance / text. In plural, it may mean several addressees and optionally some third persons too.</p>
 
@@ -60,7 +61,7 @@
   <li><em>you, your, yours, yourself, yourselves</em></li>
 </ul>
 
-<h3 id="second-person-1"><code>3</code>: second person</h3>
+<h3 id="second-person-1"><code class="highlighter-rouge">3</code>: second person</h3>
 
 <p>The third person refers to one or more persons that are neither speakers nor addressees.</p>
 
@@ -70,9 +71,9 @@
   <li><em>he, she, it, they, him, her, them, his, hers, their, theirs, himself, herself, itself, themselves</em></li>
 </ul>
 
-<p>Additionally, it is used for verbs that require a third person singular subject which have the PTB tag <code>VBZ</code>.</p>
+<p>Additionally, it is used for verbs that require a third person singular subject which have the PTB tag <code class="highlighter-rouge">VBZ</code>.</p>
 
-<h4 id="examples">Examples:</h4>
+<p>####Examples:</p>
 
 <ul>
   <li><em>he <b>walks</b></em></li>
@@ -93,42 +94,42 @@
 <h2 id="treebank-statistics-udenglish">Treebank Statistics (UD_English)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>1</code>, <code>2</code>, <code>3</code>.</p>
+It occurs with 3 different values: <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">2</code>, <code class="highlighter-rouge">3</code>.</p>
 
-<p>26169 tokens (10%) have a non-empty value of <code>Person</code>.
-545 types (3%) occur at least once with a non-empty value of <code>Person</code>.
-451 lemmas (3%) occur at least once with a non-empty value of <code>Person</code>.
+<p>26169 tokens (10%) have a non-empty value of <code class="highlighter-rouge">Person</code>.
+545 types (3%) occur at least once with a non-empty value of <code class="highlighter-rouge">Person</code>.
+451 lemmas (3%) occur at least once with a non-empty value of <code class="highlighter-rouge">Person</code>.
 The feature is used with 3 part-of-speech tags: <a href="">en-pos/PRON</a> (18621; 7% instances), <a href="">en-pos/VERB</a> (5680; 2% instances), <a href="">en-pos/AUX</a> (1868; 1% instances).</p>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="pron"><code class="highlighter-rouge">PRON</code></h3>
 
-<p>18621 <a href="">en-pos/PRON</a> tokens (88% of all <code>PRON</code> tokens) have a non-empty value of <code>Person</code>.</p>
+<p>18621 <a href="">en-pos/PRON</a> tokens (84% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Person</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (18621; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (14981; 80%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (13806; 74%), <tt><a href="Case.html">Case</a>=Nom</tt> (11774; 63%), <tt><a href="Number.html">Number</a>=Sing</tt> (11043; 59%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Person</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (18621; 100%), <tt><a href="Poss.html">Poss</a>=EMPTY</tt> (14981; 80%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (13806; 74%), <tt><a href="Case.html">Case</a>=Nom</tt> (11774; 63%), <tt><a href="Number.html">Number</a>=Sing</tt> (11043; 59%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Person</code>:</p>
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Person</code>:</p>
 
 <ul>
-  <li><code>1</code> (7940; 43% of non-empty <code>Person</code>): <em>i, my, we, me, our, us, myself, ourselves</em></li>
-  <li><code>2</code> (3606; 19% of non-empty <code>Person</code>): <em>you, your, yourself, yourselves</em></li>
-  <li><code>3</code> (7075; 38% of non-empty <code>Person</code>): <em>it, they, he, their, his, them, him, she, her, its</em></li>
-  <li><code>EMPTY</code> (2607): <em>this, what, there, who, that, those, these, one, mine, whom</em></li>
+  <li><code class="highlighter-rouge">1</code> (7940; 43% of non-empty <code class="highlighter-rouge">Person</code>): <em>i, my, we, me, our, us, myself, ourselves</em></li>
+  <li><code class="highlighter-rouge">2</code> (3606; 19% of non-empty <code class="highlighter-rouge">Person</code>): <em>you, your, yourself, yourselves</em></li>
+  <li><code class="highlighter-rouge">3</code> (7075; 38% of non-empty <code class="highlighter-rouge">Person</code>): <em>it, they, he, their, his, them, him, she, her, its</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (3656): <em>that, this, what, there, who, which, those, these, one, mine</em></li>
 </ul>
 
-<p><code>Person</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (19) occur only with one value of <code>Person</code>.</p>
+<p><code class="highlighter-rouge">Person</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">PRON</code>. 100% lemmas (19) occur only with one value of <code class="highlighter-rouge">Person</code>.</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>5680 <a href="">en-pos/VERB</a> tokens (17% of all <code>VERB</code> tokens) have a non-empty value of <code>Person</code>.</p>
+<p>5680 <a href="">en-pos/VERB</a> tokens (17% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Person</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5680; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (5680; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (5680; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (4715; 83%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Person</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5680; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (5680; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (5680; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (4715; 83%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Person</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Person</code>:</p>
 
 <ul>
-  <li><code>1</code> (162; 3% of non-empty <code>Person</code>): <em>am, was</em></li>
-  <li><code>3</code> (5518; 97% of non-empty <code>Person</code>): <em>is, was, ‘s, has, s, says, makes, seems, needs, looks</em></li>
-  <li><code>EMPTY</code> (28398): <em>have, are, be, get, know, had, go, do, want, said</em></li>
+  <li><code class="highlighter-rouge">1</code> (162; 3% of non-empty <code class="highlighter-rouge">Person</code>): <em>am, was</em></li>
+  <li><code class="highlighter-rouge">3</code> (5518; 97% of non-empty <code class="highlighter-rouge">Person</code>): <em>is, was, ‘s, has, s, says, makes, seems, needs, looks</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (28398): <em>have, are, be, get, know, had, go, do, want, said</em></li>
 </ul>
 
 <table>
@@ -137,20 +138,20 @@ The feature is used with 3 part-of-speech tags: <a href="">en-pos/PRON</a> (1862
   <tr><td><tt><a href="Tense.html">Tense</a>=Pres</tt></td><td><em>am</em></td><td><em>is, 's, s, ai</em></td></tr>
 </table>
 
-<p><code>Person</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (432) occur only with one value of <code>Person</code>.</p>
+<p><code class="highlighter-rouge">Person</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (432) occur only with one value of <code class="highlighter-rouge">Person</code>.</p>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="highlighter-rouge">AUX</code></h3>
 
-<p>1868 <a href="">en-pos/AUX</a> tokens (19% of all <code>AUX</code> tokens) have a non-empty value of <code>Person</code>.</p>
+<p>1868 <a href="">en-pos/AUX</a> tokens (19% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">Person</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Person</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1868; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1868; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1868; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1362; 73%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">Person</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1868; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1868; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1868; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1362; 73%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Person</code>:</p>
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">Person</code>:</p>
 
 <ul>
-  <li><code>1</code> (212; 11% of non-empty <code>Person</code>): <em>am, was</em></li>
-  <li><code>3</code> (1656; 89% of non-empty <code>Person</code>): <em>is, has, was, does, ‘s, s, gets, `s</em></li>
-  <li><code>EMPTY</code> (7880): <em>will, can, would, have, do, be, are, could, should, did</em></li>
+  <li><code class="highlighter-rouge">1</code> (212; 11% of non-empty <code class="highlighter-rouge">Person</code>): <em>am, was</em></li>
+  <li><code class="highlighter-rouge">3</code> (1656; 89% of non-empty <code class="highlighter-rouge">Person</code>): <em>is, has, was, does, ‘s, s, gets, `s</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (7878): <em>will, can, would, have, do, be, are, could, should, did</em></li>
 </ul>
 
 <table>
@@ -159,9 +160,9 @@ The feature is used with 3 part-of-speech tags: <a href="">en-pos/PRON</a> (1862
   <tr><td><tt><a href="Tense.html">Tense</a>=Pres</tt></td><td><em>am</em></td><td><em>is, 's, s</em></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-person">Relations with Agreement in <code>Person</code></h2>
+<h2 id="relations-with-agreement-in-person">Relations with Agreement in <code class="highlighter-rouge">Person</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Person</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Person</code>:
 <tt>PRON –[<a href="../dep/nmod:npmod.html">nmod:npmod</a>]–&gt; PRON</tt> (3; 100%),
 <tt>PRON –[<a href="../dep/case.html">case</a>]–&gt; VERB</tt> (1; 100%).</p>
 
@@ -222,6 +223,7 @@ Person in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -253,11 +255,40 @@ Person in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -281,6 +312,7 @@ Person in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'en-feat';
@@ -306,7 +338,7 @@ Person in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

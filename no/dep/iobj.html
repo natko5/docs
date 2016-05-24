@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-no">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/no/dep">no/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-no">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/no/dep">no/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-dep/iobj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>iobj</code>: indirect object</h2>
 
-<p>The indirect object of a verb is any nominal phrase that is a core argument of the verb but is not its subject or direct object. The <code>iobj</code> relation presupposes a <code>dobj</code> argument of the same word and is only used for nominal arguments. Note that nominals with a preposition such as <em>til</em> “to” which are semantically similar to indirect object in the expression of a recipient role are not analyzed as <code>iobj</code>.</p>
+<p>The indirect object of a verb is any nominal phrase that is a core argument of the verb but is not its subject or direct object. The <code class="highlighter-rouge">iobj</code> relation presupposes a <code class="highlighter-rouge">dobj</code> argument of the same word and is only used for nominal arguments. Note that nominals with a preposition such as <em>til</em> “to” which are semantically similar to indirect object in the expression of a recipient role are not analyzed as <code class="highlighter-rouge">iobj</code>.</p>
 
 <pre><code class="language-sdparse">gi den ubehøvlede unge mannen en sjanse \n give the rude young man a chance
 iobj(gi-1,mannen-5)
@@ -60,12 +61,12 @@ dobj(gi-1,sjanse-7)
 
 <p>This relation is universal.</p>
 
-<p>695 nodes (0%) are attached to their parents as <code>iobj</code>.</p>
+<p>695 nodes (0%) are attached to their parents as <code class="highlighter-rouge">iobj</code>.</p>
 
-<p>594 instances of <code>iobj</code> (85%) are left-to-right (parent precedes child).
+<p>594 instances of <code class="highlighter-rouge">iobj</code> (85%) are left-to-right (parent precedes child).
 Average distance between parent and child is 1.44892086330935.</p>
 
-<p>The following 7 pairs of parts of speech are connected with <code>iobj</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (482; 69% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/NOUN</a> (145; 21% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/PROPN</a> (48; 7% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADJ</a> (12; 2% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (4; 1% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/SCONJ</a> (3; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/VERB</a> (1; 0% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code class="highlighter-rouge">iobj</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (482; 69% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/NOUN</a> (145; 21% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/PROPN</a> (48; 7% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADJ</a> (12; 2% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (4; 1% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/SCONJ</a> (3; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -75,8 +76,8 @@ Average distance between parent and child is 1.44892086330935.</p>
 1	Berntsen	Berntsen	PROPN	_	_	3	nsubj	_	_
 2	har	ha	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin	3	aux	_	_
 3	påtatt	påta	VERB	_	VerbForm=Part	0	root	_	_
-4	seg	seg	PRON	_	Case=Acc|Reflex=Yes	3	iobj	_	_
-5	en	en	DET	_	Gender=Masc|Number=Sing	10	det	_	_
+4	seg	seg	PRON	_	Case=Acc|PronType=Prs|Reflex=Yes	3	iobj	_	_
+5	en	en	DET	_	Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 6	både	både	CONJ	_	_	7	cc	_	_
 7	viktig	viktig	ADJ	_	Definite=Ind|Degree=Pos|Number=Sing	10	amod	_	_
 8	og	og	CONJ	_	_	7	cc	_	_
@@ -178,6 +179,7 @@ iobj in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -209,11 +211,40 @@ iobj in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -237,6 +268,7 @@ iobj in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'no-dep';
@@ -262,7 +294,7 @@ iobj in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

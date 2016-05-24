@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -133,20 +134,20 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>Currently, all abbreviations are converted to <code>X</code> and assigned the <code>Abbr=Yes</code> feature.</p>
+<p>Currently, all abbreviations are converted to <code class="highlighter-rouge">X</code> and assigned the <code class="highlighter-rouge">Abbr=Yes</code> feature.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Abbreviation.md" target="#">edit Abbr</a></p>
 
 <p><a id="al-sl-feat/Animacy" class="al-dest"></a></p>
 <h2><code>Animacy</code>: animacy</h2>
 
-<p>In contrast to some other languages, the Slovenian tagset does not consider <code>Animacy</code> to be a lexical feature, as certain types of inanimate nouns, such as institutions, personified objects, brand names etc., often take on both semantic and grammatical features of animate nouns.</p>
+<p>In contrast to some other languages, the Slovenian tagset does not consider <code class="highlighter-rouge">Animacy</code> to be a lexical feature, as certain types of inanimate nouns, such as institutions, personified objects, brand names etc., often take on both semantic and grammatical features of animate nouns.</p>
 
 <p>Animacy is thus only marked as an inflectional feature of <a href="Gender">masculine</a> <a href="NOUN">nouns</a> and <a href="PROPN">proper nouns</a> to distinguish between animate and inanimate word forms in <a href="Case">accusative</a> <a href="Number">singular</a>, e.g. <em>Odstrigla si je <b>koder</b>.</em> “She cut off a curl.” (inanimate) vs. <em>Videla je <b>kodra</b>.</em> “She saw a poodle.” (animate).</p>
 
-<h3 id="anim-animate"><code>Anim</code>: animate</h3>
+<h3 id="anim-animate"><code class="highlighter-rouge">Anim</code>: animate</h3>
 
-<p><code>Animate</code> value is attributed to masculine nouns in accusative singular usually ending in -a:</p>
+<p><code class="highlighter-rouge">Animate</code> value is attributed to masculine nouns in accusative singular usually ending in -a:</p>
 
 <ul>
   <li><em>človeka</em> “man”, <em>delfina</em> “dolphin”, <em>Davida</em> “David”, <em>ministra</em> “minister”</li>
@@ -158,9 +159,9 @@
   <li><em>Renaulta</em> “Renault”, <em>pomivalca</em> “washing machine”, <em>bordojca</em> “Bordeaux wine”, <em>asa</em> “ace” etc.</li>
 </ul>
 
-<h3 id="inan-inanimate"><code>Inan</code>: inanimate</h3>
+<h3 id="inan-inanimate"><code class="highlighter-rouge">Inan</code>: inanimate</h3>
 
-<p><code>Inanimate</code> value is attributed to all other masculine nouns in accusative singular:</p>
+<p><code class="highlighter-rouge">Inanimate</code> value is attributed to all other masculine nouns in accusative singular:</p>
 
 <ul>
   <li><em>avto</em> “car”, <em>fikus</em> “ficus”, <em>čevelj</em> “shoe”</li>
@@ -168,7 +169,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All nouns with Animate=yes are converted to <code>Animacy=Anim</code> and all nouns with Animate=no are converted to <code>Animacy=Inan</code>.</p>
+<p>All nouns with Animate=yes are converted to <code class="highlighter-rouge">Animacy=Anim</code> and all nouns with Animate=no are converted to <code class="highlighter-rouge">Animacy=Inan</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Animacy.md" target="#">edit Animacy</a></p>
 
@@ -177,9 +178,9 @@
 
 <p>Aspect is a lexical feature of <a href="VERB">verbs</a> that specifies the duration and completion of action in time.</p>
 
-<p>Slovenian grammar distinguishes two aspect values: <code>imperfect</code> and <code>perfect</code>. Pairs of imperfective and perfective verbs exist and are often morphologically related, but the verbs are considered to belong to separate lemmas.</p>
+<p>Slovenian grammar distinguishes two aspect values: <code class="highlighter-rouge">imperfect</code> and <code class="highlighter-rouge">perfect</code>. Pairs of imperfective and perfective verbs exist and are often morphologically related, but the verbs are considered to belong to separate lemmas.</p>
 
-<h3 id="imp-imperfect-aspect"><code>Imp</code>: imperfect aspect</h3>
+<h3 id="imp-imperfect-aspect"><code class="highlighter-rouge">Imp</code>: imperfect aspect</h3>
 
 <p>The action took / takes / will take some time span and there is no information whether and when it was / will be completed.</p>
 
@@ -187,7 +188,7 @@
   <li><em>Danes se ni <b>zgodilo</b> nič posebnega.</em> “Nothing special has happened today.”</li>
 </ul>
 
-<h3 id="perf-perfect-aspect"><code>Perf</code>: perfect aspect</h3>
+<h3 id="perf-perfect-aspect"><code class="highlighter-rouge">Perf</code>: perfect aspect</h3>
 
 <p>The action has been / will have been completed. Since there is emphasis on one point on the time scale (the point of completion).</p>
 
@@ -195,9 +196,9 @@
   <li><em>Pogosto se je <b>dogajalo</b>, da je zamujal.</em> “It often happened he was late.”</li>
 </ul>
 
-<h3 id="verbs-without-aspect">Verbs without <code>Aspect</code></h3>
+<h3 id="verbs-without-aspect">Verbs without <code class="highlighter-rouge">Aspect</code></h3>
 
-<p>Verbs without <code>Aspect</code> are considered to be biaspectual, i.e. they can either denote duration or completion, but their actual interpretation depends on the context.</p>
+<p>Verbs without <code class="highlighter-rouge">Aspect</code> are considered to be biaspectual, i.e. they can either denote duration or completion, but their actual interpretation depends on the context.</p>
 
 <ul>
   <li><em>Takoj sem <b>telefoniral</b> na policijo.</em> “I called the police immediately”</li>
@@ -206,19 +207,19 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>Verbs with Aspect=perfective are converted to <code>Aspect=Perf</code>, verbs with Aspect=imperfective are converted <code>Aspect=Imp</code> and verbs with Aspect=biaspectual are not assigned the <code>Aspect</code> feature.</p>
+<p>Verbs with Aspect=perfective are converted to <code class="highlighter-rouge">Aspect=Perf</code>, verbs with Aspect=imperfective are converted <code class="highlighter-rouge">Aspect=Imp</code> and verbs with Aspect=biaspectual are not assigned the <code class="highlighter-rouge">Aspect</code> feature.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Aspect.md" target="#">edit Aspect</a></p>
 
 <p><a id="al-sl-feat/Case" class="al-dest"></a></p>
 <h2><code>Case</code>: case</h2>
 
-<p><code>Case</code> is an inflectional feature of <a href="ADJ">adjectives</a>, <a href="DET">determiners</a>, <a href="NOUN">nouns</a>, <a href="NUM">numerals</a>, <a href="PRON">pronouns</a> and <a href="PROPN">proper nouns</a>, as well as a valency (lexical) feature of <a href="ADP">adpositions</a>.</p>
+<p><code class="highlighter-rouge">Case</code> is an inflectional feature of <a href="ADJ">adjectives</a>, <a href="DET">determiners</a>, <a href="NOUN">nouns</a>, <a href="NUM">numerals</a>, <a href="PRON">pronouns</a> and <a href="PROPN">proper nouns</a>, as well as a valency (lexical) feature of <a href="ADP">adpositions</a>.</p>
 
 <p>Slovenian morphology distinguishes six cases:
-<code>Nom</code>, <code>Gen</code>, <code>Dat</code>, <code>Acc</code>, <code>Loc</code> and <code>Ins</code>.</p>
+<code class="highlighter-rouge">Nom</code>, <code class="highlighter-rouge">Gen</code>, <code class="highlighter-rouge">Dat</code>, <code class="highlighter-rouge">Acc</code>, <code class="highlighter-rouge">Loc</code> and <code class="highlighter-rouge">Ins</code>.</p>
 
-<h3 id="nom-nominative"><code>Nom</code>: nominative</h3>
+<h3 id="nom-nominative"><code class="highlighter-rouge">Nom</code>: nominative</h3>
 
 <p>The base form of the noun, also used as citation form (lemma). This is the word form usually used for subjects of clauses and answers the question <em>Kdo ali kaj (je)?</em> “Who or what (is there)?”.</p>
 
@@ -226,7 +227,7 @@
   <li><em><b>Država</b> je dala jamstva</em>. “The state has given guarantees.”</li>
 </ul>
 
-<h3 id="gen-genitive"><code>Gen</code>: genitive</h3>
+<h3 id="gen-genitive"><code class="highlighter-rouge">Gen</code>: genitive</h3>
 
 <p>In addition to its prototypical meaning of a noun modifying another noun, genitive in Slovenian is used in certain syntactic positions, such as negation, or with certain prepositions. Word form in genetive answers the question <em>Koga ali česa (ni)?</em> “Who or what (is not there)?”</p>
 
@@ -236,7 +237,7 @@
   <li><em>brez <b>države</b></em> “without country”, <em>iz <b>države</b></em> “from country”</li>
 </ul>
 
-<h3 id="dat-dative"><code>Dat</code>: dative</h3>
+<h3 id="dat-dative"><code class="highlighter-rouge">Dat</code>: dative</h3>
 
 <p>This is the word form often used for indirect objects of verbs. It answers the question <em>Komu ali čemu (dam)?</em> “To whom or what (do I give)?”</p>
 
@@ -245,7 +246,7 @@
   <li><em>proti <b>državi</b></em> “against country”, <em>k <b>državi</b></em> “to country”</li>
 </ul>
 
-<h3 id="acc-accusative"><code>Acc</code>: accusative</h3>
+<h3 id="acc-accusative"><code class="highlighter-rouge">Acc</code>: accusative</h3>
 
 <p>This is the word form most frequently used for direct objects of verbs. It answers the question <em>Koga ali kaj (vidim)?</em> “Who or what (do I see)?”</p>
 
@@ -254,7 +255,7 @@
   <li><em>za <b>državo</b></em> “for country”, <em>v <b>državo</b></em> “in/to country”</li>
 </ul>
 
-<h3 id="loc-locative"><code>Loc</code>: locative</h3>
+<h3 id="loc-locative"><code class="highlighter-rouge">Loc</code>: locative</h3>
 
 <p>The locative case often expresses location in space or time, but non-locational meanings also exist. The locative word form answers the question <em>O kom ali čem (govorim)?</em> “Of whom or what (do I speak)?” and usually appears with a preposition.</p>
 
@@ -262,7 +263,7 @@
   <li><em>v <b>državi</b></em> “in the country”, <em>po <b>državi</b></em> “throughout the country”, <em>o <b>državi</b></em> “about the country”</li>
 </ul>
 
-<h3 id="ins-instrumental"><code>Ins</code>: instrumental</h3>
+<h3 id="ins-instrumental"><code class="highlighter-rouge">Ins</code>: instrumental</h3>
 
 <p>The instrumental case often expresses the instrument, means or accompaniment of an action, but other meanings also exist. The instrumental word form answers the question <em>S kom ali čim (delam)?</em> “With whom or what (do I work)?”</p>
 
@@ -272,7 +273,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>Tokens with feature Case=nominative are converted to <code>Case=Nom</code>, tokens with feature Case=genitive are converted to <code>Case=Gen</code>, tokens with feature Case=dative are converted to <code>Case=Dat</code>, tokens with feature Case=accusative are converted to <code>Case=Acc</code>, tokens with feature Case=locative are converted to <code>Case=Loc</code>, tokens with feature Case=instrumental are converted to <code>Case=Ins</code>.</p>
+<p>Tokens with feature Case=nominative are converted to <code class="highlighter-rouge">Case=Nom</code>, tokens with feature Case=genitive are converted to <code class="highlighter-rouge">Case=Gen</code>, tokens with feature Case=dative are converted to <code class="highlighter-rouge">Case=Dat</code>, tokens with feature Case=accusative are converted to <code class="highlighter-rouge">Case=Acc</code>, tokens with feature Case=locative are converted to <code class="highlighter-rouge">Case=Loc</code>, tokens with feature Case=instrumental are converted to <code class="highlighter-rouge">Case=Ins</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Case.md" target="#">edit Case</a></p>
 
@@ -281,7 +282,7 @@
 
 <p>Definiteness in Slovenian is an inflectional feature of masculine word forms in nominative and accusative singular that distinguishes whether we are talking about something known and concrete, or something general or unknown. It is currently marked on some <a href="ADJ">adjectives</a> and some <a href="DET">determiners</a>.</p>
 
-<h3 id="ind-indefinite"><code>Ind</code>: indefinite</h3>
+<h3 id="ind-indefinite"><code class="highlighter-rouge">Ind</code>: indefinite</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -292,7 +293,7 @@
   <li><em><b>sosedov</b> sin</em> “neighbour’s son”</li>
 </ul>
 
-<h3 id="def-definite"><code>Def</code>: definite</h3>
+<h3 id="def-definite"><code class="highlighter-rouge">Def</code>: definite</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -305,9 +306,9 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All adjectives and numerals with feature Definiteness=yes are converted to <code>Definite=Def</code> and all adjectives and numerals with feature Definiteness=no are converted to <code>Definite=Ind</code>.</p>
+<p>All adjectives and numerals with feature Definiteness=yes are converted to <code class="highlighter-rouge">Definite=Def</code> and all adjectives and numerals with feature Definiteness=no are converted to <code class="highlighter-rouge">Definite=Ind</code>.</p>
 
-<p>However, note that definiteness has not been sufficiently solved within JOS, as it could also be attributed to other POS categories or category types, such as ordinal written numerals (<em>prvi, drugi, tretji</em>) and pronouns (<em>neki</em>). Consequently, some inconsistencies occur, as different JOS categories are merged into one UD category. For example, JOS-adjective <em>slovenski</em> “Slovenian” has feature <code>Definite=Def</code>, whereas JOS-numeral <em>prvi</em> “the first” does not have any <code>Definite</code> feature, although they are both tagged as UD <code>ADJ</code> and display identical grammatical characteristics.</p>
+<p>However, note that definiteness has not been sufficiently solved within JOS, as it could also be attributed to other POS categories or category types, such as ordinal written numerals (<em>prvi, drugi, tretji</em>) and pronouns (<em>neki</em>). Consequently, some inconsistencies occur, as different JOS categories are merged into one UD category. For example, JOS-adjective <em>slovenski</em> “Slovenian” has feature <code class="highlighter-rouge">Definite=Def</code>, whereas JOS-numeral <em>prvi</em> “the first” does not have any <code class="highlighter-rouge">Definite</code> feature, although they are both tagged as UD <code class="highlighter-rouge">ADJ</code> and display identical grammatical characteristics.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Definite.md" target="#">edit Definite</a></p>
 
@@ -316,7 +317,7 @@
 
 <p>Degree of comparison is an inflectional feature of some <a href="ADJ">adjectives</a> and <a href="ADV">adverbs</a>.</p>
 
-<h3 id="pos-positive-first-degree"><code>Pos</code>: positive, first degree</h3>
+<h3 id="pos-positive-first-degree"><code class="highlighter-rouge">Pos</code>: positive, first degree</h3>
 
 <p>This is the base form that merely states a quality of something, without comparing it to qualities of others.</p>
 
@@ -327,7 +328,7 @@
   <li><em><b>hitro</b></em> narejeno “quickly done”</li>
 </ul>
 
-<h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
+<h3 id="cmp-comparative-second-degree"><code class="highlighter-rouge">Cmp</code>: comparative, second degree</h3>
 
 <p>The quality of one object is compared to the same quality of another object. For most adverbs, two different word forms can be used interchangeably.</p>
 
@@ -338,7 +339,7 @@
   <li><em><b>hitreje / hitrejše </b></em> narejeno “done more quickly”</li>
 </ul>
 
-<h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
+<h3 id="sup-superlative-third-degree"><code class="highlighter-rouge">Sup</code>: superlative, third degree</h3>
 
 <p>The quality of one object is compared to the same quality of all other objects within a set. For most adverbs, two different word forms can be used interchangeably.</p>
 
@@ -351,14 +352,14 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All adjectives and adverbs with feature Degree=positive are converted to <code>Degree=Pos</code>, all adjectives and adverbs with feature Degree=comparative are converted to <code>Degree=Cmp</code>, all adjectives and adverbs with Degree=superlative are converted to <code>Degree=Sup</code>.</p>
+<p>All adjectives and adverbs with feature Degree=positive are converted to <code class="highlighter-rouge">Degree=Pos</code>, all adjectives and adverbs with feature Degree=comparative are converted to <code class="highlighter-rouge">Degree=Cmp</code>, all adjectives and adverbs with Degree=superlative are converted to <code class="highlighter-rouge">Degree=Sup</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Degree.md" target="#">edit Degree</a></p>
 
 <p><a id="al-sl-feat/Foreign" class="al-dest"></a></p>
 <h2><code>Foreign</code>: This is this a foreign word</h2>
 
-<p><code>Foreign</code> is a lexical feature of some words belonging to class <a href="X">X: other</a>. It is assigned to intervening foreign words that have not been analyzed grammatically. These can appear as a string or in combination with other Slovenian words. If a word is commonly used in Slovenian and displays Slovenian grammatical behavior, such as inflection, it is considered to be a Slovenian (loan) word, not a foreign word.</p>
+<p><code class="highlighter-rouge">Foreign</code> is a lexical feature of some words belonging to class <a href="X">X: other</a>. It is assigned to intervening foreign words that have not been analyzed grammatically. These can appear as a string or in combination with other Slovenian words. If a word is commonly used in Slovenian and displays Slovenian grammatical behavior, such as inflection, it is considered to be a Slovenian (loan) word, not a foreign word.</p>
 
 <h3 id="foreign-it-is-foreign">Foreign: it is foreign</h3>
 
@@ -372,7 +373,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All tokens with tag Residual and Type=foreign are converted to <code>X</code> and Foreign=Yes.</p>
+<p>All tokens with tag Residual and Type=foreign are converted to <code class="highlighter-rouge">X</code> and Foreign=Yes.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Foreign.md" target="#">edit Foreign</a></p>
 
@@ -381,7 +382,7 @@
 
 <p>Gender is a lexical feature of <a href="NOUN">nouns</a> and <a href="PROPN">proper nouns</a>, and an inflectional feature of other parts of speech (<a href="ADJ">adjectives</a>, <a href="VERB">verbs</a>, <a href="AUX">auxiliary</a>, <a href="PRON">pronouns</a>, <a href="DET">determiners</a> and <a href="NUM">numerals</a>) that mark agreement with nouns.</p>
 
-<h3 id="masc-masculine-gender"><code>Masc</code>: masculine gender</h3>
+<h3 id="masc-masculine-gender"><code class="highlighter-rouge">Masc</code>: masculine gender</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -392,7 +393,7 @@
   <li><em>stroj</em> “machine”</li>
 </ul>
 
-<h3 id="fem-feminine-gender"><code>Fem</code>: feminine gender</h3>
+<h3 id="fem-feminine-gender"><code class="highlighter-rouge">Fem</code>: feminine gender</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -403,7 +404,7 @@
   <li><em>perut</em> “wing”</li>
 </ul>
 
-<h3 id="neut-neuter-gender"><code>Neut</code>: neuter gender</h3>
+<h3 id="neut-neuter-gender"><code class="highlighter-rouge">Neut</code>: neuter gender</h3>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -416,47 +417,47 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All tokens with feature Gender=masculine are converted to <code>Gender=Masc</code>, all tokens with feature Gender=feminine are converted to <code>Gender=Fem</code> and all tokens with feature Gender=neuter are converted to <code>Gender=Neut</code>.</p>
+<p>All tokens with feature Gender=masculine are converted to <code class="highlighter-rouge">Gender=Masc</code>, all tokens with feature Gender=feminine are converted to <code class="highlighter-rouge">Gender=Fem</code> and all tokens with feature Gender=neuter are converted to <code class="highlighter-rouge">Gender=Neut</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Gender.md" target="#">edit Gender</a></p>
 
 <p><a id="al-sl-feat/Gender[psor]" class="al-dest"></a></p>
 <h2><code>Gender[psor]</code>: possessor’s gender</h2>
 
-<p>Possessive <a href="PRON">pronouns</a> and <a href="DET">determiners</a> may have two different genders: that of the possessed object (in agreement with the modifying noun, inflectional feature) and that of the possessor (inherent, lexical feature). The <code>Gender[psor]</code> feature denotes the possessor’s gender.</p>
+<p>Possessive <a href="PRON">pronouns</a> and <a href="DET">determiners</a> may have two different genders: that of the possessed object (in agreement with the modifying noun, inflectional feature) and that of the possessor (inherent, lexical feature). The <code class="highlighter-rouge">Gender[psor]</code> feature denotes the possessor’s gender.</p>
 
-<h3 id="masc-masculine-possessor"><code>Masc</code>: masculine possessor</h3>
+<h3 id="masc-masculine-possessor"><code class="highlighter-rouge">Masc</code>: masculine possessor</h3>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>njegova</b> hčerka</em> “his daughter” <code>Gender[psor]=Masc|Gender=Fem</code></li>
+  <li><em><b>njegova</b> hčerka</em> “his daughter” <code class="highlighter-rouge">Gender[psor]=Masc|Gender=Fem</code></li>
 </ul>
 
-<h3 id="fem-feminine-possessor"><code>Fem</code>: feminine possessor</h3>
+<h3 id="fem-feminine-possessor"><code class="highlighter-rouge">Fem</code>: feminine possessor</h3>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>njena</b> hčerka</em> “her daughter” <code>Gender[psor]=Fem|Gender=Fem</code></li>
+  <li><em><b>njena</b> hčerka</em> “her daughter” <code class="highlighter-rouge">Gender[psor]=Fem|Gender=Fem</code></li>
 </ul>
 
-<h3 id="neut-neuter-possessor"><code>Neut</code>: neuter possessor</h3>
+<h3 id="neut-neuter-possessor"><code class="highlighter-rouge">Neut</code>: neuter possessor</h3>
 
 <p>As possessor can also be a <a href="Gender">neuter</a> noun, we also distinguish the neuter possessor gender. However, its word forms are identical to that of masculine possessor gender and can only be disambiguated within context.</p>
 
 <h4 id="examples-2">Examples</h4>
 
 <ul>
-  <li><em>Kupili smo novo letalo.<code>Gender=Neut</code>. Premer <b>njegovih</b> kril je 7 metrov.</em> “We bought a new airplane. Its wingspan is 7 meters.” <code>Gender[psor]=Neut</code></li>
-  <li><em>Kupili smo nov avto.<code>Gender=Masc</code>. Premer <b>njegovih</b> platišč je 15 col.</em> “We bought a new care. Its wheel radius is 15 inch.</li>
+  <li><em>Kupili smo novo letalo.<code class="highlighter-rouge">Gender=Neut</code>. Premer <b>njegovih</b> kril je 7 metrov.</em> “We bought a new airplane. Its wingspan is 7 meters.” <code class="highlighter-rouge">Gender[psor]=Neut</code></li>
+  <li><em>Kupili smo nov avto.<code class="highlighter-rouge">Gender=Masc</code>. Premer <b>njegovih</b> platišč je 15 col.</em> “We bought a new care. Its wheel radius is 15 inch.</li>
 </ul>
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All pronouns with feature Owner_gender=masculine are converted to <code>Gender[psor]=Masc</code>, all pronouns with Owner_gender=feminine are converted to <code>Gender[psor]=Fem</code> and all pronouns with Owner_gender=neuter are converted to <code>Gender[psor]=Neut</code>.</p>
+<p>All pronouns with feature Owner_gender=masculine are converted to <code class="highlighter-rouge">Gender[psor]=Masc</code>, all pronouns with Owner_gender=feminine are converted to <code class="highlighter-rouge">Gender[psor]=Fem</code> and all pronouns with Owner_gender=neuter are converted to <code class="highlighter-rouge">Gender[psor]=Neut</code>.</p>
 
-<p>Note that JOS annotation scheme does not assign possessor’s gender to possessive adjectives. For example, the possessive adjectival word form <em>sinova</em> (son’s) in <em>sinova mama</em> “son’s mother” is currently annotated with <code>Gender=Fem</code>, whereas it should be annotated with <code>Gender[psor]=Masc|Gender=Fem</code> in the future.</p>
+<p>Note that JOS annotation scheme does not assign possessor’s gender to possessive adjectives. For example, the possessive adjectival word form <em>sinova</em> (son’s) in <em>sinova mama</em> “son’s mother” is currently annotated with <code class="highlighter-rouge">Gender=Fem</code>, whereas it should be annotated with <code class="highlighter-rouge">Gender[psor]=Masc|Gender=Fem</code> in the future.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Gender-psor.md" target="#">edit Gender[psor]</a></p>
 
@@ -465,7 +466,7 @@
 
 <p>Mood is a feature that expresses modality and subclassifies finite verb forms. It is an inflectional feature of <a href="AUX">auxiliaries</a> and <a href="VERB">verbs</a>.</p>
 
-<h3 id="ind-indicative"><code>Ind</code>: indicative</h3>
+<h3 id="ind-indicative"><code class="highlighter-rouge">Ind</code>: indicative</h3>
 
 <p>The indicative can be considered the default mood. A verb in indicative merely states that something happens, has happened or will happen, without adding any attitude of the speaker.</p>
 
@@ -476,7 +477,7 @@
   <li><em>Proslava <b>bo</b> naslednji petek.</em> “The celebration will take place next Friday.”</li>
 </ul>
 
-<h3 id="imp-imperative"><code>Imp</code>: imperative</h3>
+<h3 id="imp-imperative"><code class="highlighter-rouge">Imp</code>: imperative</h3>
 
 <p>The speaker uses imperative to order or ask the addressee to do the action of the verb.</p>
 
@@ -488,9 +489,9 @@
   <li><em><b>Pospravite</b> ta nered.</em> “Clean up this mess!”</li>
 </ul>
 
-<h3 id="cnd-conditional"><code>Cnd</code>: conditional</h3>
+<h3 id="cnd-conditional"><code class="highlighter-rouge">Cnd</code>: conditional</h3>
 
-<p>Generally, the conditional mood is used to express actions that would have taken place under some circumstances but they actually did not / do not happen. In Slovenian, present and past conditional are formed using the participle of the content verb and a special conditional form of the <a href="AUX">auxiliary verb</a> <em>biti</em>  “to be”. Thus, only this form is marked as <code>Cnd</code>, regardless of whether it is used to form a conditional or any other type of modality.</p>
+<p>Generally, the conditional mood is used to express actions that would have taken place under some circumstances but they actually did not / do not happen. In Slovenian, present and past conditional are formed using the participle of the content verb and a special conditional form of the <a href="AUX">auxiliary verb</a> <em>biti</em>  “to be”. Thus, only this form is marked as <code class="highlighter-rouge">Cnd</code>, regardless of whether it is used to form a conditional or any other type of modality.</p>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -503,7 +504,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All verbs with VForm=present and VForm=future are converted to <code>Mood=Ind</code>, all verbs with VForm=imperative are converted to <code>Mood=Imp</code> and all verbs with VForm=conditional are converted to <code>Mood=Cnd</code>. The non-finite verb forms (participle, infinitive, supine) do not have any <code>Mood</code>.</p>
+<p>All verbs with VForm=present and VForm=future are converted to <code class="highlighter-rouge">Mood=Ind</code>, all verbs with VForm=imperative are converted to <code class="highlighter-rouge">Mood=Imp</code> and all verbs with VForm=conditional are converted to <code class="highlighter-rouge">Mood=Cnd</code>. The non-finite verb forms (participle, infinitive, supine) do not have any <code class="highlighter-rouge">Mood</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Mood.md" target="#">edit Mood</a></p>
 
@@ -514,9 +515,9 @@
 
 <p>In the Slovenian UD Treebank, we currently only mark negation as an inflectional feature of a limited set of <a href="VERB">verbs</a> and <a href="AUX">auxiliaries</a>: <em><b>biti</b></em> “to be”, <em><b>imeti</b></em> “to have”, <em><b>hoteti</b></em> “to want”.</p>
 
-<h3 id="neg-negative"><code>Neg</code>: negative</h3>
+<h3 id="neg-negative"><code class="highlighter-rouge">Neg</code>: negative</h3>
 
-<p><code>Negative</code> is assigned to negated word forms of verbs <em>biti, imeti, hoteti</em>.</p>
+<p><code class="highlighter-rouge">Negative</code> is assigned to negated word forms of verbs <em>biti, imeti, hoteti</em>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -526,9 +527,9 @@
   <li><em><b>nočem</b></em> “I do not want”, <em><b>nočeš</b></em> “you do not want”, <em><b>nočemo</b></em> “he/she/it does not want” etc.</li>
 </ul>
 
-<h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
+<h3 id="pos-positive-affirmative"><code class="highlighter-rouge">Pos</code>: positive, affirmative</h3>
 
-<p><code>Positive</code> is assigned to non-negated word forms of verbs <em>biti, imeti, hoteti</em> with identical set of other grammatical features.</p>
+<p><code class="highlighter-rouge">Positive</code> is assigned to non-negated word forms of verbs <em>biti, imeti, hoteti</em> with identical set of other grammatical features.</p>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -540,14 +541,14 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All verbs with feature Negative=no are converted to <code>Negative=Pos</code> and all verbs with feature Negative=yes are converted to <code>Negative=Neg</code>.</p>
+<p>All verbs with feature Negative=no are converted to <code class="highlighter-rouge">Negative=Pos</code> and all verbs with feature Negative=yes are converted to <code class="highlighter-rouge">Negative=Neg</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Negative.md" target="#">edit Negative</a></p>
 
 <p><a id="al-sl-feat/NumForm" class="al-dest"></a></p>
 <h2><code>NumForm</code>: numeral form</h2>
 
-<p><code>NumForm</code> is a lexical feature of <a href="NUM">numerals</a> that marks whether the number is expressed by digits or letters.</p>
+<p><code class="highlighter-rouge">NumForm</code> is a lexical feature of <a href="NUM">numerals</a> that marks whether the number is expressed by digits or letters.</p>
 
 <h3 id="word-number-expressed-as-word">Word: number expressed as word</h3>
 
@@ -578,16 +579,16 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p><code>NumForm</code> is assigned to all numerals that are converted to UD <code>NUM</code>. Numerals with Form=digit are converted to <code>NumForm=Digit</code>, numerals with Form=roman are converted to <code>NumForm=Roman</code> and numerals with Form=letter are converted to <code>NumForm=Word</code>. Note, however, that (word) numerals that are converted to UD <code>ADJ</code>, do not have any <code>NumForm</code>.</p>
+<p><code class="highlighter-rouge">NumForm</code> is assigned to all numerals that are converted to UD <code class="highlighter-rouge">NUM</code>. Numerals with Form=digit are converted to <code class="highlighter-rouge">NumForm=Digit</code>, numerals with Form=roman are converted to <code class="highlighter-rouge">NumForm=Roman</code> and numerals with Form=letter are converted to <code class="highlighter-rouge">NumForm=Word</code>. Note, however, that (word) numerals that are converted to UD <code class="highlighter-rouge">ADJ</code>, do not have any <code class="highlighter-rouge">NumForm</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/NumForm.md" target="#">edit NumForm</a></p>
 
 <p><a id="al-sl-feat/NumType" class="al-dest"></a></p>
 <h2><code>NumType</code>: numeral type</h2>
 
-<p>In Slovenian UD Treebank, <code>NumType</code> is a lexical feature of <a href="NUM">numerals</a> and some <a href="ADJ">adjectives</a> that denote counting by numbers.</p>
+<p>In Slovenian UD Treebank, <code class="highlighter-rouge">NumType</code> is a lexical feature of <a href="NUM">numerals</a> and some <a href="ADJ">adjectives</a> that denote counting by numbers.</p>
 
-<h3 id="card-cardinal-number"><code>Card</code>: cardinal number</h3>
+<h3 id="card-cardinal-number"><code class="highlighter-rouge">Card</code>: cardinal number</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -597,7 +598,7 @@
   <li><em>I, II, III</em></li>
 </ul>
 
-<h3 id="ord-ordinal-number"><code>Ord</code>: ordinal number</h3>
+<h3 id="ord-ordinal-number"><code class="highlighter-rouge">Ord</code>: ordinal number</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -607,7 +608,7 @@
   <li><em>I., II., III.</em></li>
 </ul>
 
-<h3 id="sets-number-of-sets-of-things"><code>Sets</code>: number of sets of things</h3>
+<h3 id="sets-number-of-sets-of-things"><code class="highlighter-rouge">Sets</code>: number of sets of things</h3>
 
 <p>Numerals used to count sets of things or nouns that are pluralia tantum.</p>
 
@@ -617,7 +618,7 @@
   <li><em>enoj, dvoj, troj</em> “one-fold, two-fold, three-fold”</li>
 </ul>
 
-<h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code>Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
+<h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code class="highlighter-rouge">Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
 
 <h4 id="examples-3">Examples</h4>
 
@@ -627,20 +628,20 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All numerals with Type=cardinal are converted to <code>NumType=Card</code> and all numerals with Type=ordinal are converted to <code>NumType=Ord</code>. Numerals with Type=pronominal are either converted to <code>NumType=Card</code> (lemmas <em>en</em> and <em>eden</em>) or to <code>NumType=Ord</code> (lemma <em>drug</em>). Numerals with Type=special are either converted to <code>NumType=Sets</code> (lemmas not ending in <em>-en</em>) or to <code>NumType=Gen</code> (lemmas ending in <em>-en</em>).</p>
+<p>All numerals with Type=cardinal are converted to <code class="highlighter-rouge">NumType=Card</code> and all numerals with Type=ordinal are converted to <code class="highlighter-rouge">NumType=Ord</code>. Numerals with Type=pronominal are either converted to <code class="highlighter-rouge">NumType=Card</code> (lemmas <em>en</em> and <em>eden</em>) or to <code class="highlighter-rouge">NumType=Ord</code> (lemma <em>drug</em>). Numerals with Type=special are either converted to <code class="highlighter-rouge">NumType=Sets</code> (lemmas not ending in <em>-en</em>) or to <code class="highlighter-rouge">NumType=Gen</code> (lemmas ending in <em>-en</em>).</p>
 
-<p>Note that other types of quantifying words have not been explicitly marked in JOS, so assigning these and other <code>NumType</code> values to other words or part-of-speech categories, such as adjectives (<em>enkraten, dvakraten, trikraten</em>), adverbs (<em>enkrat, dvakrat, trikrat</em>; <em>prvič, drugič, tretjič</em>), determiners (<em>veliko, malo, nekaj, koliko</em>) and nouns (<em>tretjina, polovica, četrtina</em>), remains for future work.</p>
+<p>Note that other types of quantifying words have not been explicitly marked in JOS, so assigning these and other <code class="highlighter-rouge">NumType</code> values to other words or part-of-speech categories, such as adjectives (<em>enkraten, dvakraten, trikraten</em>), adverbs (<em>enkrat, dvakrat, trikrat</em>; <em>prvič, drugič, tretjič</em>), determiners (<em>veliko, malo, nekaj, koliko</em>) and nouns (<em>tretjina, polovica, četrtina</em>), remains for future work.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/NumType.md" target="#">edit NumType</a></p>
 
 <p><a id="al-sl-feat/Number" class="al-dest"></a></p>
 <h2><code>Number</code>: number</h2>
 
-<p>In Slovenian, <code>Number</code> is an inflectional feature of <a href="NOUN">nouns</a> and <a href="PROPN">proper nouns</a>, and other parts of speech (<a href="ADJ">adjectives</a>, <a href="AUX">auxiliaries</a>, <a href="DET">determiners</a>, <a href="NUM">numerals</a>, <a href="PRON">pronouns</a>, <a href="VERB">verbs</a>) that mark agreement with nouns.</p>
+<p>In Slovenian, <code class="highlighter-rouge">Number</code> is an inflectional feature of <a href="NOUN">nouns</a> and <a href="PROPN">proper nouns</a>, and other parts of speech (<a href="ADJ">adjectives</a>, <a href="AUX">auxiliaries</a>, <a href="DET">determiners</a>, <a href="NUM">numerals</a>, <a href="PRON">pronouns</a>, <a href="VERB">verbs</a>) that mark agreement with nouns.</p>
 
-<p>Slovenian distinguishes three <code>Number</code> values: <code>singular</code>, <code>dual</code> and <code>plural</code>. <a href="u-feat/Number">Plurale tantum</a> and <a href="u-feat/Number">Singulare tantum</a> are not explicitly marked and are tagged as <code>plural</code> or <code>singular</code>, respectively.</p>
+<p>Slovenian distinguishes three <code class="highlighter-rouge">Number</code> values: <code class="highlighter-rouge">singular</code>, <code class="highlighter-rouge">dual</code> and <code class="highlighter-rouge">plural</code>. <a href="u-feat/Number">Plurale tantum</a> and <a href="u-feat/Number">Singulare tantum</a> are not explicitly marked and are tagged as <code class="highlighter-rouge">plural</code> or <code class="highlighter-rouge">singular</code>, respectively.</p>
 
-<h3 id="sing-singular-number"><code>Sing</code>: singular number</h3>
+<h3 id="sing-singular-number"><code class="highlighter-rouge">Sing</code>: singular number</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -651,7 +652,7 @@
   <li><em>sem</em> “I am”</li>
 </ul>
 
-<h3 id="dual-dual-number"><code>Dual</code>: dual number</h3>
+<h3 id="dual-dual-number"><code class="highlighter-rouge">Dual</code>: dual number</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -662,7 +663,7 @@
   <li><em>sva</em> “we (two) are”</li>
 </ul>
 
-<h3 id="plur-plural-number"><code>Plur</code>: plural number</h3>
+<h3 id="plur-plural-number"><code class="highlighter-rouge">Plur</code>: plural number</h3>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -675,48 +676,48 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All tokens with feature Number=singular are converted to <code>Number=Sing</code>, all tokens with Number=dual are converted to <code>Number=Dual</code> and all tokens with Number=plural are converted to <code>Number=Plur</code>.</p>
+<p>All tokens with feature Number=singular are converted to <code class="highlighter-rouge">Number=Sing</code>, all tokens with Number=dual are converted to <code class="highlighter-rouge">Number=Dual</code> and all tokens with Number=plural are converted to <code class="highlighter-rouge">Number=Plur</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Number.md" target="#">edit Number</a></p>
 
 <p><a id="al-sl-feat/Number[psor]" class="al-dest"></a></p>
 <h2><code>Number[psor]</code>: possessor’s number</h2>
 
-<p>Possessive <a href="PRON">pronouns</a> and <a href="DET">determiners</a> may have two different numbers: that of the possessed object (in agreement with the modifying noun, inflectional feature) and that of the possessor (inherent, lexical feature). The <code>Number[psor]</code> feature denotes the possessor’s number.</p>
+<p>Possessive <a href="PRON">pronouns</a> and <a href="DET">determiners</a> may have two different numbers: that of the possessed object (in agreement with the modifying noun, inflectional feature) and that of the possessor (inherent, lexical feature). The <code class="highlighter-rouge">Number[psor]</code> feature denotes the possessor’s number.</p>
 
-<h3 id="sing-singular-possessor"><code>Sing</code>: singular possessor</h3>
+<h3 id="sing-singular-possessor"><code class="highlighter-rouge">Sing</code>: singular possessor</h3>
 
 <h4 id="examples">Examples</h4>
 
 <ul>
-  <li><em><b>moj</b> balon</em> “my balloon” <code>Number[psor]=Sing|Number=Sing</code></li>
-  <li><em><b>moja</b> balona</em> “my (two) balloons” <code>Number[psor]=Sing|Number=Dual</code></li>
-  <li><em><b>moji</b> baloni</em> “my (three or more) balloons” <code>Number[psor]=Sing|Number=Plur</code></li>
+  <li><em><b>moj</b> balon</em> “my balloon” <code class="highlighter-rouge">Number[psor]=Sing|Number=Sing</code></li>
+  <li><em><b>moja</b> balona</em> “my (two) balloons” <code class="highlighter-rouge">Number[psor]=Sing|Number=Dual</code></li>
+  <li><em><b>moji</b> baloni</em> “my (three or more) balloons” <code class="highlighter-rouge">Number[psor]=Sing|Number=Plur</code></li>
 </ul>
 
-<h3 id="dual-dual-possessor"><code>Dual</code>: dual possessor</h3>
+<h3 id="dual-dual-possessor"><code class="highlighter-rouge">Dual</code>: dual possessor</h3>
 
 <h4 id="examples-1">Examples</h4>
 
 <ul>
-  <li><em><b>najin</b> balon</em> “my and your balloon” <code>Number[psor]=Dual|Number=Sing</code></li>
-  <li><em><b>najina</b> balona</em> “my and your (two) balloons” <code>Number[psor]=Dual|Number=Dual</code></li>
-  <li><em><b>najini</b> baloni</em> “my and your (three or more) balloons” <code>Number[psor]=Dual|Number=Plur</code></li>
+  <li><em><b>najin</b> balon</em> “my and your balloon” <code class="highlighter-rouge">Number[psor]=Dual|Number=Sing</code></li>
+  <li><em><b>najina</b> balona</em> “my and your (two) balloons” <code class="highlighter-rouge">Number[psor]=Dual|Number=Dual</code></li>
+  <li><em><b>najini</b> baloni</em> “my and your (three or more) balloons” <code class="highlighter-rouge">Number[psor]=Dual|Number=Plur</code></li>
 </ul>
 
-<h3 id="plur-plura-possessor"><code>Plur</code>: plura possessor</h3>
+<h3 id="plur-plura-possessor"><code class="highlighter-rouge">Plur</code>: plura possessor</h3>
 
 <h4 id="examples-2">Examples</h4>
 
 <ul>
-  <li><em><b>naš</b> balon</em> “our balloon” <code>Number[psor]=Plur|Number=Sing</code></li>
-  <li><em><b>naša</b> balona</em> “our (two) balloons” <code>Number[psor]=Plur|Number=Dual</code></li>
-  <li><em><b>naši</b> baloni</em> “our (three or more) balloons” <code>Number[psor]=Plur|Number=Plur</code></li>
+  <li><em><b>naš</b> balon</em> “our balloon” <code class="highlighter-rouge">Number[psor]=Plur|Number=Sing</code></li>
+  <li><em><b>naša</b> balona</em> “our (two) balloons” <code class="highlighter-rouge">Number[psor]=Plur|Number=Dual</code></li>
+  <li><em><b>naši</b> baloni</em> “our (three or more) balloons” <code class="highlighter-rouge">Number[psor]=Plur|Number=Plur</code></li>
 </ul>
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All pronouns with feature Owner_number=singular are converted to <code>Number[psor]=Sing</code>, all pronouns with Owner_number=dual are converted to <code>Number[psor]=Dual</code> and all pronouns with Owner_number=plural are converted to <code>Number[psor]=Plur</code>.</p>
+<p>All pronouns with feature Owner_number=singular are converted to <code class="highlighter-rouge">Number[psor]=Sing</code>, all pronouns with Owner_number=dual are converted to <code class="highlighter-rouge">Number[psor]=Dual</code> and all pronouns with Owner_number=plural are converted to <code class="highlighter-rouge">Number[psor]=Plur</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Number-psor.md" target="#">edit Number[psor]</a></p>
 
@@ -725,7 +726,7 @@
 
 <p>Person is a lexical feature of personal and possessive <a href="PRON">pronouns</a> and <a href="DET">determiners</a>, and an inflectional feature of <a href="AUX">auxiliaries</a> and <a href="VERB">verbs</a>.</p>
 
-<h3 id="first-person"><code>1</code>: first person</h3>
+<h3 id="first-person"><code class="highlighter-rouge">1</code>: first person</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -736,7 +737,7 @@
   <li><em><b>grem</b></em> “I go”</li>
 </ul>
 
-<h3 id="second-person"><code>2</code>: second person</h3>
+<h3 id="second-person"><code class="highlighter-rouge">2</code>: second person</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -747,7 +748,7 @@
   <li><em><b>greš</b></em> “you go”</li>
 </ul>
 
-<h3 id="third-person"><code>3</code>: third person</h3>
+<h3 id="third-person"><code class="highlighter-rouge">3</code>: third person</h3>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -760,16 +761,16 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All tokens with feature Person=first are converted to <code>Person=1</code>, all tokens with feature Person=second are converted to <code>Person=2</code> and all tokens with feature Person=third are converted to <code>Person=3</code>.</p>
+<p>All tokens with feature Person=first are converted to <code class="highlighter-rouge">Person=1</code>, all tokens with feature Person=second are converted to <code class="highlighter-rouge">Person=2</code> and all tokens with feature Person=third are converted to <code class="highlighter-rouge">Person=3</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Person.md" target="#">edit Person</a></p>
 
 <p><a id="al-sl-feat/Poss" class="al-dest"></a></p>
 <h2><code>Poss</code>: possessive</h2>
 
-<p><code>Possessive</code> is a lexical feature of <a href="ADJ">adjectives</a>, <a href="DET">determiners</a> and <a href="PRON">pronouns</a>.  It tells whether the word is possessive. Words without the <code>Poss</code> feature are not possessive.</p>
+<p><code class="highlighter-rouge">Possessive</code> is a lexical feature of <a href="ADJ">adjectives</a>, <a href="DET">determiners</a> and <a href="PRON">pronouns</a>.  It tells whether the word is possessive. Words without the <code class="highlighter-rouge">Poss</code> feature are not possessive.</p>
 
-<h3 id="yes-it-is-possessive"><code>Yes</code>: it is possessive</h3>
+<h3 id="yes-it-is-possessive"><code class="highlighter-rouge">Yes</code>: it is possessive</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -781,7 +782,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All adjectives and pronouns with Type=possessive are converted to <code>Poss=Yes</code>. Additionally, the reflexive pronoun <em>svoj</em> is also converted to <code>Poss=Yes</code>. Note that within JOS annotation scheme, possessiveness is not explicitly marked with other types of pronouns that denote possession, such as <em>ćigav, čigaver, nikogaršnji</em> etc.</p>
+<p>All adjectives and pronouns with Type=possessive are converted to <code class="highlighter-rouge">Poss=Yes</code>. Additionally, the reflexive pronoun <em>svoj</em> is also converted to <code class="highlighter-rouge">Poss=Yes</code>. Note that within JOS annotation scheme, possessiveness is not explicitly marked with other types of pronouns that denote possession, such as <em>ćigav, čigaver, nikogaršnji</em> etc.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Poss.md" target="#">edit Poss</a></p>
 
@@ -790,7 +791,7 @@
 
 <p>This is a lexical feature of <a href="PRON">pronouns</a> and some <a href="DET">determiners</a>.</p>
 
-<h3 id="prs-personal-pronoun-or-determiner"><code>Prs</code>: personal pronoun or determiner</h3>
+<h3 id="prs-personal-pronoun-or-determiner"><code class="highlighter-rouge">Prs</code>: personal pronoun or determiner</h3>
 
 <p>This feature includes both nominal personal, possessive and reflexive pronouns or determiners.</p>
 
@@ -802,7 +803,7 @@
   <li><em><b>se</b></em> “oneself”, <em><b>svoj</b></em> “one’s own”</li>
 </ul>
 
-<h3 id="int-interrogative-pronoun-or-determiner"><code>Int</code>: interrogative pronoun or determiner</h3>
+<h3 id="int-interrogative-pronoun-or-determiner"><code class="highlighter-rouge">Int</code>: interrogative pronoun or determiner</h3>
 
 <h4 id="examples-1">Examples:</h4>
 
@@ -814,7 +815,7 @@
   <li><em>čigav</em> “whose”</li>
 </ul>
 
-<h3 id="rel-relative-pronoun-or-determiner"><code>Rel</code>: relative pronoun or determiner</h3>
+<h3 id="rel-relative-pronoun-or-determiner"><code class="highlighter-rouge">Rel</code>: relative pronoun or determiner</h3>
 
 <h4 id="examples-2">Examples:</h4>
 
@@ -828,7 +829,7 @@
   <li><em>kakršenkoli</em> “any, of any kind”</li>
 </ul>
 
-<h3 id="dem-demonstrative-pronoun-or-determiner"><code>Dem</code>: demonstrative pronoun or determiner</h3>
+<h3 id="dem-demonstrative-pronoun-or-determiner"><code class="highlighter-rouge">Dem</code>: demonstrative pronoun or determiner</h3>
 
 <h4 id="examples-3">Examples</h4>
 
@@ -842,7 +843,7 @@
   <li><em>tadva</em> “these two”</li>
 </ul>
 
-<h3 id="tot-total-collective-pronoun-or-determiner"><code>Tot</code>: total (collective) pronoun or determiner</h3>
+<h3 id="tot-total-collective-pronoun-or-determiner"><code class="highlighter-rouge">Tot</code>: total (collective) pronoun or determiner</h3>
 
 <h4 id="examples-4">Examples</h4>
 
@@ -853,7 +854,7 @@
   <li><em>vsakršen</em> “any kind”</li>
 </ul>
 
-<h3 id="neg-negative-pronoun-determiner-or-adverb"><code>Neg</code>: negative pronoun, determiner or adverb</h3>
+<h3 id="neg-negative-pronoun-determiner-or-adverb"><code class="highlighter-rouge">Neg</code>: negative pronoun, determiner or adverb</h3>
 
 <h4 id="examples-5">Examples</h4>
 
@@ -865,7 +866,7 @@
   <li><em>nikak</em> “no way”</li>
 </ul>
 
-<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code>Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
+<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
 
 <h4 id="examples-6">Examples</h4>
 
@@ -880,9 +881,9 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All pronouns with feature Type=personal, Type=reflexive and Type=possessive are converted to UD <code>PronType=Prs</code>. All pronouns with Type=interrogative are converted to UD <code>PronType=Int</code>, all pronouns with Type=relative are converted to UD <code>PronType=Rel</code>, all pronouns with Type=demonstrative are converted to UD <code>PronType=Dem</code>, all pronouns with Type=general are converted to UD <code>PronType=Tot</code>, all pronouns with Type=negative are converted to UD <code>PronType=Neg</code> and all pronouns with Type=indefinite are converted to UD <code>PronType=Ind</code>.</p>
+<p>All pronouns with feature Type=personal, Type=reflexive and Type=possessive are converted to UD <code class="highlighter-rouge">PronType=Prs</code>. All pronouns with Type=interrogative are converted to UD <code class="highlighter-rouge">PronType=Int</code>, all pronouns with Type=relative are converted to UD <code class="highlighter-rouge">PronType=Rel</code>, all pronouns with Type=demonstrative are converted to UD <code class="highlighter-rouge">PronType=Dem</code>, all pronouns with Type=general are converted to UD <code class="highlighter-rouge">PronType=Tot</code>, all pronouns with Type=negative are converted to UD <code class="highlighter-rouge">PronType=Neg</code> and all pronouns with Type=indefinite are converted to UD <code class="highlighter-rouge">PronType=Ind</code>.</p>
 
-<p>Not that currently <code>PronType</code> is only assigned to pronouns and determiners, but not to other POS categories, such as adverbs (<em>zakaj</em> “why”, <em>čemu</em> “what for”, <em>kako</em> “how”, <em>tukaj</em> “here”, <em>tam</em> “there”, <em>tolikokrat</em> “this many times” etc.)</p>
+<p>Not that currently <code class="highlighter-rouge">PronType</code> is only assigned to pronouns and determiners, but not to other POS categories, such as adverbs (<em>zakaj</em> “why”, <em>čemu</em> “what for”, <em>kako</em> “how”, <em>tukaj</em> “here”, <em>tam</em> “there”, <em>tolikokrat</em> “this many times” etc.)</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/PronType.md" target="#">edit PronType</a></p>
 
@@ -896,7 +897,7 @@ i.e. refers to the subject of its clause.</p>
 
 <p>Note that reflexive pronoun <em>se</em> can also be used in subjectless passive constructions and as a free morpheme of pseudo-reflexive verbs.</p>
 
-<h3 id="yes-it-is-reflexive"><code>Yes</code>: it is reflexive</h3>
+<h3 id="yes-it-is-reflexive"><code class="highlighter-rouge">Yes</code>: it is reflexive</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -916,16 +917,16 @@ i.e. refers to the subject of its clause.</p>
 </ul>
 
 <h3 id="conversion-to-jos">Conversion to JOS</h3>
-<p>All pronouns with feature Type=reflexive are converted to UD <code>Reflexice=Yes</code>.</p>
+<p>All pronouns with feature Type=reflexive are converted to UD <code class="highlighter-rouge">Reflexice=Yes</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Reflex.md" target="#">edit Reflex</a></p>
 
 <p><a id="al-sl-feat/Tense" class="al-dest"></a></p>
 <h2><code>Tense</code>: tense</h2>
 
-<p>Tense is an inflectional feature of <a href="NOUN">nouns</a> and <a href="AUX">auxiliaries</a> that specifies the time when the action took / takes / will take place, in relation to the current moment or to another action in the utterance. In Slovenian, only <code>Present</code> tense and <code>Future</code> tense can be expressed morphologically, while past tense is formed syntactically, by a combination of a present auxiliary verb <em>biti</em> “to be” and past participle (l-participle), e.g. <em>sem šel</em> “I went”.</p>
+<p>Tense is an inflectional feature of <a href="NOUN">nouns</a> and <a href="AUX">auxiliaries</a> that specifies the time when the action took / takes / will take place, in relation to the current moment or to another action in the utterance. In Slovenian, only <code class="highlighter-rouge">Present</code> tense and <code class="highlighter-rouge">Future</code> tense can be expressed morphologically, while past tense is formed syntactically, by a combination of a present auxiliary verb <em>biti</em> “to be” and past participle (l-participle), e.g. <em>sem šel</em> “I went”.</p>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that usually happen.</p>
 
@@ -936,9 +937,9 @@ i.e. refers to the subject of its clause.</p>
   <li><em><b>Študiram</b> jezike.</em> “I study languages.”</li>
 </ul>
 
-<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+<h3 id="fut-future-tense"><code class="highlighter-rouge">Fut</code>: future tense</h3>
 
-<p>The future tense denotes actions that will happen after the current moment. Simmilarly to past tense, future tense for most Slovenian verbs is formed by a combination of future auxiliary verb <em>biti</em> “to be “ and l-participle (<em>bom hodil</em> “I will walk”). Thus, the <code>Tense=Fut</code> feature is only to <em>biti</em> that can either be used as a content or auxiliary verb.</p>
+<p>The future tense denotes actions that will happen after the current moment. Simmilarly to past tense, future tense for most Slovenian verbs is formed by a combination of future auxiliary verb <em>biti</em> “to be “ and l-participle (<em>bom hodil</em> “I will walk”). Thus, the <code class="highlighter-rouge">Tense=Fut</code> feature is only to <em>biti</em> that can either be used as a content or auxiliary verb.</p>
 
 <p>Examples:</p>
 
@@ -950,16 +951,16 @@ i.e. refers to the subject of its clause.</p>
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All verbs with VForm=present are converted to UD <code>Tense=Pres</code> and all verbs with VForm=future are converted to UD <code>Ťense=Fut</code>. We do not assign tense to other verb forms, such as participle, infinitive, supine, conditional and imperative.</p>
+<p>All verbs with VForm=present are converted to UD <code class="highlighter-rouge">Tense=Pres</code> and all verbs with VForm=future are converted to UD <code class="highlighter-rouge">Ťense=Fut</code>. We do not assign tense to other verb forms, such as participle, infinitive, supine, conditional and imperative.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Tense.md" target="#">edit Tense</a></p>
 
 <p><a id="al-sl-feat/Variant" class="al-dest"></a></p>
 <h2><code>Variant</code>: alternative form of word</h2>
 
-<p>In Slovenian, the <code>Variant</code> feature is either a lexical or inflectional features of some <a href="PRON">pronouns</a>.</p>
+<p>In Slovenian, the <code class="highlighter-rouge">Variant</code> feature is either a lexical or inflectional features of some <a href="PRON">pronouns</a>.</p>
 
-<h3 id="bound-bound-form"><code>Bound</code>: bound form</h3>
+<h3 id="bound-bound-form"><code class="highlighter-rouge">Bound</code>: bound form</h3>
 
 <p>This value is assigned as a lexical feature of fused combinations of prepositions and personal pronouns that are currently tokenized as one word form and annotated as <a href="PronType">personal</a> pronouns.</p>
 
@@ -971,7 +972,7 @@ i.e. refers to the subject of its clause.</p>
   <li><em><b>Prednjo</b> so postavili kozarec vina.</em> “A glass of wine was put <em>in front of her.</em>”</li>
 </ul>
 
-<h3 id="short-clitic-form"><code>Short</code>: clitic form</h3>
+<h3 id="short-clitic-form"><code class="highlighter-rouge">Short</code>: clitic form</h3>
 
 <p>This value is assigned as an inflectional feature to clitic personal pronouns in genitive, dative and accusative to distinguish them from their longer counterparts with the same lemma and set of features.</p>
 
@@ -989,9 +990,9 @@ i.e. refers to the subject of its clause.</p>
 <p><a id="al-sl-feat/VerbForm" class="al-dest"></a></p>
 <h2><code>VerbForm</code>: form of verb or deverbative</h2>
 
-<p>Principally, <code>VerbForm</code> is an inflectional feature of <a href="VERB">verbs</a> and <a href="AUX">auxiliaries</a>, however, it is also used as a lexical feature of some <a href="ADJ">adjectives</a> and <a href="ADV">adverbs</a>.</p>
+<p>Principally, <code class="highlighter-rouge">VerbForm</code> is an inflectional feature of <a href="VERB">verbs</a> and <a href="AUX">auxiliaries</a>, however, it is also used as a lexical feature of some <a href="ADJ">adjectives</a> and <a href="ADV">adverbs</a>.</p>
 
-<h3 id="fin-finite-verb"><code>Fin</code>: finite verb</h3>
+<h3 id="fin-finite-verb"><code class="highlighter-rouge">Fin</code>: finite verb</h3>
 
 <p>Verbs that have a non-empty <a href="">Mood</a> are considered finite.</p>
 
@@ -1003,7 +1004,7 @@ i.e. refers to the subject of its clause.</p>
   <li><em>bi</em> “would”</li>
 </ul>
 
-<h3 id="inf-infinitive"><code>Inf</code>: infinitive</h3>
+<h3 id="inf-infinitive"><code class="highlighter-rouge">Inf</code>: infinitive</h3>
 
 <p>Infinitive is the citation form of verbs and it appears as the argument of modal and other verbs.</p>
 
@@ -1014,7 +1015,7 @@ i.e. refers to the subject of its clause.</p>
   <li><em>biti</em> “to be”</li>
 </ul>
 
-<h3 id="part-participle"><code>Part</code>: participle</h3>
+<h3 id="part-participle"><code class="highlighter-rouge">Part</code>: participle</h3>
 
 <p>Participle is a non-finite verb form that shares properties of verbs and adjectives. We distinguish two groups of participles: l-participles that can either be classified as <a href="VERB">verbs</a> or <a href="ADJ">adjectives</a>, and all other participles (usually ending in <em>-č</em>, <em>-n</em>, or <em>-t</em>) that are always classified as <a href="ADJ">adjectives</a>, regardless of whether they are used as attributes or predicates.</p>
 
@@ -1028,9 +1029,9 @@ i.e. refers to the subject of its clause.</p>
   <li><em>ukraden, ukradenega, ukradenemu, ukradenega</em> …“stolen” (participial adjective in different genders, numbers and cases)</li>
 </ul>
 
-<h3 id="trans-transgressive"><code>Trans</code>: transgressive</h3>
+<h3 id="trans-transgressive"><code class="highlighter-rouge">Trans</code>: transgressive</h3>
 
-<p>The transgressive, also called adverbial participle, is a non-finite verb form that shares properties of verbs and adverbs. In Slovenian, <code>transgressives</code> are always marked as <a href="ADV">adverbs</a>.</p>
+<p>The transgressive, also called adverbial participle, is a non-finite verb form that shares properties of verbs and adverbs. In Slovenian, <code class="highlighter-rouge">transgressives</code> are always marked as <a href="ADV">adverbs</a>.</p>
 
 <h4 id="examples-3">Examples</h4>
 
@@ -1043,9 +1044,9 @@ i.e. refers to the subject of its clause.</p>
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All verbs with feature VForm=present, VForm=future, VForm=conditional and VForm=imperative are converted to UD <code>VerbForm=Fin</code>. All verbs with VForm=Infinitive are converted to UD <code>VerbForm=Inf</code>, all verbs with VForm=Supine are converted to UD <code>VerbForm=Supine</code>, and all verbs with VForm=Participle are converted to UD <code>VerbForm=Part</code>. Additionally, all adjectives with Type=participle are converted to UD <code>VerbForm=Part</code> and all adverbs with Type=participle are converted to UD <code>VerbForm=Trans</code>.</p>
+<p>All verbs with feature VForm=present, VForm=future, VForm=conditional and VForm=imperative are converted to UD <code class="highlighter-rouge">VerbForm=Fin</code>. All verbs with VForm=Infinitive are converted to UD <code class="highlighter-rouge">VerbForm=Inf</code>, all verbs with VForm=Supine are converted to UD <code class="highlighter-rouge">VerbForm=Supine</code>, and all verbs with VForm=Participle are converted to UD <code class="highlighter-rouge">VerbForm=Part</code>. Additionally, all adjectives with Type=participle are converted to UD <code class="highlighter-rouge">VerbForm=Part</code> and all adverbs with Type=participle are converted to UD <code class="highlighter-rouge">VerbForm=Trans</code>.</p>
 
-<p>Note that <code>gerunds</code> are currently marked as <a href="NOUN">nouns</a> and do not have a special <code>VerbForm</code> feature to distinguish them from other common nouns.</p>
+<p>Note that <code class="highlighter-rouge">gerunds</code> are currently marked as <a href="NOUN">nouns</a> and do not have a special <code class="highlighter-rouge">VerbForm</code> feature to distinguish them from other common nouns.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/VerbForm.md" target="#">edit VerbForm</a></p>
 
@@ -1061,6 +1062,7 @@ i.e. refers to the subject of its clause.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1092,11 +1094,40 @@ i.e. refers to the subject of its clause.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1120,6 +1151,7 @@ i.e. refers to the subject of its clause.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-overview';
@@ -1145,7 +1177,7 @@ i.e. refers to the subject of its clause.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

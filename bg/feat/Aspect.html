@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/bg/feat">bg/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/feat">bg/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-feat/Aspect.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -46,7 +47,7 @@ whether the action has been completed etc.</p>
 <p>In Bulgarian aspect is a lexical feature, as in other Slavic languages.
 It comprises two grammemes: <em>perfective</em> and <em>imperfective</em>.</p>
 
-<h3 id="imp-imperfect-aspect"><code>Imp</code>: imperfect aspect</h3>
+<h3 id="imp-imperfect-aspect"><code class="highlighter-rouge">Imp</code>: imperfect aspect</h3>
 
 <p>The action took / takes / will take some time span and there is no
 information whether and when it was / will be completed.</p>
@@ -59,7 +60,7 @@ information whether and when it was / will be completed.</p>
   <li>разбирам / <em>razbiram</em> “understand”</li>
 </ul>
 
-<h3 id="perf-perfect-aspect"><code>Perf</code>: perfect aspect</h3>
+<h3 id="perf-perfect-aspect"><code class="highlighter-rouge">Perf</code>: perfect aspect</h3>
 
 <p>The action has been / will have been completed. Since there is
 emphasis on one point on the time scale (the point of completion),
@@ -87,25 +88,25 @@ this aspect does not work well with the present tense for actual activities.</p>
 <h2 id="treebank-statistics-udbulgarian">Treebank Statistics (UD_Bulgarian)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Imp</code>, <code>Perf</code>.</p>
+It occurs with 2 different values: <code class="highlighter-rouge">Imp</code>, <code class="highlighter-rouge">Perf</code>.</p>
 
-<p>22856 tokens (15%) have a non-empty value of <code>Aspect</code>.
-7944 types (30%) occur at least once with a non-empty value of <code>Aspect</code>.
-2968 lemmas (20%) occur at least once with a non-empty value of <code>Aspect</code>.
+<p>22856 tokens (15%) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+7944 types (30%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+2968 lemmas (20%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
 The feature is used with 3 part-of-speech tags: <a href="">bg-pos/VERB</a> (19376; 12% instances), <a href="">bg-pos/AUX</a> (2008; 1% instances), <a href="">bg-pos/ADJ</a> (1472; 1% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>19376 <a href="">bg-pos/VERB</a> tokens (99% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>19376 <a href="">bg-pos/VERB</a> tokens (99% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (19248; 99%), <tt><a href="Voice.html">Voice</a>=Act</tt> (18025; 93%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (16611; 86%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (16458; 85%), <tt><a href="Person.html">Person</a>=3</tt> (13729; 71%), <tt><a href="Number.html">Number</a>=Sing</tt> (13660; 70%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (11733; 61%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (18025; 93%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (16611; 86%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (16611; 86%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (16458; 85%), <tt><a href="Person.html">Person</a>=3</tt> (13729; 71%), <tt><a href="Number.html">Number</a>=Sing</tt> (13660; 70%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (11733; 61%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (11178; 58% of non-empty <code>Aspect</code>): <em>е, са, има, няма, може, трябва, беше, могат, бе, имат</em></li>
-  <li><code>Perf</code> (8198; 42% of non-empty <code>Aspect</code>): <em>каза, съобщи, бъде, заяви, стана, обяви, направи, предаде, стане, дойде</em></li>
-  <li><code>EMPTY</code> (176): <em>е, каза, няма, откри, поздрави, посочи, беше, заяви, са, благодари</em></li>
+  <li><code class="highlighter-rouge">Imp</code> (11178; 58% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>е, са, има, няма, може, трябва, беше, могат, бе, имат</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (8198; 42% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>каза, съобщи, бъде, заяви, стана, обяви, направи, предаде, стане, дойде</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (176): <em>е, каза, няма, откри, поздрави, посочи, беше, заяви, са, благодари</em></li>
 </ul>
 
 <table>
@@ -120,34 +121,34 @@ The feature is used with 3 part-of-speech tags: <a href="">bg-pos/VERB</a> (1937
   <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>бъдат</em></td></tr>
 </table>
 
-<p><code>Aspect</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 98% lemmas (2714) occur only with one value of <code>Aspect</code>.</p>
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 98% lemmas (2714) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="highlighter-rouge">AUX</code></h3>
 
-<p>2008 <a href="">bg-pos/AUX</a> tokens (99% of all <code>AUX</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>2008 <a href="">bg-pos/AUX</a> tokens (99% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Aspect</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (1906; 95%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1889; 94%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1787; 89%), <tt><a href="Person.html">Person</a>=3</tt> (1667; 83%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1384; 69%), <tt><a href="Number.html">Number</a>=Sing</tt> (1363; 68%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (1906; 95%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1889; 94%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1787; 89%), <tt><a href="Person.html">Person</a>=3</tt> (1667; 83%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1384; 69%), <tt><a href="Number.html">Number</a>=Sing</tt> (1363; 68%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (1760; 88% of non-empty <code>Aspect</code>): <em>е, са, бе, бяха, беше, съм, би, бил, сме, били</em></li>
-  <li><code>Perf</code> (248; 12% of non-empty <code>Aspect</code>): <em>бъде, бъдат, бъдем, бъда, бъдете, бъдеш</em></li>
-  <li><code>EMPTY</code> (23): <em>е, са, би, бъдат, съм, беше, бъде, сме</em></li>
+  <li><code class="highlighter-rouge">Imp</code> (1760; 88% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>е, са, бе, бяха, беше, съм, би, бил, сме, били</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (248; 12% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>бъде, бъдат, бъдем, бъда, бъдете, бъдеш</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (23): <em>е, са, би, бъдат, съм, беше, бъде, сме</em></li>
 </ul>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>1472 <a href="">bg-pos/ADJ</a> tokens (11% of all <code>ADJ</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>1472 <a href="">bg-pos/ADJ</a> tokens (11% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Aspect</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1469; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1113; 76%), <tt><a href="Voice.html">Voice</a>=Pass</tt> (953; 65%), <tt><a href="Number.html">Number</a>=Sing</tt> (839; 57%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (808; 55%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1472; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1113; 76%), <tt><a href="Voice.html">Voice</a>=Pass</tt> (953; 65%), <tt><a href="Number.html">Number</a>=Sing</tt> (839; 57%), <tt><a href="Definite.html">Definite</a>=Ind</tt> (808; 55%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (425; 29% of non-empty <code>Aspect</code>): <em>следващата, управляващите, следващите, следващия, водещи, предстоящите, предстоящата, присъстващите, работещите, следващото</em></li>
-  <li><code>Perf</code> (1047; 71% of non-empty <code>Aspect</code>): <em>миналата, въоръжените, останалите, свързани, миналия, определени, цитиран, определен, пострадали, обединена</em></li>
-  <li><code>EMPTY</code> (12117): <em>други, народното, българската, нова, другите, нови, европейската, последните, 2001, друг</em></li>
+  <li><code class="highlighter-rouge">Imp</code> (425; 29% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>следващата, управляващите, следващите, следващия, водещи, предстоящите, предстоящата, присъстващите, работещите, следващото</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (1047; 71% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>миналата, въоръжените, останалите, свързани, миналия, определени, цитиран, определен, пострадали, обединена</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (12117): <em>други, народното, българската, нова, другите, нови, европейската, последните, 2001, друг</em></li>
 </ul>
 
 <table>
@@ -159,14 +160,14 @@ The feature is used with 3 part-of-speech tags: <a href="">bg-pos/VERB</a> (1937
   <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>фокусирани</em></td></tr>
 </table>
 
-<p><code>Aspect</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 99% lemmas (666) occur only with one value of <code>Aspect</code>.</p>
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 99% lemmas (666) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<h2 id="relations-with-agreement-in-aspect">Relations with Agreement in <code>Aspect</code></h2>
+<h2 id="relations-with-agreement-in-aspect">Relations with Agreement in <code class="highlighter-rouge">Aspect</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Aspect</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1560; 78%),
-<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (876; 58%),
-<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; VERB</tt> (68; 58%),
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Aspect</code>:
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1351; 78%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (736; 57%),
+<tt>VERB –[<a href="../dep/nmod.html">nmod</a>]–&gt; VERB</tt> (63; 59%),
 <tt>VERB –[<a href="../dep/mwe.html">mwe</a>]–&gt; VERB</tt> (28; 100%).</p>
 
 
@@ -226,6 +227,7 @@ Aspect in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -257,11 +259,40 @@ Aspect in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -285,6 +316,7 @@ Aspect in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'bg-feat';
@@ -310,7 +342,7 @@ Aspect in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

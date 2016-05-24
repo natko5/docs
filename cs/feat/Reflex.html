@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/Reflex.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -68,11 +69,11 @@ The pronoun does not alter the meaning in any way, but without it the sentence w
   <li><em>Jan prodal jeho auto. </em> “Jan sold his [someone else’s] car.”</li>
 </ul>
 
-<h3 id="yes-it-is-reflexive"><code>Yes</code>: it is reflexive</h3>
+<h3 id="yes-it-is-reflexive"><code class="highlighter-rouge">Yes</code>: it is reflexive</h3>
 
-<p>Note that there is no <code>No</code> value. If the word is not reflexive, the
-<code>Reflex</code> feature will just not be mentioned in the <code>FEAT</code>
-column. (Which means that empty value has the <code>No</code> meaning.)</p>
+<p>Note that there is no <code class="highlighter-rouge">No</code> value. If the word is not reflexive, the
+<code class="highlighter-rouge">Reflex</code> feature will just not be mentioned in the <code class="highlighter-rouge">FEAT</code>
+column. (Which means that empty value has the <code class="highlighter-rouge">No</code> meaning.)</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -94,44 +95,120 @@ column. (Which means that empty value has the <code>No</code> meaning.)</p>
 <h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
 
 <p>This feature is universal.
-It occurs with 1 different values: <code>Yes</code>.</p>
+It occurs with 1 different values: <code class="highlighter-rouge">Yes</code>.</p>
 
-<p>30669 tokens (2%) have a non-empty value of <code>Reflex</code>.
-42 types (0%) occur at least once with a non-empty value of <code>Reflex</code>.
-6 lemmas (0%) occur at least once with a non-empty value of <code>Reflex</code>.
+<p>30669 tokens (2%) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.
+42 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Reflex</code>.
+6 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Reflex</code>.
 The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (25901; 2% instances), <a href="">cs-pos/DET</a> (4768; 0% instances).</p>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="pron"><code class="highlighter-rouge">PRON</code></h3>
 
-<p>25901 <a href="">cs-pos/PRON</a> tokens (36% of all <code>PRON</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
+<p>25901 <a href="">cs-pos/PRON</a> tokens (36% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Reflex</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (25901; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (25901; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (25810; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (25786; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (25163; 97%), <tt><a href="Case.html">Case</a>=Acc</tt> (21635; 84%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Reflex</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (25901; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (25901; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (25810; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (25786; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (25163; 97%), <tt><a href="Case.html">Case</a>=Acc</tt> (21635; 84%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Reflex</code>:</p>
-
-<ul>
-  <li><code>Yes</code> (25901; 100% of non-empty <code>Reflex</code>): <em>se, si, sebe, sobě, sebou, své, svých, svého, svém, svůj</em></li>
-  <li><code>EMPTY</code> (46647): <em>to, které, který, která, co, tím, kteří, tom, nás, tomu</em></li>
-</ul>
-
-<h3 id="det"><code>DET</code></h3>
-
-<p>4768 <a href="">cs-pos/DET</a> tokens (17% of all <code>DET</code> tokens) have a non-empty value of <code>Reflex</code>.</p>
-
-<p>The most frequent other feature values with which <code>DET</code> and <code>Reflex</code> co-occurred: <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (4768; 100%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (4768; 100%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (4768; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (4768; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (4768; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (3341; 70%).</p>
-
-<p><code>DET</code> tokens may have the following values of <code>Reflex</code>:</p>
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Reflex</code>:</p>
 
 <ul>
-  <li><code>Yes</code> (4768; 100% of non-empty <code>Reflex</code>): <em>své, svou, svého, svých, svůj, svým, svém, svými, svoji, svému</em></li>
-  <li><code>EMPTY</code> (23045): <em>jeho, jejich, této, její, tento, tohoto, tato, těchto, tyto, několik</em></li>
+  <li><code class="highlighter-rouge">Yes</code> (25901; 100% of non-empty <code class="highlighter-rouge">Reflex</code>): <em>se, si, sebe, sobě, sebou, své, svých, svého, svém, svůj</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (46518): <em>to, které, který, která, co, tím, kteří, tom, nás, tomu</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-reflex">Relations with Agreement in <code>Reflex</code></h2>
+<h3 id="det"><code class="highlighter-rouge">DET</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Reflex</code>:
-<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (4; 57%),
+<p>4768 <a href="">cs-pos/DET</a> tokens (17% of all <code class="highlighter-rouge">DET</code> tokens) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">DET</code> and <code class="highlighter-rouge">Reflex</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (4768; 100%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (4768; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (4768; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (4768; 100%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (4768; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (3341; 70%).</p>
+
+<p><code class="highlighter-rouge">DET</code> tokens may have the following values of <code class="highlighter-rouge">Reflex</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Yes</code> (4768; 100% of non-empty <code class="highlighter-rouge">Reflex</code>): <em>své, svou, svého, svých, svůj, svým, svém, svými, svoji, svému</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (23051): <em>jeho, jejich, této, její, tento, tohoto, tato, těchto, tyto, několik</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-reflex">Relations with Agreement in <code class="highlighter-rouge">Reflex</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Reflex</code>:
+<tt>PRON –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (5; 63%),
 <tt>DET –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (1; 100%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+
+<p>This feature is universal.
+It occurs with 1 different values: <code class="highlighter-rouge">Yes</code>.</p>
+
+<p>10459 tokens (2%) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.
+28 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Reflex</code>.
+3 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Reflex</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (9066; 2% instances), <a href="">cs-pos/DET</a> (1393; 0% instances).</p>
+
+<h3 id="pron-1"><code class="highlighter-rouge">PRON</code></h3>
+
+<p>9066 <a href="">cs-pos/PRON</a> tokens (37% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Reflex</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Prs</tt> (9066; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (9065; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (9043; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (9038; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (8706; 96%), <tt><a href="Case.html">Case</a>=Acc</tt> (7811; 86%).</p>
+
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Reflex</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Yes</code> (9066; 100% of non-empty <code class="highlighter-rouge">Reflex</code>): <em>se, si, sebe, sobě, sebou, své, sui, svého, svém, svých</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (15323): <em>to, které, který, která, tím, co, všech, všechny, je, kteří</em></li>
+</ul>
+
+<h3 id="det-1"><code class="highlighter-rouge">DET</code></h3>
+
+<p>1393 <a href="">cs-pos/DET</a> tokens (13% of all <code class="highlighter-rouge">DET</code> tokens) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">DET</code> and <code class="highlighter-rouge">Reflex</code> co-occurred: <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (1393; 100%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (1393; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (1393; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1393; 100%), <tt><a href="Poss.html">Poss</a>=Yes</tt> (1393; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (985; 71%).</p>
+
+<p><code class="highlighter-rouge">DET</code> tokens may have the following values of <code class="highlighter-rouge">Reflex</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Yes</code> (1393; 100% of non-empty <code class="highlighter-rouge">Reflex</code>): <em>své, svou, svých, svého, svým, svůj, svém, svými, svému, svoje</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (9695): <em>jejich, jeho, této, těchto, tyto, tento, tohoto, její, tato, naší</em></li>
+</ul>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+
+<p>This feature is universal.
+It occurs with 1 different values: <code class="highlighter-rouge">Yes</code>.</p>
+
+<p>499 tokens (1%) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.
+11 types (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Reflex</code>.
+2 lemmas (0%) occur at least once with a non-empty value of <code class="highlighter-rouge">Reflex</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/PRON</a> (475; 1% instances), <a href="">cs-pos/DET</a> (24; 0% instances).</p>
+
+<h3 id="pron-2"><code class="highlighter-rouge">PRON</code></h3>
+
+<p>475 <a href="">cs-pos/PRON</a> tokens (39% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Reflex</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (475; 100%), <tt><a href="Number.html">Number</a>=EMPTY</tt> (475; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (475; 100%), <tt><a href="Variant.html">Variant</a>=Short</tt> (468; 99%), <tt><a href="Case.html">Case</a>=Acc</tt> (467; 98%).</p>
+
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Reflex</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Yes</code> (475; 100% of non-empty <code class="highlighter-rouge">Reflex</code>): <em>se, sobě, sebou, si</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (737): <em>které, která, který, to, kterých, kterým, kterém, kterému, nichž, všech</em></li>
+</ul>
+
+<h3 id="det-2"><code class="highlighter-rouge">DET</code></h3>
+
+<p>24 <a href="">cs-pos/DET</a> tokens (4% of all <code class="highlighter-rouge">DET</code> tokens) have a non-empty value of <code class="highlighter-rouge">Reflex</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">DET</code> and <code class="highlighter-rouge">Reflex</code> co-occurred: <tt><a href="Poss.html">Poss</a>=Yes</tt> (24; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (24; 100%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (24; 100%), <tt><a href="Gender[psor].html">Gender[psor]</a>=EMPTY</tt> (24; 100%), <tt><a href="Number[psor].html">Number[psor]</a>=EMPTY</tt> (24; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (20; 83%).</p>
+
+<p><code class="highlighter-rouge">DET</code> tokens may have the following values of <code class="highlighter-rouge">Reflex</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Yes</code> (24; 100% of non-empty <code class="highlighter-rouge">Reflex</code>): <em>své, svého, svých, svůj, svoji, svým, svou</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (571): <em>jejich, jeho, této, tohoto, těchto, tyto, tato, tento, její, tomto</em></li>
+</ul>
 
 
 
@@ -190,6 +267,7 @@ Reflex in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -221,11 +299,40 @@ Reflex in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -249,6 +356,7 @@ Reflex in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-feat';
@@ -274,7 +382,7 @@ Reflex in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

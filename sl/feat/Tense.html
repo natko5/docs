@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sl/feat">sl/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/feat">sl/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Tense.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,9 +39,9 @@
 
           <h2><code>Tense</code>: tense</h2>
 
-<p>Tense is an inflectional feature of <a href="NOUN">nouns</a> and <a href="AUX">auxiliaries</a> that specifies the time when the action took / takes / will take place, in relation to the current moment or to another action in the utterance. In Slovenian, only <code>Present</code> tense and <code>Future</code> tense can be expressed morphologically, while past tense is formed syntactically, by a combination of a present auxiliary verb <em>biti</em> “to be” and past participle (l-participle), e.g. <em>sem šel</em> “I went”.</p>
+<p>Tense is an inflectional feature of <a href="NOUN">nouns</a> and <a href="AUX">auxiliaries</a> that specifies the time when the action took / takes / will take place, in relation to the current moment or to another action in the utterance. In Slovenian, only <code class="highlighter-rouge">Present</code> tense and <code class="highlighter-rouge">Future</code> tense can be expressed morphologically, while past tense is formed syntactically, by a combination of a present auxiliary verb <em>biti</em> “to be” and past participle (l-participle), e.g. <em>sem šel</em> “I went”.</p>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that usually happen.</p>
 
@@ -51,9 +52,9 @@
   <li><em><b>Študiram</b> jezike.</em> “I study languages.”</li>
 </ul>
 
-<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+<h3 id="fut-future-tense"><code class="highlighter-rouge">Fut</code>: future tense</h3>
 
-<p>The future tense denotes actions that will happen after the current moment. Simmilarly to past tense, future tense for most Slovenian verbs is formed by a combination of future auxiliary verb <em>biti</em> “to be “ and l-participle (<em>bom hodil</em> “I will walk”). Thus, the <code>Tense=Fut</code> feature is only to <em>biti</em> that can either be used as a content or auxiliary verb.</p>
+<p>The future tense denotes actions that will happen after the current moment. Simmilarly to past tense, future tense for most Slovenian verbs is formed by a combination of future auxiliary verb <em>biti</em> “to be “ and l-participle (<em>bom hodil</em> “I will walk”). Thus, the <code class="highlighter-rouge">Tense=Fut</code> feature is only to <em>biti</em> that can either be used as a content or auxiliary verb.</p>
 
 <p>Examples:</p>
 
@@ -65,7 +66,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>All verbs with VForm=present are converted to UD <code>Tense=Pres</code> and all verbs with VForm=future are converted to UD <code>Ťense=Fut</code>. We do not assign tense to other verb forms, such as participle, infinitive, supine, conditional and imperative.</p>
+<p>All verbs with VForm=present are converted to UD <code class="highlighter-rouge">Tense=Pres</code> and all verbs with VForm=future are converted to UD <code class="highlighter-rouge">Ťense=Fut</code>. We do not assign tense to other verb forms, such as participle, infinitive, supine, conditional and imperative.</p>
 
 
 
@@ -81,25 +82,25 @@
 <h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Fut</code>, <code>Pres</code>.</p>
+It occurs with 2 different values: <code class="highlighter-rouge">Fut</code>, <code class="highlighter-rouge">Pres</code>.</p>
 
-<p>14222 tokens (10%) have a non-empty value of <code>Tense</code>.
-2474 types (8%) occur at least once with a non-empty value of <code>Tense</code>.
-1339 lemmas (8%) occur at least once with a non-empty value of <code>Tense</code>.
+<p>14222 tokens (10%) have a non-empty value of <code class="highlighter-rouge">Tense</code>.
+2474 types (8%) occur at least once with a non-empty value of <code class="highlighter-rouge">Tense</code>.
+1339 lemmas (8%) occur at least once with a non-empty value of <code class="highlighter-rouge">Tense</code>.
 The feature is used with 2 part-of-speech tags: <a href="">sl-pos/VERB</a> (7982; 6% instances), <a href="">sl-pos/AUX</a> (6240; 4% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>7982 <a href="">sl-pos/VERB</a> tokens (46% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>7982 <a href="">sl-pos/VERB</a> tokens (46% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (7982; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (7982; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (7982; 100%), <tt><a href="Person.html">Person</a>=3</tt> (6521; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (5086; 64%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (4860; 61%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Tense</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (7982; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (7982; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (7982; 100%), <tt><a href="Person.html">Person</a>=3</tt> (6521; 82%), <tt><a href="Number.html">Number</a>=Sing</tt> (5086; 64%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (4860; 61%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (234; 3% of non-empty <code>Tense</code>): <em>bo, bodo, bom, boste, bosta, bomo, boš</em></li>
-  <li><code>Pres</code> (7748; 97% of non-empty <code>Tense</code>): <em>je, so, ni, ima, gre, imajo, mora, pomeni, zdi, niso</em></li>
-  <li><code>EMPTY</code> (9328): <em>bila, bil, bilo, bili, biti, imel, bile, moral, povedal, imela</em></li>
+  <li><code class="highlighter-rouge">Fut</code> (234; 3% of non-empty <code class="highlighter-rouge">Tense</code>): <em>bo, bodo, bom, boste, bosta, bomo, boš</em></li>
+  <li><code class="highlighter-rouge">Pres</code> (7748; 97% of non-empty <code class="highlighter-rouge">Tense</code>): <em>je, so, ni, ima, gre, imajo, mora, pomeni, zdi, niso</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (9328): <em>bila, bil, bilo, bili, biti, imel, bile, moral, povedal, imela</em></li>
 </ul>
 
 <table>
@@ -123,20 +124,20 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/VERB</a> (7982
   <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td><em>so</em></td><td><em>bodo</em></td></tr>
 </table>
 
-<p><code>Tense</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (1338) occur only with one value of <code>Tense</code>.</p>
+<p><code class="highlighter-rouge">Tense</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (1338) occur only with one value of <code class="highlighter-rouge">Tense</code>.</p>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="highlighter-rouge">AUX</code></h3>
 
-<p>6240 <a href="">sl-pos/AUX</a> tokens (87% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>6240 <a href="">sl-pos/AUX</a> tokens (87% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (6240; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (6240; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (5809; 93%), <tt><a href="Person.html">Person</a>=3</tt> (5345; 86%), <tt><a href="Number.html">Number</a>=Sing</tt> (4202; 67%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (6240; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (6240; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (5809; 93%), <tt><a href="Person.html">Person</a>=3</tt> (5345; 86%), <tt><a href="Number.html">Number</a>=Sing</tt> (4202; 67%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Fut</code> (814; 13% of non-empty <code>Tense</code>): <em>bo, bodo, bomo, boste, bom, bosta, bova, bojo</em></li>
-  <li><code>Pres</code> (5426; 87% of non-empty <code>Tense</code>): <em>je, so, sem, ni, sta, smo, niso, ste, nisem, sva</em></li>
-  <li><code>EMPTY</code> (907): <em>bi, bil, bili, bila, b</em></li>
+  <li><code class="highlighter-rouge">Fut</code> (814; 13% of non-empty <code class="highlighter-rouge">Tense</code>): <em>bo, bodo, bomo, boste, bom, bosta, bova, bojo</em></li>
+  <li><code class="highlighter-rouge">Pres</code> (5426; 87% of non-empty <code class="highlighter-rouge">Tense</code>): <em>je, so, sem, ni, sta, smo, niso, ste, nisem, sva</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (907): <em>bi, bil, bili, bila, b</em></li>
 </ul>
 
 <table>
@@ -160,13 +161,103 @@ The feature is used with 2 part-of-speech tags: <a href="">sl-pos/VERB</a> (7982
   <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td><em>so</em></td><td><em>bodo, bojo</em></td></tr>
 </table>
 
-<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code class="highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (415; 71%),
-<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (268; 51%),
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Tense</code>:
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (415; 72%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (267; 51%),
 <tt>AUX –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1; 100%),
 <tt>VERB –[<a href="../dep/mwe.html">mwe</a>]–&gt; VERB</tt> (1; 100%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code class="highlighter-rouge">Fut</code>, <code class="highlighter-rouge">Pres</code>.</p>
+
+<p>3946 tokens (13%) have a non-empty value of <code class="highlighter-rouge">Tense</code>.
+707 types (12%) occur at least once with a non-empty value of <code class="highlighter-rouge">Tense</code>.
+436 lemmas (11%) occur at least once with a non-empty value of <code class="highlighter-rouge">Tense</code>.
+The feature is used with 2 part-of-speech tags: <a href="">sl-pos/VERB</a> (2824; 10% instances), <a href="">sl-pos/AUX</a> (1122; 4% instances).</p>
+
+<h3 id="verb-1"><code class="highlighter-rouge">VERB</code></h3>
+
+<p>2824 <a href="">sl-pos/VERB</a> tokens (61% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Tense</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Tense</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (2824; 100%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (2824; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2824; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2088; 74%), <tt><a href="Person.html">Person</a>=3</tt> (1720; 61%), <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (1546; 55%).</p>
+
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Tense</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Fut</code> (91; 3% of non-empty <code class="highlighter-rouge">Tense</code>): <em>bo, bom, bodo, boš, bomo, bojo, bosta, bova</em></li>
+  <li><code class="highlighter-rouge">Pres</code> (2733; 97% of non-empty <code class="highlighter-rouge">Tense</code>): <em>je, so, vem, ni, veš, mislim, ima, sem, si, pravi</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (1787): <em>bilo, bil, bila, recimo, imela, rekel, imeli, daj, šla, bili</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>biti</i></th><th><tt>Pres</tt></th><th><tt>Fut</tt></th></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td><em>nisem</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td><em>nisi</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>ni</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td><em>nismo</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td><em>niste</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td><em>niso</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td><em>sem</em></td><td><em>bom</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td><em>si</em></td><td><em>boš</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>je</em></td><td><em>bo</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=1</tt></td><td><em>sva</em></td><td><em>bova</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3</tt></td><td><em>sta</em></td><td><em>bosta</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td><em>smo</em></td><td><em>bomo</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td><em>ste</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td><em>so</em></td><td><em>bodo, bojo</em></td></tr>
+</table>
+
+<p><code class="highlighter-rouge">Tense</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (435) occur only with one value of <code class="highlighter-rouge">Tense</code>.</p>
+
+<h3 id="aux-1"><code class="highlighter-rouge">AUX</code></h3>
+
+<p>1122 <a href="">sl-pos/AUX</a> tokens (89% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">Tense</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">Tense</code> co-occurred: <tt><a href="Mood.html">Mood</a>=Ind</tt> (1122; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1122; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (1044; 93%), <tt><a href="Number.html">Number</a>=Sing</tt> (755; 67%), <tt><a href="Person.html">Person</a>=3</tt> (634; 57%).</p>
+
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">Tense</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Fut</code> (208; 19% of non-empty <code class="highlighter-rouge">Tense</code>): <em>bo, bomo, bom, boš, boste, bodo, bova, bosta, bojo</em></li>
+  <li><code class="highlighter-rouge">Pres</code> (914; 81% of non-empty <code class="highlighter-rouge">Tense</code>): <em>je, sem, so, smo, ni, si, ste, sta, nisem, sva</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (134): <em>bi</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>biti</i></th><th><tt>Pres</tt></th><th><tt>Fut</tt></th></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td><em>nisem</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td><em>nisi</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>ni</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=1</tt></td><td><em>nisva</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td><em>nismo</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td><em>niste</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td><em>niso</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td><em>sem</em></td><td><em>bom</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td><em>si</em></td><td><em>boš</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td><em>je, biti</em></td><td><em>bo</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=1</tt></td><td><em>sva</em></td><td><em>bova</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3</tt></td><td><em>sta</em></td><td><em>bosta</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td><em>smo</em></td><td><em>bomo</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td><em>ste</em></td><td><em>boste</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td><em>so</em></td><td><em>bodo, bojo</em></td></tr>
+</table>
+
+<h2 id="relations-with-agreement-in-tense-1">Relations with Agreement in <code class="highlighter-rouge">Tense</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Tense</code>:
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (185; 54%),
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (138; 73%),
+<tt>VERB –[<a href="../dep/advcl.html">advcl</a>]–&gt; VERB</tt> (87; 59%),
+<tt>VERB –[<a href="../dep/parataxis:discourse.html">parataxis:discourse</a>]–&gt; VERB</tt> (61; 50%),
+<tt>VERB –[<a href="../dep/reparandum.html">reparandum</a>]–&gt; VERB</tt> (36; 88%),
+<tt>VERB –[<a href="../dep/parataxis:restart.html">parataxis:restart</a>]–&gt; VERB</tt> (29; 53%),
+<tt>AUX –[<a href="../dep/reparandum.html">reparandum</a>]–&gt; AUX</tt> (1; 100%).</p>
 
 
 
@@ -225,6 +316,7 @@ Tense in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -256,11 +348,40 @@ Tense in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -284,6 +405,7 @@ Tense in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-feat';
@@ -309,7 +431,7 @@ Tense in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

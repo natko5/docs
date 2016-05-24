@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/det.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,114 @@
 
           <h2><code>det</code>: determiner</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>det</code>.</p>
+<p>The relation determiner (<code class="highlighter-rouge">det</code>) holds between a nominal head and its
+[determiner]. 
+Determiners are words that modify nouns or noun phrases and express the reference of the noun phrase in context. That is, a determiner may indicate whether the noun is referring to a definite or indefinite element of a class, to a closer or more distant element, to an element belonging to a specified person or thing, to a particular number or quantity, etc.</p>
+
+<p>Note that cardinal numerals (one, five, hundred) are not tagged DET but nummod.</p>
+
+<ul>
+  <li>Ordinal numbers are considered det in Basque:</li>
+</ul>
+
+<p><em><strong>Lehen</strong> partiduan hiru puntuak eskuratzea ez da ezinbestekoa .</em></p>
+
+<p><em>To get the three points in the <strong>first</strong> match is not essential .</em></p>
+
+<pre><code class="language-sdparse">Lehen partiduan hiru puntuak eskuratzea ez da ezinbestekoa . \n First match_the_in three points_the to_get not is essential . 
+
+det(partiduan-2, Lehen-1)
+nmod(eskuratzea-5, partiduan-2)
+nummod(puntuak-4, hiru-3)
+dobj(eskuratzea-5, puntuak-4)
+neg(da-7, ez-6)
+cop(ezinbestekoa-8, da-7)
+csubj(ezinbestekoa-8, eskuratzea-5)
+punct(ezinbestekoa-8, .-9)
+</code></pre>
+
+<ul>
+  <li>Quantifiers (such as <em>all</em>, <em>many</em>, <em>few</em>…) are also tagged as det:</li>
+</ul>
+
+<p><em>Hortxe biltzen da mota <strong>guztietako</strong> jendea .</em></p>
+
+<p><em><strong>All</strong> kind of people are met there .</em></p>
+
+<pre><code class="language-sdparse">Hortxe biltzen da mota guztietako jendea . \n There met are kind all_of people .
+
+advmod(biltzen-2, Hortxe-1)
+aux(biltzen-2, da-3)
+det(mota-4, guztietako-5)
+nmod(jendea-6, mota-4)
+ncubj(biltzen-2, jendea-6)
+punct(biltzen-2, .-7)
+</code></pre>
+
+<p><em>Aukera <strong>asko</strong> daude .</em></p>
+
+<p><em>There are <strong>many</strong> options .</em></p>
+
+<pre><code class="language-sdparse">Aukera asko daude . \n Options many there_are .
+
+det(Aukera-1, asko-2)
+cop(Aukera-1, daude-3)
+punct(Aukera-1-2, .-4)
+</code></pre>
+
+<p><em>Oso harreman <strong>gutxi</strong> dute gurekin .</em></p>
+
+<p><em>They have very <strong>few</strong> relation with us .</em></p>
+
+<pre><code class="language-sdparse">Oso harreman gutxi dute gurekin . \n Very relation few have us_with .
+
+advmod(harreman-2, Oso-1)
+det(harreman-2, gutxi-3)
+dobj(dute-4, harreman-2)
+nmod(dute-4, gurekin-5)
+punct(dute-4, .-6)
+</code></pre>
+
+<ul>
+  <li>Interrogative determiners:</li>
+</ul>
+
+<p><em><strong>Zeintzu</strong> proiektu dituzu epe laburrera ?</em></p>
+
+<p><em><strong>Which</strong> projects do you have in the near future ?</em></p>
+
+<pre><code class="language-sdparse">Zeintzu proiektu dituzu epe laburrera ? \n Which projects do you have in the near future ?
+
+det(proiektu-2, Zeintzu-1)
+dobj(dituzu-3, proiektu-2)
+nmod(dituzu-3, epe-4)
+amod(epe-4, laburrera-5)
+punct(dituzu-3, ?-6)
+</code></pre>
+
+<ul>
+  <li>Demonstrative determiners are also det:</li>
+</ul>
+
+<p><em>Euroaren kotizazio <strong>hau</strong> azken lau asteetako altuena da .</em></p>
+
+<p><em><strong>This</strong> price of the euro is the highest one in the last four weeks .</em></p>
+
+<pre><code class="language-sdparse">Euroaren kotizazio hau azken lau asteetako altuena da . \n Euro_the_of price this last four week_the_of highest_the is .*
+
+nmod(kotizazio-2, Euroaren-1)
+det(kotizazio-2, hau-3)
+nsubj(altuena-7, kotizazio-2)
+det(lau-5, azken-4)
+nummod(asteetako-6, lau-5)
+nmod(altuena-7, asteetako-6)
+cop(altuena-7, da-8)
+punct(altuena-7, .-9)
+</code></pre>
+
+<ul>
+  <li>Possessive determiners, are not tagged with det but with nmod (see nmod section).</li>
+</ul>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +163,12 @@ for <code>det</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>3032 nodes (2%) are attached to their parents as <code>det</code>.</p>
+<p>3032 nodes (2%) are attached to their parents as <code class="highlighter-rouge">det</code>.</p>
 
-<p>1870 instances of <code>det</code> (62%) are left-to-right (parent precedes child).
+<p>1870 instances of <code class="highlighter-rouge">det</code> (62%) are left-to-right (parent precedes child).
 Average distance between parent and child is 1.12598944591029.</p>
 
-<p>The following 38 pairs of parts of speech are connected with <code>det</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/DET</a> (1968; 65% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (622; 21% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (77; 3% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (57; 2% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/DET</a> (55; 2% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/DET</a> (33; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/DET</a> (25; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NUM</a> (25; 1% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/DET</a> (25; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/DET</a> (20; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (17; 1% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (16; 1% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/DET</a> (11; 0% instances), <a href="">eu-pos/SYM</a>-<a href="">eu-pos/NUM</a> (11; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (10; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/DET</a> (8; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NUM</a> (8; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/DET</a> (4; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADJ</a> (4; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NOUN</a> (3; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NUM</a> (3; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (3; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NUM</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PART</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/PART</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 38 pairs of parts of speech are connected with <code class="highlighter-rouge">det</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/DET</a> (1968; 65% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (622; 21% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (77; 3% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (57; 2% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/DET</a> (55; 2% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/DET</a> (33; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/DET</a> (25; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NUM</a> (25; 1% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/DET</a> (25; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/DET</a> (20; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (17; 1% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (16; 1% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/DET</a> (11; 0% instances), <a href="">eu-pos/SYM</a>-<a href="">eu-pos/NUM</a> (11; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (10; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/DET</a> (8; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NUM</a> (8; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/DET</a> (4; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADJ</a> (4; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NOUN</a> (3; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NUM</a> (3; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (3; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NUM</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PART</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/PART</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -175,6 +282,7 @@ det in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -206,11 +314,40 @@ det in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -234,6 +371,7 @@ det in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -259,7 +397,7 @@ det in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

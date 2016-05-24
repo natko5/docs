@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -193,7 +194,7 @@ row):</p>
   </tbody>
 </table>
 
-<h3 id="anim-animate"><code>Anim</code>: animate</h3>
+<h3 id="anim-animate"><code class="highlighter-rouge">Anim</code>: animate</h3>
 
 <p>Human beings, animals, fictional characters, names of professions
 etc. are all animate. Even nouns that are normally inanimate can be
@@ -201,15 +202,15 @@ inflected as animate if they are personified. For instance, consider a
 children’s story about cars where cars live and talk as people; then
 the cars may become and be inflected as animates.</p>
 
-<h3 id="nhum-animate-but-non-human"><code>Nhum</code>: animate but non-human</h3>
+<h3 id="nhum-animate-but-non-human"><code class="highlighter-rouge">Nhum</code>: animate but non-human</h3>
 
-<p>Attested in Polish. In languages where Nhum is used, <code>Anim</code> is
-restricted to human beings (complement of <code>Nhum</code>).</p>
+<p>Attested in Polish. In languages where Nhum is used, <code class="highlighter-rouge">Anim</code> is
+restricted to human beings (complement of <code class="highlighter-rouge">Nhum</code>).</p>
 
-<h3 id="inan-inanimate"><code>Inan</code>: inanimate</h3>
+<h3 id="inan-inanimate"><code class="highlighter-rouge">Inan</code>: inanimate</h3>
 
-<p>Nouns that are not animate are inanimate. (If <code>Nhum</code> is used, nouns
-that are neither <code>Anim</code> nor <code>Nhum</code> are <code>Inan</code>.)</p>
+<p>Nouns that are not animate are inanimate. (If <code class="highlighter-rouge">Nhum</code> is used, nouns
+that are neither <code class="highlighter-rouge">Anim</code> nor <code class="highlighter-rouge">Nhum</code> are <code class="highlighter-rouge">Inan</code>.)</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/Animacy.md" target="#">edit Animacy</a></p>
 
@@ -238,7 +239,7 @@ aspect values found in corpora.  See Wikipedia
 (<a href="http://en.wikipedia.org/wiki/Grammatical_aspect">http://en.wikipedia.org/wiki/Grammatical_aspect</a>) for a long list of
 other possible aspects.</p>
 
-<h3 id="imp-imperfect-aspect"><code>Imp</code>: imperfect aspect</h3>
+<h3 id="imp-imperfect-aspect"><code class="highlighter-rouge">Imp</code>: imperfect aspect</h3>
 
 <p>The action took / takes / will take some time span and there is no
 information whether and when it was / will be completed.</p>
@@ -250,7 +251,7 @@ information whether and when it was / will be completed.</p>
 baking a bread”</li>
 </ul>
 
-<h3 id="perf-perfect-aspect"><code>Perf</code>: perfect aspect</h3>
+<h3 id="perf-perfect-aspect"><code class="highlighter-rouge">Perf</code>: perfect aspect</h3>
 
 <p>The action has been / will have been completed. Since there is
 emphasis on one point on the time scale (the point of completion),
@@ -265,12 +266,12 @@ these actually have a future meaning.</p>
 baked a bread”</li>
 </ul>
 
-<h3 id="pro-prospective-aspect"><code>Pro</code>: prospective aspect</h3>
+<h3 id="pro-prospective-aspect"><code class="highlighter-rouge">Pro</code>: prospective aspect</h3>
 
 <p>Used in Basque. A combination of tense and aspect that indicates the
 action is in preparation to take place.</p>
 
-<h3 id="prog-progressive-aspect"><code>Prog</code>: progressive aspect</h3>
+<h3 id="prog-progressive-aspect"><code class="highlighter-rouge">Prog</code>: progressive aspect</h3>
 
 <p>English progressive tenses (<em>I am eating, I have been doing …</em>)
 have this aspect. They are constructed analytically (auxiliary +
@@ -288,7 +289,7 @@ even more justified. Example is Turkish.</p>
 <p><a id="al-u-feat/Case" class="al-dest"></a></p>
 <h2><code>Case</code>: case</h2>
 
-<p><code>Case</code> is usually an inflectional feature of <a href="u-pos/NOUN">nouns</a> and,
+<p><code class="highlighter-rouge">Case</code> is usually an inflectional feature of <a href="u-pos/NOUN">nouns</a> and,
 depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
 <a href="u-pos/ADJ">adjectives</a>, <a href="u-pos/DET">determiners</a>, <a href="u-pos/NUM">numerals</a>,
 <a href="u-pos/VERB">verbs</a>) that mark agreement with nouns. In some tagsets
@@ -340,30 +341,30 @@ language-dependent because they are copies of the relevant morphemes
 (either bound morphemes or postpositions). Vibhakti can be mapped on
 the Case values described here if we know 1. which source values are
 bound morphemes (postpositions are separate nodes for us) and 2. what
-is their meaning. For instance, the genitive case (<code>Gen</code>) in Bengali
+is their meaning. For instance, the genitive case (<code class="highlighter-rouge">Gen</code>) in Bengali
 is marked using the suffix <em>-ra</em> (-র), i.e. vib=era.  In Hindi, the
 suffix has been split off the noun and it is now written as a separate
 word – the postposition <em>kā/kī/ke</em> (का/की/के).  Even if the
 postpositional phrase can be understood as a genitive noun phrase, the
 noun is not in genitive. Instead, the postposition requires that it
 takes one of three case forms that are marked directly on the noun:
-the oblique case (<code>Acc</code>).</p>
+the oblique case (<code class="highlighter-rouge">Acc</code>).</p>
 
-<h3 id="nom-nominative--direct"><code>Nom</code>: nominative / direct</h3>
+<h3 id="nom-nominative--direct"><code class="highlighter-rouge">Nom</code>: nominative / direct</h3>
 
 <p>The base form of the noun, typically used as citation form (lemma).
 In many languages this is the word form used for subjects of clauses.
 If the language has only two cases, which are called “direct” and
 “oblique”, the direct case will be marked Nom.</p>
 
-<h3 id="acc-accusative--oblique"><code>Acc</code>: accusative / oblique</h3>
+<h3 id="acc-accusative--oblique"><code class="highlighter-rouge">Acc</code>: accusative / oblique</h3>
 
 <p>Perhaps the second most widely spread morphological case. In many
 languages this is the word form used for direct objects of verbs.  If
 the language has only two cases, which are called “direct” and
 “oblique”, the oblique case will be marked Acc.</p>
 
-<h3 id="abs-absolutive"><code>Abs</code>: absolutive</h3>
+<h3 id="abs-absolutive"><code class="highlighter-rouge">Abs</code>: absolutive</h3>
 
 <p>Some languages (e.g. Basque) do not use nominative-accusative to
 distinguish subjects and objects.  Instead, they use the contrast of
@@ -372,7 +373,7 @@ absolutive-ergative.</p>
 <p>The absolutive case marks subject of intransitive verb and direct
 object of transitive verb.</p>
 
-<h3 id="erg-ergative"><code>Erg</code>: ergative</h3>
+<h3 id="erg-ergative"><code class="highlighter-rouge">Erg</code>: ergative</h3>
 
 <p>Some languages (e.g. Basque) do not use nominative-accusative to
 distinguish subjects and objects.  Instead, they use the contrast of
@@ -380,7 +381,7 @@ absolutive-ergative.</p>
 
 <p>The ergative case marks subject of transitive verb.</p>
 
-<h3 id="dat-dative"><code>Dat</code>: dative</h3>
+<h3 id="dat-dative"><code class="highlighter-rouge">Dat</code>: dative</h3>
 
 <p>In many languages this is the word form used for indirect objects of verbs.</p>
 
@@ -392,7 +393,7 @@ brother a present.” (<em>meinem Bruder</em> “my brother” is dative and <em
 Geschenk</em> “a present” is accusative.)</li>
 </ul>
 
-<h3 id="gen-genitive"><code>Gen</code>: genitive</h3>
+<h3 id="gen-genitive"><code class="highlighter-rouge">Gen</code>: genitive</h3>
 
 <p>Prototypical meaning of genitive is that the noun phrase somehow
 belongs to its governor; it would often be translated by the English
@@ -429,7 +430,7 @@ capital <b>of the Czech Republic</b>.”</li>
 opposed to locative genitive): <em><b>diktadorearen</b> erregimena</em>
 “dictator’s regime”; <em>diktadore</em> “dictator”.</p>
 
-<h3 id="voc-vocative"><code>Voc</code>: vocative</h3>
+<h3 id="voc-vocative"><code class="highlighter-rouge">Voc</code>: vocative</h3>
 
 <p>The vocative case is a special form of noun used to address
 someone. Thus it predominantly appears with animate nouns (see the
@@ -443,7 +444,7 @@ restriction and inanimate things can be addressed as well.</p>
 <b>Filip</b>?”</li>
 </ul>
 
-<h3 id="loc-locative"><code>Loc</code>: locative</h3>
+<h3 id="loc-locative"><code class="highlighter-rouge">Loc</code>: locative</h3>
 
 <p>The locative case often expresses location in space or time, which
 gave it its name. As elsewhere, non-locational meanings also exist and
@@ -466,7 +467,7 @@ I was in <b>Sweden</b>.”</li>
 <b>morphology</b>.” (Non-locational non-temporal example)</li>
 </ul>
 
-<h3 id="ins-instrumental--instructive"><code>Ins</code>: instrumental / instructive</h3>
+<h3 id="ins-instrumental--instructive"><code class="highlighter-rouge">Ins</code>: instrumental / instructive</h3>
 
 <p>The role from which the name of the instrumental case is derived is
 that the noun is used as instrument to do something (as in [cs] <em>psát
@@ -501,7 +502,7 @@ valtataisteluun</em> lit. <em>was-involved-in by-surprise.Ins
 power-struggle.Ill.</em></li>
 </ul>
 
-<h3 id="par-partitive"><code>Par</code>: partitive</h3>
+<h3 id="par-partitive"><code class="highlighter-rouge">Par</code>: partitive</h3>
 
 <p>In Finnish the partitive case expresses indefinite identity and
 unfinished actions without result.</p>
@@ -526,7 +527,7 @@ bear.Par” (but I may have missed).</p>
 future tense: <em>luen kirjan</em> “I will read the book.Acc”; <em>luen kirjaa</em>
 “I am reading the book.Par”.</p>
 
-<h3 id="dis-distributive"><code>Dis</code>: distributive</h3>
+<h3 id="dis-distributive"><code class="highlighter-rouge">Dis</code>: distributive</h3>
 
 <p>The distributive case conveys that something happened to every member
 of a set, one in a time. Or it may express frequency.</p>
@@ -540,11 +541,11 @@ of a set, one in a time. Or it may express frequency.</p>
   <li>[hu] <em><b>tízpercenként</b></em> “every ten minutes”</li>
 </ul>
 
-<h3 id="ess-essive--prolative"><code>Ess</code>: essive / prolative</h3>
+<h3 id="ess-essive--prolative"><code class="highlighter-rouge">Ess</code>: essive / prolative</h3>
 
 <p>The essive case expresses a temporary state, often it corresponds to
 English “as a …” A similar case in Basque is called prolative
-and it should be tagged <code>Ess</code> too.</p>
+and it should be tagged <code class="highlighter-rouge">Ess</code> too.</p>
 
 <h4 id="examples-9">Examples</h4>
 
@@ -554,7 +555,7 @@ and it should be tagged <code>Ess</code> too.</p>
   <li>[eu] <em>erreformista</em> “reformer”; <em><b>erreformistatzat</b></em> “as a reformer”</li>
 </ul>
 
-<h3 id="tra-translative--factive"><code>Tra</code>: translative / factive</h3>
+<h3 id="tra-translative--factive"><code class="highlighter-rouge">Tra</code>: translative / factive</h3>
 
 <p>The translative case expresses a change of state (“it becomes X”, “it
 changes to X”).  Also used for the phrase “in language X”. In the
@@ -571,7 +572,7 @@ Szeged Treebank, this case is called factive.</p>
 could-become.</em> “Oroszlány could become a dead city.”</li>
 </ul>
 
-<h3 id="com-comitative--associative"><code>Com</code>: comitative / associative</h3>
+<h3 id="com-comitative--associative"><code class="highlighter-rouge">Com</code>: comitative / associative</h3>
 
 <p>The comitative (also called associative) case corresponds to English
 “together with …”</p>
@@ -582,7 +583,7 @@ could-become.</em> “Oroszlány could become a dead city.”</li>
   <li>[et] <em>koer</em> “dog”; <em><b>koeraga</b></em> “with dog”</li>
 </ul>
 
-<h3 id="abe-abessive"><code>Abe</code>: abessive</h3>
+<h3 id="abe-abessive"><code class="highlighter-rouge">Abe</code>: abessive</h3>
 
 <p>The abessive case corresponds to the English preposition <em>without</em>.</p>
 
@@ -592,7 +593,7 @@ could-become.</em> “Oroszlány could become a dead city.”</li>
   <li>[fi] <em>raha</em> “money”; <em><b>rahatta</b></em> “without money”</li>
 </ul>
 
-<h3 id="ine-inessive"><code>Ine</code>: inessive</h3>
+<h3 id="ine-inessive"><code class="highlighter-rouge">Ine</code>: inessive</h3>
 
 <p>The inessive case expresses location inside of something.</p>
 
@@ -604,7 +605,7 @@ could-become.</em> “Oroszlány could become a dead city.”</li>
   <li>[et] <em>maja</em> “house”; <em><b>majas</b></em> “in the house”</li>
 </ul>
 
-<h3 id="ill-illative"><code>Ill</code>: illative</h3>
+<h3 id="ill-illative"><code class="highlighter-rouge">Ill</code>: illative</h3>
 
 <p>The illative case expresses direction into something.</p>
 
@@ -616,7 +617,7 @@ could-become.</em> “Oroszlány could become a dead city.”</li>
   <li>[et] <em>maja</em> “house”; <em><b>majas</b><b>se / majja</b></em> “into the house”</li>
 </ul>
 
-<h3 id="ela-elative"><code>Ela</code>: elative</h3>
+<h3 id="ela-elative"><code class="highlighter-rouge">Ela</code>: elative</h3>
 
 <p>The elative case expresses direction out of something.</p>
 
@@ -628,7 +629,7 @@ could-become.</em> “Oroszlány could become a dead city.”</li>
   <li>[et] <em>maja</em> “house”; <em><b>majas</b><b>t</b></em> “from the house”</li>
 </ul>
 
-<h3 id="add-additive"><code>Add</code>: additive</h3>
+<h3 id="add-additive"><code class="highlighter-rouge">Add</code>: additive</h3>
 
 <p>Distinguished by some scholars in Estonian, not recognized by
 traditional grammar, exists in the Multext-East Estonian tagset and in
@@ -636,7 +637,7 @@ the Eesti keele puudepank.  Reportedly same or similar meaning as
 illative. Forms of this case exist only in singular and not for all
 nouns.</p>
 
-<h3 id="ade-adessive"><code>Ade</code>: adessive</h3>
+<h3 id="ade-adessive"><code class="highlighter-rouge">Ade</code>: adessive</h3>
 
 <p>The adessive case expresses location at or on something.  The
 corresponding directional cases are allative (towards something) and
@@ -654,7 +655,7 @@ ablative (from something).</p>
 something in Finnish and Estonian, but does not carry this meaning in
 Hungarian.</p>
 
-<h3 id="all-allative"><code>All</code>: allative</h3>
+<h3 id="all-allative"><code class="highlighter-rouge">All</code>: allative</h3>
 
 <p>The allative case expresses direction to something (destination is
 adessive, i.e. at or on that something).</p>
@@ -666,7 +667,7 @@ adessive, i.e. at or on that something).</p>
   <li>[fi] <em>pöytä</em> “table”; <em><b>pöydäll</b><b>e</b></em> “onto the table”</li>
 </ul>
 
-<h3 id="abl-ablative"><code>Abl</code>: ablative</h3>
+<h3 id="abl-ablative"><code class="highlighter-rouge">Abl</code>: ablative</h3>
 
 <p>Prototypical meaning: direction from some point.</p>
 
@@ -678,7 +679,7 @@ adessive, i.e. at or on that something).</p>
 <em>rannalta</em> “from the beach”</li>
 </ul>
 
-<h3 id="sup-superessive"><code>Sup</code>: superessive</h3>
+<h3 id="sup-superessive"><code class="highlighter-rouge">Sup</code>: superessive</h3>
 
 <p>Used, chiefly <a href="http://www.hungarianreference.com/Nouns/-n-superessive.aspx">in
 Hungarian</a>,
@@ -692,7 +693,7 @@ something.</p>
   <li>[hu] <em>könyvek</em> “books”; <em><b>könyveken</b></em> “on books”</li>
 </ul>
 
-<h3 id="sub-sublative"><code>Sub</code>: sublative</h3>
+<h3 id="sub-sublative"><code class="highlighter-rouge">Sub</code>: sublative</h3>
 
 <p>The sublative case is used in Finno-Ugric languages to express the
 destination of movement, originally to the surface of something
@@ -709,7 +710,7 @@ southwest of Belgrade”</li>
   <li>[hu] <em><b>bokorra</b></em> “on the shrub”</li>
 </ul>
 
-<h3 id="del-delative"><code>Del</code>: delative</h3>
+<h3 id="del-delative"><code class="highlighter-rouge">Del</code>: delative</h3>
 
 <p>Used, chiefly <a href="http://www.hungarianreference.com/Nouns/ról-rol-delative.aspx">in
 Hungarian</a>,
@@ -724,7 +725,7 @@ something”.</p>
   <li>[hu]<em><b>Budapestről</b> jövök</em> “I am coming from Budapest”</li>
 </ul>
 
-<h3 id="lat-lative--directional-allative"><code>Lat</code>: lative / directional allative</h3>
+<h3 id="lat-lative--directional-allative"><code class="highlighter-rouge">Lat</code>: lative / directional allative</h3>
 
 <p>The lative case denotes movement towards/to/into/onto
 something. Similar case in Basque is called directional allative
@@ -738,7 +739,7 @@ Basque it is derived from allative, which also exists independently.</p>
   <li>[eu] <em>behe</em> “low”; <em><b>beherantz</b></em> “down”</li>
 </ul>
 
-<h3 id="tem-temporal"><code>Tem</code>: temporal</h3>
+<h3 id="tem-temporal"><code class="highlighter-rouge">Tem</code>: temporal</h3>
 
 <p>The temporal case is used to indicate time.</p>
 
@@ -749,7 +750,7 @@ Basque it is derived from allative, which also exists independently.</p>
 <em><b>karácsonykor</b></em> “at Christmas”</li>
 </ul>
 
-<h3 id="ter-terminative--terminal-allative"><code>Ter</code>: terminative / terminal allative</h3>
+<h3 id="ter-terminative--terminal-allative"><code class="highlighter-rouge">Ter</code>: terminative / terminal allative</h3>
 
 <p>The terminative case specifies where something ends in space or
 time. Similar case in Basque is called terminal allative (Spanish
@@ -765,7 +766,7 @@ six o’clock”</li>
   <li>[eu] <em>erdi</em> “half”; <em><b>erdiraino</b></em> “up to the half”</li>
 </ul>
 
-<h3 id="cau-causative--motivative"><code>Cau</code>: causative / motivative</h3>
+<h3 id="cau-causative--motivative"><code class="highlighter-rouge">Cau</code>: causative / motivative</h3>
 
 <p>Noun in this case is the cause of something. In Hungarian it also
 seems to be used frequently with currency (“to buy something <em>for</em> the
@@ -784,7 +785,7 @@ milk.Cau</em> “I went to the shop to buy milk.”</li>
 behavior”</li>
 </ul>
 
-<h3 id="ben-benefactive--destinative"><code>Ben</code>: benefactive / destinative</h3>
+<h3 id="ben-benefactive--destinative"><code class="highlighter-rouge">Ben</code>: benefactive / destinative</h3>
 
 <p>The benefactive case corresponds to the English preposition <em>for</em>.</p>
 
@@ -806,7 +807,7 @@ be marked on definite and indefinite <a href="u-pos/DET">articles</a>, or
 directly on <a href="u-pos/NOUN">nouns</a>, <a href="u-pos/ADJ">adjectives</a> etc.  In
 Arabic, definiteness is also called the “state”.</p>
 
-<h3 id="ind-indefinite"><code>Ind</code>: indefinite</h3>
+<h3 id="ind-indefinite"><code class="highlighter-rouge">Ind</code>: indefinite</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -814,7 +815,7 @@ Arabic, definiteness is also called the “state”.</p>
   <li>[en] <em><b>a</b> dog</em></li>
 </ul>
 
-<h3 id="def-definite"><code>Def</code>: definite</h3>
+<h3 id="def-definite"><code class="highlighter-rouge">Def</code>: definite</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -822,7 +823,7 @@ Arabic, definiteness is also called the “state”.</p>
   <li>[en] <em><b>the</b> dog</em></li>
 </ul>
 
-<h3 id="red-reduced"><code>Red</code>: reduced</h3>
+<h3 id="red-reduced"><code class="highlighter-rouge">Red</code>: reduced</h3>
 
 <p>Used in <a href="http://en.wikipedia.org/wiki/Status_constructus">construct
 state</a> in Arabic. If
@@ -839,7 +840,7 @@ morpheme (article), nor the indefinite morpheme (nunation).</p>
 “sweet of”.</li>
 </ul>
 
-<h3 id="com-complex"><code>Com</code>: complex</h3>
+<h3 id="com-complex"><code class="highlighter-rouge">Com</code>: complex</h3>
 
 <p>Used in <a href="http://books.google.cz/books?id=rs3hzfgj3hoC&amp;pg=PA131&amp;lpg=PA131&amp;dq=arabic+improper+annexation&amp;source=bl&amp;ots=d6gGCpprOX&amp;sig=3G6YkRZsIy_EL0OCEh7_V7qqnlE&amp;hl=cs&amp;ei=ZasDTuLhGc_vsgaLlcyeDg&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=2&amp;ved=0CB4Q6AEwAQ#v=onepage&amp;q=arabic%20improper%20annexation&amp;f=false">improper
 annexation</a> in Arabic. The genitive construction described above
@@ -875,7 +876,7 @@ problems of various kinds”.</li>
 <p>Degree of comparison is typically an inflectional feature of some
 <a href="u-pos/ADJ">adjectives</a> and <a href="u-pos/ADV">adverbs</a>.</p>
 
-<h3 id="pos-positive-first-degree"><code>Pos</code>: positive, first degree</h3>
+<h3 id="pos-positive-first-degree"><code class="highlighter-rouge">Pos</code>: positive, first degree</h3>
 
 <p>This is the base form that merely states a quality of something,
 without comparing it to qualities of others. Note that although this
@@ -889,7 +890,7 @@ compared, too.</p>
   <li>[cs] <em><b>mladý</b> muž</em></li>
 </ul>
 
-<h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
+<h3 id="cmp-comparative-second-degree"><code class="highlighter-rouge">Cmp</code>: comparative, second degree</h3>
 
 <p>The quality of one object is compared to the same quality of another
 object.</p>
@@ -901,7 +902,7 @@ object.</p>
   <li>[cs] <em>ten muž je <b>mladší</b> než já</em></li>
 </ul>
 
-<h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
+<h3 id="sup-superlative-third-degree"><code class="highlighter-rouge">Sup</code>: superlative, third degree</h3>
 
 <p>The quality of one object is compared to the same quality of all other
 objects within a set.</p>
@@ -913,7 +914,7 @@ objects within a set.</p>
   <li>[cs] <em>toto je <b>nejmladší</b> muž v našem týmu</em></li>
 </ul>
 
-<h3 id="abs-absolute-superlative"><code>Abs</code>: absolute superlative</h3>
+<h3 id="abs-absolute-superlative"><code class="highlighter-rouge">Abs</code>: absolute superlative</h3>
 
 <p>Some languages can express morphologically that the studied quality of
 the given object is so strong that there is hardly any other object
@@ -932,7 +933,7 @@ handsome</b>”</li>
 <p><a id="al-u-feat/Gender" class="al-dest"></a></p>
 <h2><code>Gender</code>: gender</h2>
 
-<p><code>Gender</code> is usually a lexical feature of <a href="u-pos/NOUN">nouns</a> and inflectional feature
+<p><code class="highlighter-rouge">Gender</code> is usually a lexical feature of <a href="u-pos/NOUN">nouns</a> and inflectional feature
 of other parts of speech (<a href="u-pos/PRON">pronouns</a>,
 <a href="u-pos/ADJ">adjectives</a>, <a href="u-pos/DET">determiners</a>, <a href="u-pos/NUM">numerals</a>,
 <a href="u-pos/VERB">verbs</a>) that mark agreement with
@@ -948,7 +949,7 @@ objects etc. African noun classes are not covered in the current
 proposal because none of the tagsets on which the proposal is based
 are for a language with noun classes. They might be added in future.</p>
 
-<h3 id="masc-masculine-gender"><code>Masc</code>: masculine gender</h3>
+<h3 id="masc-masculine-gender"><code class="highlighter-rouge">Masc</code>: masculine gender</h3>
 
 <p>Nouns denoting male persons are masculine. Other nouns may be also
 grammatically masculine, without any relation to sex.</p>
@@ -959,7 +960,7 @@ grammatically masculine, without any relation to sex.</p>
   <li>[cs] <em><b>hrad</b></em> “castle”</li>
 </ul>
 
-<h3 id="fem-feminine-gender"><code>Fem</code>: feminine gender</h3>
+<h3 id="fem-feminine-gender"><code class="highlighter-rouge">Fem</code>: feminine gender</h3>
 
 <p>Nouns denoting female persons are feminine. Other nouns may be also
 grammatically feminine, without any relation to sex.</p>
@@ -970,7 +971,7 @@ grammatically feminine, without any relation to sex.</p>
   <li>[de] <em><b>Burg</b></em> “castle”</li>
 </ul>
 
-<h3 id="neut-neuter-gender"><code>Neut</code>: neuter gender</h3>
+<h3 id="neut-neuter-gender"><code class="highlighter-rouge">Neut</code>: neuter gender</h3>
 
 <p>Some languages have only the masculine/feminine distinction while
 others also have this third gender for nouns that are neither
@@ -982,30 +983,30 @@ masculine nor feminine (grammatically).</p>
   <li>[cs] <em><b>dítě</b></em> “child”</li>
 </ul>
 
-<h3 id="com-common-gender"><code>Com</code>: common gender</h3>
+<h3 id="com-common-gender"><code class="highlighter-rouge">Com</code>: common gender</h3>
 
 <p>Some languages do not distinguish masculine/feminine most of the time
 but they do distinguish neuter vs. non-neuter (Swedish neutrum /
 utrum). The non-neuter is called common gender.</p>
 
 <p>Note that it could also be expressed as a combined value
-<code>Gender=Fem,Masc</code>. Nevertheless we keep <code>Com</code> also as a separate
+<code class="highlighter-rouge">Gender=Fem,Masc</code>. Nevertheless we keep <code class="highlighter-rouge">Com</code> also as a separate
 value. Combined feature values should only be used in exceptional,
 undecided cases, not for something that occurs systematically in the
 grammar. Language-specific extensions to these guidelines should
-determine whether the <code>Com</code> value is appropriate for a particular
+determine whether the <code class="highlighter-rouge">Com</code> value is appropriate for a particular
 language.</p>
 
-<p>Note further that the <code>Com</code> value is not intended for cases where
+<p>Note further that the <code class="highlighter-rouge">Com</code> value is not intended for cases where
 we just cannot derive the gender from the word itself (without seeing the context),
-while the language actually distinguishes <code>Masc</code> and <code>Fem</code>.
+while the language actually distinguishes <code class="highlighter-rouge">Masc</code> and <code class="highlighter-rouge">Fem</code>.
 For example, in Spanish, nouns distinguish two genders, masculine and feminine, and
-every noun can be classified as either <code>Masc</code> or <code>Fem</code>. Adjectives are supposed to
+every noun can be classified as either <code class="highlighter-rouge">Masc</code> or <code class="highlighter-rouge">Fem</code>. Adjectives are supposed to
 agree with nouns in gender (and number), which they typically achieve by alternating <em>-o / -a.</em>
 But then there are adjectives such as <em>grande</em> or <em>feliz</em> that have only one form for both genders.
 So we cannot tell whether they are masculine or feminine unless we see the context.
 Yet they are either masculine or feminine (feminine in <em>una ciudad grande,</em> masculine in <em>un puerto grande).</em>
-Therefore in Spanish we should not tag <em>grande</em> with <code>Gender=Com</code>.
+Therefore in Spanish we should not tag <em>grande</em> with <code class="highlighter-rouge">Gender=Com</code>.
 Instead, we should either drop the gender feature entirely
 (suggesting that this word does not inflect for gender)
 or tag individual instances of <em>grande</em> as either masculine or feminine, depending on context.</p>
@@ -1018,7 +1019,7 @@ or tag individual instances of <em>grande</em> as either masculine or feminine, 
 <p>Mood is a feature that expresses modality and subclassifies finite
 verb forms.</p>
 
-<h3 id="ind-indicative"><code>Ind</code>: indicative</h3>
+<h3 id="ind-indicative"><code class="highlighter-rouge">Ind</code>: indicative</h3>
 
 <p>The indicative can be considered the default mood. A verb in
 indicative merely states that something happens, has happened or will
@@ -1033,7 +1034,7 @@ university.”</li>
 the university.”</li>
 </ul>
 
-<h3 id="imp-imperative"><code>Imp</code>: imperative</h3>
+<h3 id="imp-imperative"><code class="highlighter-rouge">Imp</code>: imperative</h3>
 
 <p>The speaker uses imperative to order or ask the addressee to do the
 action of the verb.</p>
@@ -1045,7 +1046,7 @@ action of the verb.</p>
   <li>[de] <em><b>Studiere</b> an der Universität!</em> “<b>Study</b> at the university!”</li>
 </ul>
 
-<h3 id="cnd-conditional"><code>Cnd</code>: conditional</h3>
+<h3 id="cnd-conditional"><code class="highlighter-rouge">Cnd</code>: conditional</h3>
 
 <p>The conditional mood is used to express actions that would have taken
 place under some circumstances but they actually did not / do not
@@ -1065,12 +1066,12 @@ tagged as participle because it can also be used to form past tense
 indicative.)</li>
 </ul>
 
-<h3 id="pot-potential"><code>Pot</code>: potential</h3>
+<h3 id="pot-potential"><code class="highlighter-rouge">Pot</code>: potential</h3>
 
 <p>The action of the verb is likely but not certain. Used e.g. in
 Finnish.</p>
 
-<h3 id="sub-subjunctive--conjunctive"><code>Sub</code>: subjunctive / conjunctive</h3>
+<h3 id="sub-subjunctive--conjunctive"><code class="highlighter-rouge">Sub</code>: subjunctive / conjunctive</h3>
 
 <p>The subjunctive mood is used under certain circumstances in
 subordinate clauses, typically for actions that are subjective or
@@ -1084,26 +1085,26 @@ conditional meaning.</p>
 want that you it do</i><tt>.Sub</tt></li>
 </ul>
 
-<h3 id="jus-jussive"><code>Jus</code>: jussive</h3>
+<h3 id="jus-jussive"><code class="highlighter-rouge">Jus</code>: jussive</h3>
 
 <p>The jussive mood expresses the desire that the action happens. Used
 e.g. in Arabic.</p>
 
-<h3 id="qot-quotative"><code>Qot</code>: quotative</h3>
+<h3 id="qot-quotative"><code class="highlighter-rouge">Qot</code>: quotative</h3>
 
 <p>The quotative mood is used e.g. in Estonian to denote direct speech.</p>
 
-<h3 id="opt-optative"><code>Opt</code>: optative</h3>
+<h3 id="opt-optative"><code class="highlighter-rouge">Opt</code>: optative</h3>
 
 <p>Used e.g. in Turkish in exclamations like “May you have a long life!”
 or “If only I were rich!”</p>
 
-<h3 id="des-desiderative"><code>Des</code>: desiderative</h3>
+<h3 id="des-desiderative"><code class="highlighter-rouge">Des</code>: desiderative</h3>
 
 <p>The desiderative mood corresponds to the modal verb “want to”: “He
 <b>wants to come</b>.” Used e.g. in Turkish.</p>
 
-<h3 id="nec-necessitative"><code>Nec</code>: necessitative</h3>
+<h3 id="nec-necessitative"><code class="highlighter-rouge">Nec</code>: necessitative</h3>
 
 <p>The necessitative mood corresponds to the modal verbs “must, should,
 have to”: “He <b>must</b><b> come</b>.” Used e.g. in Turkish.</p>
@@ -1122,15 +1123,15 @@ using the prefix <em>ne-</em>.  In English, verbs are negated using the
 prefixes, although the process is less productive than in Czech <em>(wise
 – unwise, probable – improbable)</em>.</p>
 
-<p>Note that <code>Negative=Neg</code> is not the same thing as
-<a href="">PronType</a><code>=Neg</code>. For pronouns and other pronominal parts of speech
+<p>Note that <code class="highlighter-rouge">Negative=Neg</code> is not the same thing as
+<a href="">PronType</a><code class="highlighter-rouge">=Neg</code>. For pronouns and other pronominal parts of speech
 there is no such binary opposition as for verbs and adjectives. (There
 is no such thing as “affirmative pronoun”.)</p>
 
 <p>The negativeness feature could be also used to distinguish response
 <a href="u-pos/INTJ">interjections</a> <em>yes</em> and <em>no</em>.</p>
 
-<h3 id="pos-positive-affirmative"><code>Pos</code>: positive, affirmative</h3>
+<h3 id="pos-positive-affirmative"><code class="highlighter-rouge">Pos</code>: positive, affirmative</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -1164,7 +1165,7 @@ quantifiers and they are considered a subgroup of
 
 <p>From the syntactic point of view, some numtypes behave like adjectives
 and some behave like adverbs. We tag them <a href="">u-pos/ADJ</a> and
-<a href="">u-pos/ADV</a> respectively. Thus the <code>NumType</code> feature applies to
+<a href="">u-pos/ADV</a> respectively. Thus the <code class="highlighter-rouge">NumType</code> feature applies to
 several different parts of speech:</p>
 
 <ul>
@@ -1174,7 +1175,7 @@ several different parts of speech:</p>
   <li><a href="">u-pos/ADV</a>: adverbial (e.g. ordinal and multiplicative) numerals, both definite and pronominal</li>
 </ul>
 
-<h3 id="card-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Card</code>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="card-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Card</code>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>Note that in some Indo-European languages there is a fuzzy borderline
 between numerals and nouns for <em>thousand, million</em> and <em>billion.</em></p>
@@ -1187,7 +1188,7 @@ between numerals and nouns for <em>thousand, million</em> and <em>billion.</em><
 <em>několik</em> “some”; <em>tolik</em> “so many”; <em>mnoho</em> “many”; <em>málo</em> “few”</li>
 </ul>
 
-<h3 id="ord-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Ord</code>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="ord-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Ord</code>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is a subtype of adjective or (in some languages) of adverb.</p>
 
@@ -1203,7 +1204,7 @@ second time”; <em>potřetí</em> “for the third time”; <em>pokolikáté</e
 which time”, <em>poněkolikáté</em> “for x-th time”, <em>potolikáté</em></li>
 </ul>
 
-<h3 id="mult-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Mult</code>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="mult-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Mult</code>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is subtype of adverb.</p>
 
@@ -1215,7 +1216,7 @@ which time”, <em>poněkolikáté</em> “for x-th time”, <em>potolikáté</e
 <em>tolikrát</em> “so many times”</li>
 </ul>
 
-<h3 id="frac-fraction"><code>Frac</code>: fraction</h3>
+<h3 id="frac-fraction"><code class="highlighter-rouge">Frac</code>: fraction</h3>
 
 <p>This is a subtype of cardinal numbers, occasionally distinguished in
 corpora. It may denote a fraction or just the denominator of the
@@ -1230,7 +1231,7 @@ and syntactically as nouns or ordinal numerals.</p>
 čtvrtina</em> “quarter”</li>
 </ul>
 
-<h3 id="sets-number-of-sets-of-things"><code>Sets</code>: number of sets of things</h3>
+<h3 id="sets-number-of-sets-of-things"><code class="highlighter-rouge">Sets</code>: number of sets of things</h3>
 
 <p>Morphologically distinct class of numerals used to count sets of
 things, or nouns that are pluralia tantum.</p>
@@ -1243,7 +1244,7 @@ things, or nouns that are pluralia tantum.</p>
 boty</em> “two / three shoes”</li>
 </ul>
 
-<h3 id="dist-distributive-numeral"><code>Dist</code>: distributive numeral</h3>
+<h3 id="dist-distributive-numeral"><code class="highlighter-rouge">Dist</code>: distributive numeral</h3>
 
 <p>Used to express that the same quantity is distributed to each member
 in a set of targets.</p>
@@ -1255,7 +1256,7 @@ in a set of targets.</p>
 forinttal</em> “three thousand forint per child”</li>
 </ul>
 
-<h3 id="range-range-of-values"><code>Range</code>: range of values</h3>
+<h3 id="range-range-of-values"><code class="highlighter-rouge">Range</code>: range of values</h3>
 
 <p>This could be considered a subtype of cardinal numbers, occasionally
 distinguished in corpora.</p>
@@ -1267,12 +1268,12 @@ distinguished in corpora.</p>
 one token.)</li>
 </ul>
 
-<h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code>Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
+<h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code class="highlighter-rouge">Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
 
 <p>Czech school grammar distinguishes this subclass, which is why it
 appears in Czech tagsets. Other Slavic languages may have similar
 words but their traditional classification may differ. (Note that
-“generic numerals” in Czech grammar also include the <code>Sets</code> subclass
+“generic numerals” in Czech grammar also include the <code class="highlighter-rouge">Sets</code> subclass
 mentioned above.)</p>
 
 <h4 id="examples-7">Examples</h4>
@@ -1290,12 +1291,12 @@ morphologically and syntactically adjectives).</li>
 <p><a id="al-u-feat/Number" class="al-dest"></a></p>
 <h2><code>Number</code>: number</h2>
 
-<p><code>Number</code> is usually an inflectional feature of <a href="u-pos/NOUN">nouns</a> and,
+<p><code class="highlighter-rouge">Number</code> is usually an inflectional feature of <a href="u-pos/NOUN">nouns</a> and,
 depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
 <a href="u-pos/ADJ">adjectives</a>, <a href="u-pos/DET">determiners</a>, <a href="u-pos/NUM">numerals</a>,
 <a href="u-pos/VERB">verbs</a>) that mark agreement with nouns.</p>
 
-<h3 id="sing-singular-number"><code>Sing</code>: singular number</h3>
+<h3 id="sing-singular-number"><code class="highlighter-rouge">Sing</code>: singular number</h3>
 
 <p>A singular noun denotes one person, animal or thing.</p>
 
@@ -1305,7 +1306,7 @@ depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
   <li>[en] <em><b>car</b></em></li>
 </ul>
 
-<h3 id="plur-plural-number"><code>Plur</code>: plural number</h3>
+<h3 id="plur-plural-number"><code class="highlighter-rouge">Plur</code>: plural number</h3>
 
 <p>A plural noun denotes several persons, animals or things.</p>
 
@@ -1315,7 +1316,7 @@ depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
   <li>[en] <em><b>cars</b></em></li>
 </ul>
 
-<h3 id="dual-dual-number"><code>Dual</code>: dual number</h3>
+<h3 id="dual-dual-number"><code class="highlighter-rouge">Dual</code>: dual number</h3>
 
 <p>A dual noun denotes two persons, animals or things.</p>
 
@@ -1328,11 +1329,11 @@ depending on language, other parts of speech (<a href="u-pos/PRON">pronouns</a>,
 <em>sanatāni</em></b> “years”, plural سِنُونَ <em>sinūna</em> “years”.</li>
 </ul>
 
-<h3 id="ptan-plurale-tantum"><code>Ptan</code>: plurale tantum</h3>
+<h3 id="ptan-plurale-tantum"><code class="highlighter-rouge">Ptan</code>: plurale tantum</h3>
 
 <p>Some nouns appear only in the plural form even though they denote one
 thing (semantic singular); some tagsets mark this distinction.
-Grammatically they behave like plurals, so <code>Plur</code> is obviously the
+Grammatically they behave like plurals, so <code class="highlighter-rouge">Plur</code> is obviously the
 back-off value here; however, if the language also marks gender, the
 non-existence of singular form sometimes means that the gender is
 unknown. In Czech, special type of numerals is used when counting
@@ -1345,7 +1346,7 @@ nouns that are plurale tantum (<a href="">NumType</a> = Sets).</p>
   <li>[cs] <em><b>nůžky, kalhoty</b></em></li>
 </ul>
 
-<h3 id="coll-collective--mass--singulare-tantum"><code>Coll</code>: collective / mass / singulare tantum</h3>
+<h3 id="coll-collective--mass--singulare-tantum"><code class="highlighter-rouge">Coll</code>: collective / mass / singulare tantum</h3>
 
 <p>Collective or mass or singulare tantum is a special case of
 singular. It applies to words that use grammatical singular to
@@ -1373,7 +1374,7 @@ marked on verbs makes it unnecessary to always add a personal pronoun
 as subject and thus subjects are sometimes dropped (pro-drop
 languages).</p>
 
-<h3 id="first-person"><code>1</code>: first person</h3>
+<h3 id="first-person"><code class="highlighter-rouge">1</code>: first person</h3>
 
 <p>In singular, the first person refers just to the speaker / author. In
 plural, it must include the speaker and one or more additional
@@ -1389,7 +1390,7 @@ them (i.e. <em>I + they</em>).</p>
   <li>[cs] <em><b>dělám</b></em> “<b>I</b> do”</li>
 </ul>
 
-<h3 id="second-person"><code>2</code>: second person</h3>
+<h3 id="second-person"><code class="highlighter-rouge">2</code>: second person</h3>
 
 <p>In singular, the second person refers to the addressee of the
 utterance / text. In plural, it may mean several addressees and
@@ -1402,7 +1403,7 @@ optionally some third persons too.</p>
   <li>[cs] <em><b>děláš</b></em> “<b>you</b> do”</li>
 </ul>
 
-<h3 id="third-person"><code>3</code>: third person</h3>
+<h3 id="third-person"><code class="highlighter-rouge">3</code>: third person</h3>
 
 <p>The third person refers to one or more persons that are neither
 speakers nor addressees.</p>
@@ -1427,11 +1428,11 @@ pronoun types, this feature is intentionally separate from
 <a href="">PronType</a>, as it is orthogonal to pronominal types. Several of the
 pronominal types can be optionally possessive, and adjectives can too.</p>
 
-<h3 id="yes-it-is-possessive"><code>Yes</code>: it is possessive</h3>
+<h3 id="yes-it-is-possessive"><code class="highlighter-rouge">Yes</code>: it is possessive</h3>
 
-<p>Note that there is no <code>No</code> value. If the word is not possessive, the
-<code>Poss</code> feature will just not be mentioned in the <code>FEAT</code> column. (Which
-means that empty value has the <code>No</code> meaning.)</p>
+<p>Note that there is no <code class="highlighter-rouge">No</code> value. If the word is not possessive, the
+<code class="highlighter-rouge">Poss</code> feature will just not be mentioned in the <code class="highlighter-rouge">FEAT</code> column. (Which
+means that empty value has the <code class="highlighter-rouge">No</code> meaning.)</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -1449,10 +1450,10 @@ means that empty value has the <code>No</code> meaning.)</p>
 <a href="u-pos/DET">determiners</a>, pronominal <a href="u-pos/NUM">numerals</a>
 (quantifiers) and pronominal <a href="u-pos/ADV">adverbs</a>.</p>
 
-<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><code>Prs</code>: personal or possessive personal pronoun or determiner</h3>
+<h3 id="prs-personal-or-possessive-personal-pronoun-or-determiner"><code class="highlighter-rouge">Prs</code>: personal or possessive personal pronoun or determiner</h3>
 
 <p>See also the <a href="">Poss</a> feature that distinguishes normal personal
-pronouns from possessives. Note that <code>Prs</code> also includes reflexive
+pronouns from possessives. Note that <code class="highlighter-rouge">Prs</code> also includes reflexive
 personal/possessive pronouns (e.g. [cs] <em>se / svůj;</em> see the
 <a href="">Reflex</a> feature).</p>
 
@@ -1463,7 +1464,7 @@ personal/possessive pronouns (e.g. [cs] <em>se / svůj;</em> see the
 their, mine, yours, hers, ours, theirs</em></li>
 </ul>
 
-<h3 id="rcp-reciprocal-pronoun"><code>Rcp</code>: reciprocal pronoun</h3>
+<h3 id="rcp-reciprocal-pronoun"><code class="highlighter-rouge">Rcp</code>: reciprocal pronoun</h3>
 
 <h4 id="examples-1">Examples</h4>
 
@@ -1472,7 +1473,7 @@ their, mine, yours, hers, ours, theirs</em></li>
   <li>[da] <em>hinanden</em> “each other”</li>
 </ul>
 
-<h3 id="art-article"><code>Art</code>: article</h3>
+<h3 id="art-article"><code class="highlighter-rouge">Art</code>: article</h3>
 
 <p>Article is a special case of determiner that bears the feature of
 <a href="Definite">definiteness</a> (in other languages, the feature may be
@@ -1486,7 +1487,7 @@ marked directly on nouns).</p>
   <li>[es] <em>un, una, el, la</em></li>
 </ul>
 
-<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><code>Int</code>: interrogative pronoun, determiner, numeral or adverb</h3>
+<h3 id="int-interrogative-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Int</code>: interrogative pronoun, determiner, numeral or adverb</h3>
 
 <p>Note that possessive interrogative determiners (<em>whose</em>) can be
 distinguished by the <a href="">Poss</a> feature.</p>
@@ -1500,7 +1501,7 @@ how many, how much, kolikátý / how-maniest</em> (ordinal number),
 jak / how, proč / why</em></li>
 </ul>
 
-<h3 id="rel-relative-pronoun-determiner-numeral-or-adverb"><code>Rel</code>: relative pronoun, determiner, numeral or adverb</h3>
+<h3 id="rel-relative-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Rel</code>: relative pronoun, determiner, numeral or adverb</h3>
 
 <p>Note that in many languages this class heavily overlaps with
 interrogatives, yet there are pronouns that are only relative, and in
@@ -1513,7 +1514,7 @@ some languages (Bulgarian, Hindi) the two classes seem to be distinct.</p>
 pronouns); <em>jehož</em> “whose” (possessive relative pronoun)</li>
 </ul>
 
-<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><code>Dem</code>: demonstrative pronoun, determiner, numeral or adverb</h3>
+<h3 id="dem-demonstrative-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Dem</code>: demonstrative pronoun, determiner, numeral or adverb</h3>
 
 <p>These are often parallel to interrogatives. Some tagsets might also
 distinguish a separate feature of distance (<em>here / there</em>; [es] <em>aquí
@@ -1528,7 +1529,7 @@ tolik / so much, tolikátý / so-maniest</em> (ordinal number), <em>tolikrát
 tak / so</em></li>
 </ul>
 
-<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><code>Tot</code>: total (collective) pronoun, determiner or adverb</h3>
+<h3 id="tot-total-collective-pronoun-determiner-or-adverb"><code class="highlighter-rouge">Tot</code>: total (collective) pronoun, determiner or adverb</h3>
 
 <h4 id="examples-6">Examples</h4>
 
@@ -1537,7 +1538,7 @@ tak / so</em></li>
 everything, all, všude / everywhere, vždy / always</em></li>
 </ul>
 
-<h3 id="neg-negative-pronoun-determiner-or-adverb"><code>Neg</code>: negative pronoun, determiner or adverb</h3>
+<h3 id="neg-negative-pronoun-determiner-or-adverb"><code class="highlighter-rouge">Neg</code>: negative pronoun, determiner or adverb</h3>
 
 <p>Examples:</p>
 
@@ -1547,7 +1548,7 @@ one’s</em> (possessive negative pronoun), <em>žádný / no, none, nikde /
 nowhere, nikdy / never, nijak / no way</em> (lit. “no-how”)</li>
 </ul>
 
-<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code>Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
+<h3 id="ind-indefinite-pronoun-determiner-numeral-or-adverb"><code class="highlighter-rouge">Ind</code>: indefinite pronoun, determiner, numeral or adverb</h3>
 
 <p>Note that some tagsets might further subclassify this category to
 distinguish “some” from “any” etc. Such distinctions are not part of
@@ -1588,11 +1589,11 @@ or Russian <em>проснуться</em> (both meaning “to wake up”). Thus i
 cases the fused token will be split to two syntactic words, one of
 them being a reflexive pronoun.</p>
 
-<h3 id="yes-it-is-reflexive"><code>Yes</code>: it is reflexive</h3>
+<h3 id="yes-it-is-reflexive"><code class="highlighter-rouge">Yes</code>: it is reflexive</h3>
 
-<p>Note that there is no <code>No</code> value. If the word is not reflexive, the
-<code>Reflex</code> feature will just not be mentioned in the <code>FEAT</code>
-column. (Which means that empty value has the <code>No</code> meaning.)</p>
+<p>Note that there is no <code class="highlighter-rouge">No</code> value. If the word is not reflexive, the
+<code class="highlighter-rouge">Reflex</code> feature will just not be mentioned in the <code class="highlighter-rouge">FEAT</code>
+column. (Which means that empty value has the <code class="highlighter-rouge">No</code> meaning.)</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -1627,13 +1628,13 @@ features will probably not directly reveal the tense. For instance,
 [en] <em>I <b>had been</b> there</em> is past perfect (pluperfect) tense,
 formed periphrastically by the simple past tense of the auxiliary <em>to
 have</em> and the past participle of the main verb <em>to be</em>. The auxiliary
-will be tagged <code>VerbForm=Fin|Mood=Ind|Tense=Past</code> and the participle
-will have <code>VerbForm=Part|Tense=Past</code>; none of the two will have
-<code>Tense=Pqp</code>. On the other hand, Portuguese can form the pluperfect
+will be tagged <code class="highlighter-rouge">VerbForm=Fin|Mood=Ind|Tense=Past</code> and the participle
+will have <code class="highlighter-rouge">VerbForm=Part|Tense=Past</code>; none of the two will have
+<code class="highlighter-rouge">Tense=Pqp</code>. On the other hand, Portuguese can form the pluperfect
 morphologically as just one word, such as <em>estivera</em>, which will thus be tagged
-<code>VerbForm=Fin|Mood=Ind|Tense=Pqp</code>.</p>
+<code class="highlighter-rouge">VerbForm=Fin|Mood=Ind|Tense=Pqp</code>.</p>
 
-<h3 id="past-past-tense--preterite--aorist"><code>Past</code>: past tense / preterite / aorist</h3>
+<h3 id="past-past-tense--preterite--aorist"><code class="highlighter-rouge">Past</code>: past tense / preterite / aorist</h3>
 
 <p>The past tense denotes actions that happened before the current
 moment. In English, this is the simple past form. In German, this is
@@ -1648,7 +1649,7 @@ imperfect).</p>
   <li>[en] <em>he <b>went</b> home</em></li>
 </ul>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that
 usually happen.</p>
@@ -1659,7 +1660,7 @@ usually happen.</p>
   <li>[en] <em>he <b>goes</b> home</em></li>
 </ul>
 
-<h3 id="fut-future-tense"><code>Fut</code>: future tense</h3>
+<h3 id="fut-future-tense"><code class="highlighter-rouge">Fut</code>: future tense</h3>
 
 <p>The future tense denotes actions that will happen after the current
 moment.</p>
@@ -1670,7 +1671,7 @@ moment.</p>
   <li>[es] <em><b>irá</b> a la casa</em> “he/she/it will go home”</li>
 </ul>
 
-<h3 id="imp-imperfect"><code>Imp</code>: imperfect</h3>
+<h3 id="imp-imperfect"><code class="highlighter-rouge">Imp</code>: imperfect</h3>
 
 <p>Used in e.g. Bulgarian and Croatian, imperfect is a special case of
 the past tense. Note that, unfortunately, imperfect tense is not
@@ -1681,13 +1682,13 @@ lexical one. In main clauses, imperfective verbs can have imperfect
 tense and perfective verbs have perfect tense. However, both rules can
 be violated in embedded clauses.</p>
 
-<h3 id="nar-narrative"><code>Nar</code>: narrative</h3>
+<h3 id="nar-narrative"><code class="highlighter-rouge">Nar</code>: narrative</h3>
 
 <p>Special case of the past tense, this is the Turkish <em>miş</em>-past. The
 difference is whether the speaker personally witnessed the action he
 is describing, or not.</p>
 
-<h3 id="pqp-pluperfect"><code>Pqp</code>: pluperfect</h3>
+<h3 id="pqp-pluperfect"><code class="highlighter-rouge">Pqp</code>: pluperfect</h3>
 
 <p>The pluperfect denotes action that happened before another action in
 past. This value does not apply to English where the pluperfect (past
@@ -1704,10 +1705,10 @@ forms in some languages actually form a gray zone between verbs and
 other parts of speech (<a href="u-pos/NOUN">nouns</a>, <a href="u-pos/ADJ">adjectives</a>
 and <a href="u-pos/ADV">adverbs</a>). For instance, participles may be either
 classified as verbs or as adjectives, depending on language and
-context. In both cases <code>VerbForm=Part</code> may be used to separate them
+context. In both cases <code class="highlighter-rouge">VerbForm=Part</code> may be used to separate them
 from other verb forms or other types of adjectives.</p>
 
-<h3 id="fin-finite-verb"><code>Fin</code>: finite verb</h3>
+<h3 id="fin-finite-verb"><code class="highlighter-rouge">Fin</code>: finite verb</h3>
 
 <p>Rule of thumb: if it has non-empty <a href="">Mood</a>, it is finite. But beware
 that some tagsets conflate verb forms and moods into one feature.</p>
@@ -1718,7 +1719,7 @@ that some tagsets conflate verb forms and moods into one feature.</p>
   <li>[en] <em>I <b>do</b>, he <b>does</b></em></li>
 </ul>
 
-<h3 id="inf-infinitive"><code>Inf</code>: infinitive</h3>
+<h3 id="inf-infinitive"><code class="highlighter-rouge">Inf</code>: infinitive</h3>
 
 <p>Infinitive is the citation form of verbs in many languages. Unlike in
 English, it often has morphological form that is distinct from the
@@ -1734,7 +1735,7 @@ used as such (similar to the gerund in English).</p>
   <li>[de] <em>ich muss <b>gehen</b></em> “I must <b>go</b>”</li>
 </ul>
 
-<h3 id="sup-supine"><code>Sup</code>: supine</h3>
+<h3 id="sup-supine"><code class="highlighter-rouge">Sup</code>: supine</h3>
 
 <p>Supine is a rare verb form. It survives in some Slavic languages
 (Slovenian) and is used instead of infinitive as the argument of
@@ -1753,7 +1754,7 @@ after <em>vara</em> (to be):</p>
   <li>Past participle plural: (The) apples are eaten = <em>Äpplena är ätna</em></li>
 </ul>
 
-<h3 id="part-participle"><code>Part</code>: participle</h3>
+<h3 id="part-participle"><code class="highlighter-rouge">Part</code>: participle</h3>
 
 <p>Participle is a non-finite verb form that shares properties of verbs
 and adjectives. Its usage varies across languages. It may be used to
@@ -1771,7 +1772,7 @@ participles (Hindi) etc.</p>
 <b>forseen</b> it</em>; <em>I will be <b>driving</b> home</em>.</li>
 </ul>
 
-<h3 id="trans-transgressive"><code>Trans</code>: transgressive</h3>
+<h3 id="trans-transgressive"><code class="highlighter-rouge">Trans</code>: transgressive</h3>
 
 <p>The transgressive, also called adverbial participle, is a non-finite
 verb form that shares properties of verbs and adverbs. It appears
@@ -1786,7 +1787,7 @@ stared at me <b>while gripping</b> their guns firmly”;
 prepared</b> the dinner, she called her family to the table”</li>
 </ul>
 
-<h3 id="ger-gerund"><code>Ger</code>: gerund</h3>
+<h3 id="ger-gerund"><code class="highlighter-rouge">Ger</code>: gerund</h3>
 
 <p>Gerund is a non-finite verb form that shares properties of verbs and
 nouns. In English it shares the morphological form with present
@@ -1815,7 +1816,7 @@ are classified as verbs or as the other category.</p>
 distinction. In other languages, other shades of verb meaning are
 categorized as voice.</p>
 
-<h3 id="act-active-voice"><code>Act</code>: active voice</h3>
+<h3 id="act-active-voice"><code class="highlighter-rouge">Act</code>: active voice</h3>
 
 <p>The subject of the verb is the doer of the action (agent), the object
 is affected by the action (patient).</p>
@@ -1828,7 +1829,7 @@ is affected by the action (patient).</p>
 tense or conditional mood; here it forms the past tense.)</li>
 </ul>
 
-<h3 id="pass-passive-voice"><code>Pass</code>: passive voice</h3>
+<h3 id="pass-passive-voice"><code class="highlighter-rouge">Pass</code>: passive voice</h3>
 
 <p>The subject of the verb is affected by the action (patient). The doer
 (agent) is either unexpressed or it appears as an object of the verb.</p>
@@ -1841,7 +1842,7 @@ the enemy” (the passive participle <em>napadeni</em> is used to form
 passive in all tenses; here it forms the present passive.)</li>
 </ul>
 
-<h3 id="rcp-reciprocal-voice"><code>Rcp</code>: reciprocal voice</h3>
+<h3 id="rcp-reciprocal-voice"><code class="highlighter-rouge">Rcp</code>: reciprocal voice</h3>
 
 <h4 id="examples-2">Examples</h4>
 
@@ -1849,7 +1850,7 @@ passive in all tenses; here it forms the present passive.)</li>
   <li>[tr] <em><b>karıştı</b></em>, <em><b>tutuştular</b></em></li>
 </ul>
 
-<h3 id="cau-causative-voice"><code>Cau</code>: causative voice</h3>
+<h3 id="cau-causative-voice"><code class="highlighter-rouge">Cau</code>: causative voice</h3>
 
 <p><a href="https://wiki.ufal.ms.mff.cuni.cz/_media/user:zeman:treebanks:ttbankkl.pdf">Documentation</a>
 of the METU Sabanci treebank classifies causative as voice (page 26).
@@ -1876,6 +1877,7 @@ also the causative case of nouns.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1907,11 +1909,40 @@ also the causative case of nouns.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1935,6 +1966,7 @@ also the causative case of nouns.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-overview';
@@ -1960,7 +1992,7 @@ also the causative case of nouns.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

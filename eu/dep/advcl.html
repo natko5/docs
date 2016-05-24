@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/advcl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,33 @@
 
           <h2><code>advcl</code>: adverbial clause modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>advcl</code>.</p>
+<p>An adverbial clause modifier (<code class="highlighter-rouge">advcl</code>) is a clause which modifies a verb or other predicate (adjective, etc.),
+as a modifier, not as a core complement. This includes temporal clauses, consequences, conditional clauses, purpose clause, etc. The dependent must be clausal (otherwise, it is an <a href="">advmod</a>) and the dependent is the main predicate of the clause.</p>
+
+<p><em>Askatasunean <strong>oinarritutako</strong> alternatiba bat ematea .</em></p>
+
+<p><em>To give an alternative <strong>based on</strong> freedom  .</em></p>
+
+<pre><code class="language-sdparse">Askatasunean oinarritutako alternatiba bat ematea . \n  Freedom based_on alternative_an to give .
+
+nmod(oinarritutako-2, Askatasunean-1)
+advcl(alternatiba-3, oinarritutako-2)
+nummod(aternatiba-3, bat-4)
+dobj(ematea-5, alternatiba-3) 
+punct(ematea-5, .-6)
+</code></pre>
+
+<p><em>Lapurdin <strong>sorturiko</strong> lehenbiziko euskal idazle-taldea .</em></p>
+
+<p><em>The first Basque writer-group <strong>created</strong> in Lapurdi .</em></p>
+
+<pre><code class="language-sdparse">Lapurdin sorturiko lehenbiziko euskal idazle-taldea . \n  The first Basque writer-group created in Lapurdi . 
+
+nmod(sorturiko-2, Lapurdin-1)
+advcl(idazle-taldea-5, sorturiko-2)
+amod(idazle-taldea-5, lehenbiziko-3)
+nmod(idazle-taldea-5, euskal) 
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +82,12 @@ for <code>advcl</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>5367 nodes (4%) are attached to their parents as <code>advcl</code>.</p>
+<p>5367 nodes (4%) are attached to their parents as <code class="highlighter-rouge">advcl</code>.</p>
 
-<p>3329 instances of <code>advcl</code> (62%) are right-to-left (child precedes parent).
+<p>3329 instances of <code class="highlighter-rouge">advcl</code> (62%) are right-to-left (child precedes parent).
 Average distance between parent and child is 3.96124464318986.</p>
 
-<p>The following 47 pairs of parts of speech are connected with <code>advcl</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (3318; 62% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (1149; 21% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (265; 5% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADV</a> (252; 5% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (79; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (57; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/VERB</a> (51; 1% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (24; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (22; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (20; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (19; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (11; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/AUX</a> (11; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/VERB</a> (9; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/VERB</a> (9; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/VERB</a> (9; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (6; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/VERB</a> (4; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/INTJ</a> (4; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADP</a> (3; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/X</a> (3; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (2; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADP</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADP</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PUNCT</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances).</p>
+<p>The following 47 pairs of parts of speech are connected with <code class="highlighter-rouge">advcl</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (3318; 62% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (1149; 21% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (265; 5% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADV</a> (252; 5% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (79; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (57; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/VERB</a> (51; 1% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (24; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (22; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (20; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (19; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (11; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/AUX</a> (11; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/VERB</a> (9; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/VERB</a> (9; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/VERB</a> (9; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (6; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/VERB</a> (4; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/INTJ</a> (4; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADP</a> (3; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/X</a> (3; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (2; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADP</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADP</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PUNCT</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
@@ -171,6 +197,7 @@ advcl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -202,11 +229,40 @@ advcl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -230,6 +286,7 @@ advcl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -255,7 +312,7 @@ advcl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

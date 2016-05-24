@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/NumType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -51,7 +52,7 @@ quantifiers and they are considered a subgroup of
 
 <p>From the syntactic point of view, some numtypes behave like adjectives
 and some behave like adverbs. We tag them <a href="">u-pos/ADJ</a> and
-<a href="">u-pos/ADV</a> respectively. Thus the <code>NumType</code> feature applies to
+<a href="">u-pos/ADV</a> respectively. Thus the <code class="highlighter-rouge">NumType</code> feature applies to
 several different parts of speech:</p>
 
 <ul>
@@ -61,7 +62,7 @@ several different parts of speech:</p>
   <li><a href="">u-pos/ADV</a>: adverbial (e.g. ordinal and multiplicative) numerals, both definite and pronominal</li>
 </ul>
 
-<h3 id="card-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Card</code>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="card-cardinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Card</code>: cardinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>Note that in some Indo-European languages there is a fuzzy borderline
 between numerals and nouns for <em>thousand, million</em> and <em>billion.</em></p>
@@ -74,7 +75,7 @@ between numerals and nouns for <em>thousand, million</em> and <em>billion.</em><
 <em>několik</em> “some”; <em>tolik</em> “so many”; <em>mnoho</em> “many”; <em>málo</em> “few”</li>
 </ul>
 
-<h3 id="ord-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Ord</code>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="ord-ordinal-number-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Ord</code>: ordinal number or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is a subtype of adjective or (in some languages) of adverb.</p>
 
@@ -90,7 +91,7 @@ second time”; <em>potřetí</em> “for the third time”; <em>pokolikáté</e
 which time”, <em>poněkolikáté</em> “for x-th time”, <em>potolikáté</em></li>
 </ul>
 
-<h3 id="mult-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code>Mult</code>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
+<h3 id="mult-multiplicative-numeral-or-corresponding-interrogative--relative--indefinite--demonstrative-word"><code class="highlighter-rouge">Mult</code>: multiplicative numeral or corresponding interrogative / relative / indefinite / demonstrative word</h3>
 
 <p>This is subtype of adverb.</p>
 
@@ -102,7 +103,7 @@ which time”, <em>poněkolikáté</em> “for x-th time”, <em>potolikáté</e
 <em>tolikrát</em> “so many times”</li>
 </ul>
 
-<h3 id="frac-fraction"><code>Frac</code>: fraction</h3>
+<h3 id="frac-fraction"><code class="highlighter-rouge">Frac</code>: fraction</h3>
 
 <p>This is a subtype of cardinal numbers, occasionally distinguished in
 corpora. It may denote a fraction or just the denominator of the
@@ -117,7 +118,7 @@ and syntactically as nouns or ordinal numerals.</p>
 čtvrtina</em> “quarter”</li>
 </ul>
 
-<h3 id="sets-number-of-sets-of-things"><code>Sets</code>: number of sets of things</h3>
+<h3 id="sets-number-of-sets-of-things"><code class="highlighter-rouge">Sets</code>: number of sets of things</h3>
 
 <p>Morphologically distinct class of numerals used to count sets of
 things, or nouns that are pluralia tantum.</p>
@@ -130,7 +131,7 @@ things, or nouns that are pluralia tantum.</p>
 boty</em> “two / three shoes”</li>
 </ul>
 
-<h3 id="dist-distributive-numeral"><code>Dist</code>: distributive numeral</h3>
+<h3 id="dist-distributive-numeral"><code class="highlighter-rouge">Dist</code>: distributive numeral</h3>
 
 <p>Used to express that the same quantity is distributed to each member
 in a set of targets.</p>
@@ -142,7 +143,7 @@ in a set of targets.</p>
 forinttal</em> “three thousand forint per child”</li>
 </ul>
 
-<h3 id="range-range-of-values"><code>Range</code>: range of values</h3>
+<h3 id="range-range-of-values"><code class="highlighter-rouge">Range</code>: range of values</h3>
 
 <p>This could be considered a subtype of cardinal numbers, occasionally
 distinguished in corpora.</p>
@@ -154,12 +155,12 @@ distinguished in corpora.</p>
 one token.)</li>
 </ul>
 
-<h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code>Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
+<h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code class="highlighter-rouge">Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
 
 <p>Czech school grammar distinguishes this subclass, which is why it
 appears in Czech tagsets. Other Slavic languages may have similar
 words but their traditional classification may differ. (Note that
-“generic numerals” in Czech grammar also include the <code>Sets</code> subclass
+“generic numerals” in Czech grammar also include the <code class="highlighter-rouge">Sets</code> subclass
 mentioned above.)</p>
 
 <h4 id="examples-7">Examples</h4>
@@ -233,6 +234,7 @@ NumType in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -264,11 +266,40 @@ NumType in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -292,6 +323,7 @@ NumType in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-feat';
@@ -317,7 +349,7 @@ NumType in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

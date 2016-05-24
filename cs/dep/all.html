@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -256,9 +257,9 @@ in two places.</p>
 <p><a id="al-cs-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a nominal.  The <code>acl</code> relation 
+<p><code class="highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a nominal.  The <code class="highlighter-rouge">acl</code> relation 
 contrasts with the <a href="">advcl</a> relation, which is used for adverbial clauses
-that modify a predicate. The head of the <code>acl</code> relation is the noun
+that modify a predicate. The head of the <code class="highlighter-rouge">acl</code> relation is the noun
 that is modified, and the dependent is the head of the clause that
 modifies the noun.</p>
 
@@ -284,7 +285,7 @@ acl(wife, naked)
 <p>Czech also allows finite clausal complements for nouns with 
 a subset of nouns like <em>fact</em> or <em>report</em>.
 These look roughly like relative clauses, but do not have any omitted role in the dependent clause.
-These are also analyzed as <code>acl</code>.</p>
+These are also analyzed as <code class="highlighter-rouge">acl</code>.</p>
 
 <pre><code class="language-sdparse">Příčinou není fakt , že by kina navštívilo víc diváků . \n Cause is-not the-fact , that would cinemas visit more filmgoers .
 acl(fakt, navštívilo)
@@ -327,7 +328,7 @@ or adverbial phrase that serves to modify the meaning of the word.</p>
 constituents that function like adverbs regardless whether they are realized
 by adverbs, adpositional phrases, or nouns in particular morphological 
 <a href="cs-feat/Case">cases</a>.
-We differentiate adverbials realized as adverbs (<code>advmod</code>) and
+We differentiate adverbials realized as adverbs (<code class="highlighter-rouge">advmod</code>) and
 adverbials realized by noun phrases or adpositional phrases
 (<a href="">nmod</a>).</p>
 
@@ -354,8 +355,8 @@ advmod(to-go, tomorrow)
 <h2><code>advmod:emph</code>: emphasizing word, intensifier</h2>
 
 <p>This is a special class of <a href="advmod">adverbial modifiers</a>.
-It corresponds to the words that are attached in the analytical layer of PDT with the label <code>AuxZ</code>.
-In the tectogrammatical layer they often get the label (functor) <code>RHEM</code> (rhematizers).</p>
+It corresponds to the words that are attached in the analytical layer of PDT with the label <code class="highlighter-rouge">AuxZ</code>.
+In the tectogrammatical layer they often get the label (functor) <code class="highlighter-rouge">RHEM</code> (rhematizers).</p>
 
 <p>While other adverbial modifiers usually modify verbs, adjectives or adverbs, these emphasizers often modify noun phrases,
 including prepositional phrases.</p>
@@ -391,7 +392,7 @@ advmod:emph(percent, only)
 to modify the meaning of the noun.</p>
 
 <p>Exception: if the modifying adjectival word is pronominal (i.e. tagged <a href="">cs-pos/DET</a>),
-the relation is <a href="">det</a> instead of <code>amod</code>.</p>
+the relation is <a href="">det</a> instead of <code class="highlighter-rouge">amod</code>.</p>
 
 <pre><code class="language-sdparse">Václav jí vepřové maso . \n Václav eats pork meat .
 amod(maso, vepřové)
@@ -441,7 +442,7 @@ appos(Party, ODS-12)
 
 <p>There is a slight deviation from the <a href="u-dep/appos">universal</a> standard in case of more than one appositive nominal.
 Instead of attaching them all to the first noun, all the appositive modifiers are put together in coordination,
-then attached as <code>appos</code> to the modified noun.
+then attached as <code class="highlighter-rouge">appos</code> to the modified noun.
 This is done regardless whether the appositives are joined by a coordinating conjunction or just a comma.</p>
 
 <pre><code class="language-sdparse">Přijel Michal , můj bratr a Davidův bratranec . \n Came Michal , my brother and David's cousin .
@@ -458,7 +459,7 @@ conj(bratr, bratranec)
 conj(brother, cousin)
 </code></pre>
 
-<p><code>appos</code> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
+<p><code class="highlighter-rouge">appos</code> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
 
 <pre><code class="language-sdparse">Jan Novák , tel . : 777-000-111 , e-mail : novak@ab.cz
 name(Novák, Jan)
@@ -477,9 +478,9 @@ appos(e-mail, novak@ab.cz)
 used to construct the periphrastic future tense, past tense or conditional.</p>
 
 <p>Exception: Auxiliary verb used to construct the passive
-<a href="cs-feat/Voice">voice</a> is not labeled <code>aux</code> but <a href="">auxpass</a>.</p>
+<a href="cs-feat/Voice">voice</a> is not labeled <code class="highlighter-rouge">aux</code> but <a href="">auxpass</a>.</p>
 
-<p>Note that besides <code>aux</code> and <code>auxpass</code>, the verb <em>být</em> may also act as a <a href="cop">copula</a>
+<p>Note that besides <code class="highlighter-rouge">aux</code> and <code class="highlighter-rouge">auxpass</code>, the verb <em>být</em> may also act as a <a href="cop">copula</a>
 and as the main verb.</p>
 
 <pre><code class="language-sdparse">Přijel jsem včera . \n Arrived I-have yesterday .
@@ -549,8 +550,8 @@ cop(signed, was)
 
 <p>Reflexive pronouns (see the feature <a href="">cs-feat/Reflex</a>) are used in various constructions in Czech,
 including so-called <em>reflexive passive.</em>
-In PDT, their relation to the verb is labeled <code>AuxR</code>.
-The corresponding label in Czech UD is called <code>auxpass:reflex</code>.</p>
+In PDT, their relation to the verb is labeled <code class="highlighter-rouge">AuxR</code>.
+The corresponding label in Czech UD is called <code class="highlighter-rouge">auxpass:reflex</code>.</p>
 
 <pre><code class="language-sdparse">To se řekne snadno . \n It is said easily .
 auxpass:reflex(řekne, se)
@@ -564,7 +565,7 @@ auxpass:reflex(said, is)
 
 <p>Czech uses a combination of oblique morphological cases and prepositions to express semantic case.
 Unlike in the original annotation of the Prague Dependency Treebank, prepositions in UD are treated as dependents
-of the noun they attach to. The relation between the noun and the preposition is labeled <code>case</code>.</p>
+of the noun they attach to. The relation between the noun and the preposition is labeled <code class="highlighter-rouge">case</code>.</p>
 
 <pre><code class="language-sdparse">V pátek.Acc jsme si cestou.Ins do Francie.Gen povídali o té události.Loc . \n On Friday we-have ourselves during-the-journey to France talked about the event .
 case(pátek.Acc, V)
@@ -581,7 +582,7 @@ case(event, about)
 <h2><code>cc</code>: coordinating conjunction</h2>
 
 <p>For more on coordination, see the <a href="">conj</a> relation.
-A <code>cc</code> is the relation between the first conjunct and
+A <code class="highlighter-rouge">cc</code> is the relation between the first conjunct and
 the <a href="cs-pos/CONJ">coordinating conjunction</a> delimiting another conjunct.
 (Note: different dependency grammars have different treatments of coordination.
 We take the first conjunct as the head of the coordination.)</p>
@@ -592,7 +593,7 @@ cc(old, and)
 </code></pre>
 
 <p>A coordinating conjunction may also appear at the beginning of a
-sentence. This is also called a <code>cc</code>, and it depends on the root
+sentence. This is also called a <code class="highlighter-rouge">cc</code>, and it depends on the root
 predicate of the sentence.
 (In fact there is a coordination that spans multiple sentences.
 We cannot attach a word to the first conjunct because it is in another sentence.
@@ -652,14 +653,14 @@ xcomp(Started, to-dig)
 <p>The key difference here is that, while it is possible to interpret the first
 sentence to mean that the boss will not be doing any digging, in the second
 sentence it is clear that the subject of <strong>digging</strong> can only be <strong>we</strong>. This is
-what distinguishes <code>ccomp</code> and <code>xcomp</code>.</p>
+what distinguishes <code class="highlighter-rouge">ccomp</code> and <code class="highlighter-rouge">xcomp</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-cs-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p><code>compound</code> is one of the relations in UD for compounding.
+<p><code class="highlighter-rouge">compound</code> is one of the relations in UD for compounding.
 In Czech it is used only for compound numbers.
 The rightmost numeral is the head, the other numerals are attached as its modifiers.</p>
 
@@ -688,7 +689,7 @@ compound(thousand, five)
 coordinating conjunction, such as <em>and, or,</em> or a comma or other punctuation.
 We treat coordination asymmetrically in what is known as the Stanford style:
 The head of the relation is the first
-conjunct and all the other conjuncts depend on it via the <code>conj</code> relation.</p>
+conjunct and all the other conjuncts depend on it via the <code class="highlighter-rouge">conj</code> relation.</p>
 
 <pre><code class="language-sdparse">Je to starý a moudrý muž . \n Is he old and wise man .
 conj(starý, moudrý)
@@ -737,7 +738,7 @@ coordination.</p>
 <p>A copula is the relation between the nominal predicate <em>(přísudek jmenný)</em> and
 the copular verb <em><b>být</b></em> “to be” (or its variants <em>bývat, bývávat</em>).
 The verb <em>stát se</em> “to become”, despite being counted among copular verbs by some authors,
-is not analyzed as <code>cop</code>.</p>
+is not analyzed as <code class="highlighter-rouge">cop</code>.</p>
 
 <p>We normally take a copula as a dependent of its complement (the nominal predicate).
 The nominal predicate is usually a <a href="cs-pos/NOUN">noun</a>, an <a href="cs-pos/ADJ">adjective</a>
@@ -758,8 +759,8 @@ Hence it may be difficult to distinguish a passive construction from a copula co
 The former focuses on the process while the latter emphasizes the result.</p>
 
 <ul>
-  <li>Passive: <em>Smlouva <b>byla</b>.<code>AUX</code> podepsána v Bílém domě.</em>   “The contract was signed in the White House.”</li>
-  <li>Copula: <em>Smlouva <b>byla</b>.<code>VERB</code> podepsána červeným inkoustem.</em>   “The contract was signed in red ink.”</li>
+  <li>Passive: <em>Smlouva <b>byla</b>.<code class="highlighter-rouge">AUX</code> podepsána v Bílém domě.</em>   “The contract was signed in the White House.”</li>
+  <li>Copula: <em>Smlouva <b>byla</b>.<code class="highlighter-rouge">VERB</code> podepsána červeným inkoustem.</em>   “The contract was signed in red ink.”</li>
 </ul>
 
 <pre><code class="language-sdparse">Smlouva byla podepsána v Bílém domě . \n Contract was signed in White House .
@@ -857,14 +858,14 @@ csubjpass(It-does-not-expect, you-will-come)
 <p><a id="al-cs-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: unspecified dependency</h2>
 
-<p>A dependency is labeled as <code>dep</code> when a system is unable to
+<p>A dependency is labeled as <code class="highlighter-rouge">dep</code> when a system is unable to
 determine a more precise dependency relation between two words.  This
 may be because of a weird grammatical construction, a limitation in
 software, a parser error, or
 because of an unresolved long distance dependency.</p>
 
-<p>Most <code>dep</code> instances in the current conversion of the PDT 3.0 data
-correspond to the PDT label <code>ExD</code>, which marks ellipsis.
+<p>Most <code class="highlighter-rouge">dep</code> instances in the current conversion of the PDT 3.0 data
+correspond to the PDT label <code class="highlighter-rouge">ExD</code>, which marks ellipsis.
 The current conversion software cannot produce the annotation conforming
 to the UD standard and using the <a href="">remnant</a> relation.</p>
 
@@ -878,12 +879,12 @@ dep(clear, what)
 <p><a id="al-cs-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The relation determiner (<code>det</code>) holds between a nominal head and its
+<p>The relation determiner (<code class="highlighter-rouge">det</code>) holds between a nominal head and its
 <a href="cs-pos/DET">determiner</a>.
-This relation is used for pronominal adjectival modifiers of noun phrases; the <code>det</code> modifier has the POS tag <a href="">cs-pos/DET</a> and vice versa.
+This relation is used for pronominal adjectival modifiers of noun phrases; the <code class="highlighter-rouge">det</code> modifier has the POS tag <a href="">cs-pos/DET</a> and vice versa.
 Non-pronominal adjectives are tagged <a href="">cs-pos/ADJ</a> and the relation is labeled <a href="">amod</a>.</p>
 
-<p>Pronominal quantifiers are tagged <code>DET</code> but their relation to their head is a subtype of the <code>det</code> relation:
+<p>Pronominal quantifiers are tagged <code class="highlighter-rouge">DET</code> but their relation to their head is a subtype of the <code class="highlighter-rouge">det</code> relation:
 either <a href="">cs-dep/det:numgov</a> or <a href="">cs-dep/det:nummod</a>.</p>
 
 <pre><code class="language-sdparse">Ten člověk už je tady . \n The man already is here .
@@ -901,7 +902,7 @@ det(book, Which)
 <p><a id="al-cs-dep/det:numgov" class="al-dest"></a></p>
 <h2><code>det:numgov</code>: pronominal quantifier governing the case of the noun</h2>
 
-<p>Pronominal quantifiers are labeled <code>det:numgov</code> instead of <a href="">det</a>
+<p>Pronominal quantifiers are labeled <code class="highlighter-rouge">det:numgov</code> instead of <a href="">det</a>
 because they normally do not agree with the quantified noun in case
 (unlike non-quantifying determiners).</p>
 
@@ -910,7 +911,7 @@ The whole phrase (quantifier + noun) is treated as a singular neuter noun phrase
 and it can fill roles where nominative, accusative or vocative noun phrases are expected.</p>
 
 <p>Such situations are analyzed in PDT so that the quantifier (numeral) is the head and the noun depends on it.
-In UD the dependency direction is reversed and the <code>det:numgov</code> label is used to preserve
+In UD the dependency direction is reversed and the <code class="highlighter-rouge">det:numgov</code> label is used to preserve
 the information about case conditions.</p>
 
 <pre><code class="language-conllu"># This is not UD, it is Prague Dependency Treebank, and we want to clearly distinguish it from the UD examples.
@@ -941,12 +942,12 @@ punct(played, ?-11)
 <p><a id="al-cs-dep/det:nummod" class="al-dest"></a></p>
 <h2><code>det:nummod</code>: pronominal quantifier agreeing in case with the noun</h2>
 
-<p>Pronominal quantifiers are labeled <code>det:nummod</code> or <a href="">det:numgov</a> instead of <a href="">det</a>
+<p>Pronominal quantifiers are labeled <code class="highlighter-rouge">det:nummod</code> or <a href="">det:numgov</a> instead of <a href="">det</a>
 because they normally do not agree with the quantified noun in case
 (unlike non-quantifying determiners).
 They do agree only if the whole phrase (quantifier + noun) fills a role where
 genitive, dative, locative or instrumental noun phrases are expected.
-In these situations they are labeled <code>det:nummod</code>.</p>
+In these situations they are labeled <code class="highlighter-rouge">det:nummod</code>.</p>
 
 <pre><code class="language-sdparse">Nepamatuji si , s kolika muži jsem hrál karty . \n I-do-not-remember myself , with how-many men I-have played cards .
 ccomp(Nepamatuji, hrál)
@@ -976,7 +977,7 @@ punct(I-do-not-remember, .-21)
 <p><a id="al-cs-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
 
-<p>At present we use the <code>discourse</code> relation for what is labeled <code>AuxO</code> in the Prague Dependency Treebank:
+<p>At present we use the <code class="highlighter-rouge">discourse</code> relation for what is labeled <code class="highlighter-rouge">AuxO</code> in the Prague Dependency Treebank:
 redundant or emotional items, redundant coreferential pronoun.</p>
 
 <pre><code class="language-sdparse">čemu že se to zpronevěřily \n what that themselves it they-betrayed
@@ -1023,9 +1024,9 @@ dobj(nedisponuje, rozpočtem)
 dobj(does-not-have-at-disposal, budget)
 </code></pre>
 
-<p>In general, if there is just one object, it should be labeled <code>dobj</code>,
+<p>In general, if there is just one object, it should be labeled <code class="highlighter-rouge">dobj</code>,
 regardless of the morphological case or semantic role that it bears. If there are two or more
-objects, one of them should be <code>dobj</code> and the others should be
+objects, one of them should be <code class="highlighter-rouge">dobj</code> and the others should be
 <a href="">iobj</a>. In such cases it is necessary to decide what is the most
 directly affected object <em>(patient).</em> The one exception is when there is a clausal complement. Then the clausal complement is regarded as a “clausal direct object” and an object nominal will be an iobj.</p>
 
@@ -1034,7 +1035,7 @@ directly affected object <em>(patient).</em> The one exception is when there is 
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
 <p>The manual annotation of the PDT does not distinguish direct and indirect objects.
-Therefore all non-clausal dependents labeled <code>Obj</code> in PDT are currently labeled <code>dobj</code>
+Therefore all non-clausal dependents labeled <code class="highlighter-rouge">Obj</code> in PDT are currently labeled <code class="highlighter-rouge">dobj</code>
 in the converted data, even if it results in two or more direct objects attached to one verb.
 In future, the valency lexicon <a href="http://ufal.mff.cuni.cz/vallex">Vallex</a>
 could be used to identify the main object.</p>
@@ -1048,10 +1049,10 @@ could be used to identify the main object.</p>
 However, some verbs are inherently reflexive, i.e. the verb always occurs with a reflexive
 prounoun, and the pronoun cannot be replaced by a non-reflexive pronoun.</p>
 
-<p>With these verbs, the reflexive pronoun is attached as <code>expl</code> instead of <a href="">dobj</a>.
-(Note that the <code>expl</code> relation is first used for this purpose in the UD release 1.2,
+<p>With these verbs, the reflexive pronoun is attached as <code class="highlighter-rouge">expl</code> instead of <a href="">dobj</a>.
+(Note that the <code class="highlighter-rouge">expl</code> relation is first used for this purpose in the UD release 1.2,
 to increase parallelism with other languages. In the previous releases this usage of
-reflexive <em>se/si</em> was labeled <code>compound:reflex</code>.)</p>
+reflexive <em>se/si</em> was labeled <code class="highlighter-rouge">compound:reflex</code>.)</p>
 
 <pre><code class="language-sdparse">Martin se bojí zvířat . \n Martin REFLEX fears animals .
 expl(bojí, se)
@@ -1063,18 +1064,18 @@ expl(fears, REFLEX)
 <p><a id="al-cs-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
 
-<p>We use <code>foreign</code> to label sequences of foreign words. These are given
-a linear analysis: the head is the <strong>last</strong> token in the foreign phrase.</p>
+<p>We use <code class="highlighter-rouge">foreign</code> to label sequences of foreign words. These are given
+a linear analysis: the head is the first token in the foreign phrase.</p>
 
-<p><code>foreign</code> does not apply to loanwords or to foreign <a href="name">names</a>. 
+<p><code class="highlighter-rouge">foreign</code> does not apply to loanwords or to foreign <a href="name">names</a>. 
 It applies to quoted foreign text incorporated in a sentence/discourse
 of the host language (unless we want to and know how to annotate the
 internal structure according to the syntax of the foreign language).</p>
 
 <pre><code class="language-sdparse">Jarmusch se objevil ve Wangově snímku Modrá ve tváři ( Blue in the Face ) .
-foreign(Face, Blue)
-foreign(Face, in)
-foreign(Face, the)
+foreign(Blue, in)
+foreign(Blue, the)
+foreign(Blue, Face)
 </code></pre>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/foreign.md" target="#">edit foreign</a></p>
@@ -1152,7 +1153,7 @@ dobj(She-told, plan)
 
 <p>If there are two or
 more objects, one of them should be <a href="">dobj</a> and the others should be
-<code>iobj</code>. In such cases it is necessary to decide what is the
+<code class="highlighter-rouge">iobj</code>. In such cases it is necessary to decide what is the
 most directly affected object <em>(patient).</em></p>
 
 <h2 id="diffs">Diffs</h2>
@@ -1160,7 +1161,7 @@ most directly affected object <em>(patient).</em></p>
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
 <p>The manual annotation of the PDT does not distinguish direct and indirect objects.
-Therefore all non-clausal dependents labeled <code>Obj</code> in PDT are currently labeled <code>dobj</code>
+Therefore all non-clausal dependents labeled <code class="highlighter-rouge">Obj</code> in PDT are currently labeled <code class="highlighter-rouge">dobj</code>
 in the converted data, even if it results in two or more direct objects attached to one verb.
 In future, the valency lexicon <a href="http://ufal.mff.cuni.cz/vallex">Vallex</a>
 could be used to identify the main object.</p>
@@ -1170,13 +1171,13 @@ could be used to identify the main object.</p>
 <p><a id="al-cs-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is used for chains of comparable items.
+<p>The <code class="highlighter-rouge">list</code> relation is used for chains of comparable items.
 In lists with more than two items, all items of the list should modify the first one.
 Informal and web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences.
 Email signatures often contain these structures, in the form of contact information:
-the different contact information items are labeled as <code>list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
+the different contact information items are labeled as <code class="highlighter-rouge">list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
 
-<p>However, <code>list</code> should not be over-used. If a construction can be easily analyzed
+<p>However, <code class="highlighter-rouge">list</code> should not be over-used. If a construction can be easily analyzed
 using the grammatical relations of standard sentences, such as when there is overt coordination,
 then it should be analyzed with these more standard relations, even if it is laid out as a list typographically.</p>
 
@@ -1192,7 +1193,7 @@ appos(e-mail:-5, jones@abc.edf-6)
 
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
-<p>The <code>list</code> relation is not used in the current conversion of the PDT data to UD.</p>
+<p>The <code class="highlighter-rouge">list</code> relation is not used in the current conversion of the PDT data to UD.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/list.md" target="#">edit list</a></p>
 
@@ -1214,7 +1215,7 @@ mark(arrive, as-soon-as)
 
 <p>Note that the subordinating conjunction should not be confused with relative pronouns and adverbs.
 These fill a valency slot in the frame of the subordinate predicate,
-and are labeled according to their role in the frame, they are not <code>mark</code>:</p>
+and are labeled according to their role in the frame, they are not <code class="highlighter-rouge">mark</code>:</p>
 
 <pre><code class="language-sdparse">Rád bych věděl , kdy peníze dorazí na náš účet . \n Like-to I-would know , when money arrive at our account .
 advmod(dorazí, kdy)
@@ -1229,7 +1230,7 @@ advmod(arrive, when)
 <p>The multi-word expression (modifier) relation is one of the
 relations for compounding and it is intended for function words.
 In Czech it is used for multi-word prepositions.
-The leftmost word is the head and all the other words are attached as its <code>mwe</code> modifiers.</p>
+The leftmost word is the head and all the other words are attached as its <code class="highlighter-rouge">mwe</code> modifiers.</p>
 
 <pre><code class="language-sdparse">Na rozdíl od tebe já se nemám zač stydět . \n In contrast to you I myself have-not of-what to-be-ashamed .
 mwe(Na, rozdíl)
@@ -1276,7 +1277,7 @@ mwe(on, basis)
 <p><a id="al-cs-dep/name" class="al-dest"></a></p>
 <h2><code>name</code>: personal name</h2>
 
-<p><code>name</code> is one of the relations for compounding in UD.
+<p><code class="highlighter-rouge">name</code> is one of the relations for compounding in UD.
 In Czech it is used to join the first (or middle) and the last name of a person.</p>
 
 <p>The leftmost name is always the head and the other name(s) are attached to it.
@@ -1312,7 +1313,7 @@ neg(dvounohého, ne)
 neg(bipedal, not)
 </code></pre>
 
-<p>Note that the negative determiners (pronouns) are attached as <a href="">det</a>, not <code>neg</code>:</p>
+<p>Note that the negative determiners (pronouns) are attached as <a href="">det</a>, not <code class="highlighter-rouge">neg</code>:</p>
 
 <pre><code class="language-sdparse">Premiér není žádný hlupák . \n The-Prime-Minister is-not no fool .
 det(hlupák, žádný)
@@ -1324,17 +1325,17 @@ det(fool, no)
 <p><a id="al-cs-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend either
+<p>The <code class="highlighter-rouge">nmod</code> relation is used for nominal modifiers. They depend either
 on another noun (group “noun dependents”) or on a predicate (group
 “non-core dependents of clausal predicates”).</p>
 
-<p><code>nmod</code> is a <a href="cs-pos/NOUN">noun</a> (or noun phrase) functioning as a
+<p><code class="highlighter-rouge">nmod</code> is a <a href="cs-pos/NOUN">noun</a> (or noun phrase) functioning as a
 non-core (oblique) argument or adjunct.
 This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.
 But when attaching to a noun, it usually corresponds to a non-agreeing attribute <em>(přívlastek neshodný)</em>
 in genitive. (See below for an example of an agreeing attribute, <em>přívlastek shodný</em>.)</p>
 
-<p>In Czech the <code>nmod</code> relation covers only those possessives that are expressed using the genitive <a href="">cs-feat/Case</a>.
+<p>In Czech the <code class="highlighter-rouge">nmod</code> relation covers only those possessives that are expressed using the genitive <a href="">cs-feat/Case</a>.
 If a possessive adjective is used, the relation is labeled <a href="">amod</a>.</p>
 
 <pre><code class="language-sdparse">kancelář ředitele \n office of-the-director
@@ -1352,7 +1353,7 @@ det(kancelář, jeho)
 det(office, his)
 </code></pre>
 
-<p><code>nmod</code> is also used for temporal nominal modifiers:</p>
+<p><code class="highlighter-rouge">nmod</code> is also used for temporal nominal modifiers:</p>
 
 <pre><code class="language-sdparse">Potkal jsem ho minulý čtvrtek . \n Met I-have him last Thursday .
 nmod(Potkal, čtvrtek)
@@ -1361,10 +1362,10 @@ nmod(Met, Thursday)
 
 <h2 id="agreeing-attribute-of-a-noun">Agreeing attribute of a noun</h2>
 
-<p><code>nmod</code> noun phrases attached to nouns are usually in the genitive <a href="">cs-feat/Case</a> and follow the modified noun.
-However, there is also a different kind of <code>nmod</code> that precedes the modified noun and agrees with it in case and number.
+<p><code class="highlighter-rouge">nmod</code> noun phrases attached to nouns are usually in the genitive <a href="">cs-feat/Case</a> and follow the modified noun.
+However, there is also a different kind of <code class="highlighter-rouge">nmod</code> that precedes the modified noun and agrees with it in case and number.
 A typical example is a title attached to a name of a person. The relation is similar to the <a href="">name</a> relation
-that links the first and the last name, but it is not labeled <code>name</code> because the title is not part of the name:</p>
+that links the first and the last name, but it is not labeled <code class="highlighter-rouge">name</code> because the title is not part of the name:</p>
 
 <pre><code class="language-sdparse">český prezident Václav Havel
 amod(prezident, český)
@@ -1391,7 +1392,7 @@ appos(Havel, prezident)
 in Czech, the phrase is in the nominative <a href="">cs-feat/Case</a>.
 (See <a href="">csubj</a> for when the subject is clausal.
 See <a href="">nsubjpass</a> and <a href="">csubjpass</a> for when the subject is not the proto-agent argument due to valence changing operations.)
-The governor of the <code>nsubj</code> relation might not always be a verb: when
+The governor of the <code class="highlighter-rouge">nsubj</code> relation might not always be a verb: when
 the verb is a copular verb, the root of the clause is the complement
 of the copular verb, which can be an adjective or noun.</p>
 
@@ -1453,8 +1454,8 @@ Examples:</p>
   <li><em><b>Jedno</b> kotě spalo, <b>dvě</b> koťata si hrála.</em> “One kitten slept, two kittens played.”</li>
 </ul>
 
-<p>In PDT, these numerals are attached to their counted nouns as <code>Atr</code> (attribute).
-It is straightforward to convert such dependencies to <code>nummod</code>:</p>
+<p>In PDT, these numerals are attached to their counted nouns as <code class="highlighter-rouge">Atr</code> (attribute).
+It is straightforward to convert such dependencies to <code class="highlighter-rouge">nummod</code>:</p>
 
 <pre><code class="language-sdparse">Jedno kotě spalo . \n One kitten slept .
 nummod(kotě, Jedno)
@@ -1476,7 +1477,7 @@ The whole phrase (numeral + counted noun) behaves as a noun phrase in neuter gen
   <li><em>Skupina mužů hrála karty.</em> “A group of men played cards.”</li>
 </ul>
 
-<p>In PDT, these numerals are analyzed as heads of the counted nouns, which are attached to the numeral as <code>Atr</code>:</p>
+<p>In PDT, these numerals are analyzed as heads of the counted nouns, which are attached to the numeral as <code class="highlighter-rouge">Atr</code>:</p>
 
 <pre><code class="language-conllu"># This is not UD, it is Prague Dependency Treebank, and we want to clearly distinguish it from the UD examples.
 # visual-style nodes yellow
@@ -1735,8 +1736,8 @@ nummod(December, 31-18)
 punct(31-18, st)
 </code></pre>
 
-<p>Numerals expressed using digits are labeled <code>nummod</code> even if they represent ordinal numerals,
-which would be labeled <code>amod</code>:</p>
+<p>Numerals expressed using digits are labeled <code class="highlighter-rouge">nummod</code> even if they represent ordinal numerals,
+which would be labeled <code class="highlighter-rouge">amod</code>:</p>
 
 <!-- ln95045_123.a.gz (8/8) -->
 <pre><code class="language-conllu"># This is not UD, it is Prague Dependency Treebank, and we want to clearly distinguish it from the UD examples.
@@ -1770,7 +1771,7 @@ remnant(to, from)
 
 <h2 id="numbered-objects">Numbered objects</h2>
 
-<p>House number in address is attached as <code>nummod</code> to the name of the street:</p>
+<p>House number in address is attached as <code class="highlighter-rouge">nummod</code> to the name of the street:</p>
 
 <pre><code class="language-sdparse">v budově Na poříčí 12 \n in the-building Na poříčí 12
 nmod(budově, poříčí-4)
@@ -1786,13 +1787,13 @@ nummod(poříčí-10, 12-11)
 <p><a id="al-cs-dep/nummod:gov" class="al-dest"></a></p>
 <h2><code>nummod:gov</code>: numeric modifier governing the case of the noun</h2>
 
-<p><code>nummod:gov</code> differs from <a href="">nummod</a>
+<p><code class="highlighter-rouge">nummod:gov</code> differs from <a href="">nummod</a>
 in that the numeral requires the counted noun to be in its genitive form.
 The whole phrase (numeral + noun) is treated as a singular neuter noun phrase
 and it can fill roles where nominative, accusative or vocative noun phrases are expected.</p>
 
 <p>Such situations are analyzed in PDT so that the numeral is the head and the noun depends on it.
-In UD the dependency direction is reversed and the <code>nummod:gov</code> label is used to preserve
+In UD the dependency direction is reversed and the <code class="highlighter-rouge">nummod:gov</code> label is used to preserve
 the information about case conditions.</p>
 
 <pre><code class="language-conllu"># This is not UD, it is Prague Dependency Treebank, and we want to clearly distinguish it from the UD examples.
@@ -1877,7 +1878,7 @@ while this is not possible with medial or final placement of the speech verb
 
 <h3 id="news-article-bylines">News article bylines</h3>
 
-<p>The <code>parataxis</code> relation should be used to connect the parts of a news article byline.
+<p>The <code class="highlighter-rouge">parataxis</code> relation should be used to connect the parts of a news article byline.
 There does not seem to be a better relation to use.</p>
 
 <pre><code class="language-sdparse">Washington ( CNN ) :
@@ -1895,7 +1896,7 @@ parataxis(extended, concerns)
 
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
-<p>At present the PDT data converted to UD use <code>parataxis</code> only for interjected parentheticals.
+<p>At present the PDT data converted to UD use <code class="highlighter-rouge">parataxis</code> only for interjected parentheticals.
 The other examples above are analyzed differently (legacy PDT structure).</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/parataxis.md" target="#">edit parataxis</a></p>
@@ -1911,8 +1912,8 @@ punct(Jdi, !-3)
 punct(Go, !-7)
 </code></pre>
 
-<p>Tokens with the relation <code>punct</code> always attach to content words (except in cases of ellipsis) and can never have dependents.
-Since <code>punct</code> is not a normal dependency relation, the usual criteria for determining the head word do not apply. 
+<p>Tokens with the relation <code class="highlighter-rouge">punct</code> always attach to content words (except in cases of ellipsis) and can never have dependents.
+Since <code class="highlighter-rouge">punct</code> is not a normal dependency relation, the usual criteria for determining the head word do not apply. 
 Instead, we use the following principles:</p>
 
 <ol>
@@ -1964,8 +1965,8 @@ punct(means, .-17)
 <p><a id="al-cs-dep/remnant" class="al-dest"></a></p>
 <h2><code>remnant</code>: remnant in ellipsis</h2>
 
-<p>The <code>remnant</code> relation is used to provide a satisfactory treatment of certain instances of
-<a href="http://universaldependencies.github.io/docs/cs/overview/specific-syntax.html#ellipsis">ellipsis</a>
+<p>The <code class="highlighter-rouge">remnant</code> relation is used to provide a satisfactory treatment of certain instances of
+<a href="http://universaldependencies.org/cs/overview/specific-syntax.html#ellipsis">ellipsis</a>
 (in the case of gapping and stripping, where a predicational or verbal
 head gets elided).</p>
 
@@ -1985,12 +1986,12 @@ remnant(beef, pork)
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
 <p>At present the conversion of the PDT data to UD does not handle ellipsis properly
-and the <code>remnant</code> relation is not used.</p>
+and the <code class="highlighter-rouge">remnant</code> relation is not used.</p>
 
 <p>In the analytical layer of PDT, ellipsis
 (together with some other issues, such as the <a href="">vocative</a>) is signalled by the
-dependency relation <code>ExD</code> (ex-dependent).
-All the <code>ExD</code> relations that are not vocatives or comparatives are currently just re-labeled <a href="">dep</a>
+dependency relation <code class="highlighter-rouge">ExD</code> (ex-dependent).
+All the <code class="highlighter-rouge">ExD</code> relations that are not vocatives or comparatives are currently just re-labeled <a href="">dep</a>
 or <a href="">root</a>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/remnant.md" target="#">edit remnant</a></p>
@@ -1998,7 +1999,7 @@ or <a href="">root</a>.</p>
 <p><a id="al-cs-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>We use <code>reparandum</code> to indicate disfluencies overridden in a speech
+<p>We use <code class="highlighter-rouge">reparandum</code> to indicate disfluencies overridden in a speech
 repair. The disfluency is the dependent of the repair.</p>
 
 <pre><code class="language-sdparse">Jděte dopra- doleva . \n Go to-the-righ- to-the-left .
@@ -2011,8 +2012,8 @@ reparandum(to-the-left, to-the-righ-)
 <p><a id="al-cs-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A
-fake node <code>ROOT</code> is used as the governor. The <code>ROOT</code> node is indexed
+<p>The <code class="highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A
+fake node <code class="highlighter-rouge">ROOT</code> is used as the governor. The <code class="highlighter-rouge">ROOT</code> node is indexed
 with 0, since the indexing of real words in the sentence starts at 1.</p>
 
 <pre><code class="language-sdparse">ROOT Miluju indická jídla . \n ROOT I-love Indian food .
@@ -2021,9 +2022,9 @@ root(ROOT-7, I-love)
 </code></pre>
 
 <p>Since release 1.2 of the Czech UD treebank,
-there is just one node with the <code>root</code> dependency relation in every
+there is just one node with the <code class="highlighter-rouge">root</code> dependency relation in every
 tree. If the main predicate is not present (due to
-<a href="http://universaldependencies.github.io/docs/cs/overview/specific-syntax.html#ellipsis">ellipsis</a>)
+<a href="http://universaldependencies.org/cs/overview/specific-syntax.html#ellipsis">ellipsis</a>)
 and there are
 multiple orphaned dependents, the leftmost dependent is promoted to
 the head (root) position and the other orphans are attached to it.</p>
@@ -2052,7 +2053,7 @@ punct(And, ?-15)
 <p><a id="al-cs-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>The <code>vocative</code> relation is used to mark dialogue participant addressed in text.
+<p>The <code class="highlighter-rouge">vocative</code> relation is used to mark dialogue participant addressed in text.
 The relation links the addressee’s name to its host sentence.
 In Czech, the addressee’s name must also appear in the vocative <a href="">cs-feat/Case</a> form.</p>
 
@@ -2066,14 +2067,14 @@ vocative(you-are, Sir)
 <p><a id="al-cs-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>An open clausal complement (<code>xcomp</code>) of a verb or an adjective is a
+<p>An open clausal complement (<code class="highlighter-rouge">xcomp</code>) of a verb or an adjective is a
 predicative or clausal complement without its own subject. The
 reference of the subject is necessarily determined by an argument
 external to the xcomp (normally by the subject of the next higher
 clause). This is often referred to as <em>obligatory control</em>. 
 These complements are always non-finite, and they are
 complements (arguments of the higher verb or adjective) rather than
-adjuncts/modifiers, such as a purpose clause. The name <code>xcomp</code> is
+adjuncts/modifiers, such as a purpose clause. The name <code class="highlighter-rouge">xcomp</code> is
 borrowed from Lexical-Functional Grammar.</p>
 
 <pre><code class="language-sdparse">Nechceš si zaplavat ? \n Don't-you-want yourself to-swim ?
@@ -2087,7 +2088,7 @@ xcomp(Started, to-work)
 </code></pre>
 
 <p>Note that the above condition “without its own subject” does not mean that a 
-clause is an <code>xcomp</code> just because its subject is not <em>overt.</em>
+clause is an <code class="highlighter-rouge">xcomp</code> just because its subject is not <em>overt.</em>
 The subject must be necessarily inherited from a fixed position in the higher clause.
 That is, there should be no available interpretation where the subject of the lower clause may be distinct
 from the specified role of the upper clause.
@@ -2103,7 +2104,7 @@ ccomp(ordered, to-dig)
 yet it is inherently present (and often deducible from the form of the verb)
 and it does not depend on arguments from a higher clause.
 Thus in neither of the following two Czech examples is there any overt subject,
-yet only the second example contains an <code>xcomp</code>.</p>
+yet only the second example contains an <code class="highlighter-rouge">xcomp</code>.</p>
 
 <pre><code class="language-sdparse">Píšu , protože jsem to slíbil . \n I-write , because I-have it promised .
 advcl(Píšu, slíbil)
@@ -2129,6 +2130,7 @@ xcomp(Promised, to-write)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -2160,11 +2162,40 @@ xcomp(Promised, to-write)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -2188,6 +2219,7 @@ xcomp(Promised, to-write)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-overview';
@@ -2213,7 +2245,7 @@ xcomp(Promised, to-write)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

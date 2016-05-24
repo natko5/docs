@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-el">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/el/dep">el/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-el">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/el/dep">el/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_el-dep/nmod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,11 +39,11 @@
 
           <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend either
+<p>The <code class="highlighter-rouge">nmod</code> relation is used for nominal modifiers. They depend either
 on another noun (group “noun dependents”) or on a predicate (group
 “non-core dependents of clausal predicates”).</p>
 
-<p><code>nmod</code> is a <a href="u-pos/NOUN">noun</a> (or noun phrase) functioning as a
+<p><code class="highlighter-rouge">nmod</code> is a <a href="u-pos/NOUN">noun</a> (or noun phrase) functioning as a
 non-core (oblique) argument or adjunct.
 This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.
 But when attaching to a noun, it corresponds to an attribute, or genitive complement.</p>
@@ -51,7 +52,7 @@ But when attaching to a noun, it corresponds to an attribute, or genitive comple
 nmod(άθλοι, Ηρακλή.Gen)
 </code></pre>
 
-<p>The <code>nmod</code> relation can be further specified by the <a href="">case</a> label assigned to prepositions.</p>
+<p>The <code class="highlighter-rouge">nmod</code> relation can be further specified by the <a href="">case</a> label assigned to prepositions.</p>
 
 <pre><code class="language-sdparse">γράψαμε το άρθρο σε έξι ώρες
 nmod(γράψαμε, ώρες)
@@ -89,7 +90,7 @@ iobj(Ζήτησε, Ελένη)
 obj(Ζήτησε, κούκλα)
 </code></pre>
 
-<p><code>nmod</code> is also used for nominal modifiers indicating time, cause, amount etc.:</p>
+<p><code class="highlighter-rouge">nmod</code> is also used for nominal modifiers indicating time, cause, amount etc.:</p>
 
 <pre><code class="language-sdparse">Θα σε δω την Κυριακή
 nmod(δω, Κυριακή)
@@ -111,23 +112,23 @@ nmod(δω, Κυριακή)
 
 <p>This relation is universal.</p>
 
-<p>9643 nodes (16%) are attached to their parents as <code>nmod</code>.</p>
+<p>9643 nodes (16%) are attached to their parents as <code class="highlighter-rouge">nmod</code>.</p>
 
-<p>7875 instances of <code>nmod</code> (82%) are left-to-right (parent precedes child).
+<p>7875 instances of <code class="highlighter-rouge">nmod</code> (82%) are left-to-right (parent precedes child).
 Average distance between parent and child is 2.83469874520377.</p>
 
-<p>The following 25 pairs of parts of speech are connected with <code>nmod</code>: <a href="">el-pos/NOUN</a>-<a href="">el-pos/NOUN</a> (5515; 57% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/NOUN</a> (1811; 19% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/PRON</a> (860; 9% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/NOUN</a> (390; 4% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/NOUN</a> (272; 3% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/NUM</a> (256; 3% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/PRON</a> (130; 1% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/NOUN</a> (89; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/NUM</a> (56; 1% instances), <a href="">el-pos/CONJ</a>-<a href="">el-pos/NOUN</a> (53; 1% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/PRON</a> (37; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/PRON</a> (35; 0% instances), <a href="">el-pos/PUNCT</a>-<a href="">el-pos/NUM</a> (34; 0% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/NOUN</a> (22; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/NOUN</a> (21; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/NUM</a> (17; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/PRON</a> (10; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/PRON</a> (9; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/NUM</a> (6; 0% instances), <a href="">el-pos/PUNCT</a>-<a href="">el-pos/NOUN</a> (6; 0% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/NUM</a> (5; 0% instances), <a href="">el-pos/CONJ</a>-<a href="">el-pos/PRON</a> (5; 0% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/PRON</a> (2; 0% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/NUM</a> (1; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 23 pairs of parts of speech are connected with <code class="highlighter-rouge">nmod</code>: <a href="">el-pos/NOUN</a>-<a href="">el-pos/NOUN</a> (5521; 57% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/NOUN</a> (1811; 19% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/PRON</a> (860; 9% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/NOUN</a> (390; 4% instances), <a href="">el-pos/NOUN</a>-<a href="">el-pos/NUM</a> (290; 3% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/NOUN</a> (272; 3% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/PRON</a> (130; 1% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/NOUN</a> (89; 1% instances), <a href="">el-pos/VERB</a>-<a href="">el-pos/NUM</a> (56; 1% instances), <a href="">el-pos/CONJ</a>-<a href="">el-pos/NOUN</a> (53; 1% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/PRON</a> (37; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/PRON</a> (35; 0% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/NOUN</a> (22; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/NOUN</a> (21; 0% instances), <a href="">el-pos/ADJ</a>-<a href="">el-pos/NUM</a> (17; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/PRON</a> (10; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/PRON</a> (9; 0% instances), <a href="">el-pos/NUM</a>-<a href="">el-pos/NUM</a> (6; 0% instances), <a href="">el-pos/ADV</a>-<a href="">el-pos/NUM</a> (5; 0% instances), <a href="">el-pos/CONJ</a>-<a href="">el-pos/PRON</a> (5; 0% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/PRON</a> (2; 0% instances), <a href="">el-pos/ADP</a>-<a href="">el-pos/NUM</a> (1; 0% instances), <a href="">el-pos/PRON</a>-<a href="">el-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
 # visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
 # visual-style 2 3 nmod	color:blue
-1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	det	_	_
+1	Η	ο	PRON	PRON	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Σπόρτινγκ	Σπόρτινγκ	NOUN	NOUN	_	4	nsubj	_	_
 3	Λισαβόνας	Λισαβόνα	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
 4	νίκησε	νικώ	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
-5	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	6	det	_	_
+5	την	ο	PRON	PRON	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	Μάντσεστερ	Μάντσεστερ	NOUN	NOUN	_	4	dobj	_	_
 7	Σίτι	Σίτι	NOUN	NOUN	_	6	nmod	_	_
 8	με	με	ADP	ADP	_	9	case	_	_
@@ -141,11 +142,11 @@ Average distance between parent and child is 2.83469874520377.</p>
 # visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
 # visual-style 4 9 nmod	color:blue
-1	Η	ο	DET	DET	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	2	det	_	_
+1	Η	ο	PRON	PRON	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Σπόρτινγκ	Σπόρτινγκ	NOUN	NOUN	_	4	nsubj	_	_
 3	Λισαβόνας	Λισαβόνα	NOUN	NOUN	Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
 4	νίκησε	νικώ	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
-5	την	ο	DET	DET	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	6	det	_	_
+5	την	ο	PRON	PRON	Case=Acc|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	Μάντσεστερ	Μάντσεστερ	NOUN	NOUN	_	4	dobj	_	_
 7	Σίτι	Σίτι	NOUN	NOUN	_	6	nmod	_	_
 8	με	με	ADP	ADP	_	9	case	_	_
@@ -224,6 +225,7 @@ nmod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -255,11 +257,40 @@ nmod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -283,6 +314,7 @@ nmod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'el-dep';
@@ -308,7 +340,7 @@ nmod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

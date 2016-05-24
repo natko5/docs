@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-no">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/no/dep">no/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-no">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/no/dep">no/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-dep/expl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -40,25 +41,25 @@
 
 <p>This relation captures expletive nominals. These are nominals that appear in an argument position of a predicate but which do not themselves satisfy any of the semantic roles of the predicate. The main predicate of the clause (the verb or predicate adjective or noun) is the governor.</p>
 
-<p>For Norwegian, the expletive element is expressed using the neuter pronoun <em>det</em> “it” and the <code>expl</code> relation is used for both expletive subjects and objects.</p>
+<p>For Norwegian, the expletive element is expressed using the neuter pronoun <em>det</em> “it” and the <code class="highlighter-rouge">expl</code> relation is used for both expletive subjects and objects.</p>
 
-<h5 id="presentational-construction">Presentational construction</h5>
-<p>In Norwegian expletives occur in the presentational construction, which involves an expletive subject, an active verb and an indefinite subject (<em>en debatt</em> “a debate” in the example below).</p>
+<p>#####Presentational construction
+In Norwegian expletives occur in the presentational construction, which involves an expletive subject, an active verb and an indefinite subject (<em>en debatt</em> “a debate” in the example below).</p>
 
 <pre><code class="language-sdparse">Det eksisterer allerede en debatt \n There already exists a debate
 expl(eksisterer-2,Det-1)
 nsubj(eksisterer-2,debatt-5)
 </code></pre>
 
-<h5 id="impersonal-passive">Impersonal passive</h5>
-<p>Norwegian employs the impersonal passive construction, where there is an expletive subject and the underlying subject is unexpressed.</p>
+<p>#####Impersonal passive
+Norwegian employs the impersonal passive construction, where there is an expletive subject and the underlying subject is unexpressed.</p>
 
 <pre><code class="language-sdparse">Senere har det blitt fremsatt flere forslag \n Later has there been proposed several suggestions
 expl(fremsatt,det)
 </code></pre>
 
-<h5 id="clause-anticipating-constructions">Clause-anticipating constructions</h5>
-<p>These constructions contain a finite or non-finite clause which semantically may be regarded as the subject, but where the subject position is occupied by an expletive.</p>
+<p>#####Clause-anticipating constructions
+These constructions contain a finite or non-finite clause which semantically may be regarded as the subject, but where the subject position is occupied by an expletive.</p>
 
 <pre><code class="language-sdparse">Det er ønskelig at utvalget arbeider i dialog \n It is desirable that the committee works in dialogue
 expl(ønskelig-3,Det-1)
@@ -76,16 +77,16 @@ expl(finner-2,det-3)
 ccomp(finner-2,handlet-7)
 </code></pre>
 
-<h5 id="clefts">Clefts</h5>
-<p>Clefts are quite  common in Norwegian. They contain an expletive subject, a form of <em>være</em> “to be” and a relative clause. Note that in clefts we do not adopt a copula analysis of the verb <em>være</em> “er”.</p>
+<p>#####Clefts
+Clefts are quite  common in Norwegian. They contain an expletive subject, a form of <em>være</em> “to be” and a relative clause. Note that in clefts we do not adopt a copula analysis of the verb <em>være</em> “er”.</p>
 
 <pre><code class="language-sdparse">Det er forholdsvis få arter som har klart å tilpasse seg \n There are quite few species that have managed to adapt 
 expl(er-2,Det-1)
 acl:relcl(arter-5,klart-8)
 </code></pre>
 
-<h5 id="references">References</h5>
-<p>Kari Kinn, Per Erik Solberg and Pål Kristian Eriksen. <a href="http://www.nb.no/sbfil/dok/20140314_guidelines_ndt_english.pdf">NDT Guidelines for Morphological Annotation</a>”. National Library Tech Report.</p>
+<p>#####References
+Kari Kinn, Per Erik Solberg and Pål Kristian Eriksen. <a href="http://www.nb.no/sbfil/dok/20140314_guidelines_ndt_english.pdf">NDT Guidelines for Morphological Annotation</a>”. National Library Tech Report.</p>
 
 <p>~~~</p>
 
@@ -105,12 +106,12 @@ acl:relcl(arter-5,klart-8)
 
 <p>This relation is universal.</p>
 
-<p>3239 nodes (1%) are attached to their parents as <code>expl</code>.</p>
+<p>3239 nodes (1%) are attached to their parents as <code class="highlighter-rouge">expl</code>.</p>
 
-<p>2651 instances of <code>expl</code> (82%) are right-to-left (child precedes parent).
+<p>2651 instances of <code class="highlighter-rouge">expl</code> (82%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.96542142636616.</p>
 
-<p>The following 12 pairs of parts of speech are connected with <code>expl</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (1869; 58% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/PRON</a> (613; 19% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/PRON</a> (495; 15% instances), <a href="">no-pos/PRON</a>-<a href="">no-pos/PRON</a> (93; 3% instances), <a href="">no-pos/ADV</a>-<a href="">no-pos/PRON</a> (84; 3% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/PRON</a> (59; 2% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/PRON</a> (10; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADV</a> (7; 0% instances), <a href="">no-pos/NUM</a>-<a href="">no-pos/PRON</a> (4; 0% instances), <a href="">no-pos/ADP</a>-<a href="">no-pos/PRON</a> (3; 0% instances), <a href="">no-pos/CONJ</a>-<a href="">no-pos/PRON</a> (1; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (1; 0% instances).</p>
+<p>The following 12 pairs of parts of speech are connected with <code class="highlighter-rouge">expl</code>: <a href="">no-pos/VERB</a>-<a href="">no-pos/PRON</a> (1869; 58% instances), <a href="">no-pos/ADJ</a>-<a href="">no-pos/PRON</a> (613; 19% instances), <a href="">no-pos/NOUN</a>-<a href="">no-pos/PRON</a> (495; 15% instances), <a href="">no-pos/PRON</a>-<a href="">no-pos/PRON</a> (93; 3% instances), <a href="">no-pos/ADV</a>-<a href="">no-pos/PRON</a> (84; 3% instances), <a href="">no-pos/PROPN</a>-<a href="">no-pos/PRON</a> (59; 2% instances), <a href="">no-pos/DET</a>-<a href="">no-pos/PRON</a> (10; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/ADV</a> (7; 0% instances), <a href="">no-pos/NUM</a>-<a href="">no-pos/PRON</a> (4; 0% instances), <a href="">no-pos/ADP</a>-<a href="">no-pos/PRON</a> (3; 0% instances), <a href="">no-pos/CONJ</a>-<a href="">no-pos/PRON</a> (1; 0% instances), <a href="">no-pos/VERB</a>-<a href="">no-pos/DET</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -151,10 +152,10 @@ Average distance between parent and child is 1.96542142636616.</p>
 3	nok	nok	ADV	_	_	8	advmod	_	_
 4	heller	heller	ADV	_	_	8	advmod	_	_
 5	Frps	Frp	PROPN	_	Case=Gen	8	det	_	_
-6	økte	øke	ADJ	_	Definite=Def|Number=Sing	8	amod	_	_
+6	økte	øke	ADJ	_	Definite=Def|Number=Sing|VerbForm=Part	8	amod	_	_
 7	politiske	politisk	ADJ	_	Definite=Def|Degree=Pos|Number=Sing	8	amod	_	_
 8	kjøttvekt	kjøttvekt	NOUN	_	Definite=Ind|Gender=Fem|Number=Sing	0	root	_	_
-9	som	som	PRON	_	_	10	nsubj	_	_
+9	som	som	PRON	_	PronType=Rel	10	nsubj	_	_
 10	slår	slå	VERB	_	Mood=Ind|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_
 11	ut	ut	ADP	_	_	10	compound:prt	_	_
 12	.	$.	PUNCT	_	_	8	punct	_	_
@@ -218,6 +219,7 @@ expl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -249,11 +251,40 @@ expl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -277,6 +308,7 @@ expl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'no-dep';
@@ -302,7 +334,7 @@ expl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

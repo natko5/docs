@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/nummod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,62 @@
 
           <h2><code>nummod</code>: numeric modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>nummod</code>.</p>
+<p>A numeric modifier of a noun (<code class="highlighter-rouge">nummod</code>) is any number phrase that serves to modify the meaning of the noun with a quantity.</p>
+
+<p><em>Urrezko domina irabazi zuen atletak <strong>23</strong> urte ditu .</em></p>
+
+<p><em>The athlete who won the gold medal is <strong>23</strong> years old .</em></p>
+
+<pre><code class="language-sdparse">Urrezko domina irabazi zuen atletak 23 urte ditu . \n Gold medal_the won_who athlete_the 23 years is .
+
+nmod(domina-2, Urrezko-1)
+dobj(irabazi-3, domina-2)
+aux(irabazi-3, zuen-4)
+acl(atletak-5, irabazi-3)
+nsubj(ditu-8, atletak-5)
+nummod(urte-7, 23-6)
+dobj(ditu-8, urte-7)
+punct(ditu-8, .-9)
+</code></pre>
+
+<p><em><strong>Hiru</strong> puntuak lortu ditugu .</em></p>
+
+<p><em>We have got the <strong>three</strong> points .</em></p>
+
+<pre><code class="language-sdparse">Hiru puntuak lortu ditugu . \n Three points_the got have .
+
+nummod(puntuak-2, Hiru-1)
+dobj(lortu-3, puntuak-2)
+aux(lortu-3, ditugu-4)
+punct(lortu-3, .-5)
+</code></pre>
+
+<p><em>Festa <strong>bat</strong> ospatu zuten .</em></p>
+
+<p><em>They celebreated <strong>one</strong> party .</em></p>
+
+<pre><code class="language-sdparse">Festa bat ospatu zuten . \n Party one celebreated .
+
+dobj(ospatu-3, Festa-1)
+nummod(Festa-1, bat-2)
+aux(ospatu-3, zuten-4)
+punct(ospatu-3, .-5)
+</code></pre>
+
+<p><em>Saiatuko naiz <strong>bi</strong> maratoi egiten .</em></p>
+
+<p><em>I will try to run <strong>two</strong> maratons .</em></p>
+
+<pre><code class="language-sdparse">Saiatuko naiz bi maratoi egiten . \n I will try to run two maratons .
+
+aux(Saiatuko-1, naiz-2)
+nummod(maratoi-4, bi-3)
+dobj(egiten-5, maratoi-4)
+advcl(Saiatuko-1, egiten-5)
+punct(Saiatuko-1, .-6)
+</code></pre>
+
+<p>Note that indefinite quantifiers such as few, many are tagged DET rather than NUM. Therefore their relation to the quantified noun is not nummod but DET (see DET section).</p>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +111,12 @@ for <code>nummod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>2040 nodes (2%) are attached to their parents as <code>nummod</code>.</p>
+<p>2040 nodes (2%) are attached to their parents as <code class="highlighter-rouge">nummod</code>.</p>
 
-<p>1087 instances of <code>nummod</code> (53%) are right-to-left (child precedes parent).
+<p>1087 instances of <code class="highlighter-rouge">nummod</code> (53%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.175.</p>
 
-<p>The following 10 pairs of parts of speech are connected with <code>nummod</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (1922; 94% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NUM</a> (47; 2% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (25; 1% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (15; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (11; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NUM</a> (9; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/SYM</a>-<a href="">eu-pos/NUM</a> (4; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NUM</a> (1; 0% instances).</p>
+<p>The following 10 pairs of parts of speech are connected with <code class="highlighter-rouge">nummod</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (1922; 94% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NUM</a> (47; 2% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (25; 1% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (15; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (11; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NUM</a> (9; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/SYM</a>-<a href="">eu-pos/NUM</a> (4; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NUM</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -176,6 +231,7 @@ nummod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -207,11 +263,40 @@ nummod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -235,6 +320,7 @@ nummod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -260,7 +346,7 @@ nummod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

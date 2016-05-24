@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/compound.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,42 @@
 
           <h2><code>compound</code>: compound</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>compound</code>.</p>
+<p><code class="highlighter-rouge">compound</code> is one of the three relations in UD for compounding. It is used for noun compounds (e.g., <em>phone book</em>), but also for verb and adjective compounds as well as for “phrasal verb” constructions (e.g., <em>throw up</em>), which in Basque are expressions such as <em>gora egin</em> (<em>go up</em>), for example:</p>
+
+<p><em>Kazetariak aztoratuta ibili ziren atzo <strong>Euskadi Fundazioak</strong> Derion duen egoitzaren atarian .</em></p>
+
+<p><em>Journalists were rowdy yesterday in the entrace of the officce that <strong>Euskadi Foundation</strong> has in Derio .</em></p>
+
+<pre><code class="language-sdparse">Kazetariak aztoratuta ibili ziren atzo Euskadi Fundazioak Derion duen egoitzaren atarian .\n Journalists rowdy were yesterday Euskadi Foundation Derio_in has_that officce_of entrace_the_in . 
+
+nsubj(aztoratuta-2, Kazetariak-1)
+cop(aztoratuta-2, ibili-3)
+aux(ibili-3, ziren-4)
+advmod(ibili-3, atzo-5)
+compound(Fundazioak-7, Euskadi-6)
+nsubj(duen-9, Fundazioak-7)
+nmod(duen-9, Derion-8)
+acl(egoitzaren-10, duen-9)
+nmod(atarian-11, egoitzaren-10)
+nmo(ibili-3, atarian-11)
+punct(ibili-3, .-12)
+</code></pre>
+
+<p><em><strong>Izan ere</strong> zerbait gehiago behar da nirekin bukatzeko .</em></p>
+
+<p><em><strong>In fact</strong> something esle is needed in order to end with me .</em></p>
+
+<pre><code class="language-sdparse">Izan ere zerbait gehiago behar da nirekin bukatzeko . \n In fact something esle needed is me_with end_in_order_to  . 
+
+compound(ere-2, Izan-1)
+nmod(da-6, ere-2)
+det(zerbait-3, gehiago-4)
+nsubj(da-6, zerbait-3)
+compound(da-6, behar-5)
+nmod(bukatzeko-8, nirekin-7)
+advcl(da-6, bukatzeko-8)
+punct(da-6, .-)
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +91,12 @@ for <code>compound</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1609 nodes (1%) are attached to their parents as <code>compound</code>.</p>
+<p>1609 nodes (1%) are attached to their parents as <code class="highlighter-rouge">compound</code>.</p>
 
-<p>1609 instances of <code>compound</code> (100%) are right-to-left (child precedes parent).
+<p>1609 instances of <code class="highlighter-rouge">compound</code> (100%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.01367308887508.</p>
 
-<p>The following 16 pairs of parts of speech are connected with <code>compound</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (963; 60% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (283; 18% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (94; 6% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PROPN</a> (80; 5% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (51; 3% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NOUN</a> (29; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (22; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (20; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (18; 1% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/DET</a> (10; 1% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PART</a> (10; 1% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (10; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (10; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PROPN</a> (5; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances).</p>
+<p>The following 16 pairs of parts of speech are connected with <code class="highlighter-rouge">compound</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (963; 60% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (283; 18% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (94; 6% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PROPN</a> (80; 5% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (51; 3% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NOUN</a> (29; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (22; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (20; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (18; 1% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/DET</a> (10; 1% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PART</a> (10; 1% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (10; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (10; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PROPN</a> (5; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
@@ -170,6 +205,7 @@ compound in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -201,11 +237,40 @@ compound in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -229,6 +294,7 @@ compound in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -254,7 +320,7 @@ compound in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

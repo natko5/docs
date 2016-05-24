@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/amod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,7 +40,7 @@
           <h2><code>amod</code>: adjectival modifier</h2>
 
 <p>Nouns may take adjectival modifiers, which are marked with the
-dependency type <code>amod</code>.</p>
+dependency type <code class="highlighter-rouge">amod</code>.</p>
 
 <pre><code class="language-sdparse">Азамат үлкен бір ағаш көрді . \n Azamat big one tree sees . 
 amod(ағаш-4, үлкен-2)
@@ -49,7 +50,7 @@ obj(көрді-5, ағаш-4)
 
 <p>Ordinal numerals:</p>
 
-<p>The <code>amod</code> relation is also used for ordinal numerals. Note that these may not be explicitly marked in the morphology.</p>
+<p>The <code class="highlighter-rouge">amod</code> relation is also used for ordinal numerals. Note that these may not be explicitly marked in the morphology.</p>
 
 <pre><code class="language-sdparse">1968 жылдан бастап Ширазда театр фестивалы өткізіліп тұрды . \n 1968 year-from starting Shiraz-in theatre festival take-place does .
 amod(жылдан-2, 1968-1)
@@ -62,7 +63,7 @@ amod(жылы-3, 1993-2)
 
 <p>Locative attributives:</p>
 
-<p>Substantives in the attributive form of the locative (-DAGI) are also marked with <code>amod</code>. (Pending clarification)</p>
+<p>Substantives in the attributive form of the locative (-DAGI) are also marked with <code class="highlighter-rouge">amod</code>. (Pending clarification)</p>
 
 <pre><code class="language-sdparse">Олар әрдайым үлкен үйдің алдындағы бақшада бірге ойнайды . \n They always big house-of front-in garden-in together play .
 amod(бақшада-6, алдындағы-5)
@@ -75,6 +76,80 @@ subj(ойнайды-8, Олар-1)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>317 nodes (6%) are attached to their parents as <code class="highlighter-rouge">amod</code>.</p>
+
+<p>313 instances of <code class="highlighter-rouge">amod</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.29337539432177.</p>
+
+<p>The following 12 pairs of parts of speech are connected with <code class="highlighter-rouge">amod</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADJ</a> (190; 60% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (86; 27% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (12; 4% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/ADJ</a> (12; 4% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADV</a> (5; 2% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/ADJ</a> (3; 1% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NUM</a> (3; 1% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/PROPN</a> (2; 1% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/ADJ</a> (1; 0% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/ADV</a> (1; 0% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NOUN</a> (1; 0% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/PROPN</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 amod	color:blue
+1	Бастауыш	бастауыш	ADJ	adj	_	2	amod	_	_
+2	білім	білім	NOUN	n	_	4	nsubj	_	nom
+3	баршаға	барша	PRON	prn	_	4	nmod	_	def|dat
+4	міндетті	міндетті	ADJ	adj	_	6	nsubj	_	_
+5	болуы	бол	VERB	v	_	4	cop	_	iv|ger|px3sp|nom
+6	_	тиіс	ADJ	adj	_	0	root	_	_
+7	_	е	VERB	cop	_	6	cop	_	aor|p3|sg
+8	.	.	PUNCT	sent	_	6	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 amod	color:blue
+1	11	11	NUM	num	_	2	amod	_	_
+2	ғасырда	ғасыр	NOUN	n	_	11	nmod	_	loc
+3	Иранға	Иран	PROPN	np	_	11	nmod	_	top|dat
+4	түрік	түрік	NOUN	n	_	6	compound	_	attr
+5	-	-	PUNCT	guio	_	6	punct	_	_
+6	оғыздар	оғыз	NOUN	n	_	11	nsubj	_	pl|nom
+7	(	(	PUNCT	lpar	_	8	punct	_	_
+8	салжұқ	салжұқ	NOUN	n	_	6	appos	_	nom
+9	)	)	PUNCT	rpar	_	8	punct	_	_
+10	басып	бас	VERB	v	_	11	advcl	_	iv|gna_perf
+11	кіре	кір	VERB	v	_	0	root	_	iv|prc_impf
+12	бастады	баста	AUX	vaux	_	11	aux	_	ifi|p3|pl
+13	.	.	PUNCT	sent	_	11	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 1 amod	color:blue
+1	Елдегі	ел	NOUN	n	_	5	amod	_	loc|attr
+2	саяси	саяси	ADJ	adj	_	4	conj	_	_
+3	және	және	CONJ	cnjcoo	_	4	cc	_	_
+4	діни	діни	ADJ	adj	_	5	amod	_	_
+5	билік	билік	NOUN	n	_	10	nsubj	_	nom
+6	аятолла	аятолла	NOUN	n	_	9	compound	_	attr
+7	Сейд	Сейд	PROPN	np	_	9	name	_	ant|m|attr
+8	Әли	Әли	PROPN	np	_	9	name	_	ant|m|attr
+9	Хаменеидің	Хаменеи	PROPN	np	_	10	nmod:poss	_	cog|mf|gen
+10	_	қол	NOUN	n	_	0	root	_	px3sp|loc
+11	_	е	VERB	cop	_	10	cop	_	aor|p3|sg
+12	.	.	PUNCT	sent	_	10	punct	_	_
+
+</code></pre>
 
 
 
@@ -133,6 +208,7 @@ amod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -164,11 +240,40 @@ amod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -192,6 +297,7 @@ amod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -217,7 +323,7 @@ amod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

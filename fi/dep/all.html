@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-fi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -263,13 +264,13 @@ and <i>punct</i> appear in two places.</p>
 <p><a id="al-fi-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a noun, in
+<p><code class="highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a noun, in
 contrast to the <a href="">advcl</a> relation which is used for adverbial clauses
-that modify a predicate. The head of the <code>acl</code> relation is the noun
+that modify a predicate. The head of the <code class="highlighter-rouge">acl</code> relation is the noun
 that is modified, and the dependent is the head of the clause that
 modifies the noun.</p>
 
-<p>These modifiers include infinitive and participial modifiers (correspond to infmod and partmod in the original Turku Dependency Treebank). Instead, the third possible type of clausal modifiers of nouns, <em>relative clause modifier</em> (<a href="">acl:relcl</a>), is defined as a subtype of <code>acl</code>.</p>
+<p>These modifiers include infinitive and participial modifiers (correspond to infmod and partmod in the original Turku Dependency Treebank). Instead, the third possible type of clausal modifiers of nouns, <em>relative clause modifier</em> (<a href="">acl:relcl</a>), is defined as a subtype of <code class="highlighter-rouge">acl</code>.</p>
 
 <!-- fname:infmod.pdf -->
 <pre><code class="language-sdparse">Minulla oli lupa mennä ulos . \n I had permission to_go out .
@@ -331,7 +332,7 @@ punct(osoittautui-2, .-5)
 <p><a id="al-fi-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: relative clause modifier</h2>
 
-<p>A <em>relative clause modifier</em> (<code>acl:relcl</code>) marks relative clauses. The
+<p>A <em>relative clause modifier</em> (<code class="highlighter-rouge">acl:relcl</code>) marks relative clauses. The
 governor is the phrase or clause modified. Usually, it is a noun, but in Finnish it can also be a verb, when the dependent refers to the entire action described. The dependent is the main
 predicate of the relative clause.</p>
 
@@ -361,22 +362,27 @@ dobj(säikäytti-6, lapsen-7)
 punct(kolahti-2, .-8)
 </code></pre>
 
-<h2 id="diffs">Diffs</h2>
+<p>##Diffs</p>
 
-<h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
+<p>###Turku Dependency Treebank</p>
 
 <p>The governor can also be a verb, when the dependent refers to the entire action described in the main sentence.</p>
+
+<p>###FinnTreeBank</p>
+
+<p>FI_FTB applies the universal relation <a href="http://universaldependencies.org/u/dep/all.html#al-u-dep/acl"><code class="highlighter-rouge">acl</code></a> instead
+of the language-specific relation <code class="highlighter-rouge">acl:relcl</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/acl-relcl.md" target="#">edit acl:relcl</a></p>
 
 <p><a id="al-fi-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
 
-<p><em>Adverbial clause modifiers</em> (<code>advcl</code>) are subordinate clauses that
+<p><em>Adverbial clause modifiers</em> (<code class="highlighter-rouge">advcl</code>) are subordinate clauses that
 are not complements. Also non-complement infinitival or temporal clauses
 (<em>lauseenvastike</em>, see for instance 
 (see ISK <a href="http://scripta.kotus.fi/visk/sisallys.php?p=876">§876</a>) and non-complement participles modifying verbs are
-marked as <code>advcl</code>. If there is a subordinating conjunction present, it
+marked as <code class="highlighter-rouge">advcl</code>. If there is a subordinating conjunction present, it
 is marked with the dependency type <a href="">mark</a>.</p>
 
 <!-- fname:advcl.pdf -->
@@ -407,9 +413,9 @@ case(hänen-3, luokseen-4)
 punct(juoksin-2, .-5)
 </code></pre>
 
-<p>The dependency type <code>advcl</code> is used also in comparative
+<p>The dependency type <code class="highlighter-rouge">advcl</code> is used also in comparative
 constructions, most often involving adjectives in the comparative
-form. The head of the <code>advcl</code> dependency is the comparative
+form. The head of the <code class="highlighter-rouge">advcl</code> dependency is the comparative
 wordform, and the dependent is the compared element.</p>
 
 <p>The annotation of comparative and superlative structures is described in
@@ -433,7 +439,7 @@ amod(näytelmä-4, eilinen-3)
 <p><a id="al-fi-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverb modifier</h2>
 
-<p>The dependency type <code>advmod</code> is used for <em>adverb modifiers</em> of verbs,
+<p>The dependency type <code class="highlighter-rouge">advmod</code> is used for <em>adverb modifiers</em> of verbs,
 nominals and adverbs alike.</p>
 
 <!-- fname:advmod_verb.pdf -->
@@ -471,7 +477,7 @@ punct(neliökilometriä-6, .-7)
 <h2><code>amod</code>: adjectival modifier</h2>
 
 <p>Nouns may take adjectival modifiers, which are marked with the
-dependency type <code>amod</code>. It is also possible for an adjective to take
+dependency type <code class="highlighter-rouge">amod</code>. It is also possible for an adjective to take
 another adjective as a modifier. (These adjectival modifiers are
 generally expressed with <em>-ly</em> adverbs in English.)</p>
 
@@ -495,7 +501,7 @@ amod(kivi-3, suuri-2)
 <p><a id="al-fi-dep/appos" class="al-dest"></a></p>
 <h2><code>appos</code>: apposition</h2>
 
-<p>An <em>apposition</em> (<code>appos</code>) is a grammaticalized, paradigmatic addition
+<p>An <em>apposition</em> (<code class="highlighter-rouge">appos</code>) is a grammaticalized, paradigmatic addition
 (usually a noun phrase), which has the same referent as its head word,
 and the same grammatical function 
 (see ISK <a href="http://scripta.kotus.fi/visk/sisallys.php?p=1059">§1059</a>). 
@@ -504,7 +510,7 @@ Also structures with a <em>supporting noun</em>
 considered appositional. Appositional structures and the closely
 related <em>appellation modifiers</em> are discussed in detail in
 the document on
-<a href="http://universaldependencies.github.io/docs/fi/overview/specific-syntax.html">specific syntactic constructions in Finnish</a>.</p>
+<a href="http://universaldependencies.org/fi/overview/specific-syntax.html">specific syntactic constructions in Finnish</a>.</p>
 
 <!-- fname:appos1.pdf -->
 <pre><code class="language-sdparse">Professori , Matti Tamminen , luennoi tänään . \n The_professor , Matti Tamminen , lectures today .
@@ -567,12 +573,21 @@ punct(lähteä-3, .-5)
   <li><a href="http://scripta.kotus.fi/visk/sisallys.php?p=1562">http://scripta.kotus.fi/visk/sisallys.php?p=1562</a> (in Finnish)</li>
 </ul>
 
+<h4 id="diffs">Diffs</h4>
+
+<p>In FinnTreeBank (FI_FTB), a wide list of verbs which are
+modal or otherwise abstract by nature have been counted
+among the auxiliaries. Also a limited set of verbal
+compound constructions has been annotated using the
+relation <code class="highlighter-rouge">aux</code>. See the full lists in
+<a href="http://www.ling.helsinki.fi/kieliteknologia/tutkimus/treebank/sources/FinnTreeBankManual.pdf">FTB Annotation Manual: 16.2 Auxiliary verb</a>.</p>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/aux_.md" target="#">edit aux</a></p>
 
 <p><a id="al-fi-dep/auxpass" class="al-dest"></a></p>
 <h2><code>auxpass</code>: passive auxiliary</h2>
 
-<p>The only <em>passive auxiliary</em> (<code>auxpass</code>) in Finnish is <em>olla</em> (<em>to
+<p>The only <em>passive auxiliary</em> (<code class="highlighter-rouge">auxpass</code>) in Finnish is <em>olla</em> (<em>to
 be</em>). An auxiliary is only considered a passive auxiliary if the main
 verb is in passive, not if only the auxiliary is in passive. In the
 latter case the auxiliary is marked as a non-passive auxiliary,
@@ -596,18 +611,23 @@ dobj(tehdä-3, muutoksia-4)
 punct(tehdä-3, .-5)
 </code></pre>
 
+<h3 id="diffs">Diffs</h3>
+
+<p>FinnTreeBank (FI_FTB) does not use the <code class="highlighter-rouge">auxpass</code> relation,
+but uses <a href=""><code class="highlighter-rouge">aux</code></a> instead.</p>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/auxpass.md" target="#">edit auxpass</a></p>
 
 <p><a id="al-fi-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
 
-<p>The dependency type <code>case</code> is used for the adposition in pre- and
+<p>The dependency type <code class="highlighter-rouge">case</code> is used for the adposition in pre- and
 postpositional phrases. The head of
 an adpositional phrase is the nominal, not the adposition, so as to
 analyze adpositional phrases similarly to nominal modifiers without an
 adposition. (Such nominal modifiers are frequent in Finnish, as cases
 are often used for the same purpose as adpositions.) To the same end,
-the type <code>case</code> is used in combination with the type <code>nmod</code>, which is
+the type <code class="highlighter-rouge">case</code> is used in combination with the type <code class="highlighter-rouge">nmod</code>, which is
 also used for nominal modifiers when no adposition is present (see
 <a href="">nmod</a>).</p>
 
@@ -625,7 +645,7 @@ punct(sijaitsee-2, .-5)
 <h2><code>cc</code>: coordinating conjunction</h2>
 
 <p><em>Coordinating conjunctions</em> are marked as dependents of the first
-coordinated element, and the dependency type used is <code>cc</code>.</p>
+coordinated element, and the dependency type used is <code class="highlighter-rouge">cc</code>.</p>
 
 <!-- fname:cc1.pdf -->
 <pre><code class="language-sdparse">kirjat , kynät ja viivottimet \n books , pencils and rulers
@@ -642,7 +662,7 @@ conj(kirjat-1, viivottimet-5)
 <p><a id="al-fi-dep/cc:preconj" class="al-dest"></a></p>
 <h2><code>cc:preconj</code>: preconjunct</h2>
 
-<p>The <em>preconjunct</em> (<code>cc:preconj</code>) dependency relation marks the
+<p>The <em>preconjunct</em> (<code class="highlighter-rouge">cc:preconj</code>) dependency relation marks the
 first part of those two-part coordinating conjunctions where the
 two parts are separated by coordinated elements.</p>
 
@@ -715,25 +735,37 @@ dobj(suututti-9, äitiä-10)
 punct(suututti-9, .-11)
 </code></pre>
 
+<h3 id="diffs">Diffs</h3>
+
+<p>In FinnTreeBank (FI_FTB), if a clausal complement modifies
+a word other than a verb, the reason is most likely
+a verb-derived noun
+(eg. <em>ei käy <strong>kieltäminen</strong>, etteikö olisi mennyt</em>(<code class="highlighter-rouge">ccomp</code>)
+“no denying that ∅ wouldn’t have gone”).
+Clauses modifying regular nouns get marked as <code class="highlighter-rouge">acl</code>:
+<em>semmonen <strong>kampaus</strong> et se kestää</em>(<code class="highlighter-rouge">ccomp</code>)
+lit. “the kind of hairstyle that it lasts”
+(according to <a href="http://universaldependencies.org/u/dep/all.html#al-u-dep/acl">Universal dependency relations: acl</a>).</p>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/ccomp.md" target="#">edit ccomp</a></p>
 
 <p><a id="al-fi-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p><code>compound</code> is one of the three UD relations UD for compounding,
+<p><code class="highlighter-rouge">compound</code> is one of the three UD relations UD for compounding,
 together with <a href="">mwe</a> and <a href="">name</a>.</p>
 
-<p>UD Finnish additionally defines two subtypes of <code>compound</code>,
+<p>UD Finnish additionally defines two subtypes of <code class="highlighter-rouge">compound</code>,
 <a href="">compound:nn</a> for noun compounds and <a href="">compound:prt</a>
 for phrasal verb particles. As the other UD types and the
 UD Finnish subtypes cover most cases of compounding, only
-few cases are annotated specifically as <code>compound</code>.</p>
+few cases are annotated specifically as <code class="highlighter-rouge">compound</code>.</p>
 
 <p>Numerical expressions consisting of multiple tokens are annotated
-using the <code>compound</code> dependency type. The last word of the numerical
+using the <code class="highlighter-rouge">compound</code> dependency type. The last word of the numerical
 expression is the governor, and the number dependencies are chained.</p>
 
-<p>(These relations are annotated <code>number</code> in
+<p>(These relations are annotated <code class="highlighter-rouge">number</code> in
 <a href="http://bionlp.utu.fi/fintreebank.html">TDT</a>.)</p>
 
 <!-- fname:number.pdf -->
@@ -751,13 +783,13 @@ punct(5-6, .-7)
 <p><a id="al-fi-dep/compound:nn" class="al-dest"></a></p>
 <h2><code>compound:nn</code>: noun compound modifier</h2>
 
-<p>The dependency type <code>compound:nn</code>, which stands for <em>noun compound
+<p>The dependency type <code class="highlighter-rouge">compound:nn</code>, which stands for <em>noun compound
 modifier</em> has two basic uses in the Finnish UD scheme.</p>
 
 <p>First, In Finnish, compounds are generally written as a single word,
 but for instance some compounds involving foreign words or proper
 names are written separately using a dash. These are annotated using
-<code>compound:nn</code>.</p>
+<code class="highlighter-rouge">compound:nn</code>.</p>
 
 <!-- fname:nn_foreign.pdf -->
 <pre><code class="language-sdparse">Da Vinci -merkkinen luomiväri \n Da Vinci -make eyeshadow
@@ -766,7 +798,7 @@ compound:nn(-merkkinen-3, Vinci-2)
 amod(luomiväri-4, -merkkinen-3)
 </code></pre>
 
-<p>The second use of the type <code>compound:nn</code> is to mark <em>appellation
+<p>The second use of the type <code class="highlighter-rouge">compound:nn</code> is to mark <em>appellation
 modifiers</em>, which are modifying, non-inflecting noun phrases that
 generally express profession, rank, position, assignment or other such
 classifiable property (see ISK
@@ -786,7 +818,7 @@ punct(pitää-4, .-6)
 
 <p>In written Finnish, erroneously writing compounds as two words is a
 common mistake (e.g. <em>ruoka pöytä</em>). While these cases were annotated
-as <code>nn</code> in the <a href="http://bionlp.utu.fi/fintreebank.html">TDT corpus</a>, in
+as <code class="highlighter-rouge">nn</code> in the <a href="http://bionlp.utu.fi/fintreebank.html">TDT corpus</a>, in
 UD Finnish <a href="">goeswith</a> is used instead.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/compound-nn.md" target="#">edit compound:nn</a></p>
@@ -794,7 +826,7 @@ UD Finnish <a href="">goeswith</a> is used instead.</p>
 <p><a id="al-fi-dep/compound:prt" class="al-dest"></a></p>
 <h2><code>compound:prt</code>: phrasal particle</h2>
 
-<p><em>Phrasal particles</em> (<code>compound:prt</code>) are used in connection with <em>phrasal verbs</em>, (partikkeliverbi, “particle verb” in Finnish grammar)  where the particle is considered an integral part of the verb expression. The governor of the dependency is the verb, and the dependent is the phrasal particle.</p>
+<p><em>Phrasal particles</em> (<code class="highlighter-rouge">compound:prt</code>) are used in connection with <em>phrasal verbs</em>, (partikkeliverbi, “particle verb” in Finnish grammar)  where the particle is considered an integral part of the verb expression. The governor of the dependency is the verb, and the dependent is the phrasal particle.</p>
 
 <!-- fname:prt.pdf -->
 <pre><code class="language-sdparse">Kävi ilmi , että ehdotus oli hyvä . \n Turned out , that the_suggestion was good .
@@ -824,7 +856,7 @@ punct(hyvä-7, .-8)
 <p><a id="al-fi-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: coordinated element</h2>
 
-<p>The SD scheme marks coordination so that the first coordinated element acts as the head, and the rest of the elements in the coordination, as well as the coordinating conjunction, depend on it. <em>Coordinated elements</em> are marked with the dependency type <code>conj</code>.</p>
+<p>The SD scheme marks coordination so that the first coordinated element acts as the head, and the rest of the elements in the coordination, as well as the coordinating conjunction, depend on it. <em>Coordinated elements</em> are marked with the dependency type <code class="highlighter-rouge">conj</code>.</p>
 
 <!-- fname:conj.pdf -->
 <pre><code class="language-sdparse">maitoa , leipää ja voita \n milk , bread and butter
@@ -834,7 +866,7 @@ cc(maitoa-1, ja-4)
 conj(maitoa-1, voita-5)
 </code></pre>
 
-<p><code>Conj</code> is in Finnish used also in implicit coordinations without a coordinating conjunction, when the coordinated elements are not separated by a colon, semicolon or dash. When one of these is present, <code>parataxis</code> is used.</p>
+<p><code class="highlighter-rouge">Conj</code> is in Finnish used also in implicit coordinations without a coordinating conjunction, when the coordinated elements are not separated by a colon, semicolon or dash. When one of these is present, <code class="highlighter-rouge">parataxis</code> is used.</p>
 
 <pre><code class="language-sdparse">Kenkäkyllästyminen on kamala tauti , haluan kevään jo tänne. \n To\_get\_bored\_with\_shoes is an\_awful disease , I\_want spring already here.
 conj(tauti-4, haluan-6)
@@ -844,7 +876,7 @@ conj(tauti-4, haluan-6)
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p><code>Conj</code> is used also for implicit coordinations without a coordinating conjunction when the coordinated elements are not separated by a colon, semicolon or dash.</p>
+<p><code class="highlighter-rouge">Conj</code> is used also for implicit coordinations without a coordinating conjunction when the coordinated elements are not separated by a colon, semicolon or dash.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/conj.md" target="#">edit conj</a></p>
 
@@ -853,7 +885,7 @@ conj(tauti-4, haluan-6)
 
 <p>Copular clauses receive a special treatment in the SD scheme. The
 predicative acts as the head word of the clause, and the copular verb
-depends on it using a <code>cop</code> (<em>copula</em>) dependency. The only copular
+depends on it using a <code class="highlighter-rouge">cop</code> (<em>copula</em>) dependency. The only copular
 verb in Finnish is <em>olla</em> “be” (see ISK
 <a href="http://scripta.kotus.fi/visk/sisallys.php?p=891">§891</a>).</p>
 
@@ -879,7 +911,7 @@ punct(punainen-3, .-4)
 <p><a id="al-fi-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
 
-<p>A <em>clausal subject</em> (<code>csubj</code>) is a clause that acts as the subject of
+<p>A <em>clausal subject</em> (<code class="highlighter-rouge">csubj</code>) is a clause that acts as the subject of
 another clause.</p>
 
 <!-- fname:csubj.pdf -->
@@ -896,7 +928,7 @@ punct(oli-3, .-6)
 <p><a id="al-fi-dep/csubj:cop" class="al-dest"></a></p>
 <h2><code>csubj:cop</code>: clausal copular subject</h2>
 
-<p>A <em>clausal copular subject</em> (<code>csubj:cop</code>) is a clause that acts as the
+<p>A <em>clausal copular subject</em> (<code class="highlighter-rouge">csubj:cop</code>) is a clause that acts as the
 subject of another, copular clause. As in all copular clauses, the
 predicative acts as the head of the clause and hence it is also the
 governor of the copular subject.</p>
@@ -918,10 +950,10 @@ punct(hauskaa-2, .-5)
 <p><a id="al-fi-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: dependent</h2>
 
-<p>The dependency type <code>dep</code> is used when no other, more specific dependency
+<p>The dependency type <code class="highlighter-rouge">dep</code> is used when no other, more specific dependency
 type applies, for example due to software limitation or error.</p>
 
-<p>In the original TDT corpus, the type <code>dep</code> is additionally used to
+<p>In the original TDT corpus, the type <code class="highlighter-rouge">dep</code> is additionally used to
 annotate a number of idiomatic multi-word-expressions. In UD Finnish,
 these are annotated as <a href="">mwe</a>.</p>
 
@@ -930,7 +962,7 @@ these are annotated as <a href="">mwe</a>.</p>
 <p><a id="al-fi-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>There are no definite or indefinite articles in the Finnish language, but there are other determiners (see ISK <a href="http://scripta.kotus.fi/visk/sisallys.php?p=1409">§1409</a>). In TDT, mostly pronouns are marked as <em>determiners</em> (<code>det</code>), because numerals, which can also be analyzed as determiner-like, are marked as <em>numeral modifiers</em> <a href="">nummod</a>, and genitive modifiers, also determiner-like, are marked with <a href="">nmod:poss</a>.</p>
+<p>There are no definite or indefinite articles in the Finnish language, but there are other determiners (see ISK <a href="http://scripta.kotus.fi/visk/sisallys.php?p=1409">§1409</a>). In TDT, mostly pronouns are marked as <em>determiners</em> (<code class="highlighter-rouge">det</code>), because numerals, which can also be analyzed as determiner-like, are marked as <em>numeral modifiers</em> <a href="">nummod</a>, and genitive modifiers, also determiner-like, are marked with <a href="">nmod:poss</a>.</p>
 
 <!-- fname:det.pdf -->
 <pre><code class="language-sdparse">Kaikki miehet pudistivat päätään . \n All men shook their_head .
@@ -946,7 +978,7 @@ punct(pudistivat-3, .-5)
 <h2><code>discourse</code>: discourse element</h2>
 
 <p><em>Discourse elements</em> are interjections, exclamations or emoticons. They are attached to the main verb or predicative of the
-sentence with the <code>discourse</code> dependency type. In Finnish, these do not include other discourse markers.</p>
+sentence with the <code class="highlighter-rouge">discourse</code> dependency type. In Finnish, these do not include other discourse markers.</p>
 
 <!-- fname:intj1.pdf -->
 <pre><code class="language-sdparse">Hei , tule auttamaan ! \n Hey , come to_help !
@@ -980,17 +1012,17 @@ discourse(on-2, :]-4)
 <p><a id="al-fi-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The <code>dislocated</code> relation is used for fronted or postposed elements
+<p>The <code class="highlighter-rouge">dislocated</code> relation is used for fronted or postposed elements
 that do not fulfill the usual core grammatical relations of a
 sentence.</p>
 
-<p>(TODO: Finnish <code>dislocated</code> example)</p>
+<p>(TODO: Finnish <code class="highlighter-rouge">dislocated</code> example)</p>
 
 <h2 id="diffs">Diffs</h2>
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p><code>dislocated</code> is not annotated in TDT and is not used in
+<p><code class="highlighter-rouge">dislocated</code> is not annotated in TDT and is not used in
 the current version of the UD Finnish corpus.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/dislocated.md" target="#">edit dislocated</a></p>
@@ -998,7 +1030,7 @@ the current version of the UD Finnish corpus.</p>
 <p><a id="al-fi-dep/dobj" class="al-dest"></a></p>
 <h2><code>dobj</code>: direct object</h2>
 
-<p>The dependency type <code>dobj</code> is used for (nominal) direct objects of the
+<p>The dependency type <code class="highlighter-rouge">dobj</code> is used for (nominal) direct objects of the
 verb.</p>
 
 <!-- fname:dobj1.pdf -->
@@ -1010,8 +1042,8 @@ punct(sulki-2, .-4)
 
 <p>As in Finnish a passive clause does not have a subject, and what in
 English would be considered the passive subject, is in Finnish the
-direct object, the type <code>nsubjpass</code> is not used in TDT, but the type
-<code>dobj</code> is used instead.</p>
+direct object, the type <code class="highlighter-rouge">nsubjpass</code> is not used in TDT, but the type
+<code class="highlighter-rouge">dobj</code> is used instead.</p>
 
 <!-- fname:dobj2.pdf -->
 <pre><code class="language-sdparse">Päätös tehtiin marraskuussa . \n The_decision was_made in_November .
@@ -1041,19 +1073,19 @@ the governor.</p>
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p><code>expl</code> is not annotated in TDT and is not used in the current version of the UD Finnish corpus.</p>
+<p><code class="highlighter-rouge">expl</code> is not annotated in TDT and is not used in the current version of the UD Finnish corpus.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/expl.md" target="#">edit expl</a></p>
 
 <p><a id="al-fi-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign</h2>
 
-<p>The dependency relation <code>foreign</code> is used to label sequences
+<p>The dependency relation <code class="highlighter-rouge">foreign</code> is used to label sequences
 of unanalyzed foreign words. These are annotated without regard
 to internal structure, marking all words in the sequence direct
 dependents of the head. The head is the first word of the foreign phrase.</p>
 
-<p>Note that <code>foreign</code> does not apply to foreign <em>names</em>, which
+<p>Note that <code class="highlighter-rouge">foreign</code> does not apply to foreign <em>names</em>, which
 are annotated using <a href="">name</a>, or to sequences of <em>analyzed</em> words
 of foreign origin (such as established loanwords), which are
 annotated with their full syntactic structure.</p>
@@ -1074,7 +1106,7 @@ punct(Opimme-1, .-9)
 <p><a id="al-fi-dep/goeswith" class="al-dest"></a></p>
 <h2><code>goeswith</code>: goeswith</h2>
 
-<p>This <code>goeswith</code> dependency relation links two parts of a compound word
+<p>This <code class="highlighter-rouge">goeswith</code> dependency relation links two parts of a compound word
 that are erroneously separated in text that is not well edited. The
 head is in some sense the “main” part, often the second part.</p>
 
@@ -1087,7 +1119,7 @@ punct(notkui-3, .-5)
 </code></pre>
 
 <p>Note that the original <a href="http://bionlp.utu.fi/fintreebank.html">TDT
-corpus</a> used the <code>nn</code> relation
+corpus</a> used the <code class="highlighter-rouge">nn</code> relation
 (<a href="">compound:nn</a> in UD Finnish) to annotate these relations.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/goeswith.md" target="#">edit goeswith</a></p>
@@ -1095,12 +1127,12 @@ corpus</a> used the <code>nn</code> relation
 <p><a id="al-fi-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is used for chains of comparable items.
+<p>The <code class="highlighter-rouge">list</code> relation is used for chains of comparable items.
 Web text often contains passages which are meant to be interpreted
 as lists but are parsed as single sentences. Email signatures in
 particular contain these structures, in the form of contact
 information: the different contact information items are labeled
-as <code>list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
+as <code class="highlighter-rouge">list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
 
 <p>In lists with more than two items, all items of the list should
 modify the first one.</p>
@@ -1117,7 +1149,7 @@ appos(Sähköposti:-5, mkorhonen@example.com-6)
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p><code>list</code> is not annotated in TDT and is not used in
+<p><code class="highlighter-rouge">list</code> is not annotated in TDT and is not used in
 the current version of the UD Finnish corpus.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/list.md" target="#">edit list</a></p>
@@ -1125,7 +1157,7 @@ the current version of the UD Finnish corpus.</p>
 <p><a id="al-fi-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
 
-<p>A <em>marker</em> (<code>mark</code>) is the subordinating conjunction in a
+<p>A <em>marker</em> (<code class="highlighter-rouge">mark</code>) is the subordinating conjunction in a
 non-complement subordinate clause.</p>
 
 <!-- fname:mark.pdf -->
@@ -1139,11 +1171,11 @@ nmod(jätin-5, pöydälle-7)
 punct(jätin-5, .-8)
 </code></pre>
 
-<p>The dependency relation <code>mark</code> is also used to identify the
+<p>The dependency relation <code class="highlighter-rouge">mark</code> is also used to identify the
 <em>complementizer</em> appearing in most clausal complements, where the head
 of the dependency is the main verb of the subordinate clause. The only
 complementizer in Finnish is <em>että</em> “that”. (These relations are
-annotated <code>complm</code> in TDT.)</p>
+annotated <code class="highlighter-rouge">complm</code> in TDT.)</p>
 
 <!-- fname:complm.pdf -->
 <pre><code class="language-sdparse">Sanoin , että hän voi tulla . \n I_said , that he can come .
@@ -1186,11 +1218,11 @@ punct(tuli-4, .-7)
 <p><a id="al-fi-dep/name" class="al-dest"></a></p>
 <h2><code>name</code>: name</h2>
 
-<p>Proper names constituted of more than one word are annotated using the dependency type <code>name</code>. The first (leftmost) word is the head, and the other words are direct dependents of the head.</p>
+<p>Proper names constituted of more than one word are annotated using the dependency type <code class="highlighter-rouge">name</code>. The first (leftmost) word is the head, and the other words are direct dependents of the head.</p>
 
-<p>The <code>name</code> dependency relation is used in cases where the multi-word name does not have an obvious internal syntactic structure, as is the case with for instance names of people (<em>Matti Virtanen</em>) or cities (<em>New York</em>).</p>
+<p>The <code class="highlighter-rouge">name</code> dependency relation is used in cases where the multi-word name does not have an obvious internal syntactic structure, as is the case with for instance names of people (<em>Matti Virtanen</em>) or cities (<em>New York</em>).</p>
 
-<p>If a name has an obvious internal structure, as is often the case in names of books and movies for instance, this structure is marked instead, and the <code>name</code> relation is marked as a secondary relation (DEPS field) spanning over the whole name phrase (from first token to the last).</p>
+<p>If a name has an obvious internal structure, as is often the case in names of books and movies for instance, this structure is marked instead, and the <code class="highlighter-rouge">name</code> relation is marked as a secondary relation (DEPS field) spanning over the whole name phrase (from first token to the last).</p>
 
 <!-- fname:name.pdf -->
 <pre><code class="language-sdparse">Jumalat juhlivat öisin on Donna Tarttin esikoisteos . \n Gods celebrate by_night is Donna Tartt's first_work .
@@ -1209,9 +1241,9 @@ nmod:poss(esikoisteos-7, Donna-5)
 <p><a id="al-fi-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
 
-<p>In Finnish, negation is marked using the verb <em>ei</em>, which is used as an auxiliary and assigned the dependency relation <code>neg</code>. The most commonly negated elements are verbs and verb phrases, but occasional exceptions in verbless constructions are allowed.</p>
+<p>In Finnish, negation is marked using the verb <em>ei</em>, which is used as an auxiliary and assigned the dependency relation <code class="highlighter-rouge">neg</code>. The most commonly negated elements are verbs and verb phrases, but occasional exceptions in verbless constructions are allowed.</p>
 
-<p>If a conjunction or adverb has been merged together with <em>ei</em>, as in for instance <em>ettei</em> (<em>että+ei</em> “that+not”) or <em>miksei</em> (<em>miksi+ei</em> “why+not”), then the word is marked as a conjunction or an adverb rather than a negation verb. However, <em>eikä</em> “and+not”, when it appears alone and not coordinating another clause or phrase, is still marked as <code>neg</code>.</p>
+<p>If a conjunction or adverb has been merged together with <em>ei</em>, as in for instance <em>ettei</em> (<em>että+ei</em> “that+not”) or <em>miksei</em> (<em>miksi+ei</em> “why+not”), then the word is marked as a conjunction or an adverb rather than a negation verb. However, <em>eikä</em> “and+not”, when it appears alone and not coordinating another clause or phrase, is still marked as <code class="highlighter-rouge">neg</code>.</p>
 
 <!-- fname:neg.pdf -->
 <pre><code class="language-sdparse">Hän ei sanonut mitään . \n He didn't say anything .
@@ -1220,6 +1252,17 @@ neg(sanonut-3, ei-2)
 dobj(sanonut-3, mitään-4)
 punct(sanonut-3, .-5)
 </code></pre>
+
+<h3 id="diffs">Diffs</h3>
+
+<p>FinnTreeBank (FI_FTB) is tokenized differently:
+it treats <em>ettei</em> the same as <em>että ei</em> (“that not”),
+<em>miksei</em> as <em>miksi ei</em> (“why not”) and so on,
+as if they were two separate words.
+Consequently, <em>ei</em> (“not”) represents a normal negation verb
+in these combinations and gets annotated <code class="highlighter-rouge">neg</code>.
+On the other hand, <em>eikä</em> (“and+not”) is treated as a single
+token with a clitic particle (and also marked as <code class="highlighter-rouge">neg</code>).</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/neg.md" target="#">edit neg</a></p>
 
@@ -1293,10 +1336,10 @@ making the thing had (<em>kynä</em> in the previous example) the subject.</p>
 <!-- TODO For more information on special cases of subjects, see Section [subj-obj](#sec-subj-obj). -->
 
 <p>This kind of an analysis would naturally result in the <em>haver</em> being
-marked as a nominal modifier, <a href="">nmod</a>. However, as <code>nmod</code> is a very
+marked as a nominal modifier, <a href="">nmod</a>. However, as <code class="highlighter-rouge">nmod</code> is a very
 frequent dependency type that encodes many different meanings, the
 information that the clause is about having or owning would be
-lost. Therefore, the UD Finnish scheme applies the <code>nmod:own</code>
+lost. Therefore, the UD Finnish scheme applies the <code class="highlighter-rouge">nmod:own</code>
 dependency type for nominal modifiers that encode owning, 
 following the approach of <a href="http://bionlp.utu.fi/fintreebank.html">TDT</a>. 
 The governor of the dependency is the verb <em>olla</em>, and the dependent
@@ -1316,8 +1359,8 @@ punct(on-2, .-5)
 <p><a id="al-fi-dep/nmod:poss" class="al-dest"></a></p>
 <h2><code>nmod:poss</code>: genitive modifier</h2>
 
-<p>The dependency type <code>poss</code> stands for <em>possessive</em> in the original SD
-scheme, but in UD Finnish, the corresponding type <code>nmod:poss</code> is used
+<p>The dependency type <code class="highlighter-rouge">poss</code> stands for <em>possessive</em> in the original SD
+scheme, but in UD Finnish, the corresponding type <code class="highlighter-rouge">nmod:poss</code> is used
 for genitive modifiers in general, which in Finnish often but not nearly
 always imply possession. There are two kinds of genitive modifiers  that
 are not annotated using the general genitive modifier type: <em>the genitive
@@ -1340,12 +1383,18 @@ nmod:poss(moottori-5, litran-4)
 nummod(litran-4, kahden-3)
 </code></pre>
 
+<p>###Diffs</p>
+
+<p>FinnTreeBank (FI_FTB) applies
+the universal relation <a href="http://universaldependencies.org/u/dep/all.html#al-u-dep/nmod"><code class="highlighter-rouge">nmod</code></a>
+instead of the language-specific <code class="highlighter-rouge">nmod:poss</code>.</p>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/nmod-poss.md" target="#">edit nmod:poss</a></p>
 
 <p><a id="al-fi-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>The dependency type <code>nsubj</code> marks nominal subjects of the non-copular
+<p>The dependency type <code class="highlighter-rouge">nsubj</code> marks nominal subjects of the non-copular
 clause.</p>
 
 <!-- For thorough discussion of different types of subjects in
@@ -1363,9 +1412,9 @@ punct(tuli-2, .-4)
 <p><a id="al-fi-dep/nsubj:cop" class="al-dest"></a></p>
 <h2><code>nsubj:cop</code>: nominal copular subject</h2>
 
-<p>The dependency type <code>nsubj:cop</code> is used for the nominal subject
+<p>The dependency type <code class="highlighter-rouge">nsubj:cop</code> is used for the nominal subject
 of a copular clause. The predicative is the head of the copular
-clause, and also the governor of the <code>nsubj:cop</code> dependency.</p>
+clause, and also the governor of the <code class="highlighter-rouge">nsubj:cop</code> dependency.</p>
 
 <!-- Annotating copular clauses is discussed in Section [copulas](#sec-copulas).-->
 
@@ -1383,7 +1432,7 @@ punct(kuiva-4, .-5)
 <h2><code>nummod</code>: numeric modifier</h2>
 
 <p><em>Numeric modifiers</em> of a noun or NP, including both cardinal and
-ordinal numbers, are marked with the <code>nummod</code> dependency type. This
+ordinal numbers, are marked with the <code class="highlighter-rouge">nummod</code> dependency type. This
 dependency type is used also with for instance years and program
 versions.</p>
 
@@ -1408,7 +1457,7 @@ punct(Tapasin-1, .-5)
 <p><a id="al-fi-dep/parataxis" class="al-dest"></a></p>
 <h2><code>parataxis</code>: parataxis</h2>
 
-<p><code>parataxis</code> dependencies mark two different phenomena. Firstly, they are used with certain implicit coordinations. These coordinations are recognized by two factors: there is no coordinating conjunction, and the independent clauses are separated by a colon, semicolon or a dash. As with explicit coordinations, the first element is the governor. Also parenthetical and interjected clauses can receive the <code>parataxis</code> dependency. If there is a coordinating conjunction present (regardless of punctuation) or if the clauses are separated by merely a comma, the coordination type <code>conj</code> is used (differs from the UD).</p>
+<p><code class="highlighter-rouge">parataxis</code> dependencies mark two different phenomena. Firstly, they are used with certain implicit coordinations. These coordinations are recognized by two factors: there is no coordinating conjunction, and the independent clauses are separated by a colon, semicolon or a dash. As with explicit coordinations, the first element is the governor. Also parenthetical and interjected clauses can receive the <code class="highlighter-rouge">parataxis</code> dependency. If there is a coordinating conjunction present (regardless of punctuation) or if the clauses are separated by merely a comma, the coordination type <code class="highlighter-rouge">conj</code> is used (differs from the UD).</p>
 
 <!-- fname:parataxis_coord.pdf -->
 <pre><code class="language-sdparse">Lapset leipoivat piparit ; äiti paistoi ne . \n The_children made the_cookies ; the_mother baked them .
@@ -1431,7 +1480,7 @@ punct(käy-6, (-4)
 punct(käy-6, )-7)
 </code></pre>
 
-<p><code>parataxis</code> is also used for direct speech. If the verb of saying (or thinking, etc.) precedes the utterance, it acts as the governor, and the main verb or predicative of the utterance is the dependent. However, if the utterance precedes the speech verb, the relation is reversed.</p>
+<p><code class="highlighter-rouge">parataxis</code> is also used for direct speech. If the verb of saying (or thinking, etc.) precedes the utterance, it acts as the governor, and the main verb or predicative of the utterance is the dependent. However, if the utterance precedes the speech verb, the relation is reversed.</p>
 
 <pre><code class="language-sdparse">Mies sanoi : Tulen kotiin vasta myöhään . \n The_man said : I_will_come home only late .
 nsubj(Mies-1, sanoi-2)
@@ -1458,14 +1507,22 @@ punct(Tulen-1, .-8)
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p>If the clauses are separated by a comma and there is no coordinating conjunction, TDT does not use <code>parataxis</code> but <code>conj</code>.</p>
+<p>If the clauses are separated by a comma and there is no coordinating conjunction, TDT does not use <code class="highlighter-rouge">parataxis</code> but <code class="highlighter-rouge">conj</code>.</p>
+
+<h3 id="finntreebank">FinnTreeBank</h3>
+
+<p>FI_FTB does not apply the <code class="highlighter-rouge">parataxis</code> relation.
+Instead, the phenomena of implicit coordination,
+parenthetical clauses, interjected clauses and direct speech
+have been described using some other, most applicable
+relation available (usually <a href=""><code class="highlighter-rouge">conj</code></a> or <a href=""><code class="highlighter-rouge">dobj</code></a>).</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/parataxis.md" target="#">edit parataxis</a></p>
 
 <p><a id="al-fi-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
 
-<p>The dependency type <code>punct</code> is used to mark punctuation. The dependent is the punctuation symbol, and the governor is the element which the punctuation symbol delimits. For instance, with coordination, the first coordinated element is the head of all <code>punct</code> dependencies in the coordination, and with subordinate clauses, the head of the subordinate clause is the governor of the <code>punct</code>.</p>
+<p>The dependency type <code class="highlighter-rouge">punct</code> is used to mark punctuation. The dependent is the punctuation symbol, and the governor is the element which the punctuation symbol delimits. For instance, with coordination, the first coordinated element is the head of all <code class="highlighter-rouge">punct</code> dependencies in the coordination, and with subordinate clauses, the head of the subordinate clause is the governor of the <code class="highlighter-rouge">punct</code>.</p>
 
 <!-- fname:punct_coord.pdf -->
 <pre><code class="language-sdparse">kerrostaloja , rivitaloja ja omakotitaloja \n blockhouses , rowhouses and one_family_houses
@@ -1488,14 +1545,21 @@ nsubj(palasi-7, hän-6)
 
 <!-- TODO Attaching punctuation correctly is described more closely in Section [punctspecial](#sec-punctspecial). -->
 
+<p>###Diffs</p>
+
+<p>By the current release of FI_FTB (FinnTreeBank), the manual annotation of
+punctuation marks has not been completed. Instead the automatic
+annotation links the punctuation marks to the closest token
+available (usually the previous one).</p>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/punct.md" target="#">edit punct</a></p>
 
 <p><a id="al-fi-dep/remnant" class="al-dest"></a></p>
 <h2><code>remnant</code>: remnant in ellipsis</h2>
 
-<p>The <code>remnant</code> relation is used to provide a treatment of ellipsis (in
+<p>The <code class="highlighter-rouge">remnant</code> relation is used to provide a treatment of ellipsis (in
 the case of gapping and stripping, where a predicational or verbal
-head gets elided). In particular, <code>remnant</code> aims to provide analyses
+head gets elided). In particular, <code class="highlighter-rouge">remnant</code> aims to provide analyses
 that do not postulate empty nodes.</p>
 
 <pre><code class="language-sdparse">Maija meni Pariisiin ja Mirja Prahaan \n Maija went to Paris and Mirja to Prague
@@ -1503,30 +1567,41 @@ remnant(Maija, Mirja)
 remnant(Pariisiin, Prahaan)
 </code></pre>
 
+<h3 id="diffs">Diffs</h3>
+
+<p>FinnTreeBank (FI_FTB) does not apply the relation <code class="highlighter-rouge">remnant</code>.
+Instead, in elliptical cases the relation <a href=""><code class="highlighter-rouge">conj</code></a> has been
+chosen to correspond to its correlate in a preceding clause.</p>
+
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/remnant.md" target="#">edit remnant</a></p>
 
 <p><a id="al-fi-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>We use <code>reparandum</code> to indicate disfluencies overridden in a speech
+<p>We use <code class="highlighter-rouge">reparandum</code> to indicate disfluencies overridden in a speech
 repair. The disfluency is the dependent of the repair.</p>
 
-<p>(TODO: Finnish <code>reparandum</code> example)</p>
+<p>(TODO: Finnish <code class="highlighter-rouge">reparandum</code> example)</p>
 
 <h2 id="diffs">Diffs</h2>
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p><code>reparandum</code> is not annotated in TDT and is not used in
+<p><code class="highlighter-rouge">reparandum</code> is not annotated in TDT and is not used in
 the current version of the UD Finnish corpus.</p>
+
+<h3 id="finntreebank">FinnTreeBank</h3>
+
+<p>The relation <code class="highlighter-rouge">reparandum</code> is used in FI_FTB
+for the clearest cases of speech repair.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-fi-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A
-fake node <code>ROOT</code> is used as the governor.</p>
+<p>The <code class="highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A
+fake node <code class="highlighter-rouge">ROOT</code> is used as the governor.</p>
 
 <pre><code class="language-sdparse">ROOT Minä pidän oluesta .
 root(ROOT, pidän)
@@ -1537,7 +1612,7 @@ root(ROOT, pidän)
 <p><a id="al-fi-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative modifier</h2>
 
-<p>The dependency type <code>vocative</code> is used for <em>vocatives</em>, that is,
+<p>The dependency type <code class="highlighter-rouge">vocative</code> is used for <em>vocatives</em>, that is,
 expressions where someone is being addressed. The governor of the
 dependency is the main predicate of the clause where the addressing
 occurs.</p>
@@ -1555,7 +1630,7 @@ punct(tulisitko-3, ?-5)
 <p><a id="al-fi-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>The dependency type <code>xcomp</code> is reserved for clausal complements which have an external subject, that is, whose subject is shared with the complemented verb (a phenomenon also known as subject control). Note that the subject of the complementing clause must be the <em>subject</em> of the complemented verb, not any other sentence element (in other cases the dependency type <a href="">xcomp:ds</a> should be used instead). These complements are always non-finite.</p>
+<p>The dependency type <code class="highlighter-rouge">xcomp</code> is reserved for clausal complements which have an external subject, that is, whose subject is shared with the complemented verb (a phenomenon also known as subject control). Note that the subject of the complementing clause must be the <em>subject</em> of the complemented verb, not any other sentence element (in other cases the dependency type <a href="">xcomp:ds</a> should be used instead). These complements are always non-finite.</p>
 
 <!-- fname:xcomp.pdf -->
 <pre><code class="language-sdparse">Hän alkoi hakata halkoja . \n He started chopping the_wood .
@@ -1565,11 +1640,11 @@ dobj(hakata-3, halkoja-4)
 punct(alkoi-2, .-5)
 </code></pre>
 
-<p>Many of the complements with an external subject resemble cases that are analyzed as main verbs with auxiliaries. Both auxiliaries and <code>xcomp</code> complements share their subject with another verb, but only a closed list of verbs are analyzed as auxiliaries (see <a href="">aux</a>). Note also that in auxiliary cases the second verb is the governor, whereas with <code>xcomp</code> the first verb becomes governor (unless the word order is inverse).</p>
+<p>Many of the complements with an external subject resemble cases that are analyzed as main verbs with auxiliaries. Both auxiliaries and <code class="highlighter-rouge">xcomp</code> complements share their subject with another verb, but only a closed list of verbs are analyzed as auxiliaries (see <a href="">aux</a>). Note also that in auxiliary cases the second verb is the governor, whereas with <code class="highlighter-rouge">xcomp</code> the first verb becomes governor (unless the word order is inverse).</p>
 
 <h3 id="secondary-predicates">Secondary predicates</h3>
 
-<p>The <code>xcomp</code> relation is also used in constructions that are known as <em>secondary predicates</em> or <em>predicatives</em>, which are core arguments of the predicate. Most commonly these are adjetives, but also participial and nominal arguments are possible. For example in the sentence <em>Hän teki siitä hyvin vaikeaa</em> there are two mixed predicates: 1) <em>hän teki jotain</em>, and 2) <em>se on vaikeaa</em>. The secondary predication can be provided to any higher clause element.</p>
+<p>The <code class="highlighter-rouge">xcomp</code> relation is also used in constructions that are known as <em>secondary predicates</em> or <em>predicatives</em>, which are core arguments of the predicate. Most commonly these are adjetives, but also participial and nominal arguments are possible. For example in the sentence <em>Hän teki siitä hyvin vaikeaa</em> there are two mixed predicates: 1) <em>hän teki jotain</em>, and 2) <em>se on vaikeaa</em>. The secondary predication can be provided to any higher clause element.</p>
 
 <pre><code class="language-sdparse">Hän teki siitä hyvin vaikeaa . \n He made (from_)it very difficult .
 nsubj(teki, Hän)
@@ -1585,22 +1660,32 @@ nmod(oli, Minulla)
 punct(oli, .)
 </code></pre>
 
-<p>Note: Adjectival complements correspond to <code>acomp</code> (adjectival complement) in
+<p>Note: Adjectival complements correspond to <code class="highlighter-rouge">acomp</code> (adjectival complement) in
 the original Stanford Dependencies and the Turku Dependency
 Treebank.</p>
+
+<p>####Diffs</p>
+
+<p>Secondary predication is not recognized in FinnTreeBank (FI_FTB).
+Therefore <code class="highlighter-rouge">xcomp</code> is always a non-finite verb
+(or a predicative of a non-finite copular clause) in FI_FTB.
+As the examples above represent types of result and state clauses
+(<a href="http://scripta.kotus.fi/visk/sisallys.php?p=891">ISK § 891</a>),
+in FI_FTB they have been annotated using predicatives
+(see chapter Copulas in <a href="http://universaldependencies.org/fi/overview/specific-syntax.html">Specific constructions</a>).</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/xcomp.md" target="#">edit xcomp</a></p>
 
 <p><a id="al-fi-dep/xcomp:ds" class="al-dest"></a></p>
 <h2><code>xcomp:ds</code>: clausal complement with different subject</h2>
 
-<p>The dependency type <code>xcomp:ds</code>, which stands for <em>clausal
+<p>The dependency type <code class="highlighter-rouge">xcomp:ds</code>, which stands for <em>clausal
 complement with different subject</em>, is a subtype of <a href="">xcomp</a> (<em>open clausal complement</em>).
 It is used for clausal complements where the subject of the complement clause is inherited from the higher clause, but it’s not a subject of the governing clause (if it is a subject, <a href="">xcomp</a> is used instead). Basically, this means that the subject of the complementing clause must be the object of the complemented clause. These complements are always non-finite.</p>
 
 <p>Note that this subtype represents a departure from the general UD
 taxonomy approach in differentiating between inherited subject and object
-(see <a href="http://universaldependencies.github.io/docs/u/overview/syntax.html#clausal-dependents">Syntax: General Principles</a>).</p>
+(see <a href="http://universaldependencies.org/u/overview/syntax.html#clausal-dependents">Syntax: General Principles</a>).</p>
 
 <!-- TODO The differences between types of verbal dependents, such as
 `xcomp:ds`, are thoroughly discussed in Section
@@ -1627,6 +1712,7 @@ punct(Sain-1, .-4)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1658,11 +1744,40 @@ punct(Sain-1, .-4)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1686,6 +1801,7 @@ punct(Sain-1, .-4)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'fi-overview';
@@ -1711,7 +1827,7 @@ punct(Sain-1, .-4)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

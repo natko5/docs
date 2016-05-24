@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sv">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sv/feat">sv/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sv/feat">sv/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-feat/Tense.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,11 +39,11 @@
 
           <h2><code>Tense</code>: tense</h2>
 
-<p>The <code>Tense</code> feature applies to verbs (<a href="">VERB</a> and <a href="">AUX</a>), specifying the time when the action took / takes place, in relation to the current moment or to another action in the utterance.</p>
+<p>The <code class="highlighter-rouge">Tense</code> feature applies to verbs (<a href="">VERB</a> and <a href="">AUX</a>), specifying the time when the action took / takes place, in relation to the current moment or to another action in the utterance.</p>
 
-<p>Note that we are defining features that apply to a single word. If a tense is constructed periphrastically (two or more words, e.g. present tense auxiliary verb + supine of the main verb) and none of the participating words are specific to this tense, then the features will not directly reveal the tense. For instance, [sv] <em>Jag <b>hade varit</b> där</em> “I had been there” is past perfect (pluperfect) tense, formed periphrastically by the simple past tense of the auxiliary <em>att ha</em> “to have” and the supine form of the main verb <em>att vara</em> “to be”. The auxiliary will be tagged <code>VerbForm=Fin|Mood=Ind|Tense=Past</code> and the participle will have <code>VerbForm=Sup|Tense=Past</code>; neither of the two will have <code>Tense=Pqp</code>, which is only used in languages where this tense can be directly represented morphologically on the verb.</p>
+<p>Note that we are defining features that apply to a single word. If a tense is constructed periphrastically (two or more words, e.g. present tense auxiliary verb + supine of the main verb) and none of the participating words are specific to this tense, then the features will not directly reveal the tense. For instance, [sv] <em>Jag <b>hade varit</b> där</em> “I had been there” is past perfect (pluperfect) tense, formed periphrastically by the simple past tense of the auxiliary <em>att ha</em> “to have” and the supine form of the main verb <em>att vara</em> “to be”. The auxiliary will be tagged <code class="highlighter-rouge">VerbForm=Fin|Mood=Ind|Tense=Past</code> and the participle will have <code class="highlighter-rouge">VerbForm=Sup|Tense=Past</code>; neither of the two will have <code class="highlighter-rouge">Tense=Pqp</code>, which is only used in languages where this tense can be directly represented morphologically on the verb.</p>
 
-<h3 id="pres-present-tense"><code>Pres</code>: present tense</h3>
+<h3 id="pres-present-tense"><code class="highlighter-rouge">Pres</code>: present tense</h3>
 
 <p>The present tense denotes actions that are happening right now or that usually happen.</p>
 
@@ -53,7 +54,7 @@
   <li>[sv] <em>det <b>blir</b> svårare</em> “it becomes more difficult”</li>
 </ul>
 
-<h3 id="past-preterite"><code>Past</code>: preterite</h3>
+<h3 id="past-preterite"><code class="highlighter-rouge">Past</code>: preterite</h3>
 
 <p>The past tense denotes actions that happened before the current moment. It can also be used in secondary clauses to express a wish or something that is not reality.</p>
 
@@ -78,64 +79,64 @@
 <h2 id="treebank-statistics-udswedish">Treebank Statistics (UD_Swedish)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Past</code>, <code>Pres</code>.</p>
+It occurs with 2 different values: <code class="highlighter-rouge">Past</code>, <code class="highlighter-rouge">Pres</code>.</p>
 
-<p>11122 tokens (11%) have a non-empty value of <code>Tense</code>.
-2199 types (15%) occur at least once with a non-empty value of <code>Tense</code>.
-1380 lemmas (13%) occur at least once with a non-empty value of <code>Tense</code>.
-The feature is used with 3 part-of-speech tags: <a href="">sv-pos/VERB</a> (5781; 6% instances), <a href="">sv-pos/AUX</a> (3777; 4% instances), <a href="">sv-pos/ADJ</a> (1564; 2% instances).</p>
+<p>11123 tokens (11%) have a non-empty value of <code class="highlighter-rouge">Tense</code>.
+2200 types (15%) occur at least once with a non-empty value of <code class="highlighter-rouge">Tense</code>.
+1381 lemmas (13%) occur at least once with a non-empty value of <code class="highlighter-rouge">Tense</code>.
+The feature is used with 3 part-of-speech tags: <a href="">sv-pos/VERB</a> (7182; 7% instances), <a href="">sv-pos/AUX</a> (2377; 2% instances), <a href="">sv-pos/ADJ</a> (1564; 2% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>5781 <a href="">sv-pos/VERB</a> tokens (58% of all <code>VERB</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>7182 <a href="">sv-pos/VERB</a> tokens (62% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (5732; 99%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (5724; 99%), <tt><a href="Voice.html">Voice</a>=Act</tt> (4615; 80%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (7133; 99%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (7117; 99%), <tt><a href="Voice.html">Voice</a>=Act</tt> (6016; 84%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Tense</code>:</p>
-
-<ul>
-  <li><code>Past</code> (733; 13% of non-empty <code>Tense</code>): <em>blev, fick, hade, var, började, gjorde, kom, gick, fanns, gav</em></li>
-  <li><code>Pres</code> (5048; 87% of non-empty <code>Tense</code>): <em>har, finns, är, blir, får, gäller, ger, går, kommer, gör</em></li>
-  <li><code>EMPTY</code> (4188): <em>få, ha, se, ta, ge, bli, göra, gå, komma, fått</em></li>
-</ul>
-
-<table>
-  <tr><th>Paradigm <i>ha</i></th><th><tt>Pres</tt></th><th><tt>Past</tt></th></tr>
-  <tr><td><tt></tt></td><td><em>har</em></td><td><em>hade</em></td></tr>
-</table>
-
-<h3 id="aux"><code>AUX</code></h3>
-
-<p>3777 <a href="">sv-pos/AUX</a> tokens (90% of all <code>AUX</code> tokens) have a non-empty value of <code>Tense</code>.</p>
-
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (3777; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (3777; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (3769; 100%).</p>
-
-<p><code>AUX</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (366; 10% of non-empty <code>Tense</code>): <em>skulle, var, kunde, hade, borde, ville, fick, torde, vore, blev</em></li>
-  <li><code>Pres</code> (3411; 90% of non-empty <code>Tense</code>): <em>är, kan, har, måste, skall, ska, kommer, får, bör, vill</em></li>
-  <li><code>EMPTY</code> (406): <em>vara, kunna, varit, få, ha, bli, kunnat, behöva, fått, kommit</em></li>
+  <li><code class="highlighter-rouge">Past</code> (840; 12% of non-empty <code class="highlighter-rouge">Tense</code>): <em>var, blev, fick, hade, började, gjorde, kom, gick, fanns, gav</em></li>
+  <li><code class="highlighter-rouge">Pres</code> (6342; 88% of non-empty <code class="highlighter-rouge">Tense</code>): <em>är, har, finns, blir, får, gäller, ger, går, kommer, gör</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (4404): <em>vara, få, ha, se, ta, ge, bli, göra, varit, gå</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>vara</i></th><th><tt>Pres</tt></th><th><tt>Past</tt></th></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind</tt></td><td><em>är, äro</em></td><td><em>var</em></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Sub</tt></td><td></td><td><em>vore</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind</tt></td><td><em>är, äro, varar</em></td><td><em>var</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Sub</tt></td><td><em>vare</em></td><td><em>vore</em></td></tr>
 </table>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="aux"><code class="highlighter-rouge">AUX</code></h3>
 
-<p>1564 <a href="">sv-pos/ADJ</a> tokens (18% of all <code>ADJ</code> tokens) have a non-empty value of <code>Tense</code>.</p>
+<p>2377 <a href="">sv-pos/AUX</a> tokens (93% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">Tense</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Tense</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1564; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1564; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1556; 99%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1001; 64%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (921; 59%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">Tense</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (2377; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (2377; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2377; 100%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Tense</code>:</p>
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">Tense</code>:</p>
 
 <ul>
-  <li><code>Past</code> (1047; 67% of non-empty <code>Tense</code>): <em>särskild, särskilda, ökad, ökade, gifta, sett, taget, handikappade, beredd, bestämda</em></li>
-  <li><code>Pres</code> (517; 33% of non-empty <code>Tense</code>): <em>följande, beroende, motsvarande, liknande, nuvarande, omfattande, pensionsgrundande, avgörande, krävande, oberoende</em></li>
-  <li><code>EMPTY</code> (6934): <em>olika, andra, nya, många, stora, stor, större, första, vissa, hela</em></li>
+  <li><code class="highlighter-rouge">Past</code> (259; 11% of non-empty <code class="highlighter-rouge">Tense</code>): <em>skulle, kunde, hade, borde, ville, fick, torde, blev, kom, behövde</em></li>
+  <li><code class="highlighter-rouge">Pres</code> (2118; 89% of non-empty <code class="highlighter-rouge">Tense</code>): <em>kan, har, måste, skall, ska, kommer, får, bör, vill, behöver</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (189): <em>kunna, få, ha, bli, kunnat, behöva, fått, kommit, blivit, vilja</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>kunna</i></th><th><tt>Pres</tt></th><th><tt>Past</tt></th></tr>
+  <tr><td><tt></tt></td><td><em>kan</em></td><td><em>kunde</em></td></tr>
+</table>
+
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
+
+<p>1564 <a href="">sv-pos/ADJ</a> tokens (18% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Tense</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Tense</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1564; 100%), <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1564; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1556; 99%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1001; 64%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (921; 59%).</p>
+
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Tense</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Past</code> (1047; 67% of non-empty <code class="highlighter-rouge">Tense</code>): <em>särskild, särskilda, ökad, ökade, gifta, sett, taget, handikappade, beredd, bestämda</em></li>
+  <li><code class="highlighter-rouge">Pres</code> (517; 33% of non-empty <code class="highlighter-rouge">Tense</code>): <em>följande, beroende, motsvarande, liknande, nuvarande, omfattande, pensionsgrundande, avgörande, krävande, oberoende</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (6934): <em>olika, andra, nya, många, stora, stor, större, första, vissa, hela</em></li>
 </ul>
 
 <table>
@@ -147,13 +148,14 @@ The feature is used with 3 part-of-speech tags: <a href="">sv-pos/VERB</a> (5781
   <tr><td><tt></tt></td><td><em>ökande</em></td><td></td></tr>
 </table>
 
-<p><code>Tense</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 99% lemmas (692) occur only with one value of <code>Tense</code>.</p>
+<p><code class="highlighter-rouge">Tense</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 99% lemmas (692) occur only with one value of <code class="highlighter-rouge">Tense</code>.</p>
 
-<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code>Tense</code></h2>
+<h2 id="relations-with-agreement-in-tense">Relations with Agreement in <code class="highlighter-rouge">Tense</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Tense</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (361; 72%),
-<tt>VERB –[<a href="../dep/case.html">case</a>]–&gt; ADJ</tt> (5; 71%).</p>
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Tense</code>:
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (366; 70%),
+<tt>VERB –[<a href="../dep/mark.html">mark</a>]–&gt; ADJ</tt> (5; 63%),
+<tt>VERB –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (1; 100%).</p>
 
 
 
@@ -212,6 +214,7 @@ Tense in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -243,11 +246,40 @@ Tense in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -271,6 +303,7 @@ Tense in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sv-feat';
@@ -296,7 +329,7 @@ Tense in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

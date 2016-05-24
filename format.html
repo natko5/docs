@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="css/hint.css"/>
     <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/format.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -85,7 +86,7 @@ They have a FORM value – the string that occurs in the sentence – but have a
 This is illustrated in the following annotation snippet,
 showing only the first three fields for the Spanish sentence <em>vámonos al mar</em> (let’s go to the sea):</p>
 
-<pre><code>1-2    vámonos   _
+<div class="highlighter-rouge"><pre class="highlight"><code>1-2    vámonos   _
 1      vamos     ir
 2      nos       nosotros
 3-4    al        _
@@ -93,22 +94,25 @@ showing only the first three fields for the Spanish sentence <em>vámonos al mar
 4      el        el
 5      mar       mar		
 </code></pre>
+</div>
 
 <p>We extract the word sequence by skipping all range IDs:</p>
 
-<pre><code>1      vamos     ir
+<div class="highlighter-rouge"><pre class="highlight"><code>1      vamos     ir
 2      nos       nosotros
 3      a         a
 4      el        el
 5      mar       mar		
 </code></pre>
+</div>
 
 <p>We extract the raw token sequence by skipping all integer IDs that are included in a preceding range ID:</p>
 
-<pre><code>1-2    vámonos   _
+<div class="highlighter-rouge"><pre class="highlight"><code>1-2    vámonos   _
 3-4    al        _
 5      mar       mar		
 </code></pre>
+</div>
 
 <p>To facilitate the use of CoNLL-U treebanks, we provide a script that extracts either the annotated <em>word</em> sequence (with
 the original integer IDs) or the raw <em>token</em> sequence with a heuristic mapping of morphological and syntactic annotation and plain integer indexing (like <a href="http://ilk.uvt.nl/conll/#dataformat">the traditional CoNLL-X format</a>). Moreover, to 
@@ -116,7 +120,7 @@ facilitate parser evaluation for languages with nondeterministic word segmentati
 where tokens are indexed with integers and words (if needed) with decimals. We refer to this scheme as <em>token indexing,</em>
 in contrast to the <em>word indexing</em> scheme used as the offical treebank representation. Our running example looks as follows with token indexing:</p>
 
-<pre><code>1      vámonos   _
+<div class="highlighter-rouge"><pre class="highlight"><code>1      vámonos   _
 1.1    vamos     ir
 1.2    nos       nosotros
 2      al        _
@@ -124,6 +128,7 @@ in contrast to the <em>word indexing</em> scheme used as the offical treebank re
 2.2    el        el
 3      mar       mar		
 </code></pre>
+</div>
 
 <h1 id="morphological-annotation">Morphological Annotation</h1>
 
@@ -132,18 +137,19 @@ and refer to other fields as well). If no language-specific tags are available, 
 
 <p>The FEATS field contains a list
 of morphological features, with vertical bar (|) as list separator and with underscore to represent the empty list.
-All features should be represented as attribute-value pairs, with an equals sign (=) separating the attribute from the value. In addition, features should as far as possible be selected from the <a href="u/feat/index.html">universal feature inventory</a> and be sorted alphabetically by attribute names. It is possible to declare that a feature has two or more values for a given word: <code>Case=Acc,Dat</code>. In this case, the values are sorted alphabetically. In sorting, uppercase letters are considered identical to their lowercase counterparts. Feature names must have the form <code>[A-Z0-9][A-Z0-9a-z]*(\[[a-z0-9]+\])?</code> and feature values must have the form <code>[A-Z0-9][a-zA-Z0-9]*</code>.</p>
+All features should be represented as attribute-value pairs, with an equals sign (=) separating the attribute from the value. In addition, features should as far as possible be selected from the <a href="u/feat/index.html">universal feature inventory</a> and be sorted alphabetically by attribute names. It is possible to declare that a feature has two or more values for a given word: <code class="highlighter-rouge">Case=Acc,Dat</code>. In this case, the values are sorted alphabetically. In sorting, uppercase letters are considered identical to their lowercase counterparts. Feature names must have the form <code class="highlighter-rouge">[A-Z0-9][A-Z0-9a-z]*(\[[a-z0-9]+\])?</code> and feature values must have the form <code class="highlighter-rouge">[A-Z0-9][a-zA-Z0-9]*</code>.</p>
 
 <p>Here is an example, showing only the first five fields for the 
 Swedish sentence <em>Då var han elva år</em> (Then he was eleven years old):</p>
 
-<pre><code>1    Då      då     ADV      AB                    _
+<div class="highlighter-rouge"><pre class="highlight"><code>1    Då      då     ADV      AB                    _
 2    var     vara   VERB     VB.PRET.ACT           Tense=Past|Voice=Act
 3    han     han    PRON     PN.UTR.SIN.DEF.NOM    Case=Nom|Definite=Def|Gender=Com|Number=Sing
 4    elva    elva   NUM      RG.NOM                Case=Nom|NumType=Card
 5    år      år     NOUN     NN.NEU.PLU.IND.NOM    Case=Nom|Definite=Ind|Gender=Neut|Number=Plur
 6    .       .      PUNCT    DL.MAD                _
 </code></pre>
+</div>
 
 <p>Morphological annotation is only provided for words. 
 Tokens that are not words have an underscore in the UPOSTAG, XPOSTAG and FEATS fields.</p>
@@ -154,7 +160,7 @@ Tokens that are not words have an underscore in the UPOSTAG, XPOSTAG and FEATS f
 As in the case of morphology, syntactic annotation is only provided for words.
 Tokens that are not words have an underscore in both the HEAD and DEPREL fields. However, the script that extracts the token sequence optionally provides a heuristic mapping of the morphological and syntactic annotation to non-word tokens. For example, given the following annotation of the English sentence <em>I haven’t a clue</em>:</p>
 
-<pre><code>1     I         I      PRON    PRP   Case=Nom|Number=Sing|Person=1     2   nsubj
+<div class="highlighter-rouge"><pre class="highlight"><code>1     I         I      PRON    PRP   Case=Nom|Number=Sing|Person=1     2   nsubj
 2-3   haven't   _      _       _     _                                 _   _
 2     have      have   VERB    VBP    Number=Sing|Person=1|Tense=Pres   0   root
 3     not       not    PART    RB    Negative=Neg                      2   neg
@@ -162,32 +168,35 @@ Tokens that are not words have an underscore in both the HEAD and DEPREL fields.
 5     clue      clue   NOUN    NN    Number=Sing                       2   dobj
 6     .         .      PUNCT   .     _                                 2   punct
 </code></pre>
+</div>
 
 <p>We can extract the following approximation at the token level (with token indexing):</p>
 
-<pre><code>1     I         I      PRON    PRP   Case=Nom|Number=Sing|Person=1                  2   nsubj
+<div class="highlighter-rouge"><pre class="highlight"><code>1     I         I      PRON    PRP   Case=Nom|Number=Sing|Person=1                  2   nsubj
 2     haven't   _      VERB    _     Negative=Neg|Number=Sing|Person=1|Tense=Pres   0   root
 3     a         a      DET     DT    Definite=Ind|PronType=Art                      4   det
 4     clue      clue   NOUN    NN    Number=Sing                                    2   dobj
 5     .         .      PUNCT   .     _                                              2   punct
 </code></pre>
+</div>
 
 <p>The usefulness of this approximate representation will vary from language to language, depending on the divergence between tokens and words and on the arbitrariness of the heuristic mapping.</p>
 
-<p>The HEAD and DEPREL values define the basic dependencies which must be strictly a tree. However, in addition to these basic dependencies, enhanced representations may require additional dependency relations, for example, when dependencies propagate over coordinate structures. Such dependencies can be specified in the DEPS field, using a list of head-relation pairs. We use colon (:) to separate the head and relation and (as usual) vertical bar (|) to separate list items and underscore for the empty list. The list is to be sorted by the index of the head: <code>4:nsubj|11:nsubj</code>.</p>
+<p>The HEAD and DEPREL values define the basic dependencies which must be strictly a tree. However, in addition to these basic dependencies, enhanced representations may require additional dependency relations, for example, when dependencies propagate over coordinate structures. Such dependencies can be specified in the DEPS field, using a list of head-relation pairs. We use colon (:) to separate the head and relation and (as usual) vertical bar (|) to separate list items and underscore for the empty list. The list is to be sorted by the index of the head: <code class="highlighter-rouge">4:nsubj|11:nsubj</code>.</p>
 
 <p>Here is an example, showing the first nine fields for the English sentence <em>They buy and sell books</em>:</p>
 
-<pre><code>1    They     they    PRON    PRP    Case=Nom|Number=Plur               2    nsubj    4:nsubj
+<div class="highlighter-rouge"><pre class="highlight"><code>1    They     they    PRON    PRP    Case=Nom|Number=Plur               2    nsubj    4:nsubj
 2    buy      buy     VERB    VBP    Number=Plur|Person=3|Tense=Pres    0    root     _
 3    and      and     CONJ    CC     _                                  2    cc       _
 4    sell     sell    VERB    VBP    Number=Plur|Person=3|Tense=Pres    2    conj     0:root
 5    books    book    NOUN    NNS    Number=Plur                        2    dobj     4:dobj
 6    .        .       PUNCT   .      _                                  2    punct    _
 </code></pre>
+</div>
 
-<p>The dependency relations in both DEPREL and DEPS must have the form <code>[a-z][a-z_-]*(:[a-z][a-z_-]*)?</code>,
-and use of the dash (<code>-</code>) character instead of underscore (<code>_</code>) is encouraged.</p>
+<p>The dependency relations in both DEPREL and DEPS must have the form <code class="highlighter-rouge">[a-z][a-z_-]*(:[a-z][a-z_-]*)?</code>,
+and use of the dash (<code class="highlighter-rouge">-</code>) character instead of underscore (<code class="highlighter-rouge">_</code>) is encouraged.</p>
 
 <h1 id="miscellaneous">Miscellaneous</h1>
 
@@ -199,9 +208,9 @@ If the MISC field is not used, it should contain an underscore.</p>
 
 <h2 id="untokenized-text">Untokenized text</h2>
 
-<p>To facilitate reconstruction of original (pre-tokenization) text, the information on original word segmentation should be kept if available. Every token after which there was no space in the original text should contain <code>SpaceAfter=No</code> in its MISC field. Note that this feature applies to the token level, not to the word level. Syntactic words that are just part of surface tokens will be ignored during detokenization and thus do not need the feature. In the example below, the line indexed 1 does not contain the <code>SpaceAfter</code> feature even though there was no space between <em>He</em> and <em>‘s</em> in the underlying sentence. However, if there was no space between <em>He’s</em> and the third token, the 1-2 line would have <code>SpaceAfter=No</code>.</p>
+<p>To facilitate reconstruction of original (pre-tokenization) text, the information on original word segmentation should be kept if available. Every token after which there was no space in the original text should contain <code class="highlighter-rouge">SpaceAfter=No</code> in its MISC field. Note that this feature applies to the token level, not to the word level. Syntactic words that are just part of surface tokens will be ignored during detokenization and thus do not need the feature. In the example below, the line indexed 1 does not contain the <code class="highlighter-rouge">SpaceAfter</code> feature even though there was no space between <em>He</em> and <em>‘s</em> in the underlying sentence. However, if there was no space between <em>He’s</em> and the third token, the 1-2 line would have <code class="highlighter-rouge">SpaceAfter=No</code>.</p>
 
-<pre><code>1-2   He's      _         _       _       _                                 _   _       _   _
+<div class="highlighter-rouge"><pre class="highlight"><code>1-2   He's      _         _       _       _                                 _   _       _   _
 1     He        he        PRON    PRP     Case=Nom|Number=Sing|Person=3     2   nsubj   _   _
 2     is        be        VERB    VBZ     Number=Sing|Person=3|Tense=Pres   0   root    _   _
 3     in        in        ADP     IN      _                                 6   case    _   _
@@ -213,15 +222,16 @@ If the MISC field is not used, it should contain an underscore.</p>
 9     )         )         PUNCT   -RRB-   _                                 8   punct   _   SpaceAfter=No
 10    .         .         PUNCT   .       _                                 2   punct   _   _
 </code></pre>
+</div>
 
 <h1 id="sentence-boundaries-and-comments">Sentence Boundaries and Comments</h1>
 
 <p>There must be exactly one blank line <em>after</em> every sentence, including the last sentence in the file.
 Empty sentences are not allowed.</p>
 
-<p>Lines starting with the <code>#</code> character and preceding a sentence are considered as carrying metadata relevant to the following sentence. These lines are an integral part of the format as they give the ability to embed metadata together with the sentences. Consequently, any tools compatible with the CoNLL-U format should carry these lines over into their output (unless specifically designed to process them in some way). The contents of the comments and metadata is left unrestricted and will vary depending on the application. Comment and metadata lines inside sentences (i.e., between the token lines) are disallowed.</p>
+<p>Lines starting with the <code class="highlighter-rouge">#</code> character and preceding a sentence are considered as carrying metadata relevant to the following sentence. These lines are an integral part of the format as they give the ability to embed metadata together with the sentences. Consequently, any tools compatible with the CoNLL-U format should carry these lines over into their output (unless specifically designed to process them in some way). The contents of the comments and metadata is left unrestricted and will vary depending on the application. Comment and metadata lines inside sentences (i.e., between the token lines) are disallowed.</p>
 
-<pre><code># sent_id 1
+<div class="highlighter-rouge"><pre class="highlight"><code># sent_id 1
 # ...
 1    They     they    PRON    PRP    Case=Nom|Number=Plur              2   nsubj   4:nsubj   _
 2    buy      buy     VERB    VBP     Number=Plur|Person=3|Tense=Pres   0   root    _         _
@@ -240,6 +250,7 @@ Empty sentences are not allowed.</p>
 5     clue      clue   NOUN    NN    Number=Sing                       2   dobj    _   SpaceAfter=No
 6     .         .      PUNCT   .     _                                 2   punct   _   _
 </code></pre>
+</div>
 
 
       </div>
@@ -252,6 +263,7 @@ Empty sentences are not allowed.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -283,11 +295,40 @@ Empty sentences are not allowed.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -311,6 +352,7 @@ Empty sentences are not allowed.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = '';
@@ -336,7 +378,7 @@ Empty sentences are not allowed.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

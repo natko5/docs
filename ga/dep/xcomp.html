@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ga">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ga/dep">ga/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ga">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ga/dep">ga/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ga-dep/xcomp.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>The name <code>xcomp</code> is borrowed from Lexical-Functional Grammar. 
+<p>The name <code class="highlighter-rouge">xcomp</code> is borrowed from Lexical-Functional Grammar. 
 An open clausal complement (xcomp) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp.
 These complements are always non-finite, and they are complements (arguments of the higher verb or adjective) rather than adjuncts/modifiers.</p>
 
@@ -56,9 +57,9 @@ xcomp(leor, fheiceáil)
 xcomp(Caithfidh, dhul)
 </code></pre>
 
-<p>The UD Irish scheme uses <code>xcomp</code> to denote progressive aspectual phrases, the structure of which follows:
+<p>The UD Irish scheme uses <code class="highlighter-rouge">xcomp</code> to denote progressive aspectual phrases, the structure of which follows:
 Be + SUBJ + at (ag) + Verbal Noun
-In these cases, and in keeping with the analysis of prepositional phrases, we attach the verbal noun to the higher verb (“be”) (using the <code>xcomp</code> label instead of the <code>nmod</code> used in standard PPs). The preposition is then a dependent of the verbal noun, with that relationship labelled as <code>case</code>.</p>
+In these cases, and in keeping with the analysis of prepositional phrases, we attach the verbal noun to the higher verb (“be”) (using the <code class="highlighter-rouge">xcomp</code> label instead of the <code class="highlighter-rouge">nmod</code> used in standard PPs). The preposition is then a dependent of the verbal noun, with that relationship labelled as <code class="highlighter-rouge">case</code>.</p>
 
 <p><em>Tá sé ag <b>rith</b></em> `He is <b>running</b>’</p>
 
@@ -91,14 +92,14 @@ case(fáil, ar)
 <h2 id="treebank-statistics-udirish">Treebank Statistics (UD_Irish)</h2>
 
 <p>This relation is universal.
-There are 1 language-specific subtypes of <code>xcomp</code>: <a href="">xcomp:pred</a>.</p>
+There are 1 language-specific subtypes of <code class="highlighter-rouge">xcomp</code>: <a href="">xcomp:pred</a>.</p>
 
-<p>610 nodes (3%) are attached to their parents as <code>xcomp</code>.</p>
+<p>610 nodes (3%) are attached to their parents as <code class="highlighter-rouge">xcomp</code>.</p>
 
-<p>598 instances of <code>xcomp</code> (98%) are left-to-right (parent precedes child).
+<p>598 instances of <code class="highlighter-rouge">xcomp</code> (98%) are left-to-right (parent precedes child).
 Average distance between parent and child is 6.44918032786885.</p>
 
-<p>The following 15 pairs of parts of speech are connected with <code>xcomp</code>: <a href="">ga-pos/VERB</a>-<a href="">ga-pos/NOUN</a> (395; 65% instances), <a href="">ga-pos/NOUN</a>-<a href="">ga-pos/NOUN</a> (133; 22% instances), <a href="">ga-pos/VERB</a>-<a href="">ga-pos/VERB</a> (18; 3% instances), <a href="">ga-pos/ADJ</a>-<a href="">ga-pos/NOUN</a> (15; 2% instances), <a href="">ga-pos/PRON</a>-<a href="">ga-pos/NOUN</a> (13; 2% instances), <a href="">ga-pos/NOUN</a>-<a href="">ga-pos/VERB</a> (10; 2% instances), <a href="">ga-pos/PROPN</a>-<a href="">ga-pos/NOUN</a> (6; 1% instances), <a href="">ga-pos/X</a>-<a href="">ga-pos/NOUN</a> (5; 1% instances), <a href="">ga-pos/VERB</a>-<a href="">ga-pos/ADP</a> (4; 1% instances), <a href="">ga-pos/ADP</a>-<a href="">ga-pos/NOUN</a> (3; 0% instances), <a href="">ga-pos/SCONJ</a>-<a href="">ga-pos/NOUN</a> (3; 0% instances), <a href="">ga-pos/NOUN</a>-<a href="">ga-pos/ADJ</a> (2; 0% instances), <a href="">ga-pos/CONJ</a>-<a href="">ga-pos/NOUN</a> (1; 0% instances), <a href="">ga-pos/DET</a>-<a href="">ga-pos/NOUN</a> (1; 0% instances), <a href="">ga-pos/NOUN</a>-<a href="">ga-pos/ADP</a> (1; 0% instances).</p>
+<p>The following 15 pairs of parts of speech are connected with <code class="highlighter-rouge">xcomp</code>: <a href="">ga-pos/VERB</a>-<a href="">ga-pos/NOUN</a> (395; 65% instances), <a href="">ga-pos/NOUN</a>-<a href="">ga-pos/NOUN</a> (133; 22% instances), <a href="">ga-pos/VERB</a>-<a href="">ga-pos/VERB</a> (18; 3% instances), <a href="">ga-pos/ADJ</a>-<a href="">ga-pos/NOUN</a> (15; 2% instances), <a href="">ga-pos/PRON</a>-<a href="">ga-pos/NOUN</a> (13; 2% instances), <a href="">ga-pos/NOUN</a>-<a href="">ga-pos/VERB</a> (10; 2% instances), <a href="">ga-pos/PROPN</a>-<a href="">ga-pos/NOUN</a> (6; 1% instances), <a href="">ga-pos/X</a>-<a href="">ga-pos/NOUN</a> (5; 1% instances), <a href="">ga-pos/VERB</a>-<a href="">ga-pos/ADP</a> (4; 1% instances), <a href="">ga-pos/ADP</a>-<a href="">ga-pos/NOUN</a> (3; 0% instances), <a href="">ga-pos/SCONJ</a>-<a href="">ga-pos/NOUN</a> (3; 0% instances), <a href="">ga-pos/NOUN</a>-<a href="">ga-pos/ADJ</a> (2; 0% instances), <a href="">ga-pos/CONJ</a>-<a href="">ga-pos/NOUN</a> (1; 0% instances), <a href="">ga-pos/DET</a>-<a href="">ga-pos/NOUN</a> (1; 0% instances), <a href="">ga-pos/NOUN</a>-<a href="">ga-pos/ADP</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
@@ -210,6 +211,7 @@ xcomp in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -241,11 +243,40 @@ xcomp in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -269,6 +300,7 @@ xcomp in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ga-dep';
@@ -294,7 +326,7 @@ xcomp in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

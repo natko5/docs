@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -226,13 +227,13 @@ in two places.</p>
 <p><a id="al-kk-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a noun, in
+<p><code class="highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a noun, in
 contrast to the <a href="">advcl</a> relation which is used for adverbial clauses
-that modify a predicate. The head of the <code>acl</code> relation is the noun
+that modify a predicate. The head of the <code class="highlighter-rouge">acl</code> relation is the noun
 that is modified, and the dependent is the head of the clause that
 modifies the noun.</p>
 
-<p>We use <code>acl</code> for:</p>
+<p>We use <code class="highlighter-rouge">acl</code> for:</p>
 
 <p>Verbal adjectives that modify nouns:</p>
 
@@ -243,7 +244,7 @@ obj(көрдін-4, спортшылар-3)
 punct(көрдін-4, .-5)
 </code></pre>
 
-<p>This relation may be tagged with <code>acl:relcl</code> in the future, as it is the way
+<p>This relation may be tagged with <code class="highlighter-rouge">acl:relcl</code> in the future, as it is the way
 in which Turkic languages do relative clauses.</p>
 
 <p>Gerunds in genitive modifying a noun:</p>
@@ -277,7 +278,7 @@ advmod(болса-8, да-9)
 <p><a id="al-kk-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
 
-<p><em>Adverbial clause modifiers</em> (<code>advcl</code>) are subordinate clauses that
+<p><em>Adverbial clause modifiers</em> (<code class="highlighter-rouge">advcl</code>) are subordinate clauses that
 are not complements.</p>
 
 <p>Note that unless there is a separate subject for the “subordinate” clause, 
@@ -293,7 +294,7 @@ obj(қарады-6, айналасына-5)
 
 <p>Comparison:</p>
 
-<p>We also use <code>advcl</code> for the comparator in comparison constructions like “X is bigger 
+<p>We also use <code class="highlighter-rouge">advcl</code> for the comparator in comparison constructions like “X is bigger 
 than Y”, in Turkic, the “than Y” is in the ablative case and this depends on the adjective X.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/advcl.md" target="#">edit advcl</a></p>
@@ -301,7 +302,7 @@ than Y”, in Turkic, the “than Y” is in the ablative case and this depends 
 <p><a id="al-kk-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverb modifier</h2>
 
-<p>The dependency type <code>advmod</code> is used for <em>adverb modifiers</em> of verbs,
+<p>The dependency type <code class="highlighter-rouge">advmod</code> is used for <em>adverb modifiers</em> of verbs,
 nominals and adverbs alike.</p>
 
 <p>Governed by a verb:</p>
@@ -329,7 +330,7 @@ cop(суық-4, еді-5)
 <h2><code>amod</code>: adjectival modifier</h2>
 
 <p>Nouns may take adjectival modifiers, which are marked with the
-dependency type <code>amod</code>.</p>
+dependency type <code class="highlighter-rouge">amod</code>.</p>
 
 <pre><code class="language-sdparse">Азамат үлкен бір ағаш көрді . \n Azamat big one tree sees . 
 amod(ағаш-4, үлкен-2)
@@ -339,7 +340,7 @@ obj(көрді-5, ағаш-4)
 
 <p>Ordinal numerals:</p>
 
-<p>The <code>amod</code> relation is also used for ordinal numerals. Note that these may not be explicitly marked in the morphology.</p>
+<p>The <code class="highlighter-rouge">amod</code> relation is also used for ordinal numerals. Note that these may not be explicitly marked in the morphology.</p>
 
 <pre><code class="language-sdparse">1968 жылдан бастап Ширазда театр фестивалы өткізіліп тұрды . \n 1968 year-from starting Shiraz-in theatre festival take-place does .
 amod(жылдан-2, 1968-1)
@@ -352,7 +353,7 @@ amod(жылы-3, 1993-2)
 
 <p>Locative attributives:</p>
 
-<p>Substantives in the attributive form of the locative (-DAGI) are also marked with <code>amod</code>. (Pending clarification)</p>
+<p>Substantives in the attributive form of the locative (-DAGI) are also marked with <code class="highlighter-rouge">amod</code>. (Pending clarification)</p>
 
 <pre><code class="language-sdparse">Олар әрдайым үлкен үйдің алдындағы бақшада бірге ойнайды . \n They always big house-of front-in garden-in together play .
 amod(бақшада-6, алдындағы-5)
@@ -429,20 +430,20 @@ ccomp(қарап-7, ойнағанына-6)
 <h2><code>auxpass</code>: passive auxiliary</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>auxpass</code>.</p>
+for <code class="highlighter-rouge">auxpass</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/auxpass.md" target="#">edit auxpass</a></p>
 
 <p><a id="al-kk-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
 
-<p>The dependency type <code>case</code> is used for the postposition in 
+<p>The dependency type <code class="highlighter-rouge">case</code> is used for the postposition in 
 postpositional phrases. The head of
 a postpositional phrase is the nominal, not the postposition, so as to
 analyse postpositional phrases similarly to nominal modifiers without a
 postposition. (Such nominal modifiers are frequent in Kazakh, as cases
 are often used for the same purpose as postpositions.) To the same end,
-the type <code>case</code> is used in combination with the type <code>nmod</code>, which is
+the type <code class="highlighter-rouge">case</code> is used in combination with the type <code class="highlighter-rouge">nmod</code>, which is
 also used for nominal modifiers when no adposition is present (see
 <a href="">nmod</a>).</p>
 
@@ -473,7 +474,7 @@ punct(басып-5, .-7)
 <h2><code>cc</code>: coordinating conjunction</h2>
 
 <p><em>Coordinating conjunctions</em> are marked as dependents of the last 
-coordinated element, and the dependency type used is <code>cc</code>.</p>
+coordinated element, and the dependency type used is <code class="highlighter-rouge">cc</code>.</p>
 
 <pre><code class="language-sdparse">Олар Финляндия , Швеция және Эстонияидан кейін Ресейге барды . \n They Finland , Sweden and Estonia-from after Russia-to went .
 case(Эстонияидан-6, кейін-7)
@@ -523,9 +524,9 @@ punct(түсінбей-4, .-6)
 
 <p>Note that if the complement is completely controlled by the matrix verb, that
 is it does not permit another subject or object, then the relation should be 
-<code>xcomp</code>.</p>
+<code class="highlighter-rouge">xcomp</code>.</p>
 
-<p>We also use <code>ccomp</code> for the complement of reported speech clauses with де- (e.g.
+<p>We also use <code class="highlighter-rouge">ccomp</code> for the complement of reported speech clauses with де- (e.g.
 деп, деген, …)</p>
 
 <pre><code class="language-sdparse">« Төрге шық , тамақ іш » , - демепті . \n « Tör-to go-back , food drink » , - said-not-they .
@@ -541,7 +542,7 @@ punct(демепті-10, .-11)
 <p><a id="al-kk-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p><code>compound</code> is one of the three UD relations UD for compounding,
+<p><code class="highlighter-rouge">compound</code> is one of the three UD relations UD for compounding,
 together with <a href="">mwe</a> and <a href="">name</a>.</p>
 
 <p>Nouns should modify appropriate noun in the compound in order to respect the branching structure.</p>
@@ -556,7 +557,7 @@ punct(бола-5, .-7)
 </code></pre>
 
 <p>Nouns in the izafet construction (e.g. possessive on the final noun) should not get the compound relation,
-they should instead be labelled <code>nmod:poss</code>, e.g.</p>
+they should instead be labelled <code class="highlighter-rouge">nmod:poss</code>, e.g.</p>
 
 <pre><code class="language-sdparse">Дүниежүзілік экономикалық дағдарыс Иран экономикасын тұралатып тастады . \n Global economic depression Iran-of economy declining threw .
 nmod:poss(экономикасын-5, Иран-4)
@@ -564,7 +565,7 @@ obj(тастады-7, экономикасын-5)
 </code></pre>
 
 <p>Numerical expressions consisting of multiple tokens are annotated
-using the <code>compound</code> dependency type. The last word of the numerical
+using the <code class="highlighter-rouge">compound</code> dependency type. The last word of the numerical
 expression is the governor, and the number dependencies are chained.</p>
 
 <pre><code class="language-sdparse">Мұнай экспортынан жыл сайын 16,3 миллиард АҚШ доллары түседі . \n Oil exports-from year per 16,3 milliard USA dollar falls
@@ -583,7 +584,7 @@ punct(түседі-9, .-10)
 <p>A conjunct is the relation between two elements connected by a coordinating 
 conjunction, such және, мен, немесе, etc. We treat conjunctions 
 asymmetrically: The head of the relation is the last conjunct and all the 
-other conjuncts depend on it via the <code>conj</code> relation.</p>
+other conjuncts depend on it via the <code class="highlighter-rouge">conj</code> relation.</p>
 
 <pre><code class="language-sdparse">Олар Финляндия , Швеция және Эстонияидан кейін Ресейге барды . \n They Finland , Sweden and Estonia-from after Russia-to went .
 case(Эстонияидан-6, кейін-7)
@@ -612,7 +613,7 @@ nmod(барды-9, Ресейге-8)
 <p>A copula verb is a linking verb that joins a subject with a predicate.
 Copular clauses receive a special treatment. The
 predicative acts as the head word of the clause, and the copular verb
-depends on it using a <code>cop</code> (<em>copula</em>) dependency. The <code>cop</code> relation
+depends on it using a <code class="highlighter-rouge">cop</code> (<em>copula</em>) dependency. The <code class="highlighter-rouge">cop</code> relation
 is only applied when the verb is used to link a subject to its predicate
 (although the subject may be left out).</p>
 
@@ -666,7 +667,7 @@ cop(суық-4, еді-5)
 <p><a id="al-kk-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
 
-<p>A <em>clausal subject</em> (<code>csubj</code>) is a clause that acts as the subject of
+<p>A <em>clausal subject</em> (<code class="highlighter-rouge">csubj</code>) is a clause that acts as the subject of
 another clause.</p>
 
 <pre><code class="language-sdparse">Мүсін жасау , жартастарға рельеф қашау елеулі орын алды . \n Sculpture making , cliffs-to reliefs carving important place took .
@@ -680,7 +681,7 @@ dobj(алды-9, орын-8)
 <h2><code>dep</code>: unspecified dependency</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dep</code>.</p>
+for <code class="highlighter-rouge">dep</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/dep.md" target="#">edit dep</a></p>
 
@@ -714,7 +715,7 @@ det(шығыстарды-2, Барлық-1)
 <h2><code>discourse</code>: discourse element</h2>
 
 <p><em>Discourse elements</em> are interjections, exclamations or emoticons. They are attached to the main verb or predicative of the
-sentence with the <code>discourse</code> dependency type.</p>
+sentence with the <code class="highlighter-rouge">discourse</code> dependency type.</p>
 
 <pre><code class="language-sdparse">Жоқ , Айгүлдің күшігі жоқ . \n No , Aygül's dog not-existing-is . 
 discourse(жоқ-5, Жоқ-1)
@@ -727,7 +728,7 @@ nsubj(жоқ-5, күшігі-4)
 discourse(жазып-4, Жоқ-1)
 </code></pre>
 
-<p>The <code>discourse</code> label is also used for modal words, and the question word (ма):</p>
+<p>The <code class="highlighter-rouge">discourse</code> label is also used for modal words, and the question word (ма):</p>
 
 <pre><code class="language-sdparse">Ал Айгүлдің күшігі бар ма ? \n And Aygül's dog existing-is does-it ?
 discourse(бар-4, ма-5)
@@ -742,14 +743,14 @@ nsubj(бар-4, күшігі-3)
 <h2><code>dislocated</code>: dislocated elements</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dislocated</code>.</p>
+for <code class="highlighter-rouge">dislocated</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/dislocated.md" target="#">edit dislocated</a></p>
 
 <p><a id="al-kk-dep/dobj" class="al-dest"></a></p>
 <h2><code>dobj</code>: direct object</h2>
 
-<p>The dependency type <code>dobj</code> is used for (nominal) direct objects of the
+<p>The dependency type <code class="highlighter-rouge">dobj</code> is used for (nominal) direct objects of the
 verb.</p>
 
 <p>Direct objects are typically in “nominative” (unmarked, indefinite
@@ -784,7 +785,7 @@ punct(қарайды-5, .-6)
 <h2><code>expl</code>: expletive</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>expl</code>.</p>
+for <code class="highlighter-rouge">expl</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/expl.md" target="#">edit expl</a></p>
 
@@ -792,7 +793,7 @@ for <code>expl</code>.</p>
 <h2><code>foreign</code>: foreign words</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>foreign</code>.</p>
+for <code class="highlighter-rouge">foreign</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/foreign.md" target="#">edit foreign</a></p>
 
@@ -800,7 +801,7 @@ for <code>foreign</code>.</p>
 <h2><code>goeswith</code>: goes with</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>goeswith</code>.</p>
+for <code class="highlighter-rouge">goeswith</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/goeswith.md" target="#">edit goeswith</a></p>
 
@@ -817,8 +818,8 @@ iobj(етті-11, музыкасына-6)
 obj(етті-11, әсер-10)
 </code></pre>
 
-<p><em>Note:</em> Discussion of what constitutes a core argument in Kazakh is ongoing. The <code>iobj</code> relation will
-probably be discarded in favour of subcategorising <code>nmod</code>.</p>
+<p><em>Note:</em> Discussion of what constitutes a core argument in Kazakh is ongoing. The <code class="highlighter-rouge">iobj</code> relation will
+probably be discarded in favour of subcategorising <code class="highlighter-rouge">nmod</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/iobj.md" target="#">edit iobj</a></p>
 
@@ -826,14 +827,14 @@ probably be discarded in favour of subcategorising <code>nmod</code>.</p>
 <h2><code>list</code>: list</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>list</code>.</p>
+for <code class="highlighter-rouge">list</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/list.md" target="#">edit list</a></p>
 
 <p><a id="al-kk-dep/mark" class="al-dest"></a></p>
 <h2><code>mark</code>: marker</h2>
 
-<p>A <em>marker</em> (<code>mark</code>) is the subordinating conjunction in a
+<p>A <em>marker</em> (<code class="highlighter-rouge">mark</code>) is the subordinating conjunction in a
 non-complement subordinate clause.</p>
 
 <p>The subordinating conjunctions in Kazakh are:</p>
@@ -849,7 +850,7 @@ det(жаңбыр-3, көп-2)
 subj(жауса-4, жаңбыр-3)
 </code></pre>
 
-<p>The dependency relation <code>mark</code> is also used to identify the
+<p>The dependency relation <code class="highlighter-rouge">mark</code> is also used to identify the
 <em>complementiser</em> appearing in most clausal complements, where the head
 of the dependency is the main verb of the subordinate clause.</p>
 
@@ -859,16 +860,16 @@ of the dependency is the main verb of the subordinate clause.</p>
 <h2><code>mwe</code>: multi-word expression</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>mwe</code>.</p>
+for <code class="highlighter-rouge">mwe</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/mwe.md" target="#">edit mwe</a></p>
 
 <p><a id="al-kk-dep/name" class="al-dest"></a></p>
 <h2><code>name</code>: name</h2>
 
-<p>Proper names constituted of more than one word are annotated using the dependency type <code>name</code>. The last (rightmost) word is the head, and the other words are direct dependents of the head. The last word is chosen to be the head because in Kazakh the last word carries the inflectional information of the whole structure.</p>
+<p>Proper names constituted of more than one word are annotated using the dependency type <code class="highlighter-rouge">name</code>. The last (rightmost) word is the head, and the other words are direct dependents of the head. The last word is chosen to be the head because in Kazakh the last word carries the inflectional information of the whole structure.</p>
 
-<p>The <code>name</code> dependency relation is used in cases where the multi-word name does not have an obvious internal syntactic structure, as is the case with for instance names of people (**).</p>
+<p>The <code class="highlighter-rouge">name</code> dependency relation is used in cases where the multi-word name does not have an obvious internal syntactic structure, as is the case with for instance names of people (**).</p>
 
 <p>If a name has an obvious internal structure, as is often the case in names of books and movies for instance, this structure is marked instead.</p>
 
@@ -888,7 +889,7 @@ considered the head.</p>
 <p><a id="al-kk-dep/neg" class="al-dest"></a></p>
 <h2><code>neg</code>: negation modifier</h2>
 
-<p>The <code>neg</code> relation is not used in Kazakh.</p>
+<p>The <code class="highlighter-rouge">neg</code> relation is not used in Kazakh.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/neg.md" target="#">edit neg</a></p>
 
@@ -899,7 +900,7 @@ considered the head.</p>
 together with an postposition in an postpositional phrase. Both cases are analysed similarly, as semantically 
 nominal modifiers and postpositional phrases are similar.</p>
 
-<p><code>nmod</code> is by far the most used relation in UD Kazakh.</p>
+<p><code class="highlighter-rouge">nmod</code> is by far the most used relation in UD Kazakh.</p>
 
 <p><em>Postpositional phrases:</em></p>
 
@@ -912,7 +913,7 @@ nmod(жүгірді-4, ағашқа-2)
 
 <p><em>Izafet construction:</em></p>
 
-<p>Genitive nouns in the izafet construction get a special relation, <code>nmod:poss</code>, be they indefinite:</p>
+<p>Genitive nouns in the izafet construction get a special relation, <code class="highlighter-rouge">nmod:poss</code>, be they indefinite:</p>
 
 <pre><code class="language-sdparse">Дүниежүзілік экономикалық дағдарыс Иран экономикасын тұралатып тастады . \n Global economic depression Iran-of economy declining threw .
 nmod:poss(экономикасын-5, Иран-4)
@@ -926,7 +927,7 @@ obj(тастады-7, экономикасын-5)
 <p><a id="al-kk-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>The dependency type <code>nsubj</code> marks nominal subjects a clause.</p>
+<p>The dependency type <code class="highlighter-rouge">nsubj</code> marks nominal subjects a clause.</p>
 
 <pre><code class="language-sdparse">Азамат ағашқа қарай жүгірді . \n Azamat tree-to towards ran .
 nsubj(жүгірді-4, Азамат-1)
@@ -959,9 +960,9 @@ punct(түс-3, .-4)
 <h2><code>nummod</code>: numeric modifier</h2>
 
 <p><em>Numeric modifiers</em> of a noun or NP, when they function as quantifiers
-are marked with the <code>nummod</code> dependency type.</p>
+are marked with the <code class="highlighter-rouge">nummod</code> dependency type.</p>
 
-<p>Ordinal numbers should get the <code>amod</code> type.</p>
+<p>Ordinal numbers should get the <code class="highlighter-rouge">amod</code> type.</p>
 
 <!-- fname:num.pdf -->
 <pre><code class="language-sdparse">Бразилия өз жерінде чемпионатты екі рет өткізген бесінші ел болды . \n Brazil own land-in championship two times XX fifth country was .
@@ -984,7 +985,7 @@ nummod(күн-4, үш-3)
 <p>When two sentences share no relation but are written together in a single 
 sentence (delimited by comma, dash, semicolon or other punctuation) then we use the relation parataxis. 
 As with explicit coordinations, the last element is the governor. 
-Also parenthetical and interjected clauses can receive the <code>parataxis</code> dependency.</p>
+Also parenthetical and interjected clauses can receive the <code class="highlighter-rouge">parataxis</code> dependency.</p>
 
 <pre><code class="language-sdparse">Азамат пен Айгүл ойнағанды жақсы көреді , олар әрдайым бақшада бірге ойнайды . \n Azamat and Aygül playing XX see , they always garden-in together play .
 parataxis(ойнайды-12, көреді-6)
@@ -995,9 +996,9 @@ parataxis(ойнайды-12, көреді-6)
 <p><a id="al-kk-dep/punct" class="al-dest"></a></p>
 <h2><code>punct</code>: punctuation</h2>
 
-<p>The dependency type <code>punct</code> is used to mark punctuation. The dependent is the punctuation 
+<p>The dependency type <code class="highlighter-rouge">punct</code> is used to mark punctuation. The dependent is the punctuation 
 symbol, and the governor is the element which the punctuation symbol delimits. For instance, 
-with coordination, the last coordinated element is the head of all <code>punct</code> dependencies 
+with coordination, the last coordinated element is the head of all <code class="highlighter-rouge">punct</code> dependencies 
 in the coordination.</p>
 
 <p><em>Coordination and parataxis:</em></p>
@@ -1024,9 +1025,9 @@ nmod(барды-9, Ресейге-8)
 <p><a id="al-kk-dep/remnant" class="al-dest"></a></p>
 <h2><code>remnant</code>: remnant in ellipsis</h2>
 
-<p>The <code>remnant</code> relation is used to provide a treatment of ellipsis (in
+<p>The <code class="highlighter-rouge">remnant</code> relation is used to provide a treatment of ellipsis (in
 the case of gapping and stripping, where a predicational or verbal
-head gets elided). In particular, <code>remnant</code> aims to provide analyses
+head gets elided). In particular, <code class="highlighter-rouge">remnant</code> aims to provide analyses
 that do not postulate empty nodes.</p>
 
 <pre><code class="language-sdparse">Ашылу матчы Сан-Паулуда , ал финалы Рио-де-Жанейрода орын алды . \n Opening match São-Paulo-in , and final Rio-de-Janeiro-in place took .
@@ -1043,15 +1044,15 @@ nmod(матчы-2, Ашылу-1)
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>reparandum</code>.</p>
+for <code class="highlighter-rouge">reparandum</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-kk-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A
-fake node <code>ROOT</code> is used as the governor.</p>
+<p>The <code class="highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A
+fake node <code class="highlighter-rouge">ROOT</code> is used as the governor.</p>
 
 <pre><code class="language-sdparse">ROOT Азамат ағашқа қарай жүгірді . \n ROOT Azamat tree-to towards ran .
 root(ROOT-1, жүгірді-5)
@@ -1066,7 +1067,7 @@ nmod(жүгірді-5, ағашқа-3)
 <p><a id="al-kk-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative modifier</h2>
 
-<p>The dependency type <code>vocative</code> is used for <em>vocatives</em>, that is,
+<p>The dependency type <code class="highlighter-rouge">vocative</code> is used for <em>vocatives</em>, that is,
 expressions where someone is being addressed. The governor of the
 dependency is the main predicate of the clause where the addressing
 occurs.</p>
@@ -1083,7 +1084,7 @@ aux(айта-5, алмаймын-6)
 <p><a id="al-kk-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>The dependency type <code>xcomp</code> is reserved for clausal complements which have an external 
+<p>The dependency type <code class="highlighter-rouge">xcomp</code> is reserved for clausal complements which have an external 
 subject, that is, whose subject is shared with the complemented verb (a phenomenon also 
 known as subject control). Note that the subject of the complementing clause must be 
 the <em>subject</em> of the complemented verb, not any other sentence element.</p>
@@ -1094,8 +1095,8 @@ nsubj(етіп-5, Ол-1)
 dobj(табуға-3, Азаматты-2)
 </code></pre>
 
-<p><em>Note:</em> The existence of <code>xcomp</code> is uncertain in Kazakh, the vast majority of clausal
-complements are not controlled and should get <code>ccomp</code> instead.</p>
+<p><em>Note:</em> The existence of <code class="highlighter-rouge">xcomp</code> is uncertain in Kazakh, the vast majority of clausal
+complements are not controlled and should get <code class="highlighter-rouge">ccomp</code> instead.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/xcomp.md" target="#">edit xcomp</a></p>
 
@@ -1111,6 +1112,7 @@ complements are not controlled and should get <code>ccomp</code> instead.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1142,11 +1144,40 @@ complements are not controlled and should get <code>ccomp</code> instead.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1170,6 +1201,7 @@ complements are not controlled and should get <code>ccomp</code> instead.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-overview';
@@ -1195,7 +1227,7 @@ complements are not controlled and should get <code>ccomp</code> instead.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

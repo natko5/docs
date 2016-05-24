@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -226,7 +227,7 @@ in two places.</p>
 <p><a id="al-ro-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a nominal.</p>
+<p><code class="highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a nominal.</p>
 
 <pre><code class="language-sdparse">Mă impresionează un copil plângând . \n Me impresses a child crying. (A crying child impresses me.)
 acl(copil, plângând)
@@ -364,7 +365,7 @@ auxpass(spânzurat, fost)
 <p><a id="al-ro-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
 
-<p>The <code>case</code> relation is used for linking prepositions to their heads:</p>
+<p>The <code class="highlighter-rouge">case</code> relation is used for linking prepositions to their heads:</p>
 
 <pre><code class="language-sdparse">O văd pe Maria . \n Her see-I PE Mary . (I can see Mary.)
 case(Maria, pe)
@@ -379,14 +380,14 @@ case(masă, pe)
 <p><a id="al-ro-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
-<p>A <code>cc</code> is the relation between the first conjunct and the coordinating conjunction delimiting another conjunct:</p>
+<p>A <code class="highlighter-rouge">cc</code> is the relation between the first conjunct and the coordinating conjunction delimiting another conjunct:</p>
 
 <pre><code class="language-sdparse">Maria și Ion tocmai au sosit . \n Mary and John just have arrived .
 cc(Maria, și)
 conj(Maria, Ion)
 </code></pre>
 
-<p>A coordinating conjunction may also appear at the beginning of a sentence. This is also called a <code>cc</code>, and it depends on the root predicate of the sentence. (In fact there is a coordination that spans multiple sentences. We cannot attach a word to the first conjunct because it is in another sentence. Thus we attach it to the first conjunct available in the current sentence: its main predicate.)</p>
+<p>A coordinating conjunction may also appear at the beginning of a sentence. This is also called a <code class="highlighter-rouge">cc</code>, and it depends on the root predicate of the sentence. (In fact there is a coordination that spans multiple sentences. We cannot attach a word to the first conjunct because it is in another sentence. Thus we attach it to the first conjunct available in the current sentence: its main predicate.)</p>
 
 <pre><code class="language-sdparse">Și au salutat gazda . \n And have greeted host-the
 cc(salutat, Și)
@@ -408,7 +409,7 @@ ccomp(Înțeleg, obosit)
 ccomp(putem, schia)
 </code></pre>
 
-<p>The clausal predicative of the copula verb <code>a fi</code> is also analysed as ccomp. NB: This is the only case when the copula verb <code>a fi</code> is treated as a head.</p>
+<p>The clausal predicative of the copula verb <code class="highlighter-rouge">a fi</code> is also analysed as ccomp. NB: This is the only case when the copula verb <code class="highlighter-rouge">a fi</code> is treated as a head.</p>
 
 <pre><code class="language-sdparse">ROOT Noi suntem cum ne știi . \n We are how us know-you .
 root(ROOT, suntem)
@@ -420,7 +421,7 @@ ccomp(suntem, știi)
 <p><a id="al-ro-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p><code>compound</code> is used for linking compound words of any part of speech:</p>
+<p><code class="highlighter-rouge">compound</code> is used for linking compound words of any part of speech:</p>
 
 <pre><code class="language-sdparse">Am patru mii de lei . \n Have-I four thousand of lei .
 compound(mii, patru)
@@ -448,13 +449,13 @@ conj(sosit, întârzie)
 <p><a id="al-ro-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
 
-<p>A copula is the relation between the complement of a copular verb and the copular verb <code>a fi</code> (only). (We normally take a copula as a dependent of its complement.)</p>
+<p>A copula is the relation between the complement of a copular verb and the copular verb <code class="highlighter-rouge">a fi</code> (only). (We normally take a copula as a dependent of its complement.)</p>
 
 <pre><code class="language-sdparse">Maria este fericită . \n Maria is happy .
 cop(fericită, este)
 </code></pre>
 
-<p>All other copula verbs are heads of clauses and their complements are in <code>xcomp</code> relation to them:</p>
+<p>All other copula verbs are heads of clauses and their complements are in <code class="highlighter-rouge">xcomp</code> relation to them:</p>
 
 <pre><code class="language-sdparse">Maria a devenit designer . \n Mary has become designer .
 xcomp(devenit, designer)
@@ -467,7 +468,7 @@ cop(campioană, fi)
 aux(campioană, va)
 </code></pre>
 
-<p>When the complement of the copula verb <code>a fi</code> is a clause, the copula is the head, and the subordinate clause is in <code>ccomp</code> relation with it:</p>
+<p>When the complement of the copula verb <code class="highlighter-rouge">a fi</code> is a clause, the copula is the head, and the subordinate clause is in <code class="highlighter-rouge">ccomp</code> relation with it:</p>
 
 <pre><code class="language-sdparse">ROOT Noi suntem cum ne știi . \n We are how us know-you .
 root(ROOT, suntem)
@@ -506,14 +507,14 @@ csubjpass(pedepsit, încălcat)
 <h2><code>dep</code>: unspecified dependency</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dep</code>.</p>
+for <code class="highlighter-rouge">dep</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/dep.md" target="#">edit dep</a></p>
 
 <p><a id="al-ro-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The relation determiner (<code>det</code>) holds between a nominal head and its determiner:</p>
+<p>The relation determiner (<code class="highlighter-rouge">det</code>) holds between a nominal head and its determiner:</p>
 
 <pre><code class="language-sdparse">Am văzut un okapi . \n Have-I seen an okapi .
 det(okapi, un)
@@ -529,7 +530,7 @@ det(Ion, lui)
 <h2><code>discourse</code>: discourse element</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>discourse</code>.</p>
+for <code class="highlighter-rouge">discourse</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/discourse.md" target="#">edit discourse</a></p>
 
@@ -537,7 +538,7 @@ for <code>discourse</code>.</p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dislocated</code>.</p>
+for <code class="highlighter-rouge">dislocated</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/dislocated.md" target="#">edit dislocated</a></p>
 
@@ -554,14 +555,14 @@ dobj(Citesc, carte)
 dobj(văd, O)
 </code></pre>
 
-<p>When the direct object is doubled by a pronoun, this is marked as <code>expl</code>.</p>
+<p>When the direct object is doubled by a pronoun, this is marked as <code class="highlighter-rouge">expl</code>.</p>
 
 <pre><code class="language-sdparse">O văd pe Mara . \n Her see-I PE Mara .
 dobj(văd, Mara)
 expl(văd, O)
 </code></pre>
 
-<p>Romanian allows for the occurrence of two Accusative objects with some (uses of certain) verbs: the [+Animate] object (the direct object in traditional grammar terms) is anlysed here as <code>iobj</code>, while the other Accusative object (the secondary object in traditional grammar terms) is <code>dobj</code>:</p>
+<p>Romanian allows for the occurrence of two Accusative objects with some (uses of certain) verbs: the [+Animate] object (the direct object in traditional grammar terms) is anlysed here as <code class="highlighter-rouge">iobj</code>, while the other Accusative object (the secondary object in traditional grammar terms) is <code class="highlighter-rouge">dobj</code>:</p>
 
 <pre><code class="language-sdparse">Bunica i-a învățat pe copii o poezie . \n Grandmother-the them-has taught PE children a poem .
 dobj(învățat, poezie)
@@ -574,7 +575,7 @@ iobj(învățat, copii)
 <h2><code>expl</code>: expletive</h2>
 
 <p>Romanian does not have expletives of the English sort.
-However, we use the <code>expl</code> label for the following situations:</p>
+However, we use the <code class="highlighter-rouge">expl</code> label for the following situations:</p>
 
 <ul>
   <li>clitic doubling:</li>
@@ -615,7 +616,7 @@ expl:poss(vândut, Mi-)
 <h2><code>foreign</code>: foreign words</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>foreign</code>.</p>
+for <code class="highlighter-rouge">foreign</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/foreign.md" target="#">edit foreign</a></p>
 
@@ -623,7 +624,7 @@ for <code>foreign</code>.</p>
 <h2><code>goeswith</code>: goes with</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>goeswith</code>.</p>
+for <code class="highlighter-rouge">goeswith</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/goeswith.md" target="#">edit goeswith</a></p>
 
@@ -644,7 +645,7 @@ iobj(deschis, elevilor)
 iobj(favorabilă, -mi)
 </code></pre>
 
-<p>We also analyse as <code>iobj</code> the [+Animate] object (the direct object in traditional grammar terms) of verbs with two Accusative objects, whereas the other object (the secondary object in traditional grammar terms) is <code>dobj</code>:</p>
+<p>We also analyse as <code class="highlighter-rouge">iobj</code> the [+Animate] object (the direct object in traditional grammar terms) of verbs with two Accusative objects, whereas the other object (the secondary object in traditional grammar terms) is <code class="highlighter-rouge">dobj</code>:</p>
 
 <pre><code class="language-sdparse">Bunica i-a învățat pe copii o poezie . \n Grandmother-the them-has taught PE children a poem .
 dobj(învățat, poezie)
@@ -657,7 +658,7 @@ iobj(învățat, copii)
 <h2><code>list</code>: list</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>list</code>.</p>
+for <code class="highlighter-rouge">list</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/list.md" target="#">edit list</a></p>
 
@@ -680,7 +681,7 @@ mark(pot, dacă)
 <h2><code>mwe</code>: multi-word expression</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>mwe</code>.</p>
+for <code class="highlighter-rouge">mwe</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/mwe.md" target="#">edit mwe</a></p>
 
@@ -688,7 +689,7 @@ for <code>mwe</code>.</p>
 <h2><code>name</code>: name</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>name</code>.</p>
+for <code class="highlighter-rouge">name</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/name.md" target="#">edit name</a></p>
 
@@ -712,9 +713,9 @@ neg(trandafiri, nu)
 <p><a id="al-ro-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers. They depend either on another noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).</p>
+<p>The <code class="highlighter-rouge">nmod</code> relation is used for nominal modifiers. They depend either on another noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).</p>
 
-<p><code>nmod</code> is a noun (or noun phrase) functioning as a non-core (oblique) argument or adjunct. This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb. But when attaching to a noun, it corresponds to an attribute.</p>
+<p><code class="highlighter-rouge">nmod</code> is a noun (or noun phrase) functioning as a non-core (oblique) argument or adjunct. This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb. But when attaching to a noun, it corresponds to an attribute.</p>
 
 <pre><code class="language-sdparse">Prietena fetei o așteaptă la masă . \n Friend-the girl-the-genitive her waits at table .
 nmod(Prietena, fetei)
@@ -749,7 +750,7 @@ nsubjpass(compus, Cântecul)
 <h2><code>nummod</code>: numeric modifier</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>nummod</code>.</p>
+for <code class="highlighter-rouge">nummod</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/nummod.md" target="#">edit nummod</a></p>
 
@@ -757,7 +758,7 @@ for <code>nummod</code>.</p>
 <h2><code>parataxis</code>: parataxis</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>parataxis</code>.</p>
+for <code class="highlighter-rouge">parataxis</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/parataxis.md" target="#">edit parataxis</a></p>
 
@@ -765,7 +766,7 @@ for <code>parataxis</code>.</p>
 <h2><code>punct</code>: punctuation</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>punct</code>.</p>
+for <code class="highlighter-rouge">punct</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/punct.md" target="#">edit punct</a></p>
 
@@ -783,7 +784,7 @@ nsubj(genunchi, toți)
 </code></pre>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>remnant</code>.</p>
+for <code class="highlighter-rouge">remnant</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/remnant.md" target="#">edit remnant</a></p>
 
@@ -791,14 +792,14 @@ for <code>remnant</code>.</p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>reparandum</code>.</p>
+for <code class="highlighter-rouge">reparandum</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/reparandum.md" target="#">edit reparandum</a></p>
 
 <p><a id="al-ro-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indexation of real words in the sentence starts at 1.</p>
+<p>The <code class="highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indexation of real words in the sentence starts at 1.</p>
 
 <pre><code class="language-sdparse">ROOT Copilul aleargă . \n ROOT Child-the runs .
 root(ROOT, aleargă)
@@ -822,7 +823,7 @@ root(ROOT, bine)
 <h2><code>vocative</code>: vocative</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>vocative</code>.</p>
+for <code class="highlighter-rouge">vocative</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/vocative.md" target="#">edit vocative</a></p>
 
@@ -830,7 +831,7 @@ for <code>vocative</code>.</p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>xcomp</code>.</p>
+for <code class="highlighter-rouge">xcomp</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/xcomp.md" target="#">edit xcomp</a></p>
 
@@ -846,6 +847,7 @@ for <code>xcomp</code>.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -877,11 +879,40 @@ for <code>xcomp</code>.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -905,6 +936,7 @@ for <code>xcomp</code>.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ro-overview';
@@ -930,7 +962,7 @@ for <code>xcomp</code>.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

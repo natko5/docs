@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -103,10 +104,10 @@ properties or attributes. They may also function as predicates, as in</p>
 <p>Example: [bg]
 <i><span style="color: red">Колата е зелена</span></i> / <i>Kolata e zelena</i> (The car is green.)</p>
 
-<p>The <code>ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
+<p>The <code class="highlighter-rouge">ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
 for determiners and <a href="">NUM</a> for numerals.</p>
 
-<p>In Bulgarian the words that map to the <code>ADJ</code> tag from the BulTreeBank tagset are:</p>
+<p>In Bulgarian the words that map to the <code class="highlighter-rouge">ADJ</code> tag from the BulTreeBank tagset are:</p>
 
 <ul>
   <li>A# (adjective)</li>
@@ -161,7 +162,7 @@ for determiners and <a href="">NUM</a> for numerals.</p>
 <h3 id="definition">Definition</h3>
 
 <p>Adposition in Bulgarian is a preposition.
-In the BulTreeBank tagset it is encoded as <code>R</code>.
+In the BulTreeBank tagset it is encoded as <code class="highlighter-rouge">R</code>.
 Thus, the preposition comes before a complement composed of a noun
 phrase, noun, pronoun, or clause that functions as a noun phrase, and
 forms a single structure with the complement to express its
@@ -205,12 +206,12 @@ categories as time, place, direction or manner. They may also modify
 <a href="ADJ">adjectives</a> and other adverbs, as in <em><b>very briefly</b></em> or
 <em><b>arguably</b> wrong</em>. Some adverbs can modify even [nouns] (Noun).</p>
 
-<p>In BulTreeBank tagset the corresponding POS tag is <code>D</code>.</p>
+<p>In BulTreeBank tagset the corresponding POS tag is <code class="highlighter-rouge">D</code>.</p>
 
 <p>There is a closed subclass of <em>pronominal adverbs</em> that refer to
 circumstances in context, rather than naming them directly; similarly
 to pronouns, these can be categorized as interrogative, relative,
-demonstrative etc. Pronominal adverbs also get the <code>ADV</code>
+demonstrative etc. Pronominal adverbs also get the <code class="highlighter-rouge">ADV</code>
 part-of-speech tag but they are differentiated by additional features.</p>
 
 <p>In the BulTreeBank tagset the corresponding tags are as follows:</p>
@@ -238,11 +239,11 @@ part-of-speech tag but they are differentiated by additional features.</p>
 <p>Note that there are words that may be traditionally called numerals in
 some languages (e.g. Bulgarian) but they are treated as adverbs in the
 universal tagging scheme. In particular, <em>adverbial ordinal numerals</em>
-([bg] <em>първо</em> / <em>parvo</em> “for the first time”) are tagged <code>ADV</code>. 
-The mapped tags present the neuter singular indefinite forms of the ordinal numerals: <code>Monsi</code>.
+([bg] <em>първо</em> / <em>parvo</em> “for the first time”) are tagged <code class="highlighter-rouge">ADV</code>. 
+The mapped tags present the neuter singular indefinite forms of the ordinal numerals: <code class="highlighter-rouge">Monsi</code>.
 In this way there will be ambiguity with the class of [adjectives] (ADJ).</p>
 
-<p>Another adverbial numeral that goes under <code>ADV</code> is Md#:</p>
+<p>Another adverbial numeral that goes under <code class="highlighter-rouge">ADV</code> is Md#:</p>
 
 <h3 id="examples-1">Examples</h3>
 
@@ -272,7 +273,7 @@ lexical verb, such as person, number, tense, mood, aspect, and voice.</p>
   <li>Vi# / <em>бивам</em> / <em>bivam</em> “to be”</li>
 </ul>
 
-<p><em>Modal verbs</em> count as <a href="VERB">main verbs</a> in BulTreeBank tagset and they are thus tagged <code>VERB</code>.</p>
+<p><em>Modal verbs</em> count as <a href="VERB">main verbs</a> in BulTreeBank tagset and they are thus tagged <code class="highlighter-rouge">VERB</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -386,10 +387,10 @@ language.</p>
 their original category when used in exclamations. For example, <em>God</em>
 is a <a href="">NOUN</a> even in exclamatory uses.</p>
 
-<p>In BulTreeBank annotation scheme the interjections are tagged as <code>I</code>.
+<p>In BulTreeBank annotation scheme the interjections are tagged as <code class="highlighter-rouge">I</code>.
 These include the following groups: exclamations and onomatopoeic words.</p>
 
-<p>In cases like <em>God</em>, the lemmas are tagged as both: <code>Noun</code> and <code>Interjection</code>.
+<p>In cases like <em>God</em>, the lemmas are tagged as both: <code class="highlighter-rouge">Noun</code> and <code class="highlighter-rouge">Interjection</code>.
 Thus, only the Noun usage will be kept in the universal setting.</p>
 
 <p>The feedback particles, such as: <em>yes</em> and <em>no</em> are mapped to INTJ with the labels:</p>
@@ -409,9 +410,9 @@ Thus, only the Noun usage will be kept in the universal setting.</p>
 <p>Nouns are a part of speech typically denoting a person, place, thing,
 animal or idea.</p>
 
-<p>The <code>NOUN</code> tag is intended for common nouns only.</p>
+<p>The <code class="highlighter-rouge">NOUN</code> tag is intended for common nouns only.</p>
 
-<p>In Bultreebank the common nouns are annotated with the tag <code>Nc#</code>.</p>
+<p>In Bultreebank the common nouns are annotated with the tag <code class="highlighter-rouge">Nc#</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -436,13 +437,13 @@ animal or idea.</p>
 adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Note that cardinal numerals are covered by <code>NUM</code> whether they are used
+<p>Note that cardinal numerals are covered by <code class="highlighter-rouge">NUM</code> whether they are used
 as determiners or not (as in <em>Windows <b>Seven</b></em>) and whether they
 are expressed as words <em>(four)</em>, digits <em>(4)</em> or Roman numerals
 <em>(IV)</em>. Other words functioning as determiners (including quantifiers
 such as <em>many</em> and <em>few</em>) are tagged <a href="">DET</a>.</p>
 
-<p>In Bultreebank tagset the tag which maps to <code>NUM</code>, is <code>Mc#</code>.</p>
+<p>In Bultreebank tagset the tag which maps to <code class="highlighter-rouge">NUM</code>, is <code class="highlighter-rouge">Mc#</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -469,8 +470,8 @@ or <a href="AUX">auxiliary verbs</a>).  Particles may encode grammatical
 categories such as negation, mood, tense etc.  Particles are normally
 not inflected, although exceptions may occur.</p>
 
-<p>In the Bultreebank tagset the follwoing tags map to <code>PART</code>: Tn, Ti, Tx, Tm, Tv, Te and Tg.
-(Note that <code>Ta</code> is considered <code>INTJ</code> in the universal tagset. The <code>Tn</code> particle <em>не</em> / <em>ne</em> “no” is also considered <code>INTJ</code>).</p>
+<p>In the Bultreebank tagset the following tags map to <code class="highlighter-rouge">PART</code>: Tn, Ti, Tx, Tm, Tv, Te and Tg.
+(Note that <code class="highlighter-rouge">Ta</code> is considered <code class="highlighter-rouge">INTJ</code> in the universal tagset. The <code class="highlighter-rouge">Tn</code> particle <em>не</em> / <em>ne</em> “no” is also considered <code class="highlighter-rouge">INTJ</code>).</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -502,7 +503,7 @@ pro-adjectives and pro-adverbs are labeled as Pronouns.
 However, for the mapping to the universal tagset, this group was split into
 several parts-of-speech: <a href="DET">determiners</a>, <a href="ADV">adverbs</a>, <a href="PRON">pronouns</a>.</p>
 
-<p>The tags that correspond to <code>Pron</code> are: Pp#, Pde#, Pre#, Pce#, Pie#, Pfe#, Pfy#, Pne#, Piy#.</p>
+<p>The tags that correspond to <code class="highlighter-rouge">Pron</code> are: Pp#, Pde#, Pre#, Pce#, Pie#, Pfe#, Pfy#, Pne#, Piy#.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -529,8 +530,8 @@ several parts-of-speech: <a href="DET">determiners</a>, <a href="ADV">adverbs</a
 <p>A proper noun is a noun (or nominal content word) that is the name (or
 part of the name) of a specific individual, place, or object.</p>
 
-<p>The tag<code>PROPN</code> maps to the following tags in the BulTreeBank scheme: <code>Np#</code>, <code>H#</code>
-The tag <code>Np#</code> refers to proper nouns, while the tag <code>H#</code> handles two cases: 1. family names, which are
+<p>The tag<code class="highlighter-rouge">PROPN</code> maps to the following tags in the BulTreeBank scheme: <code class="highlighter-rouge">Np#</code>, <code class="highlighter-rouge">H#</code>
+The tag <code class="highlighter-rouge">Np#</code> refers to proper nouns, while the tag <code class="highlighter-rouge">H#</code> handles two cases: 1. family names, which are
 mapped here as <a href="PROPN">proper nouns</a>, and 2. name adjectives, which are mapped to <a href="ADJ">adjectives</a>.</p>
 
 <h3 id="examples">Examples</h3>
@@ -582,8 +583,8 @@ status of a (subordinate) clause.</p>
 
 <p>For <em>coordinating conjunctions,</em> see <a href="">CONJ</a>.</p>
 
-<p>In the BulTreeBank annotation scheme, our tag <code>Cs</code> is mapped to the universal one <a href="">SCONJ</a>.
-According to our scheme the multiword subordinate conjunctions are also labeled as <code>Cs</code>.
+<p>In the BulTreeBank annotation scheme, our tag <code class="highlighter-rouge">Cs</code> is mapped to the universal one <a href="">SCONJ</a>.
+According to our scheme the multiword subordinate conjunctions are also labeled as <code class="highlighter-rouge">Cs</code>.
 So, such cases are excluded here and analysed compositionally, as recommended in the universal tagset.</p>
 
 <h3 id="examples">Examples</h3>
@@ -600,7 +601,7 @@ So, such cases are excluded here and analysed compositionally, as recommended in
 <h2><code>SYM</code>: symbol</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>SYM</code>.</p>
+for <code class="highlighter-rouge">SYM</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/SYM.md" target="#">edit SYM</a></p>
 
@@ -618,7 +619,7 @@ expressed inflectionally or using auxilliary verbs or particles.</p>
 
 <p>The BulTreeBank annotation scheme provides the following mappings here: <em>main verbs</em>, <em>copulas</em> and <em>modal verbs</em>.
 Note that modal verbs do not have special labels in our annotation scheme.
-Participles and gerund are considered also <code>VERB</code>. Below the specific labels that map to <code>VERB</code> are given.</p>
+Participles and gerund are considered also <code class="highlighter-rouge">VERB</code>. Below the specific labels that map to <code class="highlighter-rouge">VERB</code> are given.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -644,7 +645,7 @@ Participles and gerund are considered also <code>VERB</code>. Below the specific
 <h2><code>X</code>: other</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>X</code>.</p>
+for <code class="highlighter-rouge">X</code>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-pos/X.md" target="#">edit X</a></p>
 
@@ -660,6 +661,7 @@ for <code>X</code>.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -691,11 +693,40 @@ for <code>X</code>.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -719,6 +750,7 @@ for <code>X</code>.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'bg-overview';
@@ -744,7 +776,7 @@ for <code>X</code>.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/u/feat">u/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/u/feat">u/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-feat/VerbForm.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -44,10 +45,10 @@ forms in some languages actually form a gray zone between verbs and
 other parts of speech (<a href="u-pos/NOUN">nouns</a>, <a href="u-pos/ADJ">adjectives</a>
 and <a href="u-pos/ADV">adverbs</a>). For instance, participles may be either
 classified as verbs or as adjectives, depending on language and
-context. In both cases <code>VerbForm=Part</code> may be used to separate them
+context. In both cases <code class="highlighter-rouge">VerbForm=Part</code> may be used to separate them
 from other verb forms or other types of adjectives.</p>
 
-<h3 id="fin-finite-verb"><code>Fin</code>: finite verb</h3>
+<h3 id="fin-finite-verb"><code class="highlighter-rouge">Fin</code>: finite verb</h3>
 
 <p>Rule of thumb: if it has non-empty <a href="">Mood</a>, it is finite. But beware
 that some tagsets conflate verb forms and moods into one feature.</p>
@@ -58,7 +59,7 @@ that some tagsets conflate verb forms and moods into one feature.</p>
   <li>[en] <em>I <b>do</b>, he <b>does</b></em></li>
 </ul>
 
-<h3 id="inf-infinitive"><code>Inf</code>: infinitive</h3>
+<h3 id="inf-infinitive"><code class="highlighter-rouge">Inf</code>: infinitive</h3>
 
 <p>Infinitive is the citation form of verbs in many languages. Unlike in
 English, it often has morphological form that is distinct from the
@@ -74,7 +75,7 @@ used as such (similar to the gerund in English).</p>
   <li>[de] <em>ich muss <b>gehen</b></em> “I must <b>go</b>”</li>
 </ul>
 
-<h3 id="sup-supine"><code>Sup</code>: supine</h3>
+<h3 id="sup-supine"><code class="highlighter-rouge">Sup</code>: supine</h3>
 
 <p>Supine is a rare verb form. It survives in some Slavic languages
 (Slovenian) and is used instead of infinitive as the argument of
@@ -93,7 +94,7 @@ after <em>vara</em> (to be):</p>
   <li>Past participle plural: (The) apples are eaten = <em>Äpplena är ätna</em></li>
 </ul>
 
-<h3 id="part-participle"><code>Part</code>: participle</h3>
+<h3 id="part-participle"><code class="highlighter-rouge">Part</code>: participle</h3>
 
 <p>Participle is a non-finite verb form that shares properties of verbs
 and adjectives. Its usage varies across languages. It may be used to
@@ -111,7 +112,7 @@ participles (Hindi) etc.</p>
 <b>forseen</b> it</em>; <em>I will be <b>driving</b> home</em>.</li>
 </ul>
 
-<h3 id="trans-transgressive"><code>Trans</code>: transgressive</h3>
+<h3 id="trans-transgressive"><code class="highlighter-rouge">Trans</code>: transgressive</h3>
 
 <p>The transgressive, also called adverbial participle, is a non-finite
 verb form that shares properties of verbs and adverbs. It appears
@@ -126,7 +127,7 @@ stared at me <b>while gripping</b> their guns firmly”;
 prepared</b> the dinner, she called her family to the table”</li>
 </ul>
 
-<h3 id="ger-gerund"><code>Ger</code>: gerund</h3>
+<h3 id="ger-gerund"><code class="highlighter-rouge">Ger</code>: gerund</h3>
 
 <p>Gerund is a non-finite verb form that shares properties of verbs and
 nouns. In English it shares the morphological form with present
@@ -201,6 +202,7 @@ VerbForm in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -232,11 +234,40 @@ VerbForm in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -260,6 +291,7 @@ VerbForm in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-feat';
@@ -285,7 +317,7 @@ VerbForm in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

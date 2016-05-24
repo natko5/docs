@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-fi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -99,7 +100,7 @@
 properties or attributes.</p>
 
 <p>UD Finnish annotation follows VISK in assigning pro-adjectives the
-<code>ADJ</code> tag (e.g. <em>tämä/PRON</em> “this” → <em>tällainen/ADJ</em> “like this”; see
+<code class="highlighter-rouge">ADJ</code> tag (e.g. <em>tämä/PRON</em> “this” → <em>tällainen/ADJ</em> “like this”; see
 e.g. <a href="http://scripta.kotus.fi/visk/sisallys.php?p=610">VISK § 610</a>; in
 Finnish).</p>
 
@@ -213,7 +214,7 @@ expresses a semantic relationship between them.</p>
 
 <p>In correlative (paired) coordinating conjuctions such as <em>sekä - että</em>
 “both - and” and <em>joko - tai</em> “either - or”, both words are annotated
-<code>CONJ</code> (see also <a href="">cc:preconj</a>).</p>
+<code class="highlighter-rouge">CONJ</code> (see also <a href="">cc:preconj</a>).</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -260,7 +261,7 @@ are used similarly to articles, especially in spoken language.</p>
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p>No <code>DET</code> tag (or related) is annotated in TDT, and <code>DET</code> is
+<p>No <code class="highlighter-rouge">DET</code> tag (or related) is annotated in TDT, and <code class="highlighter-rouge">DET</code> is
 not used in the current version of the UD Finnish corpus.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-pos/DET.md" target="#">edit DET</a></p>
@@ -292,7 +293,7 @@ part of an exclamation.</p>
 <p>Nouns inflect for <a href="Case">case</a> and <a href="Number">number</a> and denote things
 such as people, places, things, animals and ideas.</p>
 
-<p>Proper nouns are not annotated as <code>NOUN</code> but rather <a href="">PROPN</a>.</p>
+<p>Proper nouns are not annotated as <code class="highlighter-rouge">NOUN</code> but rather <a href="">PROPN</a>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -346,6 +347,15 @@ words that have been termed “particles” in some descriptions of Finnish.</p>
   <li><a href="http://scripta.kotus.fi/visk/sisallys.php?p=792">http://scripta.kotus.fi/visk/sisallys.php?p=792</a> (in Finnish)</li>
   <li><a href="http://scripta.kotus.fi/visk/sisallys.php?p=793">http://scripta.kotus.fi/visk/sisallys.php?p=793</a> (in Finnish)</li>
 </ul>
+
+<h2 id="diffs">Diffs</h2>
+
+<h3 id="finntreebank">FinnTreeBank</h3>
+
+<p>The FI_FTB-corpus follows the general UD documentation in recognizing
+the particle as a part-of-speech category. The specification between PART,
+ADV and ADP has been carried out as in
+<a href="http://scripta.kotus.fi/visk/sisallys.php?p=792">ISK § 792</a> (in Finnish).</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-pos/PART.md" target="#">edit PART</a></p>
 
@@ -427,7 +437,7 @@ used to delimit linguistic units in printed text.</p>
 by making one of them a constituent of the other.</p>
 
 <p>Both the Finnish complementizer <em>että</em> and the comparative conjunction
-<em>kuin</em> are tagged <code>SCONJ</code>.</p>
+<em>kuin</em> are tagged <code class="highlighter-rouge">SCONJ</code>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -458,7 +468,7 @@ form, function, or both.</p>
   <li><em>$, %, §, ©</em></li>
   <li><em>+, −, ×, ÷, =, &lt;, &gt;</em></li>
   <li>:), ♥‿♥, 😝</li>
-  <li><em>john.doe@universal.org, http://universaldependencies.github.io/docs/, 1-800-COMPANY</em></li>
+  <li><em>john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY</em></li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-pos/SYM.md" target="#">edit SYM</a></p>
@@ -471,7 +481,7 @@ form, function, or both.</p>
 minimal predicate in a clause, and govern the number and types of
 other constituents which may occur in the clause.</p>
 
-<p>Auxiliary and modal verbs are not annotated as <code>VERB</code> but rather
+<p>Auxiliary and modal verbs are not annotated as <code class="highlighter-rouge">VERB</code> but rather
 <a href="">AUX</a>.</p>
 
 <h4 id="examples">Examples</h4>
@@ -492,10 +502,10 @@ other constituents which may occur in the clause.</p>
 <p><a id="al-fi-pos/X" class="al-dest"></a></p>
 <h2><code>X</code>: other</h2>
 
-<p>The tag <code>X</code> is used for words that for some reason cannot be assigned
+<p>The tag <code class="highlighter-rouge">X</code> is used for words that for some reason cannot be assigned
 a real part-of-speech category.</p>
 
-<p>Foreign words appearing inside native text are tagged <code>X</code> (see also
+<p>Foreign words appearing inside native text are tagged <code class="highlighter-rouge">X</code> (see also
 <a href="">Foreign</a>).</p>
 
 <h4 id="examples">Examples</h4>
@@ -519,6 +529,7 @@ a real part-of-speech category.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -550,11 +561,40 @@ a real part-of-speech category.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -578,6 +618,7 @@ a real part-of-speech category.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'fi-overview';
@@ -603,7 +644,7 @@ a real part-of-speech category.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

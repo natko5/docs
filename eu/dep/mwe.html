@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/mwe.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,45 @@
 
           <h2><code>mwe</code>: multi-word expression</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>mwe</code>.</p>
+<p><code class="highlighter-rouge">mwe</code>, the multi-word expression (modifier) relation, is one of the three relations (compound, mwe, name) for compounding. It is used for certain fixed grammaticized expressions that behave like function words or short adverbials.</p>
+
+<p><em>Eskolatik irten ondoren, beste hainbat gauza ikasten dituzte, <strong>besteak beste</strong> pianoa eta artea .</em></p>
+
+<p><em>After leaving school, he/she learns some other things, <strong>among others</strong> piano and art .</em></p>
+
+<pre><code class="language-sdparse">Eskolatik irten ondoren, beste hainbat gauza ikasten dituzte, besteak beste pianoa eta artea . \n After leaving school, he/she also learns some other things, among others piano and art .
+
+nmod(irten-2, Eskolatik-1)
+advcl(ikasten-7, irten-2)
+advcl(irten-2, ondoren-3)
+det(hainbat-5, beste-4)
+det(gauza-6, hainbat-5)
+dobj(ikasten-7, gauza-6)
+aux(ikasten-7, dituzte-8)
+advmod(besteak-9, ikasten-7)
+mwe(besteak-9, beste-10)
+conj(beste-10, pianoa-11)
+cc(pianoa-11, eta-12)
+conj(pianoa-11, artea-13)
+punct(besteak-9, .-14)
+</code></pre>
+
+<p><em>Hakkinen baino sendoago ari da, <strong>argi eta garbi</strong> .</em></p>
+
+<p><em>He/she is stronger than Hakkinen, <strong>as clear as water</strong> .</em></p>
+
+<pre><code class="language-sdparse">Hakkinen baino sendoago ari da, argi eta garbi . \n Hakkinen than stronger is, as clear as water .
+
+nsubj(baino-2, Hakkinen-1)
+advmod(da-5, baino-2)
+aux(da-5, ari-4)
+cop(sendoago-3, da-5)
+advmod(da-5, argi-6)
+mwe(argi-6, eta-7)
+mwe(argi-6, garbi-8)
+punct(sendoago-3, .-9)
+</code></pre>
+
 
 
 <!-- "automatic stats" -->
@@ -56,12 +94,12 @@ for <code>mwe</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>290 nodes (0%) are attached to their parents as <code>mwe</code>.</p>
+<p>290 nodes (0%) are attached to their parents as <code class="highlighter-rouge">mwe</code>.</p>
 
-<p>289 instances of <code>mwe</code> (100%) are left-to-right (parent precedes child).
+<p>289 instances of <code class="highlighter-rouge">mwe</code> (100%) are left-to-right (parent precedes child).
 Average distance between parent and child is 1.12068965517241.</p>
 
-<p>The following 12 pairs of parts of speech are connected with <code>mwe</code>: <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (91; 31% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/CONJ</a> (79; 27% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/CONJ</a> (40; 14% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/DET</a> (18; 6% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (14; 5% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADJ</a> (13; 4% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/DET</a> (13; 4% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (9; 3% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/CONJ</a> (6; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (3; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (3; 1% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (1; 0% instances).</p>
+<p>The following 12 pairs of parts of speech are connected with <code class="highlighter-rouge">mwe</code>: <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (91; 31% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/CONJ</a> (79; 27% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/CONJ</a> (40; 14% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/DET</a> (18; 6% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (14; 5% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADJ</a> (13; 4% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/DET</a> (13; 4% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (9; 3% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/CONJ</a> (6; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (3; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (3; 1% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
@@ -171,6 +209,7 @@ mwe in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -202,11 +241,40 @@ mwe in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -230,6 +298,7 @@ mwe in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -255,7 +324,7 @@ mwe in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

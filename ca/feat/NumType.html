@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ca">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ca/feat">ca/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ca">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ca/feat">ca/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ca-feat/NumType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,11 +40,84 @@
           <h2><code>NumType</code>: numeral type</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>NumType</code>.</p>
+for <code class="highlighter-rouge">NumType</code>.</p>
 
 
 <!-- "automatic stats" -->
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udcatalan">Treebank Statistics (UD_Catalan)</h2>
+
+<p>This feature is universal.
+It occurs with 3 different values: <code class="highlighter-rouge">Card</code>, <code class="highlighter-rouge">Frac</code>, <code class="highlighter-rouge">Ord</code>.</p>
+
+<p>7583 tokens (1%) have a non-empty value of <code class="highlighter-rouge">NumType</code>.
+795 types (2%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumType</code>.
+742 lemmas (3%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumType</code>.
+The feature is used with 3 part-of-speech tags: <a href="">ca-pos/NUM</a> (5208; 1% instances), <a href="">ca-pos/ADJ</a> (1582; 0% instances), <a href="">ca-pos/SYM</a> (793; 0% instances).</p>
+
+<h3 id="num"><code class="highlighter-rouge">NUM</code></h3>
+
+<p>5208 <a href="">ca-pos/NUM</a> tokens (56% of all <code class="highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NUM</code> and <code class="highlighter-rouge">NumType</code> co-occurred: <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (3839; 74%), <tt><a href="NumForm.html">NumForm</a>=EMPTY</tt> (3179; 61%).</p>
+
+<p><code class="highlighter-rouge">NUM</code> tokens may have the following values of <code class="highlighter-rouge">NumType</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Card</code> (5194; 100% of non-empty <code class="highlighter-rouge">NumType</code>): <em>dos, tres, cent, dues, quatre, un, cinc, nou, sis, una</em></li>
+  <li><code class="highlighter-rouge">Frac</code> (14; 0% of non-empty <code class="highlighter-rouge">NumType</code>): <em>cada, 1,1, 10, 15, 161, 17,8/100.000, 26,5/100.000, 3,9, 37,45, 57,9/100.000</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (4053): <em>10, 15, 20, 30, 5, 4, 12, 50, 25, 14</em></li>
+</ul>
+
+<p><code class="highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">NUM</code>. 100% lemmas (462) occur only with one value of <code class="highlighter-rouge">NumType</code>.</p>
+
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
+
+<p>1582 <a href="">ca-pos/ADJ</a> tokens (5% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">NumType</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=EMPTY</tt> (1582; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1245; 79%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (877; 55%).</p>
+
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">NumType</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Ord</code> (1582; 100% of non-empty <code class="highlighter-rouge">NumType</code>): <em>primer, primera, últims, segona, últim, segon, primers, última, tercer, darrers</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (28463): <em>passat, gran, nou, general, nova, catalana, espanyol, grans, baix, noves</em></li>
+</ul>
+
+<p><code class="highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 100% lemmas (28) occur only with one value of <code class="highlighter-rouge">NumType</code>.</p>
+
+<h3 id="sym"><code class="highlighter-rouge">SYM</code></h3>
+
+<p>793 <a href="">ca-pos/SYM</a> tokens (17% of all <code class="highlighter-rouge">SYM</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumType</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">SYM</code> and <code class="highlighter-rouge">NumType</code> co-occurred: <tt><a href="NumForm.html">NumForm</a>=Digit</tt> (793; 100%).</p>
+
+<p><code class="highlighter-rouge">SYM</code> tokens may have the following values of <code class="highlighter-rouge">NumType</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Frac</code> (793; 100% of non-empty <code class="highlighter-rouge">NumType</code>): <em>%, 50%, 10%, 30%, 5%, 25%, 1%, 20%, 40%, 2%</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (3845): <em>’, /, %, 10%, 2%, 40%, -, -3%, 1%, 10,2%</em></li>
+</ul>
+
+<p><code class="highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">SYM</code>. 100% lemmas (264) occur only with one value of <code class="highlighter-rouge">NumType</code>.</p>
+
+<h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code class="highlighter-rouge">NumType</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">NumType</code>:
+<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (415; 97%),
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (63; 80%),
+<tt>SYM –[<a href="../dep/conj.html">conj</a>]–&gt; SYM</tt> (23; 100%),
+<tt>SYM –[<a href="../dep/appos.html">appos</a>]–&gt; SYM</tt> (6; 86%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (6; 67%),
+<tt>SYM –[<a href="../dep/advmod.html">advmod</a>]–&gt; SYM</tt> (3; 100%),
+<tt>SYM –[<a href="../dep/advcl.html">advcl</a>]–&gt; SYM</tt> (1; 100%).</p>
 
 
 
@@ -102,6 +176,7 @@ NumType in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -133,11 +208,40 @@ NumType in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -161,6 +265,7 @@ NumType in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ca-feat';
@@ -186,7 +291,7 @@ NumType in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

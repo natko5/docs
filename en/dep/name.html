@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-en">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/en/dep">en/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/en/dep">en/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/name.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,22 +39,22 @@
 
           <h2><code>name</code>: name</h2>
 
-<p><code>name</code> is one of the three relations for compounding in UD (together
+<p><code class="highlighter-rouge">name</code> is one of the three relations for compounding in UD (together
 with <a href="">compound</a> and <a href="">mwe</a>).
 It is used for proper nouns constituted of multiple nominal
-elements. For example, <code>name</code> would be used between the words of
+elements. For example, <code class="highlighter-rouge">name</code> would be used between the words of
 <em>Hillary Rodham Clinton, New York,</em> or <em>Carl XVI Gustaf</em> but not to
 replace the usual relations in a phrasal or clausal name like <em>The
 king of Sweden</em> or the novels <em>The Lord of the Rings</em> and <em>Captured By
 Aliens.</em>
-Words joined by <code>name</code> should all be part of a minimal noun phrase;
+Words joined by <code class="highlighter-rouge">name</code> should all be part of a minimal noun phrase;
 otherwise regular syntactic relations should be used.  This is
 basically similar to the treatment of noun compounds with
 <a href="">compound</a>, except that in many cases parts of the name may be
 another nominal element such as an adjective <em>(United Airlines).</em></p>
 
 <p>In general, names are annotated in a flat, head-initial structure, in
-which all words in the name modify the first one using the <code>name</code>
+which all words in the name modify the first one using the <code class="highlighter-rouge">name</code>
 label.</p>
 
 <pre><code class="language-sdparse">Carl XVI Gustaf
@@ -114,12 +115,12 @@ nmod(Río-1, Plata-4)
 
 <p>This relation is universal.</p>
 
-<p>1631 nodes (1%) are attached to their parents as <code>name</code>.</p>
+<p>1631 nodes (1%) are attached to their parents as <code class="highlighter-rouge">name</code>.</p>
 
-<p>1621 instances of <code>name</code> (99%) are right-to-left (child precedes parent).
+<p>1621 instances of <code class="highlighter-rouge">name</code> (99%) are right-to-left (child precedes parent).
 Average distance between parent and child is 1.24586143470264.</p>
 
-<p>The following 6 pairs of parts of speech are connected with <code>name</code>: <a href="">en-pos/PROPN</a>-<a href="">en-pos/PROPN</a> (1536; 94% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PROPN</a> (83; 5% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (5; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NOUN</a> (5; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PROPN</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (1; 0% instances).</p>
+<p>The following 6 pairs of parts of speech are connected with <code class="highlighter-rouge">name</code>: <a href="">en-pos/PROPN</a>-<a href="">en-pos/PROPN</a> (1536; 94% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PROPN</a> (83; 5% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (5; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NOUN</a> (5; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PROPN</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 1	bgColor:blue
 # visual-style 1	fgColor:white
@@ -169,6 +170,96 @@ Average distance between parent and child is 1.24586143470264.</p>
 6	:	:	PUNCT	:	_	2	punct	_	_
 7	Doug	Doug	PROPN	NNP	Number=Sing	8	name	_	_
 8	Sewell	Sewell	PROPN	NNP	Number=Sing	5	appos	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udenglish-esl">Treebank Statistics (UD_English-ESL)</h2>
+
+<p>This relation is universal.</p>
+
+<p>167 nodes (0%) are attached to their parents as <code class="highlighter-rouge">name</code>.</p>
+
+<p>167 instances of <code class="highlighter-rouge">name</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.01197604790419.</p>
+
+<p>The following 1 pairs of parts of speech are connected with <code class="highlighter-rouge">name</code>: <a href="">en-pos/PROPN</a>-<a href="">en-pos/PROPN</a> (167; 100% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 5 name	color:blue
+1	_	_	VERB	VB	_	0	root	_	_
+2	_	_	PRON	PRP	_	1	dobj	_	_
+3	_	_	PROPN	NNP	_	4	compound	_	_
+4	_	_	PROPN	NNP	_	1	vocative	_	_
+5	_	_	PROPN	NNP	_	4	name	_	_
+6	_	_	PUNCT	,	_	1	punct	_	_
+7	_	_	CONJ	CC	_	1	cc	_	_
+8	_	_	INTJ	UH	_	9	discourse	_	_
+9	_	_	VERB	VB	_	1	conj	_	_
+10	_	_	PRON	PRP	_	9	dobj	_	_
+11	_	_	ADV	RB	_	9	advmod	_	_
+12	_	_	PUNCT	.	_	1	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udenglish-lines">Treebank Statistics (UD_English-LinES)</h2>
+
+<p>This relation is universal.</p>
+
+<p>644 nodes (1%) are attached to their parents as <code class="highlighter-rouge">name</code>.</p>
+
+<p>594 instances of <code class="highlighter-rouge">name</code> (92%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.12732919254658.</p>
+
+<p>The following 9 pairs of parts of speech are connected with <code class="highlighter-rouge">name</code>: <a href="">en-pos/PROPN</a>-<a href="">en-pos/PROPN</a> (356; 55% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NOUN</a> (209; 32% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PROPN</a> (48; 7% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/PROPN</a> (11; 2% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADJ</a> (5; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/NOUN</a> (5; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADJ</a> (5; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NUM</a> (4; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/VERB</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 3 name	color:blue
+1	About	_	ADP	_	_	5	case	_	_
+2	ANSI	_	PROPN	SG	_	5	name	_	_
+3	SQL	_	PROPN	SG	_	2	name	_	_
+4	query	_	NOUN	SG	_	5	compound	_	_
+5	mode	_	NOUN	_	_	0	root	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 5 name	color:blue
+1	Access	_	PROPN	SG	_	2	nsubj	_	_
+2	supports	_	VERB	PRES	_	0	root	_	_
+3	the	_	DET	DEF	_	6	det	_	_
+4	XML	_	PROPN	SG	_	6	compound	_	_
+5	Schema	_	NOUN	SG	_	4	name	_	_
+6	standard	_	NOUN	SG	_	2	dobj	_	_
+7	(	_	PUNCT	LeftParenthesis	_	8	punct	_	_
+8	XSD	_	X	NOM	_	6	amod	_	_
+9	)	_	PUNCT	RightParenthesis	_	8	punct	_	_
+10	.	_	PUNCT	Period	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 2 name	color:blue
+1	About	_	ADP	_	_	5	case	_	_
+2	ANSI	_	PROPN	SG	_	5	name	_	_
+3	SQL	_	PROPN	SG	_	2	name	_	_
+4	query	_	NOUN	SG	_	5	compound	_	_
+5	mode	_	NOUN	_	_	0	root	_	_
 
 </code></pre>
 
@@ -229,6 +320,7 @@ name in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -260,11 +352,40 @@ name in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -288,6 +409,7 @@ name in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'en-dep';
@@ -313,7 +435,7 @@ name in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

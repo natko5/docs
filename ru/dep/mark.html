@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>mark</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ru/dep">ru/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/mark.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>mark</code>: marker</h2>
+
+<p>A marker is the subordinating conjunction introducing a finite clause subordinate to another clause.
+The mark is a dependent of the subordinate clause head.</p>
+
+<pre><code class="language-sdparse">Я не знал , что ты говоришь по-немецки . \n I didn't know , that you speak German .
+mark(говоришь, что)
+mark(speak, that)
+</code></pre>
+
+<pre><code class="language-sdparse">Мы отправим товар , как только на наш счет поступят деньги . \n We will-dispatch goods , as soon-as at our account arrive money .
+mark(поступят, как)
+mwe(как, только)
+mark(arrive, as)
+mwe(as, soon-as)
+</code></pre>
+
+<p>Note that the subordinating conjunction should not be confused with relative pronouns and adverbs.
+These fill a valency slot in the frame of the subordinate predicate,
+and are labeled according to their role in the frame, they are not <code class="highlighter-rouge">mark</code>:</p>
+
+<pre><code class="language-sdparse">Я бы хотел узнать , когда нам поступят деньги на счет . \n I would like to-know , when us arrive money at account .
+advmod(поступят, когда)
+advmod(arrive, when)
+</code></pre>
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udrussian">Treebank Statistics (UD_Russian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>639 nodes (1%) are attached to their parents as <code class="highlighter-rouge">mark</code>.</p>
+
+<p>635 instances of <code class="highlighter-rouge">mark</code> (99%) are right-to-left (child precedes parent).
+Average distance between parent and child is 4.06885758998435.</p>
+
+<p>The following 13 pairs of parts of speech are connected with <code class="highlighter-rouge">mark</code>: <a href="">ru-pos/VERB</a>-<a href="">ru-pos/SCONJ</a> (509; 80% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/SCONJ</a> (53; 8% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/SCONJ</a> (50; 8% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/DET</a> (10; 2% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/SCONJ</a> (7; 1% instances), <a href="">ru-pos/ADP</a>-<a href="">ru-pos/SCONJ</a> (3; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/DET</a> (1; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/PRON</a> (1; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/SCONJ</a> (1; 0% instances), <a href="">ru-pos/PUNCT</a>-<a href="">ru-pos/SCONJ</a> (1; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/ADJ</a> (1; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/PRON</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 6 mark	color:blue
+1	Голова	_	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	nsubj	_	_
+2	сверху	_	ADV	RB	_	4	advmod	_	_
+3	не	_	PART	NEG	_	4	neg	_	_
+4	видна	_	ADJ	JJH	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+5	,	_	PUNCT	,	_	8	punct	_	_
+6	так	_	SCONJ	RB	_	8	mark	_	_
+7	как	_	ADV	WRB	_	6	mwe	_	_
+8	прикрыта	_	VERB	VBNH	Animacy=Inan|Aspect=Perf|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|Voice=Pass	4	advcl	_	_
+9	переднеспинкой	_	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	8	iobj	_	_
+10	.	_	PUNCT	.	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 mark	color:blue
+1	Возможно	_	ADV	RB	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	_
+2	,	_	PUNCT	,	_	1	punct	_	_
+3	что	_	SCONJ	IN	_	4	mark	_	_
+4	причиной	_	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	1	ccomp	_	_
+5	аварии	_	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+6	стало	_	VERB	VBC	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past	4	cop	_	_
+7	недомогание	_	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
+8	немца	_	NOUN	NN	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	_
+9	.	_	PUNCT	.	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 4 mark	color:blue
+1	Он	_	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_
+2	утверждал	_	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past	0	root	_	_
+3	,	_	PUNCT	,	_	2	punct	_	_
+4	что	_	SCONJ	IN	_	9	mark	_	_
+5	по	_	ADP	IN	_	7	case	_	_
+6	своей	_	PRON	PRP$	Case=Dat|Reflex=Yes	7	det	_	_
+7	природе	_	NOUN	NN	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	9	nmod	_	_
+8	вирус	_	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+9	жидкий	_	ADJ	JJL	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	ccomp	_	_
+10	.	_	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udrussian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
+
+<p>This relation is universal.</p>
+
+<p>14440 nodes (1%) are attached to their parents as <code class="highlighter-rouge">mark</code>.</p>
+
+<p>14415 instances of <code class="highlighter-rouge">mark</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 4.04009695290859.</p>
+
+<p>The following 29 pairs of parts of speech are connected with <code class="highlighter-rouge">mark</code>: <a href="">ru-pos/VERB</a>-<a href="">ru-pos/SCONJ</a> (10079; 70% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/CONJ</a> (1236; 9% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/SCONJ</a> (1190; 8% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/SCONJ</a> (1009; 7% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/SCONJ</a> (315; 2% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/CONJ</a> (158; 1% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/ADP</a> (142; 1% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/CONJ</a> (110; 1% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/CONJ</a> (62; 0% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/SCONJ</a> (44; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/ADV</a> (26; 0% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/CONJ</a> (14; 0% instances), <a href="">ru-pos/PART</a>-<a href="">ru-pos/SCONJ</a> (11; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/NOUN</a> (11; 0% instances), <a href="">ru-pos/CONJ</a>-<a href="">ru-pos/SCONJ</a> (8; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/SCONJ</a> (7; 0% instances), <a href="">ru-pos/SCONJ</a>-<a href="">ru-pos/SCONJ</a> (3; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADV</a> (2; 0% instances), <a href="">ru-pos/SYM</a>-<a href="">ru-pos/SCONJ</a> (2; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/VERB</a> (2; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/ADV</a> (1; 0% instances), <a href="">ru-pos/CONJ</a>-<a href="">ru-pos/CONJ</a> (1; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/VERB</a> (1; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/CONJ</a> (1; 0% instances), <a href="">ru-pos/PART</a>-<a href="">ru-pos/CONJ</a> (1; 0% instances), <a href="">ru-pos/SCONJ</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/PART</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 6 mark	color:blue
+1	Ее	ЕЕ	DET	_	_	2	det	_	_
+2	уход	УХОД	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	_
+3	под	ПОД	ADP	_	_	4	case	_	_
+4	воду	ВОДА	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	2	nmod	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	как	КАК	SCONJ	_	_	7	mark	_	_
+7	полагал	ПОЛАГАТЬ	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	10	parataxis	_	_
+8	Жиров	ЖИРОВ	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	происходил	ПРОИСХОДИТЬ	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	в	В	ADP	_	_	13	case	_	_
+12	два	ДВА	NUM	_	Animacy=Inan|Case=Acc|Gender=Masc	13	nummod	_	_
+13	этапа	ЭТАП	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	nmod	_	_
+14	.	.	PUNCT	.	_	10	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 1 mark	color:blue
+1	Как_только	КАК_ТОЛЬКО	CONJ	_	_	4	mark	_	_
+2	фильм	ФИЛЬМ	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nsubjpass	_	_
+3	был	БЫТЬ	AUX	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	4	auxpass	_	_
+4	снят	СНИМАТЬ	VERB	_	Aspect=Perf|Gender=Masc|Number=Sing|Tense=Past|Variant=Brev|VerbForm=Part|Voice=Pass	9	advcl	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	я	Я	PRON	_	_	9	nsubj	_	_
+7	тут	ТУТ	ADV	_	Degree=Pos	9	advmod	_	_
+8	же	ЖЕ	PART	_	_	7	advmod	_	_
+9	убрал	УБИРАТЬ	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	свою	СВОЙ	DET	_	Case=Acc|Gender=Fem|Number=Sing	11	det	_	_
+11	страничку	СТРАНИЧКА	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	9	dobj	_	_
+12	.	.	PUNCT	.	_	9	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 4 mark	color:blue
+1	Только	ТОЛЬКО	PART	_	_	2	advmod	_	_
+2	кажется	КАЗАТЬСЯ	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	что	ЧТО	SCONJ	_	_	7	mark	_	_
+5	они	ОНИ	PRON	_	_	7	nsubj	_	_
+6	о	О	ADP	_	_	7	case	_	_
+7	других	ДРУГОЙ	ADJ	_	Case=Loc|Degree=Pos|Number=Plur	2	advcl	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	эти	ЭТОТ	DET	_	Case=Nom|Number=Plur	10	det	_	_
+10	здания	ЗДАНИЕ	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	13	nsubj	_	_
+11	-	-	PUNCT	-	_	10	punct	_	_
+12	о	О	ADP	_	_	13	case	_	_
+13	себе	СЕБЯ	PRON	_	_	2	conj	_	_
+14	.	.	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+mark in other languages:
+
+[<a href="../../bg/dep/mark.html">bg</a>]
+
+[<a href="../../cs/dep/mark.html">cs</a>]
+
+[<a href="../../de/dep/mark.html">de</a>]
+
+[<a href="../../el/dep/mark.html">el</a>]
+
+[<a href="../../en/dep/mark.html">en</a>]
+
+[<a href="../../es/dep/mark.html">es</a>]
+
+[<a href="../../eu/dep/mark.html">eu</a>]
+
+[<a href="../../fa/dep/mark.html">fa</a>]
+
+[<a href="../../fi/dep/mark.html">fi</a>]
+
+[<a href="../../fr/dep/mark.html">fr</a>]
+
+[<a href="../../ga/dep/mark.html">ga</a>]
+
+[<a href="../../he/dep/mark.html">he</a>]
+
+[<a href="../../hu/dep/mark.html">hu</a>]
+
+[<a href="../../it/dep/mark.html">it</a>]
+
+[<a href="../../ja/dep/mark.html">ja</a>]
+
+[<a href="../../ko/dep/mark.html">ko</a>]
+
+[<a href="../../sv/dep/mark.html">sv</a>]
+
+[<a href="../../u/dep/mark.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'ru-dep';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

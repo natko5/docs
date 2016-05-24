@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/cs/dep">cs/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/dep">cs/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-dep/name.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>name</code>: personal name</h2>
 
-<p><code>name</code> is one of the relations for compounding in UD.
+<p><code class="highlighter-rouge">name</code> is one of the relations for compounding in UD.
 In Czech it is used to join the first (or middle) and the last name of a person.</p>
 
 <p>The leftmost name is always the head and the other name(s) are attached to it.
@@ -72,12 +73,12 @@ amod(Krumlov-16, Český-15)
 
 <p>This relation is universal.</p>
 
-<p>13658 nodes (1%) are attached to their parents as <code>name</code>.</p>
+<p>13655 nodes (1%) are attached to their parents as <code class="highlighter-rouge">name</code>.</p>
 
-<p>13658 instances of <code>name</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.27039097964563.</p>
+<p>13655 instances of <code class="highlighter-rouge">name</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.26993775173929.</p>
 
-<p>The following 8 pairs of parts of speech are connected with <code>name</code>: <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/PROPN</a> (13557; 99% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/ADJ</a> (52; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/PROPN</a> (37; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/ADJ</a> (4; 0% instances), <a href="">cs-pos/NOUN</a>-<a href="">cs-pos/PROPN</a> (4; 0% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/ADP</a> (2; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/ADP</a> (1; 0% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/PART</a> (1; 0% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code class="highlighter-rouge">name</code>: <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/PROPN</a> (13558; 99% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/ADJ</a> (52; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/PROPN</a> (37; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/ADJ</a> (4; 0% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/ADP</a> (2; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/ADP</a> (1; 0% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/PART</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
@@ -99,7 +100,7 @@ Average distance between parent and child is 1.27039097964563.</p>
 # visual-style 3	fgColor:white
 # visual-style 3 4 name	color:blue
 1	Foto	foto	NOUN	NNNS1-----A----	Case=Nom|Gender=Neut|Negative=Pos|Number=Sing	0	root	_	SpaceAfter=No
-2	:	:	PUNCT	Z:-------------	_	6	punct	_	_
+2	:	:	PUNCT	Z:-------------	_	3	punct	_	_
 3	Jan	Jan	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Negative=Pos|Number=Sing	1	appos	_	_
 4	Novotný	Novotný	ADJ	AAMS1----1A----	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|NameType=Sur|Negative=Pos|Number=Sing	3	name	_	SpaceAfter=No
 5	,	,	PUNCT	Z:-------------	_	6	punct	_	_
@@ -128,6 +129,80 @@ Average distance between parent and child is 1.27039097964563.</p>
 8	Formanova	Formanův	ADJ	AUMS2M---------	Animacy=Anim|Case=Gen|Gender=Masc|Gender[psor]=Masc|NameType=Sur|Number=Sing|Poss=Yes	7	nmod	_	LDeriv=Forman
 9	Amadea	Amadeus	PROPN	NNMS2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Giv|Negative=Pos|Number=Sing	8	name	_	SpaceAfter=No
 10	.	.	PUNCT	Z:-------------	_	2	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+
+<p>This relation is universal.</p>
+
+<p>850 nodes (0%) are attached to their parents as <code class="highlighter-rouge">name</code>.</p>
+
+<p>850 instances of <code class="highlighter-rouge">name</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.14235294117647.</p>
+
+<p>The following 3 pairs of parts of speech are connected with <code class="highlighter-rouge">name</code>: <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/PROPN</a> (845; 99% instances), <a href="">cs-pos/PROPN</a>-<a href="">cs-pos/ADJ</a> (3; 0% instances), <a href="">cs-pos/ADJ</a>-<a href="">cs-pos/PROPN</a> (2; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 2 name	color:blue
+1	Václav	Václav	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Giv|Negative=Pos|Number=Sing	0	root	_	_
+2	Koranda	Koranda	PROPN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|NameType=Sur|Negative=Pos|Number=Sing	1	name	_	SpaceAfter=No
+3	,	,	PUNCT	Z:-------------	_	5	punct	_	_
+4	ekonomický	ekonomický	ADJ	AAMS1----1A----	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Negative=Pos|Number=Sing	5	amod	_	_
+5	náměstek	náměstek	NOUN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Negative=Pos|Number=Sing	1	appos	_	_
+6	podnikového	podnikový	ADJ	AAMS2----1A----	Animacy=Anim|Case=Gen|Degree=Pos|Gender=Masc|Negative=Pos|Number=Sing	7	amod	_	_
+7	ředitele	ředitel	NOUN	NNMS2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|Negative=Pos|Number=Sing	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Z:-------------	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 7 name	color:blue
+1	Slavnou	slavný	ADJ	AAFS4----1A----	Case=Acc|Degree=Pos|Gender=Fem|Negative=Pos|Number=Sing	2	amod	_	_
+2	lvici	lvice	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Negative=Pos|Number=Sing	8	dobj	_	_
+3	Elsu	Elsa	PROPN	NNFS4-----A----	Case=Acc|Gender=Fem|NameType=Giv|Negative=Pos|Number=Sing	2	nmod	_	_
+4	George	George	PROPN	NNMS2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|NameType=Giv|Negative=Pos|Number=Sing	7	nmod	_	_
+5	a	a	CONJ	J^-------------	_	4	cc	_	LId=a-1
+6	Joy	Joy	PROPN	NNFXX-----A----	Gender=Fem|NameType=Giv,Sur|Negative=Pos	4	conj	_	_
+7	Adamsonových	Adamsonův	ADJ	AUMP2M---------	Animacy=Anim|Case=Gen|Gender=Masc|Gender[psor]=Masc|NameType=Sur|Number=Plur|Poss=Yes	3	name	_	LDeriv=Adamson
+8	zahubil	zahubit	VERB	VpYS---XR-AA---	Aspect=Perf|Gender=Masc|Negative=Pos|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+9	krevní	krevní	ADJ	AAMS1----1A----	Animacy=Anim|Case=Nom|Degree=Pos|Gender=Masc|Negative=Pos|Number=Sing	10	amod	_	_
+10	parasit	parazit	NOUN	NNMS1-----A----	Animacy=Anim|Case=Nom|Gender=Masc|Negative=Pos|Number=Sing	8	nsubj	_	_
+11	Babesia	Babesia	NOUN	NNFS1-----A----	Case=Nom|Gender=Fem|Negative=Pos|Number=Sing	10	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	Z:-------------	_	8	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 9 11 name	color:blue
+1	Festival	festival	NOUN	NNIS1-----A----	Animacy=Inan|Case=Nom|Gender=Masc|Negative=Pos|Number=Sing	3	nsubjpass	_	_
+2	byl	být	AUX	VpYS---XR-AA---	Gender=Masc|Negative=Pos|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	3	auxpass	_	_
+3	zahájen	zahájit	VERB	VsYS---XX-AP---	Aspect=Perf|Gender=Masc|Negative=Pos|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+4	v	v	ADP	RR--4----------	AdpType=Prep|Case=Acc	5	case	_	LId=v-1
+5	neděli	neděle	NOUN	NNFS4-----A----	Case=Acc|Gender=Fem|Negative=Pos|Number=Sing	3	nmod	_	_
+6	odpoledne	odpoledne	ADV	Db-------------	_	5	advmod	_	LId=odpoledne-1
+7	slavnostní	slavnostní	ADJ	AAFS7----1A----	Case=Ins|Degree=Pos|Gender=Fem|Negative=Pos|Number=Sing	8	amod	_	_
+8	premiérou	premiéra	NOUN	NNFS7-----A----	Case=Ins|Gender=Fem|Negative=Pos|Number=Sing	3	nmod	_	_
+9	Dvořákovy	Dvořákův	ADJ	AUFS2M---------	Case=Gen|Gender=Fem|Gender[psor]=Masc|NameType=Sur|Number=Sing|Poss=Yes	8	nmod	_	LDeriv=Dvořák
+10	Svaté	svatý	ADJ	AAFS2----1A----	Case=Gen|Degree=Pos|Gender=Fem|Negative=Pos|Number=Sing	9	amod	_	_
+11	Ludmily	Ludmila	PROPN	NNFS2-----A----	Case=Gen|Gender=Fem|NameType=Giv|Negative=Pos|Number=Sing	9	name	_	SpaceAfter=No
+12	,	,	PUNCT	Z:-------------	_	14	punct	_	_
+13	kde	kde	ADV	Db-------------	_	14	advmod	_	_
+14	účinkovalo	účinkovat	VERB	VpNS---XR-AA---	Aspect=Imp|Gender=Neut|Negative=Pos|Number=Sing|Tense=Past|VerbForm=Part|Voice=Act	9	acl	_	_
+15	#	&amp;camount;	NUM	C=-------------	NumForm=Digit|NumType=Card	16	nummod:gov	_	_
+16	pěvců	pěvec	NOUN	NNMP2-----A----	Animacy=Anim|Case=Gen|Gender=Masc|Negative=Pos|Number=Plur	14	nsubj	_	SpaceAfter=No
+17	.	.	PUNCT	Z:-------------	_	3	punct	_	_
 
 </code></pre>
 
@@ -188,6 +263,7 @@ name in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -219,11 +295,40 @@ name in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -247,6 +352,7 @@ name in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-dep';
@@ -272,7 +378,7 @@ name in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

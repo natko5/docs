@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-got">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/got/dep">got/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-got">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/got/dep">got/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_got-dep/dep.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,7 +40,7 @@
           <h2><code>dep</code>: unspecified dependency</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>dep</code>.</p>
+for <code class="highlighter-rouge">dep</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -56,30 +57,12 @@ for <code>dep</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>3 nodes (0%) are attached to their parents as <code>dep</code>.</p>
+<p>3 nodes (0%) are attached to their parents as <code class="highlighter-rouge">dep</code>.</p>
 
-<p>2 instances of <code>dep</code> (67%) are left-to-right (parent precedes child).
+<p>2 instances of <code class="highlighter-rouge">dep</code> (67%) are left-to-right (parent precedes child).
 Average distance between parent and child is 2.</p>
 
-<p>The following 3 pairs of parts of speech are connected with <code>dep</code>: <a href="">got-pos/VERB</a>-<a href="">got-pos/ADV</a> (1; 33% instances), <a href="">got-pos/VERB</a>-<a href="">got-pos/NOUN</a> (1; 33% instances), <a href="">got-pos/VERB</a>-<a href="">got-pos/PRON</a> (1; 33% instances).</p>
-
-<pre><code class="language-conllu"># visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 2 1 dep	color:blue
-1	ƕe	ƕe	ADV	Du	PronType=Int	2	dep	_	_
-2	galeikom	gáleikon	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-3	þiudangardja	þiudangardi	NOUN	Nb	Case=Acc|Gender=Fem|Number=Sing	2	dobj	_	_
-4	gudis	guþ	NOUN	Nb	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
-5	aiþþau	aiþþau	CONJ	C-	_	2	cc	_	_
-6	in	in	ADP	R-	_	8	case	_	_
-7	ƕileikai	ƕileiks	ADJ	A-	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing|Strength=Strong	8	amod	_	_
-8	gajukon	gajuko	NOUN	Nb	Case=Dat|Gender=Fem|Number=Sing	9	iobj	_	_
-9	gabairam	ga-bairan	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
-10	þo	sa	ADJ	Pd	Case=Acc|Gender=Neut|Number=Plur	9	dobj	_	_
-
-</code></pre>
+<p>The following 3 pairs of parts of speech are connected with <code class="highlighter-rouge">dep</code>: <a href="">got-pos/VERB</a>-<a href="">got-pos/ADV</a> (1; 33% instances), <a href="">got-pos/VERB</a>-<a href="">got-pos/NOUN</a> (1; 33% instances), <a href="">got-pos/VERB</a>-<a href="">got-pos/PRON</a> (1; 33% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
@@ -111,6 +94,24 @@ Average distance between parent and child is 2.</p>
 23	jah	jah	CONJ	C-	_	22	cc	_	_
 24	ubilaim	ubils	ADJ	A-	Case=Dat|Degree=Pos|Number=Plur|Strength=Strong	22	conj	_	_
 25	mannam	manna#2	NOUN	Nb	Case=Dat|Gender=Masc|Number=Plur	20	iobj	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 dep	color:blue
+1	ƕe	ƕe	ADV	Du	PronType=Int	2	dep	_	_
+2	galeikom	gáleikon	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	þiudangardja	þiudangardi	NOUN	Nb	Case=Acc|Gender=Fem|Number=Sing	2	dobj	_	_
+4	gudis	guþ	NOUN	Nb	Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
+5	aiþþau	aiþþau	CONJ	C-	_	2	cc	_	_
+6	in	in	ADP	R-	_	8	case	_	_
+7	ƕileikai	ƕileiks	ADJ	A-	Case=Dat|Degree=Pos|Gender=Fem|Number=Sing|Strength=Strong	8	amod	_	_
+8	gajukon	gajuko	NOUN	Nb	Case=Dat|Gender=Fem|Number=Sing	9	iobj	_	_
+9	gabairam	ga-bairan	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+10	þo	sa	ADJ	Pd	Case=Acc|Gender=Neut|Number=Plur	9	dobj	_	_
 
 </code></pre>
 
@@ -188,6 +189,7 @@ dep in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -219,11 +221,40 @@ dep in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -247,6 +278,7 @@ dep in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'got-dep';
@@ -272,7 +304,7 @@ dep in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

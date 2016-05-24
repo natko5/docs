@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ja">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ja">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -226,7 +227,7 @@ in two places.</p>
 <p><a id="al-ja-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p>The dependency type <code>acl</code> is used for relative clauses and clausal complements of nouns.
+<p>The dependency type <code class="highlighter-rouge">acl</code> is used for relative clauses and clausal complements of nouns.
 For a relative clause, the head of the dependency is the noun modified by the clause,
 and the dependant is the main predicate of the clause.</p>
 
@@ -252,7 +253,7 @@ aux(ほめ, た)
 <p><a id="al-ja-dep/advcl" class="al-dest"></a></p>
 <h2><code>advcl</code>: adverbial clause modifier</h2>
 
-<p>The dependency type <code>advcl</code> is reserved for subordinate clauses.
+<p>The dependency type <code class="highlighter-rouge">advcl</code> is reserved for subordinate clauses.
 The head of the dependency is the main predicate of the main clause,
 and the dependant is the main predicate of the subordinate clause.
 A subordinate clauses consists of a clause and a word of “<a href="">SCONJ</a>”,
@@ -270,7 +271,7 @@ punct(行く, 。)
 <p><a id="al-ja-dep/advmod" class="al-dest"></a></p>
 <h2><code>advmod</code>: adverbial modifier</h2>
 
-<p>The dependency type <code>advmod</code> is used for adverbial modifiers of verbs, nominal verbs, adjectives and nominal adjectives.</p>
+<p>The dependency type <code class="highlighter-rouge">advmod</code> is used for adverbial modifiers of verbs, nominal verbs, adjectives and nominal adjectives.</p>
 
 <pre><code class="language-sdparse">ゆっくり 走る 。 \n slowly run .
 advmod(走る, ゆっくり)
@@ -282,7 +283,7 @@ punct(走る, 。)
 <p><a id="al-ja-dep/amod" class="al-dest"></a></p>
 <h2><code>amod</code>: adjectival modifier</h2>
 
-<p><em>Adjectival modifiers</em> (<code>amod</code>) are adjectives and nominal adjectives.
+<p><em>Adjectival modifiers</em> (<code class="highlighter-rouge">amod</code>) are adjectives and nominal adjectives.
 A nominal adjective must be followed by an auxiliary な / <em>na</em> to modify a noun.
 Note that adjectival modifiers with arguments are tagged as “<a href="">acl</a>”.</p>
 
@@ -309,7 +310,7 @@ compound(器, 解析)
 <p><a id="al-ja-dep/aux" class="al-dest"></a></p>
 <h2><code>aux</code>: auxiliary</h2>
 
-<p>The dependency type <code>aux</code> is used for <a href="AUX">auxiliary verbs</a> and
+<p>The dependency type <code class="highlighter-rouge">aux</code> is used for <a href="AUX">auxiliary verbs</a> and
 <a href="PART">particles</a> that attach to predicates.</p>
 
 <pre><code class="language-sdparse">ご飯 を 食べ た 。 \n rice ACC eat PAST .
@@ -377,7 +378,7 @@ nmod(家, 太郎)
 <p><a id="al-ja-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordinating conjunction</h2>
 
-<p>The dependency type <code>cc</code> is used for <a href="">CONJ</a>, that is, conjunction and coordinating conjunctive particle (e.g. と / <em>to</em>, や / <em>ya</em>).
+<p>The dependency type <code class="highlighter-rouge">cc</code> is used for <a href="">CONJ</a>, that is, conjunction and coordinating conjunctive particle (e.g. と / <em>to</em>, や / <em>ya</em>).
 See the example of <a href="">conj</a>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ja-dep/cc.md" target="#">edit cc</a></p>
@@ -386,7 +387,7 @@ See the example of <a href="">conj</a>.</p>
 <h2><code>ccomp</code>: clausal complement</h2>
 
 <p>Clausal complements are typically introduced by a postpositional particle と / <em>to</em> “that”.
-The head of the dependency <code>ccomp</code> is the main verb of the main clause, and
+The head of the dependency <code class="highlighter-rouge">ccomp</code> is the main verb of the main clause, and
 the dependant is the main predicate of the complement.</p>
 
 <pre><code class="language-sdparse">きれい だ と 思う 。 \n beautiful AUX that think .
@@ -401,7 +402,7 @@ punct(思う, 。)
 <p><a id="al-ja-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p>The dependency type <code>compound</code> in UD Japanese is used for noun compounds and verb compounds.</p>
+<p>The dependency type <code class="highlighter-rouge">compound</code> in UD Japanese is used for noun compounds and verb compounds.</p>
 
 <pre><code class="language-sdparse">構文 解析 \n syntax analysis
 compound(解析, 構文)
@@ -416,7 +417,7 @@ compound(着く, 泳ぎ)
 <p><a id="al-ja-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
 
-<p>The dependency type <code>conj</code> represents coordination.
+<p>The dependency type <code class="highlighter-rouge">conj</code> represents coordination.
 Following the definition of UD, the head of the dependency is the first conjunct.</p>
 
 <pre><code class="language-sdparse">太郎 と 次郎 \n Taro and Jiro
@@ -429,7 +430,7 @@ conj(太郎, 次郎)
 <p><a id="al-ja-dep/cop" class="al-dest"></a></p>
 <h2><code>cop</code>: copula</h2>
 
-<p>The dependency type <code>cop</code> is reserved for a copular auxiliary だ / <em>da</em>.
+<p>The dependency type <code class="highlighter-rouge">cop</code> is reserved for a copular auxiliary だ / <em>da</em>.
 The auxiliary typically follows a noun phrase to form a copular clause.
 A postpositional phrase with a nominative case is commonly needed to complete sentence.</p>
 
@@ -458,7 +459,7 @@ punct(きれい, 。)
 <p><a id="al-ja-dep/csubj" class="al-dest"></a></p>
 <h2><code>csubj</code>: clausal subject</h2>
 
-<p>A clausal subject (<code>csubj</code>) is commonly introduced by a pair of particles,
+<p>A clausal subject (<code class="highlighter-rouge">csubj</code>) is commonly introduced by a pair of particles,
 a nominal marker の / <em>no</em> and a nominative case marker が / <em>ga</em>.
 When the phrase is topicalized, the nominative が / <em>ga</em> is replaced by は / <em>wa</em>.</p>
 
@@ -478,7 +479,7 @@ punct(いや, 。)
 <p><a id="al-ja-dep/csubjpass" class="al-dest"></a></p>
 <h2><code>csubjpass</code>: clausal passive subject</h2>
 
-<p>The dependency type <code>csubjpass</code> is used for clausal subjects of passive verbs.</p>
+<p>The dependency type <code class="highlighter-rouge">csubjpass</code> is used for clausal subjects of passive verbs.</p>
 
 <pre><code class="language-sdparse">言っ た の が 悔やま れる 。 \n say PAST that NOM regret PASSIVE .
 csubjpass(悔やま, 言っ)
@@ -501,7 +502,7 @@ punct(悔やま, 。)
 <p><a id="al-ja-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The dependency type <code>det</code> is for a closed set of <a href="DET">adnominals</a>.</p>
+<p>The dependency type <code class="highlighter-rouge">det</code> is for a closed set of <a href="DET">adnominals</a>.</p>
 
 <p>The full list of the adnominals is as follows:</p>
 
@@ -525,7 +526,7 @@ det(本, この)
 <p><a id="al-ja-dep/discourse" class="al-dest"></a></p>
 <h2><code>discourse</code>: discourse element</h2>
 
-<p>Discourse elements (<code>discourse</code>) in UD Japanese is interjection and emoticons.</p>
+<p>Discourse elements (<code class="highlighter-rouge">discourse</code>) in UD Japanese is interjection and emoticons.</p>
 
 <pre><code class="language-sdparse">あー つかれ た 。 \n ah tire PAST .
 discourse(つかれ, あー)
@@ -538,7 +539,7 @@ punct(つかれ, 。)
 <p><a id="al-ja-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The dependency type <code>dislocated</code> is used for topic phrases.
+<p>The dependency type <code class="highlighter-rouge">dislocated</code> is used for topic phrases.
 A topic phrase introduces the topic of a sentence, and are typically prepositional phrases with a topic marker は / <em>ha</em>.
 One of the most famous examples is 象 は 鼻 が 長い 。/ <em>zou wa hana ga nagai</em> “For elephants, noses are long.”</p>
 
@@ -858,6 +859,7 @@ punct(食べ, 。)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -889,11 +891,40 @@ punct(食べ, 。)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -917,6 +948,7 @@ punct(食べ, 。)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ja-overview';
@@ -942,7 +974,7 @@ punct(食べ, 。)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

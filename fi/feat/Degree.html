@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-fi">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/fi/feat">fi/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fi/feat">fi/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-feat/Degree.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -41,7 +42,7 @@
 <p>Degree of comparison is a feature of <a href="fi-pos/ADJ">adjectives</a>,
 some <a href="fi-pos/ADV">adverbs</a>, and <a href="fi-pos/VERB">verbs</a> in participle form.</p>
 
-<h3 id="pos-positive-first-degree"><code>Pos</code>: positive, first degree</h3>
+<h3 id="pos-positive-first-degree"><code class="highlighter-rouge">Pos</code>: positive, first degree</h3>
 
 <p>This is the base form that merely states a quality of something, without
 comparing it to qualities of others.</p>
@@ -52,7 +53,7 @@ comparing it to qualities of others.</p>
   <li>[fi] <em><b>uusi</b> nimi</em> “<b>new</b> name”</li>
 </ul>
 
-<h3 id="cmp-comparative-second-degree"><code>Cmp</code>: comparative, second degree</h3>
+<h3 id="cmp-comparative-second-degree"><code class="highlighter-rouge">Cmp</code>: comparative, second degree</h3>
 
 <p>The quality of one things is compared to the same quality of another.</p>
 
@@ -63,7 +64,7 @@ comparing it to qualities of others.</p>
   <li>[fi] <em>pyöriä <b>nopeammin</b></em> “rotate <b>faster</b>”</li>
 </ul>
 
-<h3 id="sup-superlative-third-degree"><code>Sup</code>: superlative, third degree</h3>
+<h3 id="sup-superlative-third-degree"><code class="highlighter-rouge">Sup</code>: superlative, third degree</h3>
 
 <p>The quality of one thing is compared to the same quality of all other
 things within a set.</p>
@@ -74,6 +75,12 @@ things within a set.</p>
   <li>[fi] <em><b>paras</b> tulos</em> “<em><b>best</b> result</em>”</li>
   <li>[fi] <em><b>nopeimmin</b> kasvavat</em> “<em><b>fastest</b> grow</em>”</li>
 </ul>
+
+<h3 id="diff">Diff</h3>
+
+<h4 id="finntreebank">FinnTreeBank</h4>
+
+<p>The FI_FTB corpus applies the degree of comparison only when it is noticeable in the word form (that is, in comparative or superlative). Positive (Pos) is not used, as not all adjectives, adverbs and verb participles can appear in the other degrees of comparison at all.</p>
 
 
 <!-- "automatic stats" -->
@@ -88,26 +95,26 @@ things within a set.</p>
 <h2 id="treebank-statistics-udfinnish">Treebank Statistics (UD_Finnish)</h2>
 
 <p>This feature is universal.
-It occurs with 3 different values: <code>Cmp</code>, <code>Pos</code>, <code>Sup</code>.</p>
+It occurs with 3 different values: <code class="highlighter-rouge">Cmp</code>, <code class="highlighter-rouge">Pos</code>, <code class="highlighter-rouge">Sup</code>.</p>
 
-<p>18379 tokens (10%) have a non-empty value of <code>Degree</code>.
-9626 types (19%) occur at least once with a non-empty value of <code>Degree</code>.
-3532 lemmas (15%) occur at least once with a non-empty value of <code>Degree</code>.
+<p>18379 tokens (10%) have a non-empty value of <code class="highlighter-rouge">Degree</code>.
+9626 types (19%) occur at least once with a non-empty value of <code class="highlighter-rouge">Degree</code>.
+3532 lemmas (15%) occur at least once with a non-empty value of <code class="highlighter-rouge">Degree</code>.
 The feature is used with 7 part-of-speech tags: <a href="">fi-pos/ADJ</a> (11248; 6% instances), <a href="">fi-pos/VERB</a> (6900; 4% instances), <a href="">fi-pos/AUX</a> (127; 0% instances), <a href="">fi-pos/ADV</a> (97; 0% instances), <a href="">fi-pos/PRON</a> (4; 0% instances), <a href="">fi-pos/NOUN</a> (2; 0% instances), <a href="">fi-pos/PROPN</a> (1; 0% instances).</p>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>11248 <a href="">fi-pos/ADJ</a> tokens (88% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>11248 <a href="">fi-pos/ADJ</a> tokens (88% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (8101; 72%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (8101; 72%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (426; 4% of non-empty <code>Degree</code>): <em>parempi, suurempi, parempaa, useamman, alhaisempi, nuorempi, pienempi, vanhempi, helpompaa, pienempiä</em></li>
-  <li><code>Pos</code> (10365; 92% of non-empty <code>Degree</code>): <em>hyvä, arvoisa, uusi, uuden, uutta, pieni, hyvää, tärkeää, oman, suuri</em></li>
-  <li><code>Sup</code> (457; 4% of non-empty <code>Degree</code>): <em>suurin, paras, korkein, suurimman, parasta, parhaan, suurimmat, tärkein, useimmat, vanhin</em></li>
-  <li><code>EMPTY</code> (1598): <em>koko, eri, viime, ensimmäinen, 1., ensimmäisen, 2., 3., toisen, II</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (426; 4% of non-empty <code class="highlighter-rouge">Degree</code>): <em>parempi, suurempi, parempaa, useamman, alhaisempi, nuorempi, pienempi, vanhempi, helpompaa, pienempiä</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (10365; 92% of non-empty <code class="highlighter-rouge">Degree</code>): <em>hyvä, arvoisa, uusi, uuden, uutta, pieni, hyvää, tärkeää, oman, suuri</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (457; 4% of non-empty <code class="highlighter-rouge">Degree</code>): <em>suurin, paras, korkein, suurimman, parasta, parhaan, suurimmat, tärkein, useimmat, vanhin</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (1598): <em>koko, eri, viime, ensimmäinen, 1., ensimmäisen, 2., 3., toisen, II</em></li>
 </ul>
 
 <table>
@@ -139,21 +146,21 @@ The feature is used with 7 part-of-speech tags: <a href="">fi-pos/ADJ</a> (11248
   <tr><td><tt><a href="Case.html">Case</a>=Tra|<a href="Number.html">Number</a>=Sing</tt></td><td><em>hyväksi</em></td><td><em>paremmaksi</em></td><td><em>parhaaksi</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 92% lemmas (2129) occur only with one value of <code>Degree</code>.</p>
+<p><code class="highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 92% lemmas (2129) occur only with one value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>6900 <a href="">fi-pos/VERB</a> tokens (22% of all <code>VERB</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>6900 <a href="">fi-pos/VERB</a> tokens (22% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Degree</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (6900; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (6900; 100%), <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (6900; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (6900; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (6900; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (5183; 75%), <tt><a href="Voice.html">Voice</a>=Act</tt> (4428; 64%), <tt><a href="PartForm.html">PartForm</a>=Past</tt> (4233; 61%), <tt><a href="Case.html">Case</a>=Nom</tt> (3841; 56%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (6900; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (6900; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (6900; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (6900; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (6900; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (5183; 75%), <tt><a href="Voice.html">Voice</a>=Act</tt> (4428; 64%), <tt><a href="PartForm.html">PartForm</a>=Past</tt> (4233; 61%), <tt><a href="Case.html">Case</a>=Nom</tt> (3841; 56%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (1; 0% of non-empty <code>Degree</code>): <em>hyväksytympi</em></li>
-  <li><code>Pos</code> (6895; 100% of non-empty <code>Degree</code>): <em>ollut, olevan, tehty, tullut, saanut, s., tehnyt, koskevat, olleet, annettu</em></li>
-  <li><code>Sup</code> (4; 0% of non-empty <code>Degree</code>): <em>menestynein, myydyin, saastuneimpia</em></li>
-  <li><code>EMPTY</code> (24763): <em>on, ei, oli, ovat, ole, olla, en, eivät, eikä, olisi</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (1; 0% of non-empty <code class="highlighter-rouge">Degree</code>): <em>hyväksytympi</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (6895; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>ollut, olevan, tehty, tullut, saanut, s., tehnyt, koskevat, olleet, annettu</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (4; 0% of non-empty <code class="highlighter-rouge">Degree</code>): <em>menestynein, myydyin, saastuneimpia</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (24763): <em>on, ei, oli, ovat, ole, olla, en, eivät, eikä, olisi</em></li>
 </ul>
 
 <table>
@@ -176,33 +183,33 @@ The feature is used with 7 part-of-speech tags: <a href="">fi-pos/ADJ</a> (11248
   <tr><td><tt><a href="Case.html">Case</a>=Tra|<a href="Number.html">Number</a>=Plur|<a href="PartForm.html">PartForm</a>=Pres|<a href="Voice.html">Voice</a>=Pass</tt></td><td><em>hyväksyttäviksi</em></td><td></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (1195) occur only with one value of <code>Degree</code>.</p>
+<p><code class="highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (1195) occur only with one value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="highlighter-rouge">AUX</code></h3>
 
-<p>127 <a href="">fi-pos/AUX</a> tokens (4% of all <code>AUX</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>127 <a href="">fi-pos/AUX</a> tokens (4% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Degree</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (127; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (127; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (127; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (127; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (110; 87%), <tt><a href="Number.html">Number</a>=Sing</tt> (110; 87%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (127; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (127; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (127; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (127; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (110; 87%), <tt><a href="Voice.html">Voice</a>=Act</tt> (110; 87%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Pos</code> (127; 100% of non-empty <code>Degree</code>): <em>ollut, voinut, pitänyt, joutunut, saattanut, voinu, voitu, voineet, ollu, tarvinnut</em></li>
-  <li><code>EMPTY</code> (3453): <em>on, voi, oli, olisi, ovat, voidaan, ole, voisi, pitäisi, pitää</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (127; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>ollut, voinut, pitänyt, joutunut, saattanut, voinu, voitu, voineet, ollu, tarvinnut</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (3453): <em>on, voi, oli, olisi, ovat, voidaan, ole, voisi, pitäisi, pitää</em></li>
 </ul>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>AUX</code>. 100% lemmas (10) occur only with one value of <code>Degree</code>.</p>
+<p><code class="highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">AUX</code>. 100% lemmas (10) occur only with one value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<h3 id="adv"><code>ADV</code></h3>
+<h3 id="adv"><code class="highlighter-rouge">ADV</code></h3>
 
-<p>97 <a href="">fi-pos/ADV</a> tokens (1% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>97 <a href="">fi-pos/ADV</a> tokens (1% of all <code class="highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">ADV</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (86; 89% of non-empty <code>Degree</code>): <em>paremmin, useammin, nopeammin, laajemmin, enemmän, pidemmälle, pidempään, alempana, etäämmällä, halvemmalla</em></li>
-  <li><code>Sup</code> (11; 11% of non-empty <code>Degree</code>): <em>helpoimmin, nopeimmin, yleisimmin, ilmeisimmin, keskeisimmin, taitavimmin, todennäköisimmin, vaikeimmin</em></li>
-  <li><code>EMPTY</code> (13786): <em>myös, niin, vain, nyt, jo, vielä, kuitenkin, sitten, hyvin, ihan</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (86; 89% of non-empty <code class="highlighter-rouge">Degree</code>): <em>paremmin, useammin, nopeammin, laajemmin, enemmän, pidemmälle, pidempään, alempana, etäämmällä, halvemmalla</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (11; 11% of non-empty <code class="highlighter-rouge">Degree</code>): <em>helpoimmin, nopeimmin, yleisimmin, ilmeisimmin, keskeisimmin, taitavimmin, todennäköisimmin, vaikeimmin</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (13786): <em>myös, niin, vain, nyt, jo, vielä, kuitenkin, sitten, hyvin, ihan</em></li>
 </ul>
 
 <table>
@@ -210,50 +217,50 @@ The feature is used with 7 part-of-speech tags: <a href="">fi-pos/ADJ</a> (11248
   <tr><td><tt></tt></td><td><em>nopeammin</em></td><td><em>nopeimmin</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 94% lemmas (50) occur only with one value of <code>Degree</code>.</p>
+<p><code class="highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADV</code>. 94% lemmas (50) occur only with one value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="pron"><code class="highlighter-rouge">PRON</code></h3>
 
-<p>4 <a href="">fi-pos/PRON</a> tokens (0% of all <code>PRON</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>4 <a href="">fi-pos/PRON</a> tokens (0% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Plur</tt> (4; 100%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (4; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (4; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (4; 100%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (4; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (4; 100%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Degree</code>:</p>
-
-<ul>
-  <li><code>Pos</code> (4; 100% of non-empty <code>Degree</code>): <em>muita, muiden, muidenkin</em></li>
-  <li><code>EMPTY</code> (11920): <em>se, hän, sen, joka, sitä, siitä, tämä, tämän, jotka, ne</em></li>
-</ul>
-
-<h3 id="noun"><code>NOUN</code></h3>
-
-<p>2 <a href="">fi-pos/NOUN</a> tokens (0% of all <code>NOUN</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%).</p>
-
-<p><code>NOUN</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Pos</code> (2; 100% of non-empty <code>Degree</code>): <em>alaisena, hyvähän</em></li>
-  <li><code>EMPTY</code> (50777): <em>vuonna, vuoden, komission, päivänä, yliopiston, huomioon, mies, yhteisön, prosenttia, artiklan</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (4; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>muita, muiden, muidenkin</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (11920): <em>se, hän, sen, joka, sitä, siitä, tämä, tämän, jotka, ne</em></li>
 </ul>
 
-<h3 id="propn"><code>PROPN</code></h3>
+<h3 id="noun"><code class="highlighter-rouge">NOUN</code></h3>
 
-<p>1 <a href="">fi-pos/PROPN</a> tokens (0% of all <code>PROPN</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>2 <a href="">fi-pos/NOUN</a> tokens (0% of all <code class="highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>PROPN</code> and <code>Degree</code> co-occurred: <tt><a href="Case.html">Case</a>=Nom</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NOUN</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%).</p>
 
-<p><code>PROPN</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">NOUN</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Pos</code> (1; 100% of non-empty <code>Degree</code>): <em>Yhtenäinen</em></li>
-  <li><code>EMPTY</code> (10996): <em>euroopan, Turun, suomen, EU:n, Suomessa, the, Helsingin, Mithridates, Yhdysvaltain, Kiinan</em></li>
+  <li><code class="highlighter-rouge">Pos</code> (2; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>alaisena, hyvähän</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (50777): <em>vuonna, vuoden, komission, päivänä, yliopiston, huomioon, mies, yhteisön, prosenttia, artiklan</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code>Degree</code></h2>
+<h3 id="propn"><code class="highlighter-rouge">PROPN</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
+<p>1 <a href="">fi-pos/PROPN</a> tokens (0% of all <code class="highlighter-rouge">PROPN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PROPN</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Case.html">Case</a>=Nom</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%).</p>
+
+<p><code class="highlighter-rouge">PROPN</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Pos</code> (1; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>Yhtenäinen</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (10996): <em>euroopan, Turun, suomen, EU:n, Suomessa, the, Helsingin, Mithridates, Yhdysvaltain, Kiinan</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-degree">Relations with Agreement in <code class="highlighter-rouge">Degree</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Degree</code>:
 <tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (400; 93%),
 <tt>ADJ –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (193; 94%),
 <tt>VERB –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (18; 100%),
@@ -262,33 +269,33 @@ The feature is used with 7 part-of-speech tags: <a href="">fi-pos/ADJ</a> (11248
 <tt>ADJ –[<a href="../dep/nmod.html">nmod</a>]–&gt; ADJ</tt> (8; 62%),
 <tt>ADJ –[<a href="../dep/remnant.html">remnant</a>]–&gt; ADJ</tt> (4; 100%),
 <tt>ADJ –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; ADJ</tt> (4; 100%),
-<tt>ADJ –[<a href="../dep/nmod:poss.html">nmod:poss</a>]–&gt; VERB</tt> (3; 100%),
-<tt>VERB –[<a href="../dep/appos.html">appos</a>]–&gt; VERB</tt> (3; 100%).</p>
+<tt>ADJ –[<a href="../dep/acl:relcl.html">acl:relcl</a>]–&gt; ADJ</tt> (3; 100%),
+<tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (3; 75%).</p>
 
 <hr />
 
 <h2 id="treebank-statistics-udfinnish-ftb">Treebank Statistics (UD_Finnish-FTB)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Cmp</code>, <code>Sup</code>.</p>
+It occurs with 2 different values: <code class="highlighter-rouge">Cmp</code>, <code class="highlighter-rouge">Sup</code>.</p>
 
-<p>1389 tokens (1%) have a non-empty value of <code>Degree</code>.
-720 types (2%) occur at least once with a non-empty value of <code>Degree</code>.
-379 lemmas (2%) occur at least once with a non-empty value of <code>Degree</code>.
-The feature is used with 6 part-of-speech tags: <a href="">fi-pos/ADJ</a> (881; 1% instances), <a href="">fi-pos/ADV</a> (463; 0% instances), <a href="">fi-pos/DET</a> (21; 0% instances), <a href="">fi-pos/PRON</a> (16; 0% instances), <a href="">fi-pos/ADP</a> (7; 0% instances), <a href="">fi-pos/VERB</a> (1; 0% instances).</p>
+<p>1383 tokens (1%) have a non-empty value of <code class="highlighter-rouge">Degree</code>.
+720 types (2%) occur at least once with a non-empty value of <code class="highlighter-rouge">Degree</code>.
+381 lemmas (2%) occur at least once with a non-empty value of <code class="highlighter-rouge">Degree</code>.
+The feature is used with 7 part-of-speech tags: <a href="">fi-pos/ADJ</a> (870; 1% instances), <a href="">fi-pos/ADV</a> (460; 0% instances), <a href="">fi-pos/DET</a> (21; 0% instances), <a href="">fi-pos/PRON</a> (15; 0% instances), <a href="">fi-pos/NOUN</a> (9; 0% instances), <a href="">fi-pos/ADP</a> (7; 0% instances), <a href="">fi-pos/VERB</a> (1; 0% instances).</p>
 
-<h3 id="adj-1"><code>ADJ</code></h3>
+<h3 id="adj-1"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>881 <a href="">fi-pos/ADJ</a> tokens (8% of all <code>ADJ</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>870 <a href="">fi-pos/ADJ</a> tokens (8% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (680; 77%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (670; 77%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (446; 51% of non-empty <code>Degree</code>): <em>parempi, suurempi, vanhempi, mukavampi, parempaa, pienempiä, pitempi, aiempien, aikaisempaa, isompi</em></li>
-  <li><code>Sup</code> (435; 49% of non-empty <code>Degree</code>): <em>suurin, parasta, paras, mahdollisimman, parhaat, pahin, nopein, suurimman, suurimmat, tärkeintä</em></li>
-  <li><code>EMPTY</code> (9584): <em>koko, hyvä, viime, ensi, hyvää, uusi, oma, uutta, uuden, sellainen</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (440; 51% of non-empty <code class="highlighter-rouge">Degree</code>): <em>parempi, suurempi, vanhempi, mukavampi, parempaa, pienempiä, pitempi, aiempien, aikaisempaa, isompi</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (430; 49% of non-empty <code class="highlighter-rouge">Degree</code>): <em>suurin, parasta, paras, mahdollisimman, parhaat, pahin, nopein, suurimman, suurimmat, tärkeintä</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (9624): <em>koko, hyvä, viime, ensi, hyvää, uusi, oma, ensimmäinen, uutta, uuden</em></li>
 </ul>
 
 <table>
@@ -298,18 +305,18 @@ The feature is used with 6 part-of-speech tags: <a href="">fi-pos/ADJ</a> (881; 
   <tr><td><tt><a href="Case.html">Case</a>=Par|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td><em>uusinta</em></td></tr>
 </table>
 
-<h3 id="adv-1"><code>ADV</code></h3>
+<h3 id="adv-1"><code class="highlighter-rouge">ADV</code></h3>
 
-<p>463 <a href="">fi-pos/ADV</a> tokens (3% of all <code>ADV</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>460 <a href="">fi-pos/ADV</a> tokens (5% of all <code class="highlighter-rouge">ADV</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADV</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (462; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADV</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (446; 97%).</p>
 
-<p><code>ADV</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">ADV</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (368; 79% of non-empty <code>Degree</code>): <em>enemmän, myöhemmin, paremmin, vähemmän, aikaisemmin, enempää, aiemmin, mieluummin, helpommin, ennemmin</em></li>
-  <li><code>Sup</code> (95; 21% of non-empty <code>Degree</code>): <em>eniten, parhaiten, useimmiten, vähiten, Pahiten, mieluimmin, mieluiten, ilmeisimmin, lähinnä, pahimmillaan</em></li>
-  <li><code>EMPTY</code> (15490): <em>niin, nyt, jo, myös, vielä, vain, sitten, kyllä, aina, ihan</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (366; 80% of non-empty <code class="highlighter-rouge">Degree</code>): <em>enemmän, myöhemmin, paremmin, vähemmän, aikaisemmin, enempää, aiemmin, mieluummin, helpommin, ennemmin</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (94; 20% of non-empty <code class="highlighter-rouge">Degree</code>): <em>eniten, parhaiten, vähiten, Pahiten, useimmiten, mieluiten, ilmeisimmin, lähinnä, mieluimmin, pahimmillaan</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (9744): <em>nyt, aina, paljon, siellä, täällä, hyvin, miten, niin, vähän, sitten</em></li>
 </ul>
 
 <table>
@@ -317,20 +324,20 @@ The feature is used with 6 part-of-speech tags: <a href="">fi-pos/ADJ</a> (881; 
   <tr><td><tt></tt></td><td><em>mieluimmin</em></td><td><em>mieluimmin</em></td></tr>
 </table>
 
-<p><code>Degree</code> seems to be <strong>lexical feature</strong> of <code>ADV</code>. 99% lemmas (108) occur only with one value of <code>Degree</code>.</p>
+<p><code class="highlighter-rouge">Degree</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADV</code>. 99% lemmas (107) occur only with one value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<h3 id="det"><code>DET</code></h3>
+<h3 id="det"><code class="highlighter-rouge">DET</code></h3>
 
-<p>21 <a href="">fi-pos/DET</a> tokens (1% of all <code>DET</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>21 <a href="">fi-pos/DET</a> tokens (1% of all <code class="highlighter-rouge">DET</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>DET</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (21; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (21; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (11; 52%), <tt><a href="Number.html">Number</a>=Plur</tt> (11; 52%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">DET</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Ind</tt> (21; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (11; 52%), <tt><a href="Number.html">Number</a>=Plur</tt> (11; 52%).</p>
 
-<p><code>DET</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">DET</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (13; 62% of non-empty <code>Degree</code>): <em>useampi, useamman, useammat, Useampaa, harvemmalla, useammasta, useampia, useampiki, useampikin</em></li>
-  <li><code>Sup</code> (8; 38% of non-empty <code>Degree</code>): <em>useimmat, useimmilla, Useimmissa, Useimpien</em></li>
-  <li><code>EMPTY</code> (3861): <em>se, sen, hänen, kaikki, mitään, tämä, joka, sitä, joku, tällä</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (13; 62% of non-empty <code class="highlighter-rouge">Degree</code>): <em>useampi, useamman, useammat, Useampaa, harvemmalla, useammasta, useampia, useampiki, useampikin</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (8; 38% of non-empty <code class="highlighter-rouge">Degree</code>): <em>useimmat, useimmilla, Useimmissa, Useimpien</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (4088): <em>se, sen, hänen, kaikki, mitään, tämä, joka, sitä, joku, tällä</em></li>
 </ul>
 
 <table>
@@ -340,25 +347,26 @@ The feature is used with 6 part-of-speech tags: <a href="">fi-pos/ADJ</a> (881; 
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Sing</tt></td><td><em>useamman</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Gen|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>Useimpien</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Ine|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td><em>Useimmissa</em></td></tr>
-  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Clitic.html">Clitic</a>=Kin|<a href="Number.html">Number</a>=Sing</tt></td><td><em>useampiki, useampikin</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Clitic.html">Clitic</a>=Kin|<a href="Number.html">Number</a>=Sing</tt></td><td><em>useampikin</em></td><td></td></tr>
+  <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Clitic.html">Clitic</a>=Kin|<a href="Number.html">Number</a>=Sing|<a href="Style.html">Style</a>=Coll</tt></td><td><em>useampiki</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Number.html">Number</a>=Sing</tt></td><td><em>useampi</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Nom|<a href="Number.html">Number</a>=Plur</tt></td><td><em>useammat</em></td><td><em>useimmat</em></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Par|<a href="Number.html">Number</a>=Sing</tt></td><td><em>Useampaa</em></td><td></td></tr>
   <tr><td><tt><a href="Case.html">Case</a>=Par|<a href="Number.html">Number</a>=Plur</tt></td><td><em>useampia</em></td><td></td></tr>
 </table>
 
-<h3 id="pron-1"><code>PRON</code></h3>
+<h3 id="pron-1"><code class="highlighter-rouge">PRON</code></h3>
 
-<p>16 <a href="">fi-pos/PRON</a> tokens (0% of all <code>PRON</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>15 <a href="">fi-pos/PRON</a> tokens (0% of all <code class="highlighter-rouge">PRON</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>Degree</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (16; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (16; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (13; 81%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">PRON</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Person.html">Person</a>=EMPTY</tt> (15; 100%), <tt><a href="PronType.html">PronType</a>=Ind</tt> (15; 100%), <tt><a href="Number.html">Number</a>=Plur</tt> (12; 80%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">PRON</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (8; 50% of non-empty <code>Degree</code>): <em>useampia, useampien, harvemman, useammalle, useamman, useampiakin</em></li>
-  <li><code>Sup</code> (8; 50% of non-empty <code>Degree</code>): <em>useimmat, Useimmilla, useimpien</em></li>
-  <li><code>EMPTY</code> (10624): <em>se, hän, minä, sen, sitä, mitä, joka, mä, ne, sinä</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (8; 53% of non-empty <code class="highlighter-rouge">Degree</code>): <em>useampia, useampien, harvemman, useammalle, useamman, useampiakin</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (7; 47% of non-empty <code class="highlighter-rouge">Degree</code>): <em>useimmat, Useimmilla, useimpien</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (10557): <em>se, hän, minä, sen, sitä, mitä, joka, mä, ne, sinä</em></li>
 </ul>
 
 <table>
@@ -372,35 +380,49 @@ The feature is used with 6 part-of-speech tags: <a href="">fi-pos/ADJ</a> (881; 
   <tr><td><tt><a href="Case.html">Case</a>=Par|<a href="Number.html">Number</a>=Plur</tt></td><td><em>useampia</em></td><td></td></tr>
 </table>
 
-<h3 id="adp"><code>ADP</code></h3>
+<h3 id="noun-1"><code class="highlighter-rouge">NOUN</code></h3>
 
-<p>7 <a href="">fi-pos/ADP</a> tokens (0% of all <code>ADP</code> tokens) have a non-empty value of <code>Degree</code>.</p>
+<p>9 <a href="">fi-pos/NOUN</a> tokens (0% of all <code class="highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
 
-<p><code>ADP</code> tokens may have the following values of <code>Degree</code>:</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NOUN</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (9; 100%).</p>
 
-<ul>
-  <li><code>Cmp</code> (5; 71% of non-empty <code>Degree</code>): <em>lähempänä, lähemmäs, lähempää, pidemmälle</em></li>
-  <li><code>Sup</code> (2; 29% of non-empty <code>Degree</code>): <em>Lähimpänä, lähinnä</em></li>
-  <li><code>EMPTY</code> (2727): <em>kanssa, mukaan, jälkeen, ennen, asti, ilman, sitten, takia, kautta, vuoksi</em></li>
-</ul>
-
-<h3 id="verb-1"><code>VERB</code></h3>
-
-<p>1 <a href="">fi-pos/VERB</a> tokens (0% of all <code>VERB</code> tokens) have a non-empty value of <code>Degree</code>.</p>
-
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Degree</code> co-occurred: <tt><a href="PartForm.html">PartForm</a>=Pres</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Ess</tt> (1; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (1; 100%), <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (1; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1; 100%).</p>
-
-<p><code>VERB</code> tokens may have the following values of <code>Degree</code>:</p>
+<p><code class="highlighter-rouge">NOUN</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
 
 <ul>
-  <li><code>Cmp</code> (1; 100% of non-empty <code>Degree</code>): <em>korostavampana</em></li>
-  <li><code>EMPTY</code> (37775): <em>on, ei, oli, ole, ovat, en, olla, olisi, voi, ollut</em></li>
+  <li><code class="highlighter-rouge">Cmp</code> (6; 67% of non-empty <code class="highlighter-rouge">Degree</code>): <em>connerympään, demarimpaa, ihmeempää, kiireemmäksi, rokimpaa, turvemmassa</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (3; 33% of non-empty <code class="highlighter-rouge">Degree</code>): <em>herkuin, ihmisintä, nikseimpänä</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (37027): <em>mies, vuoden, vuotta, asia, aikaa, äiti, vuonna, kertaa, osa, markkaa</em></li>
 </ul>
 
-<h2 id="relations-with-agreement-in-degree-1">Relations with Agreement in <code>Degree</code></h2>
+<h3 id="adp"><code class="highlighter-rouge">ADP</code></h3>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Degree</code>:
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (32; 59%),
+<p>7 <a href="">fi-pos/ADP</a> tokens (0% of all <code class="highlighter-rouge">ADP</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
+
+<p><code class="highlighter-rouge">ADP</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Cmp</code> (5; 71% of non-empty <code class="highlighter-rouge">Degree</code>): <em>lähempänä, lähemmäs, lähempää, pidemmälle</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (2; 29% of non-empty <code class="highlighter-rouge">Degree</code>): <em>Lähimpänä, lähinnä</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (2724): <em>kanssa, mukaan, jälkeen, ennen, asti, ilman, sitten, takia, kautta, vuoksi</em></li>
+</ul>
+
+<h3 id="verb-1"><code class="highlighter-rouge">VERB</code></h3>
+
+<p>1 <a href="">fi-pos/VERB</a> tokens (0% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Degree</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Degree</code> co-occurred: <tt><a href="PartForm.html">PartForm</a>=Pres</tt> (1; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1; 100%), <tt><a href="Case.html">Case</a>=Ess</tt> (1; 100%), <tt><a href="InfForm.html">InfForm</a>=EMPTY</tt> (1; 100%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (1; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (1; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%).</p>
+
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Degree</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Cmp</code> (1; 100% of non-empty <code class="highlighter-rouge">Degree</code>): <em>korostavampana</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (37599): <em>on, ei, oli, ole, ovat, en, olla, olisi, voi, ollut</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-degree-1">Relations with Agreement in <code class="highlighter-rouge">Degree</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Degree</code>:
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (32; 60%),
 <tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADV</tt> (10; 91%),
 <tt>ADV –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (1; 100%).</p>
 
@@ -461,6 +483,7 @@ Degree in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -492,11 +515,40 @@ Degree in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -520,6 +572,7 @@ Degree in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'fi-feat';
@@ -545,7 +598,7 @@ Degree in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

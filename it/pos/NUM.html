@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-it">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/it/pos">it/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-it">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/it/pos">it/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_it-pos/NUM.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -44,7 +45,7 @@
 adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Cardinal numerals are covered by <code>NUM</code> whether they are used
+<p>Cardinal numerals are covered by <code class="highlighter-rouge">NUM</code> whether they are used
 as determiners or not (as in <em>Windows <b>Seven</b></em>) and whether they
 are expressed as words <em>(four)</em>, or digits <em>(4)</em>.</p>
 
@@ -54,14 +55,14 @@ are tagged as <a href="ADJ">adjectives</a> or <a href="PRON">pronouns</a> <em>(f
 In Italian there are no adverbial numerals like [cs] <em>poprvé</em> “for the first time” nor multiplicative numerals such as [en] <em>(once, twice)</em>.</p>
 
 <p>Note that, since Roman numerals <em>(IV)</em> are only used as ordinal numerals in Italian (Enciclopedia Treccani), are tagged <a href="">ADJ</a> for coherence with other ordinal numerals. 
-In this case we specify <code>NumType=Ord</code> as morphological feature. 
+In this case we specify <code class="highlighter-rouge">NumType=Ord</code> as morphological feature. 
 A similar treatment is reserved to a cardinal with a suffix such as <em>a</em>, <em>o</em>, <em>esimo</em>, <em>esima</em>, or the symbol <em>°</em> (similar to the English use of the suffix “th”).</p>
 
 <p>Other words functioning as determiners (including quantifiers such as <em>many</em> and <em>few</em>) are tagged <a href="">DET</a>.</p>
 
 <h3 id="examples">Examples</h3>
 
-<p>Tagged as <code>NUM</code>:</p>
+<p>Tagged as <code class="highlighter-rouge">NUM</code>:</p>
 
 <ul>
   <li><em>0</em>, <em>1</em>, <em>2</em>, <em>2014</em>, <em>1000000</em>, <em>3,14159265359</em></li>
@@ -101,12 +102,12 @@ A similar treatment is reserved to a cardinal with a suffix such as <em>a</em>, 
 
 <h2 id="treebank-statistics-uditalian">Treebank Statistics (UD_Italian)</h2>
 
-<p>There are 1095 <code>NUM</code> lemmas (6%), 1105 <code>NUM</code> types (4%) and 4609 <code>NUM</code> tokens (2%).
-Out of 17 observed tags, the rank of <code>NUM</code> is: 5 in number of lemmas, 5 in number of types and 12 in number of tokens.</p>
+<p>There are 1095 <code class="highlighter-rouge">NUM</code> lemmas (6%), 1105 <code class="highlighter-rouge">NUM</code> types (4%) and 4609 <code class="highlighter-rouge">NUM</code> tokens (2%).
+Out of 17 observed tags, the rank of <code class="highlighter-rouge">NUM</code> is: 5 in number of lemmas, 5 in number of types and 12 in number of tokens.</p>
 
-<p>The 10 most frequent <code>NUM</code> lemmas: <em>due, 1, 2, tre, 3, cinque, mila, quattro, 4, 20</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">NUM</code> lemmas: <em>due, 1, 2, tre, 3, cinque, mila, quattro, 4, 20</em></p>
 
-<p>The 10 most frequent <code>NUM</code> types:  <em>due, 1, 2, tre, 3, cinque, mila, quattro, 4, 20</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">NUM</code> types:  <em>due, 1, 2, tre, 3, cinque, mila, quattro, 4, 20</em></p>
 
 <p>The 10 most frequent ambiguous lemmas: <em>1</em> (<a href="">NUM</a> 176, <a href="">PROPN</a> 1), <em>4</em> (<a href="">NUM</a> 60, <a href="">PROPN</a> 1), <em>5</em> (<a href="">NUM</a> 47, <a href="">PROPN</a> 1), <em>uno</em> (<a href="">DET</a> 4256, <a href="">PRON</a> 204, <a href="">NUM</a> 37, <a href="">ADJ</a> 2), <em>7</em> (<a href="">NUM</a> 34, <a href="">PROPN</a> 1), <em>1994</em> (<a href="">NUM</a> 28, <a href="">NOUN</a> 1), <em>22</em> (<a href="">NUM</a> 15, <a href="">PROPN</a> 1), <em>zero</em> (<a href="">NUM</a> 5, <a href="">NOUN</a> 1), <em>cinquecento</em> (<a href="">NUM</a> 2, <a href="">NOUN</a> 1), <em>novecento</em> (<a href="">NOUN</a> 2, <a href="">NUM</a> 2)</p>
 
@@ -182,7 +183,7 @@ Out of 17 observed tags, the rank of <code>NUM</code> is: 5 in number of lemmas,
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>NUM</code> is 1.009132 (the average of all parts of speech is 1.491677).</p>
+<p>The form / lemma ratio of <code class="highlighter-rouge">NUM</code> is 1.009132 (the average of all parts of speech is 1.491496).</p>
 
 <p>The 1st highest number of forms (3) was observed with the lemma “cinquanta”: <em>cinquant’, cinquanta, cinquant’</em>.</p>
 
@@ -190,33 +191,33 @@ Out of 17 observed tags, the rank of <code>NUM</code> is: 5 in number of lemmas,
 
 <p>The 3rd highest number of forms (2) was observed with the lemma “quaranta”: <em>quarant’, quaranta</em>.</p>
 
-<p><code>NUM</code> occurs with 1 features: <a href="">it-feat/NumType</a> (4588; 100% instances)</p>
+<p><code class="highlighter-rouge">NUM</code> occurs with 1 features: <a href="">it-feat/NumType</a> (4609; 100% instances)</p>
 
-<p><code>NUM</code> occurs with 1 feature-value pairs: <code>NumType=Card</code></p>
+<p><code class="highlighter-rouge">NUM</code> occurs with 3 feature-value pairs: <code class="highlighter-rouge">NumType=Card</code>, <code class="highlighter-rouge">NumType=Gen</code>, <code class="highlighter-rouge">NumType=Range</code></p>
 
-<p><code>NUM</code> occurs with 2 feature combinations.
-The most frequent feature combination is <code>NumType=Card</code> (4588 tokens).
+<p><code class="highlighter-rouge">NUM</code> occurs with 3 feature combinations.
+The most frequent feature combination is <code class="highlighter-rouge">NumType=Card</code> (4584 tokens).
 Examples: <em>due, 1, 2, tre, 3, cinque, mila, quattro, 4, 20</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>NUM</code> nodes are attached to their parents using 14 different relations: <a href="">it-dep/nummod</a> (4015; 87% instances), <a href="">it-dep/conj</a> (164; 4% instances), <a href="">it-dep/compound</a> (150; 3% instances), <a href="">it-dep/root</a> (86; 2% instances), <a href="">it-dep/dobj</a> (57; 1% instances), <a href="">it-dep/name</a> (56; 1% instances), <a href="">it-dep/nsubj</a> (42; 1% instances), <a href="">it-dep/mwe</a> (19; 0% instances), <a href="">it-dep/nsubjpass</a> (9; 0% instances), <a href="">it-dep/acl:relcl</a> (5; 0% instances), <a href="">it-dep/advcl</a> (2; 0% instances), <a href="">it-dep/xcomp</a> (2; 0% instances), <a href="">it-dep/ccomp</a> (1; 0% instances), <a href="">it-dep/foreign</a> (1; 0% instances)</p>
+<p><code class="highlighter-rouge">NUM</code> nodes are attached to their parents using 15 different relations: <a href="">it-dep/nummod</a> (3455; 75% instances), <a href="">it-dep/nmod</a> (561; 12% instances), <a href="">it-dep/conj</a> (163; 4% instances), <a href="">it-dep/compound</a> (153; 3% instances), <a href="">it-dep/root</a> (86; 2% instances), <a href="">it-dep/dobj</a> (57; 1% instances), <a href="">it-dep/name</a> (56; 1% instances), <a href="">it-dep/nsubj</a> (42; 1% instances), <a href="">it-dep/mwe</a> (17; 0% instances), <a href="">it-dep/nsubjpass</a> (9; 0% instances), <a href="">it-dep/acl:relcl</a> (4; 0% instances), <a href="">it-dep/advcl</a> (2; 0% instances), <a href="">it-dep/xcomp</a> (2; 0% instances), <a href="">it-dep/ccomp</a> (1; 0% instances), <a href="">it-dep/foreign</a> (1; 0% instances)</p>
 
-<p>Parents of <code>NUM</code> nodes belong to 13 different parts of speech: <a href="">NOUN</a> (2823; 61% instances), <a href="">VERB</a> (932; 20% instances), <a href="">NUM</a> (339; 7% instances), <a href="">PROPN</a> (241; 5% instances), <a href="">ROOT</a> (86; 2% instances), <a href="">SYM</a> (84; 2% instances), <a href="">ADJ</a> (59; 1% instances), <a href="">PRON</a> (24; 1% instances), <a href="">ADV</a> (14; 0% instances), <a href="">PUNCT</a> (3; 0% instances), <a href="">X</a> (2; 0% instances), <a href="">AUX</a> (1; 0% instances), <a href="">DET</a> (1; 0% instances)</p>
+<p>Parents of <code class="highlighter-rouge">NUM</code> nodes belong to 13 different parts of speech: <a href="">NOUN</a> (2822; 61% instances), <a href="">VERB</a> (932; 20% instances), <a href="">NUM</a> (340; 7% instances), <a href="">PROPN</a> (241; 5% instances), <a href="">ROOT</a> (86; 2% instances), <a href="">SYM</a> (84; 2% instances), <a href="">ADJ</a> (54; 1% instances), <a href="">PRON</a> (28; 1% instances), <a href="">ADV</a> (14; 0% instances), <a href="">PUNCT</a> (3; 0% instances), <a href="">X</a> (3; 0% instances), <a href="">AUX</a> (1; 0% instances), <a href="">DET</a> (1; 0% instances)</p>
 
-<p>2484 (54%) <code>NUM</code> nodes are leaves.</p>
+<p>2484 (54%) <code class="highlighter-rouge">NUM</code> nodes are leaves.</p>
 
-<p>677 (15%) <code>NUM</code> nodes have one child.</p>
+<p>677 (15%) <code class="highlighter-rouge">NUM</code> nodes have one child.</p>
 
-<p>1064 (23%) <code>NUM</code> nodes have two children.</p>
+<p>1065 (23%) <code class="highlighter-rouge">NUM</code> nodes have two children.</p>
 
-<p>384 (8%) <code>NUM</code> nodes have three or more children.</p>
+<p>383 (8%) <code class="highlighter-rouge">NUM</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>NUM</code> node is 22.</p>
+<p>The highest child degree of a <code class="highlighter-rouge">NUM</code> node is 22.</p>
 
-<p>Children of <code>NUM</code> nodes are attached using 26 different relations: <a href="">it-dep/punct</a> (1647; 38% instances), <a href="">it-dep/det</a> (838; 19% instances), <a href="">it-dep/case</a> (790; 18% instances), <a href="">it-dep/nmod</a> (296; 7% instances), <a href="">it-dep/conj</a> (210; 5% instances), <a href="">it-dep/compound</a> (150; 3% instances), <a href="">it-dep/advmod</a> (128; 3% instances), <a href="">it-dep/cc</a> (121; 3% instances), <a href="">it-dep/nummod</a> (34; 1% instances), <a href="">it-dep/mwe</a> (27; 1% instances), <a href="">it-dep/amod</a> (21; 0% instances), <a href="">it-dep/cop</a> (19; 0% instances), <a href="">it-dep/nsubj</a> (17; 0% instances), <a href="">it-dep/advcl</a> (8; 0% instances), <a href="">it-dep/acl:relcl</a> (5; 0% instances), <a href="">it-dep/appos</a> (4; 0% instances), <a href="">it-dep/acl</a> (3; 0% instances), <a href="">it-dep/dobj</a> (3; 0% instances), <a href="">it-dep/parataxis</a> (3; 0% instances), <a href="">it-dep/mark</a> (2; 0% instances), <a href="">it-dep/aux</a> (1; 0% instances), <a href="">it-dep/ccomp</a> (1; 0% instances), <a href="">it-dep/det:poss</a> (1; 0% instances), <a href="">it-dep/det:predet</a> (1; 0% instances), <a href="">it-dep/neg</a> (1; 0% instances), <a href="">it-dep/xcomp</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">NUM</code> nodes are attached using 24 different relations: <a href="">it-dep/punct</a> (1648; 38% instances), <a href="">it-dep/det</a> (836; 19% instances), <a href="">it-dep/case</a> (788; 18% instances), <a href="">it-dep/nmod</a> (299; 7% instances), <a href="">it-dep/conj</a> (210; 5% instances), <a href="">it-dep/compound</a> (152; 4% instances), <a href="">it-dep/advmod</a> (128; 3% instances), <a href="">it-dep/cc</a> (122; 3% instances), <a href="">it-dep/nummod</a> (34; 1% instances), <a href="">it-dep/mwe</a> (24; 1% instances), <a href="">it-dep/amod</a> (21; 0% instances), <a href="">it-dep/cop</a> (19; 0% instances), <a href="">it-dep/nsubj</a> (17; 0% instances), <a href="">it-dep/advcl</a> (11; 0% instances), <a href="">it-dep/acl:relcl</a> (5; 0% instances), <a href="">it-dep/appos</a> (4; 0% instances), <a href="">it-dep/dobj</a> (3; 0% instances), <a href="">it-dep/parataxis</a> (3; 0% instances), <a href="">it-dep/mark</a> (2; 0% instances), <a href="">it-dep/aux</a> (1; 0% instances), <a href="">it-dep/ccomp</a> (1; 0% instances), <a href="">it-dep/det:poss</a> (1; 0% instances), <a href="">it-dep/det:predet</a> (1; 0% instances), <a href="">it-dep/neg</a> (1; 0% instances)</p>
 
-<p>Children of <code>NUM</code> nodes belong to 15 different parts of speech: <a href="">PUNCT</a> (1589; 37% instances), <a href="">DET</a> (842; 19% instances), <a href="">ADP</a> (770; 18% instances), <a href="">NUM</a> (339; 8% instances), <a href="">NOUN</a> (317; 7% instances), <a href="">ADV</a> (150; 3% instances), <a href="">CONJ</a> (121; 3% instances), <a href="">ADJ</a> (65; 2% instances), <a href="">SYM</a> (60; 1% instances), <a href="">VERB</a> (40; 1% instances), <a href="">PROPN</a> (15; 0% instances), <a href="">PRON</a> (13; 0% instances), <a href="">X</a> (8; 0% instances), <a href="">SCONJ</a> (2; 0% instances), <a href="">AUX</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">NUM</code> nodes belong to 15 different parts of speech: <a href="">PUNCT</a> (1648; 38% instances), <a href="">DET</a> (841; 19% instances), <a href="">ADP</a> (768; 18% instances), <a href="">NUM</a> (340; 8% instances), <a href="">NOUN</a> (317; 7% instances), <a href="">ADV</a> (150; 3% instances), <a href="">CONJ</a> (122; 3% instances), <a href="">ADJ</a> (65; 2% instances), <a href="">VERB</a> (40; 1% instances), <a href="">PROPN</a> (15; 0% instances), <a href="">PRON</a> (13; 0% instances), <a href="">X</a> (7; 0% instances), <a href="">SCONJ</a> (2; 0% instances), <a href="">SYM</a> (2; 0% instances), <a href="">AUX</a> (1; 0% instances)</p>
 
 
 
@@ -275,6 +276,7 @@ NUM in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -306,11 +308,40 @@ NUM in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -334,6 +365,7 @@ NUM in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'it-pos';
@@ -359,7 +391,7 @@ NUM in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

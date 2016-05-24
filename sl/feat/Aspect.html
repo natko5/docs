@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sl">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sl/feat">sl/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/feat">sl/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-feat/Aspect.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -40,9 +41,9 @@
 
 <p>Aspect is a lexical feature of <a href="VERB">verbs</a> that specifies the duration and completion of action in time.</p>
 
-<p>Slovenian grammar distinguishes two aspect values: <code>imperfect</code> and <code>perfect</code>. Pairs of imperfective and perfective verbs exist and are often morphologically related, but the verbs are considered to belong to separate lemmas.</p>
+<p>Slovenian grammar distinguishes two aspect values: <code class="highlighter-rouge">imperfect</code> and <code class="highlighter-rouge">perfect</code>. Pairs of imperfective and perfective verbs exist and are often morphologically related, but the verbs are considered to belong to separate lemmas.</p>
 
-<h3 id="imp-imperfect-aspect"><code>Imp</code>: imperfect aspect</h3>
+<h3 id="imp-imperfect-aspect"><code class="highlighter-rouge">Imp</code>: imperfect aspect</h3>
 
 <p>The action took / takes / will take some time span and there is no information whether and when it was / will be completed.</p>
 
@@ -50,7 +51,7 @@
   <li><em>Danes se ni <b>zgodilo</b> nič posebnega.</em> “Nothing special has happened today.”</li>
 </ul>
 
-<h3 id="perf-perfect-aspect"><code>Perf</code>: perfect aspect</h3>
+<h3 id="perf-perfect-aspect"><code class="highlighter-rouge">Perf</code>: perfect aspect</h3>
 
 <p>The action has been / will have been completed. Since there is emphasis on one point on the time scale (the point of completion).</p>
 
@@ -58,9 +59,9 @@
   <li><em>Pogosto se je <b>dogajalo</b>, da je zamujal.</em> “It often happened he was late.”</li>
 </ul>
 
-<h3 id="verbs-without-aspect">Verbs without <code>Aspect</code></h3>
+<h3 id="verbs-without-aspect">Verbs without <code class="highlighter-rouge">Aspect</code></h3>
 
-<p>Verbs without <code>Aspect</code> are considered to be biaspectual, i.e. they can either denote duration or completion, but their actual interpretation depends on the context.</p>
+<p>Verbs without <code class="highlighter-rouge">Aspect</code> are considered to be biaspectual, i.e. they can either denote duration or completion, but their actual interpretation depends on the context.</p>
 
 <ul>
   <li><em>Takoj sem <b>telefoniral</b> na policijo.</em> “I called the police immediately”</li>
@@ -69,7 +70,7 @@
 
 <h3 id="conversion-from-jos">Conversion from JOS</h3>
 
-<p>Verbs with Aspect=perfective are converted to <code>Aspect=Perf</code>, verbs with Aspect=imperfective are converted <code>Aspect=Imp</code> and verbs with Aspect=biaspectual are not assigned the <code>Aspect</code> feature.</p>
+<p>Verbs with Aspect=perfective are converted to <code class="highlighter-rouge">Aspect=Perf</code>, verbs with Aspect=imperfective are converted <code class="highlighter-rouge">Aspect=Imp</code> and verbs with Aspect=biaspectual are not assigned the <code class="highlighter-rouge">Aspect</code> feature.</p>
 
 
 <!-- "automatic stats" -->
@@ -84,25 +85,25 @@
 <h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Imp</code>, <code>Perf</code>.</p>
+It occurs with 2 different values: <code class="highlighter-rouge">Imp</code>, <code class="highlighter-rouge">Perf</code>.</p>
 
-<p>12449 tokens (9%) have a non-empty value of <code>Aspect</code>.
-6136 types (19%) occur at least once with a non-empty value of <code>Aspect</code>.
-2218 lemmas (13%) occur at least once with a non-empty value of <code>Aspect</code>.
+<p>12449 tokens (9%) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+6136 types (19%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+2218 lemmas (13%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
 The feature is used with 1 part-of-speech tags: <a href="">sl-pos/VERB</a> (12449; 9% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>12449 <a href="">sl-pos/VERB</a> tokens (72% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>12449 <a href="">sl-pos/VERB</a> tokens (72% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (12079; 97%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (7722; 62%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (7475; 60%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (7475; 60%), <tt><a href="Number.html">Number</a>=Sing</tt> (6735; 54%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (6253; 50%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (12079; 97%), <tt><a href="Tense.html">Tense</a>=EMPTY</tt> (7722; 62%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (7475; 60%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (7475; 60%), <tt><a href="Number.html">Number</a>=Sing</tt> (6735; 54%), <tt><a href="VerbForm.html">VerbForm</a>=Part</tt> (6253; 50%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (5986; 48% of non-empty <code>Aspect</code>): <em>ima, imajo, mora, imel, zdi, moral, moramo, imela, imeli, morali</em></li>
-  <li><code>Perf</code> (6463; 52% of non-empty <code>Aspect</code>): <em>povedal, dejal, zgodilo, začeli, uspelo, začela, postal, rekel, prišel, začel</em></li>
-  <li><code>EMPTY</code> (4861): <em>je, so, bila, bil, bilo, ni, bo, bili, gre, biti</em></li>
+  <li><code class="highlighter-rouge">Imp</code> (5986; 48% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>ima, imajo, mora, imel, zdi, moral, moramo, imela, imeli, morali</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (6463; 52% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>povedal, dejal, zgodilo, začeli, uspelo, začela, postal, rekel, prišel, začel</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (4861): <em>je, so, bila, bil, bilo, ni, bo, bili, gre, biti</em></li>
 </ul>
 
 <table>
@@ -118,13 +119,58 @@ The feature is used with 1 part-of-speech tags: <a href="">sl-pos/VERB</a> (1244
   <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Inf</tt></td><td><em>misliti</em></td><td></td></tr>
 </table>
 
-<p><code>Aspect</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (2215) occur only with one value of <code>Aspect</code>.</p>
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (2215) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<h2 id="relations-with-agreement-in-aspect">Relations with Agreement in <code>Aspect</code></h2>
+<h2 id="relations-with-agreement-in-aspect">Relations with Agreement in <code class="highlighter-rouge">Aspect</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>Aspect</code>:
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Aspect</code>:
 <tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (790; 59%),
 <tt>VERB –[<a href="../dep/mwe.html">mwe</a>]–&gt; VERB</tt> (1; 100%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code class="highlighter-rouge">Imp</code>, <code class="highlighter-rouge">Perf</code>.</p>
+
+<p>2871 tokens (10%) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+1338 types (22%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+676 lemmas (17%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+The feature is used with 1 part-of-speech tags: <a href="">sl-pos/VERB</a> (2871; 10% instances).</p>
+
+<h3 id="verb-1"><code class="highlighter-rouge">VERB</code></h3>
+
+<p>2871 <a href="">sl-pos/VERB</a> tokens (62% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Negative.html">Negative</a>=EMPTY</tt> (2659; 93%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1953; 68%), <tt><a href="Number.html">Number</a>=Sing</tt> (1745; 61%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (1722; 60%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1523; 53%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (1523; 53%).</p>
+
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Imp</code> (1640; 57% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>vem, veš, mislim, ima, imamo, imaš, imela, imeli, imajo, zdi</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (1231; 43% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>recimo, rekel, daj, rekla, rekli, da, narediti, pride, dobil, reči</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (1740): <em>je, so, ni, bilo, bil, bila, bo, sem, si, pravi</em></li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>pasti</i></th><th><tt>Imp</tt></th><th><tt>Perf</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part</tt></td><td></td><td><em>padel</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="VerbForm.html">VerbForm</a>=Part</tt></td><td><em>pasli</em></td><td></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur|<a href="VerbForm.html">VerbForm</a>=Part</tt></td><td></td><td><em>padle</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part</tt></td><td></td><td><em>padlo</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>padeš</em></td></tr>
+  <tr><td><tt><a href="VerbForm.html">VerbForm</a>=Inf</tt></td><td><em>pasti</em></td><td></td></tr>
+</table>
+
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (675) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<h2 id="relations-with-agreement-in-aspect-1">Relations with Agreement in <code class="highlighter-rouge">Aspect</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Aspect</code>:
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (136; 51%),
+<tt>VERB –[<a href="../dep/reparandum.html">reparandum</a>]–&gt; VERB</tt> (29; 78%),
+<tt>VERB –[<a href="../dep/conj:extend.html">conj:extend</a>]–&gt; VERB</tt> (2; 67%).</p>
 
 
 
@@ -183,6 +229,7 @@ Aspect in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -214,11 +261,40 @@ Aspect in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -242,6 +318,7 @@ Aspect in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sl-feat';
@@ -267,7 +344,7 @@ Aspect in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

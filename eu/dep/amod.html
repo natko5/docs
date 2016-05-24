@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/amod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,40 +39,43 @@
 
           <h2><code>amod</code>: adjectival modifier</h2>
 
-<p>Nouns may take adjectival modifiers, which are marked with the
-dependency type <code>amod</code>. Most of the adjectives appear after the noun they modify, though some of them may appear before.</p>
+<p>Nouns may take adjectival modifiers, which are marked with the dependency type <code class="highlighter-rouge">amod</code>. Most of the adjectives appear after the noun they modify, though some of them may appear before.</p>
 
-<ul>
-  <li>
-    <p>English: The change has caused huge discussions .</p>
-  </li>
-  <li>
-    <p>Basque: Eztabaida handiak sortu ditu aldaketak .</p>
-  </li>
-</ul>
+<p><em>Epaiketa horrek kezka <strong>handia</strong> piztu du .</em></p>
 
-<p><em>Discussion huge-pl cause aux-trans-present change-erg.</em></p>
+<p><em>That trial has caused a <strong>big</strong> concern .</em></p>
 
-<pre><code class="language-sdparse">Eztabaida handiak sortu ditu aldaketak .
+<pre><code class="language-sdparse">Epaiketa horrek kezka handia piztu du . \n Trial that concern big_a caused has .
 
-amod(Eztabaida-1, handiak-2)
-nobj(sortu-3, Eztabaida-1)
-aux(sortu-3, ditu-4)
-nsubj(sortu-3, aldaketak-5)
+nsubj(piztu-5, Epaiketa-1)
+det(Epaiketa-1, horrek-2)
+amod(kezka-3, handia-4)
+dobj(piztu-5, kezka-3)
+aux(piztu-5, du-6)
+punct(piztu-5, .-7)
 </code></pre>
 
-<ul>
-  <li>
-    <p>English: Derartu Tulu made the last 400 meters in one minute .</p>
-  </li>
-  <li>
-    <p>Basque: Azkeneko 400 metroak minutu batean osatu zituen Derartu Tuluk .</p>
-  </li>
-</ul>
+<p><em>Mutikoak heldu ditun dantzaldira atorra <strong>urdin argi</strong> batekin .</em></p>
 
-<p><em>Last 400 meters minute one make aux-trans-past Derartu Tulu-erg.</em></p>
+<p><em>The boys have arrived to the ball with a <strong>light blue</strong> shirt .</em></p>
 
-<pre><code class="language-sdparse">Azkeneko 400 metroak minutu batean osatu zituen Derartu Tuluk .
+<pre><code class="language-sdparse">Mutikoak heldu ditun dantzaldira atorra urdin argi batekin . \n Boys_the arrived have ball_the_to shirt blue light one_with .
+
+nsubj(Mutikoak-1, heldu-2)
+aux(heldu-2, ditun-3)
+nmod(heldu-2, dantzaldira-4)
+nmod(heldu-2, atorra-5)
+amod(atorra-5, urdin-6)
+amod(urdin-6, argi-7)
+det(atorra-5, batekin-8)
+punct(heldu-2, .-9)
+</code></pre>
+
+<p><em><strong>Azkeneko</strong> 400 metroak minutu batean osatu zituen Derartu Tuluk .</em></p>
+
+<p><em>Derartu Tulu made the <strong>last</strong> 400 meters in one minute .</em></p>
+
+<pre><code class="language-sdparse">Azkeneko 400 metroak minutu batean osatu zituen Derartu Tuluk . \n Last 400 meters_the minute one_in made Derartu Tulu .
 
 amod(metroak-3, Azkeneko-1)
 nummod(metroak-3, 400-2)
@@ -81,6 +85,7 @@ nummod(minutu-4, batean-5)
 aux(osatu-6, zituen-7)
 name(Derartu-8, Tuluk-9)
 nsubj(osatu-6, Derartu-8)
+punct(osatu-6, .-10)
 </code></pre>
 
 
@@ -98,12 +103,12 @@ nsubj(osatu-6, Derartu-8)
 
 <p>This relation is universal.</p>
 
-<p>4190 nodes (3%) are attached to their parents as <code>amod</code>.</p>
+<p>4190 nodes (3%) are attached to their parents as <code class="highlighter-rouge">amod</code>.</p>
 
-<p>3017 instances of <code>amod</code> (72%) are left-to-right (parent precedes child).
+<p>3017 instances of <code class="highlighter-rouge">amod</code> (72%) are left-to-right (parent precedes child).
 Average distance between parent and child is 1.07398568019093.</p>
 
-<p>The following 17 pairs of parts of speech are connected with <code>amod</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (3462; 83% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (539; 13% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADJ</a> (67; 2% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADJ</a> (35; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NUM</a> (28; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NUM</a> (24; 1% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADJ</a> (9; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (6; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADJ</a> (5; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (3; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NUM</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/SYM</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances).</p>
+<p>The following 17 pairs of parts of speech are connected with <code class="highlighter-rouge">amod</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (3462; 83% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (539; 13% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADJ</a> (67; 2% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADJ</a> (35; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NUM</a> (28; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NUM</a> (24; 1% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADJ</a> (9; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (6; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADJ</a> (5; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (3; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NUM</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/SYM</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 3	bgColor:blue
 # visual-style 3	fgColor:white
@@ -208,6 +213,7 @@ amod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -239,11 +245,40 @@ amod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -267,6 +302,7 @@ amod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -292,7 +328,7 @@ amod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

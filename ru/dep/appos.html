@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>appos</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ru/dep">ru/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/appos.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>appos</code>: appositional modifier</h2>
+
+<p>An appositional modifier of a noun is a nominal immediately following the first noun that serves to define or modify that noun. It includes parenthesized examples, as well as defining abbreviations in one of these structures.</p>
+
+<pre><code class="language-sdparse">Карл Четвертый , римский император и чешский король , царствовал в XIV веке . \n Charles IV , Roman Emperor and Czech king , ruled in 14th century .
+appos(Карл, император)
+appos(Charles, Emperor)
+conj(император, король)
+conj(Emperor, king)
+</code></pre>
+
+<pre><code class="language-sdparse">Польская Социалистическая Партия ( ПСП ) \n Polish Socialist Party ( PSP )
+appos(Партия, ПСП)
+appos(Party, PSP)
+</code></pre>
+
+<p>There is a slight deviation from the <a href="u-dep/appos">universal</a> standard in case of more than one appositive nominal.
+Instead of attaching them all to the first noun, all the appositive modifiers are put together in coordination,
+then attached as <code class="highlighter-rouge">appos</code> to the modified noun.
+This is done regardless whether the appositives are joined by a coordinating conjunction or just a comma.</p>
+
+<pre><code class="language-sdparse">Пришел Михаил , мой брат и кузен Давида . \n Came Mikhail , my brother and cousin of-David .
+appos(Михаил, брат)
+appos(Mikhail, brother)
+conj(брат, кузен)
+conj(brother, cousin)
+</code></pre>
+
+<pre><code class="language-sdparse">Михаил , мой брат , кузен Давида , придет завтра . \n Mikhail , my brother , cousin of-David , will-come tomorrow .
+appos(Михаил, брат)
+appos(Mikhail, brother)
+conj(брат, кузен)
+conj(brother, cousin)
+</code></pre>
+
+<p><code class="highlighter-rouge">appos</code> is also used to link key-value pairs in addresses, signatures, etc. (see also the <a href="">list</a> label):</p>
+
+<pre><code class="language-sdparse">Иван Петров , тел . : 8(495)-000-11-22 , e-mail : petrov@mail.ru
+name(Иван, Петров)
+list(Иван, тел)
+list(Иван, e-mail)
+appos(тел, 8(495)-000-11-22-7)
+appos(e-mail, petrov@mail.ru)
+</code></pre>
+
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udrussian">Treebank Statistics (UD_Russian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2835 nodes (3%) are attached to their parents as <code class="highlighter-rouge">appos</code>.</p>
+
+<p>2819 instances of <code class="highlighter-rouge">appos</code> (99%) are left-to-right (parent precedes child).
+Average distance between parent and child is 2.68042328042328.</p>
+
+<p>The following 49 pairs of parts of speech are connected with <code class="highlighter-rouge">appos</code>: <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/PROPN</a> (1311; 46% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/NOUN</a> (882; 31% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/NOUN</a> (124; 4% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/PROPN</a> (103; 4% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADJ</a> (99; 3% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/NUM</a> (52; 2% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/X</a> (45; 2% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/VERB</a> (29; 1% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADP</a> (26; 1% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/ADJ</a> (19; 1% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/ADJ</a> (14; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/NOUN</a> (14; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/NOUN</a> (13; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/NOUN</a> (13; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/SYM</a> (10; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/ADJ</a> (7; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/PROPN</a> (6; 0% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/NOUN</a> (6; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/PROPN</a> (6; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/NOUN</a> (5; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/ADP</a> (5; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/NUM</a> (4; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/NUM</a> (4; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/PROPN</a> (4; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/X</a> (4; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/VERB</a> (3; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/VERB</a> (2; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADV</a> (2; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/PROPN</a> (2; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/ADV</a> (2; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/ADP</a> (1; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/PART</a> (1; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/X</a> (1; 0% instances), <a href="">ru-pos/ADP</a>-<a href="">ru-pos/ADV</a> (1; 0% instances), <a href="">ru-pos/ADP</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/PRON</a> (1; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/VERB</a> (1; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/ADV</a> (1; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/VERB</a> (1; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/X</a> (1; 0% instances), <a href="">ru-pos/SYM</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/ADP</a> (1; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/CONJ</a> (1; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/X</a> (1; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/ADJ</a> (1; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/ADV</a> (1; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/NUM</a> (1; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/VERB</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 8 appos	color:blue
+1	Новое	_	ADJ	JJL	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	2	amod	_	_
+2	название	_	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	5	nsubjpass	_	_
+3	поселению	_	NOUN	NN	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	5	iobj	_	_
+4	было	_	VERB	VBC	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past	5	auxpass	_	_
+5	дано	_	VERB	VBNH	Animacy=Inan|Aspect=Perf|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|Voice=Pass	0	root	_	_
+6	по	_	ADP	IN	_	7	case	_	_
+7	речке	_	NOUN	NN	Animacy=Inan|Case=Dat|Gender=Fem|Number=Sing	5	nmod	_	_
+8	Пивка	_	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	7	appos	_	_
+9	.	_	PUNCT	.	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 7 appos	color:blue
+1	О	_	ADP	IN	_	0	root	_	_
+2	лечении	_	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	1	nmod	_	_
+3	и	_	CONJ	CC	_	2	cc	_	_
+4	профилактике	_	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	2	conj	_	_
+5	в	_	ADP	IN	_	6	case	_	_
+6	статье	_	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	4	nmod	_	_
+7	неврит	_	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	6	appos	_	_
+8	.	_	PUNCT	.	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 11 appos	color:blue
+1	Входит	_	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+2	в	_	ADP	IN	_	3	case	_	_
+3	состав	_	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	nmod	_	_
+4	кантона	_	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	nmod	_	_
+5	Ла	_	X	AFX	_	7	goeswith	_	_
+6	-	_	PUNCT	-	_	7	goeswith	_	_
+7	Рошель	_	PROPN	NNP	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	4	appos	_	_
+8	9	_	X	AFX	_	11	amod	_	_
+9	-	_	PUNCT	-	_	8	goeswith	_	_
+10	й	_	ADJ	JJL	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	goeswith	_	_
+11	кантон	_	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	7	appos	_	_
+12	.	_	PUNCT	.	_	1	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udrussian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
+
+<p>This relation is universal.</p>
+
+<p>7922 nodes (1%) are attached to their parents as <code class="highlighter-rouge">appos</code>.</p>
+
+<p>7839 instances of <code class="highlighter-rouge">appos</code> (99%) are left-to-right (parent precedes child).
+Average distance between parent and child is 2.35571825296642.</p>
+
+<p>The following 31 pairs of parts of speech are connected with <code class="highlighter-rouge">appos</code>: <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/NOUN</a> (7205; 91% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/NUM</a> (215; 3% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/NOUN</a> (138; 2% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADJ</a> (68; 1% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/ADJ</a> (59; 1% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/NOUN</a> (54; 1% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/PART</a> (53; 1% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/VERB</a> (37; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/VERB</a> (26; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADV</a> (15; 0% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/ADV</a> (9; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/PRON</a> (7; 0% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/NOUN</a> (4; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/NUM</a> (4; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/NOUN</a> (4; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/SYM</a> (3; 0% instances), <a href="">ru-pos/SYM</a>-<a href="">ru-pos/NUM</a> (3; 0% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/VERB</a> (2; 0% instances), <a href="">ru-pos/CONJ</a>-<a href="">ru-pos/CONJ</a> (2; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/NOUN</a> (2; 0% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/ADJ</a> (2; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/NUM</a> (1; 0% instances), <a href="">ru-pos/CONJ</a>-<a href="">ru-pos/SCONJ</a> (1; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/CONJ</a> (1; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/SYM</a> (1; 0% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/PRON</a> (1; 0% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/VERB</a> (1; 0% instances), <a href="">ru-pos/SCONJ</a>-<a href="">ru-pos/CONJ</a> (1; 0% instances), <a href="">ru-pos/SCONJ</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/SYM</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/SYM</a>-<a href="">ru-pos/SYM</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 4 appos	color:blue
+1	-	-	PUNCT	-	_	2	punct	_	_
+2	Детерминированность	ДЕТЕРМИНИРОВАННОСТЬ	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	0	root	_	_
+3	(	(	PUNCT	(	_	4	punct	_	_
+4	определённость	ОПРЕДЕЛЕННОСТЬ	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	2	appos	_	_
+5	)	)	PUNCT	)	_	4	punct	_	_
+6	.	.	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 6 appos	color:blue
+1	Мы	МЫ	PRON	_	_	2	nsubj	_	_
+2	потеряли	ТЕРЯТЬ	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	"	"	PUNCT	"	_	4	punct	_	_
+4	Марс	МАРС	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	2	dobj	_	_
+5	-	-	PUNCT	-	_	4	punct	_	_
+6	96	96	NUM	_	_	4	appos	_	_
+7	"	"	PUNCT	"	_	6	punct	_	_
+8	,	,	PUNCT	,	_	6	punct	_	_
+9	который	КОТОРЫЙ	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	10	nsubjpass	_	_
+10	создавался	СОЗДАВАТЬ	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Pass	4	acl:relcl	_	_
+11	многие	МНОГИЕ	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	12	amod	_	_
+12	годы	ГОД	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	10	nmod	_	_
+13	.	.	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 5 appos	color:blue
+1	И	И	CONJ	_	_	7	cc	_	_
+2	на	НА	ADP	_	_	3	case	_	_
+3	него	ОН	PRON	_	_	7	dobj	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	отца	ОТЕЦ	NOUN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	3	appos	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	похож	ПОХОЖИЙ	ADJ	_	Degree=Pos|Gender=Masc|Number=Sing|Variant=Brev	0	root	_	_
+8	?	?	PUNCT	?	_	7	punct	_	_
+
+</code></pre>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+appos in other languages:
+
+[<a href="../../bg/dep/appos.html">bg</a>]
+
+[<a href="../../cs/dep/appos.html">cs</a>]
+
+[<a href="../../de/dep/appos.html">de</a>]
+
+[<a href="../../el/dep/appos.html">el</a>]
+
+[<a href="../../en/dep/appos.html">en</a>]
+
+[<a href="../../es/dep/appos.html">es</a>]
+
+[<a href="../../eu/dep/appos.html">eu</a>]
+
+[<a href="../../fa/dep/appos.html">fa</a>]
+
+[<a href="../../fi/dep/appos.html">fi</a>]
+
+[<a href="../../fr/dep/appos.html">fr</a>]
+
+[<a href="../../ga/dep/appos.html">ga</a>]
+
+[<a href="../../he/dep/appos.html">he</a>]
+
+[<a href="../../hu/dep/appos.html">hu</a>]
+
+[<a href="../../it/dep/appos.html">it</a>]
+
+[<a href="../../ja/dep/appos.html">ja</a>]
+
+[<a href="../../ko/dep/appos.html">ko</a>]
+
+[<a href="../../sv/dep/appos.html">sv</a>]
+
+[<a href="../../u/dep/appos.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'ru-dep';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

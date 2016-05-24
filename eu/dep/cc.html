@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/cc.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,30 +39,17 @@
 
           <h2><code>cc</code>: coordinating conjunction</h2>
 
-<p>cc relation is used to annotate the relation between the conjunction complementizer and the head of the coordination structure.</p>
+<p><code class="highlighter-rouge">cc</code> relation is used to annotate the relation between the conjunction complementizer and the head of the coordination structure.</p>
 
 <p>Coordination in the Basque UD annotation follows the general schema where the first element of the conjunction is the head, and each conjunct, conjunction complementizer or puntuation mark acting as a conjunction should be attached to the first conjunct::</p>
 
-<p>Example:</p>
+<p><em><strong>Zidane, Henry, Barthez, Deschamps, Blanc eta enparauek</strong> Europako Talde sendoena osatzen dute aditu gehienentzat .</em></p>
 
-<ul>
-  <li>English:</li>
-</ul>
+<p><em><strong>Zidane, Henry, Barthez, Deschamps, Blanc and the rest</strong> form the most robust team of Europe according to most experts .</em></p>
 
-<p>Zidane, Henry, Barthez, Deschamps, Blanc and the rest form the most robust team according to most experts.</p>
+<pre><code class="language-sdparse">Zidane, Henry, Barthez, Deschamps, Blanc eta enparauek Europako Talde sendoena osatzen dute aditu gehienentzat . \n Zidane, Henry, Barthez, Deschamps, Blanc and rest_the Europe_of team robust_the_most experts most_according_to .
 
-<ul>
-  <li>Basque:</li>
-</ul>
-
-<p>Zidane, Henry, Barthez, Deschamps, Blanc eta enparauek Europako Talde sendoena osatzen dute aditu gehienentzat.</p>
-
-<p><em>Zidane, Henry, Barthez, Deschamps, Blanc and rest-the-erg Europe-gen team robust-the-most form aux-they-transtive-present 
-expert most-for.</em></p>
-
-<p>Note that it is the last conjunct the element showing the ergative case. The ergative case corresponds to subjects of transitive verbs. In this case <em>to form</em></p>
-
-<pre><code class="language-sdparse">Zidane , Henry , Barthez , Deschamps , Blanc eta enparauek Europako talde sendoena osatzen dute aditu gehienentzat .
+Zidane , Henry , Barthez , Deschamps , Blanc eta enparauek Europako talde sendoena osatzen dute aditu gehienentzat .
 punct(Zidane-1, ,-2)
 conj(Zidane-1, Henry-3)
 punct(Zidane-1, ,-4)
@@ -81,6 +69,7 @@ det(aditu-17, gehienentzat-18)
 punct(osatzen-15, .-19)
 </code></pre>
 
+<p>Note that it is the last conjunct the element showing the ergative case. The ergative case corresponds to subjects of transitive verbs. In this case <em>to form</em></p>
 
 
 <!-- "automatic stats" -->
@@ -97,12 +86,12 @@ punct(osatzen-15, .-19)
 
 <p>This relation is universal.</p>
 
-<p>4678 nodes (4%) are attached to their parents as <code>cc</code>.</p>
+<p>4678 nodes (4%) are attached to their parents as <code class="highlighter-rouge">cc</code>.</p>
 
-<p>4318 instances of <code>cc</code> (92%) are left-to-right (parent precedes child).
+<p>4318 instances of <code class="highlighter-rouge">cc</code> (92%) are left-to-right (parent precedes child).
 Average distance between parent and child is 3.40722530996152.</p>
 
-<p>The following 23 pairs of parts of speech are connected with <code>cc</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (2823; 60% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (940; 20% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/CONJ</a> (533; 11% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/CONJ</a> (125; 3% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/CONJ</a> (75; 2% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/CONJ</a> (60; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PART</a> (21; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/CONJ</a> (18; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/CONJ</a> (15; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/CONJ</a> (14; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PART</a> (10; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/CONJ</a> (9; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/ADV</a> (9; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PART</a> (6; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PART</a> (4; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/CONJ</a> (4; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/CONJ</a> (3; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PART</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PART</a> (2; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/X</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/PART</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (1; 0% instances).</p>
+<p>The following 23 pairs of parts of speech are connected with <code class="highlighter-rouge">cc</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (2823; 60% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (940; 20% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/CONJ</a> (533; 11% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/CONJ</a> (125; 3% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/CONJ</a> (75; 2% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/CONJ</a> (60; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PART</a> (21; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/CONJ</a> (18; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/CONJ</a> (15; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/CONJ</a> (14; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PART</a> (10; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/CONJ</a> (9; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/ADV</a> (9; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PART</a> (6; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PART</a> (4; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/CONJ</a> (4; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/CONJ</a> (3; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PART</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PART</a> (2; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/X</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/PART</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
@@ -211,6 +200,7 @@ cc in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -242,11 +232,40 @@ cc in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -270,6 +289,7 @@ cc in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -295,7 +315,7 @@ cc in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

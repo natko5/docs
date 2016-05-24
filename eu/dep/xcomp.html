@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/xcomp.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,61 @@
 
           <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>xcomp</code>.</p>
+<p>An open clausal complement (<code class="highlighter-rouge">xcomp</code>) of a verb or an adjective is a predicative or clausal complement without its own subject (“without its own subject” does not mean that a clause is an xcomp just because its subject is not overt). The reference of the subject is necessarily determined by an argument external to the xcomp (normally by the object of the next higher clause, if there is one, or else by the subject of the next higher clause). 
+These clauses are non-finite in Basque (although in some languages can be finite).</p>
+
+<p><em>Atzo entrenamendua <strong>uztea</strong> erabaki zuen .</em></p>
+
+<p><em>Yesterday (he/she) decided <strong>to leave</strong> the training .</em></p>
+
+<pre><code class="language-sdparse">Atzo entrenamendua uztea erabaki zuen .\n  Yesterday training_the to_leave decided .
+
+advmod(erabaki-4, Atzo-1)
+dobj(uztea-3, entrenamendua-2)
+xcomp(erabaki-4, uztea-3)
+aux(erabaki-4, zuen-5)
+punct(erabaki-4, .-6)
+~~~ sdparse
+
+
+*Alkateek nahi dute lehenbailehen **biltzea** .*
+
+*Mayors want **to meet** as soon as possible .*
+
+~~~ sdparse
+Alkateek nahi dute lehenbailehen biltzea .\n  Mayors want as_soon_as_possible to_meet.
+
+nsubj(nahi_dute-2, Alkateek-1)
+xcomp(nahi_dute-2, biltzea-4)
+adv(biltzea-4, lehenbailehen-3)
+punct(nahi_dute-2, .-5)
+</code></pre>
+
+<p><em>Mentalki <strong>irmo</strong> ikusi ditut haiek .</em></p>
+
+<p><em>I have seen them mentally <strong>firm</strong> .</em></p>
+
+<pre><code class="language-sdparse">Mentalki irmo ikusi ditut haiek .\n Mentally firm seen have them .
+
+adv(ikusi-3, Mentalki-1)
+xcomp(ikusi-3, irmo-2)
+aux(ikusi-3, ditut-4)
+dobj(ikusi-3, haiek-5)
+punct(ikusi-3, .-6)
+</code></pre>
+
+<p><em>Madrilera ez <strong>joatea</strong> erabaki zuen .</em></p>
+
+<p><em>(He/she) decided not <strong>to go</strong> to Madrid .</em></p>
+
+<pre><code class="language-sdparse">Madrilera ez joatea erabaki zuen .\n  Madrid_to not to_go decided .
+
+nmod(joatea-3, Madrilera-1)
+neg(joatea-3, ez-2)
+xcomp(erabaki-4, joatea-3)
+aux(erabaki-4, zuen-5)
+punct(erabaki-4, .-6)
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +110,12 @@ for <code>xcomp</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1392 nodes (1%) are attached to their parents as <code>xcomp</code>.</p>
+<p>1392 nodes (1%) are attached to their parents as <code class="highlighter-rouge">xcomp</code>.</p>
 
-<p>1137 instances of <code>xcomp</code> (82%) are right-to-left (child precedes parent).
+<p>1137 instances of <code class="highlighter-rouge">xcomp</code> (82%) are right-to-left (child precedes parent).
 Average distance between parent and child is 2.16666666666667.</p>
 
-<p>The following 32 pairs of parts of speech are connected with <code>xcomp</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (1013; 73% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (145; 10% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (99; 7% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (43; 3% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADV</a> (13; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (10; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (9; 1% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (8; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (6; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (5; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/VERB</a> (4; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/X</a> (1; 0% instances).</p>
+<p>The following 32 pairs of parts of speech are connected with <code class="highlighter-rouge">xcomp</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (1013; 73% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (145; 10% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (99; 7% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (43; 3% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADV</a> (13; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (10; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (9; 1% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (8; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (6; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (5; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/VERB</a> (4; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -168,6 +222,7 @@ xcomp in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -199,11 +254,40 @@ xcomp in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -227,6 +311,7 @@ xcomp in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -252,7 +337,7 @@ xcomp in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

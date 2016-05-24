@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-hu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/hu/dep">hu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hu/dep">hu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hu-dep/case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,7 +40,7 @@
           <h2><code>case</code>: case marking</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>case</code>.</p>
+for <code class="highlighter-rouge">case</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +57,12 @@ for <code>case</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>479 nodes (2%) are attached to their parents as <code>case</code>.</p>
+<p>799 nodes (2%) are attached to their parents as <code class="highlighter-rouge">case</code>.</p>
 
-<p>477 instances of <code>case</code> (100%) are left-to-right (parent precedes child).
-Average distance between parent and child is 1.29436325678497.</p>
+<p>797 instances of <code class="highlighter-rouge">case</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.37922403003755.</p>
 
-<p>The following 12 pairs of parts of speech are connected with <code>case</code>: <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/ADP</a> (376; 78% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/ADP</a> (45; 9% instances), <a href="">hu-pos/PRON</a>-<a href="">hu-pos/ADP</a> (32; 7% instances), <a href="">hu-pos/DET</a>-<a href="">hu-pos/ADP</a> (11; 2% instances), <a href="">hu-pos/NUM</a>-<a href="">hu-pos/ADP</a> (6; 1% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/ADP</a> (3; 1% instances), <a href="">hu-pos/ADV</a>-<a href="">hu-pos/ADP</a> (1; 0% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/NOUN</a> (1; 0% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/NOUN</a> (1; 0% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/X</a> (1; 0% instances), <a href="">hu-pos/VERB</a>-<a href="">hu-pos/ADP</a> (1; 0% instances), <a href="">hu-pos/X</a>-<a href="">hu-pos/X</a> (1; 0% instances).</p>
+<p>The following 12 pairs of parts of speech are connected with <code class="highlighter-rouge">case</code>: <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/ADP</a> (641; 80% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/ADP</a> (72; 9% instances), <a href="">hu-pos/PRON</a>-<a href="">hu-pos/ADP</a> (48; 6% instances), <a href="">hu-pos/NUM</a>-<a href="">hu-pos/ADP</a> (15; 2% instances), <a href="">hu-pos/DET</a>-<a href="">hu-pos/ADP</a> (11; 1% instances), <a href="">hu-pos/ADJ</a>-<a href="">hu-pos/ADP</a> (6; 1% instances), <a href="">hu-pos/ADV</a>-<a href="">hu-pos/ADP</a> (1; 0% instances), <a href="">hu-pos/NOUN</a>-<a href="">hu-pos/NOUN</a> (1; 0% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/NOUN</a> (1; 0% instances), <a href="">hu-pos/PROPN</a>-<a href="">hu-pos/X</a> (1; 0% instances), <a href="">hu-pos/VERB</a>-<a href="">hu-pos/ADP</a> (1; 0% instances), <a href="">hu-pos/X</a>-<a href="">hu-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 7	bgColor:blue
 # visual-style 7	fgColor:white
@@ -95,24 +96,23 @@ Average distance between parent and child is 1.29436325678497.</p>
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 3	bgColor:blue
-# visual-style 3	fgColor:white
-# visual-style 2	bgColor:blue
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
-# visual-style 2 3 case	color:blue
-1	Ázsiában	Ázsia	PROPN	_	Case=Ine|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	7	nmod:obl	_	_
-2	ezzel	ez	PRON	_	Case=Ins|Number=Sing|Number[psed]=None|Number[psor]=None|Person=3|Person[psor]=None|PronType=Dem	7	nmod:obl	_	_
-3	szemben	szemben	ADP	_	_	2	case	_	_
-4	mind	mind	ADV	_	PronType=Tot	6	advmod:mode	_	_
-5	több	több	DET	_	Definite=Ind|PronType=Ind	6	det	_	_
-6	sikerrel	siker	NOUN	_	Case=Ins|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	7	nmod:obl	_	_
-7	veszik	vesz	VERB	_	Definite=Def|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-8	fel	fel	ADV	_	Degree=Pos	7	compound:preverb	_	_
-9	az	az	DET	_	Definite=Def|PronType=Art	10	det	_	_
-10	AIDS-szel	AIDS	NOUN	_	Case=Ins|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	11	nmod:obl	_	_
-11	szembeni	szembeni	ADJ	_	Case=Nom|Degree=Pos|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	12	amod:att	_	_
-12	küzdelmet	küzdelem	NOUN	_	Case=Acc|Number=Sing|Number[psed]=None|Number[psor]=None|Person[psor]=None	7	dobj	_	_
-13	.	.	PUNCT	_	_	7	punct	_	_
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 2 case	color:blue
+1	Ezzel	ez	PRON	_	Case=Ins|Number=Sing|Person=3|PronType=Dem	10	advmod:mode	_	_
+2	szemben	szemben	ADP	_	_	1	case	_	_
+3	például	például	ADV	_	_	10	advmod:mode	_	_
+4	a	a	DET	_	Definite=Def|PronType=Art	6	det	_	_
+5	jövedéki	jövedéki	ADJ	_	Case=Nom|Degree=Pos|Number=Sing	6	amod:att	_	_
+6	adó	adó	NOUN	_	Case=Nom|Number=Sing	9	nmod:att	_	_
+7	7	7	NUM	_	Case=Nom|Number=Sing|NumType=Card	8	amod:att	_	_
+8	százalékos	százalékos	ADJ	_	Case=Nom|Degree=Pos|Number=Sing	9	amod:att	_	_
+9	növelésére	növelés	NOUN	_	Case=Sub|Number=Sing|Number[psor]=Sing|Person[psor]=3	10	nmod:obl	_	_
+10	tesz	tesz	VERB	_	Definite=Ind|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+11	javaslatot	javaslat	NOUN	_	Case=Acc|Number=Sing	10	dobj	_	_
+12	.	.	PUNCT	_	_	10	punct	_	_
 
 </code></pre>
 
@@ -173,6 +173,7 @@ case in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -204,11 +205,40 @@ case in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -232,6 +262,7 @@ case in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'hu-dep';
@@ -257,7 +288,7 @@ case in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

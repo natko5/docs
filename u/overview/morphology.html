@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-u">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-u">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_u-overview/morphology.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -63,11 +64,11 @@ and features. See also <a href="tokenization.html">Tokenization</a> and
 
 <h2 id="lemmas">Lemmas</h2>
 
-<p>The <code>LEMMA</code> field should contain the canonical or base form of the word, such as the form typically found in dictionaries.</p>
+<p>The <code class="highlighter-rouge">LEMMA</code> field should contain the canonical or base form of the word, such as the form typically found in dictionaries.</p>
 
-<p>If the lemma is not available, an underscore (“<code>_</code>”) can be used to indicate its absence.</p>
+<p>If the lemma is not available, an underscore (“<code class="highlighter-rouge">_</code>”) can be used to indicate its absence.</p>
 
-<p>The <code>LEMMA</code> field should not be used to encode features or other similar properties of the word (use <code>FEATS</code> and <code>MISC</code> instead; see <a href="../../format.html">format</a>).</p>
+<p>The <code class="highlighter-rouge">LEMMA</code> field should not be used to encode features or other similar properties of the word (use <code class="highlighter-rouge">FEATS</code> and <code class="highlighter-rouge">MISC</code> instead; see <a href="../../format.html">format</a>).</p>
 
 <h2 id="part-of-speech-tags">Part-of-Speech Tags</h2>
 
@@ -84,8 +85,8 @@ allows an additional POSTAG, taken from a language-specific
 (or corpus-specific) tagset. Such language-specific POSTAGs have their own
 data column and are not mixed with the universal POS tags.</p>
 
-<p>The universal POS tags consist of uppercase English letters <code>[A-Z]</code> only.
-Just one tag per word is expected, and it should not be empty. (Use the <code>X</code> tag
+<p>The universal POS tags consist of uppercase English letters <code class="highlighter-rouge">[A-Z]</code> only.
+Just one tag per word is expected, and it should not be empty. (Use the <code class="highlighter-rouge">X</code> tag
 instead of underscore if no other tag is appropriate.)</p>
 
 <h3 id="using-a-word-vs-mentioning-it">Using a word vs. mentioning it</h3>
@@ -120,9 +121,9 @@ for specific POS tags:</p>
 <h2 id="features">Features</h2>
 
 <p>Features are additional pieces of information about the word, its part of speech
-and morphosyntactic properties. Every feature has the form <code>Name=Value</code> and
+and morphosyntactic properties. Every feature has the form <code class="highlighter-rouge">Name=Value</code> and
 every word can have any number of features, separated by the vertical bar, as in
-<code>Gender=Masc|Number=Sing</code>.</p>
+<code class="highlighter-rouge">Gender=Masc|Number=Sing</code>.</p>
 
 <p>We provide an <a href="../../u/feat/index.html">inventory of
 features</a> that are attested in multiple corpora and it is thus
@@ -145,22 +146,22 @@ Universal and language-specific features of a word are listed together in the FE
   <li>All identifiers (both features and values) consist of English letters or,
 occasionally, digits 0-9. The first letter is always uppercase.
 The other letters are generally lowercase, except for positions where new
-internal words are marked for better readability (e.g. <code>NumType</code>).
+internal words are marked for better readability (e.g. <code class="highlighter-rouge">NumType</code>).
 This makes features distinct from the 
 <a href="../../u/pos/index.html">universal POS tags</a> 
 (all uppercase) and from the 
 <a href="../../u/dep/index.html">universal dependency relations</a> 
 (all lowercase).</li>
   <li>A feature of a word should always be fully specified in the data, i.e. both
-the feature name and the value should be identified: <code>PronType=Prs</code>.
+the feature name and the value should be identified: <code class="highlighter-rouge">PronType=Prs</code>.
 Note that the values are not guaranteed to be unique across features,
-e.g. <code>Sup</code> could denote the superessive case, superlative degree of comparison
+e.g. <code class="highlighter-rouge">Sup</code> could denote the superessive case, superlative degree of comparison
 or supine (a verb form).</li>
   <li>Not mentioning a feature in the data implies the empty value,
 which means that the feature is either irrelevant for this part of speech,
 or its value cannot be determined for this word form due to language-specific reasons.</li>
   <li>It is possible to declare that a feature has two or more values for a given word:
-<code>Case=Acc,Dat</code>. The interpretation is that the word may have one of these values
+<code class="highlighter-rouge">Case=Acc,Dat</code>. The interpretation is that the word may have one of these values
 but we cannot decide between them. Such <em>multivalues</em> should be used sparingly.
 They should not be used if the value list would cover the whole value space,
 or the subspace valid for the given language.
@@ -171,7 +172,7 @@ always ordered alphabetically; if a feature has multiple values, these are
 ordered alphabetically, too. This rule facilitates cases when it is necessary
 to compare feature sets of two words.
 Alphabetical sorting means that uppercase letters are considered identical to their lowercase counterparts.
-So for example, <code>Number</code> precedes <code>NumType</code>.</li>
+So for example, <code class="highlighter-rouge">Number</code> precedes <code class="highlighter-rouge">NumType</code>.</li>
   <li>Description of individual features usually hints what parts of speech the
 feature is likely to appear with. This information is intended to help
 understand the typical usage of the feature; however, it is <em>not a strict rule!</em>
@@ -213,14 +214,14 @@ the possessor.</p>
 
 <p>If a feature is (can be) layered in a language, the name of the feature must
 indicate the layer. An additional identifier in square brackets is used to
-distinguish layers, e.g. <code>Gender[psor]</code> for the possessor’s gender.
+distinguish layers, e.g. <code class="highlighter-rouge">Gender[psor]</code> for the possessor’s gender.
 We recommend that the layer identifiers consist of lowercase English letters
-<code>[a-z]</code> and/or digits <code>[0-9]</code>.
+<code class="highlighter-rouge">[a-z]</code> and/or digits <code class="highlighter-rouge">[0-9]</code>.
 The layers, their meaning and their
 identifiers must be defined in a language-specific extension to this
 documentation. For each layered feature, one layer may be defined as default
 and the corresponding features then appear without identifier,
-e.g. <code>Gender=Masc|Gender[psor]=Fem</code>.</p>
+e.g. <code class="highlighter-rouge">Gender=Masc|Gender[psor]=Fem</code>.</p>
 
 
       </div>
@@ -233,6 +234,7 @@ e.g. <code>Gender=Masc|Gender[psor]=Fem</code>.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -264,11 +266,40 @@ e.g. <code>Gender=Masc|Gender[psor]=Fem</code>.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -292,6 +323,7 @@ e.g. <code>Gender=Masc|Gender[psor]=Fem</code>.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'u-overview';
@@ -317,7 +349,7 @@ e.g. <code>Gender=Masc|Gender[psor]=Fem</code>.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

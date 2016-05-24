@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -251,9 +252,9 @@ in two places.</p>
 <p><a id="al-en-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> is used for finite and non-finite clauses that modify a
+<p><code class="highlighter-rouge">acl</code> is used for finite and non-finite clauses that modify a
 noun. Note that in English relative clauses get assigned a specific
-relation <a href="">acl:relcl</a>, a subtype of <code>acl</code>.</p>
+relation <a href="">acl:relcl</a>, a subtype of <code class="highlighter-rouge">acl</code>.</p>
 
 <pre><code class="language-sdparse">the issues as he sees them
 acl(issues, sees)
@@ -267,7 +268,7 @@ acl(Points, establish)
 acl(anything, say)
 </code></pre>
 
-<p>Non-relative clause finite clausal complements for nouns are limited to complement clauses with a subset of nouns like <em>fact</em> or <em>report</em>.  We analyze them as <code>acl</code> (parallel to the analysis of this class as “content clauses” in Huddleston and Pullum 2002). Such clausal complements are usually finite (though there are occasional remnant English subjunctives).</p>
+<p>Non-relative clause finite clausal complements for nouns are limited to complement clauses with a subset of nouns like <em>fact</em> or <em>report</em>.  We analyze them as <code class="highlighter-rouge">acl</code> (parallel to the analysis of this class as “content clauses” in Huddleston and Pullum 2002). Such clausal complements are usually finite (though there are occasional remnant English subjunctives).</p>
 
 <pre><code class="language-sdparse">I admire the fact that you are honest 
 acl(fact, honest) 
@@ -422,9 +423,9 @@ auxpass(killed, got)
 <p><a id="al-en-dep/case" class="al-dest"></a></p>
 <h2><code>case</code>: case marking</h2>
 
-<p>The <code>case</code> relation is used for any preposition in English. Prepositions are treated as dependents of the noun they attach to or introduce in an “extended nominal projection”. Thus, contrary to SD, UD abandons treating a preposition as a mediator between a modified word and its object. The <code>case</code> relation aims at providing a uniform analysis of prepositions and case in morphologically rich languages. In English, subordinating conjunctions introducing clauses are often in the form of prepositions. However, they are given a different dependency: The relation <a href="">mark</a> is used for markers in an “extended clausal projection”.</p>
+<p>The <code class="highlighter-rouge">case</code> relation is used for any preposition in English. Prepositions are treated as dependents of the noun they attach to or introduce in an “extended nominal projection”. Thus, contrary to SD, UD abandons treating a preposition as a mediator between a modified word and its object. The <code class="highlighter-rouge">case</code> relation aims at providing a uniform analysis of prepositions and case in morphologically rich languages. In English, subordinating conjunctions introducing clauses are often in the form of prepositions. However, they are given a different dependency: The relation <a href="">mark</a> is used for markers in an “extended clausal projection”.</p>
 
-<p>The <code>case</code> relation is also used for the possessive clitic <em>‘s</em> in English, which we separate from what it modifies, because it acts as a phrasal clitic, as shown in the last example.</p>
+<p>The <code class="highlighter-rouge">case</code> relation is also used for the possessive clitic <em>‘s</em> in English, which we separate from what it modifies, because it acts as a phrasal clitic, as shown in the last example.</p>
 
 <pre><code class="language-sdparse">I saw a cat in a hat
 case(hat, in)
@@ -453,7 +454,7 @@ nmod(speech, head)
 <p><a id="al-en-dep/cc" class="al-dest"></a></p>
 <h2><code>cc</code>: coordination</h2>
 
-<p>A coordination is the relation between an element of a conjunct and the coordinating conjunction word of the conjunct.  (Note: different dependency grammars have different treatments of coordination.  We take one conjunct of a conjunction (normally the first) as the head of the conjunction.) A conjunction may also appear at the beginning of a sentence.  This is also called a <code>cc</code>, and dependent on the root predicate of the sentence.</p>
+<p>A coordination is the relation between an element of a conjunct and the coordinating conjunction word of the conjunct.  (Note: different dependency grammars have different treatments of coordination.  We take one conjunct of a conjunction (normally the first) as the head of the conjunction.) A conjunction may also appear at the beginning of a sentence.  This is also called a <code class="highlighter-rouge">cc</code>, and dependent on the root predicate of the sentence.</p>
 
 <pre><code class="language-sdparse">And then we left .
 cc(left, And)
@@ -544,7 +545,7 @@ compound:prt(shut, down)
 <p>A conjunct is the relation between two elements connected by a
 coordinating conjunction, such as <em>and</em>, <em>or</em>, etc.  We treat
 conjunctions asymmetrically: The head of the relation is the first
-conjunct and other conjunctions depend on it via the <code>conj</code> relation.</p>
+conjunct and other conjunctions depend on it via the <code class="highlighter-rouge">conj</code> relation.</p>
 
 <pre><code class="language-sdparse">Bill is big and honest
 conj(big, honest)
@@ -688,7 +689,7 @@ csubjpass(suspected, lied)
 <p><a id="al-en-dep/dep" class="al-dest"></a></p>
 <h2><code>dep</code>: dependent</h2>
 
-<p>A dependency is labeled as <code>dep</code> when a system is unable to determine
+<p>A dependency is labeled as <code class="highlighter-rouge">dep</code> when a system is unable to determine
 a more precise dependency relation between two words.  This may be
 because of a weird grammatical construction, a limitation in the
 Stanford Dependency conversion software, a parser error, or because of
@@ -741,7 +742,7 @@ discourse(is-2, :)-5)
 <p><a id="al-en-dep/dislocated" class="al-dest"></a></p>
 <h2><code>dislocated</code>: dislocated elements</h2>
 
-<p>The <code>dislocated</code> relation is used for fronted or postposed elements
+<p>The <code class="highlighter-rouge">dislocated</code> relation is used for fronted or postposed elements
 that do not fulfill the usual core grammatical relations of a
 sentence. Dislocated elements are attached to the same governor as the dependent that they double for.</p>
 
@@ -788,7 +789,7 @@ expl(is, There)
 <p><a id="al-en-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
 
-<p>We use <code>foreign</code> to label sequences of foreign words. These are given
+<p>We use <code class="highlighter-rouge">foreign</code> to label sequences of foreign words. These are given
 a linear analysis: the head is the first token in the foreign phrase.</p>
 
 <pre><code class="language-sdparse">I guess that c' est la vie
@@ -819,8 +820,9 @@ goeswith(out-5, with-4)
 <p><a id="al-en-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
-<p>The indirect object of a VP is the noun phrase which is the (dative)
-object of the verb.</p>
+<p>The indirect object of a (verbal) predicate is the nominal which is the dative
+object of the verb. The relation <code class="highlighter-rouge">iobj</code> is used for objects that are not direct
+objects. It occurs only when there is a <code class="highlighter-rouge">dobj</code> or <code class="highlighter-rouge">ccomp</code> in the clause.</p>
 
 <pre><code class="language-sdparse">She gave me a raise
 iobj(gave, me)
@@ -831,7 +833,7 @@ iobj(gave, me)
 <p><a id="al-en-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is used for chains of comparable items. Web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures in particular contain these structures, in the form of contact information: the different contact information items are labeled as <code>list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
+<p>The <code class="highlighter-rouge">list</code> relation is used for chains of comparable items. Web text often contains passages which are meant to be interpreted as lists but are parsed as single sentences. Email signatures in particular contain these structures, in the form of contact information: the different contact information items are labeled as <code class="highlighter-rouge">list</code>; the key-value pair relations are labeled as <a href="">appos</a>.</p>
 
 <p>In lists with more than two items, all items of the list shoud modify the first one.</p>
 
@@ -860,13 +862,13 @@ mark(attacked, after)
 mark(swim, that)
 </code></pre>
 
-<p>The infinitive marker <em>to</em> is analyzed as a <code>mark</code>.</p>
+<p>The infinitive marker <em>to</em> is analyzed as a <code class="highlighter-rouge">mark</code>.</p>
 
 <pre><code class="language-sdparse">I tried to finish it
 mark(finish, to)
 </code></pre>
 
-<p>When a a noun or a verb takes a prepositionally marked non-core argument (modifier) and that modifier is a clause, then we also label that prepositon as <code>mark</code> (as it would not seem reasonable to call it <code>case</code> when it is marking a clause). The result will commonly be a doubly marked clause.</p>
+<p>When a a noun or a verb takes a prepositionally marked non-core argument (modifier) and that modifier is a clause, then we also label that prepositon as <code class="highlighter-rouge">mark</code> (as it would not seem reasonable to call it <code class="highlighter-rouge">case</code> when it is marking a clause). The result will commonly be a doubly marked clause.</p>
 
 <pre><code class="language-sdparse">We have no useful information on whether users are at risk .
 nsubj(have, We)
@@ -889,7 +891,7 @@ punct(have, .)
 
 <p>The multi-word expression (modifier) relation is used for certain fixed grammaticized expressions with function words that behave like a single function word. Multiword expressions are annotated in a flat, head-initial structure,
 in which all words in the expression modify the first one using the
-<code>mwe</code> label.</p>
+<code class="highlighter-rouge">mwe</code> label.</p>
 
 <p>At present, this relation is used inside the following expressions:</p>
 
@@ -1144,8 +1146,8 @@ mwe(had, better)
 aux(had, apologize)
 </code></pre>
 
-<h3 id="not-mwes">Not <code>mwe</code>s</h3>
-<p>The following are <strong>not</strong> annotated as <code>mwe</code>s, but are instead labeled according to their apparent internal structure.</p>
+<h3 id="not-mwes">Not <code class="highlighter-rouge">mwe</code>s</h3>
+<p>The following are <strong>not</strong> annotated as <code class="highlighter-rouge">mwe</code>s, but are instead labeled according to their apparent internal structure.</p>
 
 <p><em>out of</em>, <em>off of</em> (All double prepositions denoting spatial relations are annotated with two cases on the nominal)</p>
 
@@ -1182,7 +1184,7 @@ nmod(like, all)
 case(all, at)
 </code></pre>
 
-<p><em>at most</em>, <em>at least</em> (when used for quantities. To determine whether <em>at least</em> should be an <code>mwe</code> or not in borderline cases, substitute it with <em>at most</em>; if the sentence remains grammatical, it should receive its surface analysis)</p>
+<p><em>at most</em>, <em>at least</em> (when used for quantities. To determine whether <em>at least</em> should be an <code class="highlighter-rouge">mwe</code> or not in borderline cases, substitute it with <em>at most</em>; if the sentence remains grammatical, it should receive its surface analysis)</p>
 
 <pre><code class="language-sdparse">at most 50 percent
 nmod:npmod(percent, most)
@@ -1226,22 +1228,22 @@ parataxis(long, missed)
 <p><a id="al-en-dep/name" class="al-dest"></a></p>
 <h2><code>name</code>: name</h2>
 
-<p><code>name</code> is one of the three relations for compounding in UD (together
+<p><code class="highlighter-rouge">name</code> is one of the three relations for compounding in UD (together
 with <a href="">compound</a> and <a href="">mwe</a>).
 It is used for proper nouns constituted of multiple nominal
-elements. For example, <code>name</code> would be used between the words of
+elements. For example, <code class="highlighter-rouge">name</code> would be used between the words of
 <em>Hillary Rodham Clinton, New York,</em> or <em>Carl XVI Gustaf</em> but not to
 replace the usual relations in a phrasal or clausal name like <em>The
 king of Sweden</em> or the novels <em>The Lord of the Rings</em> and <em>Captured By
 Aliens.</em>
-Words joined by <code>name</code> should all be part of a minimal noun phrase;
+Words joined by <code class="highlighter-rouge">name</code> should all be part of a minimal noun phrase;
 otherwise regular syntactic relations should be used.  This is
 basically similar to the treatment of noun compounds with
 <a href="">compound</a>, except that in many cases parts of the name may be
 another nominal element such as an adjective <em>(United Airlines).</em></p>
 
 <p>In general, names are annotated in a flat, head-initial structure, in
-which all words in the name modify the first one using the <code>name</code>
+which all words in the name modify the first one using the <code class="highlighter-rouge">name</code>
 label.</p>
 
 <pre><code class="language-sdparse">Carl XVI Gustaf
@@ -1293,7 +1295,7 @@ nmod(Río-1, Plata-4)
 <h2><code>neg</code>: negation modifier</h2>
 
 <p>The negation modifier is the relation between a negation word and the
-word it modifies. It is used both for predicate negation (canonically, <em>not</em>) and nominal negation (canonically <em>no</em>). Dependents labeled <code>neg</code> in the current treebank are the following (in various lowercase/uppercase forms): <em>n, n’t, neither, never, no, non, not, nt, t</em>.</p>
+word it modifies. It is used both for predicate negation (canonically, <em>not</em>) and nominal negation (canonically <em>no</em>). Dependents labeled <code class="highlighter-rouge">neg</code> in the current treebank are the following (in various lowercase/uppercase forms): <em>n, n’t, neither, never, no, non, not, nt, t</em>.</p>
 
 <pre><code class="language-sdparse">Bill is not a scientist
 neg(scientist, not)
@@ -1312,9 +1314,9 @@ neg(accidents, no)
 <p><a id="al-en-dep/nmod" class="al-dest"></a></p>
 <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>The <code>nmod</code> relation is used for nominal modifiers of nouns or clausal
-predicates. <code>nmod</code> is a noun functioning as a non-core (oblique)
-argument or adjunct. In English, <code>nmod</code> is used</p>
+<p>The <code class="highlighter-rouge">nmod</code> relation is used for nominal modifiers of nouns or clausal
+predicates. <code class="highlighter-rouge">nmod</code> is a noun functioning as a non-core (oblique)
+argument or adjunct. In English, <code class="highlighter-rouge">nmod</code> is used</p>
 
 <ul>
   <li>for prepositional complements:</li>
@@ -1333,7 +1335,7 @@ nmod(give, children)
 case(children, to)
 </code></pre>
 
-<p>The <code>nmod</code> relation holds between the noun/predicate modified by the
+<p>The <code class="highlighter-rouge">nmod</code> relation holds between the noun/predicate modified by the
 prepositional complement and the noun introduced by the preposition.</p>
 
 <ul>
@@ -1347,7 +1349,7 @@ case(Chair-2, 's-3)
 </code></pre>
 
 <p>Nominal modifiers not introduced by a preposition or not ‘s genitives
-are tagged <a href="">nmod:npmod</a>, a subtype of <code>nmod</code>. Temporal nominal
+are tagged <a href="">nmod:npmod</a>, a subtype of <code class="highlighter-rouge">nmod</code>. Temporal nominal
 modifiers are also marked with a separate relation <a href="">nmod:tmod</a>. See
 the definitions of these relations.</p>
 
@@ -1398,7 +1400,7 @@ distinguished as a separate relation.</p>
 <p><a id="al-en-dep/nmod:poss" class="al-dest"></a></p>
 <h2><code>nmod:poss</code>: possessive nominal modifier</h2>
 
-<p><code>nmod:poss</code> is used for a nominal modifier which occurs before its head in the specifier position used for <em>‘s</em> possessives. It is marked with the <code>case</code> <em>‘s</em> or one of its variant forms. This relation isn’t used for other pre-head modifiers such as noun compounds or quotative phrases.</p>
+<p><code class="highlighter-rouge">nmod:poss</code> is used for a nominal modifier which occurs before its head in the specifier position used for <em>‘s</em> possessives. It is marked with the <code class="highlighter-rouge">case</code> <em>‘s</em> or one of its variant forms. This relation isn’t used for other pre-head modifiers such as noun compounds or quotative phrases.</p>
 
 <pre><code class="language-sdparse">Marie 's book
 nmod:poss(book, Marie)
@@ -1504,13 +1506,13 @@ punct(Go, !)
 <p><a id="al-en-dep/remnant" class="al-dest"></a></p>
 <h2><code>remnant</code>: remnant in ellipsis</h2>
 
-<p>The <code>remnant</code> relation is used to provide a satisfactory treatment of ellipsis (in
+<p>The <code class="highlighter-rouge">remnant</code> relation is used to provide a satisfactory treatment of ellipsis (in
 the case of gapping and stripping, where a predicational or verbal
 head gets elided) <em>without</em> having to postulate empty nodes in the basic representation. This is something that was lacking in earlier versions
 of SD and provides a basis for being able to reconstruct dependencies
 in the enhanced representation of SD.</p>
 
-<p>USD adopts an analysis that notes that in ellipsis a <code>remnant</code> corresponds to a <em>correlate</em> in a preceding clause. The <code>remnant</code> relation connects each remnant to its correlate in the basic dependency representation. This is then a sufficient representation to reconstruct the predicate-argument structure in the enhanced representation.</p>
+<p>USD adopts an analysis that notes that in ellipsis a <code class="highlighter-rouge">remnant</code> corresponds to a <em>correlate</em> in a preceding clause. The <code class="highlighter-rouge">remnant</code> relation connects each remnant to its correlate in the basic dependency representation. This is then a sufficient representation to reconstruct the predicate-argument structure in the enhanced representation.</p>
 
 <pre><code class="language-sdparse">Marie went to Paris and Miriam to Prague
 nsubj(went-2, Marie-1)
@@ -1523,7 +1525,7 @@ case(Prague-8, to-7)
 remnant(Paris-4, Prague-8)
 </code></pre>
 
-<p>Even in the more complex example below, the <code>remnant</code>
+<p>Even in the more complex example below, the <code class="highlighter-rouge">remnant</code>
 relations enable us to correctly retrieve the subjects and objects in
 the clauses with an elided verb.</p>
 
@@ -1536,7 +1538,7 @@ remnant(bronze-3, silver-6)
 remnant(silver-6, gold-10)
 </code></pre>
 
-<p>Note in particular that (unlike for <a href="">conj</a>), <code>remnant</code> uses a chaining analysis where each subsequent remnant depends on the immediately preceding remnant/correlate. The reason for this is that otherwise in a sentence with 2 or more chained ellipses the dependency structure would no longer track which remnants go together. It would become impossible to determine whether Mary won silver and Sandy gold, or Mary won gold and Sandy silver.</p>
+<p>Note in particular that (unlike for <a href="">conj</a>), <code class="highlighter-rouge">remnant</code> uses a chaining analysis where each subsequent remnant depends on the immediately preceding remnant/correlate. The reason for this is that otherwise in a sentence with 2 or more chained ellipses the dependency structure would no longer track which remnants go together. It would become impossible to determine whether Mary won silver and Sandy gold, or Mary won gold and Sandy silver.</p>
 
 <p>Instances of stripping typically occur when there is only one argument in the second clause, but with an accompanying adverbial modifier such as <em>not</em> or <em>only</em>. We model these sentences with the remnant relation as well.</p>
 
@@ -1593,7 +1595,7 @@ remnant(Mary-1, Tom-13)
 remnant(today-4, tomorrow-14)
 </code></pre>
 
-<p>The <code>remnant</code> relation is used when no predicational material is present. In contrast, in right-node-raising (RNR) and VP-ellipsis constructions in which some kind of predicational or verbal material is still present, the <code>remnant</code> relation is not used. In RNR, the verbs are coordinated and the object is a <a href="">dobj</a> of the first verb:</p>
+<p>The <code class="highlighter-rouge">remnant</code> relation is used when no predicational material is present. In contrast, in right-node-raising (RNR) and VP-ellipsis constructions in which some kind of predicational or verbal material is still present, the <code class="highlighter-rouge">remnant</code> relation is not used. In RNR, the verbs are coordinated and the object is a <a href="">dobj</a> of the first verb:</p>
 
 <pre><code class="language-sdparse">John bought and ate an apple
 nsubj(bought-2, John-1)
@@ -1620,7 +1622,7 @@ advmod(will-7, too-8)
 <p><a id="al-en-dep/reparandum" class="al-dest"></a></p>
 <h2><code>reparandum</code>: overridden disfluency</h2>
 
-<p>We use <code>reparandum</code> to indicate disfluencies overridden in a speech
+<p>We use <code class="highlighter-rouge">reparandum</code> to indicate disfluencies overridden in a speech
 repair. The disfluency is the dependent of the repair.</p>
 
 <pre><code class="language-sdparse">Go to the righ- to the left .
@@ -1637,7 +1639,7 @@ det(left-7, the-6)
 <p><a id="al-en-dep/root" class="al-dest"></a></p>
 <h2><code>root</code>: root</h2>
 
-<p>The <code>root</code> grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indexation of real words in the sentence starts at 1.</p>
+<p>The <code class="highlighter-rouge">root</code> grammatical relation points to the root of the sentence. A fake node “ROOT” is used as the governor. The ROOT node is indexed with “0”, since the indexation of real words in the sentence starts at 1.</p>
 
 <pre><code class="language-sdparse">ROOT I love French fries .
 root(ROOT, love)
@@ -1652,7 +1654,7 @@ root(ROOT, man)
 <p><a id="al-en-dep/vocative" class="al-dest"></a></p>
 <h2><code>vocative</code>: vocative</h2>
 
-<p>The <code>vocative</code> relation is used to mark dialogue participant addressed
+<p>The <code class="highlighter-rouge">vocative</code> relation is used to mark dialogue participant addressed
 in text (common in emails and newsgroup postings). The relation links
 the addressee’s name to its host sentence.</p>
 
@@ -1665,7 +1667,7 @@ vocative(take, Guys)
 <p><a id="al-en-dep/xcomp" class="al-dest"></a></p>
 <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>An open clausal complement (<code>xcomp</code>) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp (normally by the object of the next higher clause, if there is one, or else by the subject of the next higher clause. These complements are always non-finite, and they are complements (arguments of the higher verb or adjective) rather than adjuncts/modifiers, such as a purpose clause. The name <code>xcomp</code> is borrowed from Lexical-Functional Grammar.</p>
+<p>An open clausal complement (<code class="highlighter-rouge">xcomp</code>) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp (normally by the object of the next higher clause, if there is one, or else by the subject of the next higher clause. These complements are always non-finite, and they are complements (arguments of the higher verb or adjective) rather than adjuncts/modifiers, such as a purpose clause. The name <code class="highlighter-rouge">xcomp</code> is borrowed from Lexical-Functional Grammar.</p>
 
 <pre><code class="language-sdparse">He says that you like to swim
 xcomp(like, swim)
@@ -1701,6 +1703,7 @@ xcomp(looks, beautiful)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -1732,11 +1735,40 @@ xcomp(looks, beautiful)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -1760,6 +1792,7 @@ xcomp(looks, beautiful)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'en-overview';
@@ -1785,7 +1818,7 @@ xcomp(looks, beautiful)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

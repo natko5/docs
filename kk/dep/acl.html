@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/acl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,13 +39,13 @@
 
           <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> stands for finite and non-finite clauses that modify a noun, in
+<p><code class="highlighter-rouge">acl</code> stands for finite and non-finite clauses that modify a noun, in
 contrast to the <a href="">advcl</a> relation which is used for adverbial clauses
-that modify a predicate. The head of the <code>acl</code> relation is the noun
+that modify a predicate. The head of the <code class="highlighter-rouge">acl</code> relation is the noun
 that is modified, and the dependent is the head of the clause that
 modifies the noun.</p>
 
-<p>We use <code>acl</code> for:</p>
+<p>We use <code class="highlighter-rouge">acl</code> for:</p>
 
 <p>Verbal adjectives that modify nouns:</p>
 
@@ -55,7 +56,7 @@ obj(көрдін-4, спортшылар-3)
 punct(көрдін-4, .-5)
 </code></pre>
 
-<p>This relation may be tagged with <code>acl:relcl</code> in the future, as it is the way
+<p>This relation may be tagged with <code class="highlighter-rouge">acl:relcl</code> in the future, as it is the way
 in which Turkic languages do relative clauses.</p>
 
 <p>Gerunds in genitive modifying a noun:</p>
@@ -89,6 +90,77 @@ advmod(болса-8, да-9)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>89 nodes (2%) are attached to their parents as <code class="highlighter-rouge">acl</code>.</p>
+
+<p>87 instances of <code class="highlighter-rouge">acl</code> (98%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.74157303370787.</p>
+
+<p>The following 5 pairs of parts of speech are connected with <code class="highlighter-rouge">acl</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/VERB</a> (79; 89% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADJ</a> (4; 4% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/VERB</a> (3; 3% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (2; 2% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/VERB</a> (1; 1% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 2 acl	color:blue
+1	Астанаға	Астана	PROPN	np	_	2	nmod	_	top|dat
+2	баратын	бар	VERB	v	_	3	acl	_	iv|gpr_impf
+3	пойыз	пойыз	NOUN	n	_	4	nsubj	_	nom
+4	_	қайда	ADV	adv	_	0	root	_	itg
+5	_	е	VERB	cop	_	4	cop	_	aor|p3|sg
+6	?	?	PUNCT	sent	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 13 11 acl	color:blue
+1	9	9	NUM	num	_	3	conj	_	_
+2	—	—	PUNCT	guio	_	3	punct	_	_
+3	10	10	NUM	num	_	4	amod	_	_
+4	ғасырларда	ғасыр	NOUN	n	_	14	nmod	_	pl|loc
+5	елде	ел	NOUN	n	_	14	nmod	_	loc
+6	Араб	араб	NOUN	n	_	7	nmod:poss	_	nom
+7	халифатына	халифат	NOUN	n	_	11	nmod	_	px3sp|dat
+8	шартты	шартты	ADJ	adj	_	9	amod	_	_
+9	_	түр	NOUN	n	_	11	nmod	_	loc
+10	_	ғана	PART	postadv	_	9	advmod	_	_
+11	тәуелді	тәуелді	ADJ	adj	_	13	acl	_	_
+12	болған	бол	VERB	v	_	11	cop	_	iv|gpr_past
+13	әмірліктер	әмірлік	NOUN	n	_	14	nsubj	_	pl|nom
+14	құрылды	құр	VERB	v	_	0	root	_	tv|pass|ifi|p3|pl
+15	.	.	PUNCT	sent	_	14	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 5 acl	color:blue
+1	Олар	олар	PRON	prn	_	8	nsubj	_	pers|p3|pl|nom
+2	елде	ел	NOUN	n	_	8	nmod	_	loc
+3	Хулагу	Хулагу	PROPN	np	_	4	nmod:poss	_	al|nom
+4	әулетіне	әулет	NOUN	n	_	5	dobj	_	px3sp|dat
+5	қарайтын	қара	VERB	v	_	6	acl	_	tv|gpr_impf
+6	ильхандар	ильхан	PROPN	np	_	7	nmod:poss	_	al|pl|nom
+7	мемлекетін	мемлекет	NOUN	n	_	8	dobj	_	px3sp|acc
+8	құрды	құр	VERB	v	_	0	root	_	tv|ifi|p3|sg
+9	.	.	PUNCT	sent	_	8	punct	_	_
+
+</code></pre>
 
 
 
@@ -147,6 +219,7 @@ acl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -178,11 +251,40 @@ acl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -206,6 +308,7 @@ acl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -231,7 +334,7 @@ acl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

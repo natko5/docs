@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-it">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-it">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -105,7 +106,7 @@
 
 <p>To conform to the UD guidelines, possessive adjectives are handled as determiners <a href="">DET</a>.</p>
 
-<h3 id="corresponding-language-specific-part-of-speech-tags">Corresponding language-specific part-of-speech tags</h3>
+<p>###Corresponding language-specific part-of-speech tags</p>
 
 <p>A:  Adjective</p>
 
@@ -137,15 +138,15 @@ In Italian, there are only <em>prepositions</em>.</p>
 <p>Italian prepositions can take the form of fixed multi-word
 expressions, such as <em>invece di</em> “instead of”, <em>a causa di</em> “because of”, <em>davanti a</em> “in front of”. The
 component words are then still tagged according to their basic use
-(i.e. <em>a</em> is <code>ADP</code>, <em>causa</em> is <a href="">NOUN</a>, <em>di</em> is <code>ADP</code>) and their status as a
+(i.e. <em>a</em> is <code class="highlighter-rouge">ADP</code>, <em>causa</em> is <a href="">NOUN</a>, <em>di</em> is <code class="highlighter-rouge">ADP</code>) and their status as a
 multi-word expression is accounted for at the level of syntactic annotation.
 See <a href="">mwe</a> for more details on the representation of multi-word expressions.</p>
 
 <p>Italian prepositions are also used for introducing non-finite clausal complements, as in <em>Maria ha deciso <b>di</b> partire</em> “Mary decided to leave” or <em>Maria è andata <b>a</b> congratularsi con loro</em> “Mary went to congratulate them”.</p>
 
-<p>Italian distinguishes between simple and articulated prepositions: note however that to comply with the UD <a href="">Tokenization</a> guidelines the latter are systematically splitted into the following sequence of part-of-speech tags, <code>ADP</code> and <code>DET</code> (e.g. <em>nello</em> “in the” is splitted into <em>in</em> <code>ADP</code> <em>lo</em> <code>DET</code>).</p>
+<p>Italian distinguishes between simple and articulated prepositions: note however that to comply with the UD <a href="">Tokenization</a> guidelines the latter are systematically splitted into the following sequence of part-of-speech tags, <code class="highlighter-rouge">ADP</code> and <code class="highlighter-rouge">DET</code> (e.g. <em>nello</em> “in the” is splitted into <em>in</em> <code class="highlighter-rouge">ADP</code> <em>lo</em> <code class="highlighter-rouge">DET</code>).</p>
 
-<h3 id="corresponding-language-specific-part-of-speech-tags">Corresponding language-specific part-of-speech tags</h3>
+<p>###Corresponding language-specific part-of-speech tags</p>
 
 <p>E:  Preposition</p>
 
@@ -168,9 +169,9 @@ See <a href="">mwe</a> for more details on the representation of multi-word expr
 
 <p>Adverbs are words that typically modify <a href="VERB">verbs</a> for such categories as time, place, direction or manner. In Italian, they may also modify <a href="ADJ">adjectives</a> (as in <em><b>palesemente</b> falso</em> “clearly fake”), other adverbs (as in <em><b>molto</b> bene</em> “very well”), or even <a href="NOUN">nouns</a> / <a href="PRON">pronouns</a> (as in <em><b>proprio</b> lui</em> “exactly him”).</p>
 
-<p>Since in traditional Italian grammars there is no clear consensus on the existence of <em>pronominal adverbs</em> as an independent morpho-syntactic category, we decided to avoid using the <code>ADV</code> postag to deal with potential pronominal adverbs which are rather treated as <a href="">PRON</a>.</p>
+<p>Since in traditional Italian grammars there is no clear consensus on the existence of <em>pronominal adverbs</em> as an independent morpho-syntactic category, we decided to avoid using the <code class="highlighter-rouge">ADV</code> postag to deal with potential pronominal adverbs which are rather treated as <a href="">PRON</a>.</p>
 
-<h3 id="corresponding-language-specific-part-of-speech-tags">Corresponding language-specific part-of-speech tags</h3>
+<p>###Corresponding language-specific part-of-speech tags</p>
 
 <p>B: 	Adverb</p>
 
@@ -207,7 +208,7 @@ See <a href="">mwe</a> for more details on the representation of multi-word expr
 
 <p>Following the UD guidelines, Italian modal verbs are handled as modal auxiliaries (e.g. <em>potere</em> “can”, <em>dovere</em> “must”).</p>
 
-<h3 id="corresponding-language-specific-part-of-speech-tags">Corresponding language-specific part-of-speech tags</h3>
+<p>###Corresponding language-specific part-of-speech tags</p>
 
 <p>VA: Auxiliary verb</p>
 
@@ -258,13 +259,13 @@ Like adjectives, Italian determiners typically agree with the noun they modify f
 <p>In Italian, usually a nominal allows for one DET modifier only, with the following exceptions:</p>
 
 <ul>
-  <li>predeterminers (or addeterminers), which are also tagged <code>DET</code>. For example:
+  <li>predeterminers (or addeterminers), which are also tagged <code class="highlighter-rouge">DET</code>. For example:
 <em><b>Tutti</b> gli amici</em> “<b>All</b> the friends”.</li>
-  <li>possessive adjectives, which following the UD guidelines are also tagged as <code>DET</code>. For example:
+  <li>possessive adjectives, which following the UD guidelines are also tagged as <code class="highlighter-rouge">DET</code>. For example:
 <em>Mio padre</em> “my father”, <em>la mia macchina</em> lit. “the my car”, <em>la figlia mia</em> lit. “the daughter my”</li>
 </ul>
 
-<h3 id="corresponding-language-specific-part-of-speech-tags">Corresponding language-specific part-of-speech tags</h3>
+<p>###Corresponding language-specific part-of-speech tags</p>
 
 <p>RD:	Definite article</p>
 
@@ -306,7 +307,7 @@ Like adjectives, Italian determiners typically agree with the noun they modify f
 <p>As a special case of interjections, we recognize feedback particles
 such as: <em>sì</em> “yes” and <em>no</em> “no”. Note that uses of <em>sì</em> and <em>no</em> syntactically related to other accompanying expressions in a sentence are recognized as <a href="">ADV</a>.</p>
 
-<h3 id="corresponding-language-specific-part-of-speech-tags">Corresponding language-specific part-of-speech tags</h3>
+<p>###Corresponding language-specific part-of-speech tags</p>
 
 <p>I:	Interjection</p>
 
@@ -340,10 +341,10 @@ such as: <em>sì</em> “yes” and <em>no</em> “no”. Note that uses of <em>
 
 <p>Nouns are a part of speech typically denoting a person, place, thing, animal or idea.</p>
 
-<p>The <code>NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
+<p>The <code class="highlighter-rouge">NOUN</code> tag is intended for common nouns only. See <a href="">PROPN</a> for
 proper nouns and <a href="">PRON</a> for pronouns.</p>
 
-<h3 id="corresponding-language-specific-part-of-speech-tags">Corresponding language-specific part-of-speech tags</h3>
+<p>###Corresponding language-specific part-of-speech tags</p>
 
 <p>S:	Common noun</p>
 
@@ -368,7 +369,7 @@ proper nouns and <a href="">PRON</a> for pronouns.</p>
 adjective or pronoun, that expresses a number and a relation to the
 number, such as quantity, sequence, frequency or fraction.</p>
 
-<p>Cardinal numerals are covered by <code>NUM</code> whether they are used
+<p>Cardinal numerals are covered by <code class="highlighter-rouge">NUM</code> whether they are used
 as determiners or not (as in <em>Windows <b>Seven</b></em>) and whether they
 are expressed as words <em>(four)</em>, or digits <em>(4)</em>.</p>
 
@@ -378,14 +379,14 @@ are tagged as <a href="ADJ">adjectives</a> or <a href="PRON">pronouns</a> <em>(f
 In Italian there are no adverbial numerals like [cs] <em>poprvé</em> “for the first time” nor multiplicative numerals such as [en] <em>(once, twice)</em>.</p>
 
 <p>Note that, since Roman numerals <em>(IV)</em> are only used as ordinal numerals in Italian (Enciclopedia Treccani), are tagged <a href="">ADJ</a> for coherence with other ordinal numerals. 
-In this case we specify <code>NumType=Ord</code> as morphological feature. 
+In this case we specify <code class="highlighter-rouge">NumType=Ord</code> as morphological feature. 
 A similar treatment is reserved to a cardinal with a suffix such as <em>a</em>, <em>o</em>, <em>esimo</em>, <em>esima</em>, or the symbol <em>°</em> (similar to the English use of the suffix “th”).</p>
 
 <p>Other words functioning as determiners (including quantifiers such as <em>many</em> and <em>few</em>) are tagged <a href="">DET</a>.</p>
 
 <h3 id="examples">Examples</h3>
 
-<p>Tagged as <code>NUM</code>:</p>
+<p>Tagged as <code class="highlighter-rouge">NUM</code>:</p>
 
 <ul>
   <li><em>0</em>, <em>1</em>, <em>2</em>, <em>2014</em>, <em>1000000</em>, <em>3,14159265359</em></li>
@@ -416,7 +417,7 @@ A similar treatment is reserved to a cardinal with a suffix such as <em>a</em>, 
 <p><a id="al-it-pos/PART" class="al-dest"></a></p>
 <h2><code>PART</code>: particle</h2>
 
-<p>The use of <code>PART</code> is limited to possessive markers, in English names: [en] ‘s.</p>
+<p>The use of <code class="highlighter-rouge">PART</code> is limited to possessive markers, in English names: [en] ‘s.</p>
 
 <p>According to the UD guidelines, particles may also encode grammatical
 categories such as negation, e.g.</p>
@@ -494,9 +495,9 @@ context.</p>
 
 <p>A proper noun is a noun that is the name (or part of the name) of a unique entity, be it an individual, a place, or an object.</p>
 
-<p>Acronyms of proper nouns, such as <em>UN</em> and <em>NATO</em>, are also tagged as <code>PROPN</code>.</p>
+<p>Acronyms of proper nouns, such as <em>UN</em> and <em>NATO</em>, are also tagged as <code class="highlighter-rouge">PROPN</code>.</p>
 
-<h3 id="corresponding-language-specific-part-of-speech-tags">Corresponding language-specific part-of-speech tags</h3>
+<p>###Corresponding language-specific part-of-speech tags</p>
 
 <p>SP:	Proper noun</p>
 
@@ -595,7 +596,7 @@ form, function, or both.</p>
   <li><em>$, %, §, ©</em></li>
   <li><em>+, −, ×, ÷, =, &lt;, &gt;</em></li>
   <li>:), ♥‿♥, 😝</li>
-  <li><em>john.doe@universal.org, http://universaldependencies.github.io/docs/</em></li>
+  <li><em>john.doe@universal.org, http://universaldependencies.org/</em></li>
 </ul>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_it-pos/SYM.md" target="#">edit SYM</a></p>
@@ -607,7 +608,7 @@ form, function, or both.</p>
 
 <p>A verb is a member of the syntactic class of words typically denoting events and actions, constituting a minimal predicate in a clause, governing the number and types of dependents which may occur in the clause. In Italian verbs are associated with the following grammatical categories: tense, mood and voice, which can either be expressed inflectionally or using auxilliary verbs or particles.</p>
 
-<p>Note that the <code>VERB</code> tag covers main verbs (content verbs) and copulas but it does not cover auxiliary verbs, for which the <a href="">AUX</a> tag is used.</p>
+<p>Note that the <code class="highlighter-rouge">VERB</code> tag covers main verbs (content verbs) and copulas but it does not cover auxiliary verbs, for which the <a href="">AUX</a> tag is used.</p>
 
 <p>Participles used as adjectives are classified as <a href="">ADJ</a>.</p>
 
@@ -631,11 +632,11 @@ form, function, or both.</p>
 
 <h3 id="definition">Definition</h3>
 
-<p>The tag <code>X</code> is used for words that for some reason cannot be assigned
+<p>The tag <code class="highlighter-rouge">X</code> is used for words that for some reason cannot be assigned
 a real part-of-speech category.</p>
 
-<p>Note that the universal guidelines recommend the usage of <code>X</code> for cases of code-switching where it is not possible (or meaningful) to analyze the intervening language grammatically (and where the dependency relation <em>foreign</em> is
-typically used in the syntactic analysis). The PoS tag for Italian in such cases is SW (foreign noun) and is mapped into <code>X</code> in the conversion.</p>
+<p>Note that the universal guidelines recommend the usage of <code class="highlighter-rouge">X</code> for cases of code-switching where it is not possible (or meaningful) to analyze the intervening language grammatically (and where the dependency relation <em>foreign</em> is
+typically used in the syntactic analysis). The PoS tag for Italian in such cases is SW (foreign noun) and is mapped into <code class="highlighter-rouge">X</code> in the conversion.</p>
 
 <p>This usage does not extend to ordinary loan words where it is assigned a normal
 part-of-speech.</p>
@@ -662,6 +663,7 @@ part-of-speech.</p>
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -693,11 +695,40 @@ part-of-speech.</p>
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -721,6 +752,7 @@ part-of-speech.</p>
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'it-overview';
@@ -746,7 +778,7 @@ part-of-speech.</p>
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

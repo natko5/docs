@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="css/hint.css"/>
     <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/uppsala.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -80,7 +81,7 @@
   <li>Determiners: the relation <a href="">u-dep/det</a> is (for now) compatible with <a href="">u-pos/DET</a>, <a href="">u-pos/PRON</a> and <a href="">u-pos/ADJ</a>, but not with <a href="">u-pos/NOUN</a>, <a href="">u-pos/PROPN</a> and <a href="">u-pos/NUM</a>.</li>
   <li>Multiword abbreviations: abbreviations without spaces (such as “etc.” or “e.g.”) should not be split into their components; when several abbreviated words form a phrase, the usual principles apply, that is, we prefer a compositional analysis and resort to the <a href="">u-dep/mwe</a> only when such an analysis would be arbitrary and misleading.</li>
   <li>Compounds: the relation <a href="">u-dep/compound</a> should only be used for X<sup>0</sup> compounding, not for (other types of) multiword expressions.</li>
-  <li>Single root: in every tree there is just one node with the <code>root</code> dependency relation. If there is no clear main constituent because of ellipsis, the leftmost orphan is promoted to the head position and the other orphans are attached to it.</li>
+  <li>Single root: in every tree there is just one node with the <code class="highlighter-rouge">root</code> dependency relation. If there is no clear main constituent because of ellipsis, the leftmost orphan is promoted to the head position and the other orphans are attached to it.</li>
   <li>Dates: in day-month-year expressions, the year always depends on the month; the month depends on the day if this is indicated by case marking, otherwise the day depends on the month; the relations should be <a href="">u-dep/nummod</a> if numerical, otherwise <a href="">u-dep/nmod</a> or <a href="">u-dep/amod</a> depending on whether the dependents have nominal or adjectival form.</li>
 </ol>
 
@@ -103,7 +104,7 @@
     <p>Core arguments: we need to sort out the exact criteria for distinguishing different core arguments, including the distinction between <a href="">u-dep/dobj</a> and <a href="">u-dep/iobj</a>, the use of the <a href="">u-dep/expl</a> relation, and the treatment of pro-drop, clitic doubling, and dislocation.</p>
   </li>
   <li>
-    <p>Enhanced dependencies: we need guidelines for the enhanced dependencies, which can potentially play a role in resolving all the previous long-term issues.</p>
+    <p>Enhanced dependencies:  we need guidelines for the enhanced dependencies, which can potentially play a role in resolving all the previous long-term issues.</p>
   </li>
 </ol>
 
@@ -119,6 +120,7 @@
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -150,11 +152,40 @@
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -178,6 +209,7 @@
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = '';
@@ -203,7 +235,7 @@
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

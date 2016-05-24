@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-en">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/en/dep">en/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/en/dep">en/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/case.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,9 +39,9 @@
 
           <h2><code>case</code>: case marking</h2>
 
-<p>The <code>case</code> relation is used for any preposition in English. Prepositions are treated as dependents of the noun they attach to or introduce in an “extended nominal projection”. Thus, contrary to SD, UD abandons treating a preposition as a mediator between a modified word and its object. The <code>case</code> relation aims at providing a uniform analysis of prepositions and case in morphologically rich languages. In English, subordinating conjunctions introducing clauses are often in the form of prepositions. However, they are given a different dependency: The relation <a href="">mark</a> is used for markers in an “extended clausal projection”.</p>
+<p>The <code class="highlighter-rouge">case</code> relation is used for any preposition in English. Prepositions are treated as dependents of the noun they attach to or introduce in an “extended nominal projection”. Thus, contrary to SD, UD abandons treating a preposition as a mediator between a modified word and its object. The <code class="highlighter-rouge">case</code> relation aims at providing a uniform analysis of prepositions and case in morphologically rich languages. In English, subordinating conjunctions introducing clauses are often in the form of prepositions. However, they are given a different dependency: The relation <a href="">mark</a> is used for markers in an “extended clausal projection”.</p>
 
-<p>The <code>case</code> relation is also used for the possessive clitic <em>‘s</em> in English, which we separate from what it modifies, because it acts as a phrasal clitic, as shown in the last example.</p>
+<p>The <code class="highlighter-rouge">case</code> relation is also used for the possessive clitic <em>‘s</em> in English, which we separate from what it modifies, because it acts as a phrasal clitic, as shown in the last example.</p>
 
 <pre><code class="language-sdparse">I saw a cat in a hat
 case(hat, in)
@@ -79,12 +80,12 @@ nmod(speech, head)
 
 <p>This relation is universal.</p>
 
-<p>21439 nodes (8%) are attached to their parents as <code>case</code>.</p>
+<p>21439 nodes (8%) are attached to their parents as <code class="highlighter-rouge">case</code>.</p>
 
-<p>20541 instances of <code>case</code> (96%) are right-to-left (child precedes parent).
+<p>20541 instances of <code class="highlighter-rouge">case</code> (96%) are right-to-left (child precedes parent).
 Average distance between parent and child is 2.03960072764588.</p>
 
-<p>The following 56 pairs of parts of speech are connected with <code>case</code>: <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADP</a> (13829; 65% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADP</a> (3924; 18% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADP</a> (1131; 5% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PART</a> (557; 3% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADP</a> (458; 2% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PART</a> (277; 1% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADP</a> (244; 1% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/VERB</a> (178; 1% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/ADP</a> (172; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADP</a> (114; 1% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/SYM</a> (84; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADV</a> (82; 0% instances), <a href="">en-pos/SYM</a>-<a href="">en-pos/ADP</a> (77; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/SCONJ</a> (65; 0% instances), <a href="">en-pos/X</a>-<a href="">en-pos/ADP</a> (44; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/VERB</a> (31; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/SYM</a> (26; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (22; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADJ</a> (21; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADJ</a> (15; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/SCONJ</a> (11; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/SCONJ</a> (7; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/SCONJ</a> (6; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (4; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/X</a> (4; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADV</a> (4; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/PUNCT</a> (4; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PART</a> (4; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (4; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADJ</a> (3; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADV</a> (3; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/SYM</a> (3; 0% instances), <a href="">en-pos/SYM</a>-<a href="">en-pos/SYM</a> (3; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/ADP</a> (2; 0% instances), <a href="">en-pos/INTJ</a>-<a href="">en-pos/ADP</a> (2; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PUNCT</a> (2; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/NUM</a> (2; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/SCONJ</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/SYM</a> (1; 0% instances), <a href="">en-pos/CONJ</a>-<a href="">en-pos/ADP</a> (1; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/SCONJ</a> (1; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/CONJ</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/DET</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PRON</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PROPN</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/NOUN</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/INTJ</a> (1; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PROPN</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADP</a> (1; 0% instances), <a href="">en-pos/X</a>-<a href="">en-pos/X</a> (1; 0% instances).</p>
+<p>The following 56 pairs of parts of speech are connected with <code class="highlighter-rouge">case</code>: <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADP</a> (13829; 65% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADP</a> (3924; 18% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADP</a> (1203; 6% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PART</a> (557; 3% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADP</a> (458; 2% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PART</a> (277; 1% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADP</a> (244; 1% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/VERB</a> (178; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADP</a> (114; 1% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/ADP</a> (100; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/SYM</a> (84; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADV</a> (82; 0% instances), <a href="">en-pos/SYM</a>-<a href="">en-pos/ADP</a> (77; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/SCONJ</a> (65; 0% instances), <a href="">en-pos/X</a>-<a href="">en-pos/ADP</a> (44; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/VERB</a> (31; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/SYM</a> (26; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (22; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADJ</a> (21; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADJ</a> (15; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/SCONJ</a> (11; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/SCONJ</a> (7; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/SCONJ</a> (6; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (4; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/X</a> (4; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADV</a> (4; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/PUNCT</a> (4; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PART</a> (4; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (4; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADJ</a> (3; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADV</a> (3; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/SYM</a> (3; 0% instances), <a href="">en-pos/SYM</a>-<a href="">en-pos/SYM</a> (3; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/ADP</a> (2; 0% instances), <a href="">en-pos/INTJ</a>-<a href="">en-pos/ADP</a> (2; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PUNCT</a> (2; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/NUM</a> (2; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/SCONJ</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/SYM</a> (1; 0% instances), <a href="">en-pos/CONJ</a>-<a href="">en-pos/ADP</a> (1; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/SCONJ</a> (1; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/CONJ</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/DET</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PRON</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PROPN</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/NOUN</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/INTJ</a> (1; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PROPN</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADP</a> (1; 0% instances), <a href="">en-pos/X</a>-<a href="">en-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -134,6 +135,169 @@ Average distance between parent and child is 2.03960072764588.</p>
 6	for	for	ADP	IN	_	7	case	_	_
 7	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	5	nmod	_	SpaceAfter=No
 8	.	.	PUNCT	.	_	5	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udenglish-esl">Treebank Statistics (UD_English-ESL)</h2>
+
+<p>This relation is universal.</p>
+
+<p>8356 nodes (9%) are attached to their parents as <code class="highlighter-rouge">case</code>.</p>
+
+<p>8168 instances of <code class="highlighter-rouge">case</code> (98%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.81534226902824.</p>
+
+<p>The following 38 pairs of parts of speech are connected with <code class="highlighter-rouge">case</code>: <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADP</a> (6076; 73% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADP</a> (694; 8% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADP</a> (687; 8% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/ADP</a> (287; 3% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADP</a> (158; 2% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PART</a> (123; 1% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADP</a> (60; 1% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/VERB</a> (48; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADP</a> (46; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PART</a> (39; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADJ</a> (27; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADP</a> (23; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (16; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADV</a> (12; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PROPN</a> (8; 0% instances), <a href="">en-pos/SYM</a>-<a href="">en-pos/ADP</a> (7; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/DET</a> (6; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/SCONJ</a> (4; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADV</a> (4; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADV</a> (4; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PART</a> (4; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADV</a> (4; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/SCONJ</a> (2; 0% instances), <a href="">en-pos/INTJ</a>-<a href="">en-pos/ADP</a> (2; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/ADP</a> (1; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/ADP</a> (1; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/SYM</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/SCONJ</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/X</a>-<a href="">en-pos/ADP</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 11 10 case	color:blue
+1	_	_	SCONJ	IN	_	4	mark	_	_
+2	_	_	DET	DT	_	3	det	_	_
+3	_	_	NOUN	NN	_	4	nsubj	_	_
+4	_	_	VERB	VBD	_	7	advcl	_	_
+5	_	_	PUNCT	,	_	7	punct	_	_
+6	_	_	PRON	PRP	_	7	nsubj	_	_
+7	_	_	VERB	VBD	_	0	root	_	_
+8	_	_	DET	DT	_	9	det	_	_
+9	_	_	NOUN	NN	_	7	dobj	_	_
+10	_	_	ADP	IN	_	11	case	_	_
+11	_	_	NOUN	NNS	_	7	nmod	_	_
+12	_	_	CONJ	CC	_	7	cc	_	_
+13	_	_	PRON	PRP	_	14	nsubj	_	_
+14	_	_	VERB	VBD	_	7	conj	_	_
+15	_	_	DET	DT	_	16	det	_	_
+16	_	_	NOUN	NNS	_	14	dobj	_	_
+17	_	_	ADP	IN	_	18	case	_	_
+18	_	_	NOUN	NNS	_	14	nmod	_	_
+19	_	_	PUNCT	.	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 16	bgColor:blue
+# visual-style 16	fgColor:white
+# visual-style 17	bgColor:blue
+# visual-style 17	fgColor:white
+# visual-style 17 16 case	color:blue
+1	_	_	PRON	PRP	_	4	nsubj	_	_
+2	_	_	AUX	MD	_	4	aux	_	_
+3	_	_	VERB	VB	_	4	cop	_	_
+4	_	_	ADJ	JJ	_	0	root	_	_
+5	_	_	PUNCT	,	_	4	punct	_	_
+6	_	_	SCONJ	IN	_	9	mark	_	_
+7	_	_	PRON	PRP	_	9	nsubj	_	_
+8	_	_	AUX	MD	_	9	aux	_	_
+9	_	_	VERB	VB	_	4	advcl	_	_
+10	_	_	DET	PRP$	_	11	nmod:poss	_	_
+11	_	_	NOUN	NN	_	9	dobj	_	_
+12	_	_	CONJ	CC	_	4	cc	_	_
+13	_	_	VERB	VB	_	4	conj	_	_
+14	_	_	PART	TO	_	15	mark	_	_
+15	_	_	VERB	VBG	_	13	xcomp	_	_
+16	_	_	ADP	IN	_	17	case	_	_
+17	_	_	PRON	PRP	_	15	nmod	_	_
+18	_	_	ADV	RB	_	15	advmod	_	_
+19	_	_	PUNCT	.	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 14	bgColor:blue
+# visual-style 14	fgColor:white
+# visual-style 15	bgColor:blue
+# visual-style 15	fgColor:white
+# visual-style 15 14 case	color:blue
+1	_	_	ADV	RB	_	5	advmod	_	_
+2	_	_	PUNCT	,	_	5	punct	_	_
+3	_	_	PRON	PRP	_	5	nsubj	_	_
+4	_	_	AUX	MD	_	5	aux	_	_
+5	_	_	VERB	VB	_	0	root	_	_
+6	_	_	PART	TO	_	7	mark	_	_
+7	_	_	VERB	VB	_	5	xcomp	_	_
+8	_	_	PRON	PRP	_	7	dobj	_	_
+9	_	_	ADV	WRB	_	7	ccomp	_	_
+10	_	_	DET	DT	_	11	det	_	_
+11	_	_	NOUN	NN	_	9	nsubj	_	_
+12	_	_	AUX	MD	_	9	aux	_	_
+13	_	_	VERB	VB	_	9	cop	_	_
+14	_	_	ADP	IN	_	15	case	_	_
+15	_	_	PROPN	NNP	_	9	nmod	_	_
+16	_	_	CONJ	CC	_	13	cc	_	_
+17	_	_	DET	WDT	_	18	det	_	_
+18	_	_	NOUN	NN	_	22	dobj	_	_
+19	_	_	ADP	IN	_	20	case	_	_
+20	_	_	NOUN	NNS	_	18	nmod	_	_
+21	_	_	PRON	PRP	_	22	nsubj	_	_
+22	_	_	VERB	VBP	_	13	conj	_	_
+23	_	_	PART	TO	_	24	mark	_	_
+24	_	_	VERB	VB	_	22	xcomp	_	_
+25	_	_	PUNCT	.	_	5	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udenglish-lines">Treebank Statistics (UD_English-LinES)</h2>
+
+<p>This relation is universal.</p>
+
+<p>8276 nodes (10%) are attached to their parents as <code class="highlighter-rouge">case</code>.</p>
+
+<p>7905 instances of <code class="highlighter-rouge">case</code> (96%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.98477525374577.</p>
+
+<p>The following 26 pairs of parts of speech are connected with <code class="highlighter-rouge">case</code>: <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADP</a> (5976; 72% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADP</a> (733; 9% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADP</a> (570; 7% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADP</a> (340; 4% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PART</a> (185; 2% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADP</a> (135; 2% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PART</a> (134; 2% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADP</a> (91; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADP</a> (47; 1% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (15; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/ADP</a> (12; 0% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/ADP</a> (10; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADJ</a> (6; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PART</a> (4; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADJ</a> (3; 0% instances), <a href="">en-pos/SYM</a>-<a href="">en-pos/ADP</a> (3; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADV</a> (2; 0% instances), <a href="">en-pos/X</a>-<a href="">en-pos/ADP</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/SCONJ</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/PART</a>-<a href="">en-pos/ADP</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/SCONJ</a> (1; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 1 case	color:blue
+1	About	_	ADP	_	_	5	case	_	_
+2	ANSI	_	PROPN	SG	_	5	name	_	_
+3	SQL	_	PROPN	SG	_	2	name	_	_
+4	query	_	NOUN	SG	_	5	compound	_	_
+5	mode	_	NOUN	_	_	0	root	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 5 case	color:blue
+1	Conditional	_	ADJ	POS	_	2	amod	_	_
+2	filters	_	NOUN	PL	_	4	nsubj	_	_
+3	are	_	VERB	PRES	_	4	cop	_	_
+4	independent	_	ADJ	POS	_	0	root	_	_
+5	of	_	ADP	_	_	6	case	_	_
+6	each	_	PRON	RCP-SG-ACC	_	4	nmod	_	_
+7	other	_	PRON	RCP-SG-ACC	_	6	mwe	_	_
+8	.	_	PUNCT	Period	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 12	bgColor:blue
+# visual-style 12	fgColor:white
+# visual-style 12 11 case	color:blue
+1	He	_	PRON	PERS-P3SG-NOM	_	2	nsubj	_	_
+2	sat	_	VERB	PAST	_	0	root	_	_
+3	there	_	ADV	_	_	2	advmod	_	_
+4	dumbly	_	ADV	_	_	2	advmod	_	_
+5	in	_	ADP	_	_	7	case	_	_
+6	his	_	PRON	P3SG-GEN	_	7	nmod:poss	_	_
+7	seat	_	NOUN	SG	_	2	nmod	_	_
+8	,	_	PUNCT	Comma	_	9	punct	_	_
+9	looking	_	VERB	ING	_	2	advcl	_	_
+10	back	_	ADV	_	_	9	advmod	_	_
+11	at	_	ADP	_	_	12	case	_	_
+12	Stillman	_	PROPN	SG	_	9	nmod	_	_
+13	.	_	PUNCT	Period	_	2	punct	_	_
 
 </code></pre>
 
@@ -194,6 +358,7 @@ case in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -225,11 +390,40 @@ case in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -253,6 +447,7 @@ case in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'en-dep';
@@ -278,7 +473,7 @@ case in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

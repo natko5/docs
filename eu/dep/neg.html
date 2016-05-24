@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/neg.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,57 @@
 
           <h2><code>neg</code>: negation modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>neg</code>.</p>
+<p>The negation modifier (<code class="highlighter-rouge">neg</code>) is the relation between a negation word and the word it modifies. Modifiers labeled neg depend either on a noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).</p>
+
+<ul>
+  <li>Predicate negation:</li>
+</ul>
+
+<p><em><strong>Ez</strong> da inolako hazkunderik antzematen euskararen erabileran .</em></p>
+
+<p><em>It has <strong>not</strong> perceived any growth in the use of Basque .</em></p>
+
+<pre><code class="language-sdparse">Ez da inolako hazkunderik antzematen euskararen erabileran .\n  Not has any growth perceived Basque_of use_the_in .
+
+neg(antzematen-5, Ez-1)
+aux(antzematen-5, da-2)
+amod(hazkunderik-4, inolako-3)
+nsubj(antzematen-5, hazkunderik-4)
+nmod(erabileran-7, euskararen-6)
+nmod(antzematen-5, erabileran-7)
+punct(antzematen-5, .-6)
+</code></pre>
+
+<p><em>Agian <strong>ez</strong> zela hain beharrezkoa .</em></p>
+
+<p><em>That maybe it was <strong>not</strong> so necessary .</em></p>
+
+<pre><code class="language-sdparse">Agian ez zela hain beharrezkoa .\n  Maybe not was_that so necessary .
+
+advmod(zela-3, Agian-1)
+neg(zela-3, ez-2)
+adv(beharrezkoa-5, hain-4)
+cop(beharrezkoa-5, zela-3)
+punct(zela-3, .-6)
+</code></pre>
+
+<ul>
+  <li>Noun negation:</li>
+</ul>
+
+<p><em>Gune <strong>ez</strong> hiritarretan bizi dira nagusiki .</em></p>
+
+<p><em>(They) mainly live in <strong>non</strong> urban areas .</em></p>
+
+<pre><code class="language-sdparse">Gune ez hiritarretan bizi_dira nagusiki .\n  Areas non_urban_in live imainly .
+
+nmod(bizi_dira-4, Gune-1)
+neg(hiritarretan-3, ez-2)
+amod(Gune-1, hiritarretan-3)
+advmod(bizi_dira-4, nagusiki-5)
+punct(bizi_dira-4, .-6)
+</code></pre>
+
 
 
 <!-- "automatic stats" -->
@@ -56,12 +106,12 @@ for <code>neg</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>1355 nodes (1%) are attached to their parents as <code>neg</code>.</p>
+<p>1355 nodes (1%) are attached to their parents as <code class="highlighter-rouge">neg</code>.</p>
 
-<p>1212 instances of <code>neg</code> (89%) are right-to-left (child precedes parent).
+<p>1212 instances of <code class="highlighter-rouge">neg</code> (89%) are right-to-left (child precedes parent).
 Average distance between parent and child is 2.25166051660517.</p>
 
-<p>The following 8 pairs of parts of speech are connected with <code>neg</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PART</a> (1263; 93% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PART</a> (38; 3% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PART</a> (18; 1% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PART</a> (16; 1% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PART</a> (10; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PART</a> (7; 1% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PART</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PART</a> (1; 0% instances).</p>
+<p>The following 8 pairs of parts of speech are connected with <code class="highlighter-rouge">neg</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PART</a> (1263; 93% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PART</a> (38; 3% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PART</a> (18; 1% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PART</a> (16; 1% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PART</a> (10; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PART</a> (7; 1% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PART</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PART</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -171,6 +221,7 @@ neg in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -202,11 +253,40 @@ neg in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -230,6 +310,7 @@ neg in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -255,7 +336,7 @@ neg in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

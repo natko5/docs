@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/nsubj.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,23 +39,15 @@
 
           <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>The <code>nsubj</code> marks nominal subjects of the non-copular clause. Being Basque a morphologically ergative language, subjects of transitive verbs are marked with the ergative case, while subjects of intransitive verbs are marked with the absolutive case.</p>
+<p>The <code class="highlighter-rouge">nsubj</code> marks nominal subjects of the non-copular clause. Being Basque a morphologically ergative language, subjects of transitive verbs are marked with the ergative case, while subjects of intransitive verbs are marked with the absolutive case.</p>
 
-<ul>
-  <li>English (example of an intransitive):</li>
-</ul>
+<p>Example of a subject in an intransitive sentence (ABS case):</p>
 
-<p>These two parts fold by the places that are marked .</p>
+<p><em>Bi <strong>zati</strong> hauek markaturik dauden tokietatik tolesten dira .</em></p>
 
-<ul>
-  <li>Basque:</li>
-</ul>
+<p><em>These two <strong>parts</strong> fold by the sites that are marked .</em></p>
 
-<p>Bi zati hauek markaturik dauden tokietatik tolesten dira .</p>
-
-<p><em>Two parts these-abs marked are-that places  aux-intrans-present .</em></p>
-
-<pre><code class="language-sdparse">Bi zati hauek markaturik dauden tokietatik tolesten dira .
+<pre><code class="language-sdparse">Bi zati hauek markaturik dauden tokietatik tolesten dira .\n Two parts these marked are_that sites_the_by fold .
 
 det(zati-2, Bi-1)
 nsubj(tolesten-7, zati-2)
@@ -63,52 +56,37 @@ acl(tokietatik-6, markaturik-4)
 cop(markaturik-4, dauden-5)
 nmod(tolesten-7, tokietatik-6)
 aux(tolesten-7, dira-8)
+punct(tolesten-7, .-9)
 </code></pre>
 
-<ul>
-  <li>English (example of a transitive):</li>
-</ul>
+<p>Example of a subject in a transitive sentence (ERG case):</p>
 
-<p>The change has caused huge discussions .</p>
+<p><em>Eztabaida handia sortu du <strong>aldaketak</strong> .</em></p>
 
-<ul>
-  <li>Basque:</li>
-</ul>
+<p><em>The <strong>change</strong> has caused a huge discussion .</em></p>
 
-<p>Eztabaida handiak sortu ditu aldaketak .</p>
+<pre><code class="language-sdparse">Eztabaida handia sortu du aldaketak .\n Discussion huge_a caused has change_the .  
 
-<p><em>Discussion huge-pl cause aux-trans-present change-erg.</em></p>
-
-<pre><code class="language-sdparse">Eztabaida handiak sortu ditu aldaketak .
-
-amod(Eztabaida-1, handiak-2)
+amod(Eztabaida-1, handia-2)
 nobj(sortu-3, Eztabaida-1)
-aux(sortu-3, ditu-4)
+aux(sortu-3, du-4)
 nsubj(sortu-3, aldaketak-5)
+punct(sortu-3, .-6)
 </code></pre>
 
 <p>Being Basque a free word order language, arguments of the verb can appear in different orders with respect to the verb.</p>
 
-<ul>
-  <li>English (example of a transitive):</li>
-</ul>
+<p><em><strong>Aldaketak</strong> eztabaida handia sortu du .</em></p>
 
-<p>The change has caused huge discussions .</p>
+<p><em>The <strong>change</strong> has caused a huge discussion .</em></p>
 
-<ul>
-  <li>Basque:</li>
-</ul>
-
-<p>Aldaketak eztabaida handiak sortu ditu .</p>
-
-<p><em>Change-erg discussion huge-pl cause aux-trans-present.</em></p>
-
-<pre><code class="language-sdparse">Aldaketak eztabaida handiak sortu ditu .
+<pre><code class="language-sdparse">Aldaketak eztabaida handia sortu du .\n Change_the discussion huge_a caused has .
 
 nsubj(sortu-4, Aldaketak-1)
-amod(eztabaida-2, handiak-3)
+amod(eztabaida-2, handia-3)
 nobj(sortu-4, eztabaida-2)
-aux(sortu-4, ditu-5)
+aux(sortu-4, du-5)
+punct(sortu-4, .-6)
 </code></pre>
 
 
@@ -127,12 +105,12 @@ aux(sortu-4, ditu-5)
 
 <p>This relation is universal.</p>
 
-<p>8717 nodes (7%) are attached to their parents as <code>nsubj</code>.</p>
+<p>8717 nodes (7%) are attached to their parents as <code class="highlighter-rouge">nsubj</code>.</p>
 
-<p>7038 instances of <code>nsubj</code> (81%) are right-to-left (child precedes parent).
+<p>7038 instances of <code class="highlighter-rouge">nsubj</code> (81%) are right-to-left (child precedes parent).
 Average distance between parent and child is 3.34828496042216.</p>
 
-<p>The following 77 pairs of parts of speech are connected with <code>nsubj</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (4456; 51% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (1915; 22% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (334; 4% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (318; 4% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (300; 3% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PRON</a> (221; 3% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (205; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PROPN</a> (158; 2% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (100; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/DET</a> (85; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (85; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PROPN</a> (42; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NOUN</a> (39; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/DET</a> (37; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PROPN</a> (33; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NOUN</a> (27; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (26; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NOUN</a> (24; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (22; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PROPN</a> (19; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (18; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (16; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (14; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NUM</a> (13; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PRON</a> (13; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NOUN</a> (13; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PROPN</a> (12; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/NOUN</a> (9; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADV</a> (9; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/PROPN</a> (9; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADJ</a> (8; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/DET</a> (8; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PROPN</a> (8; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (8; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/DET</a> (8; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PRON</a> (6; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PRON</a> (5; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PROPN</a> (5; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/DET</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (5; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/PRON</a> (5; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/VERB</a> (4; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (3; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/VERB</a> (3; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PROPN</a> (3; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NUM</a> (3; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/DET</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/PART</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/DET</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/DET</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PUNCT</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/X</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/DET</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/VERB</a> (1; 0% instances).</p>
+<p>The following 77 pairs of parts of speech are connected with <code class="highlighter-rouge">nsubj</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (4456; 51% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (1915; 22% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (334; 4% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (318; 4% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (300; 3% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PRON</a> (221; 3% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (205; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PROPN</a> (158; 2% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (100; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/DET</a> (85; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (85; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PROPN</a> (42; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NOUN</a> (39; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/DET</a> (37; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PROPN</a> (33; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NOUN</a> (27; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (26; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NOUN</a> (24; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (22; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PROPN</a> (19; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (18; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (16; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (14; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NUM</a> (13; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PRON</a> (13; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NOUN</a> (13; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PROPN</a> (12; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/NOUN</a> (9; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADV</a> (9; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/PROPN</a> (9; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADJ</a> (8; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/DET</a> (8; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PROPN</a> (8; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (8; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/DET</a> (8; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PRON</a> (6; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PRON</a> (5; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PROPN</a> (5; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/DET</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (5; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/PRON</a> (5; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/VERB</a> (4; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (3; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/VERB</a> (3; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PROPN</a> (3; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NUM</a> (3; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/DET</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/NOUN</a> (2; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADV</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/PART</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/DET</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/DET</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PUNCT</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/X</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/DET</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 6	bgColor:blue
 # visual-style 6	fgColor:white
@@ -238,6 +216,7 @@ nsubj in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -269,11 +248,40 @@ nsubj in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -297,6 +305,7 @@ nsubj in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -322,7 +331,7 @@ nsubj in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/cop.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,33 +39,31 @@
 
           <h2><code>cop</code>: copula</h2>
 
-<p><code>cop</code> relation is used with copulative verbs. The main difference between the general UD schema and the Basque annotation follows form the fact that English <em>to be</em> corresponds to several  in Basque verbs.</p>
+<p>The <code class="highlighter-rouge">cop</code> relation is used with copulative verbs. The main difference between the general UD schema and the Basque annotation follows form the fact that English <em>to be</em> corresponds to several  in Basque verbs. More precisely, <em>izan</em> (to be), <em>egon</em> (to be), <em>ukan</em> (to have), <em>geratu</em> (to stay keep), <em>ibili</em> (to be).</p>
 
-<p>More precisely, izan <em>to be</em> egon <em>to be</em> ukan <em>to have</em> geratu <em>to stay keep</em> ibili <em>to be</em></p>
+<p><em>Eizagirre <strong>izan</strong> zen onena Galarretan .</em></p>
 
-<ul>
-  <li>English:</li>
-</ul>
+<p><em>Eizagirre <strong>was</strong> the best one in Galarreta .</em></p>
 
-<p>These two parts fold by the places that are marked .</p>
+<pre><code class="language-sdparse">Eizagirre izan zen onena Galarretan . \n Eizagirre was one_best_the Galarreta_in . 
 
-<ul>
-  <li>Basque:</li>
-</ul>
+nsubj(onena-4, Eizagirre-1)
+cop(onena-4, izan-2)
+aux(izan-2, zen-3)
+nmod(izan-2, Galarretan-5)
+punct(onena-4, .-6)
+</code></pre>
 
-<p>Bi zati hauek markaturik dauden tokietatik tolesten dira .</p>
+<p><em>Beti ito beldur <strong>nabil</strong> .</em></p>
 
-<p><em>Two parts these marked are-that places  aux-intrans-present .</em></p>
+<p><em>I <strong>am</strong> always scared to drown .</em></p>
 
-<pre><code class="language-sdparse">Bi zati hauek markaturik dauden tokietatik tolesten dira .
+<pre><code class="language-sdparse">Beti ito beldur nabil . \n always to_drown scared I_am. 
 
-det(zati-2, Bi-1)
-nsubj(tolesten-7, zati-2)
-det(zati-2, hauek-3)
-acl(tokietatik-6, markaturik-4)
-cop(markaturik-4, dauden-5)
-nmod(tolesten-7, tokietatik-6)
-aux(tolesten-7, dira-8)
+advmod(nabil-4, Beti-1)
+advcl(nabil-4, ito-2)
+cop(beldur-3, nabil-4)
+punct(beldur-3, .-5)
 </code></pre>
 
 
@@ -82,12 +81,12 @@ aux(tolesten-7, dira-8)
 
 <p>This relation is universal.</p>
 
-<p>2453 nodes (2%) are attached to their parents as <code>cop</code>.</p>
+<p>2453 nodes (2%) are attached to their parents as <code class="highlighter-rouge">cop</code>.</p>
 
-<p>1976 instances of <code>cop</code> (81%) are left-to-right (parent precedes child).
+<p>1976 instances of <code class="highlighter-rouge">cop</code> (81%) are left-to-right (parent precedes child).
 Average distance between parent and child is 1.73216469629026.</p>
 
-<p>The following 19 pairs of parts of speech are connected with <code>cop</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (1071; 44% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (672; 27% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (454; 19% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (81; 3% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/VERB</a> (59; 2% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/VERB</a> (49; 2% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/VERB</a> (22; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/AUX</a> (12; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/AUX</a> (9; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/AUX</a> (9; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/VERB</a> (6; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/AUX</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/VERB</a> (1; 0% instances).</p>
+<p>The following 19 pairs of parts of speech are connected with <code class="highlighter-rouge">cop</code>: <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (1071; 44% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (672; 27% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (454; 19% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (81; 3% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/VERB</a> (59; 2% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/VERB</a> (49; 2% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/VERB</a> (22; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/AUX</a> (12; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/AUX</a> (9; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/AUX</a> (9; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/VERB</a> (6; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/AUX</a> (1; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/VERB</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -194,6 +193,7 @@ cop in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -225,11 +225,40 @@ cop in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -253,6 +282,7 @@ cop in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -278,7 +308,7 @@ cop in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

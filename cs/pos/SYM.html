@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/cs/pos">cs/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/pos">cs/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-pos/SYM.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -55,7 +56,7 @@ involves all currency symbols, e.g. <em>$ 75</em> is identical to
 
 <p>Strings that consists entirely of alphanumeric characters are not
 symbols but they may be <a href="PROPN">proper nouns</a>: <em>130XE</em>, <em>DC10</em>; others
-may be tagged <code>PROPN</code> (rather than <code>SYM</code>) even if they contain special
+may be tagged <code class="highlighter-rouge">PROPN</code> (rather than <code class="highlighter-rouge">SYM</code>) even if they contain special
 characters: <em>DC-10</em>.
 Similarly, abbreviations for single words are not symbols but are assigned the part of speech
 of the full form. For example, <em>Mr.</em> (mister), <em>kg</em> (kilogram), <em>km</em> (kilometr), <em>dr</em> (doktor)
@@ -71,7 +72,7 @@ they are punctuation.</p>
   <li><em>$, %, §, ©</em></li>
   <li><em>+, −, ×, ÷, =, &lt;, &gt;</em></li>
   <li>:), ♥‿♥, 😝</li>
-  <li><em>john.doe@universal.org, http://universaldependencies.github.io/docs/, 1-800-COMPANY</em></li>
+  <li><em>john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY</em></li>
 </ul>
 
 <h2 id="diffs">Diffs</h2>
@@ -84,7 +85,7 @@ non-alphanumeric characters in the converted data are currently tagged <a href="
 <p>The PDT texts are from the early 1990s and there are no e-mail addresses.
 If they were there, the PDT tokenization rules would break them up on all dots and at signs.
 The same holds for telephone numbers. For example,
-<em>tel.: (05) 4321 6014 </em> is analyzed as eight tokens (<code>NOUN PUNCT PUNCT PUNCT NUM PUNCT NUM NUM</code>).</p>
+<em>tel.: (05) 4321 6014 </em> is analyzed as eight tokens (<code class="highlighter-rouge">NOUN PUNCT PUNCT PUNCT NUM PUNCT NUM NUM</code>).</p>
 
 
 <!-- "automatic stats" -->
@@ -99,16 +100,16 @@ The same holds for telephone numbers. For example,
 
 <h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
 
-<p>There are 6 <code>SYM</code> lemmas (0%), 6 <code>SYM</code> types (0%) and 1250 <code>SYM</code> tokens (0%).
-Out of 17 observed tags, the rank of <code>SYM</code> is: 15 in number of lemmas, 16 in number of types and 15 in number of tokens.</p>
+<p>There are 7 <code class="highlighter-rouge">SYM</code> lemmas (0%), 7 <code class="highlighter-rouge">SYM</code> types (0%) and 1260 <code class="highlighter-rouge">SYM</code> tokens (0%).
+Out of 17 observed tags, the rank of <code class="highlighter-rouge">SYM</code> is: 15 in number of lemmas, 16 in number of types and 15 in number of tokens.</p>
 
-<p>The 10 most frequent <code>SYM</code> lemmas: <em>%, x, +, =, /, $</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">SYM</code> lemmas: <em>%, x, +, =, /, *, $</em></p>
 
-<p>The 10 most frequent <code>SYM</code> types:  <em>%, x, +, =, /, $</em></p>
+<p>The 10 most frequent <code class="highlighter-rouge">SYM</code> types:  <em>%, x, +, =, /, *, $</em></p>
 
-<p>The 10 most frequent ambiguous lemmas: <em>x</em> (<a href="">SYM</a> 120, <a href="">NOUN</a> 70, <a href="">PUNCT</a> 3), <em>/</em> (<a href="">PUNCT</a> 700, <a href="">SYM</a> 18)</p>
+<p>The 10 most frequent ambiguous lemmas: <em>x</em> (<a href="">SYM</a> 120, <a href="">NOUN</a> 70, <a href="">PUNCT</a> 3), <em>/</em> (<a href="">PUNCT</a> 700, <a href="">SYM</a> 18), <em>*</em> (<a href="">PUNCT</a> 655, <a href="">SYM</a> 10)</p>
 
-<p>The 10 most frequent ambiguous types:  <em>x</em> (<a href="">SYM</a> 120, <a href="">NOUN</a> 41, <a href="">PUNCT</a> 3), <em>/</em> (<a href="">PUNCT</a> 700, <a href="">SYM</a> 18)</p>
+<p>The 10 most frequent ambiguous types:  <em>x</em> (<a href="">SYM</a> 120, <a href="">NOUN</a> 41, <a href="">PUNCT</a> 3), <em>/</em> (<a href="">PUNCT</a> 700, <a href="">SYM</a> 18), <em>*</em> (<a href="">PUNCT</a> 655, <a href="">SYM</a> 10)</p>
 
 <ul>
   <li><em>x</em>
@@ -124,45 +125,156 @@ Out of 17 observed tags, the rank of <code>SYM</code> is: 15 in number of lemmas
       <li><a href="">SYM</a> 18: <em>Potřebujete jen 1 <b>/</b> 4 vody , takže sprcha vás stojí 0.46 Kč .</em></li>
     </ul>
   </li>
+  <li><em>*</em>
+    <ul>
+      <li><a href="">PUNCT</a> 655: <em>Při troše štěstí získáte za čtyři roky půl milionu z nájemného <b>*</b></em></li>
+      <li><a href="">SYM</a> 10: <em>Jaká je vzdělanost našeho národa <b>*</b></em></li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>SYM</code> is 1.000000 (the average of all parts of speech is 2.195970).</p>
+<p>The form / lemma ratio of <code class="highlighter-rouge">SYM</code> is 1.000000 (the average of all parts of speech is 2.195950).</p>
 
-<p>The 1st highest number of forms (1) was observed with the lemma “$”: <em>$</em></p>
+<p>The 1st highest number of forms (1) was observed with the lemma “$”: <em>$</em>.</p>
 
-<p>The 2nd highest number of forms (1) was observed with the lemma “%”: <em>%</em></p>
+<p>The 2nd highest number of forms (1) was observed with the lemma “%”: <em>%</em>.</p>
 
-<p>The 3rd highest number of forms (1) was observed with the lemma “+”: <em>+</em></p>
+<p>The 3rd highest number of forms (1) was observed with the lemma “*”: <em>*</em>.</p>
 
-<p><code>SYM</code> occurs with 1 features: <a href="">cs-feat/ConjType</a> (120; 10% instances)</p>
+<p><code class="highlighter-rouge">SYM</code> occurs with 1 features: <a href="">cs-feat/ConjType</a> (120; 10% instances)</p>
 
-<p><code>SYM</code> occurs with 1 feature-value pairs: <code>ConjType=Oper</code></p>
+<p><code class="highlighter-rouge">SYM</code> occurs with 1 feature-value pairs: <code class="highlighter-rouge">ConjType=Oper</code></p>
 
-<p><code>SYM</code> occurs with 2 feature combinations.
-The most frequent feature combination is <code>_</code> (1130 tokens).
-Examples: <em>%, +, =, /, $</em></p>
+<p><code class="highlighter-rouge">SYM</code> occurs with 2 feature combinations.
+The most frequent feature combination is <code class="highlighter-rouge">_</code> (1140 tokens).
+Examples: <em>%, +, =, /, *, $</em></p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>SYM</code> nodes are attached to their parents using 15 different relations: <a href="">cs-dep/nmod</a> (873; 70% instances), <a href="">cs-dep/cc</a> (202; 16% instances), <a href="">cs-dep/advmod</a> (52; 4% instances), <a href="">cs-dep/conj</a> (31; 2% instances), <a href="">cs-dep/case</a> (20; 2% instances), <a href="">cs-dep/dobj</a> (19; 2% instances), <a href="">cs-dep/root</a> (16; 1% instances), <a href="">cs-dep/dep</a> (8; 1% instances), <a href="">cs-dep/nsubj</a> (8; 1% instances), <a href="">cs-dep/parataxis</a> (6; 0% instances), <a href="">cs-dep/appos</a> (5; 0% instances), <a href="">cs-dep/cop</a> (4; 0% instances), <a href="">cs-dep/advcl</a> (3; 0% instances), <a href="">cs-dep/iobj</a> (2; 0% instances), <a href="">cs-dep/mark</a> (1; 0% instances)</p>
+<p><code class="highlighter-rouge">SYM</code> nodes are attached to their parents using 14 different relations: <a href="">cs-dep/nmod</a> (927; 74% instances), <a href="">cs-dep/cc</a> (149; 12% instances), <a href="">cs-dep/advmod</a> (52; 4% instances), <a href="">cs-dep/conj</a> (31; 2% instances), <a href="">cs-dep/case</a> (20; 2% instances), <a href="">cs-dep/dobj</a> (19; 2% instances), <a href="">cs-dep/dep</a> (18; 1% instances), <a href="">cs-dep/root</a> (18; 1% instances), <a href="">cs-dep/nsubj</a> (8; 1% instances), <a href="">cs-dep/parataxis</a> (7; 1% instances), <a href="">cs-dep/appos</a> (5; 0% instances), <a href="">cs-dep/advcl</a> (3; 0% instances), <a href="">cs-dep/iobj</a> (2; 0% instances), <a href="">cs-dep/mark</a> (1; 0% instances)</p>
 
-<p>Parents of <code>SYM</code> nodes belong to 9 different parts of speech: <a href="">NUM</a> (922; 74% instances), <a href="">NOUN</a> (163; 13% instances), <a href="">VERB</a> (98; 8% instances), <a href="">PROPN</a> (21; 2% instances), <a href="">ROOT</a> (16; 1% instances), <a href="">SYM</a> (13; 1% instances), <a href="">ADV</a> (12; 1% instances), <a href="">ADJ</a> (4; 0% instances), <a href="">PRON</a> (1; 0% instances)</p>
+<p>Parents of <code class="highlighter-rouge">SYM</code> nodes belong to 10 different parts of speech: <a href="">NUM</a> (920; 73% instances), <a href="">NOUN</a> (168; 13% instances), <a href="">VERB</a> (100; 8% instances), <a href="">PROPN</a> (22; 2% instances), <a href="">ROOT</a> (18; 1% instances), <a href="">SYM</a> (13; 1% instances), <a href="">ADV</a> (12; 1% instances), <a href="">ADJ</a> (4; 0% instances), <a href="">PRON</a> (2; 0% instances), <a href="">INTJ</a> (1; 0% instances)</p>
 
-<p>742 (59%) <code>SYM</code> nodes are leaves.</p>
+<p>747 (59%) <code class="highlighter-rouge">SYM</code> nodes are leaves.</p>
 
-<p>359 (29%) <code>SYM</code> nodes have one child.</p>
+<p>359 (28%) <code class="highlighter-rouge">SYM</code> nodes have one child.</p>
 
-<p>67 (5%) <code>SYM</code> nodes have two children.</p>
+<p>70 (6%) <code class="highlighter-rouge">SYM</code> nodes have two children.</p>
 
-<p>82 (7%) <code>SYM</code> nodes have three or more children.</p>
+<p>84 (7%) <code class="highlighter-rouge">SYM</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>SYM</code> node is 12.</p>
+<p>The highest child degree of a <code class="highlighter-rouge">SYM</code> node is 12.</p>
 
-<p>Children of <code>SYM</code> nodes are attached using 17 different relations: <a href="">cs-dep/nmod</a> (294; 35% instances), <a href="">cs-dep/nummod</a> (152; 18% instances), <a href="">cs-dep/case</a> (85; 10% instances), <a href="">cs-dep/dobj</a> (79; 10% instances), <a href="">cs-dep/punct</a> (66; 8% instances), <a href="">cs-dep/nsubj</a> (39; 5% instances), <a href="">cs-dep/advmod</a> (25; 3% instances), <a href="">cs-dep/conj</a> (25; 3% instances), <a href="">cs-dep/advmod:emph</a> (24; 3% instances), <a href="">cs-dep/amod</a> (13; 2% instances), <a href="">cs-dep/cc</a> (8; 1% instances), <a href="">cs-dep/mark</a> (6; 1% instances), <a href="">cs-dep/advcl</a> (5; 1% instances), <a href="">cs-dep/cop</a> (4; 0% instances), <a href="">cs-dep/appos</a> (3; 0% instances), <a href="">cs-dep/aux</a> (1; 0% instances), <a href="">cs-dep/dep</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">SYM</code> nodes are attached using 17 different relations: <a href="">cs-dep/nmod</a> (287; 34% instances), <a href="">cs-dep/nummod</a> (152; 18% instances), <a href="">cs-dep/case</a> (85; 10% instances), <a href="">cs-dep/dobj</a> (83; 10% instances), <a href="">cs-dep/punct</a> (72; 9% instances), <a href="">cs-dep/nsubj</a> (43; 5% instances), <a href="">cs-dep/advmod</a> (32; 4% instances), <a href="">cs-dep/conj</a> (25; 3% instances), <a href="">cs-dep/advmod:emph</a> (24; 3% instances), <a href="">cs-dep/amod</a> (13; 2% instances), <a href="">cs-dep/cc</a> (8; 1% instances), <a href="">cs-dep/mark</a> (6; 1% instances), <a href="">cs-dep/advcl</a> (5; 1% instances), <a href="">cs-dep/cop</a> (4; 0% instances), <a href="">cs-dep/appos</a> (3; 0% instances), <a href="">cs-dep/aux</a> (1; 0% instances), <a href="">cs-dep/dep</a> (1; 0% instances)</p>
 
-<p>Children of <code>SYM</code> nodes belong to 14 different parts of speech: <a href="">NOUN</a> (315; 38% instances), <a href="">NUM</a> (254; 31% instances), <a href="">ADP</a> (85; 10% instances), <a href="">PUNCT</a> (66; 8% instances), <a href="">ADV</a> (23; 3% instances), <a href="">PRON</a> (17; 2% instances), <a href="">PART</a> (15; 2% instances), <a href="">ADJ</a> (14; 2% instances), <a href="">SYM</a> (13; 2% instances), <a href="">CONJ</a> (10; 1% instances), <a href="">VERB</a> (10; 1% instances), <a href="">PROPN</a> (5; 1% instances), <a href="">SCONJ</a> (2; 0% instances), <a href="">AUX</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">SYM</code> nodes belong to 14 different parts of speech: <a href="">NOUN</a> (320; 38% instances), <a href="">NUM</a> (256; 30% instances), <a href="">ADP</a> (85; 10% instances), <a href="">PUNCT</a> (72; 9% instances), <a href="">ADV</a> (23; 3% instances), <a href="">PRON</a> (17; 2% instances), <a href="">PART</a> (15; 2% instances), <a href="">ADJ</a> (14; 2% instances), <a href="">SYM</a> (13; 2% instances), <a href="">CONJ</a> (10; 1% instances), <a href="">VERB</a> (10; 1% instances), <a href="">PROPN</a> (6; 1% instances), <a href="">SCONJ</a> (2; 0% instances), <a href="">AUX</a> (1; 0% instances)</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+
+<p>There are 1 <code class="highlighter-rouge">SYM</code> lemmas (0%), 1 <code class="highlighter-rouge">SYM</code> types (0%) and 3783 <code class="highlighter-rouge">SYM</code> tokens (1%).
+Out of 16 observed tags, the rank of <code class="highlighter-rouge">SYM</code> is: 16 in number of lemmas, 16 in number of types and 14 in number of tokens.</p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">SYM</code> lemmas: <em>*</em></p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">SYM</code> types:  <em>*</em></p>
+
+<p>The 10 most frequent ambiguous lemmas:</p>
+
+<p>The 10 most frequent ambiguous types:</p>
+
+<h2 id="morphology-1">Morphology</h2>
+
+<p>The form / lemma ratio of <code class="highlighter-rouge">SYM</code> is 1.000000 (the average of all parts of speech is 2.206260).</p>
+
+<p>The 1st highest number of forms (1) was observed with the lemma “*”: <em>*</em>.</p>
+
+<p><code class="highlighter-rouge">SYM</code> occurs with 1 features: <a href="">cs-feat/Abbr</a> (3783; 100% instances)</p>
+
+<p><code class="highlighter-rouge">SYM</code> occurs with 1 feature-value pairs: <code class="highlighter-rouge">Abbr=Yes</code></p>
+
+<p><code class="highlighter-rouge">SYM</code> occurs with 1 feature combinations.
+The most frequent feature combination is <code class="highlighter-rouge">Abbr=Yes</code> (3783 tokens).
+Examples: <em>*</em></p>
+
+<h2 id="relations-1">Relations</h2>
+
+<p><code class="highlighter-rouge">SYM</code> nodes are attached to their parents using 24 different relations: <a href="">cs-dep/nmod</a> (2477; 65% instances), <a href="">cs-dep/advmod</a> (405; 11% instances), <a href="">cs-dep/conj</a> (290; 8% instances), <a href="">cs-dep/nsubj</a> (141; 4% instances), <a href="">cs-dep/dobj</a> (108; 3% instances), <a href="">cs-dep/dep</a> (85; 2% instances), <a href="">cs-dep/case</a> (80; 2% instances), <a href="">cs-dep/root</a> (55; 1% instances), <a href="">cs-dep/cc</a> (25; 1% instances), <a href="">cs-dep/cop</a> (20; 1% instances), <a href="">cs-dep/nsubjpass</a> (19; 1% instances), <a href="">cs-dep/appos</a> (16; 0% instances), <a href="">cs-dep/auxpass</a> (9; 0% instances), <a href="">cs-dep/acl</a> (8; 0% instances), <a href="">cs-dep/advcl</a> (8; 0% instances), <a href="">cs-dep/mark</a> (8; 0% instances), <a href="">cs-dep/mwe</a> (7; 0% instances), <a href="">cs-dep/iobj</a> (5; 0% instances), <a href="">cs-dep/aux</a> (4; 0% instances), <a href="">cs-dep/xcomp</a> (4; 0% instances), <a href="">cs-dep/advmod:emph</a> (3; 0% instances), <a href="">cs-dep/punct</a> (3; 0% instances), <a href="">cs-dep/auxpass:reflex</a> (2; 0% instances), <a href="">cs-dep/ccomp</a> (1; 0% instances)</p>
+
+<p>Parents of <code class="highlighter-rouge">SYM</code> nodes belong to 12 different parts of speech: <a href="">NOUN</a> (1169; 31% instances), <a href="">NUM</a> (972; 26% instances), <a href="">VERB</a> (658; 17% instances), <a href="">PROPN</a> (584; 15% instances), <a href="">SYM</a> (177; 5% instances), <a href="">ADJ</a> (126; 3% instances), <a href="">ROOT</a> (55; 1% instances), <a href="">PRON</a> (20; 1% instances), <a href="">ADV</a> (13; 0% instances), <a href="">ADP</a> (4; 0% instances), <a href="">CONJ</a> (4; 0% instances), <a href="">PUNCT</a> (1; 0% instances)</p>
+
+<p>2449 (65%) <code class="highlighter-rouge">SYM</code> nodes are leaves.</p>
+
+<p>688 (18%) <code class="highlighter-rouge">SYM</code> nodes have one child.</p>
+
+<p>375 (10%) <code class="highlighter-rouge">SYM</code> nodes have two children.</p>
+
+<p>271 (7%) <code class="highlighter-rouge">SYM</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code class="highlighter-rouge">SYM</code> node is 12.</p>
+
+<p>Children of <code class="highlighter-rouge">SYM</code> nodes are attached using 26 different relations: <a href="">cs-dep/case</a> (622; 25% instances), <a href="">cs-dep/nmod</a> (489; 19% instances), <a href="">cs-dep/conj</a> (212; 8% instances), <a href="">cs-dep/nummod</a> (211; 8% instances), <a href="">cs-dep/punct</a> (201; 8% instances), <a href="">cs-dep/cc</a> (189; 7% instances), <a href="">cs-dep/amod</a> (154; 6% instances), <a href="">cs-dep/nsubj</a> (82; 3% instances), <a href="">cs-dep/advmod</a> (57; 2% instances), <a href="">cs-dep/dobj</a> (50; 2% instances), <a href="">cs-dep/cop</a> (49; 2% instances), <a href="">cs-dep/advmod:emph</a> (46; 2% instances), <a href="">cs-dep/mark</a> (44; 2% instances), <a href="">cs-dep/acl</a> (25; 1% instances), <a href="">cs-dep/dep</a> (21; 1% instances), <a href="">cs-dep/expl</a> (16; 1% instances), <a href="">cs-dep/aux</a> (12; 0% instances), <a href="">cs-dep/xcomp</a> (11; 0% instances), <a href="">cs-dep/auxpass:reflex</a> (7; 0% instances), <a href="">cs-dep/advcl</a> (6; 0% instances), <a href="">cs-dep/appos</a> (6; 0% instances), <a href="">cs-dep/nsubjpass</a> (5; 0% instances), <a href="">cs-dep/csubj</a> (3; 0% instances), <a href="">cs-dep/mwe</a> (2; 0% instances), <a href="">cs-dep/parataxis</a> (2; 0% instances), <a href="">cs-dep/ccomp</a> (1; 0% instances)</p>
+
+<p>Children of <code class="highlighter-rouge">SYM</code> nodes belong to 14 different parts of speech: <a href="">ADP</a> (608; 24% instances), <a href="">NOUN</a> (550; 22% instances), <a href="">NUM</a> (222; 9% instances), <a href="">PUNCT</a> (200; 8% instances), <a href="">SYM</a> (177; 7% instances), <a href="">ADJ</a> (169; 7% instances), <a href="">CONJ</a> (166; 7% instances), <a href="">VERB</a> (120; 5% instances), <a href="">PRON</a> (96; 4% instances), <a href="">ADV</a> (84; 3% instances), <a href="">SCONJ</a> (41; 2% instances), <a href="">PART</a> (40; 2% instances), <a href="">PROPN</a> (38; 2% instances), <a href="">AUX</a> (12; 0% instances)</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+
+<p>There are 3 <code class="highlighter-rouge">SYM</code> lemmas (0%), 3 <code class="highlighter-rouge">SYM</code> types (0%) and 18 <code class="highlighter-rouge">SYM</code> tokens (0%).
+Out of 15 observed tags, the rank of <code class="highlighter-rouge">SYM</code> is: 14 in number of lemmas, 15 in number of types and 15 in number of tokens.</p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">SYM</code> lemmas: <em>%, +, /</em></p>
+
+<p>The 10 most frequent <code class="highlighter-rouge">SYM</code> types:  <em>%, +, /</em></p>
+
+<p>The 10 most frequent ambiguous lemmas: <em>/</em> (<a href="">SYM</a> 2, <a href="">PUNCT</a> 2)</p>
+
+<p>The 10 most frequent ambiguous types:  <em>/</em> (<a href="">SYM</a> 2, <a href="">PUNCT</a> 2)</p>
+
+<ul>
+  <li><em>/</em>
+    <ul>
+      <li><a href="">SYM</a> 2: <em>Odpisová sazba na jednotku těženého množství ( Kč <b>/</b> t , Kč <b>/</b> m je podílem pořizovací ceny ložiska na jednotlivém pozemku a zásob nevyhrazeného nerostu ( t , m prokázaných geologickým průzkumem na tomto pozemku .</em></li>
+      <li><a href="">PUNCT</a> 2: <em>(4) Rozdíl mezi součtem počátečních zůstatků nově otevřených účtů aktiv a mezi součtem počátečních zůstatků nově otevřených účtů pasiv se uvede na účet v účtové skupině 49 , a to v závislosti na povaze zjištěného rozdílu ( + <b>/</b> - ) jako zůstatek aktivní nebo pasivní .</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="morphology-2">Morphology</h2>
+
+<p>The form / lemma ratio of <code class="highlighter-rouge">SYM</code> is 1.000000 (the average of all parts of speech is 1.764161).</p>
+
+<p>The 1st highest number of forms (1) was observed with the lemma “%”: <em>%</em>.</p>
+
+<p>The 2nd highest number of forms (1) was observed with the lemma “+”: <em>+</em>.</p>
+
+<p>The 3rd highest number of forms (1) was observed with the lemma “/”: <em>/</em>.</p>
+
+<p><code class="highlighter-rouge">SYM</code> does not occur with any features.</p>
+
+<h2 id="relations-2">Relations</h2>
+
+<p><code class="highlighter-rouge">SYM</code> nodes are attached to their parents using 3 different relations: <a href="">cs-dep/nmod</a> (14; 78% instances), <a href="">cs-dep/cc</a> (2; 11% instances), <a href="">cs-dep/dep</a> (2; 11% instances)</p>
+
+<p>Parents of <code class="highlighter-rouge">SYM</code> nodes belong to 2 different parts of speech: <a href="">NUM</a> (13; 72% instances), <a href="">NOUN</a> (5; 28% instances)</p>
+
+<p>8 (44%) <code class="highlighter-rouge">SYM</code> nodes are leaves.</p>
+
+<p>7 (39%) <code class="highlighter-rouge">SYM</code> nodes have one child.</p>
+
+<p>2 (11%) <code class="highlighter-rouge">SYM</code> nodes have two children.</p>
+
+<p>1 (6%) <code class="highlighter-rouge">SYM</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code class="highlighter-rouge">SYM</code> node is 4.</p>
+
+<p>Children of <code class="highlighter-rouge">SYM</code> nodes are attached using 6 different relations: <a href="">cs-dep/nmod</a> (8; 53% instances), <a href="">cs-dep/conj</a> (2; 13% instances), <a href="">cs-dep/punct</a> (2; 13% instances), <a href="">cs-dep/advmod:emph</a> (1; 7% instances), <a href="">cs-dep/case</a> (1; 7% instances), <a href="">cs-dep/nummod</a> (1; 7% instances)</p>
+
+<p>Children of <code class="highlighter-rouge">SYM</code> nodes belong to 5 different parts of speech: <a href="">NOUN</a> (8; 53% instances), <a href="">PUNCT</a> (4; 27% instances), <a href="">ADP</a> (1; 7% instances), <a href="">ADV</a> (1; 7% instances), <a href="">NUM</a> (1; 7% instances)</p>
 
 
 
@@ -221,6 +333,7 @@ SYM in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -252,11 +365,40 @@ SYM in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -280,6 +422,7 @@ SYM in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-pos';
@@ -305,7 +448,7 @@ SYM in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

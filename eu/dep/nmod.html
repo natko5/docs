@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-eu">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/eu/dep">eu/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-eu">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/eu/dep">eu/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_eu-dep/nmod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,8 +39,54 @@
 
           <h2><code>nmod</code>: nominal modifier</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code>nmod</code>.</p>
+<p>The nmod relation (<code class="highlighter-rouge">nmod</code>) is used for nominal modifiers. They depend either on another noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).
+nmod is a noun (or noun phrase) functioning as a non-core (oblique) argument or adjunct. This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb. But when attaching to a noun, it corresponds to an attribute, or genitive complement.</p>
+
+<p><em>Hegazkin <strong>txiki</strong> bat zain zegoen <strong>Findeleko</strong> <strong>aireportuan</strong> .</em></p>
+
+<p><em>A <strong>small</strong> plane was waiting <strong>in the airport</strong> <strong>of Findel</strong> .</em></p>
+
+<pre><code class="language-sdparse">Hegazkin txiki bat zain zegoen Findeleko aireportuan . \n Plane small_a waiting was Findel_of airport_the_in .
+
+nmod(Hegazkin-1, txiki-2)
+nummod(Hegazkin-1, bat-3)
+advmod(zegoen-5, zain-4)
+nsubj(zegoen-5, Hegazkin-1)
+nmod(aireportuan-7, Findeleko-6)
+nmod(zegoen-5, aireportuan-7)
+punct(zegoen-5, .-8)
+</code></pre>
+
+<p><em>Partidutxoa egin zuten <strong>hamarreko</strong> bi <strong>taldetan</strong> .</em></p>
+
+<p><em>They played a match in two <strong>groups</strong> <strong>of ten</strong> .</em></p>
+
+<pre><code class="language-sdparse">Partidutxoa egin zuten hamarreko bi taldetan . \n Match_a played ten_of two match_in  .
+
+dobj(egin-2, Partidutxoa)
+aux(egin-2, zuten-3)
+nmod(taldetan-6, hamarreko-4)
+nummod(taldetan-6, bi-5)
+nmod(egin-2, taldetan-6)
+punct(egin-2, .-7)
+</code></pre>
+
+<ul>
+  <li>Possessive determiners, are not tagged with det but with nmod.</li>
+</ul>
+
+<p><em>Hori izango da <strong>gure</strong> zigorra .</em></p>
+
+<p><em>That will be our punishment .</em></p>
+
+<pre><code class="language-sdparse">Hori izango da gure zigorra . \n That will be our punishment . 
+
+nsubj(zigorra-5, Hori-1)
+cop(zigorra-5, izango-2)
+aux(izango-2, da-3)
+nmod(zigorra-5, gure-4)
+punct(zigorra-5, .-6)
+</code></pre>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +103,12 @@ for <code>nmod</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>20264 nodes (17%) are attached to their parents as <code>nmod</code>.</p>
+<p>20264 nodes (17%) are attached to their parents as <code class="highlighter-rouge">nmod</code>.</p>
 
-<p>16723 instances of <code>nmod</code> (83%) are right-to-left (child precedes parent).
+<p>16723 instances of <code class="highlighter-rouge">nmod</code> (83%) are right-to-left (child precedes parent).
 Average distance between parent and child is 2.29174891433083.</p>
 
-<p>The following 113 pairs of parts of speech are connected with <code>nmod</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (6904; 34% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (4708; 23% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PROPN</a> (2618; 13% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (1192; 6% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/DET</a> (521; 3% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (476; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (393; 2% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (357; 2% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (352; 2% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (265; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PRON</a> (261; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (212; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NOUN</a> (194; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (175; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PROPN</a> (165; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (152; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PRON</a> (115; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PROPN</a> (111; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (96; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/PROPN</a> (93; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (86; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (77; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NOUN</a> (74; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NOUN</a> (58; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (42; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADV</a> (40; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NOUN</a> (32; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/ADJ</a> (26; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/ADV</a> (25; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADV</a> (23; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PROPN</a> (23; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/DET</a> (17; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (15; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/NOUN</a> (15; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/DET</a> (15; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/X</a> (15; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/DET</a> (14; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADV</a> (13; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/DET</a> (12; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PROPN</a> (12; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NOUN</a> (12; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NUM</a> (11; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NUM</a> (11; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/ADV</a> (11; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (10; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/ADV</a> (9; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/PRON</a> (8; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/DET</a> (8; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (8; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PROPN</a> (8; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PROPN</a> (7; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NUM</a> (7; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PART</a> (6; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PRON</a> (5; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/DET</a> (5; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADV</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/SYM</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/X</a> (5; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/ADJ</a> (5; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/DET</a> (5; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (4; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/VERB</a> (4; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PROPN</a> (4; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADJ</a> (4; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NUM</a> (4; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/DET</a> (4; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (3; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/CONJ</a> (3; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADV</a> (3; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/VERB</a> (3; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/NOUN</a> (3; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/ADJ</a> (3; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PUNCT</a> (3; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/X</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PART</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PROPN</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PART</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/X</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/X</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/INTJ</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/PART</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PART</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances).</p>
+<p>The following 113 pairs of parts of speech are connected with <code class="highlighter-rouge">nmod</code>: <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NOUN</a> (6904; 34% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NOUN</a> (4708; 23% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PROPN</a> (2618; 13% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PROPN</a> (1192; 6% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/DET</a> (521; 3% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/NUM</a> (476; 2% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADJ</a> (393; 2% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/DET</a> (357; 2% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/ADJ</a> (352; 2% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NOUN</a> (265; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/PRON</a> (261; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/ADV</a> (212; 1% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NOUN</a> (194; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/VERB</a> (175; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PROPN</a> (165; 1% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/NUM</a> (152; 1% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PRON</a> (115; 1% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/PROPN</a> (111; 1% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NOUN</a> (96; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/PROPN</a> (93; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NOUN</a> (86; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/VERB</a> (77; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NOUN</a> (74; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NOUN</a> (58; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/CONJ</a> (42; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADV</a> (40; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NOUN</a> (32; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/ADJ</a> (26; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/ADV</a> (25; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/ADV</a> (23; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PROPN</a> (23; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/DET</a> (17; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADV</a> (15; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/NOUN</a> (15; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/DET</a> (15; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/X</a> (15; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/DET</a> (14; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADV</a> (13; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/DET</a> (12; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PROPN</a> (12; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NOUN</a> (12; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/NUM</a> (11; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/NUM</a> (11; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/ADV</a> (11; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NOUN</a> (10; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/ADV</a> (9; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/PRON</a> (8; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/DET</a> (8; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/NUM</a> (8; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PROPN</a> (8; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PROPN</a> (7; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/NUM</a> (7; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/ADJ</a> (6; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PART</a> (6; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/PRON</a> (5; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/DET</a> (5; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADV</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/CONJ</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/SYM</a> (5; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/X</a> (5; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/ADJ</a> (5; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/NUM</a> (5; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/DET</a> (5; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/NUM</a> (4; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/VERB</a> (4; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/PROPN</a> (4; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/ADJ</a> (4; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/NUM</a> (4; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/DET</a> (4; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/VERB</a> (3; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/CONJ</a> (3; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADV</a> (3; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/VERB</a> (3; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/DET</a> (3; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/NOUN</a> (3; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/ADJ</a> (3; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/PUNCT</a> (3; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/X</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/AUX</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/PART</a> (2; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PRON</a> (2; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/PROPN</a> (2; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/ADV</a> (2; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/VERB</a> (2; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/ADJ</a> (2; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/ADJ</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/ADP</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PART</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/ADV</a>-<a href="">eu-pos/X</a> (1; 0% instances), <a href="">eu-pos/CONJ</a>-<a href="">eu-pos/X</a> (1; 0% instances), <a href="">eu-pos/DET</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/INTJ</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/NOUN</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/NUM</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/PART</a>-<a href="">eu-pos/ADJ</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/PRON</a> (1; 0% instances), <a href="">eu-pos/PRON</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/CONJ</a> (1; 0% instances), <a href="">eu-pos/PROPN</a>-<a href="">eu-pos/VERB</a> (1; 0% instances), <a href="">eu-pos/PUNCT</a>-<a href="">eu-pos/PART</a> (1; 0% instances), <a href="">eu-pos/VERB</a>-<a href="">eu-pos/INTJ</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/NUM</a> (1; 0% instances), <a href="">eu-pos/X</a>-<a href="">eu-pos/PROPN</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 4	bgColor:blue
 # visual-style 4	fgColor:white
@@ -173,6 +220,7 @@ nmod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -204,11 +252,40 @@ nmod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -232,6 +309,7 @@ nmod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'eu-dep';
@@ -257,7 +335,7 @@ nmod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

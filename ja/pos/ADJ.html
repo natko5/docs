@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-ja">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/ja/pos">ja/pos</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ja">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ja/pos">ja/pos</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ja-pos/ADJ.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -45,17 +46,17 @@ properties or attributes. They may also function as predicates, as in</p>
 
 <p><em>その 車 は <b>赤い</b>. </em> “The car is red.”</p>
 
-<p>The <code>ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
+<p>The <code class="highlighter-rouge">ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
 for determiners and <a href="">NUM</a> for cardinal numerals.</p>
 
-<p>Nominal adjectives (<em>自由 </em> “free”) are also classified into <code>ADJ</code>,
+<p>Nominal adjectives (<em>自由 </em> “free”) are also classified into <code class="highlighter-rouge">ADJ</code>,
 which are a kind of noun but behave like
 ordinary adjectives in being followed by an auxiliary verb (e.g. だ). 
-In UniDic, this kind of nouns is tagged with <code>noun (common.adjectival)</code>/名詞-普通名詞-形状詞可能.
+In UniDic, this kind of nouns is tagged with <code class="highlighter-rouge">noun (common.adjectival)</code>/名詞-普通名詞-形状詞可能.
 Note that they are tagged <a href="">NOUN</a> when they are used as nouns 
 (e.g. <em><b>自由</b> を 手に入れる </em> “gain <b>freedom</b>”).</p>
 
-<p>Japanese has a small group of adnominal words (<code>adnominal</code>) that
+<p>Japanese has a small group of adnominal words (<code class="highlighter-rouge">adnominal</code>) that
 usually precede noun phrases like adjectives, but do not conjugate.
 In Universal PoS, th limited number of pronominal adjectives (e.g. <em>あの </em> “that”, <em>どの </em> “which”)
 are classified into determiner <a href="">DET</a>,
@@ -64,13 +65,13 @@ but the other adnimonal words are tagged <a href="">ADJ</a> (e.g. <em>同じ </
 <h3 id="examples">Examples</h3>
 
 <ul>
-  <li><em><b>赤い</b> </em> “red”, <em><b>大きい</b> </em> “big”  (<code>adjective_i (general)</code> / 形容詞-一般)</li>
-  <li><em><b>必要</b>(+だ) </em> “necessary”, <em><b>簡単</b>(+だ) </em>“easy”(<code>adjectival_noun</code> / 形状詞-一般)</li>
-  <li><em><b>自由</b>(+だ) </em> “free” (<code>noun(common.adjectival)</code> / 名詞-普通名詞-形状詞可能)</li>
-  <li><em><b>同じ</b> </em> “same” (<code>adnominal</code> / 連体詞)</li>
-  <li><em><b>いろんな</b> </em> “various” (<code>adnominal</code> / 連体詞)</li>
-  <li>indefinite determiners: <em><b>ある</b> </em> “a/one” (<code>adnominal</code> / 連体詞)</li>
-  <li>possessive determiners: <em><b>我が</b> </em> “my” (<code>adnominal</code> / 連体詞)</li>
+  <li><em><b>赤い</b> </em> “red”, <em><b>大きい</b> </em> “big”  (<code class="highlighter-rouge">adjective_i (general)</code> / 形容詞-一般)</li>
+  <li><em><b>必要</b>(+だ) </em> “necessary”, <em><b>簡単</b>(+だ) </em>“easy”(<code class="highlighter-rouge">adjectival_noun</code> / 形状詞-一般)</li>
+  <li><em><b>自由</b>(+だ) </em> “free” (<code class="highlighter-rouge">noun(common.adjectival)</code> / 名詞-普通名詞-形状詞可能)</li>
+  <li><em><b>同じ</b> </em> “same” (<code class="highlighter-rouge">adnominal</code> / 連体詞)</li>
+  <li><em><b>いろんな</b> </em> “various” (<code class="highlighter-rouge">adnominal</code> / 連体詞)</li>
+  <li>indefinite determiners: <em><b>ある</b> </em> “a/one” (<code class="highlighter-rouge">adnominal</code> / 連体詞)</li>
+  <li>possessive determiners: <em><b>我が</b> </em> “my” (<code class="highlighter-rouge">adnominal</code> / 連体詞)</li>
 </ul>
 
 <h3 id="references">References</h3>
@@ -93,12 +94,12 @@ but the other adnimonal words are tagged <a href="">ADJ</a> (e.g. <em>同じ </
 
 <h2 id="treebank-statistics-udjapanese-ktc">Treebank Statistics (UD_Japanese-KTC)</h2>
 
-<p>There are 224 <code>ADJ</code> lemmas (4%), 1 <code>ADJ</code> types (6%) and 4996 <code>ADJ</code> tokens (2%).
-Out of 16 observed tags, the rank of <code>ADJ</code> is: 4 in number of lemmas, 1 in number of types and 9 in number of tokens.</p>
+<p>There are 224 <code class="highlighter-rouge">ADJ</code> lemmas (4%), 1 <code class="highlighter-rouge">ADJ</code> types (6%) and 4996 <code class="highlighter-rouge">ADJ</code> tokens (2%).
+Out of 16 observed tags, the rank of <code class="highlighter-rouge">ADJ</code> is: 4 in number of lemmas, 1 in number of types and 9 in number of tokens.</p>
 
-<p>The 10 most frequent <code>ADJ</code> lemmas: _, 無い, 良い, 多い, 強い, 大きい, 何の, 早い, 少ない, 高い</p>
+<p>The 10 most frequent <code class="highlighter-rouge">ADJ</code> lemmas: _, 無い, 良い, 多い, 強い, 大きい, 何の, 早い, 少ない, 高い</p>
 
-<p>The 10 most frequent <code>ADJ</code> types:  _</p>
+<p>The 10 most frequent <code class="highlighter-rouge">ADJ</code> types:  _</p>
 
 <p>The 10 most frequent ambiguous lemmas: _ (<a href="">NOUN</a> 73916, <a href="">ADP</a> 56601, <a href="">PUNCT</a> 29066, <a href="">AUX</a> 10360, <a href="">SCONJ</a> 9060, <a href="">NUM</a> 8667, <a href="">VERB</a> 8579, <a href="">ADJ</a> 3304, <a href="">PART</a> 2730, <a href="">CONJ</a> 2110, <a href="">PROPN</a> 1795, <a href="">ADV</a> 1655, <a href="">SYM</a> 1138, <a href="">PRON</a> 138, <a href="">DET</a> 95, <a href="">INTJ</a> 15), 無い (<a href="">AUX</a> 533, <a href="">ADJ</a> 441), 良い (<a href="">ADJ</a> 84, <a href="">AUX</a> 68, <a href="">ADV</a> 1, <a href="">VERB</a> 1), 多い (<a href="">ADJ</a> 68, <a href="">NOUN</a> 1), 早い (<a href="">ADJ</a> 47, <a href="">ADV</a> 1), 無し (<a href="">ADJ</a> 35, <a href="">VERB</a> 1), 或る (<a href="">ADJ</a> 23, <a href="">VERB</a> 4, <a href="">AUX</a> 1), 若い (<a href="">ADJ</a> 9, <a href="">NOUN</a> 1), 欲しい (<a href="">AUX</a> 95, <a href="">ADJ</a> 7), 遥か (<a href="">NOUN</a> 12, <a href="">ADJ</a> 6)</p>
 
@@ -129,7 +130,7 @@ Out of 16 observed tags, the rank of <code>ADJ</code> is: 4 in number of lemmas,
 
 <h2 id="morphology">Morphology</h2>
 
-<p>The form / lemma ratio of <code>ADJ</code> is 0.004464 (the average of all parts of speech is 0.002927).</p>
+<p>The form / lemma ratio of <code class="highlighter-rouge">ADJ</code> is 0.004464 (the average of all parts of speech is 0.002927).</p>
 
 <p>The 1st highest number of forms (1) was observed with the lemma “_”: _.</p>
 
@@ -137,27 +138,27 @@ Out of 16 observed tags, the rank of <code>ADJ</code> is: 4 in number of lemmas,
 
 <p>The 3rd highest number of forms (1) was observed with the lemma “か細い”: _.</p>
 
-<p><code>ADJ</code> does not occur with any features.</p>
+<p><code class="highlighter-rouge">ADJ</code> does not occur with any features.</p>
 
 <h2 id="relations">Relations</h2>
 
-<p><code>ADJ</code> nodes are attached to their parents using 15 different relations: <a href="">ja-dep/amod</a> (1828; 37% instances), <a href="">ja-dep/root</a> (716; 14% instances), <a href="">ja-dep/acl</a> (639; 13% instances), <a href="">ja-dep/nmod</a> (552; 11% instances), <a href="">ja-dep/advmod</a> (360; 7% instances), <a href="">ja-dep/advcl</a> (253; 5% instances), <a href="">ja-dep/dep</a> (181; 4% instances), <a href="">ja-dep/iobj</a> (181; 4% instances), <a href="">ja-dep/conj</a> (103; 2% instances), <a href="">ja-dep/ccomp</a> (101; 2% instances), <a href="">ja-dep/csubj</a> (39; 1% instances), <a href="">ja-dep/nsubj</a> (23; 0% instances), <a href="">ja-dep/compound</a> (13; 0% instances), <a href="">ja-dep/dobj</a> (5; 0% instances), <a href="">ja-dep/case</a> (2; 0% instances)</p>
+<p><code class="highlighter-rouge">ADJ</code> nodes are attached to their parents using 15 different relations: <a href="">ja-dep/amod</a> (1828; 37% instances), <a href="">ja-dep/root</a> (716; 14% instances), <a href="">ja-dep/acl</a> (639; 13% instances), <a href="">ja-dep/nmod</a> (552; 11% instances), <a href="">ja-dep/advmod</a> (360; 7% instances), <a href="">ja-dep/advcl</a> (253; 5% instances), <a href="">ja-dep/dep</a> (181; 4% instances), <a href="">ja-dep/iobj</a> (181; 4% instances), <a href="">ja-dep/conj</a> (103; 2% instances), <a href="">ja-dep/ccomp</a> (101; 2% instances), <a href="">ja-dep/csubj</a> (39; 1% instances), <a href="">ja-dep/nsubj</a> (23; 0% instances), <a href="">ja-dep/compound</a> (13; 0% instances), <a href="">ja-dep/dobj</a> (5; 0% instances), <a href="">ja-dep/case</a> (2; 0% instances)</p>
 
-<p>Parents of <code>ADJ</code> nodes belong to 9 different parts of speech: <a href="">NOUN</a> (2721; 54% instances), <a href="">VERB</a> (1377; 28% instances), <a href="">ROOT</a> (716; 14% instances), <a href="">ADJ</a> (151; 3% instances), <a href="">PROPN</a> (20; 0% instances), <a href="">ADV</a> (6; 0% instances), <a href="">CONJ</a> (2; 0% instances), <a href="">PRON</a> (2; 0% instances), <a href="">NUM</a> (1; 0% instances)</p>
+<p>Parents of <code class="highlighter-rouge">ADJ</code> nodes belong to 9 different parts of speech: <a href="">NOUN</a> (2721; 54% instances), <a href="">VERB</a> (1377; 28% instances), <a href="">ROOT</a> (716; 14% instances), <a href="">ADJ</a> (151; 3% instances), <a href="">PROPN</a> (20; 0% instances), <a href="">ADV</a> (6; 0% instances), <a href="">CONJ</a> (2; 0% instances), <a href="">PRON</a> (2; 0% instances), <a href="">NUM</a> (1; 0% instances)</p>
 
-<p>1746 (35%) <code>ADJ</code> nodes are leaves.</p>
+<p>1746 (35%) <code class="highlighter-rouge">ADJ</code> nodes are leaves.</p>
 
-<p>1385 (28%) <code>ADJ</code> nodes have one child.</p>
+<p>1385 (28%) <code class="highlighter-rouge">ADJ</code> nodes have one child.</p>
 
-<p>562 (11%) <code>ADJ</code> nodes have two children.</p>
+<p>562 (11%) <code class="highlighter-rouge">ADJ</code> nodes have two children.</p>
 
-<p>1303 (26%) <code>ADJ</code> nodes have three or more children.</p>
+<p>1303 (26%) <code class="highlighter-rouge">ADJ</code> nodes have three or more children.</p>
 
-<p>The highest child degree of a <code>ADJ</code> node is 11.</p>
+<p>The highest child degree of a <code class="highlighter-rouge">ADJ</code> node is 11.</p>
 
-<p>Children of <code>ADJ</code> nodes are attached using 20 different relations: <a href="">ja-dep/aux</a> (1980; 24% instances), <a href="">ja-dep/punct</a> (1460; 18% instances), <a href="">ja-dep/nsubj</a> (1316; 16% instances), <a href="">ja-dep/dep</a> (808; 10% instances), <a href="">ja-dep/nmod</a> (621; 8% instances), <a href="">ja-dep/mark</a> (587; 7% instances), <a href="">ja-dep/advmod</a> (334; 4% instances), <a href="">ja-dep/iobj</a> (285; 3% instances), <a href="">ja-dep/case</a> (279; 3% instances), <a href="">ja-dep/cc</a> (114; 1% instances), <a href="">ja-dep/cop</a> (103; 1% instances), <a href="">ja-dep/conj</a> (91; 1% instances), <a href="">ja-dep/neg</a> (78; 1% instances), <a href="">ja-dep/csubj</a> (68; 1% instances), <a href="">ja-dep/advcl</a> (37; 0% instances), <a href="">ja-dep/ccomp</a> (18; 0% instances), <a href="">ja-dep/dobj</a> (16; 0% instances), <a href="">ja-dep/compound</a> (4; 0% instances), <a href="">ja-dep/acl</a> (1; 0% instances), <a href="">ja-dep/discourse</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">ADJ</code> nodes are attached using 20 different relations: <a href="">ja-dep/aux</a> (1980; 24% instances), <a href="">ja-dep/punct</a> (1460; 18% instances), <a href="">ja-dep/nsubj</a> (1316; 16% instances), <a href="">ja-dep/dep</a> (808; 10% instances), <a href="">ja-dep/nmod</a> (621; 8% instances), <a href="">ja-dep/mark</a> (587; 7% instances), <a href="">ja-dep/advmod</a> (334; 4% instances), <a href="">ja-dep/iobj</a> (285; 3% instances), <a href="">ja-dep/case</a> (279; 3% instances), <a href="">ja-dep/cc</a> (114; 1% instances), <a href="">ja-dep/cop</a> (103; 1% instances), <a href="">ja-dep/conj</a> (91; 1% instances), <a href="">ja-dep/neg</a> (78; 1% instances), <a href="">ja-dep/csubj</a> (68; 1% instances), <a href="">ja-dep/advcl</a> (37; 0% instances), <a href="">ja-dep/ccomp</a> (18; 0% instances), <a href="">ja-dep/dobj</a> (16; 0% instances), <a href="">ja-dep/compound</a> (4; 0% instances), <a href="">ja-dep/acl</a> (1; 0% instances), <a href="">ja-dep/discourse</a> (1; 0% instances)</p>
 
-<p>Children of <code>ADJ</code> nodes belong to 16 different parts of speech: <a href="">NOUN</a> (2344; 29% instances), <a href="">AUX</a> (2193; 27% instances), <a href="">PUNCT</a> (1456; 18% instances), <a href="">VERB</a> (562; 7% instances), <a href="">ADP</a> (528; 6% instances), <a href="">ADV</a> (340; 4% instances), <a href="">SCONJ</a> (283; 3% instances), <a href="">ADJ</a> (151; 2% instances), <a href="">CONJ</a> (121; 1% instances), <a href="">PART</a> (95; 1% instances), <a href="">PRON</a> (68; 1% instances), <a href="">PROPN</a> (48; 1% instances), <a href="">NUM</a> (5; 0% instances), <a href="">SYM</a> (4; 0% instances), <a href="">INTJ</a> (2; 0% instances), <a href="">DET</a> (1; 0% instances)</p>
+<p>Children of <code class="highlighter-rouge">ADJ</code> nodes belong to 16 different parts of speech: <a href="">NOUN</a> (2344; 29% instances), <a href="">AUX</a> (2193; 27% instances), <a href="">PUNCT</a> (1456; 18% instances), <a href="">VERB</a> (562; 7% instances), <a href="">ADP</a> (528; 6% instances), <a href="">ADV</a> (340; 4% instances), <a href="">SCONJ</a> (283; 3% instances), <a href="">ADJ</a> (151; 2% instances), <a href="">CONJ</a> (121; 1% instances), <a href="">PART</a> (95; 1% instances), <a href="">PRON</a> (68; 1% instances), <a href="">PROPN</a> (48; 1% instances), <a href="">NUM</a> (5; 0% instances), <a href="">SYM</a> (4; 0% instances), <a href="">INTJ</a> (2; 0% instances), <a href="">DET</a> (1; 0% instances)</p>
 
 
 
@@ -216,6 +217,7 @@ ADJ in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -247,11 +249,40 @@ ADJ in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -275,6 +306,7 @@ ADJ in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'ja-pos';
@@ -300,7 +332,7 @@ ADJ in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

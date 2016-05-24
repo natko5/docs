@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/xcomp.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>xcomp</code>: open clausal complement</h2>
 
-<p>The dependency type <code>xcomp</code> is reserved for clausal complements which have an external 
+<p>The dependency type <code class="highlighter-rouge">xcomp</code> is reserved for clausal complements which have an external 
 subject, that is, whose subject is shared with the complemented verb (a phenomenon also 
 known as subject control). Note that the subject of the complementing clause must be 
 the <em>subject</em> of the complemented verb, not any other sentence element.</p>
@@ -49,13 +50,44 @@ nsubj(етіп-5, Ол-1)
 dobj(табуға-3, Азаматты-2)
 </code></pre>
 
-<p><em>Note:</em> The existence of <code>xcomp</code> is uncertain in Kazakh, the vast majority of clausal
-complements are not controlled and should get <code>ccomp</code> instead.</p>
+<p><em>Note:</em> The existence of <code class="highlighter-rouge">xcomp</code> is uncertain in Kazakh, the vast majority of clausal
+complements are not controlled and should get <code class="highlighter-rouge">ccomp</code> instead.</p>
 
 
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2 nodes (0%) are attached to their parents as <code class="highlighter-rouge">xcomp</code>.</p>
+
+<p>2 instances of <code class="highlighter-rouge">xcomp</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.5.</p>
+
+<p>The following 1 pairs of parts of speech are connected with <code class="highlighter-rouge">xcomp</code>: <a href="">kk-pos/VERB</a>-<a href="">kk-pos/VERB</a> (2; 100% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 xcomp	color:blue
+1	Әлі__де__болса	әлі__де__болса	ADV	adv	_	4	advmod	_	_
+2	Азаматты	Азамат	PROPN	np	_	3	dobj	_	ant|m|acc
+3	табуға	тап	VERB	v	_	4	xcomp	_	tv|ger|dat
+4	әрекет__етіп	әрекет__ет	VERB	v	_	0	root	_	iv|prc_perf
+5	жүр	жүр	AUX	vaux	_	4	aux	_	pres|p3|sg
+6	.	.	PUNCT	sent	_	4	punct	_	_
+
+</code></pre>
 
 
 
@@ -114,6 +146,7 @@ xcomp in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -145,11 +178,40 @@ xcomp in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -173,6 +235,7 @@ xcomp in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -198,7 +261,7 @@ xcomp in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

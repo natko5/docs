@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/vocative.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>vocative</code>: vocative modifier</h2>
 
-<p>The dependency type <code>vocative</code> is used for <em>vocatives</em>, that is,
+<p>The dependency type <code class="highlighter-rouge">vocative</code> is used for <em>vocatives</em>, that is,
 expressions where someone is being addressed. The governor of the
 dependency is the main predicate of the clause where the addressing
 occurs.</p>
@@ -55,6 +56,73 @@ aux(айта-5, алмаймын-6)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>3 nodes (0%) are attached to their parents as <code class="highlighter-rouge">vocative</code>.</p>
+
+<p>3 instances of <code class="highlighter-rouge">vocative</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 2.66666666666667.</p>
+
+<p>The following 2 pairs of parts of speech are connected with <code class="highlighter-rouge">vocative</code>: <a href="">kk-pos/VERB</a>-<a href="">kk-pos/PROPN</a> (2; 67% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/NOUN</a> (1; 33% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 4 vocative	color:blue
+1	"	"	PUNCT	sent	_	6	punct	_	_
+2	Жоқ	жоқ	INTJ	ij	_	6	discourse	_	_
+3	,	,	PUNCT	cm	_	2	punct	_	_
+4	Айгүл	Айгүл	PROPN	np	_	6	vocative	_	ant|f|nom
+5	,	,	PUNCT	cm	_	4	punct	_	_
+6	айта	айт	VERB	v	_	9	ccomp	_	tv|prc_impf
+7	алмаймын	ал	AUX	vaux	_	6	aux	_	neg|aor|p1|sg
+8	"	"	PUNCT	sent	_	6	punct	_	_
+9	деп	де	VERB	v	_	11	advcl	_	tv|gna_perf
+10	анасы	ана	NOUN	n	_	11	nsubj	_	px3sp|nom
+11	жауап__береді	жауап__бер	VERB	v	_	0	root	_	iv|aor|p3|sg
+12	.	.	PUNCT	sent	_	11	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 13	bgColor:blue
+# visual-style 13	fgColor:white
+# visual-style 15	bgColor:blue
+# visual-style 15	fgColor:white
+# visual-style 15 13 vocative	color:blue
+1	Қожа	Қожа	PROPN	np	_	3	nsubj	_	ant|m|nom
+2	етті	ет	NOUN	n	_	3	dobj	_	acc
+3	жемей	же	VERB	v	_	20	advcl	_	tv|neg|gna_perf
+4	,	,	PUNCT	cm	_	3	punct	_	_
+5	табаққа	табақ	NOUN	n	_	8	nmod	_	dat
+6	шапанының	шапан	NOUN	n	_	7	nmod:poss	_	px3sp|gen
+7	жеңін	жең	NOUN	n	_	8	dobj	_	px3sp|acc
+8	малып	мал	VERB	v	_	20	advcl	_	tv|gna_perf
+9	:	:	PUNCT	sent	_	8	punct	_	_
+10	-	-	PUNCT	guio	_	8	punct	_	_
+11	Же	же	VERB	v	_	15	conj	_	tv|imp|p2|sg
+12	,	,	PUNCT	cm	_	15	punct	_	_
+13	шапаным	шапан	NOUN	n	_	15	vocative	_	px1sg|nom
+14	,	,	PUNCT	cm	_	13	punct	_	_
+15	же	же	VERB	v	_	18	ccomp	_	tv|imp|p2|sg
+16	!	!	PUNCT	sent	_	15	punct	_	_
+17	-	-	PUNCT	guio	_	15	punct	_	_
+18	деп	де	VERB	v	_	20	advcl	_	tv|gna_perf
+19	,	,	PUNCT	cm	_	18	punct	_	_
+20	отыра	отыр	VERB	v	_	0	root	_	iv|prc_impf
+21	береді	бер	AUX	vaux	_	20	aux	_	aor|p3|sg
+22	.	.	PUNCT	sent	_	20	punct	_	_
+
+</code></pre>
 
 
 
@@ -113,6 +181,7 @@ vocative in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -144,11 +213,40 @@ vocative in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -172,6 +270,7 @@ vocative in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -197,7 +296,7 @@ vocative in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-sv">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/sv/feat">sv/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sv">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sv/feat">sv/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sv-feat/VerbForm.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,10 +39,10 @@
 
           <h2><code>VerbForm</code>: form of verb or deverbative</h2>
 
-<h3 id="fin-finite-verb"><code>Fin</code>: finite verb</h3>
+<h3 id="fin-finite-verb"><code class="highlighter-rouge">Fin</code>: finite verb</h3>
 
 <p>Verbs that inflect for mood (<a href="">Mood</a>), tense (<a href="">Tense</a>) or person
-(<a href="">Person</a>) are finite and are assigned the <code>VerbForm</code> value <code>Fin</code>.</p>
+(<a href="">Person</a>) are finite and are assigned the <code class="highlighter-rouge">VerbForm</code> value <code class="highlighter-rouge">Fin</code>.</p>
 
 <h4 id="examples">Examples</h4>
 
@@ -50,7 +51,7 @@
   <li>[sv] <em>du <b>får</b> ett vapen</em> “you get a weapon”</li>
 </ul>
 
-<h3 id="inf-infinitive"><code>Inf</code>: infinitive</h3>
+<h3 id="inf-infinitive"><code class="highlighter-rouge">Inf</code>: infinitive</h3>
 
 <p>The infinitive is the citation form of verbs in Swedish. The infinitive marker in Swedish is “att”. The infinitive may be used together with auxiliaries to form periphrastic tenses.</p>
 
@@ -61,7 +62,7 @@
   <li>[sv] <em>de behöver <b>sova</b></em> “they need to sleep”</li>
 </ul>
 
-<h3 id="part-participle"><code>Part</code>: participle</h3>
+<h3 id="part-participle"><code class="highlighter-rouge">Part</code>: participle</h3>
 
 <p>Participle is a non-finite verb form that in Swedish is used adjectively. The related supine form is used to form certain periphrastic verb tenses.</p>
 
@@ -72,7 +73,7 @@
   <li>[sv] <em>vår <b>bisulfitbehandlade</b> potatis</em> “our bisulfite-treated potato”</li>
 </ul>
 
-<h3 id="sup-supine"><code>Sup</code>: supine</h3>
+<h3 id="sup-supine"><code class="highlighter-rouge">Sup</code>: supine</h3>
 
 <p>Supine in Swedish is a special form of the past participle, used to form the composite past form of a verb.  It is used after the auxiliary verb <em>ha</em> (to have) but not after <em>vara</em> (to be):</p>
 
@@ -103,28 +104,28 @@
 
 <h2 id="treebank-statistics-udswedish">Treebank Statistics (UD_Swedish)</h2>
 
-<p>This feature is universal.
-It occurs with 4 different values: <code>Fin</code>, <code>Inf</code>, <code>Part</code>, <code>Sup</code>.</p>
+<p>This feature is universal but the values <code class="highlighter-rouge">Stem</code> are language-specific.
+It occurs with 5 different values: <code class="highlighter-rouge">Fin</code>, <code class="highlighter-rouge">Inf</code>, <code class="highlighter-rouge">Part</code>, <code class="highlighter-rouge">Stem</code>, <code class="highlighter-rouge">Sup</code>.</p>
 
-<p>15707 tokens (16%) have a non-empty value of <code>VerbForm</code>.
-3469 types (23%) occur at least once with a non-empty value of <code>VerbForm</code>.
-1701 lemmas (17%) occur at least once with a non-empty value of <code>VerbForm</code>.
-The feature is used with 3 part-of-speech tags: <a href="">sv-pos/VERB</a> (9960; 10% instances), <a href="">sv-pos/AUX</a> (4183; 4% instances), <a href="">sv-pos/ADJ</a> (1564; 2% instances).</p>
+<p>15716 tokens (16%) have a non-empty value of <code class="highlighter-rouge">VerbForm</code>.
+3473 types (23%) occur at least once with a non-empty value of <code class="highlighter-rouge">VerbForm</code>.
+1703 lemmas (17%) occur at least once with a non-empty value of <code class="highlighter-rouge">VerbForm</code>.
+The feature is used with 3 part-of-speech tags: <a href="">sv-pos/VERB</a> (11586; 12% instances), <a href="">sv-pos/AUX</a> (2566; 3% instances), <a href="">sv-pos/ADJ</a> (1564; 2% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>9960 <a href="">sv-pos/VERB</a> tokens (100% of all <code>VERB</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>11586 <a href="">sv-pos/VERB</a> tokens (100% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>VerbForm</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (8132; 82%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (5724; 57%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (5048; 51%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (9757; 84%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (7117; 61%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (6342; 55%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Fin</code> (5923; 59% of non-empty <code>VerbForm</code>): <em>har, finns, är, blir, får, gäller, ger, går, kommer, gör</em></li>
-  <li><code>Inf</code> (3170; 32% of non-empty <code>VerbForm</code>): <em>få, ha, bli, göra, ge, ta, komma, gå, se, vara</em></li>
-  <li><code>Part</code> (49; 0% of non-empty <code>VerbForm</code>): <em>påverkade, vald, vänd, hörselskadad, tvungna, accepterad, anpassade, bedövade, diciplinerade, emanciperade</em></li>
-  <li><code>Sup</code> (818; 8% of non-empty <code>VerbForm</code>): <em>fått, blivit, haft, gjort, ökat, kommit, gått, visat, börjat, skett</em></li>
-  <li><code>EMPTY</code> (9): <em>jfr, facit, läs-</em></li>
+  <li><code class="highlighter-rouge">Fin</code> (7332; 63% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>är, har, finns, blir, får, var, gäller, ger, går, kommer</em></li>
+  <li><code class="highlighter-rouge">Inf</code> (3336; 29% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>vara, få, ha, bli, göra, ge, ta, komma, gå, se</em></li>
+  <li><code class="highlighter-rouge">Part</code> (49; 0% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>påverkade, vald, vänd, hörselskadad, tvungna, accepterad, anpassade, bedövade, diciplinerade, emanciperade</em></li>
+  <li><code class="highlighter-rouge">Stem</code> (1; 0% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>läs-</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (868; 7% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>varit, fått, blivit, haft, gjort, ökat, kommit, gått, visat, börjat</em></li>
 </ul>
 
 <table>
@@ -138,54 +139,51 @@ The feature is used with 3 part-of-speech tags: <a href="">sv-pos/VERB</a> (9960
   <tr><td><tt><a href="Voice.html">Voice</a>=Pass</tt></td><td></td><td><em>väljas</em></td><td><em>valts</em></td><td></td></tr>
 </table>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="highlighter-rouge">AUX</code></h3>
 
-<p>4183 <a href="">sv-pos/AUX</a> tokens (100% of all <code>AUX</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>2566 <a href="">sv-pos/AUX</a> tokens (100% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>VerbForm</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (4183; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (3769; 90%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (3411; 82%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (2566; 100%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (2377; 93%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (2118; 83%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Fin</code> (3778; 90% of non-empty <code>VerbForm</code>): <em>är, kan, har, måste, skall, skulle, ska, kommer, var, får</em></li>
-  <li><code>Inf</code> (322; 8% of non-empty <code>VerbForm</code>): <em>vara, kunna, få, ha, bli, behöva, vilja, komma, dra</em></li>
-  <li><code>Sup</code> (83; 2% of non-empty <code>VerbForm</code>): <em>varit, kunnat, fått, kommit, blivit, velat</em></li>
+  <li><code class="highlighter-rouge">Fin</code> (2377; 93% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>kan, har, måste, skall, skulle, ska, kommer, får, bör, vill</em></li>
+  <li><code class="highlighter-rouge">Inf</code> (156; 6% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>kunna, få, ha, bli, behöva, vilja, komma, dra</em></li>
+  <li><code class="highlighter-rouge">Sup</code> (33; 1% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>kunnat, fått, kommit, blivit, velat</em></li>
 </ul>
 
 <table>
-  <tr><th>Paradigm <i>vara</i></th><th><tt>Fin</tt></th><th><tt>Inf</tt></th><th><tt>Sup</tt></th></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Imp</tt></td><td><em>Varen</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>var</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>är, äro</em></td><td></td><td></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Sub|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>vore</em></td><td></td><td></td></tr>
-  <tr><td><tt></tt></td><td></td><td><em>vara</em></td><td><em>varit</em></td></tr>
+  <tr><th>Paradigm <i>kunna</i></th><th><tt>Fin</tt></th><th><tt>Inf</tt></th><th><tt>Sup</tt></th></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Past</tt></td><td><em>kunde</em></td><td></td><td></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Tense.html">Tense</a>=Pres</tt></td><td><em>kan</em></td><td></td><td></td></tr>
+  <tr><td><tt></tt></td><td></td><td><em>kunna</em></td><td><em>kunnat</em></td></tr>
 </table>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>1564 <a href="">sv-pos/ADJ</a> tokens (18% of all <code>ADJ</code> tokens) have a non-empty value of <code>VerbForm</code>.</p>
+<p>1564 <a href="">sv-pos/ADJ</a> tokens (18% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">VerbForm</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>VerbForm</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1564; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1556; 99%), <tt><a href="Tense.html">Tense</a>=Past</tt> (1047; 67%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1001; 64%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (921; 59%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">VerbForm</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (1564; 100%), <tt><a href="Case.html">Case</a>=Nom</tt> (1556; 99%), <tt><a href="Tense.html">Tense</a>=Past</tt> (1047; 67%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (1001; 64%), <tt><a href="Definite.html">Definite</a>=EMPTY</tt> (921; 59%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>VerbForm</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">VerbForm</code>:</p>
 
 <ul>
-  <li><code>Part</code> (1564; 100% of non-empty <code>VerbForm</code>): <em>följande, beroende, särskild, särskilda, ökad, motsvarande, liknande, ökade, gifta, nuvarande</em></li>
-  <li><code>EMPTY</code> (6934): <em>olika, andra, nya, många, stora, stor, större, första, vissa, hela</em></li>
+  <li><code class="highlighter-rouge">Part</code> (1564; 100% of non-empty <code class="highlighter-rouge">VerbForm</code>): <em>följande, beroende, särskild, särskilda, ökad, motsvarande, liknande, ökade, gifta, nuvarande</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (6934): <em>olika, andra, nya, många, stora, stor, större, första, vissa, hela</em></li>
 </ul>
 
-<p><code>VerbForm</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (701) occur only with one value of <code>VerbForm</code>.</p>
+<p><code class="highlighter-rouge">VerbForm</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 100% lemmas (701) occur only with one value of <code class="highlighter-rouge">VerbForm</code>.</p>
 
-<h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code>VerbForm</code></h2>
+<h2 id="relations-with-agreement-in-verbform">Relations with Agreement in <code class="highlighter-rouge">VerbForm</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>VerbForm</code>:
-<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (697; 83%),
-<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (140; 62%),
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">VerbForm</code>:
+<tt>VERB –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (705; 81%),
+<tt>VERB –[<a href="../dep/parataxis.html">parataxis</a>]–&gt; VERB</tt> (142; 62%),
 <tt>VERB –[<a href="../dep/dislocated.html">dislocated</a>]–&gt; VERB</tt> (23; 64%),
 <tt>VERB –[<a href="../dep/appos.html">appos</a>]–&gt; VERB</tt> (15; 60%),
 <tt>ADJ –[<a href="../dep/xcomp.html">xcomp</a>]–&gt; ADJ</tt> (2; 100%),
-<tt>VERB –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (2; 67%),
-<tt>AUX –[<a href="../dep/conj.html">conj</a>]–&gt; VERB</tt> (1; 100%).</p>
+<tt>VERB –[<a href="../dep/acl.html">acl</a>]–&gt; VERB</tt> (2; 100%).</p>
 
 
 
@@ -244,6 +242,7 @@ VerbForm in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -275,11 +274,40 @@ VerbForm in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -303,6 +331,7 @@ VerbForm in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'sv-feat';
@@ -328,7 +357,7 @@ VerbForm in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-it">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/it/feat">it/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-it">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/it/feat">it/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_it-feat/NumType.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,14 +39,14 @@
 
           <h2><code>NumType</code>: numeral type</h2>
 
-<p>The <code>NumType</code> feature applies to:</p>
+<p>The <code class="highlighter-rouge">NumType</code> feature applies to:</p>
 
 <ul>
   <li><a href="">u-pos/NUM</a>: numerals</li>
   <li><a href="">u-pos/ADJ</a>: adjectives, e.g. ordinal numerals</li>
 </ul>
 
-<h3 id="card-cardinal-number-or-corresponding-word"><code>Card</code>: cardinal number or corresponding word</h3>
+<h3 id="card-cardinal-number-or-corresponding-word"><code class="highlighter-rouge">Card</code>: cardinal number or corresponding word</h3>
 
 <h4 id="examples">Examples</h4>
 
@@ -53,7 +54,7 @@
   <li><em>uno</em> “one”, <em>due</em> “two”, <em>tre</em> “three”</li>
 </ul>
 
-<h3 id="ord-ordinal-number-or-corresponding-word"><code>Ord</code>: ordinal number or corresponding word</h3>
+<h3 id="ord-ordinal-number-or-corresponding-word"><code class="highlighter-rouge">Ord</code>: ordinal number or corresponding word</h3>
 
 <p>This is a subtype of adjectives or pronouns.</p>
 
@@ -65,29 +66,34 @@
   <li>30a, 30esima, 1°</li>
 </ul>
 
-<h3 id="mult-multiplicative-numeral-or-corresponding-word"><code>Mult</code>: multiplicative numeral or corresponding word</h3>
+<h3 id="mult-multiplicative-numeral-or-corresponding-word"><code class="highlighter-rouge">Mult</code>: multiplicative numeral or corresponding word</h3>
 
 <p>Not used.</p>
 
-<h3 id="frac-fraction"><code>Frac</code>: fraction</h3>
+<h3 id="frac-fraction"><code class="highlighter-rouge">Frac</code>: fraction</h3>
 
 <p>Not used.</p>
 
-<h3 id="sets-number-of-sets-of-things"><code>Sets</code>: number of sets of things</h3>
+<h3 id="sets-number-of-sets-of-things"><code class="highlighter-rouge">Sets</code>: number of sets of things</h3>
 
 <p>Not used.</p>
 
-<h3 id="dist-distributive-numeral"><code>Dist</code>: distributive numeral</h3>
+<h3 id="dist-distributive-numeral"><code class="highlighter-rouge">Dist</code>: distributive numeral</h3>
 
 <p>Not used.</p>
 
-<h3 id="range-range-of-values"><code>Range</code>: range of values</h3>
+<h3 id="range-range-of-values"><code class="highlighter-rouge">Range</code>: range of values</h3>
 
-<p>Not used.</p>
+<p>Used for expressions such as:
+* 2/3 Sett.
+* 3/4 volte</p>
 
-<h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code>Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
+<h3 id="gen-generic-numeral-ie-a-numeral-that-is-neither-of-the-above"><code class="highlighter-rouge">Gen</code>: generic numeral, i.e. a numeral that is neither of the above</h3>
 
-<p>Not used.</p>
+<p>Used for time expressions such as:
+* 23’
+* 1’13’’
+* 1.00’16’’</p>
 
 
 
@@ -103,65 +109,51 @@
 <h2 id="treebank-statistics-uditalian">Treebank Statistics (UD_Italian)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Card</code>, <code>Ord</code>.</p>
+It occurs with 4 different values: <code class="highlighter-rouge">Card</code>, <code class="highlighter-rouge">Gen</code>, <code class="highlighter-rouge">Ord</code>, <code class="highlighter-rouge">Range</code>.</p>
 
-<p>5519 tokens (2%) have a non-empty value of <code>NumType</code>.
-1193 types (5%) occur at least once with a non-empty value of <code>NumType</code>.
-1142 lemmas (6%) occur at least once with a non-empty value of <code>NumType</code>.
-The feature is used with 3 part-of-speech tags: <a href="">it-pos/NUM</a> (4588; 2% instances), <a href="">it-pos/ADJ</a> (847; 0% instances), <a href="">it-pos/PRON</a> (84; 0% instances).</p>
+<p>5409 tokens (2%) have a non-empty value of <code class="highlighter-rouge">NumType</code>.
+1209 types (5%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumType</code>.
+1161 lemmas (6%) occur at least once with a non-empty value of <code class="highlighter-rouge">NumType</code>.
+The feature is used with 2 part-of-speech tags: <a href="">it-pos/NUM</a> (4609; 2% instances), <a href="">it-pos/ADJ</a> (800; 0% instances).</p>
 
-<h3 id="num"><code>NUM</code></h3>
+<h3 id="num"><code class="highlighter-rouge">NUM</code></h3>
 
-<p>4588 <a href="">it-pos/NUM</a> tokens (100% of all <code>NUM</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>4609 <a href="">it-pos/NUM</a> tokens (100% of all <code class="highlighter-rouge">NUM</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumType</code>.</p>
 
-<p><code>NUM</code> tokens may have the following values of <code>NumType</code>:</p>
-
-<ul>
-  <li><code>Card</code> (4588; 100% of non-empty <code>NumType</code>): <em>due, 1, 2, tre, 3, cinque, mila, quattro, 4, 20</em></li>
-  <li><code>EMPTY</code> (21): <em>6’, 1’13’’, 1.00’16’’, 1.19’59’’, 10’’, 11’06’’, 13’, 19’43’’, 2’42’’, 20’01’’</em></li>
-</ul>
-
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>NUM</code>. 100% lemmas (1075) occur only with one value of <code>NumType</code>.</p>
-
-<h3 id="adj"><code>ADJ</code></h3>
-
-<p>847 <a href="">it-pos/ADJ</a> tokens (5% of all <code>ADJ</code> tokens) have a non-empty value of <code>NumType</code>.</p>
-
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (721; 85%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (436; 51%).</p>
-
-<p><code>ADJ</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="highlighter-rouge">NUM</code> tokens may have the following values of <code class="highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Ord</code> (847; 100% of non-empty <code>NumType</code>): <em>primo, prima, secondo, seconda, primi, terzo, ultimi, prime, ii, i</em></li>
-  <li><code>EMPTY</code> (16538): <em>grande, presente, altri, altro, stesso, comune, nuovo, stessa, altra, ex</em></li>
+  <li><code class="highlighter-rouge">Card</code> (4584; 99% of non-empty <code class="highlighter-rouge">NumType</code>): <em>due, 1, 2, tre, 3, cinque, mila, quattro, 4, 20</em></li>
+  <li><code class="highlighter-rouge">Gen</code> (21; 0% of non-empty <code class="highlighter-rouge">NumType</code>): <em>6’, 1’13’’, 1.00’16’’, 1.19’59’’, 10’’, 11’06’’, 13’, 19’43’’, 2’42’’, 20’01’’</em></li>
+  <li><code class="highlighter-rouge">Range</code> (4; 0% of non-empty <code class="highlighter-rouge">NumType</code>): <em>3/4, 150/300, 2/3</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (66) occur only with one value of <code>NumType</code>.</p>
+<p><code class="highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">NUM</code>. 100% lemmas (1095) occur only with one value of <code class="highlighter-rouge">NumType</code>.</p>
 
-<h3 id="pron"><code>PRON</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>84 <a href="">it-pos/PRON</a> tokens (1% of all <code>PRON</code> tokens) have a non-empty value of <code>NumType</code>.</p>
+<p>800 <a href="">it-pos/ADJ</a> tokens (5% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">NumType</code>.</p>
 
-<p>The most frequent other feature values with which <code>PRON</code> and <code>NumType</code> co-occurred: <tt><a href="PronType.html">PronType</a>=EMPTY</tt> (84; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (84; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (70; 83%), <tt><a href="Number.html">Number</a>=Sing</tt> (68; 81%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">NumType</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (682; 85%).</p>
 
-<p><code>PRON</code> tokens may have the following values of <code>NumType</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">NumType</code>:</p>
 
 <ul>
-  <li><code>Ord</code> (84; 100% of non-empty <code>NumType</code>): <em>terzo, terzi, quarto, primo, ultimo, primi, ultima, prima, quinto, decimo</em></li>
-  <li><code>EMPTY</code> (10750): <em>si, che, chi, cui, ci, lo, ne, qual, quanto, mi</em></li>
+  <li><code class="highlighter-rouge">Ord</code> (800; 100% of non-empty <code class="highlighter-rouge">NumType</code>): <em>primo, prima, secondo, seconda, primi, ultimi, prime, terzo, ii, i</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (16546): <em>grande, presente, altri, altro, stesso, comune, nuovo, stessa, altra, ex</em></li>
 </ul>
 
-<p><code>NumType</code> seems to be <strong>lexical feature</strong> of <code>PRON</code>. 100% lemmas (13) occur only with one value of <code>NumType</code>.</p>
+<p><code class="highlighter-rouge">NumType</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 100% lemmas (66) occur only with one value of <code class="highlighter-rouge">NumType</code>.</p>
 
-<h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code>NumType</code></h2>
+<h2 id="relations-with-agreement-in-numtype">Relations with Agreement in <code class="highlighter-rouge">NumType</code></h2>
 
-<p>The 10 most frequent relations where parent and child node agree in <code>NumType</code>:
-<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (150; 100%),
-<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (135; 100%),
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">NumType</code>:
+<tt>NUM –[<a href="../dep/compound.html">compound</a>]–&gt; NUM</tt> (152; 100%),
+<tt>NUM –[<a href="../dep/conj.html">conj</a>]–&gt; NUM</tt> (136; 100%),
 <tt>NUM –[<a href="../dep/nummod.html">nummod</a>]–&gt; NUM</tt> (33; 100%),
-<tt>NUM –[<a href="../dep/mwe.html">mwe</a>]–&gt; NUM</tt> (19; 100%),
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (6; 75%),
-<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; PRON</tt> (3; 100%).</p>
+<tt>NUM –[<a href="../dep/mwe.html">mwe</a>]–&gt; NUM</tt> (17; 100%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (5; 83%),
+<tt>NUM –[<a href="../dep/nmod.html">nmod</a>]–&gt; NUM</tt> (2; 100%).</p>
 
 
 
@@ -220,6 +212,7 @@ NumType in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -251,11 +244,40 @@ NumType in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -279,6 +301,7 @@ NumType in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'it-feat';
@@ -304,7 +327,7 @@ NumType in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

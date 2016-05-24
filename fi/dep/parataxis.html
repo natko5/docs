@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-fi">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/fi/dep">fi/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-fi">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/fi/dep">fi/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_fi-dep/parataxis.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -38,7 +39,7 @@
 
           <h2><code>parataxis</code>: parataxis</h2>
 
-<p><code>parataxis</code> dependencies mark two different phenomena. Firstly, they are used with certain implicit coordinations. These coordinations are recognized by two factors: there is no coordinating conjunction, and the independent clauses are separated by a colon, semicolon or a dash. As with explicit coordinations, the first element is the governor. Also parenthetical and interjected clauses can receive the <code>parataxis</code> dependency. If there is a coordinating conjunction present (regardless of punctuation) or if the clauses are separated by merely a comma, the coordination type <code>conj</code> is used (differs from the UD).</p>
+<p><code class="highlighter-rouge">parataxis</code> dependencies mark two different phenomena. Firstly, they are used with certain implicit coordinations. These coordinations are recognized by two factors: there is no coordinating conjunction, and the independent clauses are separated by a colon, semicolon or a dash. As with explicit coordinations, the first element is the governor. Also parenthetical and interjected clauses can receive the <code class="highlighter-rouge">parataxis</code> dependency. If there is a coordinating conjunction present (regardless of punctuation) or if the clauses are separated by merely a comma, the coordination type <code class="highlighter-rouge">conj</code> is used (differs from the UD).</p>
 
 <!-- fname:parataxis_coord.pdf -->
 <pre><code class="language-sdparse">Lapset leipoivat piparit ; äiti paistoi ne . \n The_children made the_cookies ; the_mother baked them .
@@ -61,7 +62,7 @@ punct(käy-6, (-4)
 punct(käy-6, )-7)
 </code></pre>
 
-<p><code>parataxis</code> is also used for direct speech. If the verb of saying (or thinking, etc.) precedes the utterance, it acts as the governor, and the main verb or predicative of the utterance is the dependent. However, if the utterance precedes the speech verb, the relation is reversed.</p>
+<p><code class="highlighter-rouge">parataxis</code> is also used for direct speech. If the verb of saying (or thinking, etc.) precedes the utterance, it acts as the governor, and the main verb or predicative of the utterance is the dependent. However, if the utterance precedes the speech verb, the relation is reversed.</p>
 
 <pre><code class="language-sdparse">Mies sanoi : Tulen kotiin vasta myöhään . \n The_man said : I_will_come home only late .
 nsubj(Mies-1, sanoi-2)
@@ -88,7 +89,15 @@ punct(Tulen-1, .-8)
 
 <h3 id="turku-dependency-treebank">Turku Dependency Treebank</h3>
 
-<p>If the clauses are separated by a comma and there is no coordinating conjunction, TDT does not use <code>parataxis</code> but <code>conj</code>.</p>
+<p>If the clauses are separated by a comma and there is no coordinating conjunction, TDT does not use <code class="highlighter-rouge">parataxis</code> but <code class="highlighter-rouge">conj</code>.</p>
+
+<h3 id="finntreebank">FinnTreeBank</h3>
+
+<p>FI_FTB does not apply the <code class="highlighter-rouge">parataxis</code> relation.
+Instead, the phenomena of implicit coordination,
+parenthetical clauses, interjected clauses and direct speech
+have been described using some other, most applicable
+relation available (usually <a href=""><code class="highlighter-rouge">conj</code></a> or <a href=""><code class="highlighter-rouge">dobj</code></a>).</p>
 
 
 <!-- "automatic stats" -->
@@ -105,12 +114,12 @@ punct(Tulen-1, .-8)
 
 <p>This relation is universal.</p>
 
-<p>732 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
+<p>732 nodes (0%) are attached to their parents as <code class="highlighter-rouge">parataxis</code>.</p>
 
-<p>728 instances of <code>parataxis</code> (99%) are left-to-right (parent precedes child).
+<p>728 instances of <code class="highlighter-rouge">parataxis</code> (99%) are left-to-right (parent precedes child).
 Average distance between parent and child is 10.301912568306.</p>
 
-<p>The following 31 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">fi-pos/VERB</a>-<a href="">fi-pos/VERB</a> (387; 53% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/VERB</a> (129; 18% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/VERB</a> (50; 7% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/VERB</a> (35; 5% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/NOUN</a> (35; 5% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NOUN</a> (19; 3% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/VERB</a> (11; 2% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADJ</a> (10; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADJ</a> (5; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NOUN</a> (5; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/ADJ</a> (4; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/NOUN</a> (4; 1% instances), <a href="">fi-pos/INTJ</a>-<a href="">fi-pos/VERB</a> (4; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADV</a> (4; 1% instances), <a href="">fi-pos/PRON</a>-<a href="">fi-pos/VERB</a> (4; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/PROPN</a> (4; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/PRON</a> (3; 0% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/NOUN</a> (2; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/PROPN</a> (2; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/SYM</a> (2; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADV</a> (2; 0% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/VERB</a> (2; 0% instances), <a href="">fi-pos/AUX</a>-<a href="">fi-pos/VERB</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/INTJ</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/PRON</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/X</a> (1; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/ADJ</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/INTJ</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/NUM</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/SYM</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/X</a> (1; 0% instances).</p>
+<p>The following 31 pairs of parts of speech are connected with <code class="highlighter-rouge">parataxis</code>: <a href="">fi-pos/VERB</a>-<a href="">fi-pos/VERB</a> (387; 53% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/VERB</a> (129; 18% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/VERB</a> (50; 7% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/VERB</a> (35; 5% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/NOUN</a> (35; 5% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/NOUN</a> (19; 3% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/VERB</a> (11; 2% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADJ</a> (10; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADJ</a> (5; 1% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/NOUN</a> (5; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/ADJ</a> (4; 1% instances), <a href="">fi-pos/ADJ</a>-<a href="">fi-pos/NOUN</a> (4; 1% instances), <a href="">fi-pos/INTJ</a>-<a href="">fi-pos/VERB</a> (4; 1% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/ADV</a> (4; 1% instances), <a href="">fi-pos/PRON</a>-<a href="">fi-pos/VERB</a> (4; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/PROPN</a> (4; 1% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/PRON</a> (3; 0% instances), <a href="">fi-pos/ADV</a>-<a href="">fi-pos/NOUN</a> (2; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/PROPN</a> (2; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/SYM</a> (2; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/ADV</a> (2; 0% instances), <a href="">fi-pos/X</a>-<a href="">fi-pos/VERB</a> (2; 0% instances), <a href="">fi-pos/AUX</a>-<a href="">fi-pos/VERB</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/INTJ</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/PRON</a> (1; 0% instances), <a href="">fi-pos/NOUN</a>-<a href="">fi-pos/X</a> (1; 0% instances), <a href="">fi-pos/PROPN</a>-<a href="">fi-pos/ADJ</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/INTJ</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/NUM</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/SYM</a> (1; 0% instances), <a href="">fi-pos/VERB</a>-<a href="">fi-pos/X</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 5	bgColor:blue
 # visual-style 5	fgColor:white
@@ -224,6 +233,7 @@ parataxis in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -255,11 +265,40 @@ parataxis in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -283,6 +322,7 @@ parataxis in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'fi-dep';
@@ -308,7 +348,7 @@ parataxis in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

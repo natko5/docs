@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-kk">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/nummod.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,9 +40,9 @@
           <h2><code>nummod</code>: numeric modifier</h2>
 
 <p><em>Numeric modifiers</em> of a noun or NP, when they function as quantifiers
-are marked with the <code>nummod</code> dependency type.</p>
+are marked with the <code class="highlighter-rouge">nummod</code> dependency type.</p>
 
-<p>Ordinal numbers should get the <code>amod</code> type.</p>
+<p>Ordinal numbers should get the <code class="highlighter-rouge">amod</code> type.</p>
 
 <!-- fname:num.pdf -->
 <pre><code class="language-sdparse">Бразилия өз жерінде чемпионатты екі рет өткізген бесінші ел болды . \n Brazil own land-in championship two times XX fifth country was .
@@ -60,6 +61,72 @@ nummod(күн-4, үш-3)
 <!-- "automatic stats" -->
 
 
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>52 nodes (1%) are attached to their parents as <code class="highlighter-rouge">nummod</code>.</p>
+
+<p>52 instances of <code class="highlighter-rouge">nummod</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.07692307692308.</p>
+
+<p>The following 5 pairs of parts of speech are connected with <code class="highlighter-rouge">nummod</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NUM</a> (40; 77% instances), <a href="">kk-pos/NUM</a>-<a href="">kk-pos/NUM</a> (5; 10% instances), <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/NOUN</a> (4; 8% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/NOUN</a> (2; 4% instances), <a href="">kk-pos/ADJ</a>-<a href="">kk-pos/NUM</a> (1; 2% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 2 nummod	color:blue
+1	Ерназардың	Ерназар	PROPN	np	_	3	nmod:poss	_	ant|m|gen
+2	сегіз	сегіз	NUM	num	_	3	nummod	_	_
+3	ұлы	ұл	NOUN	n	_	4	nsubj	_	px3sp|nom
+4	болыпты	бол	VERB	v	_	0	root	_	iv|ifi|evid|p3|sg
+5	.	.	PUNCT	sent	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 10	bgColor:blue
+# visual-style 10	fgColor:white
+# visual-style 10 9 nummod	color:blue
+1	Астанасы	астана	NOUN	n	_	4	nsubj	_	px3sp|nom
+2	—	—	PUNCT	guio	_	1	punct	_	_
+3	Тегеран	Тегеран	PROPN	np	_	4	nmod:poss	_	top|nom
+4	_	қала	NOUN	n	_	0	root	_	px3sp|nom
+5	_	е	VERB	cop	_	4	cop	_	aor|p3|sg
+6	(	(	PUNCT	lpar	_	10	punct	_	_
+7	айналасын	айнала	NOUN	n	_	8	dobj	_	px3sp|acc
+8	қосқанда	қос	VERB	v	_	10	advcl	_	tv|ger_past|loc
+9	12	12	NUM	num	_	10	nummod	_	_
+10	миллионнан	миллион	NUM	num	_	4	appos	_	subst|abl
+11	астам	астам	ADP	post	_	10	case	_	_
+12	)	)	PUNCT	rpar	_	10	punct	_	_
+13	.	.	PUNCT	sent	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 4 nummod	color:blue
+1	Жер	жер	NOUN	n	_	2	nmod:poss	_	nom
+2	көлемі	көлем	NOUN	n	_	5	nsubj	_	px3sp|nom
+3	1,648	1,648	NUM	num	_	4	nummod	_	_
+4	млн.	млн.	NOUN	abbr	_	5	nummod	_	_
+5	_	км²	NOUN	abbr	_	0	root	_	_
+6	_	е	VERB	cop	_	5	cop	_	aor|p3|sg
+7	.	.	PUNCT	sent	_	5	punct	_	_
+
+</code></pre>
 
 
 
@@ -118,6 +185,7 @@ nummod in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -149,11 +217,40 @@ nummod in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -177,6 +274,7 @@ nummod in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'kk-dep';
@@ -202,7 +300,7 @@ nummod in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-bg">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/bg/dep">bg/dep</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-bg">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/bg/dep">bg/dep</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_bg-dep/expl.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -39,7 +40,7 @@
           <h2><code>expl</code>: expletive</h2>
 
 <p>This document is a placeholder for the language-specific documentation
-for <code>expl</code>.</p>
+for <code class="highlighter-rouge">expl</code>.</p>
 
 
 <!-- "automatic stats" -->
@@ -56,12 +57,12 @@ for <code>expl</code>.</p>
 
 <p>This relation is universal.</p>
 
-<p>3505 nodes (2%) are attached to their parents as <code>expl</code>.</p>
+<p>3505 nodes (2%) are attached to their parents as <code class="highlighter-rouge">expl</code>.</p>
 
-<p>3027 instances of <code>expl</code> (86%) are right-to-left (child precedes parent).
-Average distance between parent and child is 1.04650499286733.</p>
+<p>3027 instances of <code class="highlighter-rouge">expl</code> (86%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.05335235378031.</p>
 
-<p>The following 7 pairs of parts of speech are connected with <code>expl</code>: <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PRON</a> (3437; 98% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/PRON</a> (57; 2% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/PRON</a> (6; 0% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/PRON</a> (2; 0% instances), <a href="">bg-pos/DET</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/PART</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/PRON</a>-<a href="">bg-pos/PRON</a> (1; 0% instances).</p>
+<p>The following 7 pairs of parts of speech are connected with <code class="highlighter-rouge">expl</code>: <a href="">bg-pos/VERB</a>-<a href="">bg-pos/PRON</a> (3421; 98% instances), <a href="">bg-pos/ADJ</a>-<a href="">bg-pos/PRON</a> (58; 2% instances), <a href="">bg-pos/NOUN</a>-<a href="">bg-pos/PRON</a> (14; 0% instances), <a href="">bg-pos/ADV</a>-<a href="">bg-pos/PRON</a> (9; 0% instances), <a href="">bg-pos/DET</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/PART</a>-<a href="">bg-pos/PRON</a> (1; 0% instances), <a href="">bg-pos/PRON</a>-<a href="">bg-pos/PRON</a> (1; 0% instances).</p>
 
 <pre><code class="language-conllu"># visual-style 2	bgColor:blue
 # visual-style 2	fgColor:white
@@ -96,19 +97,24 @@ Average distance between parent and child is 1.04650499286733.</p>
 
 </code></pre>
 
-<pre><code class="language-conllu"># visual-style 2	bgColor:blue
-# visual-style 2	fgColor:white
-# visual-style 1	bgColor:blue
-# visual-style 1	fgColor:white
-# visual-style 1 2 expl	color:blue
-1	Увеличавайки	увеличавам-(се)	ADV	Vpitg	_	5	advmod	_	_
-2	се	се	PRON	Ppxta	Case=Acc|PronType=Prs|Reflex=Yes	1	expl	_	_
-3	,	,	PUNCT	punct	_	1	punct	_	_
-4	количеството	количество	NOUN	Ncnsd	Definite=Def|Gender=Neut|Number=Sing	5	nsubj	_	_
-5	става	ставам	VERB	Vpiif-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
-6	по-голямо	голям	ADJ	Ansi	Definite=Ind|Degree=Cmp|Gender=Neut|Number=Sing	7	amod	_	_
-7	количество	количество	NOUN	Ncnsi	Definite=Ind|Gender=Neut|Number=Sing	5	dobj	_	_
-8	.	.	PUNCT	punct	_	5	punct	_	_
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 12	bgColor:blue
+# visual-style 12	fgColor:white
+# visual-style 12 9 expl	color:blue
+1	Ако	ако	SCONJ	Cs	_	2	mark	_	_
+2	мисли	мисля	VERB	Vpitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	_	_
+3	,	,	PUNCT	punct	_	6	punct	_	_
+4	че	че	SCONJ	Cs	_	6	mark	_	_
+5	е	съм	VERB	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	най-добрият	добър	ADJ	Amsf	Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	2	ccomp	_	_
+7	,	,	PUNCT	punct	_	2	punct	_	_
+8	това	този	PRON	Pde-os-n	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	12	nsubj	_	_
+9	си	се	PRON	Ppxtd	Case=Dat|PronType=Prs|Reflex=Yes	12	expl	_	_
+10	е	съм	VERB	Vxitf-r3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+11	негов	мой	DET	Psol-s3mim	Definite=Ind|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	_	_
+12	проблем	проблем	NOUN	Ncmsi	Definite=Ind|Gender=Masc|Number=Sing	0	root	_	_
+13	.	.	PUNCT	punct	_	12	punct	_	_
 
 </code></pre>
 
@@ -169,6 +175,7 @@ expl in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -200,11 +207,40 @@ expl in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -228,6 +264,7 @@ expl in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'bg-dep';
@@ -253,7 +290,7 @@ expl in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

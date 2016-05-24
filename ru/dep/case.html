@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>case</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ru">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ru/dep">ru/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ru-dep/case.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>case</code>: case marking</h2>
+
+<p>Russian uses a combination of oblique morphological cases and prepositions to express semantic case.
+Prepositions in UD are treated as dependents of the noun they attach to. The relation between the noun and the preposition is labeled <code class="highlighter-rouge">case</code>.</p>
+
+<pre><code class="language-sdparse">В пятницу.Acc по дороге.Dat к деревне.Dat мы разговаривали o событии.Loc . \n On Friday during the-journey to the-village we talked about the-event .
+case(пятницу.Acc, В)
+case(Friday, On)
+case(дороге.Dat, по)
+case(the-journey, during)
+case(деревне.Dat, к)
+case(the-village, to)
+case(событии.Loc, o)
+case(the-event, about)
+</code></pre>
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udrussian">Treebank Statistics (UD_Russian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>10234 nodes (10%) are attached to their parents as <code class="highlighter-rouge">case</code>.</p>
+
+<p>10213 instances of <code class="highlighter-rouge">case</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.53967168262654.</p>
+
+<p>The following 26 pairs of parts of speech are connected with <code class="highlighter-rouge">case</code>: <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADP</a> (8082; 79% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/ADP</a> (1260; 12% instances), <a href="">ru-pos/DET</a>-<a href="">ru-pos/ADP</a> (327; 3% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/ADP</a> (233; 2% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/ADP</a> (156; 2% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/ADP</a> (65; 1% instances), <a href="">ru-pos/SYM</a>-<a href="">ru-pos/ADP</a> (27; 0% instances), <a href="">ru-pos/VERB</a>-<a href="">ru-pos/ADP</a> (17; 0% instances), <a href="">ru-pos/ADP</a>-<a href="">ru-pos/ADP</a> (12; 0% instances), <a href="">ru-pos/PUNCT</a>-<a href="">ru-pos/ADP</a> (12; 0% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/ADP</a> (9; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADV</a> (6; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/DET</a> (6; 0% instances), <a href="">ru-pos/X</a>-<a href="">ru-pos/ADP</a> (6; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/PROPN</a> (3; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/DET</a> (2; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/NOUN</a> (2; 0% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/CONJ</a> (1; 0% instances), <a href="">ru-pos/ADP</a>-<a href="">ru-pos/PRON</a> (1; 0% instances), <a href="">ru-pos/DET</a>-<a href="">ru-pos/ADV</a> (1; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADJ</a> (1; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/NOUN</a> (1; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/X</a> (1; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/ADJ</a> (1; 0% instances), <a href="">ru-pos/PROPN</a>-<a href="">ru-pos/DET</a> (1; 0% instances), <a href="">ru-pos/PUNCT</a>-<a href="">ru-pos/ADJ</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 case	color:blue
+1	С	_	ADP	IN	_	2	case	_	_
+2	запада	_	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	5	nmod	_	_
+3	к	_	ADP	IN	_	4	case	_	_
+4	храму	_	NOUN	NN	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing	5	nmod	_	_
+5	примыкала	_	VERB	VBC	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past	0	root	_	_
+6	трапезная	_	ADJ	JJL	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	7	amod	_	_
+7	часть	_	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+8	с	_	ADP	IN	_	9	case	_	_
+9	колокольней	_	NOUN	NN	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	7	nmod	_	_
+10	.	_	PUNCT	.	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 4 case	color:blue
+1	Изабелла	_	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	2	nsubj	_	_
+2	собралась	_	VERB	VBC	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past	0	root	_	_
+3	ехать	_	VERB	VB	Aspect=Imp	2	xcomp	_	_
+4	в	_	ADP	IN	_	5	case	_	_
+5	Питтсбург	_	PROPN	NNP	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	3	nmod	_	_
+6	на	_	ADP	IN	_	7	case	_	_
+7	лечение	_	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	3	nmod	_	_
+8	.	_	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 1 case	color:blue
+1	При	_	ADP	IN	_	2	case	_	_
+2	этом	_	DET	DT	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	5	nmod	_	_
+3	возраст	_	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+4	не	_	PART	NEG	_	5	neg	_	_
+5	имеет	_	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+6	значения	_	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	5	dobj	_	_
+7	.	_	PUNCT	.	_	5	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udrussian-syntagrus">Treebank Statistics (UD_Russian-SynTagRus)</h2>
+
+<p>This relation is universal.</p>
+
+<p>95548 nodes (9%) are attached to their parents as <code class="highlighter-rouge">case</code>.</p>
+
+<p>95386 instances of <code class="highlighter-rouge">case</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.46973249047599.</p>
+
+<p>The following 9 pairs of parts of speech are connected with <code class="highlighter-rouge">case</code>: <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/ADP</a> (86175; 90% instances), <a href="">ru-pos/PRON</a>-<a href="">ru-pos/ADP</a> (5319; 6% instances), <a href="">ru-pos/ADJ</a>-<a href="">ru-pos/ADP</a> (3112; 3% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/ADP</a> (563; 1% instances), <a href="">ru-pos/SYM</a>-<a href="">ru-pos/ADP</a> (329; 0% instances), <a href="">ru-pos/ADV</a>-<a href="">ru-pos/ADP</a> (39; 0% instances), <a href="">ru-pos/CONJ</a>-<a href="">ru-pos/ADP</a> (6; 0% instances), <a href="">ru-pos/NOUN</a>-<a href="">ru-pos/SYM</a> (4; 0% instances), <a href="">ru-pos/NUM</a>-<a href="">ru-pos/SYM</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 7 5 case	color:blue
+1	Алгоритм	АЛГОРИТМ	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	должен	ДОЛЖЕН	ADJ	_	Degree=Pos|Gender=Masc|Number=Sing|Variant=Brev	0	root	_	_
+3	быть	БЫТЬ	AUX	_	Aspect=Imp|VerbForm=Inf	4	cop	_	_
+4	применим	ПРИМЕНИМЫЙ	ADJ	_	Degree=Pos|Gender=Masc|Number=Sing|Variant=Brev	2	dobj	_	_
+5	к	К	ADP	_	_	7	case	_	_
+6	разным	РАЗНЫЙ	ADJ	_	Case=Dat|Degree=Pos|Number=Plur	7	amod	_	_
+7	наборам	НАБОР	NOUN	_	Animacy=Inan|Case=Dat|Gender=Masc|Number=Plur	4	dobj	_	_
+8	исходных	ИСХОДНЫЙ	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	9	amod	_	_
+9	данных	ДАННЫЕ	NOUN	_	Animacy=Inan|Case=Gen|Number=Plur	7	nmod	_	_
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 case	color:blue
+1	Наибольшую	НАИБОЛЬШИЙ	ADJ	_	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
+2	известность	ИЗВЕСТНОСТЬ	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	5	dobj	_	_
+3	среди	СРЕДИ	ADP	_	_	4	case	_	_
+4	них	ОНИ	PRON	_	_	2	nmod	_	_
+5	имел	ИМЕТЬ	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	Андрей	АНДРЕЙ	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+7	Васильевич	ВАСИЛЬЕВИЧ	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	6	name	_	_
+8	Пастухов	ПАСТУХОВ	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	name	_	_
+9	.	.	PUNCT	.	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 5 case	color:blue
+1	Он	ОН	PRON	_	_	2	nsubj	_	_
+2	увидел	ВИДЕТЬ	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	платформу	ПЛАТФОРМА	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	2	dobj	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	с	С	ADP	_	_	6	case	_	_
+6	которой	КОТОРЫЙ	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	8	nmod	_	_
+7	словно	СЛОВНО	PART	_	_	8	advmod	_	_
+8	сдуло	СДУВАТЬ	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+9	людей	ЧЕЛОВЕК	NOUN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Plur	8	dobj	_	_
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+</code></pre>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+case in other languages:
+
+[<a href="../../bg/dep/case.html">bg</a>]
+
+[<a href="../../cs/dep/case.html">cs</a>]
+
+[<a href="../../de/dep/case.html">de</a>]
+
+[<a href="../../el/dep/case.html">el</a>]
+
+[<a href="../../en/dep/case.html">en</a>]
+
+[<a href="../../es/dep/case.html">es</a>]
+
+[<a href="../../eu/dep/case.html">eu</a>]
+
+[<a href="../../fa/dep/case.html">fa</a>]
+
+[<a href="../../fi/dep/case.html">fi</a>]
+
+[<a href="../../fr/dep/case.html">fr</a>]
+
+[<a href="../../ga/dep/case.html">ga</a>]
+
+[<a href="../../he/dep/case.html">he</a>]
+
+[<a href="../../hu/dep/case.html">hu</a>]
+
+[<a href="../../it/dep/case.html">it</a>]
+
+[<a href="../../ja/dep/case.html">ja</a>]
+
+[<a href="../../ko/dep/case.html">ko</a>]
+
+[<a href="../../sv/dep/case.html">sv</a>]
+
+[<a href="../../u/dep/case.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'ru-dep';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

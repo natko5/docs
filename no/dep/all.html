@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,7 +21,7 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-no">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-no">home</a></span>
 
 
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
@@ -226,13 +227,13 @@ in two places.</p>
 <p><a id="al-no-dep/acl" class="al-dest"></a></p>
 <h2><code>acl</code>: clausal modifier of noun</h2>
 
-<p><code>acl</code> is used for finite and non-finite clauses that modify a noun, including cases of secondary predication. In Norwegian, relative clauses are assigned a language-specific subtype <a href="acl-relcl">acl:relcl</a>.</p>
+<p><code class="highlighter-rouge">acl</code> is used for finite and non-finite clauses that modify a noun, including cases of secondary predication. In Norwegian, relative clauses are assigned a language-specific subtype <a href="acl-relcl">acl:relcl</a>.</p>
 
 <pre><code class="language-sdparse">Han har gitt militsen ordre om å omgruppere \n He has given the militia orders to regroup
 acl(ordre, omgruppere)
 </code></pre>
 
-<p>The <code>acl</code> relation is also used for optional predicatives.</p>
+<p>The <code class="highlighter-rouge">acl</code> relation is also used for optional predicatives.</p>
 
 <pre><code class="language-sdparse">En 12 år gammel gutt kommer inn døende \n A 12-year old boy comes in dying
 acl(gutt, døende)
@@ -243,7 +244,7 @@ acl(gutt, døende)
 <p><a id="al-no-dep/acl:relcl" class="al-dest"></a></p>
 <h2><code>acl:relcl</code>: relative clause</h2>
 
-<p>This language-specific relation is used for relative clauses in Norwegian and the <code>acl:relcl</code> relation is assigned to the main predicate of the relative clause. Relative clauses modify a nominal element and are often initiated by the relative pronoun <em>som</em> “that” which is assigned a nominal relation to the main predicate of the relative clause.</p>
+<p>This language-specific relation is used for relative clauses in Norwegian and the <code class="highlighter-rouge">acl:relcl</code> relation is assigned to the main predicate of the relative clause. Relative clauses modify a nominal element and are often initiated by the relative pronoun <em>som</em> “that” which is assigned a nominal relation to the main predicate of the relative clause.</p>
 
 <pre><code class="language-sdparse">Jeg har en venn som kjenner deg \n I have a friend who knows you
 acl:relcl(venn,kjenner)
@@ -423,7 +424,7 @@ ccomp(trodde,ta)
 <p><a id="al-no-dep/compound" class="al-dest"></a></p>
 <h2><code>compound</code>: compound</h2>
 
-<p>For Norwegian the <code>compound</code> relation is used only for verbal particle constructions with the language-specific subtype <a href="compound-prt">compound:prt</a>.</p>
+<p>For Norwegian the <code class="highlighter-rouge">compound</code> relation is used only for verbal particle constructions with the language-specific subtype <a href="compound-prt">compound:prt</a>.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-dep/compound.md" target="#">edit compound</a></p>
 
@@ -454,7 +455,7 @@ Kari Kinn, Per Erik Solberg and Pål Kristian Eriksen. “<a href="http://www.nb
 <p><a id="al-no-dep/conj" class="al-dest"></a></p>
 <h2><code>conj</code>: conjunct</h2>
 
-<p>A conjunct is the relation between two elements connected by a coordinating conjunction, such as <em>og</em> “and”, <em>eller</em> “or”, etc. We treat conjunctions asymmetrically: The head of the relation is the first conjunct and all the other conjuncts depend on it via the <code>conj</code> relation.</p>
+<p>A conjunct is the relation between two elements connected by a coordinating conjunction, such as <em>og</em> “and”, <em>eller</em> “or”, etc. We treat conjunctions asymmetrically: The head of the relation is the first conjunct and all the other conjuncts depend on it via the <code class="highlighter-rouge">conj</code> relation.</p>
 
 <pre><code class="language-sdparse">Lam og piggvar på bryllupsmenyen \n Lamb and turbot on the wedding menu
 conj(Lam,piggvar)
@@ -493,7 +494,7 @@ cop(piggvar, er)
 csubj(ta,rette)
 </code></pre>
 
-<p>When the matrix clause is a copula construction, the head of the <code>csubj</code> may be an adjectival (or even nominal) predicate.</p>
+<p>When the matrix clause is a copula construction, the head of the <code class="highlighter-rouge">csubj</code> may be an adjectival (or even nominal) predicate.</p>
 
 <pre><code class="language-sdparse">Det er rart at vi kom i mål i det hele tatt \n It is funny that we reached our goal at all
 csubj(rart,kom)
@@ -504,7 +505,7 @@ csubj(rart,kom)
 <p><a id="al-no-dep/csubjpass" class="al-dest"></a></p>
 <h2><code>csubjpass</code>: clausal passive subject</h2>
 
-<p>A clausal passive subject is a clausal syntactic subject of a passive clause. In the example below, the clause <em>At de mener alvor</em> “That they are serious” is the <code>csubjpass</code> of the passive verb <em>illustreres</em> “illustrated-PASS”.</p>
+<p>A clausal passive subject is a clausal syntactic subject of a passive clause. In the example below, the clause <em>At de mener alvor</em> “That they are serious” is the <code class="highlighter-rouge">csubjpass</code> of the passive verb <em>illustreres</em> “illustrated-PASS”.</p>
 
 <pre><code class="language-sdparse">At de mener alvor, kan illustreres med følgende \n That they are serious can be illustrated by the following
 csubjpass(illustreres,mener)
@@ -522,14 +523,14 @@ csubjpass(illustreres,mener)
 <p><a id="al-no-dep/det" class="al-dest"></a></p>
 <h2><code>det</code>: determiner</h2>
 
-<p>The relation determiner (<code>det</code>) holds between a nominal head and its determiner. Most commonly, a word of POS DET will have the relation <code>det</code> and vice versa.</p>
+<p>The relation determiner (<code class="highlighter-rouge">det</code>) holds between a nominal head and its determiner. Most commonly, a word of POS DET will have the relation <code class="highlighter-rouge">det</code> and vice versa.</p>
 
 <pre><code class="language-sdparse">denne viktige posten \n this important post
 det(posten,denne)
 </code></pre>
 
-<p>Other parts of speech than <code>DET</code> may in some cases be assigned a determiner relation to a nominal head. 
-For Norwegian the <code>det</code> relation is also used for genitive nouns, like <em>årets</em> “this year’s” and quantity nouns like <em>rekke</em> “number-of”.</p>
+<p>Other parts of speech than <code class="highlighter-rouge">DET</code> may in some cases be assigned a determiner relation to a nominal head. 
+For Norwegian the <code class="highlighter-rouge">det</code> relation is also used for genitive nouns, like <em>årets</em> “this year’s” and quantity nouns like <em>rekke</em> “number-of”.</p>
 
 <pre><code class="language-sdparse">årets fredspris \n this year's peace prize
 det(fredspris,årets)
@@ -579,25 +580,25 @@ dobj(gjøre,feil)
 
 <p>This relation captures expletive nominals. These are nominals that appear in an argument position of a predicate but which do not themselves satisfy any of the semantic roles of the predicate. The main predicate of the clause (the verb or predicate adjective or noun) is the governor.</p>
 
-<p>For Norwegian, the expletive element is expressed using the neuter pronoun <em>det</em> “it” and the <code>expl</code> relation is used for both expletive subjects and objects.</p>
+<p>For Norwegian, the expletive element is expressed using the neuter pronoun <em>det</em> “it” and the <code class="highlighter-rouge">expl</code> relation is used for both expletive subjects and objects.</p>
 
-<h5 id="presentational-construction">Presentational construction</h5>
-<p>In Norwegian expletives occur in the presentational construction, which involves an expletive subject, an active verb and an indefinite subject (<em>en debatt</em> “a debate” in the example below).</p>
+<p>#####Presentational construction
+In Norwegian expletives occur in the presentational construction, which involves an expletive subject, an active verb and an indefinite subject (<em>en debatt</em> “a debate” in the example below).</p>
 
 <pre><code class="language-sdparse">Det eksisterer allerede en debatt \n There already exists a debate
 expl(eksisterer-2,Det-1)
 nsubj(eksisterer-2,debatt-5)
 </code></pre>
 
-<h5 id="impersonal-passive">Impersonal passive</h5>
-<p>Norwegian employs the impersonal passive construction, where there is an expletive subject and the underlying subject is unexpressed.</p>
+<p>#####Impersonal passive
+Norwegian employs the impersonal passive construction, where there is an expletive subject and the underlying subject is unexpressed.</p>
 
 <pre><code class="language-sdparse">Senere har det blitt fremsatt flere forslag \n Later has there been proposed several suggestions
 expl(fremsatt,det)
 </code></pre>
 
-<h5 id="clause-anticipating-constructions">Clause-anticipating constructions</h5>
-<p>These constructions contain a finite or non-finite clause which semantically may be regarded as the subject, but where the subject position is occupied by an expletive.</p>
+<p>#####Clause-anticipating constructions
+These constructions contain a finite or non-finite clause which semantically may be regarded as the subject, but where the subject position is occupied by an expletive.</p>
 
 <pre><code class="language-sdparse">Det er ønskelig at utvalget arbeider i dialog \n It is desirable that the committee works in dialogue
 expl(ønskelig-3,Det-1)
@@ -615,16 +616,16 @@ expl(finner-2,det-3)
 ccomp(finner-2,handlet-7)
 </code></pre>
 
-<h5 id="clefts">Clefts</h5>
-<p>Clefts are quite  common in Norwegian. They contain an expletive subject, a form of <em>være</em> “to be” and a relative clause. Note that in clefts we do not adopt a copula analysis of the verb <em>være</em> “er”.</p>
+<p>#####Clefts
+Clefts are quite  common in Norwegian. They contain an expletive subject, a form of <em>være</em> “to be” and a relative clause. Note that in clefts we do not adopt a copula analysis of the verb <em>være</em> “er”.</p>
 
 <pre><code class="language-sdparse">Det er forholdsvis få arter som har klart å tilpasse seg \n There are quite few species that have managed to adapt 
 expl(er-2,Det-1)
 acl:relcl(arter-5,klart-8)
 </code></pre>
 
-<h5 id="references">References</h5>
-<p>Kari Kinn, Per Erik Solberg and Pål Kristian Eriksen. <a href="http://www.nb.no/sbfil/dok/20140314_guidelines_ndt_english.pdf">NDT Guidelines for Morphological Annotation</a>”. National Library Tech Report.</p>
+<p>#####References
+Kari Kinn, Per Erik Solberg and Pål Kristian Eriksen. <a href="http://www.nb.no/sbfil/dok/20140314_guidelines_ndt_english.pdf">NDT Guidelines for Morphological Annotation</a>”. National Library Tech Report.</p>
 
 <p>~~~</p>
 
@@ -633,7 +634,7 @@ acl:relcl(arter-5,klart-8)
 <p><a id="al-no-dep/foreign" class="al-dest"></a></p>
 <h2><code>foreign</code>: foreign words</h2>
 
-<p>We use <code>foreign</code> to label sequences of foreign words.</p>
+<p>We use <code class="highlighter-rouge">foreign</code> to label sequences of foreign words.</p>
 
 <pre><code class="language-sdparse">Small is beautiful er det noe som heter \n Small is beautiful is something that is said
 foreign(Small-1,is-2)
@@ -657,7 +658,7 @@ goeswith(har-2,fra-5)
 <p><a id="al-no-dep/iobj" class="al-dest"></a></p>
 <h2><code>iobj</code>: indirect object</h2>
 
-<p>The indirect object of a verb is any nominal phrase that is a core argument of the verb but is not its subject or direct object. The <code>iobj</code> relation presupposes a <code>dobj</code> argument of the same word and is only used for nominal arguments. Note that nominals with a preposition such as <em>til</em> “to” which are semantically similar to indirect object in the expression of a recipient role are not analyzed as <code>iobj</code>.</p>
+<p>The indirect object of a verb is any nominal phrase that is a core argument of the verb but is not its subject or direct object. The <code class="highlighter-rouge">iobj</code> relation presupposes a <code class="highlighter-rouge">dobj</code> argument of the same word and is only used for nominal arguments. Note that nominals with a preposition such as <em>til</em> “to” which are semantically similar to indirect object in the expression of a recipient role are not analyzed as <code class="highlighter-rouge">iobj</code>.</p>
 
 <pre><code class="language-sdparse">gi den ubehøvlede unge mannen en sjanse \n give the rude young man a chance
 iobj(gi-1,mannen-5)
@@ -669,7 +670,7 @@ dobj(gi-1,sjanse-7)
 <p><a id="al-no-dep/list" class="al-dest"></a></p>
 <h2><code>list</code>: list</h2>
 
-<p>The <code>list</code> relation is not used for Norwegian.</p>
+<p>The <code class="highlighter-rouge">list</code> relation is not used for Norwegian.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-dep/list.md" target="#">edit list</a></p>
 
@@ -691,14 +692,14 @@ mark(fullføre,å)
 <p><a id="al-no-dep/mwe" class="al-dest"></a></p>
 <h2><code>mwe</code>: multi-word expression</h2>
 
-<p>The <code>mwe</code> relation is not used for Norwegian.</p>
+<p>The <code class="highlighter-rouge">mwe</code> relation is not used for Norwegian.</p>
 
 <p><a href="https://github.com/universaldependencies/docs/edit/pages-source/_no-dep/mwe.md" target="#">edit mwe</a></p>
 
 <p><a id="al-no-dep/name" class="al-dest"></a></p>
 <h2><code>name</code>: name</h2>
 
-<p>The <code>name</code> relation is used for proper nouns constituted of multiple nominal elements. 
+<p>The <code class="highlighter-rouge">name</code> relation is used for proper nouns constituted of multiple nominal elements. 
 Names are annotated in a flat, head-initial structure, in which all words in the name modify the first one using the name label.</p>
 
 <pre><code class="language-sdparse">Sven O. Høiby 
@@ -735,9 +736,9 @@ neg(betyr,ikke)
 
 <p>The nmod relation is used for nominal modifiers. They depend either on another noun (group “noun dependents”) or on a predicate (group “non-core dependents of clausal predicates”).</p>
 
-<p><code>nmod</code> is a noun (or noun phrase) functioning as a non-core (oblique) argument or adjunct. This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb. But when attaching to a noun, it corresponds to an attribute.</p>
+<p><code class="highlighter-rouge">nmod</code> is a noun (or noun phrase) functioning as a non-core (oblique) argument or adjunct. This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb. But when attaching to a noun, it corresponds to an attribute.</p>
 
-<p><code>nmod</code> is used for nouns modified by a preposition.</p>
+<p><code class="highlighter-rouge">nmod</code> is used for nouns modified by a preposition.</p>
 
 <pre><code class="language-sdparse">Og bak prosesjonen kom dagens hovedpersoner \n And behind the procession came the main people
 case(prosesjonen,bak)
@@ -749,7 +750,7 @@ case(utenrikskomiteen,i)
 nmod(ledervervet,utenrikskomiteen)
 </code></pre>
 
-<p>The <code>nmod</code> relation is also used for temporal modifiers expressed as nominals:</p>
+<p>The <code class="highlighter-rouge">nmod</code> relation is also used for temporal modifiers expressed as nominals:</p>
 
 <pre><code class="language-sdparse">Stortinget ble mandag kveld enige \n Government agreed Monday evening
 nmod(ble-2,mandag-3)
@@ -761,7 +762,7 @@ nmod(mandag-3,kveld-4)
 <p><a id="al-no-dep/nsubj" class="al-dest"></a></p>
 <h2><code>nsubj</code>: nominal subject</h2>
 
-<p>A nominal subject is a nominal phrase which is the subject of a clause. The governor of the <code>nsubj</code> relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun.</p>
+<p>A nominal subject is a nominal phrase which is the subject of a clause. The governor of the <code class="highlighter-rouge">nsubj</code> relation might not always be a verb: when the verb is a copular verb, the root of the clause is the complement of the copular verb, which can be an adjective or noun.</p>
 
 <pre><code class="language-sdparse">Jeg har ingenting mer å si om det nå \n I have nothing more to say about that now
 nsubj(har,Jeg)
@@ -771,7 +772,7 @@ nsubj(har,Jeg)
 nsubj(viktig,svaret)
 </code></pre>
 
-<p>Note that in cases where there is an expletive subject (<a href="expl">expl</a>), the <code>nsubj</code> relation is used to express the potential/postposed subject:</p>
+<p>Note that in cases where there is an expletive subject (<a href="expl">expl</a>), the <code class="highlighter-rouge">nsubj</code> relation is used to express the potential/postposed subject:</p>
 
 <pre><code class="language-sdparse">Det eksisterer allerede en debatt \n There already exists a debate
 expl(eksisterer-2,Det-1)
@@ -816,7 +817,7 @@ nummod(partiene,tre)
 
 <p>The parataxis relation is a relation between a word (often the main predicate of a sentence) and other elements, such as a sentential parenthetical or a clause after a “:” or a “;”, placed side by side without any explicit coordination, subordination, or argument relation with the head word.</p>
 
-<p>The Norwegian <code>parataxis</code> relation is largely used for reported speech and some other parentheticals.</p>
+<p>The Norwegian <code class="highlighter-rouge">parataxis</code> relation is largely used for reported speech and some other parentheticals.</p>
 
 <pre><code class="language-sdparse">Det er skade for minst 400.000 , sa Solberg \n There are damages for at least 400.000 , said Solberg
 parataxis(er,sa)
@@ -845,7 +846,7 @@ parataxis(skjønner,ironi)
 <p><a id="al-no-dep/remnant" class="al-dest"></a></p>
 <h2><code>remnant</code>: remnant in ellipsis</h2>
 
-<p>The <code>remnant</code> relation is used to provide a satisfactory treatment of ellipsis. In Norwegian, the remnant element is attached to the main predicate of the clause (and not to the correlate in the preceding context).</p>
+<p>The <code class="highlighter-rouge">remnant</code> relation is used to provide a satisfactory treatment of ellipsis. In Norwegian, the remnant element is attached to the main predicate of the clause (and not to the correlate in the preceding context).</p>
 
 <pre><code class="language-sdparse">En prins er født, navnet klart til uken \n A prince is born, name ready next week
 remnant(navnet,født)
@@ -887,7 +888,7 @@ root(ROOT, smalt)
 
 <p>An open clausal complement (xcomp) of a verb or an adjective is a predicative or clausal complement without its own subject. The reference of the subject is necessarily determined by an argument external to the xcomp. This is often referred to as obligatory control.</p>
 
-<p>In Norwegian <code>xcomp</code> is used for infinitival clauses</p>
+<p>In Norwegian <code class="highlighter-rouge">xcomp</code> is used for infinitival clauses</p>
 
 <pre><code class="language-sdparse">Han har tidligere lovet å vende tilbake \n He has previously promised to return
 xcomp(lovet,vende)
@@ -899,7 +900,7 @@ xcomp(lovet,vende)
 xcomp(kjørte,fast)
 </code></pre>
 
-<p><code>xcomp</code> is also used for copula-like verbs such as <code>bli</code> “become”, <em>kalle</em> “call”, <em>hete</em> “named” in Norwegian.</p>
+<p><code class="highlighter-rouge">xcomp</code> is also used for copula-like verbs such as <code class="highlighter-rouge">bli</code> “become”, <em>kalle</em> “call”, <em>hete</em> “named” in Norwegian.</p>
 
 <pre><code class="language-sdparse">Mennesket kan bli edelt \n Man can become noble
 xcomp(bli,edelt)
@@ -919,6 +920,7 @@ xcomp(bli,edelt)
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -950,11 +952,40 @@ xcomp(bli,edelt)
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -978,6 +1009,7 @@ xcomp(bli,edelt)
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'no-overview';
@@ -1003,7 +1035,7 @@ xcomp(bli,edelt)
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>

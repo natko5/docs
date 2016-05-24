@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
     <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
 <!--     <link rel="shortcut icon" href="favicon.ico"/> -->
 
 
@@ -20,8 +21,8 @@
 
       <div id="hp-header">
 	
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/#language-cs">home</a></span>
-          <span class="header-text"><a href="http://universaldependencies.github.io/docs/cs/feat">cs/feat</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/#language-cs">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/cs/feat">cs/feat</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_cs-feat/Aspect.md" target="#">edit page</a></span>
           <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
       </div>
@@ -46,7 +47,7 @@ While many imperfective verbs have morphologically related perfective counterpar
 it is not a regular system
 and the two verbs are represented by different lemmas.</p>
 
-<h3 id="imp-imperfect-aspect"><code>Imp</code>: imperfect aspect</h3>
+<h3 id="imp-imperfect-aspect"><code class="highlighter-rouge">Imp</code>: imperfect aspect</h3>
 
 <p>The action took / takes / will take some time span and there is no
 information whether and when it was / will be completed.</p>
@@ -58,7 +59,7 @@ information whether and when it was / will be completed.</p>
 baking a bread”</li>
 </ul>
 
-<h3 id="perf-perfect-aspect"><code>Perf</code>: perfect aspect</h3>
+<h3 id="perf-perfect-aspect"><code class="highlighter-rouge">Perf</code>: perfect aspect</h3>
 
 <p>The action has been / will have been completed. Since there is
 emphasis on one point on the time scale (the point of completion),
@@ -78,8 +79,8 @@ baked a bread”</li>
 <h3 id="prague-dependency-treebank">Prague Dependency Treebank</h3>
 
 <p>The PDT tagset does not encode aspect. However, verb lemmas in PDT contain their own features
-that encode the aspect: <code>_:T</code> = <code>Imp</code> and <code>_:W</code> = <code>Perf</code>. These lemma features were removed
-during conversion, and the <code>Aspect</code> feature was introduced instead.</p>
+that encode the aspect: <code class="highlighter-rouge">_:T</code> = <code class="highlighter-rouge">Imp</code> and <code class="highlighter-rouge">_:W</code> = <code class="highlighter-rouge">Perf</code>. These lemma features were removed
+during conversion, and the <code class="highlighter-rouge">Aspect</code> feature was introduced instead.</p>
 
 <p>Unfortunately the morphological lexicon underlying the PDT annotation is incomplete and numerous
 verbs lack the aspect information. Without this imperfection there would be only a tiny group
@@ -98,109 +99,237 @@ of verbs that work with both aspects.</p>
 <h2 id="treebank-statistics-udczech">Treebank Statistics (UD_Czech)</h2>
 
 <p>This feature is universal.
-It occurs with 2 different values: <code>Imp</code>, <code>Perf</code>.</p>
+It occurs with 2 different values: <code class="highlighter-rouge">Imp</code>, <code class="highlighter-rouge">Perf</code>.</p>
 
-<p>91937 tokens (6%) have a non-empty value of <code>Aspect</code>.
-21909 types (17%) occur at least once with a non-empty value of <code>Aspect</code>.
-5626 lemmas (10%) occur at least once with a non-empty value of <code>Aspect</code>.
+<p>91937 tokens (6%) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+21909 types (17%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+5626 lemmas (10%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
 The feature is used with 5 part-of-speech tags: <a href="">cs-pos/VERB</a> (87377; 6% instances), <a href="">cs-pos/ADJ</a> (4498; 0% instances), <a href="">cs-pos/AUX</a> (59; 0% instances), <a href="">cs-pos/NOUN</a> (2; 0% instances), <a href="">cs-pos/ADP</a> (1; 0% instances).</p>
 
-<h3 id="verb"><code>VERB</code></h3>
+<h3 id="verb"><code class="highlighter-rouge">VERB</code></h3>
 
-<p>87377 <a href="">cs-pos/VERB</a> tokens (53% of all <code>VERB</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>87377 <a href="">cs-pos/VERB</a> tokens (53% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>VERB</code> and <code>Aspect</code> co-occurred: <tt><a href="Negative.html">Negative</a>=Pos</tt> (81611; 93%), <tt><a href="Voice.html">Voice</a>=Act</tt> (64356; 74%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (52610; 60%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (51805; 59%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (51805; 59%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Negative.html">Negative</a>=Pos</tt> (81611; 93%), <tt><a href="Voice.html">Voice</a>=Act</tt> (64356; 74%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (52610; 60%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (51805; 59%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (51805; 59%).</p>
 
-<p><code>VERB</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (48893; 56% of non-empty <code>Aspect</code>): <em>říká, patří, znamená, tvrdí, tvoří, představuje, uvádí, považuje, snaží, existuje</em></li>
-  <li><code>Perf</code> (38484; 44% of non-empty <code>Aspect</code>): <em>řekl, prohlásil, podařilo, získat, dodal, sdělil, získal, říci, oznámil, označil</em></li>
-  <li><code>EMPTY</code> (78257): <em>je, jsou, má, není, byl, být, může, bylo, měl, mají</em></li>
+  <li><code class="highlighter-rouge">Imp</code> (48893; 56% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>říká, patří, znamená, tvrdí, tvoří, představuje, uvádí, považuje, snaží, existuje</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (38484; 44% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>řekl, prohlásil, podařilo, získat, dodal, sdělil, získal, říci, oznámil, označil</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (78257): <em>je, jsou, má, není, byl, být, může, bylo, měl, mají</em></li>
 </ul>
 
 <table>
   <tr><th>Paradigm <i>říci</i></th><th><tt>Imp</tt></th><th><tt>Perf</tt></th></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Anim|<a href="Gender.html">Gender</a>=Masc|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>neřekli</i></td></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Anim|<a href="Gender.html">Gender</a>=Masc|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řekli</i></td></tr>
-  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Gender.html">Gender</a>=Fem,Masc|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řekly</i></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>neřekl</i></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řekl</i></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem,Neut|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur,Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>neřekla</i></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Fem,Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur,Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řekla</i></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>neřeklo</i></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řeklo</i></td></tr>
-  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Pass</tt></td><td></td><td><i>řečeno</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Imp|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><i>Řekni</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Imp|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><i>řekněme</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Imp|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><i>řekněte</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>neřeknu</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>neřekne</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>neřeknou</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řeknu</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řekne</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řekneme</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řeknete</i></td></tr>
-  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><i>řeknou</i></td></tr>
-  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Trans|<a href="Voice.html">Voice</a>=Act</tt></td><td><i>řkouce</i></td><td></td></tr>
-  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Inf</tt></td><td></td><td><i>říci, říct</i></td></tr>
+  <tr><td><tt><a href="Animacy.html">Animacy</a>=Anim|<a href="Gender.html">Gender</a>=Masc|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>neřekli</em></td></tr>
+  <tr><td><tt><a href="Animacy.html">Animacy</a>=Anim|<a href="Gender.html">Gender</a>=Masc|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řekli</em></td></tr>
+  <tr><td><tt><a href="Animacy.html">Animacy</a>=Inan|<a href="Gender.html">Gender</a>=Fem,Masc|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řekly</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>neřekl</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řekl</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem,Neut|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur,Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>neřekla</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem,Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur,Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řekla</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>neřeklo</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Tense.html">Tense</a>=Past|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řeklo</em></td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Neut|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="VerbForm.html">VerbForm</a>=Part|<a href="Voice.html">Voice</a>=Pass</tt></td><td></td><td><em>řečeno</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Imp|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>Řekni</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Imp|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>řekněme</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Imp|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="VerbForm.html">VerbForm</a>=Fin</tt></td><td></td><td><em>řekněte</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>neřeknu</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>neřekne</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>neřeknou</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řeknu</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řekne</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řekneme</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řeknete</em></td></tr>
+  <tr><td><tt><a href="Mood.html">Mood</a>=Ind|<a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Fin|<a href="Voice.html">Voice</a>=Act</tt></td><td></td><td><em>řeknou</em></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="Number.html">Number</a>=Plur|<a href="Tense.html">Tense</a>=Pres|<a href="VerbForm.html">VerbForm</a>=Trans|<a href="Voice.html">Voice</a>=Act</tt></td><td><em>řkouce</em></td><td></td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Pos|<a href="VerbForm.html">VerbForm</a>=Inf</tt></td><td></td><td><em>říci, říct</em></td></tr>
 </table>
 
-<p><code>Aspect</code> seems to be <strong>lexical feature</strong> of <code>VERB</code>. 100% lemmas (4682) occur only with one value of <code>Aspect</code>.</p>
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (4682) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<h3 id="adj"><code>ADJ</code></h3>
+<h3 id="adj"><code class="highlighter-rouge">ADJ</code></h3>
 
-<p>4498 <a href="">cs-pos/ADJ</a> tokens (2% of all <code>ADJ</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>4498 <a href="">cs-pos/ADJ</a> tokens (2% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADJ</code> and <code>Aspect</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (4498; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (4367; 97%), <tt><a href="Number.html">Number</a>=Sing</tt> (2627; 58%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (2336; 52%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (4498; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (4367; 97%), <tt><a href="Number.html">Number</a>=Sing</tt> (2627; 58%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (2336; 52%).</p>
 
-<p><code>ADJ</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (4481; 100% of non-empty <code>Aspect</code>): <em>rozhodující, vedoucí, následující, vynikající, týkající, odpovídající, rostoucí, žijící, kupující, následujících</em></li>
-  <li><code>Perf</code> (17; 0% of non-empty <code>Aspect</code>): <em>odstoupivšího, byvší, doloživší, nastavší, ocitnuvšího, odstoupivších, provinivšího, předčivší, přeživšího, vyskytnuvší</em></li>
-  <li><code>EMPTY</code> (176313): <em>první, další, české, nové, druhé, poslední, státní, dalších, možné, vlastní</em></li>
+  <li><code class="highlighter-rouge">Imp</code> (4481; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>rozhodující, vedoucí, následující, vynikající, týkající, odpovídající, rostoucí, žijící, kupující, následujících</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (17; 0% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>odstoupivšího, byvší, doloživší, nastavší, ocitnuvšího, odstoupivších, provinivšího, předčivší, přeživšího, vyskytnuvší</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (176313): <em>první, další, české, nové, druhé, poslední, státní, dalších, možné, vlastní</em></li>
 </ul>
 
-<p><code>Aspect</code> seems to be <strong>lexical feature</strong> of <code>ADJ</code>. 100% lemmas (940) occur only with one value of <code>Aspect</code>.</p>
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 100% lemmas (940) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<h3 id="aux"><code>AUX</code></h3>
+<h3 id="aux"><code class="highlighter-rouge">AUX</code></h3>
 
-<p>59 <a href="">cs-pos/AUX</a> tokens (0% of all <code>AUX</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>59 <a href="">cs-pos/AUX</a> tokens (0% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>AUX</code> and <code>Aspect</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (59; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (56; 95%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (47; 80%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (47; 80%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (46; 78%), <tt><a href="Person.html">Person</a>=3</tt> (46; 78%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (46; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (37; 63%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (59; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (56; 95%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (47; 80%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (47; 80%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (46; 78%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (46; 78%), <tt><a href="Person.html">Person</a>=3</tt> (46; 78%), <tt><a href="Number.html">Number</a>=Sing</tt> (37; 63%).</p>
 
-<p><code>AUX</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (59; 100% of non-empty <code>Aspect</code>): <em>bývá, bývají, bývaly, bývala, bývalo, nebývá, jsouce, nebývají</em></li>
-  <li><code>EMPTY</code> (20736): <em>by, bude, jsem, jsme, byl, budou, byla, být, je, bylo</em></li>
+  <li><code class="highlighter-rouge">Imp</code> (59; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>bývá, bývají, bývaly, bývala, bývalo, nebývá, jsouce, nebývají</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (20736): <em>by, bude, jsem, jsme, byl, budou, byla, být, je, bylo</em></li>
 </ul>
 
-<h3 id="noun"><code>NOUN</code></h3>
+<h3 id="noun"><code class="highlighter-rouge">NOUN</code></h3>
 
-<p>2 <a href="">cs-pos/NOUN</a> tokens (0% of all <code>NOUN</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>2 <a href="">cs-pos/NOUN</a> tokens (0% of all <code class="highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>NOUN</code> and <code>Aspect</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Neut</tt> (2; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (2; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (2; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NOUN</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Gender.html">Gender</a>=Neut</tt> (2; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (2; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (2; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (2; 100%).</p>
 
-<p><code>NOUN</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">NOUN</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Perf</code> (2; 100% of non-empty <code>Aspect</code>): <em>rozlišení, vyhovění</em></li>
-  <li><code>EMPTY</code> (372364): <em>roku, korun, let, roce, strany, procent, společnosti, době, případě, firmy</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (2; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>rozlišení, vyhovění</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (372364): <em>roku, korun, let, roce, strany, procent, společnosti, době, případě, firmy</em></li>
 </ul>
 
-<h3 id="adp"><code>ADP</code></h3>
+<h3 id="adp"><code class="highlighter-rouge">ADP</code></h3>
 
-<p>1 <a href="">cs-pos/ADP</a> tokens (0% of all <code>ADP</code> tokens) have a non-empty value of <code>Aspect</code>.</p>
+<p>1 <a href="">cs-pos/ADP</a> tokens (0% of all <code class="highlighter-rouge">ADP</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
 
-<p>The most frequent other feature values with which <code>ADP</code> and <code>Aspect</code> co-occurred: <tt><a href="AdpType.html">AdpType</a>=Comprep</tt> (1; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1; 100%).</p>
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADP</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="AdpType.html">AdpType</a>=Comprep</tt> (1; 100%), <tt><a href="Case.html">Case</a>=EMPTY</tt> (1; 100%).</p>
 
-<p><code>ADP</code> tokens may have the following values of <code>Aspect</code>:</p>
+<p><code class="highlighter-rouge">ADP</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
 
 <ul>
-  <li><code>Imp</code> (1; 100% of non-empty <code>Aspect</code>): <em>Nehledě</em></li>
-  <li><code>EMPTY</code> (145942): <em>v, na, o, z, s, do, ve, k, pro, za</em></li>
+  <li><code class="highlighter-rouge">Imp</code> (1; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>Nehledě</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (145942): <em>v, na, o, z, s, do, ve, k, pro, za</em></li>
+</ul>
+
+<h2 id="relations-with-agreement-in-aspect">Relations with Agreement in <code class="highlighter-rouge">Aspect</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code class="highlighter-rouge">Aspect</code>:
+<tt>VERB –[<a href="../dep/mark.html">mark</a>]–&gt; VERB</tt> (1; 100%).</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cac">Treebank Statistics (UD_Czech-CAC)</h2>
+
+<p>This feature is universal.
+It occurs with 2 different values: <code class="highlighter-rouge">Imp</code>, <code class="highlighter-rouge">Perf</code>.</p>
+
+<p>29661 tokens (6%) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+11157 types (18%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+3679 lemmas (13%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+The feature is used with 5 part-of-speech tags: <a href="">cs-pos/VERB</a> (27478; 6% instances), <a href="">cs-pos/ADJ</a> (2143; 0% instances), <a href="">cs-pos/AUX</a> (25; 0% instances), <a href="">cs-pos/CONJ</a> (9; 0% instances), <a href="">cs-pos/NOUN</a> (6; 0% instances).</p>
+
+<h3 id="verb-1"><code class="highlighter-rouge">VERB</code></h3>
+
+<p>27478 <a href="">cs-pos/VERB</a> tokens (52% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Negative.html">Negative</a>=Pos</tt> (26026; 95%), <tt><a href="Voice.html">Voice</a>=Act</tt> (19428; 71%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (19027; 69%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (13823; 50%), <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (13823; 50%).</p>
+
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Imp</code> (18088; 66% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>patří, tvoří, znamená, odpovídá, stává, mění, představuje, dochází, ukazuje, říká</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (9390; 34% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>zajistit, podařilo, vytvořit, vyjádřit, vysvětlit, získat, stanoví, viz, splnit, odstranit</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (25465): <em>je, jsou, má, není, být, mají, musí, může, bylo, byl</em></li>
+</ul>
+
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">VERB</code>. 100% lemmas (3138) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<h3 id="adj-1"><code class="highlighter-rouge">ADJ</code></h3>
+
+<p>2143 <a href="">cs-pos/ADJ</a> tokens (3% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (2143; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (2112; 99%), <tt><a href="Number.html">Number</a>=Sing</tt> (1119; 52%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1095; 51%).</p>
+
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Imp</code> (2141; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>pracujících, rozhodující, pracující, vedoucí, odpovídající, následující, řídící, týkající, vyplývající, rostoucí</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (2; 0% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>nastoupivšími, rozpadnuvší</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (68385): <em>další, pracovní, první, jednotlivých, základní, nové, možno, socialistické, různých, každý</em></li>
+</ul>
+
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 100% lemmas (539) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<h3 id="aux-1"><code class="highlighter-rouge">AUX</code></h3>
+
+<p>25 <a href="">cs-pos/AUX</a> tokens (0% of all <code class="highlighter-rouge">AUX</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">AUX</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Voice.html">Voice</a>=Act</tt> (25; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (22; 88%), <tt><a href="Gender.html">Gender</a>=EMPTY</tt> (22; 88%), <tt><a href="Mood.html">Mood</a>=Ind</tt> (21; 84%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (21; 84%), <tt><a href="Person.html">Person</a>=3</tt> (21; 84%), <tt><a href="VerbForm.html">VerbForm</a>=Fin</tt> (21; 84%), <tt><a href="Number.html">Number</a>=Sing</tt> (20; 80%).</p>
+
+<p><code class="highlighter-rouge">AUX</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Imp</code> (24; 96% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>bývá, bývají, nebývá, býval, bývalo</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (1; 4% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>byvše</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (6132): <em>by, je, jsme, bude, jsem, bylo, byla, byl, byly, jsou</em></li>
+</ul>
+
+<h3 id="conj"><code class="highlighter-rouge">CONJ</code></h3>
+
+<p>9 <a href="">cs-pos/CONJ</a> tokens (0% of all <code class="highlighter-rouge">CONJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p><code class="highlighter-rouge">CONJ</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Imp</code> (9; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>buď</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (24196): <em>a, i, nebo, ale, však, ani, či, tak, neboť, jednak</em></li>
+</ul>
+
+<h3 id="noun-1"><code class="highlighter-rouge">NOUN</code></h3>
+
+<p>6 <a href="">cs-pos/NOUN</a> tokens (0% of all <code class="highlighter-rouge">NOUN</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">NOUN</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Negative.html">Negative</a>=Pos</tt> (6; 100%), <tt><a href="Case.html">Case</a>=Gen</tt> (6; 100%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (6; 100%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (5; 83%), <tt><a href="Number.html">Number</a>=Plur</tt> (5; 83%).</p>
+
+<p><code class="highlighter-rouge">NOUN</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Imp</code> (1; 17% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>tváří</em></li>
+  <li><code class="highlighter-rouge">Perf</code> (5; 83% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>oprav, vyhovění</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (136176): <em>práce, roce, let, práci, roku, oblasti, době, společnosti, hlediska, činnosti</em></li>
+</ul>
+
+<hr />
+
+<h2 id="treebank-statistics-udczech-cltt">Treebank Statistics (UD_Czech-CLTT)</h2>
+
+<p>This feature is universal.
+It occurs with 1 different values: <code class="highlighter-rouge">Imp</code>.</p>
+
+<p>289 tokens (1%) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+83 types (2%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+51 lemmas (2%) occur at least once with a non-empty value of <code class="highlighter-rouge">Aspect</code>.
+The feature is used with 2 part-of-speech tags: <a href="">cs-pos/ADJ</a> (288; 1% instances), <a href="">cs-pos/VERB</a> (1; 0% instances).</p>
+
+<h3 id="adj-2"><code class="highlighter-rouge">ADJ</code></h3>
+
+<p>288 <a href="">cs-pos/ADJ</a> tokens (4% of all <code class="highlighter-rouge">ADJ</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">ADJ</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Degree.html">Degree</a>=EMPTY</tt> (288; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (286; 99%), <tt><a href="Number.html">Number</a>=Sing</tt> (177; 61%), <tt><a href="Animacy.html">Animacy</a>=EMPTY</tt> (172; 60%).</p>
+
+<p><code class="highlighter-rouge">ADJ</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Imp</code> (288; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>konsolidující, zanikající, následujícího, související, předcházejícímu, týkající, přejímající, předcházející, souvisejících, řídících</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (6251): <em>účetní, účetních, účetního, konsolidované, finanční, účetním, povinny, výroční, právní, jiných</em></li>
+</ul>
+
+<p><code class="highlighter-rouge">Aspect</code> seems to be <strong>lexical feature</strong> of <code class="highlighter-rouge">ADJ</code>. 100% lemmas (50) occur only with one value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<h3 id="verb-2"><code class="highlighter-rouge">VERB</code></h3>
+
+<p>1 <a href="">cs-pos/VERB</a> tokens (0% of all <code class="highlighter-rouge">VERB</code> tokens) have a non-empty value of <code class="highlighter-rouge">Aspect</code>.</p>
+
+<p>The most frequent other feature values with which <code class="highlighter-rouge">VERB</code> and <code class="highlighter-rouge">Aspect</code> co-occurred: <tt><a href="Mood.html">Mood</a>=EMPTY</tt> (1; 100%), <tt><a href="Negative.html">Negative</a>=Pos</tt> (1; 100%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (1; 100%), <tt><a href="Tense.html">Tense</a>=Pres</tt> (1; 100%), <tt><a href="VerbForm.html">VerbForm</a>=Trans</tt> (1; 100%), <tt><a href="Person.html">Person</a>=EMPTY</tt> (1; 100%), <tt><a href="Voice.html">Voice</a>=Act</tt> (1; 100%), <tt><a href="Number.html">Number</a>=Sing</tt> (1; 100%).</p>
+
+<p><code class="highlighter-rouge">VERB</code> tokens may have the following values of <code class="highlighter-rouge">Aspect</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Imp</code> (1; 100% of non-empty <code class="highlighter-rouge">Aspect</code>): <em>počínaje</em></li>
+  <li><code class="highlighter-rouge">EMPTY</code> (2516): <em>je, jsou, obsahuje, rozumí, může, uvede, mohou, není, nejsou, použijí</em></li>
 </ul>
 
 
@@ -260,6 +389,7 @@ Aspect in other languages:
         root + 'lib/ext/jquery.min.js',
         root + 'lib/ext/jquery.svg.min.js',
         root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
         root + 'lib/ext/jquery-ui.min.js',
         root + 'lib/ext/waypoints.min.js',
         root + 'lib/ext/jquery.address.min.js',
@@ -291,11 +421,40 @@ Aspect in other languages:
     ];
 
     var setupAccordions = function() {
-        // standard jQuery UI "accordion" element initialization
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
 	$(".jquery-ui-accordion").accordion({
 	    collapsible: true,
-	    active: false
+	    active: false,
+	    change: accordionChange
 	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
     };
 
     var setupTabs = function() {
@@ -319,6 +478,7 @@ Aspect in other languages:
         // set up UI tabs on page
         setupTabs();
         setupAccordions();
+        setupTimeago();
 
         // mark current collection (filled in by Jekyll)
         Collections.listing['_current'] = 'cs-feat';
@@ -344,7 +504,7 @@ Aspect in other languages:
 
       <div id="footer">
 	  <p class="footer-text">&copy; 2014 
-	    <a href="http://universaldependencies.github.io/docs/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
 	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
       </div>
     </div>
