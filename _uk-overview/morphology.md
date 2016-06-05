@@ -8,4 +8,3 @@ permalink: uk/overview/morphology.html
 
 This document is a placeholder for the language-specific overview of
 guidelines for part-of-speech tags and features.
-Test 5.
