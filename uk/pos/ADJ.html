@@ -39,8 +39,73 @@
 
           <h2><code>ADJ</code>: adjective</h2>
 
-<p>This document is a placeholder for the language-specific documentation
-for <code class="highlighter-rouge">ADJ</code>.</p>
+<h3 id="definition">Definition</h3>
+
+<p>Adjectives are words that typically modify nouns and specify their
+properties or attributes. They may also function as predicates, as in</p>
+
+<p><em>Ця машина є зелена. </em> “The car is green.”</p>
+
+<p>The <code class="highlighter-rouge">ADJ</code> tag is intended for ordinary adjectives only. See <a href="">DET</a>
+for determiners and <a href="">NUM</a> for cardinal numerals.</p>
+
+<p>In accord with the UD approach,
+adjectival ordinal numerals <em>(перший, сьомий, стошістдесятий) </em>
+are tagged as adjectives, although the traditional grammar classifies
+them as numerals. They behave like adjectives both morphologically and
+syntactically, with the exception that they cannot be compared and
+negated.</p>
+
+<p>Most Ukrainian adjectives inflect for
+<a href="">uk-feat/Gender</a> <em>(великий – велика – велике) </em> “big”,
+<a href="">uk-feat/Number</a> <em>(великий – великі), </em>
+<a href="">uk-feat/Case</a> <em>(великий – великого – великому – великим – великім), </em>
+<a href="">uk-feat/Degree</a> <em>(великий – більший – найбільший), </em> and
+<a href="uk-feat/Negative">Negation</a> <em>(великий – невеликий). </em></p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li><em>великий </em> “big”</li>
+  <li><em>старий </em> “old”</li>
+  <li><em>зелений </em> “green”</li>
+  <li><em>батьків, matčin </em> “father’s, mother’s” (possessive adjectives)</li>
+  <li><em>перший, druhý, třetí </em> “first, second, third”</li>
+  <li><em>зробленийý </em> “done” (passive participial adjective, see below)</li>
+  <li><em>роблений </em> “shrivelled” (past participial adjective)</li>
+  <li><em>роблячий </em> “doing” (present participial adjective, derived from present transgressive) *</li>
+  <li><em>зробивший </em> “having done” (past participial adjective, derived from past transgressive) *</li>
+</ul>
+
+<h3 id="border-cases">Border cases</h3>
+
+<p>Passive participles lie on the border between verbs and adjectives.
+Core participial forms (ending in consonant or short vowel) are tagged <code class="highlighter-rouge">VERB</code>.
+Long forms are participial adjectives and they are tagged <code class="highlighter-rouge">ADJ</code>.
+For example:</p>
+
+<ul>
+  <li>Verb: <em>несен, несена, несене, несені, несено</em>  “carried”</li>
+  <li>Adjective: <em>несений, несеная, несенеє, несенії, несено</em>  “carried”</li>
+</ul>
+
+<p>Their meaning is almost identical but the usage slightly varies.
+Both groups can be used in nominal predication with <a href="uk-dep/cop">copula</a>.
+Only true participles (verbs) can be used to form the passive voice
+(but it may be sometimes difficult to distinguish from copula constructions, see <a href="">AUX</a>).
+On the other hand, the participial adjectives inflect for case and thus
+can modify nouns.</p>
+
+<p>There is an analogy with some adjectives that preserved so called nominal (short) forms.
+And these adjectives are not derived from verbs. Example:</p>
+
+<ul>
+  <li>Short (nominal) forms: <em>зелен, зелена, зелене</em>  “green”</li>
+  <li>Normal (pronominal) forms: <em>зелений, зеленая, зеленеє</em>  “green”</li>
+</ul>
+
+<p>Here both groups are <code class="highlighter-rouge">ADJ</code>. The nominal forms are used in predication,
+the standard forms both in predication and to modify nouns.</p>
 
 
 <!-- "automatic stats" -->
